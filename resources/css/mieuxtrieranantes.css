@@ -1,0 +1,23 @@
+.distrisacclass {
+	-webkit-mask-box-image: url('resources/icons/icones_trisacs.png');
+}
+.homecollectclass {
+	-webkit-mask-box-image: url('../icons/icone_camion_poubelle.png');
+}
+.garbageclass {
+	-webkit-mask-box-image: url('../icons/icone_dechets.png');
+}
+.structureclass {
+	-webkit-mask-box-image: url('../icons/icone_direction.png');
+}
+/*  background-image: url(../icons/icone_livre.png);
+	background-repeat: no-repeat;
+	-webkit-mask-box-image: url('../icons/icone_livre.png'); 
+*/
+.livreclass {
+	background-image: url(../icons/icone_livre.png);
+	background-repeat: no-repeat;
+}
+.searchclass {
+	-webkit-mask-box-image: url('../icons/search.png');
+}
