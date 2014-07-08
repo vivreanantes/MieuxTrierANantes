@@ -1,82 +1,59 @@
 Ext.define('MieuxTrierANantes.view.Main', {
-    extend: 'Ext.tab.Panel',
-    xtype: 'main',
-    requires: [
-        'Ext.TitleBar',
-        'Ext.Video',
-        'MieuxTrierANantes.view.SettingsView'
-    ],
-    config: {
-        tabBarPosition: 'bottom',
+	extend : 'Ext.tab.Panel',
+	xtype : 'main',
+	requires : ['Ext.TitleBar', 'Ext.Video',
+			'MieuxTrierANantes.view.SettingsView'],
+	config : {
+		tabBarPosition : 'bottom',
+		items : [
+			{
+			xtype : 'titlebar',
+			cls : 'title',
+			docked : 'top',
+			items : [{
+				ui : 'confirm',
+				html : "<A HREF='https://docs.google.com/presentation/d/1Rd2pOPuDD3NznjlukCrFGsdRp0_Rlr1faCgu0-p_N9A/edit?usp=sharing' TARGET=_blank title='Diaporama de présentation'><IMG SRC='resources/images/images_non_libres/icone_presentation.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'><IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'>Notre projet</A>"
+			}, {
+				ui : 'confirm',
+				html : "<IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1pa6GhUpSUowmPecLBvskYkuiENziKnputJBxM5KFnAo/edit?usp=sharing' TARGET=_blank title='Appel aux bénévoles'>Appel bénévoles</A>"
+			}, {
+				ui : 'confirm',
+				html : "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1udy-Qp54pYwOydgJm49QgFQ9QWgjc66n4y2jaFE3gns/edit?usp=sharing' TARGET=_blank title='Suivi des commentaires postés'>Suivi commentaires</A>"
+			}, {
+				ui : 'confirm',
+				html : "Réemploi : " +
+						"<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/forms/d/1RXbJqalGzD2MMwE8NGRotiqheezTuyU8WodKqRBdL7I/edit?usp=sharing' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Formulaire</A>&nbsp;&nbsp;" +
+						"<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheet/ccc?key=0ApdknMvA6hy8dDNpbHNIdnktMjNmVVpaVmJuZU40SkE&usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Listing</A>"
+			}, {
+				ui : 'confirm',
+				html : "<IMG SRC='resources/icons/android.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://play.google.com/store/apps/details?id=com.MieuxVivreANantes.MieuxTrierANantes' TARGET=_blank title='Lien vers le Play Store'>Android</A>"
+			}]
+		}, {
+			title : 'Déchets',
+			iconCls : 'trash',
+			xtype : 'garbages_xtype'
+		},
 
-        items: [
-            /*{
-                title: 'Welcome',
-                iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
-            },
-            {
-                title: 'Get Started',
-                iconCls: 'action',
-
-                items: [
-                    {
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Getting Started'
-                    },
-                    {
-                        xtype: 'video',
-                        url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-                        posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
-                    }
-                ]
-            },*/
-	        {
-    	        title: 'Déchets',
-                iconCls: 'trash',
-                xtype: 'garbages_xtype'
-	        },
-	        
-	        {
-    	        title: 'Carte',
-                iconCls: 'maps',
-                xtype: 'vanmaposm'
-	        },
-	        {
-    	        title: 'Info',
-               iconCls : 'info', // ic�ne en forme de 'i'
-                xtype: 'informations_xtype'
-	        },
-	        {
-    	        title: 'Lieux',
-                iconCls: 'action',
-                xtype: 'structuresview_xtype'
-	        },
-	        {
-    	        title: 'A domicile',
-                iconCls: 'home',
-                xtype: 'homecollectmods_xtype'
-	        },
-	        {
-    	        title: 'Trisac',
-                iconCls: 'add',
-                xtype: 'trisac_xtype'
-	        }
-        ]
-    }
+		{
+			title : 'Carte',
+			iconCls : 'maps',
+			xtype : 'vanmaposm'
+		}, {
+			title : 'Info',
+			iconCls : 'info', // icone en forme de 'i'
+			xtype : 'informations_xtype'
+		}, {
+			title : 'Lieux',
+			iconCls : 'action',
+			xtype : 'structuresview_xtype'
+		}, {
+			title : 'A domicile',
+			iconCls : 'home',
+			xtype : 'homecollectmods_xtype'
+		}, {
+			title : 'Trisac',
+			iconCls : 'add',
+			xtype : 'trisac_xtype'
+		}]
+	}
 });
