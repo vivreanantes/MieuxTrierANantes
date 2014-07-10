@@ -23,7 +23,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 				ui : 'confirm',
 				html : "Réemploi : " +
 						"<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/forms/d/1RXbJqalGzD2MMwE8NGRotiqheezTuyU8WodKqRBdL7I/edit?usp=sharing' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Formulaire</A>&nbsp;&nbsp;" +
-						"<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheet/ccc?key=0ApdknMvA6hy8dDNpbHNIdnktMjNmVVpaVmJuZU40SkE&usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Listing</A>"
+						"<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1jvFIceePP8h4tjGUGa3EYu8_u_TdtaSBYctysMWXu2Y/edit?usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Listing</A>"
 			}, {
 				ui : 'confirm',
 				html : "<IMG SRC='resources/icons/android.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://play.google.com/store/apps/details?id=com.MieuxVivreANantes.MieuxTrierANantes' TARGET=_blank title='Lien vers le Play Store'>Android</A>"

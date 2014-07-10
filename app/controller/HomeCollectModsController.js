@@ -59,14 +59,25 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	},
 	
 	onShowHomeCollectModsView : function() {
+		
+		/*var start = new Date().getTime();*/
+		
 		if (this.getHomeCollectModsList().getStore()==null) {
 			var homecollectmodStore = Ext.create(
 				'MieuxTrierANantes.store.HomeCollectModStore');
 			this.getHomeCollectModsList().setStore(homecollectmodStore);
 			homecollectmodStore.load();
 		}
-
-		// list.setStore(homecollectmodStore);
+		
+		/*var end = new Date().getTime();
+		var time = end - start;
+		console.log( "onShowHomeCollectModsView etape 1 : " + time);
+		
+		this.getHomeCollectModsList().setData(_homeCollectModsDatas);
+		
+		end = new Date().getTime();
+		time = end - start;
+		console.log( "onShowHomeCollectModsView etape 2 : " + time);*/
 	},
 
 	onHomeCollectModsViewPush : function(view, item) {
