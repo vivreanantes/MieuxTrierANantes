@@ -13,17 +13,14 @@
         html, body {
             height: 100%;
         }
+        
+        #appLoadingIndicator {
+            
+            margin-top:8em;
+            
+        }
 
 	#appLoadingIndicator > * {
-            background-color: #FFFFFF;
-            -webkit-animation-name: appLoadingIndicator;
-            -webkit-animation-duration: 2s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: linear;
-        }
-        
-        
-		#appLoadingIndicator > * {
             background-color: #FFFFFF;
             -webkit-animation-name: appLoadingIndicator;
             -webkit-animation-duration: 2s;
@@ -46,34 +43,6 @@
             opacity: 0.3
         }
 		*/
-
-        #appLoadingIndicator > :nth-child(1) {
-            -webkit-animation-delay: 0.18s;
-        }
-
-        #appLoadingIndicator > :nth-child(2) {
-            -webkit-animation-delay: 0.42s;
-        }
-
-        #appLoadingIndicator > :nth-child(3) {
-            -webkit-animation-delay: 0.54s;
-        }
-
-        @-webkit-keyframes appLoadingIndicator{
-            0% {
-                opacity: 0.3
-            }
-
-		/* background-color:#1985D0 */
-            50% {
-                opacity: 1;
-               
-            }
-
-            100% {
-                opacity:0.3
-            }
-        }
         
         .btnAction2 {
         	background-image: url('resources/images/bouton_ecotox_petit.png');

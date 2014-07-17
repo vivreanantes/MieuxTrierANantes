@@ -1,10 +1,69 @@
 // The following two lines import the default Sencha Touch theme. If you are building
 // a new theme, remove them and the add your own CSS on top of the base CSS (which
 // is already included in your app.json file).
+
+$base-color: #d6eda8;
+$neutral-color: #f5f8e3;
+$default-text-contrast: 60%;
+$include-highlights: false !default; // Can disable all theme-generated gradients, text-shadows, and box-shadows.
+$button-radius: 0em;
+$button-stroke-weight: 1px;
+$form-bg-color : #dbeeb5;
+//$active-color: red;
+$color : #dbeeb5;
+$list-bg-color : #fdffed;
+
 @import 'sencha-touch/default';
 @import 'sencha-touch/default/all';
 
-// Custom code goes here..
+.x-list-normal {
+
+    .x-list-item {
+        &.x-list-item-tpl,
+        .x-dock-horizontal {
+            border-top: 1px solid darken($list-bg-color, 50%);
+        }
+
+
+        &.x-list-item-tpl.x-list-footer-wrap,
+        &.x-list-footer-wrap .x-dock-horizontal {
+            border-bottom: 1px solid darken($list-bg-color, 50%);
+        }
+    }
+
+    .x-list-item {
+        @if $include-list-highlights {
+            &.x-item-pressed.x-list-item-tpl,
+            &.x-item-pressed .x-dock-horizontal {
+                border-top-color: $list-pressed-color;
+                background-color: $list-pressed-color;
+            }
+
+
+            &.x-item-selected.x-list-item-tpl,
+            &.x-item-selected .x-dock-horizontal {
+                border-top-color: $list-active-color;
+            }
+        }
+    }
+}
+
+$background-color : #e4f2c7;
+
+.x-layout-card-item {
+  background: $background-color;
+}
+
+.x-form-label {
+            @include color-by-background($color);
+            @include bevel-by-background($color);
+}
+
+.x-button {
+    
+    @include toolbar-button(#f7f9e3, $button-gradient);
+
+}
 
 // Examples of using the icon mixin:
 // @include icon('user');
