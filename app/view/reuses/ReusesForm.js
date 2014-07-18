@@ -38,7 +38,13 @@ Ext.define('MieuxTrierANantes.view.reuses.ReusesForm', {
 			}]
 		}, {
 			xtype : 'selectfield',
-			label : 'Nantes / Hors Nantes',
+			label : 'Quartier / ville',
+			id : 'structuresFormSelectQuartier',
+			options : [{}]
+
+		},  {
+			xtype : 'selectfield',
+			label : 'Déchets',
 			id : 'reusesFormSelectQuartier',
 			options : [{}]
 
