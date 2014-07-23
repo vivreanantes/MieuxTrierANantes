@@ -14,7 +14,7 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresContainer', {
 							docked : 'top'
 						},*/ {
 							xtype : 'structuresForm_xtype',
-							height : 120,
+							height : 130,
 							scrollable : false
 						}, {
 							xtype : 'structuresList_xtype',

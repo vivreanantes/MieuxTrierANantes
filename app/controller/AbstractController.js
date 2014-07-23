@@ -36,6 +36,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
+				
+		var start = new Date().getTime();
+		
 		var idElementToChange = 0;
 		for (var i = 0; i < arItems.length; i++) {
 			var element = arItems[i];
@@ -54,6 +57,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				panel.items.items[nbLine].items.items[item].setHidden(false);
 			}
 		};
+		
+		end = new Date().getTime();
+		time = end - start;
+		console.log( "setDataInButtonsWithManyLines etape 1 : " + time);
+
 		for (var i = idElementToChange; i < nbMaxElements; i++) {
 			// Cache les éléments restants
 			var idElementToChange = i + 1;
@@ -70,6 +78,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				panel.items.items[nbLine].items.items[item].setHidden(true);
 			}
 		}
+		
+		end = new Date().getTime();
+		time = end - start;
+		console.log( "setDataInButtonsWithManyLines etape 2 : " + time);
 	},
 
 	setDataInButtons : function(panel, prefix, arItems, nbMaxElements) {

@@ -10,7 +10,6 @@ Ext.define('MieuxTrierANantes.view.information.Informations', {
 				// Titre dans barre de bouton principale
 				title : 'Fiches',
 				// Icone dans la barre de bouton principale
-
 				// CRN : pour la migration vers 2.3, on desactive ceci qui cache  la page sous IE
 				// scrollable : true,
 

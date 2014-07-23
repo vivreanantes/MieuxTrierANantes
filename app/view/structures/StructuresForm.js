@@ -42,7 +42,6 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 									}]
 						}, {
 							xtype : 'selectfield',
-							usePicker: false,
 							label : 'Ville',
 							id : 'structuresFormSelectQuartier'
 							,options : [{}]
@@ -74,7 +73,24 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 										text : "Saint Donatien",
 										value : "Saint Donatien"
 									}]*/
-						}]
+						}, 
+						{
+							items : [{
+										xtype : 'textfield',
+										name : 'name',
+										label : 'Déchet',
+										id : 'structureFormText',
+										placeHolder : "Ex : vélo"
+									}, {
+										xtype : 'button',
+										id : 'structureFormButton',
+										iconCls : 'search', // icône en forme de loupes
+										iconMask : true
+									}
+									]
+						}
+						]
+						
 			}
 
 		});

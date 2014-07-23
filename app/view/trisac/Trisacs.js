@@ -7,7 +7,6 @@ Ext.define('MieuxTrierANantes.view.trisac.Trisacs', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'distrisacclass',
 				title:'Trisac',
 				items : [{
 							xtype : 'TrisacContainer_xtype'

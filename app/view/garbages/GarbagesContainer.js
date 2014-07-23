@@ -12,7 +12,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesContainer', {
 				scrollable : true,
 				items : [{
 							xtype : 'garbagesForm_xtype',
-							height : 100
+							height : 80
 						}, {
 							xtype : 'usualCategoriesButtonsPanel_xtype'
 						}

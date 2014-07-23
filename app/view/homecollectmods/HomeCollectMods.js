@@ -6,12 +6,11 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectMods', {
 			xtype : 'homecollectmods_xtype',
 			config : {
 				autoDestroy : false,
-				iconCls : 'homecollectclass', // icône en forme de camion
-				title:'A domicile',
+
+				title : 'A domicile',
 				items : [{
 							xtype : 'HomeCollectModsContainer'
-						}
-				],
+						}],
 				defaultBackButtonText : "Retour"
 			}
 		});

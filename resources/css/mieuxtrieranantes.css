@@ -1,23 +1,35 @@
 .distrisacclass {
-	-webkit-mask-box-image: url('resources/icons/icones_trisacs.png');
+	background-image: url('../icons/icones_trisacs.png');
+	background-size: 100% 100%;
 }
+/* Inverse les couleurs : noir vers blanc */
+.x-tab-active .homecollectclass {-webkit-filter: invert(100%);}
+
 .homecollectclass {
-	-webkit-mask-box-image: url('../icons/icone_camion_poubelle.png');
+	background: url('../icons/icone_camion_poubelle.png');
+	background-size: 100% 100%;
 }
+/* Inverse les couleurs : noir vers blanc */
+.x-tab-active .garbageclass {-webkit-filter: invert(100%);}
+
 .garbageclass {
-	-webkit-mask-box-image: url('../icons/icone_dechets.png');
+	background: url('../icons/icone_dechets.png');
+	background-size: 100% 100%;
 }
+/* Inverse les couleurs : noir vers blanc */
+.x-tab-active .structureclass {-webkit-filter: invert(100%);}
+
 .structureclass {
-	-webkit-mask-box-image: url('../icons/icone_direction.png');
+	background: url('../icons/icone_direction.png');
+	background-size: 100% 100%;
 }
-/*  background-image: url(../icons/icone_livre.png);
-	background-repeat: no-repeat;
-	-webkit-mask-box-image: url('../icons/icone_livre.png'); 
-*/
+/* Inverse les couleurs : noir vers blanc */
+.x-tab-active .distrisacclass {-webkit-filter: invert(100%);}
+
 .livreclass {
 	background-image: url(../icons/icone_livre.png);
-	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
-.searchclass {
-	-webkit-mask-box-image: url('../icons/search.png');
-}
+/* Inverse les couleurs : noir vers blanc */
+.x-tab-active .livreclass {-webkit-filter: invert(100%);}
+

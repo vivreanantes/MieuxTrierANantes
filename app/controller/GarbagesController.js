@@ -502,13 +502,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	filter : function() {
+		var start = new Date().getTime();
 		var result = new Array();
-
-		/*if (this.garbagesList == null) {
-			this.garbagesList = Ext
-					.create('MieuxTrierANantes.view.garbages.GarbagesList');
-		}*/
-
 		var text = _utilRetireAccent(this.getGarbagesFormText().getValue());
 		var category = this.getGarbagesFormSelect();
 		var escaperegex = Ext.String.escapeRegex;
@@ -532,42 +527,18 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			}
 		}
 
-		/*
-		 * var arItemsToShow = this.getGarbagesList().getStore().getData();
-		 * 
-		 * if (arItemsToShow.length > 0) { // var text =
-		 * this.getGarbagesFormText(); var text =
-		 * _utilRetireAccent(this.getGarbagesFormText().getValue()); var
-		 * category = this.getGarbagesFormSelect(); var escaperegex =
-		 * Ext.String.escapeRegex; // var texttest = new
-		 * RegExp(escaperegex(text.getValue()), 'ig'); // var temp =
-		 * text.getValue(); // var texttest = new RegExp(/vaisselle/gi);
-		 * 
-		 * var categorietest = new RegExp(category.getValue());
-		 * 
-		 * var theItems = arItemsToShow.items; for (var i = 0; i <
-		 * theItems.length; i++) { var aData = theItems[i].data; // Important :
-		 * il faut recréer l'expression régulière à chaque fois sinon les
-		 * résultats sont faux ! var texttest = new RegExp(escaperegex(text),
-		 * 'ig'); var descNoAccents = aData["descNoAccents"]; if
-		 * ((aData["categorie_usuelle"] === category.getValue() || category
-		 * .getValue() === "all") && texttest.test(descNoAccents)) { // Ajoute
-		 * les <br/> var stLibelle = _cutWithBr(aData["nom"]); result.push({ //
-		 * id : aData["code"], //code : aData["code"], code : aData["code"], //
-		 * libelle : stLibelle, label : stLibelle, image : aData["image"] }); } } }
-		 */
 		if (this.garbagesButtonsPanel == null) {
 			this.garbagesButtonsPanel = Ext
 					.create('MieuxTrierANantes.view.garbages.GarbageButtonsPanel');
 		}
 
-
-		// this.removeAllAndSetItems(this.garbagesButtonsPanel, arItems);
-		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
-		// éléments
+		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39 éléments
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
-
+				
+		end = new Date().getTime();
+		time = end - start;
+		console.log( "filter etape 2 : " + time);
 	}
 
 });

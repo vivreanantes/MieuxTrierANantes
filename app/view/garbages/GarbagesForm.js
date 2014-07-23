@@ -31,6 +31,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 							label : 'Catégorie',
 							id : 'garbagesFormSelect',
 							hidden : true,
+							usePicker: false,
 							options : [{
 										text : 'Tous',
 										value : 'all'

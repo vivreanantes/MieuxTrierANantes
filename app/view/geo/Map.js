@@ -9,7 +9,6 @@ Ext.define('MieuxTrierANantes.view.geo.Map', {
   			alias   : 'widget.vanmap',	
 			config : {
 				title : 'Carte',
-				iconCls : 'maps',
 				useCurrentLocation : true,
 				mapOptions : {
 					streetViewControl : false,

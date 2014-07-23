@@ -698,11 +698,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsList": [],
   "MieuxTrierANantes.view.information.Informations": [],
   "MieuxTrierANantes.view.information.InformationsButtonsPanel": [],
-  "MieuxTrierANantes.view.reuses.Reuses": [],
-  "MieuxTrierANantes.view.reuses.ReusesContainer": [],
-  "MieuxTrierANantes.view.reuses.ReusesDetails": [],
-  "MieuxTrierANantes.view.reuses.ReusesForm": [],
-  "MieuxTrierANantes.view.reuses.ReusesList": [],
   "MieuxTrierANantes.view.structures.Structures": [],
   "MieuxTrierANantes.view.structures.StructuresContainer": [],
   "MieuxTrierANantes.view.structures.StructuresDetails": [],
@@ -1544,21 +1539,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.information.InformationsButtonsPanel": [
     "widget.informationsbuttonslist_xtype"
-  ],
-  "MieuxTrierANantes.view.reuses.Reuses": [
-    "widget.reusesView_xtype"
-  ],
-  "MieuxTrierANantes.view.reuses.ReusesContainer": [
-    "widget.reusesContainer_xtype"
-  ],
-  "MieuxTrierANantes.view.reuses.ReusesDetails": [
-    "widget.reusesDetails_xtype"
-  ],
-  "MieuxTrierANantes.view.reuses.ReusesForm": [
-    "widget.reusesForm_xtype"
-  ],
-  "MieuxTrierANantes.view.reuses.ReusesList": [
-    "widget.reusesList_xtype"
   ],
   "MieuxTrierANantes.view.structures.Structures": [
     "widget.structuresview_xtype"

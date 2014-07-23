@@ -11,6 +11,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			structuresDetail : "structuresDetails_xtype",
 			structuresForm : "structuresForm_xtype",
 			structuresFormSelectQuartier : "#structuresFormSelectQuartier",
+			structureFormText : "#structureFormText",
 			structuresFormSelectType : "#structuresFormSelectType",
 			structuresButtons : "#structuresButtons"
 
@@ -109,19 +110,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
-
-		/*
-		if (store!=null) {
-			store.clearFilter(true); // true sinon cela plante dans la version android
-			store.filter([
-				{filterFn: function(item) { 
-					return item.get("modesCollecte")!=null && item.get("modesCollecte")==="all" && item.get("modesCollecte").indexOf(selectType.getValue())!=-1; }
-				},
-				{filterFn: function(item) { 
-					return  item.get("quartier")!=null && item.get("quartier")==="all" && item.get("quartier").indexOf(selectQuartier.getValue())!=-1; }
-				}
-			]);
-		}*/
+		var text = _utilRetireAccent(this.getStructureFormText().getValue());
 		var store = this.getStructuresList().getStore();
 		if (store!=null) {
 			store.clearFilter(true);  // true sinon cela plante dans la version android

@@ -7,8 +7,7 @@ Ext.define('MieuxTrierANantes.view.structures.Structures', {
 			// id : 'structuresView_xtype',
 			config : {
 				autoDestroy : false,
-				// iconCls : 'structureclass',
-				icon : 'search',
+				iconCls : 'structureclass',
 				title : 'Lieux',
 				items : [
 					{
