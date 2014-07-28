@@ -19,7 +19,6 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			},
 
 			homeCollectModsList : {
-				initialize : 'onInitHomeCollectMods',
 				itemtap : 'showHomeCollectModsDetail'
 
 			},
@@ -38,29 +37,14 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'homecollectmodsdetails_xtype button' : {
-				tap : 'onTapLinkButton',
-				back : 'onPushBackButton9'
+				tap : 'onTapLinkButton'
 			}
 		}
 	},
 	
-	onPushBackButton9 : function() {
-			// console.log("onPushBackButton9");
-			// this.onPushBackButton();
-	},
-
-	/**
-	 * A l'initialisation de la fenêtre
-	 */
-	onInitHomeCollectMods : function(list) {
-		// var homecollectmodStore = Ext.create('MieuxTrierANantes.store.HomeCollectModStore');
-		// list.setStore(homecollectmodStore);
-
-	},
-	
 	onShowHomeCollectModsView : function() {
 		
-		/*var start = new Date().getTime();*/
+		var start = new Date().getTime();
 		
 		if (this.getHomeCollectModsList().getStore()==null) {
 			var homecollectmodStore = Ext.create(
@@ -69,19 +53,15 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			homecollectmodStore.load();
 		}
 		
-		/*var end = new Date().getTime();
+		var end = new Date().getTime();
 		var time = end - start;
 		console.log( "onShowHomeCollectModsView etape 1 : " + time);
-		
+		/*
 		this.getHomeCollectModsList().setData(_homeCollectModsDatas);
 		
 		end = new Date().getTime();
 		time = end - start;
 		console.log( "onShowHomeCollectModsView etape 2 : " + time);*/
-	},
-
-	onHomeCollectModsViewPush : function(view, item) {
-
 	},
 
 	showHomeCollectModsDetail : function(list, index, node, record) {

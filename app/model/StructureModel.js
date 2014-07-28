@@ -57,7 +57,10 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					type : 'string'
 				}, {
 					name : 'longitude',
-					type : 'object'
+					type : 'string'
+				}, {
+					name : 'dechetsNoAccents',
+					type : 'string'
 				}]
 	}
 });

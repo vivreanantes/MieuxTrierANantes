@@ -1,7 +1,7 @@
 Ext.define('MieuxTrierANantes.store.HomeCollectModStore', {
-			extend : 'Ext.data.Store',			
-			id : 'homecollectmodstore', 	
-			config :{
+			extend : 'Ext.data.Store',
+			id : 'homecollectmodstore',
+			config : {
 				autoLoad : false,
 				model : 'MieuxTrierANantes.model.HomeCollectModModel',
 				proxy : {
@@ -11,6 +11,6 @@ Ext.define('MieuxTrierANantes.store.HomeCollectModStore', {
 						type : 'json',
 						rootProperty : 'modes_collecte_a_domicile'
 					}
-				}	
+				}
 			}
 		});

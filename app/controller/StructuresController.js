@@ -43,6 +43,10 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
 			},
+			
+			structureFormText : {
+				keyup : 'onStructuresStoreFilter'
+			},
 
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
@@ -83,9 +87,10 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			var structureStore = Ext.create("MieuxTrierANantes.store.StructureStore", {
 				filters : [{
 					property : "modesCollecte",
-					value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
+					value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp/g
 				}]
 			});
+					// value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
 			this.getStructuresList().setStore(structureStore);
 			structureStore.load();
 		}
@@ -111,6 +116,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
 		var text = _utilRetireAccent(this.getStructureFormText().getValue());
+		var escaperegex = Ext.String.escapeRegex;
 		var store = this.getStructuresList().getStore();
 		if (store!=null) {
 			store.clearFilter(true);  // true sinon cela plante dans la version android
@@ -119,8 +125,14 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stTypeRegexp = new RegExp(selectType.getValue());
 					var stQuartier = item.data["quartier"];
 					var stType = item.data["modesCollecte"];
-					return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
-							.getValue()) && (stTypeRegexp.test(stType)));
+					var stDechetsNoAccents = item.data["dechetsNoAccents"];
+					// Important : il faut recréer l'expression régulière à chaque fois
+			// 		sinon les résultats sont faux !
+					var texttest = new RegExp(escaperegex(text), 'ig');
+					return (
+						(selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) 
+						  && (stTypeRegexp.test(stType))
+						  && texttest.test(stDechetsNoAccents));
 				}
 			});
 			store.filter(filterElements);

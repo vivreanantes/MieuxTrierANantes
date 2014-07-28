@@ -10,18 +10,25 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 				items : [{
 							xtype : 'selectfield',
 							usePicker: false,
+							labelWidth : '80px',
 							label : 'Type',
 							id : 'structuresFormSelectType',
 							options : [{
 										text : 'Tous',
-										value : /modco_ecopointmodco_decheterie|modco_encombrants_resume|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
+										value : /modco_ecopointmodco_decheterie|modco_encombrants_resume|smco_reemp/g
 									}, {
 										text : "Déchèteries / Ecopoints",
 										value : "(modco_decheterie|modco_ecopoint)"
 									}, {
 										text : "Encombrants",
 										value : "modco_encombrants_resume"	
-									}, {
+									},
+									{
+										text : "Réemploi",
+										value : "smco_reemp"
+									}
+									
+									/* {
 										text : "Récup cartouches encre/tuners",
 										value : "smco_reempcartouchetoner"
 									}, {
@@ -39,58 +46,21 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 									}, {
 										text : "Récup divers (lunettes...)",
 										value : /smco_reempdivers|smco_reemplunettes/g
-									}]
+									}*/]
 						}, {
 							xtype : 'selectfield',
 							label : 'Ville',
+							labelWidth : '80px',
 							id : 'structuresFormSelectQuartier'
 							,options : [{}]
-							/*options : [{
-										text : 'Tous',
-										value : 'all'
-									}, {
-										text : "Chantenay",
-										value : "Chantenay"
-									}, {
-										text : "Breil / Dervallières / Bellevue",
-										value : "Breil Dervallières Bellevue"
-									}, {
-										text : "Hauts Pavé / Saint Félix",
-										value : "Hauts Pavé Saint Félix"
-									}, {
-										text : "Ile De Nantes",
-										value : "Ile De Nantes"
-									}, {
-										text : "Nantes Nord / Barberie",
-										value : "Nantes Nord Barberie"
-									}, {
-										text : "Erdre / Ranzay / Bottière / Perray",
-										value : "Erdre Ranzay Bottière Perray"
-									}, {
-										text : "Malakoff",
-										value : "Malakoff"
-									}, {
-										text : "Saint Donatien",
-										value : "Saint Donatien"
-									}]*/
-						}, 
-						{
-							items : [{
-										xtype : 'textfield',
-										name : 'name',
-										label : 'Déchet',
-										id : 'structureFormText',
-										placeHolder : "Ex : vélo"
-									}, {
-										xtype : 'button',
-										id : 'structureFormButton',
-										iconCls : 'search', // icône en forme de loupes
-										iconMask : true
-									}
-									]
-						}
-						]
-						
+						},{
+							xtype : 'textfield',
+							name : 'name',
+							labelWidth : '80px',
+							label : 'Déchet',
+							id : 'structureFormText',
+							placeHolder : "Ex : vélo"
+						}]
 			}
 
 		});

@@ -42,19 +42,6 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 							html : description,
 							scrollable : true,
 							styleHtmlContent : true
-							
-							
-				    /*listeners  : {
-				        element  : 'element',
-				        delegate : 'a',
-				        tap      : function(e) {
-				            e.stopEvent();
-				            // Ext.device.Device.openURL(e.target.href);
-				            // Ext.device.Device.openURL('http://sencha.com');
-				            window.open('http://apache.org', '_system', 'location=yes'); // not worked as well 
-				        }
-				    }*/
-							
 						}, {
 							xtype : 'button',
 							width : '200px',
@@ -73,13 +60,13 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 				if (arItemsToShow.length > 0) {
 					var theItems = arItemsToShow;
 					for (var i = 0; i < theItems.length; i++) {
-						if (theItems[i]["id"]!='') {
+						if (theItems[i]["id"] != '') {
 							var stLibelle = _cutWithBr(theItems[i]["libelle"]);
 							result.push({
-									code : theItems[i]["id"],
-									label : stLibelle,
-									image : theItems[i]["image"]
-							});
+										code : theItems[i]["id"],
+										label : stLibelle,
+										image : theItems[i]["image"]
+									});
 						}
 					}
 				}
@@ -87,6 +74,8 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 				var nbGarbagesMax = 39; // 39 éléments
 				this.setDataInButtonsWithManyLines(this.getInformationsList(),
 						"informationsButtonsPanel", result, nbGarbagesMax, 3);
+
+				end = new Date().getTime();
 			}
 
 		});

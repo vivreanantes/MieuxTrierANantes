@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer', {
 				title : "Collecte à domicile",
 				items : [{
 							xtype : 'homecollectmodsform_xtype',
-							height : 100,
+							height : 60,
 							scrollable : false
 						},
 

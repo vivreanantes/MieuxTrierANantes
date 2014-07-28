@@ -237,7 +237,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					value : "Nantes"
 				}, {
 					text : "Hors Nantes : Sud Loire",
-					value : "Hors Nantes sud Loire"
+					value : "hnsl"
 				}, {
 					text : "Hors Nantes : Nord Loire",
 					value : "hnnl"
