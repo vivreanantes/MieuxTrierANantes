@@ -43,14 +43,14 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	},
 	
 	onShowHomeCollectModsView : function() {
-		
+		this.getHash();
 		var start = new Date().getTime();
 		
 		if (this.getHomeCollectModsList().getStore()==null) {
 			var homecollectmodStore = Ext.create(
 				'MieuxTrierANantes.store.HomeCollectModStore');
 			this.getHomeCollectModsList().setStore(homecollectmodStore);
-			homecollectmodStore.load();
+			// homecollectmodStore.load();
 		}
 		
 		var end = new Date().getTime();
@@ -63,6 +63,45 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		time = end - start;
 		console.log( "onShowHomeCollectModsView etape 2 : " + time);*/
 	},
+	
+	getHash : function() {
+		var text = this.getHomeCollectModsFormText().getValue();
+		var datas = [ ];
+		if (text.length>1) {
+			datas = this.getHomeCollectModsForHash(text.substr(0,2));
+		}
+		// var datas = [{"dcv":"dsv1","nvsa":"nvsa1","ci":"ci1","jcbj":"jcbj1","src":"src1","cons":"cons1"},{"dcv":"dsv1","nvsa":"nvsa1","ci":"ci1","jcbj":"jcbj1","src":"src1","cons":"cons1"}];
+		var store = this.getHomeCollectModsList().getStore();
+		if (store) {
+			store.removeAll();
+			store.setData(datas);
+			store.sync();
+		}
+		// this.getHomeCollectModsList().setData(datas);
+		// this.getHomeCollectModsList().refresh();
+	},
+	
+	getHomeCollectModsForHash : function(hash) {
+	
+		var arItemsToShow = new Array();
+		var input = _hackHomeCollectModsDatas;
+		var codes  = _hackHomeCollectModsDatas[hash];
+		if (codes!=null) {
+		// for (var type in input) {
+			// type = "aa", input[type][0] = "3793
+			for(var i= 0; i < codes.length; i++)
+			{
+				var code = codes[i];
+				var element = _homeCollectModsDatas[code];
+				if (element!=null) {
+					arItemsToShow.push(element[0]);
+					// store.add(element);
+				}
+			}
+		}
+		return arItemsToShow;
+	},
+	
 
 	showHomeCollectModsDetail : function(list, index, node, record) {
 
@@ -132,7 +171,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	 * catégorie sélectionnée
 	 */
 	onHomeCollectModStoreFilter : function() {
-
+		this.getHash();
 		var text = this.getHomeCollectModsFormText();
 		var store = this.getHomeCollectModsList().getStore();
 		store.clearFilter(true); // true sinon cela plante dans la version android

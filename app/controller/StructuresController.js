@@ -77,7 +77,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		// 				value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g					}]
 		// 		});
 		// list.setStore(homecollectmodStore);
-		// 2
+		// 2$
 		this.getStructuresFormSelectQuartier().setValue("all");
 	},
 

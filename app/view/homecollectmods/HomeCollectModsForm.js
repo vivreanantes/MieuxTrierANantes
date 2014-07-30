@@ -11,9 +11,9 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 							name : 'name',
 							label : 'Adresse',
 							labelWidth : '80px',
-							width : '305px',
+							width : '335px',
 							id : 'homeCollectModsFormText',
-							placeHolder : "Sans 'rue'. Ex : Alain Gerbault"
+							placeHolder : "Sans 'rue'. 2 caractères min."
 						}]
 			}
 		});
