@@ -20,7 +20,7 @@ function _getCommentsBloc(code) {
 					.replace(", /g", ",").replace(" ,/g", ",").split(',');
 			for (var i = 0; i < arComments.length; i++) {
 				if (arComments[i] === code) {
-					faqTraduit += "<br/><B>"
+					faqTraduit += "<br/><img src='resources/icons/info.png' /> <B>"
 							+ _commentsDatas[j]["libelle"] + "</B><BR/>"
 							+ _commentsDatas[j]["description"];
 				}

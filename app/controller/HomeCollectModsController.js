@@ -10,7 +10,8 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			homeCollectModsList : 'homecollectmodslist_xtype',
 			homeCollectModDetail : 'homecollectmodsdetails_xtype',
 			homeCollectModsForm : 'homecollectmodsform_xtype',
-			homeCollectModsFormText : '#homeCollectModsFormText'
+			homeCollectModsFormText : '#homeCollectModsFormText',
+			homeCollectModsFormButton : '#homeCollectModsFormButton'
 			// , collectModList : 'collectModList_xtype'
 		},
 		control : {
@@ -29,9 +30,12 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			},
 
 			homeCollectModsFormText : {
-				keyup : 'onHomeCollectModStoreFilter',
-				change : 'onHomeCollectModStoreFilter',
-				clearicontap : 'onHomeCollectModStoreFilter'
+				// keyup : 'onHomeCollectModStoreFilter',
+				// change : 'onHomeCollectModStoreFilter',
+				// clearicontap : 'onHomeCollectModStoreFilter'
+			},
+			homeCollectModsFormButton : {
+				tap : 'onHomeCollectModStoreFilter'
 			},
 
 			// fonctionne comme une CSS selector

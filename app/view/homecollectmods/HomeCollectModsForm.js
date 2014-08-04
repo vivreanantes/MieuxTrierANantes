@@ -7,6 +7,12 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 			xtype : 'homecollectmodsform_xtype',
 			config : {
 				items : [{
+							layout : {
+								type : 'hbox',
+								align : 'strech',
+								height : '50px'
+							},
+							items : [{
 							xtype : 'textfield',
 							name : 'name',
 							label : 'Adresse',
@@ -14,6 +20,12 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 							width : '335px',
 							id : 'homeCollectModsFormText',
 							placeHolder : "Sans 'rue'. 2 caractères min."
+						}, {
+										xtype : 'button',
+										id : 'homeCollectModsFormButton',
+										iconCls : 'search', // icône en forme de loupes
+										iconMask : true
+									}]
 						}]
 			}
 		});

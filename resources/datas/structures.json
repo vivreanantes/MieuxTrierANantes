@@ -91,7 +91,7 @@
 		"modesCollecte" : "smco_reemp",
 		"type" : "Réemploi  divers",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
-		"libelle" : "ATAO",
+		"libelle" : "ATAO Nantes",
 		"adresseTemp" : "7 bis, rue Jacques Cartier 44300 NANTES",
 		"numeroTemp" : "02 40 59 93 68",
 		"src" : "DeuxiemeVie 03/14",
@@ -188,7 +188,7 @@
 		"modesCollecte" : "smco_reemp",
 		"type" : "Réemploi  divers",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
-		"libelle" : "ATAO",
+		"libelle" : "ATAO Saint-Herblain",
 		"adresseTemp" : "4 rue des compagnons 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 92 28 91",
 		"src" : "DeuxiemeVie 03/14",
@@ -810,7 +810,7 @@
 		"numeroTemp" : "240162645",
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 04/06/2014 11h20",
 		"horaires" : "du lundi au vendredi 13h30-18h",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve 13h30-18h",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve 13h30-18h00",
 		"quartier" : "qnn",
 		"dechetsNoAccents" : "velo"
 	}, {
@@ -854,7 +854,7 @@
 		"numeroTemp" : "02 40 65 89 09",
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014 15h22",
 		"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-		"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
+		"plagesHoraires" : "0101-3112_me+sa_10h00-18h00",
 		"quartier" : "hnsl",
 		"dechetsNoAccents" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
@@ -869,7 +869,7 @@
 		"numeroTemp" : "06 77 63 83 04",
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014 15h22",
 		"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-		"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
+		"plagesHoraires" : "0101-3112_me+sa_10h00-18h00",
 		"quartier" : "hnsl",
 		"dechetsNoAccents" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
@@ -884,7 +884,7 @@
 		"numeroTemp" : "07 81 63 00 48",
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014 15h22",
 		"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-		"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
+		"plagesHoraires" : "0101-3112_me+sa_10h00-18h00",
 		"quartier" : "hnsl",
 		"dechetsNoAccents" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
@@ -899,9 +899,24 @@
 		"numeroTemp" : "02 40 27 69 05",
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014 15h22",
 		"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-		"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
+		"plagesHoraires" : "0101-3112_me+sa_10h00-18h00",
 		"quartier" : "hnsl",
 		"dechetsNoAccents" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
+	}, {
+		"code" : "stco_reemploiajout10",
+		"latitude" : "47.1872979",
+		"longitude" : "-1.5476762",
+		"modesCollecte" : "smco_reempdivers",
+		"type" : "Association réemploi ",
+		"description_fr" : "Récupération, reconditionnement et don d’ordinateurs sur Nantes Métropole",
+		"libelle" : "Nâga",
+		"adresseTemp" : "17 chemin fontaine Launay 0 44400 Rezé",
+		"numeroTemp" : "285523122",
+		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 31/07/2014 11h24",
+		"horaires" : "Du mardi au samedi, de 10h à 12h et de 13h à 18h",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-12h00+13h00-18h00",
+		"quartier" : "hnsl",
+		"dechetsNoAccents" : "ordinateur"
 	}, {
 		"code" : "1011",
 		"quartier" : "Nantes",
