@@ -5,8 +5,6 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacDetails', {
 	config : {
 		title : 'Détails',
 		layout : 'vbox',
-		// le template est modifié dans le controlleur
-
 		tpl : '',
 		html: '',
     	scrollable: true,

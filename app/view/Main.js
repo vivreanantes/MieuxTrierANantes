@@ -15,7 +15,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 				html : "<A HREF='https://docs.google.com/presentation/d/1Rd2pOPuDD3NznjlukCrFGsdRp0_Rlr1faCgu0-p_N9A/edit?usp=sharing' TARGET=_blank title='Diaporama de présentation'><IMG SRC='resources/images/images_non_libres/icone_presentation.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'><IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'>Le projet</A>"
 			}, {
 				ui : 'confirm',
-				html : "<IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.comdocument/d/1pa6GhUpSUowmPecLBvskYkuiENziKnputJBxM5KFnAo/edit?usp=sharing' TARGET=_blank title='Nous aider'>Nous aider</A>"
+				html : "<IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1pa6GhUpSUowmPecLBvskYkuiENziKnputJBxM5KFnAo/edit?usp=sharing' TARGET=_blank title='Nous aider'>Nous aider</A>"
 			}, {
 				ui : 'confirm',
 				html : "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1udy-Qp54pYwOydgJm49QgFQ9QWgjc66n4y2jaFE3gns/edit?usp=sharing' TARGET=_blank title='Suivi des commentaires postés'>Commentaires</A>"

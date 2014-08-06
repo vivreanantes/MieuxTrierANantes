@@ -4,8 +4,10 @@
 Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	extend : 'MieuxTrierANantes.controller.AbstractController',
 	requires : ['MieuxTrierANantes.view.garbages.GarbagesContainer',
-			'MieuxTrierANantes.view.garbages.GarbagesForm'/*,
-			'MieuxTrierANantes.view.garbages.GarbagesList'*/],
+			'MieuxTrierANantes.view.garbages.GarbagesForm'/*
+															 * ,
+															 * 'MieuxTrierANantes.view.garbages.GarbagesList'
+															 */],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -25,10 +27,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		},
 		control : {
 			collectModsView : {},
-			/*collectModsList : {
-				initialize : "onInitCollectModsList"
-
-			},*/
+			/*
+			 * collectModsList : { initialize : "onInitCollectModsList"
+			 *  },
+			 */
 			usualCategoriesButtonsPanel : {
 				initialize : 'onInitUsualCategoriesButtonsPanel',
 				show : 'onShowUsualCategoriesButtonsPanel'
@@ -37,9 +39,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			 * usualSubCategoriesButtonsPanel : { initialize :
 			 * 'onInitUsualSubCategoriesButtonsPanel' },
 			 */
-			/*garbagesList : {
-				itemtap : 'showGarbagesDetail_old'
-			},*/
+			/*
+			 * garbagesList : { itemtap : 'showGarbagesDetail_old' },
+			 */
 
 			garbagesView : {
 				push : 'onGarbagesViewPush',
@@ -48,7 +50,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			},
 
 			garbagesFormText : {
-			// keyup : 'onGarbageStoreFilter',
+// keyup : 'onGarbageStoreFilter',
 			// change : 'onGarbageStoreFilter',
 			// clearicontap : 'onGarbageStoreFilter'
 			},
@@ -59,9 +61,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
 			},/*
-			advicesList : {
-				initialize : 'onInitGarbagesAdvices'
-			},*/
+				 * advicesList : { initialize : 'onInitGarbagesAdvices' },
+				 */
 			/*
 			 * wasteTreatmentsCategoriesList : { initialize :
 			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
@@ -69,12 +70,14 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			/*
 			 * collectModList : { initialize : 'onInitGarbagesCollectModList' },
 			 */
-			/*informationsList : {
-				// initialize : 'onInitGarbagesInformationsList'
-			},*/
-			/*usualCategoriesList2 : {
-				// initialize : 'onInitGarbagesUsualCategoryList'
-			},*/
+			/*
+			 * informationsList : { // initialize :
+			 * 'onInitGarbagesInformationsList' },
+			 */
+			/*
+			 * usualCategoriesList2 : { // initialize :
+			 * 'onInitGarbagesUsualCategoryList' },
+			 */
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'usualCategoriesButtonsPanel_xtype button' : {
@@ -159,7 +162,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			}
 		}
 
-		var nbGarbagesMax = 18; // la page UsualCategoriesButtonsPanel.js affiche
+		var nbGarbagesMax = 18; // la page UsualCategoriesButtonsPanel.js
+								// affiche
 		// 18 éléments
 		this.setDataInButtonsWithManyLines(this
 						.getUsualCategoriesButtonsPanel(),
@@ -182,7 +186,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			}
 		} else if (arButtonsId[0] === "comments_xtype") {
 			// Ext.Viewport.add({xtype:'commentsModal_xtype'});
-			Ext.Viewport.add({xtype : 'commentmodal'});
+			Ext.Viewport.add({
+						xtype : 'commentmodal'
+					});
 		}
 
 	},
@@ -244,10 +250,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	/**
 	 * Initialisation de la liste des conseils
 	 */
-	/*onInitGarbagesAdvices : function(list) {
-		var store = Ext.create('MieuxTrierANantes.store.AdviceStore');
-		list.setStore(store);
-	},*/
+	/*
+	 * onInitGarbagesAdvices : function(list) { var store =
+	 * Ext.create('MieuxTrierANantes.store.AdviceStore'); list.setStore(store); },
+	 */
 
 	/**
 	 * Initialisation de la liste des catégories de traitement
@@ -263,24 +269,27 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	 */
 	/*
 	 * onInitGarbagesCollectModList : function(list) { var store =
-	 * Ext.create('MieuxTrierANantes.store.CollectModStore'); list.setStore(store); },
+	 * Ext.create('MieuxTrierANantes.store.CollectModStore');
+	 * list.setStore(store); },
 	 */
 
 	/**
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
-	/*onInitGarbagesInformationsList : function(list) {
-		var store = Ext.create('MieuxTrierANantes.store.InformationsStore');
-		list.setStore(store);
-	},*/
+	/*
+	 * onInitGarbagesInformationsList : function(list) { var store =
+	 * Ext.create('MieuxTrierANantes.store.InformationsStore');
+	 * list.setStore(store); },
+	 */
 
 	/**
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
-	/*onInitGarbagesUsualCategoryList : function(list) {
-		var store = Ext.create('MieuxTrierANantes.store.CategorieUsuelleStore');
-		list.setStore(store);
-	},*/
+	/*
+	 * onInitGarbagesUsualCategoryList : function(list) { var store =
+	 * Ext.create('MieuxTrierANantes.store.CategorieUsuelleStore');
+	 * list.setStore(store); },
+	 */
 	onGarbagesViewPush : function(view, item) {
 
 		// this.garbagesList().deselectAll();
@@ -309,9 +318,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			modesDeCollecte = record["modco"];
 			treatmentCategories = record["rec"];
 			/*
-			 * if (record["conseils"] !== '') { conseils =
-			 * record["conseils"] + ","; } // conseils de catégories de
-			 * traitement if (record["categorie_traitement"] !== '') { var
+			 * if (record["conseils"] !== '') { conseils = record["conseils"] +
+			 * ","; } // conseils de catégories de traitement if
+			 * (record["categorie_traitement"] !== '') { var
 			 * dataWasteTreatmentsCategories = this
 			 * .getWasteTreatmentsCategoriesList().getStore() .getData();
 			 * dataWasteTreatmentsCategories.each(function(recordCategories) {
@@ -342,7 +351,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			} else {
 				treatmentCategories = "";
 			}
-			treatmentCategories =_stringUpperFirstLetter(treatmentCategories);
+			treatmentCategories = _stringUpperFirstLetter(treatmentCategories);
 
 			// Modes de collecte
 			this.garbageDetail.items.items['0'].items.items['1'].items.items['0']
@@ -358,30 +367,30 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			 * 
 			 */
 			if (modesDeCollecte) {
-			var arModesDeCollecte = modesDeCollecte.split(',');
-			// On parcours les modes de collecte
-			if (arModesDeCollecte.length > 0) {
+				var arModesDeCollecte = modesDeCollecte.split(',');
+				// On parcours les modes de collecte
+				if (arModesDeCollecte.length > 0) {
 
-				for (var j = 0; j < _collectModsDatas.length; j++) {
-					for (var i = 0; i < arModesDeCollecte.length; i++) {
-						if (_collectModsDatas[j]["code"] === arModesDeCollecte[i]) {
-							var imageValue = _collectModsDatas[j]["image"];
+					for (var j = 0; j < _collectModsDatas.length; j++) {
+						for (var i = 0; i < arModesDeCollecte.length; i++) {
+							if (_collectModsDatas[j]["code"] === arModesDeCollecte[i]) {
+								var imageValue = _collectModsDatas[j]["image"];
 
-							var codeValue = "collectMods_xtype"
-									+ _SEPARATOR
-									+ _collectModsDatas[j]["code"];
-							var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
-							arItemsToShow.push({
-										image : imageValue,
-										code : codeValue,
-										label : libelleValue
-									});
+								var codeValue = "collectMods_xtype"
+										+ _SEPARATOR
+										+ _collectModsDatas[j]["code"];
+								var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
+								arItemsToShow.push({
+											image : imageValue,
+											code : codeValue,
+											label : libelleValue
+										});
 
+							}
 						}
 					}
-				}
 
-			}
+				}
 			}
 			if (modesDeCollecteTraduit !== "") {
 				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
@@ -395,8 +404,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			 * descriptionTraduit + "</div>" +
 			 */
 			// image
-			var imageComplet = "<img src='resources/images/"
-					+ record["image"] + "' width='100px' />";
+			var imageComplet = "<img src='resources/images/" + record["image"]
+					+ "' width='100px' />";
 			// this.setDataElement(this.garbageDetail,"garbagesdetails_image",
 			// {'image' : imageComplet})
 			this.garbageDetail.items.items['0'].items.items['0'].setData({
@@ -417,8 +426,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// éléments
 			this.setDataInButtons(
 					this.garbageDetail.items.items['0'].items.items['1'],
-					"garbagesdetails_collectmod", arItemsToShow,
-					nbElementsMax);
+					"garbagesdetails_collectmod", arItemsToShow, nbElementsMax);
 			// this.setItemsElement(this.garbageDetail,
 			// "garbagesdetails_recyclableetmodesdecollecte",
 			// arItemsToShow);
@@ -438,33 +446,34 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// conseilTraduit})
 
 			// Ajout des conseils
-			var nbElementsMax = 3; // la page GarbagesDetails.js affiche 3 éléments
+			var nbElementsMax = 3; // la page GarbagesDetails.js affiche 3
+									// éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items,
 					"garbagesdetails_conseils", "libelle", "bouton",
-					arsConseils.les_libelles, arsConseils.les_boutons, nbElementsMax);
-	
+					arsConseils.les_libelles, arsConseils.les_boutons,
+					nbElementsMax);
+
 			// Ajout des commentaires OK
 			var code = record["code"];
 			// this.setItemsElement(this.garbageDetail,
 			// "garbagesdetails_commentaires", this.getItemsComments(code,
 			// title));
-			var arsCommentaires = this.getArrayItemsToShowComments(code,
-					title);
+			var arsCommentaires = this.getArrayItemsToShowComments(code, title);
 			var nbElementsMax = 3;
 			// la page GarbagesDetails.js affiche 3 éléments
 			this.setDataInButtons(this.garbageDetail,
 					"garbagesdetails_commentaires",
 					arsCommentaires.les_libelles, nbElementsMax);
+			// envoyer
 			var index = this.garbageDetail.items.keys
 					.indexOf("garbagesdetails_envoyer");
 			this.garbageDetail.items.items[index].setData({
 						code : arsCommentaires.le_titre
 					});
 			/*
-			 * var arsItemsComments =
-			 * this.getItemsComments(record["code"], title)
-			 * this.setItemsElement(this.garbageDetail,
+			 * var arsItemsComments = this.getItemsComments(record["code"],
+			 * title) this.setItemsElement(this.garbageDetail,
 			 * "garbagesdetails_commentaires", arsItemsComments);
 			 */
 
@@ -477,7 +486,6 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}
 	},
 
-
 	// Méthodes invoquées par le formulaire
 	/**
 	 * Filtre sur les déchets, en fonction de la chaine saisie et de la
@@ -486,8 +494,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	/*
 	 * onGarbageStoreFilter : function() { // if (this.garbagesList == null) { //
 	 * this.garbagesList = Ext //
-	 * .create('MieuxTrierANantes.view.garbages.GarbagesList'); // } // var title =
-	 * this.translate("label_resultat_recherche"); //
+	 * .create('MieuxTrierANantes.view.garbages.GarbagesList'); // } // var
+	 * title = this.translate("label_resultat_recherche"); //
 	 * this.garbagesList.setTitle(title); //
 	 * this.getGarbagesFormSelect().setValue(""); // this.filter(); //
 	 * this.getGarbagesView().push(this.garbagesList);
@@ -507,15 +515,15 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		var text = _utilRetireAccent(this.getGarbagesFormText().getValue());
 		var category = this.getGarbagesFormSelect();
 		var escaperegex = Ext.String.escapeRegex;
-		
+
 		for (var j = 0; j < _garbagesDatas.length; j++) {
 			// Important : il faut recréer l'expression régulière à chaque fois
 			// sinon les résultats sont faux !
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
 			var descNoAccents = _garbagesDatas[j]["descNoAccents"];
-			if ((_garbagesDatas[j]["categoriesUsuelles"] === category.getValue() || category
-					.getValue() === "all")
+			if ((_garbagesDatas[j]["categoriesUsuelles"] === category
+					.getValue() || category.getValue() === "all")
 					&& texttest.test(descNoAccents)) {
 				// Ajoute les <br/>
 				var stLibelle = _cutWithBr(_garbagesDatas[j]["nom"]);
@@ -532,13 +540,14 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 					.create('MieuxTrierANantes.view.garbages.GarbageButtonsPanel');
 		}
 
-		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39 éléments
+		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
+								// éléments
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
-				
+
 		end = new Date().getTime();
 		time = end - start;
-		console.log( "filter etape 2 : " + time);
+		console.log("filter etape 2 : " + time);
 	}
 
 });

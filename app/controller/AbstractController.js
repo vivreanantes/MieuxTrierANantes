@@ -200,16 +200,22 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				for (j in _advicesDatas) {
 					for (i in arConseils) {
 						if (_advicesDatas[j]["code"] === arConseils[i]) {
+							// le conseil avec l'icone "info"
 							result1.push({
 								libelle : "<img src='resources/icons/info.png' /> " + _advicesDatas[j]["libelle"],
 								description : _advicesDatas[j]["description"]
 							});
+							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
 								 && _advicesDatas[j]["fiche"] != "") {
-								result2.push({
-									"libelle" :  _advicesDatas[j]["libelle"],
-									code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
-								});
+								var info = _getInfo(_advicesDatas[j]["fiche"]);
+								if (info!=null) {
+									var libelleAdvice = info["libelle"];
+									result2.push({
+										"libelle" : libelleAdvice,
+										code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
+									});
+								}
 							}
 						}
 					}
