@@ -43,7 +43,7 @@ Ext.application({
 
     views: [
          'Main',
-			// Déchets
+			// Dï¿½chets
 			'garbages.Garbages',
 			'garbages.GarbageButtonsPanel',
 			'garbages.UsualCategoriesButtonsPanel',
@@ -67,7 +67,7 @@ Ext.application({
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/
-			// Mode de collecte à domicile
+			// Mode de collecte ï¿½ domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
 			'homecollectmods.HomeCollectModsDetails',

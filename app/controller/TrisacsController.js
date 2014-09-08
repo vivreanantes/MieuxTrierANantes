@@ -87,33 +87,36 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 	},
 
 	filterElements : function() {
-		var text = this.getTrisacFormText();
-		var selectQuartier = this.getTrisacFormSelect();
-		/* CRN_MIGRATION
-		var store = this.getTrisacList().getStore();
-		if (store != null) {
-		
-			// FIXME : Ceci est un traitement trop long
-			store.clearFilter(true);
-			// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant sur la catégorie var
-			filterHomeCollectMod = Ext.create("Ext.util.Filter", {
-				filterFn : function(item) {
-					var escaperegex = Ext.String.escapeRegex;
-					var stTextRexexp = new RegExp(escaperegex(text.getValue()),
-							"ig"); 
-					// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
-					var stType = item.data["modesCollecte"];
-					var stQuartier = item.data["quartier_admin"];
-					return (stType == 'modco_distrisac'
-							&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
-							.getValue() === "all" || stQuartier === selectQuartier
-							.getValue()));
-				}
-			});
-			store.filter(filterHomeCollectMod);
+		if (this.getTrisacList() != null) {
+			var text = this.getTrisacFormText();
+			var selectQuartier = this.getTrisacFormSelect();
+			/* CRN_MIGRATION */
+			var store = this.getTrisacList().getStore();
+			if (store != null) {
 
-		}*/
+				// FIXME : Ceci est un traitement trop long
+				store.clearFilter(true);
+				// Filtrer sans casse, en cherchant la chaine dans le nom, en
+				// filtrant sur la catégorie var
+				filterHomeCollectMod = Ext.create("Ext.util.Filter", {
+					filterFn : function(item) {
+						var escaperegex = Ext.String.escapeRegex;
+						var stTextRexexp = new RegExp(escaperegex(text
+										.getValue()), "ig");
+						// var stQuartierRexexp = new
+						// RegExp(selectQuartier.getValue());
+						var stType = item.data["modesCollecte"];
+						var stQuartier = item.data["quartier"];
+						return (stType == 'modco_distrisac'
+								&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
+								.getValue() === "all" || stQuartier === selectQuartier
+								.getValue()));
+					}
+				});
+				store.filter(filterHomeCollectMod);
 
+			}
+		}
 	}
 
 });

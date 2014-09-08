@@ -7100,18 +7100,18 @@
 		"description_fr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
 	}, {
 		"code" : "30",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Papeterie Pouteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
 		"adresseTemp" : "4 Rue de l'Evêché 44000 NANTES",
 		"latitude" : "47.218779776076",
 		"longitude" : "-1.55070593629293",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "31",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Tabac Presse",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7119,11 +7119,11 @@
 		"latitude" : "47.2166599968739",
 		"longitude" : "-1.56003585012774",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_06h45-19h30",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "32",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Tabac Presse du Pilori",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7131,11 +7131,11 @@
 		"latitude" : "47.2162788431412",
 		"longitude" : "-1.55302017441761",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h30-20h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "33",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Boulangerie La Mie Câline",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7143,11 +7143,11 @@
 		"latitude" : "47.2141405199086",
 		"longitude" : "-1.55574826679529",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_06h30-21h30",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "19",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Pôle commercial Coubertin",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7156,11 +7156,11 @@
 		"longitude" : "-1.58713886334568",
 		"horaires" : "De 14h30 à 19h00. 19 mars, 2 juillet, 3 décembre",
 		"plagesHoraires" : ",190314_me_14h30-19h00,020714_me_14h30-19h00,031214_me_14h30-19h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "12",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Ecole Jean Zay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7169,11 +7169,11 @@
 		"longitude" : "-1.60694146844681",
 		"horaires" : "De 14h30 à 19h00. 16 janvier, 17 avril, 25 septembre",
 		"plagesHoraires" : ",160114_je_14h30-19h00,170414_je_14h30-19h00,250914_je_14h30-19h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "17",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "47 Rue Georges Mélies",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7182,11 +7182,11 @@
 		"longitude" : "-1.58579021535481",
 		"horaires" : "De 14h30 à 19h00. 17 mars, 30 juin, 1 décembre",
 		"plagesHoraires" : ",170314_lu_14h30-19h00,300614_lu_14h30-19h00,011214_lu_14h30-19h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "18",
-		"quartier_admin" : "Dervallieres Zola",
+		"quartier_admin" : "qdz",
 		"libelle" : "Place des Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7195,11 +7195,11 @@
 		"longitude" : "-1.59771687336643",
 		"horaires" : "De 09h00 à 13h00. 22 mars, 5 juillet, 6 décembre",
 		"plagesHoraires" : ",220314_sa_09h00-13h00,050714_sa_09h00-13h00,061214_sa_09h00-13h00",
-		"quartier" : "Dervallieres Zola",
+		"quartier" : "qdz",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "8",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Face à la mairie annexe Chantenay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7208,11 +7208,11 @@
 		"longitude" : "-1.5878950804801",
 		"horaires" : "De 14h30 à 19h00. 13 janvier, 14 avril, 22 septembre",
 		"plagesHoraires" : ",130114_lu_14h30-19h00,140414_lu_14h30-19h00,220914_lu_14h30-19h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "9",
-		"quartier_admin" : "Dervallieres Zola",
+		"quartier_admin" : "qdz",
 		"libelle" : "Musée bateau Maille-Brézé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7221,11 +7221,11 @@
 		"longitude" : "-1.57198669874414",
 		"horaires" : "De 09h00 à 13h00. 18 janvier, 19 avril, 27 septembre",
 		"plagesHoraires" : ",180114_sa_09h00-13h00,190414_sa_09h00-13h00,270914_sa_09h00-13h00",
-		"quartier" : "Dervallieres Zola",
+		"quartier" : "qdz",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "10",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Place des Garennes",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7234,11 +7234,11 @@
 		"longitude" : "-1.57775516968493",
 		"horaires" : "De 14h30 à 19h00. 15 janvier, 16 avril, 24 septembre",
 		"plagesHoraires" : ",150114_me_14h30-19h00,160414_me_14h30-19h00,240914_me_14h30-19h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "55",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Parking du gymnase Marsauderies",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7247,11 +7247,11 @@
 		"longitude" : "-1.5283399998071",
 		"horaires" : "De 14h30 à 19h00. 17 février, 16 juin, 17 novembre",
 		"plagesHoraires" : ",170214_lu_14h30-19h00,160614_lu_14h30-19h00,171114_lu_14h30-19h00",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "50",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "22 Boulevard Professeur René Auvigné",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7260,11 +7260,11 @@
 		"longitude" : "-1.51799911755854",
 		"horaires" : "De 14h30 à 19h00. 19 février, 18 juin, 19 novembre",
 		"plagesHoraires" : ",190214_me_14h30-19h00,180614_me_14h30-19h00,191114_me_14h30-19h00",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "51",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Place du Commandant Cousteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7273,11 +7273,11 @@
 		"longitude" : "-1.51309028430617",
 		"horaires" : "De 14h30 à 19h00. 20 février, 19 juin, 20 novembre",
 		"plagesHoraires" : ",200214_je_14h30-19h00,190614_je_14h30-19h00,201114_je_14h30-19h00",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "52",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Parking du Centre socio-culturel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7286,11 +7286,11 @@
 		"longitude" : "-1.51319004085688",
 		"horaires" : "De 09h00 à 13h00. 22 février, 21 juin, 22 novembre",
 		"plagesHoraires" : ",220214_sa_09h00-13h00,210614_sa_09h00-13h00,221114_sa_09h00-13h00",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "71",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Place de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7299,11 +7299,11 @@
 		"longitude" : "-1.55685571664186",
 		"horaires" : "De 14h30 à 19h00. 26 mars, 3 septembre, 10 décembre",
 		"plagesHoraires" : ",260314_me_14h30-19h00,030914_me_14h30-19h00,101214_me_14h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "66",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Devant l'église Saint-Pasquier",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7312,11 +7312,11 @@
 		"longitude" : "-1.56577469386022",
 		"horaires" : "De 14h30 à 19h00. 24 mars, 1 septembre, 8 décembre",
 		"plagesHoraires" : ",240314_lu_14h30-19h00,010914_lu_14h30-19h00,081214_lu_14h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "67",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "TRAM Saint-Mihiel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7325,11 +7325,11 @@
 		"longitude" : "-1.55383600362569",
 		"horaires" : "De 14h30 à 19h00. 27 mars, 4 septembre, 11 décembre",
 		"plagesHoraires" : ",270314_je_14h30-19h00,040914_je_14h30-19h00,111214_je_14h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "68",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Place Saint-Félix",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7338,7 +7338,7 @@
 		"longitude" : "-1.55588877771744",
 		"horaires" : "De 09h00 à 13h00. 29 mars, 6 septembre, 13 décembre",
 		"plagesHoraires" : ",290314_sa_09h00-13h00,060914_sa_09h00-13h00,131214_sa_09h00-13h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "81",
@@ -7394,7 +7394,7 @@
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "85",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Piscine Petite Amazonie, Parvis du péage sauvage",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7403,11 +7403,11 @@
 		"longitude" : "-1.53235917330598",
 		"horaires" : "De 14h30 à 19h00. 10 janvier, 11 avril, 19 septembre",
 		"plagesHoraires" : ",100114_ve_14h30-19h00,110414_ve_14h30-19h00,190914_ve_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "84",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Pôle commercial Malakoff",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7416,11 +7416,11 @@
 		"longitude" : "-1.52755394590332",
 		"horaires" : "De 14h30 à 19h00. 6 janvier, 7 avril, 15 septembre",
 		"plagesHoraires" : ",060114_lu_14h30-19h00,070414_lu_14h30-19h00,150914_lu_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "95",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "TRAM Santos Dumont",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7429,12 +7429,12 @@
 		"longitude" : "-1.5679125622189",
 		"horaires" : "De 14h30 à 19h00. 3 avril, 11 septembre, 18 décembre",
 		"plagesHoraires" : ",030414_je_14h30-19h00,110914_je_14h30-19h00,181214_je_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014",
 		"description_fr" : "consulter les horaires dans les piscines"
 	}, {
 		"code" : "91",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Ecole Françoise Dolto",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7443,11 +7443,11 @@
 		"longitude" : "-1.58006934317071",
 		"horaires" : "De 14h30 à 19h00. 31 mars, 8 septembre, 15 décembre",
 		"plagesHoraires" : ",310314_lu_14h30-19h00,080914_lu_14h30-19h00,151214_lu_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "92",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "84, route de la Chapelle",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7456,11 +7456,11 @@
 		"longitude" : "-1.57520707985812",
 		"horaires" : "De 14h30 à 19h00. 2 avril, 10 septembre, 17 décembre",
 		"plagesHoraires" : ",020414_me_14h30-19h00,100914_me_14h30-19h00,171214_me_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "104",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Ecole Jonelière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7469,11 +7469,11 @@
 		"longitude" : "-1.54648492508947",
 		"horaires" : "De 14h30 à 19h00. 10 février, 2 juin, 20 octobre",
 		"plagesHoraires" : ",100214_lu_14h30-19h00,020614_lu_14h30-19h00,201014_lu_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "101",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Mairie annexe Barberie/skate parc",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7482,11 +7482,11 @@
 		"longitude" : "-1.57269702373803",
 		"horaires" : "De 09h00 à 13h00. 15 février, 7 juin, 25 octobre",
 		"plagesHoraires" : ",150214_sa_09h00-13h00,070614_sa_09h00-13h00,251014_sa_09h00-13h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "102",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Rue de la Fantaisie/Rue Clément Marot",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7495,11 +7495,11 @@
 		"longitude" : "-1.5698775521509",
 		"horaires" : "De 14h30 à 19h00. 12 février, 4 juin, 22 octobre",
 		"plagesHoraires" : ",120214_me_14h30-19h00,040614_me_14h30-19h00,221014_me_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "103",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Parking Beauséjour",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7508,11 +7508,11 @@
 		"longitude" : "-1.58747180633725",
 		"horaires" : "De 14h30 à 19h00. 13 février, 5 juin, 23 octobre",
 		"plagesHoraires" : ",130214_je_14h30-19h00,050614_je_14h30-19h00,231014_je_14h30-19h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "93",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "TRAM Bourgeonnière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7521,11 +7521,11 @@
 		"longitude" : "-1.55972844633941",
 		"horaires" : "De 09h00 à 13h00. 5 avril, 13 septembre, 20 décembre",
 		"plagesHoraires" : ",050414_sa_09h00-13h00,130914_sa_09h00-13h00,201214_sa_09h00-13h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "121",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Intersection Rues Turpin et Gambetta",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7534,11 +7534,11 @@
 		"longitude" : "-1.54550678204049",
 		"horaires" : "De 14h30 à 19h00. 3 février, 19 mai, 13 octobre",
 		"plagesHoraires" : ",030214_lu_14h30-19h00,190514_lu_14h30-19h00,131014_lu_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "117",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Rue Pitre Chevalier/Allée Reine Margot",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7547,11 +7547,11 @@
 		"longitude" : "-1.55069595102173",
 		"horaires" : "De 14h30 à 19h00. 5 février, 21 mai, 15 octobre",
 		"plagesHoraires" : ",050214_me_14h30-19h00,210514_me_14h30-19h00,151014_me_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "118",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Boulevard Ernest Dalby -  parking Super U",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7560,11 +7560,11 @@
 		"longitude" : "-1.5304882397471",
 		"horaires" : "De 14h30 à 19h00. 6 février, 22 mai, 16 octobre",
 		"plagesHoraires" : ",060214_je_14h30-19h00,220514_je_14h30-19h00,161014_je_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "119",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Place des enfants nantais",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7573,11 +7573,11 @@
 		"longitude" : "-1.54288080522534",
 		"horaires" : "De 09h00 à 13h00. 8 février, 24 mai, 18 octobre",
 		"plagesHoraires" : ",080214_sa_09h00-13h00,240514_sa_09h00-13h00,181014_sa_09h00-13h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "109",
-		"quartier_admin" : "Nantes Sud",
+		"quartier_admin" : "qns",
 		"libelle" : "Pirmil - Gare routière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7586,12 +7586,12 @@
 		"longitude" : "-1.54172925456256",
 		"horaires" : "De 14h30 à 19h00. 8 janvier, 9 avril, 17 septembre",
 		"plagesHoraires" : ",080114_me_14h30-19h00,090414_me_14h30-19h00,170914_me_14h30-19h00",
-		"quartier" : "Nantes Sud",
+		"quartier" : "qns",
 		"src" : "OpenDataNantes 06/01/2014",
 		"description_fr" : "ouvert les lundis uniquement si férié"
 	}, {
 		"code" : "108",
-		"quartier_admin" : "Nantes Sud",
+		"quartier_admin" : "qns",
 		"libelle" : "Place du Muguet Nantais",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7600,11 +7600,11 @@
 		"longitude" : "-1.52879967553758",
 		"horaires" : "De 09h00 à 13h00. 11 janvier, 12 avril, 20 septembre",
 		"plagesHoraires" : ",110114_sa_09h00-13h00,120414_sa_09h00-13h00,200914_sa_09h00-13h00",
-		"quartier" : "Nantes Sud",
+		"quartier" : "qns",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "11",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Centre Socioculturel Bourderies",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7613,11 +7613,11 @@
 		"longitude" : "-1.59582342337165",
 		"horaires" : "De 14h30 à 19h00. 17 janvier, 18 avril, 26 septembre",
 		"plagesHoraires" : ",170114_ve_14h30-19h00,180414_ve_14h30-19h00,260914_ve_14h30-19h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "120",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Eglise Saint Augustin",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7626,11 +7626,11 @@
 		"longitude" : "-1.54504959881403",
 		"horaires" : "De 14h30 à 19h00. 7 février, 23 mai, 17 octobre",
 		"plagesHoraires" : ",070214_ve_14h30-19h00,230514_ve_14h30-19h00,171014_ve_14h30-19h00",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "53",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Place de la Bottière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7639,11 +7639,11 @@
 		"longitude" : "-1.51834930812782",
 		"horaires" : "De 14h30 à 19h00. 18 février, 17 juin, 18 novembre",
 		"plagesHoraires" : ",180214_ma_14h30-19h00,170614_ma_14h30-19h00,181114_ma_14h30-19h00",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "54",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Rue de la Planche au Gué (à côté du multi accueil)",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7652,11 +7652,11 @@
 		"longitude" : "-1.52190435780587",
 		"horaires" : "De 14h30 à 19h00. 21 février, 20 juin, 21 novembre",
 		"plagesHoraires" : ",210214_ve_14h30-19h00,200614_ve_14h30-19h00,211114_ve_14h30-19h00",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "69",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Angle Rue des Dervallières/Rue Octave Feuillet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7665,11 +7665,11 @@
 		"longitude" : "-1.57339371320505",
 		"horaires" : "De 14h30 à 19h00. 25 mars, 2 septembre, 9 décembre",
 		"plagesHoraires" : ",250314_ma_14h30-19h00,020914_ma_14h30-19h00,091214_ma_14h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "70",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Angle Boulevard Gaston Serpette/Boulevard des Anglais",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7678,11 +7678,11 @@
 		"longitude" : "-1.57551422401674",
 		"horaires" : "De 14h30 à 19h00. 28 mars, 5 septembre, 12 décembre",
 		"plagesHoraires" : ",280314_ve_14h30-19h00,050914_ve_14h30-19h00,121214_ve_14h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "94",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "19 rue du Paraguay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7691,11 +7691,11 @@
 		"longitude" : "-1.56626305344391",
 		"horaires" : "De 14h30 à 19h00. 4 avril, 12 septembre, 19 décembre",
 		"plagesHoraires" : ",040414_ve_14h30-19h00,120914_ve_14h30-19h00,191214_ve_14h30-19h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "43",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Angle Rue Emile Masson/Rue Fouré",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7704,11 +7704,11 @@
 		"longitude" : "-1.54651886318017",
 		"horaires" : "De 14h30 à 19h00. 20 janvier, 22 avril, 29 septembre",
 		"plagesHoraires" : ",200114_lu_14h30-19h00,220414_ma_14h30-19h00,290914_lu_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "35",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Piscine Léo Lagrange",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7717,11 +7717,11 @@
 		"longitude" : "-1.56107045739244",
 		"horaires" : "De 14h30 à 19h00. 22 janvier, 23 avril, 1 octobre",
 		"plagesHoraires" : ",220114_me_14h30-19h00,230414_me_14h30-19h00,011014_me_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "36",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Place du Bouffay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7730,11 +7730,11 @@
 		"longitude" : "-1.55328591629599",
 		"horaires" : "De 14h30 à 19h00. 23 janvier, 24 avril, 2 octobre",
 		"plagesHoraires" : ",230114_je_14h30-19h00,240414_je_14h30-19h00,021014_je_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "37",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Place de Bretagne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7743,11 +7743,11 @@
 		"longitude" : "-1.55911151379809",
 		"horaires" : "De 14h30 à 19h00. 24 janvier, 25 avril, 3 octobre",
 		"plagesHoraires" : ",240114_ve_14h30-19h00,250414_ve_14h30-19h00,031014_ve_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "38",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Place Dulcie September",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7756,12 +7756,12 @@
 		"longitude" : "-1.55444617450992",
 		"horaires" : "De 09h00 à 13h00. 25 janvier, 26 avril, 4 octobre",
 		"plagesHoraires" : ",250114_sa_09h00-13h00,260414_sa_09h00-13h00,041014_sa_09h00-13h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014",
 		"description_fr" : "ouvert les lundis uniquement si férié"
 	}, {
 		"code" : "39",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Esplanade des Victimes des Bombardements",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7770,11 +7770,11 @@
 		"longitude" : "-1.55414986696141",
 		"horaires" : "De 14h30 à 19h00. 27 janvier, 12 mai, 6 octobre",
 		"plagesHoraires" : ",270114_lu_14h30-19h00,120514_lu_14h30-19h00,061014_lu_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "40",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Angle Rue Huchette/Rue Gigant",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7783,11 +7783,11 @@
 		"longitude" : "-1.56914562067294",
 		"horaires" : "De 14h30 à 19h00. 29 janvier, 14 mai, 8 octobre",
 		"plagesHoraires" : ",290114_me_14h30-19h00,140514_me_14h30-19h00,081014_me_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "41",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Cours Saint Pierre",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7796,11 +7796,11 @@
 		"longitude" : "-1.54955272355555",
 		"horaires" : "De 14h30 à 19h00. 30 janvier, 15 mai, 9 octobre",
 		"plagesHoraires" : ",300114_je_14h30-19h00,150514_je_14h30-19h00,091014_je_14h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "42",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Cours Cambronne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous Trisac",
@@ -7809,11 +7809,11 @@
 		"longitude" : "-1.56246151143316",
 		"horaires" : "De 09h00 à 13h00. 1 février, 17 mai, 11 octobre",
 		"plagesHoraires" : ",010214_sa_09h00-13h00,170514_sa_09h00-13h00,111014_sa_09h00-13h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "106",
-		"quartier_admin" : "Nantes Sud",
+		"quartier_admin" : "qns",
 		"libelle" : "Nantes Habitat Agence Goudy",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7821,11 +7821,11 @@
 		"latitude" : "47.1954039867101",
 		"longitude" : "-1.54125589789751",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Nantes Sud",
+		"quartier" : "qns",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "90",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Pôle de proximité Erdre et Cens",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7833,11 +7833,11 @@
 		"latitude" : "47.2640133773154",
 		"longitude" : "-1.57244247186719",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "87",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Mairie Annexe Nantes Nord",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7845,11 +7845,11 @@
 		"latitude" : "47.2567767936233",
 		"longitude" : "-1.57597244158787",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "100",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Mairie Annexe Barberie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7857,11 +7857,11 @@
 		"latitude" : "47.2408839755244",
 		"longitude" : "-1.57215838506204",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "96",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Café tabac Le Sulky",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7869,11 +7869,11 @@
 		"latitude" : "47.2486249344171",
 		"longitude" : "-1.56854151413132",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_du_10h00-17h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "49",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Mairie Annexe Bottière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7881,11 +7881,11 @@
 		"latitude" : "47.2399228283493",
 		"longitude" : "-1.51902266594607",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45,0101-3112_lu+ma+me+je+ve_14h00-17h30",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "45",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Mairie Annexe Ranzay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7893,22 +7893,22 @@
 		"latitude" : "47.2537942509792",
 		"longitude" : "-1.53042232617088",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_13h15-17h30",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "46",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
 		"adresseTemp" : "26 Boulevard Professeur René Auvigné 44300 NANTES",
 		"latitude" : "47.2550070477686",
 		"longitude" : "-1.51770954842734",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "65",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Café tabac le Bel air",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7916,11 +7916,11 @@
 		"latitude" : "47.2249905129991",
 		"longitude" : "-1.55923983400867",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h45-19h30,0101-3112_sa_08h00-12h30",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "58",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7928,11 +7928,11 @@
 		"latitude" : "47.2232676975986",
 		"longitude" : "-1.56349947899436",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "59",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Maison de l'Environnement Ecopole",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7940,22 +7940,22 @@
 		"latitude" : "47.2260056758354",
 		"longitude" : "-1.55606908795771",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_13h30-18h00,0101-3112_me_09h00-12h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "116",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Pôle Municipal Strasbourg, Manufacture des tabacs",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
 		"latitude" : "47.219327316701",
 		"longitude" : "-1.53597100189595",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "110",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Casino",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7963,11 +7963,11 @@
 		"latitude" : "47.2269310946374",
 		"longitude" : "-1.54266531264632",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00,0101-3112_di_09h00-12h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "7",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Pôle de proximité Nantes Ouest",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7975,11 +7975,11 @@
 		"latitude" : "47.2063988575343",
 		"longitude" : "-1.58837747268542",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30,0101-3112_lu+ma+me+je+ve_13h30-17h30",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "1",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Café la butte",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -7987,12 +7987,12 @@
 		"latitude" : "47.2021494514881",
 		"longitude" : "-1.57888269715684",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve_07h30-20h00,0101-3112_sa_09h00-20h00,0101-3112_di_09h00-14h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014",
 		"description_fr" : "Juillet/Août fermeture entre 12h30 et 14h30"
 	}, {
 		"code" : "16",
-		"quartier_admin" : "Dervallieres Zola",
+		"quartier_admin" : "qdz",
 		"libelle" : "Mairie Annexe Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8000,11 +8000,11 @@
 		"latitude" : "47.2233810693424",
 		"longitude" : "-1.59718468248522",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
-		"quartier" : "Dervallieres Zola",
+		"quartier" : "qdz",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "83",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Mairie Annexe Malakoff",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8012,7 +8012,7 @@
 		"latitude" : "47.2149316881317",
 		"longitude" : "-1.52680253614391",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "77",
@@ -8028,7 +8028,7 @@
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "97",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8036,11 +8036,11 @@
 		"latitude" : "47.2388742571698",
 		"longitude" : "-1.58500254760103",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h30-21h00,0101-3112_di_08h30-13h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "60",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Carrefour Market",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8048,11 +8048,11 @@
 		"latitude" : "47.229628182866",
 		"longitude" : "-1.57279493776477",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "111",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Super U",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8060,11 +8060,11 @@
 		"latitude" : "47.2237968372807",
 		"longitude" : "-1.53051590692239",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "82",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Nantes Habitat Agence Angleterre",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8072,7 +8072,7 @@
 		"latitude" : "47.2146499036017",
 		"longitude" : "-1.52831328454699",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "74",
@@ -8100,7 +8100,7 @@
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "13",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8108,11 +8108,11 @@
 		"latitude" : "47.2282171425353",
 		"longitude" : "-1.58675128841355",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "14",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Nantes Habitat Agence Feyder",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8120,11 +8120,11 @@
 		"latitude" : "47.2300901812523",
 		"longitude" : "-1.58565548755988",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "15",
-		"quartier_admin" : "Dervallieres Zola",
+		"quartier_admin" : "qdz",
 		"libelle" : "Nantes Habitat Agence Watteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8132,11 +8132,11 @@
 		"latitude" : "47.222574134576",
 		"longitude" : "-1.60102274099936",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Dervallieres Zola",
+		"quartier" : "qdz",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "2",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Epicerie Aux 4 saisons",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8144,11 +8144,11 @@
 		"latitude" : "47.2083771057784",
 		"longitude" : "-1.61118585622081",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00+15h00-19h30",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "3",
-		"quartier_admin" : "Dervallieres Zola",
+		"quartier_admin" : "qdz",
 		"libelle" : "Bar Tabac l'Hebdo",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8156,11 +8156,11 @@
 		"latitude" : "47.2081780689394",
 		"longitude" : "-1.57036210485663",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_sa+di_08h00-20h00",
-		"quartier" : "Dervallieres Zola",
+		"quartier" : "qdz",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "73",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Marché de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique Trisac",
@@ -8168,11 +8168,11 @@
 		"latitude" : "47.2209513930215",
 		"longitude" : "-1.55717213803952",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "56",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Leclerc Paridis",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin Trisac",
@@ -8180,11 +8180,11 @@
 		"latitude" : "47.2494038393733",
 		"longitude" : "-1.5158327811377",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h45",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "44",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Mairie annexe Chantenay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique Trisac",
@@ -8192,11 +8192,11 @@
 		"latitude" : "47.2067921189674",
 		"longitude" : "-1.58852593613262",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00,0101-3112_sa_09h00-12h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "57",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Piscine Jules Verne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique Trisac",
@@ -8204,11 +8204,11 @@
 		"latitude" : "47.2482207763996",
 		"longitude" : "-1.51760995390533",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_01h00-23h00",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "123",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Super U Dalby",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin Trisac",
@@ -8216,11 +8216,11 @@
 		"latitude" : "47.2237968372807",
 		"longitude" : "-1.53051590692239",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "61",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Association ADDA",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8228,11 +8228,11 @@
 		"latitude" : "47.2292134745759",
 		"longitude" : "-1.55464217210438",
 		"plagesHoraires" : "0101-3112_je+sa_11h00-14h00,0101-3112_ma+ve_16h30-19h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "4",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Nantes Habitat Agence Jamet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8240,11 +8240,11 @@
 		"latitude" : "47.2058151486922",
 		"longitude" : "-1.60553954159112",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "62",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8252,11 +8252,11 @@
 		"latitude" : "47.2302350847296",
 		"longitude" : "-1.55396811379212",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "88",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Boulangerie La p'tite cantine",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8264,11 +8264,11 @@
 		"latitude" : "47.2614647518517",
 		"longitude" : "-1.58198910560769",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-19h30",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "89",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Boulangerie Le bon la croute la mie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8276,11 +8276,11 @@
 		"latitude" : "47.2546569897184",
 		"longitude" : "-1.56544154996568",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h00-14h00+16h00-20h00,0101-3112_sa_07h00-14h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "98",
-		"quartier_admin" : "Nantes Nord",
+		"quartier_admin" : "qnn",
 		"libelle" : "Velo Campus",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8288,7 +8288,7 @@
 		"latitude" : "47.2431824722891",
 		"longitude" : "-1.55410976861141",
 		"plagesHoraires" : "0101-3112_lu+me_13h30-20h00,0101-3112_ma+je+sa_14h00-18h00",
-		"quartier" : "Nantes Nord",
+		"quartier" : "qnn",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "76",
@@ -8304,7 +8304,7 @@
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "112",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Shopi",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8312,11 +8312,11 @@
 		"latitude" : "47.2350815675807",
 		"longitude" : "-1.54727264614668",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "113",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8324,11 +8324,11 @@
 		"latitude" : "47.2240146408693",
 		"longitude" : "-1.55076359662781",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-20h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "114",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Boulangerie Le blé d'or",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8336,11 +8336,11 @@
 		"latitude" : "47.2214550600641",
 		"longitude" : "-1.53597049016502",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-14h00+15h00-20h00,0101-3112_sa_07h15-13h00+15h30-19h30",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "124",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Pôle de Proximité Erdre et Loire",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8348,11 +8348,11 @@
 		"latitude" : "47.2754117135983",
 		"longitude" : "-1.51029315941679",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "86",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Piscine Petite Amazonie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique Trisac",
@@ -8360,11 +8360,11 @@
 		"latitude" : "47.2165885207839",
 		"longitude" : "-1.53188966213418",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_01h00-23h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "72",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "Carrefour Market",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin Trisac",
@@ -8372,11 +8372,11 @@
 		"latitude" : "47.2297310193542",
 		"longitude" : "-1.5728357795022",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "122",
-		"quartier_admin" : "Malakoff Saint Donatien",
+		"quartier_admin" : "qmsd",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin Trisac",
@@ -8384,11 +8384,11 @@
 		"latitude" : "47.2241361571251",
 		"longitude" : "-1.55092389659956",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-20h15,0101-3112_sa_09h00-20h00",
-		"quartier" : "Malakoff Saint Donatien",
+		"quartier" : "qmsd",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "5",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8396,11 +8396,11 @@
 		"latitude" : "47.2063482878462",
 		"longitude" : "-1.59703381329224",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h00+16h00-19h00,0101-3112_di_07h00-13h00",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "6",
-		"quartier_admin" : "Bellevue Chantenay Sainte Anne",
+		"quartier_admin" : "Bellevue qbcsa Sainte Anne",
 		"libelle" : "Mairie Annexe Bellevue",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8408,11 +8408,11 @@
 		"latitude" : "47.2042621533403",
 		"longitude" : "-1.60538731999842",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
-		"quartier" : "Bellevue Chantenay Sainte Anne",
+		"quartier" : "Bellevue qbcsa Sainte Anne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "63",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Aux Délices de Procé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8420,11 +8420,11 @@
 		"latitude" : "47.2245128751455",
 		"longitude" : "-1.57678522108171",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve+sa_07h00-20h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "64",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Le Monselet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8432,11 +8432,11 @@
 		"latitude" : "47.2209463152634",
 		"longitude" : "-1.57025374047389",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h30,0101-3112_sa_08h00-13h00+14h30-18h30",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "99",
-		"quartier_admin" : "Breil Barberie",
+		"quartier_admin" : "hbb",
 		"libelle" : "La Cabane à Pain",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8444,11 +8444,11 @@
 		"latitude" : "47.2394706174479",
 		"longitude" : "-1.57929614475175",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h30",
-		"quartier" : "Breil Barberie",
+		"quartier" : "hbb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "47",
-		"quartier_admin" : "Doulon Bottiere",
+		"quartier_admin" : "qdb",
 		"libelle" : "Mairie Annexe Doulon",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8456,11 +8456,11 @@
 		"latitude" : "47.2271572218589",
 		"longitude" : "-1.51875867919863",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
-		"quartier" : "Doulon Bottiere",
+		"quartier" : "qdb",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "48",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Intermarché Eraudière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8468,11 +8468,11 @@
 		"latitude" : "47.2448582942442",
 		"longitude" : "-1.53349934743558",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "115",
-		"quartier_admin" : "Nantes Erdre",
+		"quartier_admin" : "qne",
 		"libelle" : "Boulangerie Rainard",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8480,11 +8480,11 @@
 		"latitude" : "47.2349123885969",
 		"longitude" : "-1.54129270631707",
 		"plagesHoraires" : "0101-3112_lu+je+ve_06h45-13h30+15h00-19h30",
-		"quartier" : "Nantes Erdre",
+		"quartier" : "qne",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "107",
-		"quartier_admin" : "Nantes Sud",
+		"quartier_admin" : "qns",
 		"libelle" : "Super U St Jacques",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8492,11 +8492,11 @@
 		"latitude" : "47.1938030862539",
 		"longitude" : "-1.53073825436247",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-19h30,0101-3112_di_09h00-12h30",
-		"quartier" : "Nantes Sud",
+		"quartier" : "qns",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "105",
-		"quartier_admin" : "Nantes Sud",
+		"quartier_admin" : "qns",
 		"libelle" : "Mairie Annexe Nantes Sud",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8504,11 +8504,11 @@
 		"latitude" : "47.1940947349268",
 		"longitude" : "-1.53161011139837",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
-		"quartier" : "Nantes Sud",
+		"quartier" : "qns",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "34",
-		"quartier_admin" : "Hauts Paves Saint-Felix",
+		"quartier_admin" : "qhpsf",
 		"libelle" : "Le Fournil d'Aristide",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8516,11 +8516,11 @@
 		"latitude" : "47.2183146463099",
 		"longitude" : "-1.56182083830304",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-14h00+16h00-20h00,0101-3112_di_08h00-13h00",
-		"quartier" : "Hauts Paves Saint-Felix",
+		"quartier" : "qhpsf",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "20",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Mairie Centrale",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8528,11 +8528,11 @@
 		"latitude" : "47.2187408227225",
 		"longitude" : "-1.5536958967268",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "21",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Nantes Métropole, bâtiment Valmy",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8540,11 +8540,11 @@
 		"latitude" : "47.2143931925163",
 		"longitude" : "-1.54586973904732",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h45-12h00+13h30-17h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "22",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8552,11 +8552,11 @@
 		"latitude" : "47.2149613500515",
 		"longitude" : "-1.56504320917249",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h30-13h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "23",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8564,11 +8564,11 @@
 		"latitude" : "47.2141080267953",
 		"longitude" : "-1.54563551728059",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "24",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Casino",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8576,11 +8576,11 @@
 		"latitude" : "47.2107539109625",
 		"longitude" : "-1.55128301666213",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "25",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Tabac Presse",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8588,11 +8588,11 @@
 		"latitude" : "47.2126326351651",
 		"longitude" : "-1.55713180563729",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-20h00,0101-3112_sa_09h00-20h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "26",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Tabac Presse Le Voltaire",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8600,11 +8600,11 @@
 		"latitude" : "47.2115072896156",
 		"longitude" : "-1.5669418362997",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h30-19h30,0101-3112_sa_07h30-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "27",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Glup's",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8612,11 +8612,11 @@
 		"latitude" : "47.2137455319448",
 		"longitude" : "-1.55888773622567",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_11h00-19h30,0101-3112_sa_10h00-19h30,0101-3112_di_15h00-19h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "28",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Du Vert en Ville",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8624,11 +8624,11 @@
 		"latitude" : "47.2142601633664",
 		"longitude" : "-1.56527226639288",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {
 		"code" : "29",
-		"quartier_admin" : "Centre Ville",
+		"quartier_admin" : "qcv",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Relais Trisac",
@@ -8636,7 +8636,7 @@
 		"latitude" : "47.217194173303",
 		"longitude" : "-1.55668673593576",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-19h30",
-		"quartier" : "Centre Ville",
+		"quartier" : "qcv",
 		"src" : "OpenDataNantes 06/01/2014"
 	}, {}]
 }

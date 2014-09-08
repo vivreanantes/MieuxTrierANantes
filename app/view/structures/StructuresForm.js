@@ -49,6 +49,7 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 									}*/]
 						}, {
 							xtype : 'selectfield',
+							usePicker: false,
 							label : 'Ville',
 							labelWidth : '80px',
 							id : 'structuresFormSelectQuartier'

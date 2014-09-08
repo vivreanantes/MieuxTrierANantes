@@ -35,7 +35,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 			xtype : 'button',
 			text : 'Envoyez',
 			iu : 'confirm',
-			handler : function() {
+			handler : function(button, e) {
 				this.up("commentsForm_xtype").submit({
 					failure : function(form, result) {
 						if (result.failure != null) {
@@ -48,6 +48,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 					success : function(form, result) {
 						Ext.Msg.alert("Envoi message",
 								"Votre message a bien été envoyé.");
+					 	button.up('.window').close();
 
 					}
 				});

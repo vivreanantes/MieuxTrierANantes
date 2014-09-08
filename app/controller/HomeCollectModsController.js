@@ -88,8 +88,8 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	getHomeCollectModsForHash : function(hash) {
 	
 		var arItemsToShow = new Array();
-		var input = _hackHomeCollectModsDatas;
-		var codes  = _hackHomeCollectModsDatas[hash];
+		// var input = _hashHomeCollectModsDatas;
+		var codes  = _hashHomeCollectModsDatas[hash];
 		if (codes!=null) {
 		// for (var type in input) {
 			// type = "aa", input[type][0] = "3793
