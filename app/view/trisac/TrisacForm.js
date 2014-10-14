@@ -7,15 +7,34 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacForm', {
 			xtype : 'TrisacForm_xtype',
 			config : {
 				items : [{
-							xtype : 'textfield',
-							name : 'name',
-							label : 'Nom ',
-							id : 'trisacFormText'
-						}, {
 							xtype : 'selectfield',
 							usePicker : false,
 							label : 'Quartier',
-							id : 'trisacFormSelect'
+							labelWidth : '80px',
+							id : 'trisacFormSelect',
+							placeHolder : "Ex : Mangin"
+						},
+						// la zone de saisie avec la loupe
+						{
+							layout : {
+								type : 'hbox',
+								align : 'strech',
+								height : '35px'
+							},
+							items : [{
+										xtype : 'textfield',
+										name : 'name',
+										label : 'Nom ',
+										id : 'trisacFormText',
+										labelWidth : '80px',
+										itemId : 'trisacFormTextId'
+									}, {
+										xtype : 'button',
+										id : 'trisacFormButton',
+										// icône en forme de loupes
+										iconCls : 'search',
+										iconMask : true
+									}]
 						}]
 			}
 

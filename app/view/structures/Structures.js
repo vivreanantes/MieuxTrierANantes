@@ -4,7 +4,7 @@
 Ext.define('MieuxTrierANantes.view.structures.Structures', {
 			extend : 'Ext.navigation.View',
 			xtype : 'structuresview_xtype',
-			// id : 'structuresView_xtype',
+			id : 'structuresview_id',
 			config : {
 				autoDestroy : false,
 				iconCls : 'structureclass',

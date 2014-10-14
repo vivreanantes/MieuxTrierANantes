@@ -50,8 +50,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			},
 
 			garbagesFormText : {
-// keyup : 'onGarbageStoreFilter',
-			// change : 'onGarbageStoreFilter',
+				keyup : 'onKeyUpGarbagesFormText'
+				// sur le départ de la zône
+				// change : 'onTapGarbagesFormButton'
 			// clearicontap : 'onGarbageStoreFilter'
 			},
 			garbagesFormSelect : {
@@ -104,6 +105,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				back : 'onPushBackButton6'
 			}
 
+		}
+	},
+	
+	onKeyUpGarbagesFormText : function(textbox, event) {
+		if (event.browserEvent.keyCode == 13) {
+			this.onTapGarbagesFormButton();
 		}
 	},
 

@@ -48,7 +48,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 					success : function(form, result) {
 						Ext.Msg.alert("Envoi message",
 								"Votre message a bien été envoyé.");
-					 	button.up('.window').close();
+					  	this.hide();
 
 					}
 				});

@@ -67,6 +67,24 @@ function _translateWithUpperFirstLetter (result) {
 
 
 /**
+ * Retire les accents d'une chaîne de caractère et met en minuscule
+ */
+function _utilRetireAccentEtMinuscule (result) {
+		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
+		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
+		result = result.replace(/[Çç]/g, "c");
+		result = result.replace(/[Ð]/g, "d");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
+		result = result.replace(/[Ññ]/g, "n");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[Šš]/g, "s");
+		result = result.replace(/[Ÿÿý]/g, "y");
+		result = result.replace(/[Žž]/g, "z");
+		result = result.toLowerCase();
+		return result;
+}
+/**
  * Retire les accents d'une chaîne de caractère
  */
 function _utilRetireAccent (result) {
@@ -118,4 +136,34 @@ function _decoupeAvecTaille(stChaine, iTailleMax) {
 		}
 	}
 	return result;
+}
+
+/**
+ * Renvoie true si on utilise un appareil mobile
+ */
+function _detecteMobile() { 
+ if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+
+/**
+ * Renvoie true si on utilise l'écran mesure moins de 800 * 600
+ */
+function _detectePetiteTaille() {
+   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
 }

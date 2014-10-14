@@ -1,4 +1,7 @@
 Ext.define('MieuxTrierANantes.view.Main', {
+	
+	// http://try.sencha.com/touch/2.2.0/
+	
 	extend : 'Ext.tab.Panel',
 	xtype : 'main',
 	requires : ['Ext.TitleBar', 'Ext.Video',
@@ -37,9 +40,9 @@ Ext.define('MieuxTrierANantes.view.Main', {
 		{
 			title : 'Carte',
 			iconCls : 'maps',
-			xtype : 'vanmaposm'
+			xtype : 'maposm_xtype'
 		}, {
-			title : 'Info',
+			title : 'Fiches',
 			// iconCls : 'info', // icone en forme de 'i'
 			iconCls : 'livreclass', // icône en forme de livre
 			xtype : 'informations_xtype'

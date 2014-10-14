@@ -53,7 +53,7 @@ Ext.application({
 			// Carte
         	'geo.MapOSM',
 			'geo.Map',
-			'geo.Toast',
+			'geo.Toast_old',
 			// Modes de collecte
 			'collectMod.CollectMods',
 			'collectMod.CollectModsButtonsPanel',

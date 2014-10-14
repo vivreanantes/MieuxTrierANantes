@@ -7,14 +7,14 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 			xtype : 'homecollectmodsform_xtype',
 			config : {
 				items : [ {
-							html : 'Retrouver les jours et mode de collecte à domicile.<br/>Nantes : recherche par rue. Hors Nantes : par nom de ville. <i>Vous devez saisir 2 caractères minimum</i>.',
+							html : 'Recherche par rue (Nantes) ou par nom de ville (hors Nantes). <i>Saisissez 2 caractères min.</i>',
 							height : '70px'
 						},
 							{
 							layout : {
 								type : 'hbox',
 								align : 'strech',
-								height : '50px'
+								height : '35px'
 							},
 							items : [{
 										xtype : 'textfield',
@@ -24,11 +24,12 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 										width : '285px',
 										id : 'homeCollectModsFormText',
 										placeHolder : "Ex : royal"
-									}, {
+									},
+									{
 										xtype : 'button',
 										id : 'homeCollectModsFormButton',
-										iconCls : 'search', // icône en forme de
-															// loupes
+										// icône en forme de loupes
+										iconCls : 'search', 
 										iconMask : true
 									}]
 						}]

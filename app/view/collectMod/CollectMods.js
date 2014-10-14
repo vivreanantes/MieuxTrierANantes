@@ -6,6 +6,7 @@
 Ext.define('MieuxTrierANantes.view.collectMod.CollectMods', {
 			extend : 'Ext.navigation.View',
 			xtype : 'collectMods_xtype',
+			id : 'collectMods_id',
 			config : {
 				autoDestroy : false,
 				iconCls : 'trash', // icône en forme de poubelle

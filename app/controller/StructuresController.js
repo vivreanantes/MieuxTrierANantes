@@ -13,7 +13,8 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			structuresFormSelectQuartier : "#structuresFormSelectQuartier",
 			structureFormText : "#structureFormText",
 			structuresFormSelectType : "#structuresFormSelectType",
-			structuresButtons : "#structuresButtons"
+			structuresButtons : "#structuresButtons",
+			structureFormButton : "#structureFormButton"
 
 		},
 		control : {
@@ -32,20 +33,18 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				change : "onStructuresStoreFilter",
 				initialize : "setOptionsQuartiers",
 				show : "selectFirstOptionsQuartier"
-			}
-
-			,
+			},
+			
 			structuresFormSelectType : {
 				change : "onStructuresStoreFilter"
-			}
-
-			,
+			},
+			
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
 			},
 			
 			structureFormText : {
-				keyup : 'onStructuresStoreFilter'
+				keyup : 'onKeyUpStructureFormText'
 			},
 
 			// fonctionne comme une CSS selector
@@ -53,7 +52,17 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			'structuresDetails_xtype button' : {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton11'
+			},
+			
+			structureFormButton : {
+				tap : 'onStructuresStoreFilter'
 			}
+		}
+	},
+		
+	onKeyUpStructureFormText : function(textbox, event) {
+		if (event.browserEvent.keyCode == 13) {
+			this.filterElements();
 		}
 	},
 

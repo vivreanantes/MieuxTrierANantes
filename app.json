@@ -40,7 +40,7 @@
      */
     "js": [
         {
-            "path": "touch/sencha-touch-all.js",
+            "path": "touch/sencha-touch.js",
             "x-bootstrap": true
         },
         {
@@ -79,7 +79,7 @@
 			"path" : "resources/css/mieuxtrieranantes.css"
 		},
 		{
-			"path" : "resources/css/leaflet.css"
+			"path" : "resources/lib/leaflet-0.7.3/leaflet.css"
 		}
     ],
 

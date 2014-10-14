@@ -11,7 +11,8 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			trisacDetail : "TrisacDetails_xtype",
 			trisacForm : "TrisacForm_xtype",
 			trisacFormText : "#trisacFormText",
-			trisacFormSelect : "#trisacFormSelect"
+			trisacFormSelect : "#trisacFormSelect",
+			trisacFormButton : '#trisacFormButton'
 		},
 		control : {
 
@@ -30,7 +31,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			},
 
 			trisacFormText : {
-				keyup : "onTrisacStoreFilter",
+				keyup : 'onKeyUpTrisacFormText',
 				change : "onTrisacStoreFilter",
 				clearicontap : "onTrisacStoreFilter"
 			},
@@ -45,7 +46,17 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			'TrisacDetails_xtype button' : {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton12'
+			},
+			
+			trisacFormButton : {
+				tap : 'onTrisacStoreFilter'
 			}
+		}
+	},
+	
+	onKeyUpTrisacFormText  : function(textbox, event) {
+		if (event.browserEvent.keyCode == 13) {
+			this.filterElements();
 		}
 	},
 

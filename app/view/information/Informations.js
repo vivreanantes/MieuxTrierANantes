@@ -6,6 +6,7 @@
 Ext.define('MieuxTrierANantes.view.information.Informations', {
 			extend : 'Ext.NavigationView',
 			xtype : 'informations_xtype',
+			id : 'informations_id',
 			config : {
 				// Titre dans barre de bouton principale
 				title : 'Fiches',

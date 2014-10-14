@@ -9,7 +9,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectMods', {
 
 				title : 'A domicile',
 				items : [{
-							xtype : 'HomeCollectModsContainer'
+							xtype : 'homecollectmodscontainer_xtype'
 						}],
 				defaultBackButtonText : "Retour"
 			}

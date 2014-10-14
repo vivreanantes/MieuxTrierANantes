@@ -16,7 +16,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "MieuxTrierANantes": "app"
+  "MieuxTrierANantes": "app",
+  "MieuxTrierANantes.view.geo.Map": "app/view/geo/Map_old.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -690,7 +691,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.garbages.UsualCategoriesButtonsPanel": [],
   "MieuxTrierANantes.view.geo.Map": [],
   "MieuxTrierANantes.view.geo.MapOSM": [],
-  "MieuxTrierANantes.view.geo.Toast": [],
+  "MieuxTrierANantes.view.geo.Toast_old": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails": [],
@@ -1514,16 +1515,16 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.vanmap"
   ],
   "MieuxTrierANantes.view.geo.MapOSM": [
-    "widget.vanmaposm"
+    "widget.maposm_xtype"
   ],
-  "MieuxTrierANantes.view.geo.Toast": [
+  "MieuxTrierANantes.view.geo.Toast_old": [
     "widget.vantoast"
   ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [
     "widget.homecollectmods_xtype"
   ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer": [
-    "widget.HomeCollectModsContainer"
+    "widget.homecollectmodscontainer_xtype"
   ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails": [
     "widget.homecollectmodsdetails_xtype"

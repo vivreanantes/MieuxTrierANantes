@@ -4,8 +4,7 @@
  */
 Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer', {
 			extend : 'Ext.Container',
-			xtype : 'HomeCollectModsContainer',
-
+			xtype : 'homecollectmodscontainer_xtype',
 			config : {
 				layout : 'vbox',
 				title : "Collecte à domicile",
@@ -13,15 +12,10 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer', {
 							xtype : 'homecollectmodsform_xtype',
 							height : 120,
 							scrollable : false
-						},
-
-						{
+						}, {
 							xtype : 'homecollectmodslist_xtype',
 							scrollable : 'vertical',
 							flex : 1
-						}
-
-				]
+						}]
 			}
-
 		});
