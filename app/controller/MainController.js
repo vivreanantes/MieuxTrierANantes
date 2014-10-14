@@ -1,10 +1,11 @@
-Ext.define('MieuxTrierANantes.controller.Main', {
+Ext.define('MieuxTrierANantes.controller.MainController', {
     extend: 'Ext.app.Controller',
     
     config: {
         stores: 'MieuxTrierANantes.store.Settings',
         refs: {
-            mainView: 'main',
+            mainView: 'main_xtype',
+            mainTitleBar : '#main_titlebar',
             settingsView: 'settingsview',
          
             btnSettings: 'main button[action=settings]',
@@ -31,7 +32,11 @@ Ext.define('MieuxTrierANantes.controller.Main', {
             },
             'mainView': {
                 activeitemchange: 'onCarouselChange'
-            }
+            },
+            'mainTitleBar': {
+                init: 'onInitMainTitleBar'
+            } 
+            
         }
     },
     /*
@@ -123,5 +128,14 @@ Ext.define('MieuxTrierANantes.controller.Main', {
     launch: function(app) {
         this.getMainView().setActiveItem(0);
         // MieuxTrierANantes.utils.Functions.loadData();
+    },
+    
+    onInitMainTitleBar : function() {
+    	// TODO_CRN
+    	var estMobile = _detecteMobile();
+    	if (estMobile==true) {
+    		this.getMainTitleBar();
+    	}
+		alert("launch" + estMobile);
     }
 });

@@ -3,7 +3,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 	// http://try.sencha.com/touch/2.2.0/
 	
 	extend : 'Ext.tab.Panel',
-	xtype : 'main',
+	xtype : 'main_xtype',
 	requires : ['Ext.TitleBar', 'Ext.Video',
 			'MieuxTrierANantes.view.SettingsView'],
 	config : {
@@ -11,6 +11,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 		items : [
 			{
 			xtype : 'titlebar',
+			id : 'main_titlebar',
 			cls : 'title',
 			docked : 'top',
 			items : [{

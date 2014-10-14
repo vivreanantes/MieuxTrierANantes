@@ -8,42 +8,26 @@
     in other places (such as Controllers). If Sencha Cmd cannot merge your
     changes and its generated code, it will produce a "merge conflict" that you
     will need to resolve manually.
-*/
+ */
 
 Ext.application({
-    name: 'MieuxTrierANantes',
+	name : 'MieuxTrierANantes',
 
-    requires: [
-        'Ext.MessageBox',
-        'MieuxTrierANantes.utils.Functions'
-    ],
+	requires : ['Ext.MessageBox', 'MieuxTrierANantes.utils.Functions'],
 
-    controllers: [
-             'Main',
-            'GeoController',
-            'InformationsController',
-            'StructuresController',
-            'GarbagesController',
-            'HomeCollectModsController',
-            'TrisacsController',
-            'CollectModsController'
-    ],
-    
-	models : [
-		'HomeCollectModModel',
-		'StructureModel'
-	],
-			
-	stores : [
-		'HomeCollectModStore', 
-		'TrisacStore',
-		'StructureStore',
-		'StructureGeoStore'
-	],
+	controllers : ['MainController', 'GeoController', 'InformationsController',
+			'StructuresController', 'GarbagesController',
+			'HomeCollectModsController', 'TrisacsController',
+			'CollectModsController'],
 
-    views: [
-         'Main',
-			// D�chets
+	models : ['HomeCollectModModel', 'StructureModel'],
+
+	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
+			'StructureGeoStore'],
+
+	views : [
+			'Main',
+			// Dechets
 			'garbages.Garbages',
 			'garbages.GarbageButtonsPanel',
 			'garbages.UsualCategoriesButtonsPanel',
@@ -51,9 +35,9 @@ Ext.application({
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesForm',
 			// Carte
-        	'geo.MapOSM',
-			'geo.Map',
-			'geo.Toast_old',
+			'geo.MapOSM',
+			// 'geo.Map',
+			// 'geo.Toast_old',
 			// Modes de collecte
 			'collectMod.CollectMods',
 			'collectMod.CollectModsButtonsPanel',
@@ -67,7 +51,7 @@ Ext.application({
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/
-			// Mode de collecte � domicile
+			// Mode de collecte a domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
 			'homecollectmods.HomeCollectModsDetails',
@@ -83,54 +67,75 @@ Ext.application({
 			// Calendrier
 			// 'calendar.Calendar',
 			// 'calendar.Events',
-			'structures.Structures',
-			'structures.StructuresContainer',
-			'structures.StructuresDetails',
-			'structures.StructuresForm',
+			'structures.Structures', 'structures.StructuresContainer',
+			'structures.StructuresDetails', 'structures.StructuresForm',
 			'structures.StructuresList',
 			// Trisac
-			'trisac.Trisacs',
-			'trisac.TrisacContainer',
-			'trisac.TrisacDetails',
-			'trisac.TrisacForm',
-			'trisac.TrisacList'
-    ],
+			'trisac.Trisacs', 'trisac.TrisacContainer', 'trisac.TrisacDetails',
+			'trisac.TrisacForm', 'trisac.TrisacList'],
 
-    icon: {
-        '57': 'resources/icons/Icon.png',
-        '72': 'resources/icons/Icon~ipad.png',
-        '114': 'resources/icons/Icon@2x.png',
-        '144': 'resources/icons/Icon~ipad@2x.png'
-    },
+	icon : {
+		'57' : 'resources/icons/Icon.png',
+		'72' : 'resources/icons/Icon~ipad.png',
+		'114' : 'resources/icons/Icon@2x.png',
+		'144' : 'resources/icons/Icon~ipad@2x.png'
+	},
 
-    isIconPrecomposed: true,
+	isIconPrecomposed : true,
 
-    startupImage: {
-        '320x460': 'resources/startup/320x460.jpg',
-        '640x920': 'resources/startup/640x920.png',
-        '768x1004': 'resources/startup/768x1004.png',
-        '748x1024': 'resources/startup/748x1024.png',
-        '1536x2008': 'resources/startup/1536x2008.png',
-        '1496x2048': 'resources/startup/1496x2048.png'
-    },
+	startupImage : {
+		'320x460' : 'resources/startup/320x460.jpg',
+		'640x920' : 'resources/startup/640x920.png',
+		'768x1004' : 'resources/startup/768x1004.png',
+		'748x1024' : 'resources/startup/748x1024.png',
+		'1536x2008' : 'resources/startup/1536x2008.png',
+		'1496x2048' : 'resources/startup/1496x2048.png'
+	},
 
-    launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
+	launch : function() {
 
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('MieuxTrierANantes.view.Main'));
-    },
+		// Destroy the #appLoadingIndicator element
+		Ext.fly('appLoadingIndicator').destroy();
 
-    onUpdated: function() {
-        Ext.Msg.confirm(
-            "Application Update",
-            "This application has just successfully been updated to the latest version. Reload now?",
-            function(buttonId) {
-                if (buttonId === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
-    }
+		// Initialize the main view
+		Ext.Viewport.add(Ext.create('MieuxTrierANantes.view.Main'));
+
+		// Cordova :  Wait for cord to be ready
+		document.addEventListener("deviceready", this.onDeviceReady, false);
+		document.addEventListener("volumeupbutton", this.onVolumeUpButton, false);
+		document.addEventListener("backbutton", this.onBackButton, false);
+
+	},
+
+	onDeviceReady : function() {
+		var evenement = "deviceready";
+		alert(evenement);
+		console.log(evenement);
+		// Now safe to use the PhoneGap API
+	},
+
+	onVolumeUpButton : function() {
+		var evenement = "volumeupbutton";
+		alert(evenement);
+		console.log(evenement);
+		// Now safe to use the PhoneGap API
+	},
+
+	onBackButton : function() {
+		var evenement = "backbutton";
+		alert(evenement);
+		console.log(evenement);
+		// Now safe to use the PhoneGap API
+	},
+	onUpdated : function() {
+		Ext.Msg
+				.confirm(
+						"Application Update",
+						"This application has just successfully been updated to the latest version. Reload now?",
+						function(buttonId) {
+							if (buttonId === 'yes') {
+								window.location.reload();
+							}
+						});
+	}
 });

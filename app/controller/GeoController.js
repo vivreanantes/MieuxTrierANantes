@@ -387,7 +387,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 				this.mapOsm.distanceZone, {
 					color : 'green',
 					fillColor : '#c2e47e',
-					fillOpacity : 0.3
+					fillOpacity : 0.15
 				});
 		circle.addTo(this.mapOsm.mesCouches[this.mapOsm.idZoneLimitee]);
 		var circle2 = new L.CircleMarker([latitude, this.mapOsm.longitudeInit],
