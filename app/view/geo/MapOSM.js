@@ -37,9 +37,9 @@ Ext.define('MieuxTrierANantes.view.geo.MapOSM', {
 			idReemploi : 'smco_reemp',
 			idConteneur : 'modco_conteneur',
 			// Texte dans la couche contrôle de la couche 'zoneLimitee'
-			labelZone5Kms : "Zône de 5 kms",
+			labelZone5Kms : "Zône diam 5 kms",
 			// La longeur de la chaîne "Zône de 5 kms"
-			tailleChaineZone5Kms : 13,
+			tailleChaineZone5Kms : 15,
 			// le rayon de la zone limitée (en mètre)
 			distanceZone : 2500,
 			// distance entre le point de dernier dessin et le nouveau dessin

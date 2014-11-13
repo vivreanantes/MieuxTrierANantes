@@ -160,15 +160,15 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			var nbElementsMax = 2; // la page HomeCollectModsDetails.js affiche
 			// 2 éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
-			for (var j = 0; j < arsConseils.length; j++) {
+			/*for (var j = 0; j < arsConseils.length; j++) {
 				arsConseils
 
-			}
+			}*/
 			this.setDatasConseils(
 					this.homeCollectModDetail.items.items['0'].items,
 					"homecollectmodsdetails_conseils", "libelle", "bouton",
 					arsConseils.les_libelles, arsConseils.les_boutons,
-					nbElementsMax);
+					arsConseils.le_html, nbElementsMax);
 
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.items.items['0'].items.items['0']

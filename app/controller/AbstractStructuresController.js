@@ -7,9 +7,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 	onTapLinkButton : function(button, e, eOpts) {
 
 		if (button.id === "commentez") {
+			
 			// Panneau commentez
 			Ext.Viewport.add({
-						xtype : 'commentmodal'
+						xtype : 'commentmodal_xtype'
 					});
 		} else {
 			this.manageLinkButtons(button._data["code"]);
@@ -236,11 +237,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					text : "Nantes",
 					value : "Nantes"
 				}, {
-					text : "Hors Nantes : Sud Loire",
-					value : "hnsl"
-				}, {
 					text : "Hors Nantes : Nord Loire",
 					value : "hnnl"
+				}, {
+					text : "Hors Nantes : Sud Loire",
+					value : "hnsl"
 				}]);
 
 	}

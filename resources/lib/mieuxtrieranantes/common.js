@@ -1,7 +1,6 @@
 
 var _SEPARATOR = "#";
 
-
 /**
  * Ajoute les éléments d'un tableau arSrc  à un tableau existant arTarget
  */
@@ -166,4 +165,30 @@ function _detectePetiteTaille() {
    } else {
      return false;
    }
+}
+
+function _gestionLien(e) {
+	if (e.target.href.length>5) {
+				protocole = e.target.href.substring(0, 4);
+				complement = e.target.href.substring(5);
+				if (protocole=="http" || protocole=="www.") {
+					
+				} else if (protocole=="fich") {
+					_detailleFiche(complement);
+				}
+				e.stopEvent();
+			}
+			console.log('anchor tapped : '+e.href);
+}
+
+function _detailleFiche(fiche) {
+	var info = _getInfo(fiche);
+	Ext.Msg.show({
+		title: info["libelle"],
+		message: info["description"],
+		height: 500,
+     	scrollable: true,
+		buttons: Ext.Msg.OK,
+		icon: Ext.Msg.INFO
+	});
 }

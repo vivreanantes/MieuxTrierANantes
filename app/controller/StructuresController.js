@@ -135,13 +135,14 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stQuartier = item.data["quartier"];
 					var stType = item.data["modesCollecte"];
 					var stDechetsNoAccents = item.data["dechetsNoAccents"];
+					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["libelle"]);
 					// Important : il faut recréer l'expression régulière à chaque fois
 			// 		sinon les résultats sont faux !
 					var texttest = new RegExp(escaperegex(text), 'ig');
 					return (
 						(selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) 
 						  && (stTypeRegexp.test(stType))
-						  && texttest.test(stDechetsNoAccents));
+						  && ( texttest.test(stDechetsNoAccents) || texttest.test(stLibelleNoAccents) ) );
 				}
 			});
 			store.filter(filterElements);

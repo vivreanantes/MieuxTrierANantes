@@ -5,7 +5,6 @@
 Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
 
-
 	/*
 	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
 	 */
@@ -24,21 +23,70 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 */
 	getLocale : function() {
 		var result = "fr";
-		/*var localStorageController = this
-				.getApplication()
-				.getController("MieuxTrierANantes.controller.LocalStorageController");
-		result = localStorageController.getLocale();*/
+		/*
+		 * var localStorageController = this .getApplication()
+		 * .getController("MieuxTrierANantes.controller.LocalStorageController");
+		 * result = localStorageController.getLocale();
+		 */
 		return result;
 	},
 
 	IMAGE_DIR : "resources/images/",
 
+	
+	ouvertureModaleLieu : function(idLieu) {
+		Ext.Msg.show('Name', "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+					+ "Email * : "
+					+ "<input type='text' id='commentsFormEmailfield' />"
+					+ "<br />"
+					+ "Commentaire "
+					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
+					+ "</form>");
+		
+		Ext.create('MyApp.view.Login').show();
+	},
+	
+	ouvertureModaleCommenter : function(message) {
+		// http://stackoverflow.com/questions/18229486/how-can-i-include-two-textboxes-in-ext-msg-show
+	/*	Ext.Msg.show('Name', "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+					+ "Email * : "
+					+ "<input type='text' id='commentsFormEmailfield' />"
+					+ "<br />"
+					+ "Commentaire "
+					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
+					+ "</form>", function(text) {
+   var value1 = document.getElementById('commentsFormEmailfield').value;
+   var value1 = document.getElementById('commentsFormTextareafield').value;
+   document.forms["myform"].submit();
+});
+		*/
+		Ext.create('MyApp.view.Login').show();
+		/*Ext.Msg.show({
+			title : "Commentaires sur l application et la filière tri",
+			width : "300px",
+			height : "450px",
+			buttons : Ext.Msg.OKCANCEL,
+			message : "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+					+ "Email * : "
+					+ "<input type='text' id='commentsFormEmailfield' value='test@test.fr' />"
+					+ "<br />"
+					+ "Commentaire "
+					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
+					+ "</form>",
+			fn : function(button) {
+				var value1 = document.getElementById('commentsFormEmailfield').value;
+				var value2 = document
+						.getElementById('commentsFormTextareafield').value;
+				document.forms["myform"].submit();
+			}
+		});*/
+	},
 
 	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
-				
+
 		var start = new Date().getTime();
-		
+
 		var idElementToChange = 0;
 		for (var i = 0; i < arItems.length; i++) {
 			var element = arItems[i];
@@ -57,10 +105,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				panel.items.items[nbLine].items.items[item].setHidden(false);
 			}
 		};
-		
+
 		end = new Date().getTime();
 		time = end - start;
-		console.log( "setDataInButtonsWithManyLines etape 1 : " + time);
+		console.log("setDataInButtonsWithManyLines etape 1 : " + time);
 
 		for (var i = idElementToChange; i < nbMaxElements; i++) {
 			// Cache les éléments restants
@@ -78,10 +126,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				panel.items.items[nbLine].items.items[item].setHidden(true);
 			}
 		}
-		
+
 		end = new Date().getTime();
 		time = end - start;
-		console.log( "setDataInButtonsWithManyLines etape 2 : " + time);
+		console.log("setDataInButtonsWithManyLines etape 2 : " + time);
 	},
 
 	setDataInButtons : function(panel, prefix, arItems, nbMaxElements) {
@@ -110,48 +158,54 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "commentaires" d'une page
-	 *
+	 * 
 	 * @params commentsString chaine de caractère correspondant au code de
 	 *         l'élément dont on recherche des commentaires (ex :
 	 *         "dec_bouchons")
 	 */
-		getItemsComments : function (commentsString, title) {
+	getItemsComments : function(commentsString, title) {
 		var result = new Array();
 
 		// On parcourt les remarques de la faq
 		for (j in _commentsDatas) {
 			if (_commentsDatas[j]["elements"] != null) {
 
-				if (_commentsDatas[j]["elements"]!=null) {
-					var arElementsFaq = _commentsDatas[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				if (_commentsDatas[j]["elements"] != null) {
+					var arElementsFaq = _commentsDatas[j]["elements"].replace(
+							", /g", ",").replace(" ,/g", ",").split(',');
 					for (i in arElementsFaq) {
-	
+
 						if (arElementsFaq[i] === commentsString) {
 							result.push({
-								html : "<img src='resources/icons/chat2.png' /><B>" + _commentsDatas[j]["libelle"] + "</B><BR/>" + _commentsDatas[j]["description"] + "<br/>"
+								html : "<img src='resources/icons/chat2.png' /><B>"
+										+ _commentsDatas[j]["libelle"]
+										+ "</B><BR/>"
+										+ _commentsDatas[j]["description"]
+										+ "<br/>"
 							});
 						}
 
-				}
+					}
 				}
 			}
 		}
-		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " (" + commentsString + ")";
+		title = title.replace("-/g", "_").replace("<I>", "")
+				.replace("</I>", "");
+		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " ("
+				+ commentsString + ")";
 		result.push({
-			xtype : 'button',
-			width : 200,
-			id : "garbagesdetails_informations",
-			text : "Envoyer un commentaire",
-			data : {
-				code : codeValue
-			}
-		}
-		
+					xtype : 'button',
+					width : 200,
+					id : "garbagesdetails_informations",
+					text : "Envoyer un commentaire",
+					data : {
+						code : codeValue
+					}
+				}
+
 		);
 		return result;
 	},
-
 
 	/**
 	 * Affecte les items (les éléments fils d'un container) à un élement dont
@@ -180,21 +234,23 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			}
 		};
 	},
-	
+
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page
-	 *
+	 * 
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
 	 */
 
-		getArrayItemsToShowAdvices : function (advicesString) {
+	getArrayItemsToShowAdvices : function(advicesString) {
 		var result1 = new Array();
 		var result2 = new Array();
-		if (advicesString!=null) {
-			var arConseils = advicesString.replace(", /g", ",").replace(" ,/g", ",").split(',');
-			
+		var result3 = new Array();
+		if (advicesString != null) {
+			var arConseils = advicesString.replace(", /g", ",").replace(" ,/g",
+					",").split(',');
+
 			// On parcourt les conseils
 			if (arConseils.length > 0) {
 				for (j in _advicesDatas) {
@@ -202,19 +258,27 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 						if (_advicesDatas[j]["code"] === arConseils[i]) {
 							// le conseil avec l'icone "info"
 							result1.push({
-								libelle : "<img src='resources/icons/info.png' /> " + _advicesDatas[j]["libelle"],
+								libelle : "<img src='resources/icons/info.png' /> "
+										+ _advicesDatas[j]["libelle"],
 								description : _advicesDatas[j]["description"]
 							});
 							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
-								 && _advicesDatas[j]["fiche"] != "") {
+									&& _advicesDatas[j]["fiche"] != "") {
 								var info = _getInfo(_advicesDatas[j]["fiche"]);
-								if (info!=null) {
-									var libelleAdvice = info["libelle"];
+								if (info != null) {
+									var libelleInfo = info["libelle"];
+									var codeInfo = info["code"];
 									result2.push({
-										"libelle" : libelleAdvice,
-										code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
-									});
+												"libelle" : libelleInfo,
+												code : "informations"
+														+ _SEPARATOR
+														+ _advicesDatas[j]["fiche"]
+											});
+									result3.push({
+										"html" : 
+										"Plus d'infos <i><a href='fich:"+ codeInfo+"'>"+libelleInfo+"</a></i>"});
+
 								}
 							}
 						}
@@ -224,18 +288,20 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		}
 		return {
 			les_libelles : result1,
-			les_boutons : result2
+			les_boutons : result2,
+			le_html : result3
 		};
 	},
 
-	setDatasConseils : function(panel, prefix, prefix2, prefix3, arItems, arItemsBoutons,
-			nbMaxElements, nbElementsPerLine) {
+	setDatasConseils : function(panel, prefix, prefix2, prefix3, arItems,
+			arItemsBoutons, arItemsHTML, nbMaxElements, nbElementsPerLine) {
 
 		// 1. les libellés
 		var idElementToChange = 0;
 		for (var i = 0; i < arItems.length; i++) {
 			var element = arItems[i];
 			var elementButton = arItemsBoutons[i];
+			var elementHTML =  arItemsHTML[i];
 			var idElementToChange = i + 1;
 			// On retrouve l'index de l'élément parent
 			var indexParent = panel.keys.indexOf(prefix + "_"
@@ -250,12 +316,20 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 					panelParent.items.items[index].setData(element);
 					// panelParent.items.items[index].setHidden(false);
 				}
-				if (elementButton) {
+				/*if (elementButton) {
 					var prefixComplet = prefix + "_" + idElementToChange + "_"
-						+ prefix3;
+							+ prefix3;
 					var index = panelParent.items.keys.indexOf(prefixComplet);
 					if (index != -1) {
 						panelParent.items.items[index].setData(elementButton);
+					}
+				}*/
+				if (elementHTML) {
+					var prefixComplet = prefix + "_" + idElementToChange + "_"
+							+ prefix3;
+					var index = panelParent.items.keys.indexOf(prefixComplet);
+					if (index != -1) {
+						panelParent.items.items[index].setHtml(elementHTML.html);
 					}
 				}
 			}
@@ -274,33 +348,35 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	},
 
-	getArrayItemsToShowComments : function (commentsString, title) {
+	getArrayItemsToShowComments : function(commentsString, title) {
 		var result = new Array();
 
 		// On parcourt les commentaires
 		for (j in _commentsDatas) {
 			if (_commentsDatas[j]["elements"] != null) {
-				var arElementsFaq = _commentsDatas[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				var arElementsFaq = _commentsDatas[j]["elements"].replace(
+						", /g", ",").replace(" ,/g", ",").split(',');
 				for (i in arElementsFaq) {
 
 					if (arElementsFaq[i] === commentsString) {
 						result.push({
-							libelle : "<img src='resources/icons/chat2.png' /> " + _commentsDatas[j]["libelle"],
+							libelle : "<img src='resources/icons/chat2.png' /> "
+									+ _commentsDatas[j]["libelle"],
 							description : _commentsDatas[j]["description"]
 						});
 					}
 				}
 			}
 		}
-		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " (" + commentsString + ")";
+		title = title.replace("-/g", "_").replace("<I>", "")
+				.replace("</I>", "");
+		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " ("
+				+ commentsString + ")";
 		return {
 			les_libelles : result,
 			le_titre : codeValue
 		};
 	},
-
-	
 
 	/*
 	 * Créer un lien vers une page de l'application. En paramètre l'identifiant :
@@ -445,23 +521,27 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		}
 		// OU On affiche la fiche explicative
 		else if (mainPageXtype == "informations") {
-			informationsController = this.getApplication().getController("MieuxTrierANantes.controller.InformationsController");
+			informationsController = this
+					.getApplication()
+					.getController("MieuxTrierANantes.controller.InformationsController");
 			if (_getInfo(elementToShowInPage)) {
 				informationsController.showDetails(elementToShowInPage);
 			}
-			
 
-			//			// STORE datasInformations
-			//			var myController = this	.getApplication().getController("MieuxTrierANantes.controller.GarbagesController");
-			//			var datas = myController.getInformationsList().getStore().getData();
-			//			myController = this.getApplication().getController("MieuxTrierANantes.controller.InformationsController");
-			//			// CRN_TEMPO
-			//			datas.each(function (record) {
-			//				// bascule vers la page
-			//				if (record.data["code"] == elementToShowInPage) {
-			//					myController.showDetails(elementToShowInPage);
-			//				}
-			//			});
+			// // STORE datasInformations
+			// var myController = this
+			// .getApplication().getController("MieuxTrierANantes.controller.GarbagesController");
+			// var datas =
+			// myController.getInformationsList().getStore().getData();
+			// myController =
+			// this.getApplication().getController("MieuxTrierANantes.controller.InformationsController");
+			// // CRN_TEMPO
+			// datas.each(function (record) {
+			// // bascule vers la page
+			// if (record.data["code"] == elementToShowInPage) {
+			// myController.showDetails(elementToShowInPage);
+			// }
+			// });
 
 		}
 		// OU On affiche le commentaire
@@ -514,142 +594,50 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
 	 * des balises "<br/>
 	 */
-	/*decoupe : function(stChaine) {
-		var result = "";
-		if (stChaine != undefined) {
-			var iTailleMax = 30;
-
-			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
-			var ar = stChaine.split(/, | ,| -|- |-| /);
-			var tailleRestanteLigne = iTailleMax;
-			for (var i = 0; i < ar.length; i++) {
-				result += ar[i];
-				tailleRestanteLigne = tailleRestanteLigne - ar[i].length;
-				// Si il reste des mots
-				if (i + 1 < ar.length) {
-					// Si le prochain mot n'est pas trop long, on ajoute juste
-					// un
-					// espace
-					if (ar[i + 1].length <= tailleRestanteLigne) {
-						result += " ";
-						tailleRestanteLigne = tailleRestanteLigne - 1;
-					}
-					// Sinon on ajoute un retour à la ligne
-					else {
-						result += "<br/>";
-						tailleRestanteLigne = iTailleMax;
-					}
-				}
-			}
-		}
-		return result;
-	},*/
-	
-	/**
-	 * Renvoie les boutons d'après le data
-	 *
-	 * @param {Array} data objet correspond aux boutons
-	 * @param {string} buttonLabel le label du bouton a affiche (exemple "cu"
-	 *            pour "catégories usuelles")
-	 * @return {Array} tableau des items (les items sont des objets permettant de
-	 *         créer des boutons)
+	/*
+	 * decoupe : function(stChaine) { var result = ""; if (stChaine !=
+	 * undefined) { var iTailleMax = 30;
+	 *  // séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " " var ar =
+	 * stChaine.split(/, | ,| -|- |-| /); var tailleRestanteLigne = iTailleMax;
+	 * for (var i = 0; i < ar.length; i++) { result += ar[i];
+	 * tailleRestanteLigne = tailleRestanteLigne - ar[i].length; // Si il reste
+	 * des mots if (i + 1 < ar.length) { // Si le prochain mot n'est pas trop
+	 * long, on ajoute juste // un // espace if (ar[i + 1].length <=
+	 * tailleRestanteLigne) { result += " "; tailleRestanteLigne =
+	 * tailleRestanteLigne - 1; } // Sinon on ajoute un retour à la ligne else {
+	 * result += "<br/>"; tailleRestanteLigne = iTailleMax; } } } } return
+	 * result; },
 	 */
 
-	getArrayItemsToShowForButtons : function (datas, buttonLabel) {
+	/**
+	 * Renvoie les boutons d'après le data
+	 * 
+	 * @param {Array}
+	 *            data objet correspond aux boutons
+	 * @param {string}
+	 *            buttonLabel le label du bouton a affiche (exemple "cu" pour
+	 *            "catégories usuelles")
+	 * @return {Array} tableau des items (les items sont des objets permettant
+	 *         de créer des boutons)
+	 */
+
+	getArrayItemsToShowForButtons : function(datas, buttonLabel) {
 		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
 			if (datas[i].bouton == buttonLabel) {
-				var stLibelle = _cutWithBr(datas[i]["libelle"]); // Ajoute les <br/>
+				var stLibelle = _cutWithBr(datas[i]["libelle"]); // Ajoute
+				// les <br/>
 				arItemsToShow.push({
-					"libelle" : stLibelle,
-					"image" : datas[i].image,
-					"id" : datas[i].code
-				});
+							"libelle" : stLibelle,
+							"image" : datas[i].image,
+							"id" : datas[i].code
+						});
 			}
 		};
 		return arItemsToShow;
 
 	}
 });
-
-
-/*
-Ext.define('MieuxTrierANantes.view.comments.CommentsModal', {
-	extend : 'Ext.Panel',
-	alias : 'widget.commentmodal',
-
-	config : {
-		centered : true,
-		height : "420px",
-		itemId : 'modalPanel',
-		width : "300px",
-		hideOnMaskTap : true,
-		modal : true,
-		scrollable : true,
-		layout : 'vbox',
-		title : "Commentaires sur l'application et la filière tri",
-		scrollable : 'true',
-		items : [{
-					xtype : "label",
-					html : "<p>Cliquer en dehors de la modale pour la fermer.</p>"
-				}, {
-					xtype : 'commentsForm_xtype',
-					height : "350px",
-					scrollable : false,
-					url : 'http://renoulin.fr/mieuxtrieranantes/send_mail.php',
-					headers : {
-						'Content-Type' : 'multipart/form-data; charset=UTF-8'
-					}
-					style : 'background-color: #759E60;',
-		method : 'POST',
-		items : [{
-			xtype : 'fieldset',
-			items : [{
-						xtype : 'emailfield',
-						name : 'email',
-						label : 'Email *'
-					}, {
-						xtype : 'textfield',
-						name : 'sujet',
-						label : 'Sujet',
-						id : 'commentsFormTextfield'
-					}, {
-						xtype : 'textareafield',
-						height : '150px',
-						name : 'message',
-						label : 'Texte',
-						id : 'commentsFormTextareafield',
-						placeHolder : "Commentaires sur l'application ou la filière tri"
-					}]
-		}, {
-			xtype : 'button',
-			text : 'Envoyez',
-			iu : 'confirm',
-			handler : function() {
-				this.up("commentsForm_xtype").submit({
-					failure : function(form, result) {
-						if (result.failure != null) {
-							Ext.Msg.alert("Envoi message",
-									"Échec de l'envoi : " + result.failure);
-						} else {
-							Ext.Msg.alert("Envoi message", "Échec de l'envoi.");
-						}
-					},
-					success : function(form, result) {
-						Ext.Msg.alert("Envoi message",
-								"Votre message a bien été envoyé.");
-
-					}
-				});
-			}
-		}]
-	}
-				}]
-	}
-
-});
- */
-
 
 function showGarbagePanel(id) {
 	Ext.getCmp("mainView").setActiveItem(0);

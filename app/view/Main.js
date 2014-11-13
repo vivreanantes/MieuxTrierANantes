@@ -8,13 +8,13 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			'MieuxTrierANantes.view.SettingsView'],
 	config : {
 		tabBarPosition : 'bottom',
-		items : [
-			{
+		items : [{
 			xtype : 'titlebar',
 			id : 'main_titlebar',
 			cls : 'title',
 			docked : 'top',
-			items : [{
+			items : [
+			{
 				ui : 'confirm',
 				html : "<A HREF='https://docs.google.com/presentation/d/1Rd2pOPuDD3NznjlukCrFGsdRp0_Rlr1faCgu0-p_N9A/edit?usp=sharing' TARGET=_blank title='Diaporama de présentation'><IMG SRC='resources/images/images_non_libres/icone_presentation.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'><IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'>Le projet</A>"
 			}, {
@@ -64,3 +64,5 @@ Ext.define('MieuxTrierANantes.view.Main', {
 		}]
 	}
 });
+
+

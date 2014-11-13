@@ -57,3 +57,66 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 	}
 
 });
+
+Ext.define('MyApp.view.Login', {
+        extend: 'Ext.navigation.View',
+        height: 220,
+        width: 490,
+        layout: 'fit',
+        modal: true,
+        buttonAlign: 'left',
+        closable: false,
+        items: [
+            {
+                xtype: 'form',
+                frame: false,
+                border: 0,
+                layout: {
+                    type: 'hbox',
+                    align: 'middle'
+                },
+                fieldDefaults: {
+                    msgTarget: 'side',
+                    labelWidth: 55
+                },
+                items: [
+                    {
+                        xtype: 'container',
+                        flex: 1,
+                        padding: 10,
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch'
+                        },
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                name: 'username',
+                                fieldLabel: 'Username',
+                                allowBlank: false,
+                                flex: 1
+                            },
+                            {
+                                xtype: 'textfield',
+                                name: 'password',
+                                fieldLabel: 'Password',
+                                inputType: 'password',
+                                allowBlank: false,
+                                flex: 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        buttons: [
+            {
+                text: 'Login',
+                handler: function () {
+                    var value1 = document.getElementById('username').value;
+				var value2 = document.getElementById('password').value;
+				document.forms["myform"].submit();
+                }
+            }
+        ]
+    });

@@ -17,7 +17,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
   "MieuxTrierANantes": "app",
-  "MieuxTrierANantes.view.geo.Map": "app/view/geo/Map_old.js"
+  "MieuxTrierANantes.view.comments.StructuresModal": "app/view/structures/StructureModal.js",
+  "MyApp.view.Login": "app/view/comments/CommentsForm.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -659,7 +660,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.controller.GeoController": [],
   "MieuxTrierANantes.controller.HomeCollectModsController": [],
   "MieuxTrierANantes.controller.InformationsController": [],
-  "MieuxTrierANantes.controller.Main": [],
+  "MieuxTrierANantes.controller.MainController": [],
   "MieuxTrierANantes.controller.StructuresController": [],
   "MieuxTrierANantes.controller.TrisacsController": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
@@ -682,6 +683,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.comments.CommentsDetails": [],
   "MieuxTrierANantes.view.comments.CommentsForm": [],
   "MieuxTrierANantes.view.comments.CommentsModal": [],
+  "MieuxTrierANantes.view.comments.StructuresModal": [],
   "MieuxTrierANantes.view.game.Guess": [],
   "MieuxTrierANantes.view.garbages.GarbageButtonsPanel": [],
   "MieuxTrierANantes.view.garbages.Garbages": [],
@@ -689,9 +691,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.garbages.GarbagesDetails": [],
   "MieuxTrierANantes.view.garbages.GarbagesForm": [],
   "MieuxTrierANantes.view.garbages.UsualCategoriesButtonsPanel": [],
-  "MieuxTrierANantes.view.geo.Map": [],
   "MieuxTrierANantes.view.geo.MapOSM": [],
-  "MieuxTrierANantes.view.geo.Toast_old": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails": [],
@@ -708,7 +708,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.trisac.TrisacDetails": [],
   "MieuxTrierANantes.view.trisac.TrisacForm": [],
   "MieuxTrierANantes.view.trisac.TrisacList": [],
-  "MieuxTrierANantes.view.trisac.Trisacs": []
+  "MieuxTrierANantes.view.trisac.Trisacs": [],
+  "MyApp.view.Login": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1445,7 +1446,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.controller.GeoController": [],
   "MieuxTrierANantes.controller.HomeCollectModsController": [],
   "MieuxTrierANantes.controller.InformationsController": [],
-  "MieuxTrierANantes.controller.Main": [],
+  "MieuxTrierANantes.controller.MainController": [],
   "MieuxTrierANantes.controller.StructuresController": [],
   "MieuxTrierANantes.controller.TrisacsController": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
@@ -1458,7 +1459,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.store.TrisacStore": [],
   "MieuxTrierANantes.utils.Functions": [],
   "MieuxTrierANantes.view.Main": [
-    "widget.main"
+    "widget.main_xtype"
   ],
   "MieuxTrierANantes.view.SettingsView": [
     "widget.settingsview"
@@ -1488,7 +1489,10 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.commentsForm_xtype"
   ],
   "MieuxTrierANantes.view.comments.CommentsModal": [
-    "widget.commentmodal"
+    "widget.commentmodal_xtype"
+  ],
+  "MieuxTrierANantes.view.comments.StructuresModal": [
+    "widget.commentmodal_xtype"
   ],
   "MieuxTrierANantes.view.game.Guess": [
     "widget.guess"
@@ -1511,14 +1515,8 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.view.garbages.UsualCategoriesButtonsPanel": [
     "widget.usualCategoriesButtonsPanel_xtype"
   ],
-  "MieuxTrierANantes.view.geo.Map": [
-    "widget.vanmap"
-  ],
   "MieuxTrierANantes.view.geo.MapOSM": [
     "widget.maposm_xtype"
-  ],
-  "MieuxTrierANantes.view.geo.Toast_old": [
-    "widget.vantoast"
   ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [
     "widget.homecollectmods_xtype"
@@ -1570,5 +1568,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.trisac.Trisacs": [
     "widget.trisac_xtype"
-  ]
+  ],
+  "MyApp.view.Login": []
 });

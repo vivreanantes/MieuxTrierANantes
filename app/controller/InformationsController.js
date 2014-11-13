@@ -22,7 +22,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 			onShowDetails : function(button, e, eOpts) {
 				if (button.id === 'envoyez') {
 					Ext.Viewport.add({
-								xtype : 'commentmodal'
+								xtype : 'commentmodal_xtype'
 							});
 				} else {
 					this.showDetails(button._data.code);

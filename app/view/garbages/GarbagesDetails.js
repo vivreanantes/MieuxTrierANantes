@@ -120,9 +120,17 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 						tpl : "<b>{libelle}</b><br/>{description}<br/>",
 						id : "garbagesdetails_conseils_1_libelle"
 					}, {
-						xtype : 'label',
+						// xtype : 'label',
 						id : "garbagesdetails_conseils_1_bouton",
-						tpl : "Voir <i>fiche {libelle}</i>"					}]
+						html : "",
+						listeners : {
+							element : 'element',
+							delegate : 'a',
+							tap : function(e) {
+								_gestionLien(e);
+							}
+						}
+					}]
 		}, {
 			// Le deuxieme conseil
 			xtype : 'container',
@@ -133,9 +141,16 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 						tpl : "<b>{libelle}</b><br/>{description}<br/>",
 						id : "garbagesdetails_conseils_2_libelle"
 					}, {
-						xtype : 'label',
+						// xtype : 'label',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Voir <i>fiche {libelle}</i>"
+						html : "",
+						listeners : {
+							element : 'element',
+							delegate : 'a',
+							tap : function(e) {
+								_gestionLien(e);
+							}
+						}
 					}]
 		}, {
 			// Le troisième conseil
@@ -147,9 +162,16 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 						tpl : "<b>{libelle}</b><br/>{description}<br/>",
 						id : "garbagesdetails_conseils_3_libelle"
 					}, {
-						xtype : 'label',
+						// xtype : 'label',
 						id : "garbagesdetails_conseils_3_bouton",
-						text : "Voir <i>fiche {libelle}</i>"
+						html : "",
+						listeners : {
+							element : 'element',
+							delegate : 'a',
+							tap : function(e) {
+								_gestionLien(e);
+							}
+						}
 					}]
 		}, {
 			id : "garbagesdetails_commentaires"

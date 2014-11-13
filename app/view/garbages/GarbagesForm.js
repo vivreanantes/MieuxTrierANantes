@@ -6,7 +6,8 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 			requires : ['Ext.field.Text', 'Ext.field.Select'],
 			xtype : 'garbagesForm_xtype',
 			config : {
-				items : [{
+				items : [
+							{
 							layout : {
 								type : 'hbox',
 								align : 'strech',
@@ -25,7 +26,8 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 										id : 'garbagesFormButton',
 										iconCls : 'search', // icône en forme de loupes
 										iconMask : true
-									}]
+									}
+									]
 						}, {
 							xtype : 'selectfield',
 							label : 'Catégorie',

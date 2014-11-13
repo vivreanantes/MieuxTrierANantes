@@ -1,4 +1,4 @@
-Ext.define('MieuxTrierANantes.view.comments.CommentsModal', {
+Ext.define('MieuxTrierANantes.view.comments.StructuresModal', {
 	extend : 'Ext.Panel',
 	alias : 'widget.commentmodal_xtype',
 
@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsModal', {
 		modal : true,
 		scrollable : true,
 		layout : 'vbox',
-		title : "Commentaires sur l'application et la filière tri",
+		title : "Lieu",
 		scrollable : 'true',
 		items : [{
 					xtype : "label",
