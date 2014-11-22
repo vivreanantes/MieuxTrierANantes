@@ -54,6 +54,9 @@ local.properties
 ##########
 *.apk
 build/**
+cordova
+resources/sass/.sass-cache/
+.sencha
 
 # Grails #
 ##########

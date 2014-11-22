@@ -1,4 +1,20 @@
 {
+    "builds": {
+        "web": {"default": true},
+        "native": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    "platforms": "android",
+                    "id": "com.MieuxVivreANantes.MieuxTrierANantes",
+                    "name": "MieuxTrierANantes"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */

@@ -1,2 +1,2 @@
 cd C:\dev\github-repositories\MieuxTrierANantes
-C:\dev\tools\sencha-cmd-4.0.4.84\sencha app build testing
+C:\dev\tools\sencha-cmd-5.0.2.270\sencha app build testing

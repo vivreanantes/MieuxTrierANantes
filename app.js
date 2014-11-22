@@ -91,41 +91,55 @@ Ext.application({
 		'1536x2008' : 'resources/startup/1536x2008.png',
 		'1496x2048' : 'resources/startup/1496x2048.png'
 	},
+	
+
 
 	launch : function() {
 
 		// Destroy the #appLoadingIndicator element
 		Ext.fly('appLoadingIndicator').destroy();
 
+		// Cordova :  Wait for cord to be ready
+		document.addEventListener("backbutton", function(e){  
+            e.preventDefault();
+           /*Ext.Msg.confirm("Confirmation", "Are you sure you want to do that?", 
+       	    function(btn, text){
+      			if (btn == 'Yes'){
+        			alert('go ahead');
+        			// navigator.app.exitApp();
+      			} else {
+        			alert('abort');
+      			}
+       	    }
+           );*/
+            }, false);
+		document.addEventListener("deviceready", this.onDeviceReady, false);
+
 		// Initialize the main view
 		Ext.Viewport.add(Ext.create('MieuxTrierANantes.view.Main'));
-
-		// Cordova :  Wait for cord to be ready
-		document.addEventListener("deviceready", this.onDeviceReady, false);
-		document.addEventListener("volumeupbutton", this.onVolumeUpButton, false);
-		document.addEventListener("backbutton", this.onBackButton, false);
-
 	},
 
 	onDeviceReady : function() {
-		var evenement = "deviceready";
-		alert(evenement);
-		console.log(evenement);
-		// Now safe to use the PhoneGap API
-	},
-
-	onVolumeUpButton : function() {
-		var evenement = "volumeupbutton";
-		alert(evenement);
-		console.log(evenement);
-		// Now safe to use the PhoneGap API
-	},
-
-	onBackButton : function() {
-		var evenement = "backbutton";
-		alert(evenement);
-		console.log(evenement);
-		// Now safe to use the PhoneGap API
+		  alert('onDeviceReady');
+        // onSuccess Callback
+        // This method accepts a Position object, which contains the
+        // current GPS coordinates
+        //
+        var geolocationSuccess = function(position) {
+            
+            var msg='Latitude: '          + position.coords.latitude          + '\n' +
+                  'Longitude: '         + position.coords.longitude         + '\n' +
+                  'Altitude: '          + position.coords.altitude          + '\n' +
+                  'Accuracy: '          + position.coords.accuracy          + '\n' +
+                  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                  'Heading: '           + position.coords.heading           + '\n' +
+                  'Speed: '             + position.coords.speed             + '\n' +
+                  'Timestamp: '         + position.timestamp                + '\n';
+            Ext.Msg.alert("Geolocalisation CORDOVA", msg);
+          
+        };
+        
+        navigator.geolocation.getCurrentPosition(geolocationSuccess);
 	},
 	onUpdated : function() {
 		Ext.Msg
