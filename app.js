@@ -91,56 +91,57 @@ Ext.application({
 		'1536x2008' : 'resources/startup/1536x2008.png',
 		'1496x2048' : 'resources/startup/1496x2048.png'
 	},
-	
-
 
 	launch : function() {
 
 		// Destroy the #appLoadingIndicator element
 		Ext.fly('appLoadingIndicator').destroy();
 
-		// Cordova :  Wait for cord to be ready
-		document.addEventListener("backbutton", function(e){  
-            e.preventDefault();
-           /*Ext.Msg.confirm("Confirmation", "Are you sure you want to do that?", 
-       	    function(btn, text){
-      			if (btn == 'Yes'){
-        			alert('go ahead');
-        			// navigator.app.exitApp();
-      			} else {
-        			alert('abort');
-      			}
-       	    }
-           );*/
-            }, false);
-		document.addEventListener("deviceready", this.onDeviceReady, false);
+		// Cordova
+		document.addEventListener("deviceready",
+				this.onEvenementCordovaDeviceReady, false);
+		document.addEventListener("backbutton",
+				this.onEvenementCordovaBackButton, false);
 
 		// Initialize the main view
 		Ext.Viewport.add(Ext.create('MieuxTrierANantes.view.Main'));
 	},
 
-	onDeviceReady : function() {
-		  alert('onDeviceReady');
-        // onSuccess Callback
-        // This method accepts a Position object, which contains the
-        // current GPS coordinates
-        //
-        var geolocationSuccess = function(position) {
-            
-            var msg='Latitude: '          + position.coords.latitude          + '\n' +
-                  'Longitude: '         + position.coords.longitude         + '\n' +
-                  'Altitude: '          + position.coords.altitude          + '\n' +
-                  'Accuracy: '          + position.coords.accuracy          + '\n' +
-                  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-                  'Heading: '           + position.coords.heading           + '\n' +
-                  'Speed: '             + position.coords.speed             + '\n' +
-                  'Timestamp: '         + position.timestamp                + '\n';
-            Ext.Msg.alert("Geolocalisation CORDOVA", msg);
-          
-        };
-        
-        navigator.geolocation.getCurrentPosition(geolocationSuccess);
+	onEvenementCordovaBackButton : function(e) {
+		e.preventDefault();
+		Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
+				function(btn, text) {
+					if (btn == 'Yes') {
+						// Ceci ne fonctionne pas.
+						navigator.app.exitApp();
+						app.exitApp();
+					}
+				});
 	},
+
+	onDeviceReady : function() {
+		alert('onDeviceReady');
+		// onSuccess Callback
+		// This method accepts a Position object, which contains the
+		// current GPS coordinates
+		//
+		var geolocationSuccess = function(position) {
+
+			var msg = 'Latitude: ' + position.coords.latitude + '\n'
+					+ 'Longitude: ' + position.coords.longitude + '\n'
+					+ 'Altitude: ' + position.coords.altitude + '\n'
+					+ 'Accuracy: ' + position.coords.accuracy + '\n'
+					+ 'Altitude Accuracy: ' + position.coords.altitudeAccuracy
+					+ '\n' + 'Heading: ' + position.coords.heading + '\n'
+					+ 'Speed: ' + position.coords.speed + '\n' + 'Timestamp: '
+					+ position.timestamp + '\n';
+			Ext.Msg.alert("Geolocalisation CORDOVA", msg);
+
+		};
+
+		navigator.geolocation.getCurrentPosition(geolocationSuccess);
+	},
+
 	onUpdated : function() {
 		Ext.Msg
 				.confirm(

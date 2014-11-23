@@ -11,5 +11,6 @@ rem copy C:\dev\build_MieuxTrierANantes\MieuxTrierANantes_Final.apk C:\dev\githu
 
 cd C:\dev\github-repositories\MieuxTrierANantes
 sencha --info app build native
-copy C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\ant-build\CordovaApp-debug.apk C:\dev\github-repositories\opendata\VivreANantes\build\VivreANantes\testing
+rem Ordinateur\Archos 50 Platinum\Carte SD
+rem copy C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\ant-build\CordovaApp-debug.apk C:\dev\github-repositories\opendata\VivreANantes\build\VivreANantes\testing
 pause

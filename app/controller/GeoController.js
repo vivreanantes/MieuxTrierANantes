@@ -196,7 +196,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			if (record.get('type') != null && record.get('type') != '') {
 				popuptext = popuptext + '<b>' + record.get('type')
 						+ '</b><br/>';
-				popuptext = popuptext + '<a href="#" onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
+				// popuptext = popuptext + '<a href="#" onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
 			}
 			if (record.get('libelle') != null && record.get('libelle') != '') {
 				popuptext = popuptext + record.get('libelle') + '<br/>';

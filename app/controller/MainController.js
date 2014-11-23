@@ -5,7 +5,7 @@ Ext.define('MieuxTrierANantes.controller.MainController', {
         stores: 'MieuxTrierANantes.store.Settings',
         refs: {
             mainView: 'main_xtype',
-            mainTitleBar : '#main_titlebar',
+			mainTitleBar : 'main_xtype',
             settingsView: 'settingsview',
          
             btnSettings: 'main button[action=settings]',
@@ -33,8 +33,8 @@ Ext.define('MieuxTrierANantes.controller.MainController', {
             'mainView': {
                 activeitemchange: 'onCarouselChange'
             },
-            'mainTitleBar': {
-                init: 'onInitMainTitleBar'
+            mainTitleBar: {
+                show : 'onShowMainTitleBar'
             } 
             
         }
@@ -130,12 +130,14 @@ Ext.define('MieuxTrierANantes.controller.MainController', {
         // MieuxTrierANantes.utils.Functions.loadData();
     },
     
-    onInitMainTitleBar : function() {
-    	// TODO_CRN
+    /**
+     * Efface la barre (en gaut) avec les boutons
+     */
+     onShowMainTitleBar : function(panel, eOpts) {
     	var estMobile = _detecteMobile();
     	if (estMobile==true) {
-    		this.getMainTitleBar();
+   			// on retire le premier élément, qui est la barre de boutons
+    		panel.removeAt(0); 
     	}
-		alert("launch" + estMobile);
     }
 });

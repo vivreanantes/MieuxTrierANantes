@@ -690,6 +690,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.store.TrisacStore": [],
   "MieuxTrierANantes.utils.Functions": [],
   "MieuxTrierANantes.view.Main": [],
+  "MieuxTrierANantes.view.Menu": [],
   "MieuxTrierANantes.view.SettingsView": [],
   "MieuxTrierANantes.view.about.Description": [],
   "MieuxTrierANantes.view.collectMod.CollectMods": [],
@@ -1478,6 +1479,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.utils.Functions": [],
   "MieuxTrierANantes.view.Main": [
     "widget.main_xtype"
+  ],
+  "MieuxTrierANantes.view.Menu": [
+    "widget.mainmenu"
   ],
   "MieuxTrierANantes.view.SettingsView": [
     "widget.settingsview"
