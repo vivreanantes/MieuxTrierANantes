@@ -9,6 +9,13 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 		items : [{
 			xtype : 'container',
 			layout : 'vbox',
+			listeners : {
+				element : 'element',
+				delegate : 'a',
+				tap : function(e) {
+					_gestionLien(e);
+				}
+			},
 			items : [{
 						id : 'homecollectmodsdetails_description',
 						tpl : "<b>Adresse</b> : {dcv}{ci}<br/>Collecte : {jcbj} </b><br/><br/><b>Source</b> : <font color=red>{src}</font></I><br/><br/>",

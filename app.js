@@ -109,18 +109,18 @@ Ext.application({
 
 	onEvenementCordovaBackButton : function(e) {
 		e.preventDefault();
-		Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
-				function(btn, text) {
-					if (btn == 'Yes') {
-						// Ceci ne fonctionne pas.
-						navigator.app.exitApp();
-						app.exitApp();
-					}
-				});
+		// Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
+		//		function(btn, text) {
+		//			if (btn == 'Yes') {
+		//				// Ceci ne fonctionne pas.
+		//				navigator.app.exitApp();
+		//				app.exitApp();
+		//			}
+		//		});
 	},
 
-	onDeviceReady : function() {
-		alert('onDeviceReady');
+	onEvenementCordovaDeviceReady : function() {
+		// alert('onDeviceReady');
 		// onSuccess Callback
 		// This method accepts a Position object, which contains the
 		// current GPS coordinates
@@ -135,7 +135,7 @@ Ext.application({
 					+ '\n' + 'Heading: ' + position.coords.heading + '\n'
 					+ 'Speed: ' + position.coords.speed + '\n' + 'Timestamp: '
 					+ position.timestamp + '\n';
-			Ext.Msg.alert("Geolocalisation CORDOVA", msg);
+			// Ext.Msg.alert("Geolocalisation CORDOVA", msg);
 
 		};
 

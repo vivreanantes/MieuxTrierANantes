@@ -8,6 +8,13 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 		styleHtmlContent : true,
 		scrollable : true,
 		layout : 'vbox',
+		listeners : {
+			element : 'element',
+			delegate : 'a',
+			tap : function(e) {
+				_gestionLien(e);
+			}
+		},
 		items : [{
 			xtype : 'container',
 			layout : 'hbox',
@@ -102,11 +109,12 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 		{
 			id : "garbagesdetails_description",
 			// style : 'background-color: #119Eaa;',
-			tpl : "<br/>{concerne_aussi}",
+			tpl : "<br/>{concerne_aussi}<b>Source</b> : <font color=red>{src}</font><br/>",
 			data : {
 				"concerne_aussi" : "Concerne aussi : divers"
 			}
 		},
+		
 
 		{
 			id : "garbagesdetails_conseils"

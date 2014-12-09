@@ -28,8 +28,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		control : {
 			collectModsView : {},
 			/*
-			 * collectModsList : { initialize : "onInitCollectModsList"
-			 *  },
+			 * collectModsList : { initialize : "onInitCollectModsList" },
 			 */
 			usualCategoriesButtonsPanel : {
 				initialize : 'onInitUsualCategoriesButtonsPanel',
@@ -53,21 +52,21 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				keyup : 'onKeyUpGarbagesFormText'
 				// sur le départ de la zône
 				// change : 'onTapGarbagesFormButton'
-			// clearicontap : 'onGarbageStoreFilter'
+				// clearicontap : 'onGarbageStoreFilter'
 			},
 			garbagesForm : {
 				tap : 'tempo',
 				click : 'tempo'
 			},
-			'.moreinfo': {
-        tap: function() {
-            alert('Tapped on more info!');
-        }
-    },
-			
+			'.moreinfo' : {
+				tap : function() {
+					alert('Tapped on more info!');
+				}
+			},
+
 			garbagesFormSelect : {
 
-			},
+}			,
 			garbagesFormButton : {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
@@ -117,7 +116,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 		}
 	},
-	
+
 	tempo : function(e) {
 		if (e.target.tagName !== 'A') {
 			return;
@@ -125,10 +124,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		e.preventDefault();
 		var href = e.target.getAttribute('href');
 	},
-	
+
 	onKeyUpGarbagesFormText : function(textbox, event) {
 		if (event.browserEvent.keyCode == 13) {
 			this.onTapGarbagesFormButton();
+			// TODO cacher le clavier
+			// Ext.getCmp('garbagesFormButton').blur();
 		}
 	},
 
@@ -164,6 +165,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.putInButtonsPanel("cu");
+		// Permet l'interception des paramètres de la page HTML, qui vouvre une page particulière
 	},
 
 	putInButtonsPanel : function(stringFilter) {
@@ -188,7 +190,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}
 
 		var nbGarbagesMax = 18; // la page UsualCategoriesButtonsPanel.js
-								// affiche
+		// affiche
 		// 18 éléments
 		this.setDataInButtonsWithManyLines(this
 						.getUsualCategoriesButtonsPanel(),
@@ -205,25 +207,28 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			if (arButtonsId.length > 1) {
 				var element = _getCollectMod(arButtonsId[1]);
 				if (element != null) {
-					// var description = element['description'] + '<br/><a href="#" class="moreinfo" onclick="return false;">rr</a>';
+					// var description = element['description'] + '<br/><a
+					// href="#" class="moreinfo" onclick="return
+					// false;">rr</a>';
 					var description = element['description'];
 					Ext.Msg.show({
-						title: element["libelle"],
-						message: element["description"],
-						height: 300,
-				     	scrollable: true,
-						buttons: Ext.Msg.OK,
-						icon: Ext.Msg.INFO,
-						listeners : {
-							element : 'element',
-							delegate : 'a',
-							tap : function(e) {
-								_gestionLien(e);
-							}
-						}
-					});
-					// Ext.Msg.alert(element['libelle'], description,	Ext.emptyFn);
-					
+								title : element["libelle"],
+								message : element["description"],
+								height : 300,
+								scrollable : true,
+								buttons : Ext.Msg.OK,
+								icon : Ext.Msg.INFO,
+								listeners : {
+									element : 'element',
+									delegate : 'a',
+									tap : function(e) {
+										_gestionLien(e);
+									}
+								}
+							});
+					// Ext.Msg.alert(element['libelle'], description,
+					// Ext.emptyFn);
+
 				}
 			}
 		} else if (arButtonsId[0] === "comments_xtype") {
@@ -273,7 +278,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
-
+		_gestionLienExterne();
 	},
 
 	/*
@@ -476,11 +481,16 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			var descriptionTraduit = "";
 			if (record["description"] != "") {
 				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record["description"] + "<br/><br/>";
+						+ " : " + record["description"] + "<br/>";
+			}
+			var source = "Non mentionné";
+			if (record["src"] != undefined && record["src"] != "") {
+				source = record["src"] + "<br/>";
 			}
 			this.setDataElement(this.garbageDetail,
 					"garbagesdetails_description", {
-						'concerne_aussi' : descriptionTraduit
+						'concerne_aussi' : descriptionTraduit,
+						'src' : source
 					})
 			// this.garbageDetail.items.items['1'].setData()
 			// garbagesdetails_conseils
@@ -489,13 +499,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 			// Ajout des conseils
 			var nbElementsMax = 3; // la page GarbagesDetails.js affiche 3
-									// éléments
+			// éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items,
 					"garbagesdetails_conseils", "libelle", "bouton",
 					arsConseils.les_libelles, arsConseils.les_boutons,
-					arsConseils.le_html,
-					nbElementsMax);
+					arsConseils.le_html, nbElementsMax);
 
 			// Ajout des commentaires OK
 			var code = record["code"];
@@ -584,7 +593,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}
 
 		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
-								// éléments
+		// éléments
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
 

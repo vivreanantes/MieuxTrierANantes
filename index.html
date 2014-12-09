@@ -52,7 +52,7 @@
 			height: 100px;
 		}
     </style>
-    
+ 
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script id="microloader" type="text/javascript" src="touch/microloader/development.js"></script>
     
@@ -73,15 +73,21 @@
 	<script src="resources/datas/CommentsDatas.js"></script>
 	<script src="resources/datas/AdvicesDatas.js"></script>
 	<script src="resources/datas/InfosDatas.js"></script>
+	   
+    <script type="text/javascript" >
+    	function load() {
+    	}
+    </script>
+    
 </head>
-<body>
+<body onLoad='Javascript:load()'>
    <div id="appLoadingIndicator">
 	    <center>
     	    <img src="resources/icons/Icon@2x.png" /><br/>
 	        Par des b&eacute;n&eacute;voles<br/>
 	        www.mieuxtrierantes.fr<br/>
 	        Version 1.1.1 "Liwane"<br/>
-	        <i>Nouveaut&eacute;s : Conteneur donn&eacute;es 28/09/14 et 14/10/14,<br/>z&ocirc;ne 5 kms sur carte, boutons sur Android</>
+	        <i>Nouveaut&eacute;s : Conteneur donn&eacute;es 28/09/14 et 14/10/14, z&ocirc;ne 5 kms sur carte, boutons sur Android</>
         </center>
     </div>
 </body>

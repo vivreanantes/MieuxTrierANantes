@@ -41,6 +41,13 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 							title : title,
 							html : description,
 							scrollable : true,
+							listeners : {
+								element : 'element',
+								delegate : 'a',
+								tap : function(e) {
+									_gestionLien(e);
+								}
+							},
 							styleHtmlContent : true
 						}, {
 							xtype : 'button',

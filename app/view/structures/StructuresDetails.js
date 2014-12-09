@@ -8,6 +8,13 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresDetails', {
 				scrollable : true,
 				styleHtmlContent : true,
 				record : null,
+				listeners : {
+					element : 'element',
+					delegate : 'a',
+					tap : function(e) {
+						_gestionLien(e);
+					}
+				},
 				items : [{
 							id : "structuresDetails_description",
 							tpl : "{description}",

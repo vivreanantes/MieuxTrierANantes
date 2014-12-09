@@ -15,13 +15,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			docked : 'top',
 			items : [{
 				ui : 'confirm',
-				html : "<A HREF='https://docs.google.com/presentation/d/1Rd2pOPuDD3NznjlukCrFGsdRp0_Rlr1faCgu0-p_N9A/edit?usp=sharing' TARGET=_blank title='Diaporama de présentation'><IMG SRC='resources/images/images_non_libres/icone_presentation.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'><IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/></A>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1IguI_HmMtMeT4BHbzEpj0dCGIDKVMzHCOKGqvBMbt7I/edit?usp=sharing' TARGET=_blank title='Documentation de présentation'>Nous</A>"
-			}, {
-				ui : 'confirm',
-				html : "<IMG SRC='resources/images/images_non_libres/icone_documents.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/document/d/1pa6GhUpSUowmPecLBvskYkuiENziKnputJBxM5KFnAo/edit?usp=sharing' TARGET=_blank title='Nous aider'>Aidez</A>"
-			}, {
-				ui : 'confirm',
-				html : "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1udy-Qp54pYwOydgJm49QgFQ9QWgjc66n4y2jaFE3gns/edit?usp=sharing' TARGET=_blank title='Suivi des commentaires postés'>Commentez</A>"
+				html : "<A HREF='https://mieuxtrieranantes.wordpress.com' TARGET=_blank title='Bloc Mieux trier à Nantes'>Notre blog</A>"
 			}, {
 				ui : 'confirm',
 				html : "Réemploi "
@@ -29,12 +23,17 @@ Ext.define('MieuxTrierANantes.view.Main', {
 						+ "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1jvFIceePP8h4tjGUGa3EYu8_u_TdtaSBYctysMWXu2Y/edit?usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Liste</A>"
 			}, {
 				ui : 'confirm',
+				html : "<IMG SRC='resources/icons/facebook.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://www.facebook.com/pages/Mieux-trier-à-Nantes/266725983531595' TARGET=_blank title='Facebook'>Facebook</A>"
+			}, {
+				ui : 'confirm',
 				html : "Application "
-						+ "<IMG SRC='resources/icons/android.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://play.google.com/store/apps/details?id=com.MieuxVivreANantes.MieuxTrierANantes' TARGET=_blank title='Lien vers le Play Store'></A>"
+						// + "<IMG SRC='resources/icons/android.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://play.google.com/store/apps/details?id=com.MieuxVivreANantes.MieuxTrierANantes' TARGET=_blank title='Lien vers le Play Store'></A>"
+				+ "<IMG SRC='resources/icons/android.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://play.google.com/store/apps/details?id=com.MieuxVivreANantes.MieuxTrierANantes' TARGET=_blank title='Lien vers le Play Store'>Play Store</A> - "
+				+ "&nbsp;&nbsp;<A HREF='http://mieuxtrieranantes.fr/dev.apk' TARGET=_blank title='Version de développement'>Version développement</A>"
 			}, {
 				ui : 'confirm',
 				html : "Amis "
-						+ "<IMG SRC='resources/images/images_non_libres/logo_les_boites_vertes_rogne_mini.png' HEIGHT='22px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='http://lesboitesvertes.fr/' TARGET=_blank title='Association 'Les boites vertes' (Baludik, PlusDeVers)'>les boîtes vertes</A>"
+						+ "<IMG SRC='resources/images/images_non_libres/logo_les_boites_vertes_rogne_mini.png' HEIGHT='22px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='http://lesboitesvertes.fr/' TARGET=_blank title='Association les boîtes vertes (Baludik, PlusDeVers)'>les boîtes vertes</A>"
 			}]
 		}, {
 			title : 'Déchets',

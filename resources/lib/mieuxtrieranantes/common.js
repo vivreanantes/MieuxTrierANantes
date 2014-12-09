@@ -170,25 +170,83 @@ function _detectePetiteTaille() {
 function _gestionLien(e) {
 	if (e.target.href.length>5) {
 				protocole = e.target.href.substring(0, 4);
-				complement = e.target.href.substring(5);
+				complement = e.target.href.substring(6);
 				if (protocole=="http" || protocole=="www.") {
-					
+					  var url = complement;
+					  if (typeof navigator !== "undefined" && navigator.app) {
+					        // Mobile device.
+					        navigator.app.loadUrl(url, {openExternal: true});
+    				} else {
+				        // Possible web browser
+        				window.open(url, "_blank");
+    				}
+					 // navigator.app.loadUrl(url, {openExternal: true});
 				} else if (protocole=="fich") {
-					_detailleFiche(complement);
+					_detailleFiche(complement, 500, 700, false);
+				} else if (protocole=="lieu") {
+					_detailleLieu(complement, 500, 700, false);
 				}
 				e.stopEvent();
 			}
 			console.log('anchor tapped : '+e.href);
 }
 
-function _detailleFiche(fiche) {
+function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	var info = _getInfo(fiche);
+	if (estFicheDetaillee) {
+		info["libelle"] = "<i>Fiche</i> "+info["libelle"];
+		// #dbeeb5
+		info["description"] = "<p style='color:black;background-color:white;padding:10px;margin:0px;text-align:left;'>"+info["description"]+"</p>";
+	}
 	Ext.Msg.show({
 		title: info["libelle"],
-		message: info["description"],
-		height: 500,
+		message: "<font color=black>"+info["description"]+"</font>",
+		height: hauteur,
+		width: largeur,
+		minWidth: largeur,
      	scrollable: true,
 		buttons: Ext.Msg.OK,
 		icon: Ext.Msg.INFO
 	});
+	//	cls: moncss,padding : monPadding
+
+}
+
+
+function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
+	var info = _getInfo(lieu);
+	if (estFicheDetaillee) {
+		info["libelle"] = "<i>Fiche</i>"+info["libelle"];
+		info["description"] = "<p style='color:black;background-color:#dbeeb5;padding:10px;margin:0px;text-align:left;'>"+info["description"]+"</p>";
+	}
+	Ext.Msg.show({
+		title: info["libelle"],
+		message: info["description"],
+		height: hauteur,
+		width: largeur,
+		minWidth: largeur,
+     	scrollable: true,
+		buttons: Ext.Msg.OK,
+		icon: Ext.Msg.INFO
+	});
+	//	cls: moncss,padding : monPadding
+}
+
+// Permet l'interception des paramètres de la page HTML, qui vouvre une page particulière
+function _gestionLienExterne(){   
+ 	var t = location.search.substring(1).split('&');
+		var f = [];
+		for (var i = 0; i < t.length; i++) {
+			var x = t[i].split('=');
+			f[x[0]] = x[1];
+		}
+		var fiche = f['fiche'];
+		
+		if (fiche != null) {
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+			if (width>1000) { width = 1000} else { width = width -10 };
+			if (height>800) { height = 800} else { height = height -10 };
+			_detailleFiche(fiche, width, height, true);
+		}
 }

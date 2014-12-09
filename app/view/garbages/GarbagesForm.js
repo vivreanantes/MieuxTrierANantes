@@ -17,8 +17,8 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 										xtype : 'textfield',
 										name : 'name',
 										label : 'Déchet',
-										labelWidth : '80px',
-										// width : '215px',
+										labelWidth : 'px',
+										width : '215px',
 										id : 'garbagesFormText',
 										placeHolder : "Ex : miroir"
 									}, {
