@@ -203,9 +203,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			}
 
 			if (record.get('adresseTemp') != null) {
-				popuptext = popuptext + record.get('adresseTemp');
+				popuptext = popuptext + record.get('adresseTemp') + '<br/>';
 			}
-
+			if (record.get('src') != null) {
+				popuptext = popuptext + "<i><font color=red>"+record.get('src')+"</font></i>";
+			}
 			newcoord = [longitude, latitude];
 
 			geojsonFeature = {

@@ -170,7 +170,7 @@ function _detectePetiteTaille() {
 function _gestionLien(e) {
 	if (e.target.href.length>5) {
 				protocole = e.target.href.substring(0, 4);
-				complement = e.target.href.substring(6);
+				complement = e.target.href.substring(5);
 				if (protocole=="http" || protocole=="www.") {
 					  var url = complement;
 					  if (typeof navigator !== "undefined" && navigator.app) {
