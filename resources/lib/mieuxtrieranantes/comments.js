@@ -29,7 +29,7 @@ function _getCommentsBloc(code) {
 	}
 
 	if (faqTraduit != "") {
-		faqTraduit += "<br/>";
+		faqTraduit = "<br/>" + faqTraduit + "<br/>";
 	}
 	return faqTraduit;
 }
@@ -77,6 +77,10 @@ function _getGarbage(idElement) {
 	return result;
 }
 
+function getDescriptionCompleteInfo(myElement) {
+	var description = myElement["description"] + _getCommentsBloc(myElement["code"]);
+	return description;
+}
 /**
  * Renvoie une information
  */

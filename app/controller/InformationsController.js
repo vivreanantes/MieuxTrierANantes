@@ -31,9 +31,8 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 			showDetails : function(elementId) {
 				// Récupère l'élément
 				var myElement = _getInfo(elementId);
-
-				var description = myElement["description"]
-						+ _getCommentsBloc(myElement["code"]);
+				// Calcule 'description' (la description + les commentaires)
+				var description = getDescriptionCompleteInfo(myElement);
 				var title = myElement["libelle"];
 				// Met l'élément dans le détail
 				this.getInformations().push({

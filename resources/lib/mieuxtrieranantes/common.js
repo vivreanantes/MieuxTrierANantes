@@ -193,10 +193,13 @@ function _gestionLien(e) {
 
 function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	var info = _getInfo(fiche);
+	// Calcule 'description' (la description + les commentaires)
+	var description = getDescriptionCompleteInfo(info);
+
 	if (estFicheDetaillee) {
 		info["libelle"] = "<i>Fiche</i> "+info["libelle"];
 		// #dbeeb5
-		info["description"] = "<p style='color:black;background-color:white;padding:10px;margin:0px;text-align:left;'>"+info["description"]+"</p>";
+		info["description"] = "<p style='color:black;background-color:white;padding:10px;margin:0px;text-align:left;'>"+description+"</p>";
 	}
 	Ext.Msg.show({
 		title: info["libelle"],
