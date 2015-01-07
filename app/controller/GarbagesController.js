@@ -214,7 +214,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 					Ext.Msg.show({
 								title : element["libelle"],
 								message : element["description"],
-								height : 300,
+								height : 400,
+								width : 300,
 								scrollable : true,
 								buttons : Ext.Msg.OK,
 								icon : Ext.Msg.INFO,
@@ -226,9 +227,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 									}
 								}
 							});
-					// Ext.Msg.alert(element['libelle'], description,
-					// Ext.emptyFn);
-
+							
+							
 				}
 			}
 		} else if (arButtonsId[0] === "comments_xtype") {

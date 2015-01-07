@@ -676,12 +676,3 @@ function showCommentsPanel(id) {
 function showAboutPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(9);
 };
-
-sendMail = function(id) {
-	var msg = {
-		subject : "Ajouter un commentaire " + id,
-		body : "N'oubliez pas votre nom."
-	};
-	window.location = "mailto:vivreanantes@gmail.com" + "?"
-			+ Ext.urlEncode(msg);
-}

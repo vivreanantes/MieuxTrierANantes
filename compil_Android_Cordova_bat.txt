@@ -1,0 +1,24 @@
+rem -- Efface
+rem rmdir /Q /S C:\dev\dev_1
+del /Q C:\dev\github-repositories\MieuxTrierANantes\build\testing\MieuxTrierANantes\dev.apk
+del /Q C:\dev\dev_1.apk
+rem del /Q C:\dev\dev_2.apk
+
+rem -- compilation en langage natif
+cd C:\dev\github-repositories\MieuxTrierANantes
+rem sencha --info app build native
+rem copy CordovaApp.ap_ C:\dev\dev_1.apk
+copy C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\ant-build\CordovaApp.ap_ C:\dev\dev_1.apk
+
+rem -- supprime le répertoire META-INF (dezippe, retire META-INF, rezip)
+rem C:\dev\tools\7-Zip-9.20\7z x C:\dev\dev_1.apk -oC:\dev\dev_1
+rem rmdir /Q /S C:\dev\dev_1\META-INF
+rem C:\dev\tools\7-Zip-9.20\7z a -tzip C:\dev\dev_2.apk C:\dev\dev_1\* -r
+
+rem -- signe l'appli
+cd C:\dev\jdk1.6.0_35\bin
+jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\dev\release.keystore -storepass 7z6sQFE4CS39a6R -keypass 7z6sQFE4CS39a6R C:\dev\dev_1.apk mieuxvivreanantes
+cd C:\dev\android-sdk\sdk\tools
+C:\dev\android-sdk\sdk\build-tools\21.1.1\zipalign -v 4 C:\dev\dev_2.apk C:\dev\github-repositories\MieuxTrierANantes\build\testing\MieuxTrierANantes\dev.apk
+
+pause
