@@ -1,6 +1,6 @@
 Ext.define('MieuxTrierANantes.view.comments.StructuresModal', {
 	extend : 'Ext.Panel',
-	alias : 'widget.commentmodal_xtype',
+	alias : 'widget.stuctural_xtype',
 
 	config : {
 		centered : true,

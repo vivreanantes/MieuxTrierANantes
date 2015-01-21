@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 							layout : {
 								type : 'hbox',
 								align : 'strech',
-								height : '50px'
+								height : '40px'
 							},
 							items : [{
 										xtype : 'textfield',

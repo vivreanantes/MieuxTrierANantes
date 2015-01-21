@@ -5,7 +5,7 @@ var _usualCategoriesDatas = [
 {"code":"cu_vertbois","libelle":"Déchet vert Bois","sousCategories":"false","image":"feuillages_mini.png","bouton":"cu"},
 {"code":"cu_verrevaisselle","libelle":"Verre Vaisselle","sousCategories":"false","image":"vase_mini.png","bouton":"cu"},
 {"code":"cu_vetementtissu","libelle":"Vêtement Tissu","sousCategories":"false","image":"jean_usage_mini.png","bouton":"cu"},
-{"code":"cu_encombrantelectronique","libelle":"Encombrant Électronique","sousCategories":"false","image":"refrigerateur_mini.png","bouton":"cu"},
+{"code":"cu_encombrantelectronique","libelle":"Encombrant Élec.","sousCategories":"false","image":"refrigerateur_mini.png","bouton":"cu"},
 {"code":"cu_divers","libelle":"Divers","sousCategories":"false","image":"bouchon_liege_mini.png","bouton":"cu"},
 {"code":"scu_medicament","libelle":"Médicament","sousCategories":"true","image":"medicaments_mini.png","bouton":"cu_toxique"},
 {"code":"scu_toxiquejardin","libelle":"Déchet toxique du Jardinage","description_fr":" Engrais chimiques, herbicides, fongicides, insecticides...","sousCategories":"true","image":"desherbant_mini.png","bouton":"cu_toxique"},

@@ -10,7 +10,7 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacForm', {
 							xtype : 'selectfield',
 							usePicker : false,
 							label : 'Quartier',
-							labelWidth : '100px',
+							labelWidth : '90px',
 							id : 'trisacFormSelect',
 							placeHolder : "Ex : Mangin"
 						},
@@ -26,7 +26,7 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacForm', {
 										name : 'name',
 										label : 'Nom ',
 										id : 'trisacFormText',
-										labelWidth : '90px',
+										labelWidth : '70px',
 										itemId : 'trisacFormTextId'
 									}, {
 										xtype : 'button',

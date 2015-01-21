@@ -38,7 +38,7 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'src',
 					type : 'string'
 				}, {
-					name : 'numeroTemp',
+					name : 'tel',
 					type : 'string'
 				}, {
 					name : 'adresseTemp',
@@ -61,6 +61,16 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 				}, {
 					name : 'dechetsNoAccents',
 					type : 'string'
-				}]
+				}, {
+					name : 'url',
+					type : 'string'
+				}, {
+					name : 'email',
+					type : 'string'
+				}, {
+					name : 'logo',
+					type : 'string'
+				}
+				]
 	}
 });

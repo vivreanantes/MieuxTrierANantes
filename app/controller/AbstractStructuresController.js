@@ -31,6 +31,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 			// Le titre
 			var title = record.data["libelle"];
 			descriptionTraduit += title + "<br/><br/>";
+			// Ajout du logo
+			if (record.data["logo"] != null
+					&& record.data["logo"] !== "") {
+				descriptionTraduit += "<img src='"+record.data["logo"]+"' /><br/><br/>";
+			}
 			// Ajout du type
 			if (record.data["modesCollecte"] != null
 					&& record.data["modesCollecte"] !== "") {
@@ -41,7 +46,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 				if (record.data["type"] != null && record.data["type"] !== "") {
 					typeTraduit = record.data["type"];
 				}
-				descriptionTraduit += "<b>" + label + "</b>: "
+				descriptionTraduit += "<b>" + label + "</b> : "
 						+ modeCollecteTraduit + " " + typeTraduit
 						+ "<br/><br/>";
 			}
@@ -50,7 +55,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					&& record.data["adresseTemp"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_adresse"));
-				descriptionTraduit += "<b>" + label + "</b>: "
+				descriptionTraduit += "<b>" + label + "</b> : "
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
 			// Ajout de la description
@@ -60,19 +65,35 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 						+ "<br/><br/>";
 			}
 			// Ajout du téléphone
-			if (record.data["numeroTemp"] != null
-					&& record.data["numeroTemp"] !== "") {
+			if (record.data["tel"] != null
+					&& record.data["tel"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_telephone"));
-				descriptionTraduit += "<b>" + label + "</b>: "
-						+ record.data["numeroTemp"] + "<br/><br/>";
+				descriptionTraduit += "<b>" + label + "</b> : "
+						+ record.data["tel"] + "<br/><br/>";
+			}
+			// Ajout de l'email
+			if (record.data["email"] != null
+					&& record.data["email"] !== "") {
+				var label = _stringUpperFirstLetter(this
+						.translate("label_email"));
+				descriptionTraduit += "<b>" + label + "</b> : "
+						+ record.data["email"] + "<br/><br/>";
+			}
+			// Ajout du site
+			if (record.data["url"] != null
+					&& record.data["url"] !== "") {
+				var label = _stringUpperFirstLetter(this
+						.translate("label_url"));
+				descriptionTraduit += "<b>" + label + "</b> : "
+						+ record.data["url"] + "<br/><br/>";
 			}
 			// Ajout de la plage horaire
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_horaires"));
-				descriptionTraduit += "<b>" + label + "</b>: "
+				descriptionTraduit += "<b>" + label + "</b> : "
 						+ record.data["plagesHoraires_prochainsJours"]
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";

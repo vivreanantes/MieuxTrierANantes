@@ -56,10 +56,11 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 					items : [{
 								xtype : 'textfield',
 								name : 'name',
-								labelWidth : '130px',
-								label : 'Déchet ou nom',
+								labelWidth : '110px',
+								width : '300px',
+								label : 'Déchet/nom',
 								id : 'structureFormText',
-								placeHolder : "Ex : vélo / emmaüs"
+								placeHolder : "Ex : vélo, Ex : emmaüs"
 							}, {
 								xtype : 'button',
 								id : 'structureFormButton',

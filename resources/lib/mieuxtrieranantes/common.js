@@ -170,13 +170,15 @@ function _gestionLien(e) {
 			var url = e.target.href;
 			if (typeof navigator !== "undefined" && navigator.app) {
 				// Mobile device.
-				// Ext.Msg.alert('Externe', 'Mobile device.');
+				Ext.Msg.alert('Externe', 'La page '+ url + ' a été ouverte dans le navigateur.');
 				navigator.app.loadUrl(url, {
 							openExternal : true
 						});
+				e.stopPropagation();
+                e.preventDefault();
+              	return false;
 			} else {
 				// Possible web browser
-				// Ext.Msg.alert('Externe', 'ossible web browser');
 				window.open(url, "_blank");
 			}
 			// navigator.app.loadUrl(url, {openExternal: true});
@@ -185,7 +187,7 @@ function _gestionLien(e) {
 		} else if (protocole == "lieu") {
 			_detailleLieu(complement, 300, 400, false);
 		}
-		e.stopEvent();
+		 e.stopEvent();
 	}
 	console.log('anchor tapped : ' + e.href);
 }
