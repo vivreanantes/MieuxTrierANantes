@@ -97,6 +97,16 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 						+ record.data["plagesHoraires_prochainsJours"]
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";
+			} else {
+				// Ajout de l'horaire si on a pas plagesHoraires_lisible
+				if (record.data["horaires"] != null
+					&& record.data["horaires"] !== "") {
+					var label = _stringUpperFirstLetter(this
+						.translate("label_horaires"));
+					descriptionTraduit += "<b>" + label + "</b> : "
+						+ record.data["horaires"]
+						+ "<br/><br/>";
+					}
 			}
 			// Ajout de la source
 			if (record.data["src"] != null && record.data["src"] !== "") {

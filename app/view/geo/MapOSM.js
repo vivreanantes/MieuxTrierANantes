@@ -23,6 +23,10 @@ Ext.define('MieuxTrierANantes.view.geo.MapOSM', {
 				// défaut a l'init de la carte (avant la geolocalisation
 				// eventuelle)
 				// LIMITE SCROLL CARTE : Agglomeration NANTES / SAINT NAZAIRE
+				// min : Savenay, max Boussay
+				// bounds : {
+				//	min : [47.36, -1.94],
+				//	max : [47.04, -1.18]
 				bounds : {
 					min : [47.84, -2.26],
 					max : [47.11, -1.13]

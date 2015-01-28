@@ -1514,7 +1514,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.commentmodal_xtype"
   ],
   "MieuxTrierANantes.view.comments.StructuresModal": [
-    "widget.commentmodal_xtype"
+    "widget.stuctural_xtype"
   ],
   "MieuxTrierANantes.view.game.Guess": [
     "widget.guess"
