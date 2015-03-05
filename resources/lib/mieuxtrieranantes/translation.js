@@ -395,6 +395,7 @@ function _translate(stKey, stLocale) {
 		"label_dimanche" : { "en" : "sunday", "fr" : "dimanche" },
 		"label_adresse" : { "en" : "address", "fr" : "adresse" },
 		"label_type" : { "en" : "type", "fr" : "type" },
+		"label_statut" : { "en" : "statut", "fr" : "statut" },
 		"label_telephone" : { "en" : "phone number", "fr" : "téléphone" },
 		"label_email" : { "en" : "email", "fr" : "email" },
 		"label_url" : { "en" : "web site", "fr" : "site" },

@@ -36,6 +36,14 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					&& record.data["logo"] !== "") {
 				descriptionTraduit += "<img src='"+record.data["logo"]+"' /><br/><br/>";
 			}
+			// Ajout de l'adresse
+			if (record.data["statut"] != null
+					&& record.data["statut"] !== "") {
+				var label = _stringUpperFirstLetter(this
+						.translate("label_statut"));
+				descriptionTraduit += "<b>" + label + "</b> : "
+						+ record.data["statut"] + "<br/><br/>";
+			}
 			// Ajout du type
 			if (record.data["modesCollecte"] != null
 					&& record.data["modesCollecte"] !== "") {

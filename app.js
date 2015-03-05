@@ -13,7 +13,7 @@
 Ext.application({
 	name : 'MieuxTrierANantes',
 
-	requires : ['Ext.MessageBox', 'MieuxTrierANantes.utils.Functions'],
+	requires : ['Ext.MessageBox'/*, 'MieuxTrierANantes.utils.Functions'*/],
 
 	controllers : ['MainController', 'GeoController', 'InformationsController',
 			'StructuresController', 'GarbagesController',
@@ -143,7 +143,7 @@ Ext.application({
 	},
 
 	onUpdated : function() {
-		Ext.Msg
+		/* 20150203 Ext.Msg
 				.confirm(
 						"Application Update",
 						"This application has just successfully been updated to the latest version. Reload now?",
@@ -152,5 +152,6 @@ Ext.application({
 								window.location.reload();
 							}
 						});
+		*/
 	}
 });

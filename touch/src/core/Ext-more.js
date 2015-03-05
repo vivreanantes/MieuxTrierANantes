@@ -1428,6 +1428,7 @@ Ext.apply(Ext, {
 });
 
 //<debug>
+// 20150203 : cela pose un pb a IE mais on ne modifie rien
 Ext.Object.defineProperty(Ext, 'Msg', {
     get: function() {
         Ext.Logger.error("Using Ext.Msg without requiring Ext.MessageBox");

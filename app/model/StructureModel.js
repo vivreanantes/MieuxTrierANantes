@@ -13,6 +13,9 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'type',
 					type : 'string'
 				}, {
+					name : 'statut',
+					type : 'string'
+				}, {
 					name : 'conseils',
 					type : 'string'
 				}, {

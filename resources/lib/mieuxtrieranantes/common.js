@@ -221,6 +221,7 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 					}
 				}
 			});
+	
 	//	cls: moncss,padding : monPadding
 
 }
@@ -249,7 +250,7 @@ function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
 					}
 				}
 			});
-	//	cls: moncss,padding : monPadding
+	
 }
 
 // Permet l'interception des paramètres de la page HTML, qui ouvre une page particulière
