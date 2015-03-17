@@ -31,7 +31,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
-				initialize : "setOptionsQuartiers",
+				initialize : "setOptionsZones",
 				show : "selectFirstOptionsQuartier"
 			},
 			
@@ -132,10 +132,10 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			var filterElements = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var stTypeRegexp = new RegExp(selectType.getValue());
-					var stQuartier = item.data["quartier"];
+					var stQuartier = item.data["zone"];
 					var stType = item.data["modesCollecte"];
-					var stDechetsNoAccents = item.data["dechetsNoAccents"];
-					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["libelle"]);
+					var stDechetsNoAccents = item.data["mots_cles"];
+					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["nom"]);
 					// Important : il faut recréer l'expression régulière à chaque fois
 			// 		sinon les résultats sont faux !
 					var texttest = new RegExp(escaperegex(text), 'ig');

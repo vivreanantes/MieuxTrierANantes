@@ -43,7 +43,7 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 			var theItems = arItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = _cutWithBr(theItems[i]["libelle"]);
+				var stLibelle = _cutWithBr(theItems[i]["nom"]);
 				result.push({
 					code : theItems[i].id,
 					label : stLibelle,
@@ -80,8 +80,8 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 				// Ajout de la description
 				var descriptionTraduit = "";
-				if (collectModFromStore["description"] != "") {
-					descriptionTraduit = collectModFromStore["description"]
+				if (collectModFromStore["descr"] != "") {
+					descriptionTraduit = collectModFromStore["descr"]
 							+ "<br/><br/>";
 				}
 				this.setDataElement(this.collectModsDetails,
@@ -91,8 +91,8 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 				// Ajout des conseils
 				var conseils = "";
-				if (collectModFromStore["conseils"] !== "") {
-					conseils = collectModFromStore["conseils"] + ",";
+				if (collectModFromStore["cons"] !== "") {
+					conseils = collectModFromStore["cons"] + ",";
 				}
 				var arsItemsAdvices = _getAdvicesBlock(conseils);
 				this.setItemsElement(this.collectModsDetails,
@@ -102,7 +102,7 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 				var title = "<I>"
 						+ _translateWithUpperFirstLetter("label_modeDeCollecte")
 						+ "</I> "
-						+ _stringUpperFirstLetter(collectModFromStore["libelle"]);
+						+ _stringUpperFirstLetter(collectModFromStore["nom"]);
 				this.collectModsDetails.setTitle(title);
 				
 				// Ajout des commentaires

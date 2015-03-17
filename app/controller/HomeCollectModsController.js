@@ -201,7 +201,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 							var escaperegex = Ext.String.escapeRegex;
 							var texttest = new RegExp(
 									escaperegex(texteSansAccents), 'ig');
-							var nomVoie_sansAccents = item.data['nvsa'];
+							var nomVoie_sansAccents = item.data["mots_cles"];
 							return (texttest.test(nomVoie_sansAccents));
 						}
 					});
@@ -215,7 +215,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			if (arButtonsId.length > 1) {
 				var element = _getCollectMod(arButtonsId[1]);
 				if (element != null) {
-					Ext.Msg.alert(element['libelle'], element['description'],
+					Ext.Msg.alert(element['nom'], element['descr'],
 							Ext.emptyFn);
 				}
 			}

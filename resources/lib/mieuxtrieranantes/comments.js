@@ -21,8 +21,8 @@ function _getCommentsBloc(code) {
 			for (var i = 0; i < arComments.length; i++) {
 				if (arComments[i] === code) {
 					faqTraduit += "<br/><img src='resources/icons/info.png' /> <B>"
-							+ _commentsDatas[j]["libelle"] + "</B><BR/>"
-							+ _commentsDatas[j]["description"];
+							+ _commentsDatas[j]["nom"] + "</B><BR/>"
+							+ _commentsDatas[j]["descr"];
 				}
 			}
 		}
@@ -46,21 +46,21 @@ function _getCollectMod(idElement) {
 
 	for (j in _collectModsDatas) {
 		if (_collectModsDatas[j].code === idElement) {
-			description = _collectModsDatas[j]["description"];
-			conseils = _collectModsDatas[j]["conseils"];
+			description = _collectModsDatas[j]["descr"];
+			conseils = _collectModsDatas[j]["cons"];
 			faq = _collectModsDatas[j]["faq"];
-			libelle = _collectModsDatas[j]["libelle"];
+			libelle = _collectModsDatas[j]["nom"];
 			image = _collectModsDatas[j]["image"];
 		}
 	}
 
 	return {
 		"code" : idElement,
-		"description" : description,
-		"conseils" : conseils,
+		"descr" : description,
+		"cons" : conseils,
 		"faq" : faq,
 		"image" : image,
-		"libelle" : libelle
+		"nom" : libelle
 	}
 }
 
@@ -78,7 +78,7 @@ function _getGarbage(idElement) {
 }
 
 function getDescriptionCompleteInfo(myElement) {
-	var description = myElement["description"] + _getCommentsBloc(myElement["code"]);
+	var description = myElement["descr"] + _getCommentsBloc(myElement["code"]);
 	return description;
 }
 /**
@@ -93,26 +93,26 @@ function _getInfo(idElement) {
 
 	for (j in _infosDatas) {
 		if (_infosDatas[j]["code"] === idElement) {
-			description = _infosDatas[j]["description_fr"];
-			libelle = _infosDatas[j]["libelle"];
+			description = _infosDatas[j]["descr"];
+			libelle = _infosDatas[j]["nom"];
 			image = _infosDatas[j]["image"];
-			bouton = _infosDatas[j]["bouton"];
+			bouton = _infosDatas[j]["categ"];
 			faq = _infosDatas[j]["faq"];
 		}
 	}
 	return {
 		"code" : idElement,
 		"faq" : faq,
-		"description" : description,
-		"libelle" : libelle,
+		"descr" : description,
+		"nom" : libelle,
 		"image" : image,
-		"bouton" : bouton
+		"categ" : bouton
 	}
 }
 
 /**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
-	 * partie "conseils" d'une page
+	 * partie "cons" d'une page
 	 * 
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
@@ -140,7 +140,7 @@ function _getAdvicesBlock (advicesString, prefixString) {
 								layout : 'hbox',
 								id : prefixString + _advicesDatas[j]["code"],
 								items : [{
-										html : "<b>" + _advicesDatas[j]["libelle"] + "</b><br/>" + _advicesDatas[j]["description"] + "<br/><br/>",
+										html : "<b>" + _advicesDatas[j]["nom"] + "</b><br/>" + _advicesDatas[j]["descr"] + "<br/><br/>",
 										flex : 1
 									}, {
 										xtype : 'container',
@@ -163,7 +163,7 @@ function _getAdvicesBlock (advicesString, prefixString) {
 						else {
 							result.push({
 								id : prefixString + _advicesDatas[j]["code"],
-								html : "<b>" + _advicesDatas[j]["libelle"] + "<br/></b>" + _advicesDatas[j]["description"] + "<br/><br/>"
+								html : "<b>" + _advicesDatas[j]["nom"] + "<br/></b>" + _advicesDatas[j]["descr"] + "<br/><br/>"
 							});
 						}
 					}

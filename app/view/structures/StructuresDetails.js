@@ -25,13 +25,13 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresDetails', {
 							id : "structuresDetails_advices"
 						}, {
 							id : "structuresDetails_comments_1",
-							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {
 							id : "structuresDetails_comments_2",
-							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {
 							id : "structuresDetails_comments_3",
-							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {
 							xtype : 'button',
 							width : '200px',

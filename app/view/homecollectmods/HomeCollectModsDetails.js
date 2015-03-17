@@ -34,7 +34,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						}, {
 							xtype : 'label',
 							id : "homecollectmodsdetails_conseils_1_bouton",
-							tpl : "Voir <i>fiche {libelle}</i>"
+							tpl : "Voir <i>fiche {nom}</i>"
 						}]
 					}, {
 						// Le deuxieme conseil
@@ -48,7 +48,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						}, {
 							xtype : 'label',
 							id : "homecollectmodsdetails_conseils_2_bouton",
-							text : "Voir <i>fiche {libelle}</i>"
+							text : "Voir <i>fiche {nom}</i>"
 						}]
 					}]
 		}, {

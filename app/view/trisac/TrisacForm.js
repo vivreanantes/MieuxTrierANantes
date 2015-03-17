@@ -27,6 +27,7 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacForm', {
 										label : 'Nom ',
 										id : 'trisacFormText',
 										labelWidth : '70px',
+										width : '285px',
 										itemId : 'trisacFormTextId'
 									}, {
 										xtype : 'button',

@@ -178,9 +178,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 						if (arElementsFaq[i] === commentsString) {
 							result.push({
 								html : "<img src='resources/icons/chat2.png' /><B>"
-										+ _commentsDatas[j]["libelle"]
+										+ _commentsDatas[j]["nom"]
 										+ "</B><BR/>"
-										+ _commentsDatas[j]["description"]
+										+ _commentsDatas[j]["descr"]
 										+ "<br/>"
 							});
 						}
@@ -259,18 +259,18 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 							// le conseil avec l'icone "info"
 							result1.push({
 								libelle : "<img src='resources/icons/info.png' /> "
-										+ _advicesDatas[j]["libelle"],
-								description : _advicesDatas[j]["description"]
+										+ _advicesDatas[j]["nom"],
+								description : _advicesDatas[j]["descr"]
 							});
 							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
 									&& _advicesDatas[j]["fiche"] != "") {
 								var info = _getInfo(_advicesDatas[j]["fiche"]);
 								if (info != null) {
-									var libelleInfo = info["libelle"];
+									var libelleInfo = info["nom"];
 									var codeInfo = info["code"];
 									result2.push({
-												"libelle" : libelleInfo,
+												"nom" : libelleInfo,
 												code : "informations"
 														+ _SEPARATOR
 														+ _advicesDatas[j]["fiche"]
@@ -361,8 +361,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 					if (arElementsFaq[i] === commentsString) {
 						result.push({
 							libelle : "<img src='resources/icons/chat2.png' /> "
-									+ _commentsDatas[j]["libelle"],
-							description : _commentsDatas[j]["description"]
+									+ _commentsDatas[j]["nom"],
+							description : _commentsDatas[j]["descr"]
 						});
 					}
 				}
@@ -575,13 +575,13 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var arItemsToShow = new Array();
 		var thisController = this;
 		datas.each(function(record) {
-					if (record.data["bouton"] == buttonLabel) {
+					if (record.data["categ"] == buttonLabel) {
 
 						// Ajoute les <br/>
-						var stLibelle = _cutWithBr(record.data["libelle"]);
+						var stLibelle = _cutWithBr(record.data["nom"]);
 
 						arItemsToShow.push({
-									"libelle" : stLibelle,
+									"nom" : stLibelle,
 									"image" : record.data["image"],
 									"id" : record.data["code"]
 								});
@@ -625,10 +625,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
 			if (datas[i].bouton == buttonLabel) {
-				var stLibelle = _cutWithBr(datas[i]["libelle"]); // Ajoute
+				var stLibelle = _cutWithBr(datas[i]["nom"]); // Ajoute
 				// les <br/>
 				arItemsToShow.push({
-							"libelle" : stLibelle,
+							"nom" : stLibelle,
 							"image" : datas[i].image,
 							"id" : datas[i].code
 						});

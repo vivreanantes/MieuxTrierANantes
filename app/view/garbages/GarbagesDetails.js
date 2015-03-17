@@ -125,7 +125,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 			width : '100%',
 			id : "garbagesdetails_conseils_1",
 			items : [{
-						tpl : "<b>{libelle}</b><br/>{description}<br/>",
+						tpl : "<b>{nom}</b><br/>{descr}<br/>",
 						id : "garbagesdetails_conseils_1_libelle"
 					}, {
 						// xtype : 'label',
@@ -146,7 +146,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 			width : '100%',
 			id : "garbagesdetails_conseils_2",
 			items : [{
-						tpl : "<b>{libelle}</b><br/>{description}<br/>",
+						tpl : "<b>{nom}</b><br/>{descr}<br/>",
 						id : "garbagesdetails_conseils_2_libelle"
 					}, {
 						// xtype : 'label',
@@ -167,7 +167,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 			width : '100%',
 			id : "garbagesdetails_conseils_3",
 			items : [{
-						tpl : "<b>{libelle}</b><br/>{description}<br/>",
+						tpl : "<b>{nom}</b><br/>{descr}<br/>",
 						id : "garbagesdetails_conseils_3_libelle"
 					}, {
 						// xtype : 'label',
@@ -185,13 +185,13 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 			id : "garbagesdetails_commentaires"
 		}, {
 			id : "garbagesdetails_commentaires_1",
-			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+			tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 		}, {
 			id : "garbagesdetails_commentaires_2",
-			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+			tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 		}, {
 			id : "garbagesdetails_commentaires_3",
-			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+			tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 		}, {
 			html : "<br/>"
 		}, {

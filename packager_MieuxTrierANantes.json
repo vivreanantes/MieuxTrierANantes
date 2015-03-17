@@ -31,7 +31,7 @@
 	 * @required
 	 * This is the integer version code of your application, or you can refer to it as a build number. Used only for Android builds.
 	 */
-	"versionCode":"10",
+	"versionCode":"12",
 
 	/**
 	 * @cfg {Object} icon

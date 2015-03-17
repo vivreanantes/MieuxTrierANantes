@@ -198,14 +198,14 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	var description = getDescriptionCompleteInfo(info);
 
 	if (estFicheDetaillee) {
-		info["libelle"] = "<i>Fiche</i> " + info["libelle"];
+		info["nom"] = "<i>Fiche</i> " + info["nom"];
 		// #dbeeb5
-		info["description"] = "<p style='color:black;background-color:white;padding:10px;margin:0px;text-align:left;'>"
+		info["descr"] = "<p style='color:black;background-color:white;padding:10px;margin:0px;text-align:left;'>"
 				+ description + "</p>";
 	}
 	Ext.Msg.show({
-				title : info["libelle"],
-				message : "<font color=black>" + info["description"]
+				title : info["nom"],
+				message : "<font color=black>" + info["descr"]
 						+ "</font>",
 				height : hauteur,
 				width : largeur,
@@ -229,13 +229,13 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
 	var info = _getInfo(lieu);
 	if (estFicheDetaillee) {
-		info["libelle"] = "<i>Fiche</i>" + info["libelle"];
-		info["description"] = "<p style='color:black;background-color:#dbeeb5;padding:10px;margin:0px;text-align:left;'>"
-				+ info["description"] + "</p>";
+		info["nom"] = "<i>Fiche</i>" + info["nom"];
+		info["descr"] = "<p style='color:black;background-color:#dbeeb5;padding:10px;margin:0px;text-align:left;'>"
+				+ info["descr"] + "</p>";
 	}
 	Ext.Msg.show({
-				title : info["libelle"],
-				message : info["description"],
+				title : info["nom"],
+				message : info["descr"],
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,

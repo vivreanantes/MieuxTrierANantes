@@ -6,7 +6,7 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'code',
 					type : 'string'
 				}, {
-					name : 'libelle',
+					name : "nom",
 					type : 'string',
 					defaultValue : ''
 				}, {
@@ -16,7 +16,7 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'statut',
 					type : 'string'
 				}, {
-					name : 'conseils',
+					name : "cons",
 					type : 'string'
 				}, {
 					name : 'horaires',
@@ -25,14 +25,14 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'plagesHoraires',
 					type : 'string'
 				}, {
-					name : 'quartier',
+					name :"sous_zone",
 					type : 'string',
 					defaultValue : ''
 				}, {
 					name : 'quartier_admin',
 					type : 'string'
 				}, {
-					name : 'description_fr',
+					name : "descr",
 					type : 'string'
 				}, {
 					name : 'modesCollecte',
@@ -62,7 +62,7 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 					name : 'longitude',
 					type : 'string'
 				}, {
-					name : 'dechetsNoAccents',
+					name : 'mots_cles',
 					type : 'string'
 				}, {
 					name : 'url',

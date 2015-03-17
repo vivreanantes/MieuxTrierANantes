@@ -29,7 +29,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 			var descriptionTraduit = "";
 			// Le titre
-			var title = record.data["libelle"];
+			var title = record.data["nom"];
 			descriptionTraduit += title + "<br/><br/>";
 			// Ajout du logo
 			if (record.data["logo"] != null
@@ -67,9 +67,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
 			// Ajout de la description
-			if (record.data["description_fr"] != null
-					&& record.data["description_fr"] !== "") {
-				descriptionTraduit += record.data["description_fr"]
+			if (record.data["descr"] != null
+					&& record.data["descr"] !== "") {
+				descriptionTraduit += record.data["descr"]
 						+ "<br/><br/>";
 			}
 			// Ajout du téléphone
@@ -130,8 +130,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 			// Ajout des conseils
 			var conseils = "";
-			if (record.data["conseils"] !== "") {
-				conseils = record.data["conseils"] + ",";
+			if (record.data["cons"] !== "") {
+				conseils = record.data["cons"] + ",";
 			}
 			var arsItemsAdvices = _getAdvicesBlock(conseils,
 					"garbagesdetails_commentaires_");
@@ -139,7 +139,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					"structuresDetails_advices", arsItemsAdvices);
 
 			// Affectation du titre
-			var title = record.data["libelle"];
+			var title = record.data["nom"];
 			this.structuresDetail.setTitle(title);
 
 			// Ajout des commentaires
@@ -220,10 +220,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 	},
 
 	/**
-	 * Valorise les options des listes déroulantes "quartier" (ce sont les
+	 * Valorise les options des listes déroulantes "quartier" (pour Nantes Métropôle, ce sont les
 	 * quartiers administratifs)
 	 */
-	setOptionsQuartiersAdmin : function(selectField) {
+	setOptionsSousZones : function(selectField) {
 
 		selectField.setOptions([{
 					text : 'Tous',
@@ -265,9 +265,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 	},
 
 	/**
-	 * Valorise les options des listes déroulantes "quartier"
+	 * Valorise les options des listes déroulantes "ville"
 	 */
-	setOptionsQuartiers : function(selectField) {
+	setOptionsZones : function(selectField) {
 
 		selectField.setOptions([{
 					text : 'Toutes',

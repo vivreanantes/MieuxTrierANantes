@@ -6,7 +6,7 @@ Ext.define('MieuxTrierANantes.model.HomeCollectModModel', {
 							name : 'dcv',
 							type : 'string'
 						}, {
-							name : 'nvsa',
+							name : "mots_cles",
 							type : 'string'
 						}, {
 							name : 'ci',

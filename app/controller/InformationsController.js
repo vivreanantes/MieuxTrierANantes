@@ -33,7 +33,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 				var myElement = _getInfo(elementId);
 				// Calcule 'description' (la description + les commentaires)
 				var description = getDescriptionCompleteInfo(myElement);
-				var title = myElement["libelle"];
+				var title = myElement["nom"];
 				// Met l'élément dans le détail
 				this.getInformations().push({
 							xtype : 'panel',
@@ -67,7 +67,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 					var theItems = arItemsToShow;
 					for (var i = 0; i < theItems.length; i++) {
 						if (theItems[i]["id"] != '') {
-							var stLibelle = _cutWithBr(theItems[i]["libelle"]);
+							var stLibelle = _cutWithBr(theItems[i]["nom"]);
 							result.push({
 										code : theItems[i]["id"],
 										label : stLibelle,

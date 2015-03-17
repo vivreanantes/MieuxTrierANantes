@@ -10,9 +10,9 @@ Ext.define('MieuxTrierANantes.view.collectMod.CollectModsDetails', {
 				record : null,
 				items : [{
 							id : "collectModsDetails_description",
-							tpl : "{description}",
+							tpl : "{descr}",
 							data : {
-								"description" : ""
+								"descr" : ""
 							}
 						}, {
 							id : "collectModsDetails_advices"

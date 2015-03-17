@@ -38,7 +38,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 
 			trisacFormSelect : {
 				change : "onTrisacStoreFilter",
-				initialize : "setOptionsQuartiersAdmin"
+				initialize : "setOptionsSousZones"
 			},
 
 			// fonctionne comme une CSS selector
@@ -117,9 +117,9 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 						// var stQuartierRexexp = new
 						// RegExp(selectQuartier.getValue());
 						var stType = item.data["modesCollecte"];
-						var stQuartier = item.data["quartier"];
+						var stQuartier = item.data["sous_zone"];
 						return (stType == 'modco_distrisac'
-								&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
+								&& stTextRexexp.test(item.data["nom"]) && (selectQuartier
 								.getValue() === "all" || stQuartier === selectQuartier
 								.getValue()));
 					}

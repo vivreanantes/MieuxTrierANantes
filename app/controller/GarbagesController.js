@@ -180,7 +180,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			var theItems = arItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
 
-				var stLibelle = _cutWithBr(theItems[i]["libelle"]);
+				var stLibelle = _cutWithBr(theItems[i]["nom"]);
 				result.push({
 							code : theItems[i].id,
 							label : stLibelle,
@@ -212,8 +212,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 					// false;">rr</a>';
 					var description = element['description'];
 					Ext.Msg.show({
-								title : element["libelle"],
-								message : element["description"],
+								title : element["nom"],
+								message : element["descr"],
 								height : 400,
 								width : 300,
 								scrollable : true,
@@ -361,11 +361,11 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			var conseils = "";
 			var modesDeCollecte = "";
 			var treatmentCategories = "";
-			conseils = record["conseils"];
+			conseils = record["cons"];
 			modesDeCollecte = record["modco"];
-			treatmentCategories = record["rec"];
+			treatmentCategories = record["recyc"];
 			/*
-			 * if (record["conseils"] !== '') { conseils = record["conseils"] +
+			 * if (record["cons"] !== '') { conseils = record["cons"] +
 			 * ","; } // conseils de catégories de traitement if
 			 * (record["categorie_traitement"] !== '') { var
 			 * dataWasteTreatmentsCategories = this
@@ -373,7 +373,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			 * dataWasteTreatmentsCategories.each(function(recordCategories) {
 			 * if (recordCategories.raw["code"] ===
 			 * record["categorie_traitement"]) { conseils +=
-			 * recordCategories.raw["conseils"]; modesDeCollecte +=
+			 * recordCategories.raw["cons"]; modesDeCollecte +=
 			 * recordCategories.raw["modesCollecte"]; treatmentCategories +=
 			 * recordCategories.raw["recyclable"]; } }); }
 			 */
@@ -479,9 +479,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// arItemsToShow);
 			// Ajout de la description
 			var descriptionTraduit = "";
-			if (record["description"] != "") {
+			if (record["descr"] != "") {
 				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record["description"] + "<br/>";
+						+ " : " + record["descr"] + "<br/>";
 			}
 			var source = "Non mentionné";
 			if (record["src"] != undefined && record["src"] != "") {
@@ -502,7 +502,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items,
-					"garbagesdetails_conseils", "libelle", "bouton",
+					"garbagesdetails_conseils", "nom", "categ",
 					arsConseils.les_libelles, arsConseils.les_boutons,
 					arsConseils.le_html, nbElementsMax);
 
@@ -573,10 +573,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// sinon les résultats sont faux !
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
-			var descNoAccents = _garbagesDatas[j]["descNoAccents"];
-			if ((_garbagesDatas[j]["categoriesUsuelles"] === category
+			var mots_cles = _garbagesDatas[j]["mots_cles"];
+			if ((_garbagesDatas[j]["cat_usuel"] === category
 					.getValue() || category.getValue() === "all")
-					&& texttest.test(descNoAccents)) {
+					&& texttest.test(mots_cles)) {
 				// Ajoute les <br/>
 				var stLibelle = _cutWithBr(_garbagesDatas[j]["nom"]);
 				result.push({
