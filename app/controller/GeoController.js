@@ -198,8 +198,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 						+ '</b><br/>';
 				// popuptext = popuptext + '<a href="#" onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
 			}
-			if (record.get('libelle') != null && record.get('libelle') != '') {
-				popuptext = popuptext + record.get('libelle') + '<br/>';
+			if (record.get('nom') != null && record.get('nom') != '') {
+				popuptext = popuptext + record.get('nom') + '<br/>';
 			}
 
 			if (record.get('adresseTemp') != null) {
@@ -207,6 +207,10 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			}
 			if (record.get('src') != null) {
 				popuptext = popuptext + "<i><font color=red>"+record.get('src')+"</font></i>";
+			}
+			// Le détail du mode de collecte
+			if (record.get('modesCollecte') != null) {
+			
 			}
 			newcoord = [longitude, latitude];
 

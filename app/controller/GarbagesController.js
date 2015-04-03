@@ -19,7 +19,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			garbagesFormSelect : '#garbagesFormSelect',
 			garbagesFormButton : '#garbagesFormButton',
 			garbagesButtonsPanel : 'garbagesButtonsPanel_xtype',
-			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype'
+			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype',
+			homeButton : '#garbagehomeButton',
+			mainView : 'main_xtype'
 			// advicesList : 'advicesList_xtype',
 			// collectModList : 'collectModList_xtype',
 			// usualCategoriesList2 : 'usualCategoriesList2_xtype',
@@ -112,8 +114,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			'garbagesDetails_xtype button' : {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton6'
+			},
+			homeButton : {
+				// tap : 'onHomeButton'
 			}
-
 		}
 	},
 

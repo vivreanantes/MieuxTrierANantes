@@ -12,6 +12,16 @@ Ext.define('MieuxTrierANantes.view.garbages.Garbages', {
 							xtype : 'garbagescontainer_xtype'
 						}
 				],
+				navigationBar : {
+					items : [{
+								xtype : 'button',
+								iconCls : 'home',
+								ui : 'round', // bouton arrondi
+								align : 'right',
+								id : 'garbagehomeButton'
+							}],
+					docked : 'top'
+				},
 				defaultBackButtonText : "Retour"
 			}
 		});

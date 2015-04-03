@@ -218,6 +218,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		objStructures.data["plagesHoraires_prochainsJours"] = stOuvertAujourdhuiEtDemain;
 		// objStructures.data["plagesHoraires_periodes"] = arNewAttributes;
 	},
+	
 
 	/**
 	 * Valorise les options des listes déroulantes "quartier" (pour Nantes Métropôle, ce sont les

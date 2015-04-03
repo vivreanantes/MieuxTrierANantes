@@ -14,6 +14,16 @@ Ext.define('MieuxTrierANantes.view.structures.Structures', {
 						xtype : 'structuresContainer_xtype'
 					}
 				],
+				navigationBar : {
+					items : [{
+								xtype : 'button',
+								iconCls : 'home',
+								ui : 'round', // bouton arrondi
+								align : 'right',
+								id : 'structurehomebutton'
+							}],
+					docked : 'top'
+				},
 				defaultBackButtonText : "Retour"
 			}
 		});

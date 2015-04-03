@@ -1,0 +1,33 @@
+/**
+ * Conteneur avec
+ */
+Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
+	extend : 'Ext.Container',
+	xtype : 'homeZone4_xtype',
+
+	config : {
+		layout : 'hbox',
+		scrollable : true,
+		height : '50px',
+		style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 100%;',
+		items : [{
+					id : "homeZone4_1",
+					xtype : "button",
+					text : 'Quiz'
+				}, {
+					id : "homeZone4_2",
+					xtype : "button",
+					text : 'Jeux'
+				}, {
+					id : "homeZone4_3",
+					xtype : "button",
+					text : 'Imprimables'
+				}, {
+					id : "homeZone4_4",
+					xtype : "button",
+					text : 'Quiz2'
+				}, {
+					flex : 1
+				}]
+	}
+});

@@ -4,8 +4,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 
 	extend : 'Ext.tab.Panel',
 	xtype : 'main_xtype',
-	requires : ['Ext.TitleBar', 'Ext.Video',
-			'MieuxTrierANantes.view.SettingsView'],
+	requires : ['Ext.TitleBar'],
 	config : {
 		tabBarPosition : 'bottom',
 		items : [{
@@ -19,7 +18,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			}, {
 				ui : 'confirm',
 				html : "Réemploi "
-						+ "<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='http://renoulin.fr/mieuxtrieranantes/formulaire_reemploi.php' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Inscrire</A>&nbsp;&nbsp;"
+						+ "<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='www.mieuxtrieranantes.fr/dist/scripts/php/formulaire_reemploi.php' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Inscrire</A>&nbsp;&nbsp;"
 						+ "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1jvFIceePP8h4tjGUGa3EYu8_u_TdtaSBYctysMWXu2Y/edit?usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Liste</A>"
 			}, {
 				ui : 'confirm',
@@ -63,6 +62,11 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			// iconCls : 'add',
 			iconCls : 'distrisacclass', // icône en forme de sacs
 			xtype : 'trisac_xtype'
+		}, {
+			title : 'Actualités_',
+			iconCls : 'livreclass', 
+			xtype : 'home_xtype',
+			hidden : 'true'
 		}]
 	}
 });

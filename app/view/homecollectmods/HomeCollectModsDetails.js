@@ -30,10 +30,10 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						id : "homecollectmodsdetails_conseils_1",
 						items : [{
 							tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
-							id : "homecollectmodsdetails_conseils_1_libelle"
+							id : "homecollectmodsdetails_conseils_1_nom"
 						}, {
 							xtype : 'label',
-							id : "homecollectmodsdetails_conseils_1_bouton",
+							id : "homecollectmodsdetails_conseils_1_categ",
 							tpl : "Voir <i>fiche {nom}</i>"
 						}]
 					}, {
@@ -44,10 +44,10 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						id : "homecollectmodsdetails_conseils_2",
 						items : [{
 							tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
-							id : "homecollectmodsdetails_conseils_2_libelle"
+							id : "homecollectmodsdetails_conseils_2_nom"
 						}, {
 							xtype : 'label',
-							id : "homecollectmodsdetails_conseils_2_bouton",
+							id : "homecollectmodsdetails_conseils_2_categ",
 							text : "Voir <i>fiche {nom}</i>"
 						}]
 					}]

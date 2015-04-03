@@ -14,8 +14,9 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 			structureFormText : "#structureFormText",
 			structuresFormSelectType : "#structuresFormSelectType",
 			structuresButtons : "#structuresButtons",
-			structureFormButton : "#structureFormButton"
-
+			structureFormButton : "#structureFormButton",
+			homeButton : '#structurehomebutton',
+			mainView : 'main_xtype'
 		},
 		control : {
 
@@ -24,25 +25,25 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				itemtap : "showStructuresDetail",
 				refresh : "onListRefresh"
 			},
-			
+
 			structuresView : {
 				show : 'onShowStructures'
 			},
-			
+
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
 				initialize : "setOptionsZones",
 				show : "selectFirstOptionsQuartier"
 			},
-			
+
 			structuresFormSelectType : {
 				change : "onStructuresStoreFilter"
 			},
-			
+
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
 			},
-			
+
 			structureFormText : {
 				keyup : 'onKeyUpStructureFormText'
 			},
@@ -53,13 +54,16 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton11'
 			},
-			
+
 			structureFormButton : {
 				tap : 'onStructuresStoreFilter'
+			},
+			homeButton : {
+				// tap : 'onHomeButton'
 			}
 		}
 	},
-		
+
 	onKeyUpStructureFormText : function(textbox, event) {
 		if (event.browserEvent.keyCode == 13) {
 			this.filterElements();
@@ -70,7 +74,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		// console.log("onPushBackButton11");
 		// this.onPushBackButton();
 	},
-	
+
 	/**
 	 * A l"initialisation de la fenêtre d"accueil
 	 */
@@ -90,21 +94,21 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		this.getStructuresFormSelectQuartier().setValue("all");
 	},
 
-	
 	onShowStructures : function() {
-		if (this.getStructuresList().getStore()==null) {
-			var structureStore = Ext.create("MieuxTrierANantes.store.StructureStore", {
-				filters : [{
-					property : "modesCollecte",
-					value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp/g
-				}]
-			});
-					// value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
+		if (this.getStructuresList().getStore() == null) {
+			var structureStore = Ext.create(
+					"MieuxTrierANantes.store.StructureStore", {
+						filters : [{
+							property : "modesCollecte",
+							value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp/g
+						}]
+					});
+			// value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
 			this.getStructuresList().setStore(structureStore);
 			structureStore.load();
 		}
 	},
-	
+
 	onListRefresh : function(list, eOpts) {
 		store = this.calculateDatas(list.getStore());
 	}
@@ -127,8 +131,8 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		var text = _utilRetireAccent(this.getStructureFormText().getValue());
 		var escaperegex = Ext.String.escapeRegex;
 		var store = this.getStructuresList().getStore();
-		if (store!=null) {
-			store.clearFilter(true);  // true sinon cela plante dans la version android
+		if (store != null) {
+			store.clearFilter(true); // true sinon cela plante dans la version android
 			var filterElements = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var stTypeRegexp = new RegExp(selectType.getValue());
@@ -137,12 +141,13 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stDechetsNoAccents = item.data["mots_cles"];
 					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["nom"]);
 					// Important : il faut recréer l'expression régulière à chaque fois
-			// 		sinon les résultats sont faux !
+					// 		sinon les résultats sont faux !
 					var texttest = new RegExp(escaperegex(text), 'ig');
-					return (
-						(selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) 
-						  && (stTypeRegexp.test(stType))
-						  && ( texttest.test(stDechetsNoAccents) || texttest.test(stLibelleNoAccents) ) );
+					return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
+							.getValue())
+							&& (stTypeRegexp.test(stType)) && (texttest
+							.test(stDechetsNoAccents) || texttest
+							.test(stLibelleNoAccents)));
 				}
 			});
 			store.filter(filterElements);

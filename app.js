@@ -15,15 +15,15 @@ Ext.application({
 
 	requires : ['Ext.MessageBox'/*, 'MieuxTrierANantes.utils.Functions'*/],
 
-	controllers : ['MainController', 'GeoController', 'InformationsController',
+	controllers : ['GeoController', 'InformationsController',
 			'StructuresController', 'GarbagesController',
 			'HomeCollectModsController', 'TrisacsController',
-			'CollectModsController'],
+			'CollectModsController', 'HomeController'],
 
-	models : ['HomeCollectModModel', 'StructureModel'],
+	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel'],
 
 	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
-			'StructureGeoStore'],
+			'StructureGeoStore', 'HomeStore', 'DocsStore'],
 
 	views : [
 			'Main',
@@ -48,6 +48,20 @@ Ext.application({
 			'comments.CommentsForm',
 			'comments.CommentsDetails',
 			'comments.CommentsModal',
+			// News
+			'home.Home',
+			'home.HomeContainer',
+			'home.HomeZone1',
+			'home.HomeZone2',
+			'home.HomeZone3',
+			'home.HomeZone4',
+			'home.HomeZone5',
+			'home.HomeZone6',
+			'home.SettingsForm',
+			'home.SettingsView',
+			'home.DocsList',
+			'home.DocsModal',
+			'home.QuizView',
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/
@@ -72,7 +86,8 @@ Ext.application({
 			'structures.StructuresList',
 			// Trisac
 			'trisac.Trisacs', 'trisac.TrisacContainer', 'trisac.TrisacDetails',
-			'trisac.TrisacForm', 'trisac.TrisacList'],
+			'trisac.TrisacForm', 'trisac.TrisacList'
+			],
 
 	icon : {
 		'57' : 'resources/icons/Icon.png',
@@ -155,3 +170,6 @@ Ext.application({
 		*/
 	}
 });
+
+/* Pour les news */
+Ext.Loader.setConfig({ disableCaching: false });

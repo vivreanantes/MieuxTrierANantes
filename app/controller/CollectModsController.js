@@ -69,7 +69,7 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 			showDetails : function(elementId) {
 
-				// Crée la page si elle n'existe pas encode
+				// Crée la page si elle n'existe pas encore
 				if (this.collectModsDetails == null) {
 					this.collectModsDetails = Ext
 							.create("MieuxTrierANantes.view.collectMod.CollectModsDetails");

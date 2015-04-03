@@ -26,9 +26,9 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesForm', {
 										id : 'garbagesFormButton',
 										iconCls : 'search', // icône en forme de loupes
 										iconMask : true
-									}
-									]
-						}, {
+									}]
+						}, 
+										{
 							xtype : 'selectfield',
 							label : 'Catégorie',
 							id : 'garbagesFormSelect',

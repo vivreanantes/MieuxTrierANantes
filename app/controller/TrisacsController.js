@@ -12,7 +12,9 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			trisacForm : "TrisacForm_xtype",
 			trisacFormText : "#trisacFormText",
 			trisacFormSelect : "#trisacFormSelect",
-			trisacFormButton : '#trisacFormButton'
+			trisacFormButton : '#trisacFormButton',
+			homeButton : '#trisacshomebutton',
+			mainView : 'main_xtype'
 		},
 		control : {
 
@@ -50,6 +52,9 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			
 			trisacFormButton : {
 				tap : 'onTrisacStoreFilter'
+			},
+			homeButton : {
+				tap : 'onHomeButton'
 			}
 		}
 	},

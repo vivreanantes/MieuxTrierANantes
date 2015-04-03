@@ -6,7 +6,9 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 			config : {
 				refs : {
 					informations : 'informations_xtype',
-					informationsList : 'informationsbuttonslist_xtype'
+					informationsList : 'informationsbuttonslist_xtype',
+					homeButton : '#informationhomebutton',
+					mainView: 'main_xtype'
 				},
 				control : {
 
@@ -16,9 +18,15 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 					// fonctionne comme une CSS selecteur
 					'informationsbuttonslist_xtype button' : {
 						tap : 'onShowDetails'
+					},
+					homeButton : {
+						// tap : 'onHomeButton'
 					}
 				}
 			},
+			
+			
+			
 			onShowDetails : function(button, e, eOpts) {
 				if (button.id === 'envoyez') {
 					Ext.Viewport.add({

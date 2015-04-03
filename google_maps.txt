@@ -1,0 +1,7 @@
+var addressLongLat = yourLatitude+','+yourLongitude
+
+For Android Maps App: window.open("geo:"+addressLongLat);
+
+For iOs Maps App: window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
+
+For Google Maps in App Browser: window.open("http://maps.google.com/?q="+addressLongLat, '_system');

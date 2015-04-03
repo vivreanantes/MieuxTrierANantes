@@ -33,3 +33,5 @@
 /* Inverse les couleurs : noir vers blanc */
 .x-tab-active .livreclass {-webkit-filter: invert(100%);}
 
+/* boutons_panneau */
+.boutons_panneau {line-height:75%}

@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 	xtype : 'commentsForm_xtype',
 	style : 'background-color: #759E60;',
 	config : {
-		url : 'http://renoulin.fr/mieuxtrieranantes/send_mail.php',
+		url : 'www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php',
 		headers : {
 			'Content-Type' : 'multipart/form-data; charset=UTF-8'
 		},
@@ -32,7 +32,8 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 						placeHolder : "Commentaires sur l'application ou la filière tri"
 					}]
 		}, {
-			xtype : 'button',
+			xtype : 'button', 
+			iconMask : true,
 			text : 'Envoyez',
 			iu : 'confirm',
 			handler : function(button, e) {
@@ -57,7 +58,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 	}
 
 });
-
+/*
 Ext.define('MyApp.view.Login', {
         extend: 'Ext.navigation.View',
         height: 220,
@@ -119,4 +120,4 @@ Ext.define('MyApp.view.Login', {
                 }
             }
         ]
-    });
+    });*/

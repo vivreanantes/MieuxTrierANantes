@@ -33,8 +33,10 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
   "MieuxTrierANantes": "app",
+  "MieuxTrierANantes.store.News": "app/store/Settings.js",
   "MieuxTrierANantes.view.comments.StructuresModal": "app/view/structures/StructureModal.js",
-  "MyApp.view.Login": "app/view/comments/CommentsForm.js"
+  "MieuxTrierANantes.view.home.HomeZone5": "app/view/home/HomeZone6.js",
+  "MieuxTrierANantes.view.home.HomeZone6": "app/view/home/HomeZone5.js"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -676,21 +678,24 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.controller.GarbagesController": [],
   "MieuxTrierANantes.controller.GeoController": [],
   "MieuxTrierANantes.controller.HomeCollectModsController": [],
+  "MieuxTrierANantes.controller.HomeController": [],
   "MieuxTrierANantes.controller.InformationsController": [],
-  "MieuxTrierANantes.controller.MainController": [],
   "MieuxTrierANantes.controller.StructuresController": [],
   "MieuxTrierANantes.controller.TrisacsController": [],
+  "MieuxTrierANantes.model.DocsModel": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
-  "MieuxTrierANantes.model.Setting": [],
+  "MieuxTrierANantes.model.HomeModel": [],
+  "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
+  "MieuxTrierANantes.store.DocsStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
-  "MieuxTrierANantes.store.Settings": [],
+  "MieuxTrierANantes.store.HomeStore": [],
+  "MieuxTrierANantes.store.News": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
   "MieuxTrierANantes.view.Main": [],
   "MieuxTrierANantes.view.Menu": [],
-  "MieuxTrierANantes.view.SettingsView": [],
   "MieuxTrierANantes.view.about.Description": [],
   "MieuxTrierANantes.view.collectMod.CollectMods": [],
   "MieuxTrierANantes.view.collectMod.CollectModsButtonsPanel": [],
@@ -709,6 +714,20 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.garbages.GarbagesForm": [],
   "MieuxTrierANantes.view.garbages.UsualCategoriesButtonsPanel": [],
   "MieuxTrierANantes.view.geo.MapOSM": [],
+  "MieuxTrierANantes.view.home.DocsList": [],
+  "MieuxTrierANantes.view.home.DocsModal": [],
+  "MieuxTrierANantes.view.home.Home": [],
+  "MieuxTrierANantes.view.home.HomeContainer": [],
+  "MieuxTrierANantes.view.home.HomeContainerOld": [],
+  "MieuxTrierANantes.view.home.HomeZone1": [],
+  "MieuxTrierANantes.view.home.HomeZone2": [],
+  "MieuxTrierANantes.view.home.HomeZone3": [],
+  "MieuxTrierANantes.view.home.HomeZone4": [],
+  "MieuxTrierANantes.view.home.HomeZone5": [],
+  "MieuxTrierANantes.view.home.HomeZone6": [],
+  "MieuxTrierANantes.view.home.QuizView": [],
+  "MieuxTrierANantes.view.home.SettingsForm": [],
+  "MieuxTrierANantes.view.home.SettingsView": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsContainer": [],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails": [],
@@ -725,8 +744,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.trisac.TrisacDetails": [],
   "MieuxTrierANantes.view.trisac.TrisacForm": [],
   "MieuxTrierANantes.view.trisac.TrisacList": [],
-  "MieuxTrierANantes.view.trisac.Trisacs": [],
-  "MyApp.view.Login": []
+  "MieuxTrierANantes.view.trisac.Trisacs": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1463,15 +1481,19 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.controller.GarbagesController": [],
   "MieuxTrierANantes.controller.GeoController": [],
   "MieuxTrierANantes.controller.HomeCollectModsController": [],
+  "MieuxTrierANantes.controller.HomeController": [],
   "MieuxTrierANantes.controller.InformationsController": [],
-  "MieuxTrierANantes.controller.MainController": [],
   "MieuxTrierANantes.controller.StructuresController": [],
   "MieuxTrierANantes.controller.TrisacsController": [],
+  "MieuxTrierANantes.model.DocsModel": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
-  "MieuxTrierANantes.model.Setting": [],
+  "MieuxTrierANantes.model.HomeModel": [],
+  "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
+  "MieuxTrierANantes.store.DocsStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
-  "MieuxTrierANantes.store.Settings": [],
+  "MieuxTrierANantes.store.HomeStore": [],
+  "MieuxTrierANantes.store.News": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
@@ -1480,9 +1502,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.Menu": [
     "widget.mainmenu"
-  ],
-  "MieuxTrierANantes.view.SettingsView": [
-    "widget.settingsview"
   ],
   "MieuxTrierANantes.view.about.Description": [
     "widget.xtype_description"
@@ -1538,6 +1557,48 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.view.geo.MapOSM": [
     "widget.maposm_xtype"
   ],
+  "MieuxTrierANantes.view.home.DocsList": [
+    "widget.docslist_xtype"
+  ],
+  "MieuxTrierANantes.view.home.DocsModal": [
+    "widget.docsmodal_xtype"
+  ],
+  "MieuxTrierANantes.view.home.Home": [
+    "widget.home_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeContainer": [
+    "widget.homeContainer_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeContainerOld": [
+    "widget.homeContainer_xtype_old"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone1": [
+    "widget.homeZone1_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone2": [
+    "widget.homeZone2_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone3": [
+    "widget.homeZone3_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone4": [
+    "widget.homeZone4_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone5": [
+    "widget.homeZone5_xtype"
+  ],
+  "MieuxTrierANantes.view.home.HomeZone6": [
+    "widget.homeZone6_xtype"
+  ],
+  "MieuxTrierANantes.view.home.QuizView": [
+    "widget.quizview_xtype"
+  ],
+  "MieuxTrierANantes.view.home.SettingsForm": [
+    "widget.settingsForm_xtype"
+  ],
+  "MieuxTrierANantes.view.home.SettingsView": [
+    "widget.widget.settingsView_xtype"
+  ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [
     "widget.homecollectmods_xtype"
   ],
@@ -1588,8 +1649,7 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.trisac.Trisacs": [
     "widget.trisac_xtype"
-  ],
-  "MyApp.view.Login": []
+  ]
 });
 
 

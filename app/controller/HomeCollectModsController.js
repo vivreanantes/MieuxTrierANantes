@@ -11,7 +11,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			homeCollectModDetail : 'homecollectmodsdetails_xtype',
 			homeCollectModsForm : 'homecollectmodsform_xtype',
 			homeCollectModsFormText : '#homeCollectModsFormText',
-			homeCollectModsFormButton : '#homeCollectModsFormButton'
+			homeCollectModsFormButton : '#homeCollectModsFormButton',
+			homeButton : '#homecollectmodshomebutton',
+			mainView : 'main_xtype'
 		},
 		control : {
 
@@ -41,6 +43,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'homecollectmodsdetails_xtype button' : {
 				tap : 'onTapLinkButton'
+			},
+			homeButton : {
+				// tap : 'onHomeButton'
 			}
 		}
 	},
@@ -72,16 +77,18 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	},
 
 	/**
-	 * Met à jour le data du store selon le hash (compare les 2 premiers caractères
+	 * Met à jour le data du store selon le hash (compare les 2 premiers
+	 * caractères
 	 */
 	miseAJourDatasSelonHash : function(texteSansAccents) {
-		if (texteSansAccents==null) {
+		if (texteSansAccents == null) {
 			var value = this.getHomeCollectModsFormText().getValue();
 			texteSansAccents = _utilRetireAccentEtMinuscule(value);
 		}
 		var datas = [];
 		if (texteSansAccents.length > 1) {
-			datas = this.getHomeCollectModsForHash(texteSansAccents.substr(0, 2));
+			datas = this.getHomeCollectModsForHash(texteSansAccents
+					.substr(0, 2));
 		}
 		var store = this.getHomeCollectModsList().getStore();
 		if (store) {
@@ -160,10 +167,10 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			var nbElementsMax = 2; // la page HomeCollectModsDetails.js affiche
 			// 2 éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
-			/*for (var j = 0; j < arsConseils.length; j++) {
-				arsConseils
-
-			}*/
+			/*
+			 * for (var j = 0; j < arsConseils.length; j++) { arsConseils
+			 *  }
+			 */
 			this.setDatasConseils(
 					this.homeCollectModDetail.items.items['0'].items,
 					"homecollectmodsdetails_conseils", "libelle", "bouton",
@@ -215,8 +222,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			if (arButtonsId.length > 1) {
 				var element = _getCollectMod(arButtonsId[1]);
 				if (element != null) {
-					Ext.Msg.alert(element['nom'], element['descr'],
-							Ext.emptyFn);
+					Ext.Msg
+							.alert(element['nom'], element['descr'],
+									Ext.emptyFn);
 				}
 			}
 		} else {

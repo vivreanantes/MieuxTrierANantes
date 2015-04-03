@@ -11,6 +11,16 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectMods', {
 				items : [{
 							xtype : 'homecollectmodscontainer_xtype'
 						}],
+				navigationBar : {
+					items : [{
+								xtype : 'button',
+								iconCls : 'home',
+								ui : 'round', // bouton arrondi
+								align : 'right',
+								id : 'homecollectmodshomebutton'
+							}],
+					docked : 'top'
+				},
 				defaultBackButtonText : "Retour"
 			}
 		});

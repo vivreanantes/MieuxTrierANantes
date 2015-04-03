@@ -35,7 +35,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	
 	ouvertureModaleLieu : function(idLieu) {
-		Ext.Msg.show('Name', "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+		Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' />"
 					+ "<br />"
@@ -48,7 +48,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	
 	ouvertureModaleCommenter : function(message) {
 		// http://stackoverflow.com/questions/18229486/how-can-i-include-two-textboxes-in-ext-msg-show
-	/*	Ext.Msg.show('Name', "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+	/*	Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' />"
 					+ "<br />"
@@ -66,7 +66,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			width : "300px",
 			height : "450px",
 			buttons : Ext.Msg.OKCANCEL,
-			message : "<form id='myform' action='http://renoulin.fr/mieuxtrieranantes/send_mail.php' accept-charset='UTF-8'"
+			message : "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' value='test@test.fr' />"
 					+ "<br />"
@@ -81,7 +81,18 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			}
 		});*/
 	},
-
+	
+	/**
+	 * Remet la page d'accueil en premier.
+	 */
+	onHomeButton : function() {
+		
+		var mainView = this.getMainView();
+		if (mainView!=null) {
+			mainView.setActiveItem(6);
+		}
+	},
+	
 	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
 
@@ -258,9 +269,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 						if (_advicesDatas[j]["code"] === arConseils[i]) {
 							// le conseil avec l'icone "info"
 							result1.push({
-								libelle : "<img src='resources/icons/info.png' /> "
+								nom : "<img src='resources/icons/info.png' /> "
 										+ _advicesDatas[j]["nom"],
-								description : _advicesDatas[j]["descr"]
+								descr : _advicesDatas[j]["descr"]
 							});
 							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
