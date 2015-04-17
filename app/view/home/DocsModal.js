@@ -6,9 +6,8 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 				scrollable : true,
 				layout : 'vbox',
 				scrollable : 'true',
+				title : "Documents (imprimables et listing)",
 				items : [{
-							html : 'Liste des documentations imprimables disponibles'
-						}, {
 							xtype : 'docslist_xtype',
 							scrollable : 'vertical',
 							flex : 1

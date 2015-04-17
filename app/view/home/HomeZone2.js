@@ -18,7 +18,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone2', {
 					xtype : 'textfield',
 					name : 'name',
 					width : '200px',
-					id : 'homeZone2FormText',
+					id : 'homeGlobalSearchFormText',
 					padding : '6 0 0 0',
 					border : 3,
 					style : 'border-color: #6C9804; border-style: solid;',
@@ -29,7 +29,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone2', {
 				}, {
 
 					xtype : 'button',
-					id : 'homeZone2FormButton',
+					id : 'homeGlobalSearchFormButton',
 					width : '35px',
 					// icône en forme de loupes
 					iconCls : 'search',

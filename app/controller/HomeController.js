@@ -7,12 +7,18 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_1 : '#homeZone4_1',
 			homeZone4_2 : '#homeZone4_2',
 			homeZone4_3 : '#homeZone4_3',
-			homeZone4_4 : '#homeZone4_4',
+			homeZone1_bouton : '#homeZone1_bouton',
 			docsModal : 'docsmodal_xtype',
-			homeZone2FormButton : '#homeZone2FormButton',
+			homeGlobalSearchFormButton : '#homeGlobalSearchFormButton',
 			quizView : 'quizview_xtype',
 			docsModal : 'docsmodal_xtype',
-			docsList : 'docslist_xtype'
+			docsList : 'docslist_xtype',
+			homeGlobalSearchList : 'homeglobalsearchlist_xtype',
+			homeGlobalSearchFormText : '#homeGlobalSearchFormText',
+			settingsFormQuartierTextfield : '#settingsFormQuartierTextfield',
+			settingsFormVilleTextfield : '#settingsFormVilleTextfield',
+			quizviewButton : '#quizview_button',
+			settingsFormButton : '#settingsFormButton'
 		},
 		control : {
 			home : {
@@ -27,17 +33,38 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_3 : {
 				tap : 'onTapHomeZone4_3'
 			},
-			homeZone4_4 : {
-				tap : 'onTapHomeZone4_4'
+			homeZone1_bouton : {
+				tap : 'onTapHomeZone1_bouton'
 			},
-			homeZone2FormButton : {
-				tap : 'onTapHomeZone2FormButton'
+			homeGlobalSearchFormButton : {
+				tap : 'onTapSearchButton',
+				keyup : 'onKeyUpSearchButton',
+				change : "onChangeSearchButton",
+				clearicontap : "onChangeSearchButton"
 			},
 			docsModal : {
 				show : 'onShowDocsModal'
 			},
 			docsList : {
 				show : 'onShowDocsList'
+			},
+			homeGlobalSearchList : {
+				show : 'onShowHomeGlobalSearchList'
+			},
+			settingsFormQuartierTextfield : {
+				initialize : 'setOptionsSousZones'
+			},
+			settingsFormVilleTextfield : {
+				initialize : 'setOptionsZones'
+			},
+			quizviewButton : {
+				tap : 'clickQuizViewButton'
+			},
+			quizView : {
+				show : 'showQuizView'
+			},
+			settingsFormButton : {
+				tap : 'clickSettingsFormButton'
 			}
 		}
 
@@ -52,6 +79,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		Ext.create('MieuxTrierANantes.store.HomeStore', {
 					listeners : {
 						load : function(self, records) {
+							var i = 28;
+							// var j = records[0];
+							thisControler.getHome().items.items[0].items.items[1]
+									.setData(records[0].getData());
 							// On valorise le contenu de la zone
 							// actualité
 							/*
@@ -61,60 +92,32 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 						}
 					}
 				});
+
+		if (this.getHomeGlobalSearchList().getStore() == null) {
+			var searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
+			this.getHomeGlobalSearchList().setStore(searchStore);
+			// homecollectmodStore.load();
+		}
+		var store = this.getHomeGlobalSearchList().getStore();
+		if (store) {
+			store.removeAll();
+			var datas = _garbagesDatas;
+			store.setData(datas);
+			store.sync();
+		}
+
+		var o = 8;
 	},
 
-	onTapHomeZone2FormButton : function() {
-		var thisControler = this;
-
-	},
 	onTapHomeZone4_1 : function(button, e, eOpts) {
 		var thisControler = this;
 		// Crée la page si elle n'existe pas encore
 		if (this.quizView == null) {
 			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
 		}
-		// Bind the record onto the show contact view
-		this.quizView.items.items[0].setData({
-			nom : "Quiz janvier 2015 (5 questions)",
-			descr : "Tester vos connaissances sur le tri sur Nantes Métropole. Quiz spécial janvier (5 questions).",
-			image : "resources/images/quiz/issiontrix-quiz-1.jpg",
-			nbq : "5",
-			q1 : "Que faire de la couronne que j'ai gagné ? Elle est propre.",
-			q1r1 : "je la laisse sur ma tête",
-			q1r2 : "le carton/papier ne se recycle pas",
-			q1r3 : "je la recycle (bac jaune ou sac jaune)",
-			q1i1 : "resources/images/quiz/couronne.png",
-			q1e1 : "Tout le carton/papier se recycle, sauf s'il est souillé (sali)",
-			q1ok : "a",
-			q2 : "La fève de la galette...",
-			q2r1 : "j'avale",
-			q2r2 : "je jette ! (sac bleu ou bac bleu)",
-			q2r3 : "je recycle !",
-			q2i1 : "resources/images/quiz/issiontrix-feve-1.png",
-			q2e1 : "Les fèves sont en porcelaine. Donc elle se jette (c'est uniquement le verre ménager qui se recycle).",
-			q2ok : "a",
-			q3 : "Le logo 'point vert' de Eco-emballage signifie...",
-			q3r1 : "que l'emballage est recyclable",
-			q3r2 : "que l'emballage est fabriqué à partir de matières recyclables",
-			q3r3 : "que le fabriquant verse une contribution à Eco-Emballage, Adelphe ou Cyclamed",
-			q3i1 : "resources/images/quiz/point-vert.png",
-			q3e1 : "L'ancien logo 'point vert' signifie que le fabriquant verse une contribution à l'une de ces trois sociétés : Eco-Emballage, Adelphe ou Cyclamed; ceci ne signifie pas que le produit est recyclable.",
-			q3ok : "a",
-			q4 : "Le nouveau logo Triman apparu en janvier 2015.",
-			q4r1 : "signifie qu'il existe des consignes de tri",
-			q4r2 : "que le fabricant paye pour avoir ce logo",
-			q4r3 : "que l'emballage est fabriqué à partir de matières recyclables",
-			q4i1 : "resources/images/quiz/triman.png",
-			q4e1 : "Le nouveau logo 'Triman' représente une personne tendant la main vers trois flèches. Il signifie qu'il existe des consignes de tri",
-			q4ok : "a",
-			q5 : "Que faire du bouchon en liège ?",
-			q5r1 : "Je le recycle (bac jaune ou sac jaune)",
-			q5r2 : "Je jette (bac bleu ou sac bleu) ou je le donne à l'asso Les Bouchons d'Amour",
-			q5r3 : "Je jette (bac bleu ou sac bleu) ou je le donne à l'association Action Cancer 44",
-			q5i1 : "resources/images/quiz/bouchon-1.png",
-			q5e1 : "Pour les bouchons en liège (qui ne se recyclent pas) c'est l'association 'Action Cancer 44' qui les récupèrent.",
-			q5ok : "a"
-		});
+		this.quizView.items.items[0].setData(_quizsDatas["quiz1"]);
+		// Affectation du titre
+		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
 		this.getHome().push(this.quizView);
 	},
 	onTapHomeZone4_2 : function(button, e, eOpts) {
@@ -129,8 +132,29 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 		this.getHome().push(this.docsModal);
 	},
-	onTapHomeZone4_4 : function(button, e, eOpts) {
-		var thisControler = this;
+
+	onTapHomeZone1_bouton : function(button, e, eOpts) {
+
+		if (e.target.name == "settings") {
+			// Crée la page si elle n'existe pas encore
+			if (this.settingsView == null) {
+				this.settingsView = Ext
+						.create("MieuxTrierANantes.view.home.SettingsView");
+			}
+			this.getHome().push(this.settingsView);
+		} else {
+			var description = _labelsDatas["about"]["fr"];
+			var nom = _labelsDatas["about_titre"]["fr"];
+			Ext.Msg.show({
+						title : nom,
+						message : description,
+						height : 400,
+						width : 300,
+						scrollable : true,
+						buttons : Ext.Msg.OK,
+						icon : Ext.Msg.INFO
+					});
+		}
 	},
 
 	onShowDocsModal : function() {
@@ -143,5 +167,141 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	onShowDocsList : function() {
 		var temp = 8;
+	},
+
+	onShowHomeGlobalSearchList : function() {
+	},
+
+	onTapSearchButton : function() {
+		this.filterElements();
+	},
+
+	onKeyUpSearchButton : function(textbox, event) {
+		if (event.browserEvent.keyCode == 13) {
+			this.filterElements();
+		}
+	},
+
+	/**
+	 * Filtre en fonction de la chaine saisie
+	 */
+	onChangeSearchButton : function() {
+		this.filterElements();
+	},
+
+	/**
+	 * La métrhode réalisant le filtre sur la recherche globale
+	 */
+	filterElements : function() {
+
+		var store = this.getHomeGlobalSearchList().getStore();
+		var texteSansAccents = _utilRetireAccent(this
+				.getHomeGlobalSearchFormText().getValue());
+
+		// true sinon cela plante dans la version android
+		store.clearFilter(true);
+		if (store != null) {
+			thisController = this;
+
+			// Filtrer sans casse, en cherchant la chaine dans le nom, en
+			// filtrant sur la catégorie
+			var filterGlobalSearch = Ext.create('Ext.util.Filter', {
+						filterFn : function(item) {
+							var escaperegex = Ext.String.escapeRegex;
+							var texttest = new RegExp(
+									escaperegex(texteSansAccents), 'ig');
+							var motsCles_sansAccents = item.data["mots_cles"];
+							return (texttest.test(motsCles_sansAccents));
+						}
+					});
+			store.filter(filterGlobalSearch);
+		}
+	},
+
+	clickSettingsFormButton : function(button, e) {
+		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
+		var store = Ext.create('Ext.data.Store', {
+					model : "MieuxTrierANantes.model.SettingsModel"
+				});
+
+		// loads any existing Search data from localStorage
+		store.load();
+
+		// now add some Searches
+		store.add({
+					mail : 'Sencha Touch'
+				});
+		store.add({
+					mail : 'Ext JS'
+				});
+
+		// finally, save our Search data to localStorage
+		store.sync();
+
+	},
+
+	clickQuizViewButton : function() {
+		this.calculer();
+		this.cacherMontrerReponses(false);
+	},
+
+	/**
+	 * Cache ou affiche toutes les réponses
+	 * 
+	 * @param {}
+	 *            cacher
+	 */
+	cacherMontrerReponses : function(montrer) {
+		var display = 'block';
+		if (montrer == true) {
+			display = 'none';
+		}
+		if (document.getElementById("q1e1") != null) {
+			document.getElementById("q1e1").style.display = display;
+			document.getElementById("q2e1").style.display = display;
+			document.getElementById("q3e1").style.display = display;
+			document.getElementById("q4e1").style.display = display;
+			document.getElementById("q5e1").style.display = display;
+		}
+	},
+
+	calculer : function() {
+		// efface les compteurs
+		var taille = document.forms['quizviewform'].elements.length;
+		//for (var i = 0; i < nums.length; i++)
+		//	nums[i] = 0;
+		var a = document.forms['quizviewform'].elements[0].value.split(',');
+		var nbOk = 0;
+		var nbKo = 0;
+		// le premier element est les reponses
+		for (var i = 1; i < taille; i++) {
+			var q = document.forms['quizviewform'].elements[i];
+			var indexReponseOk = a.indexOf(q["name"]);
+			if ((indexReponseOk > -1 && q["checked"] == true)
+					|| (indexReponseOk == -1 && q["checked"] == false)) {
+				nbOk++;
+			} else {
+				nbKo++;
+			}
+			// C'est une mauvaise reponse
+			if (indexReponseOk == -1) {
+				document.getElementById(q["name"]).style.textDecoration = "line-through";
+
+			}
+		}
+		var message = "Quelques erreurs";
+		if (nbKo == 0) {
+			message = "Bravo, aucune erreur !";
+		} else if (nbOk == 0) {
+			message = "Tout faut !";
+		} else if (nbKo < nbOk * 3) {
+			message = "Plus de bonnes que de mauvaises réponses";
+		}
+		document.getElementById("resultat").innerHTML = message;
+	},
+
+	showQuizView : function() {
+		this.cacherMontrerReponses(true);
 	}
+
 });

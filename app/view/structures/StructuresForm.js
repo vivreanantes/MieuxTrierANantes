@@ -15,7 +15,7 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 			id : 'structuresFormSelectType',
 			options : [{
 				text : 'Tous',
-				value : /modco_ecopointmodco_decheterie|modco_encombrants_resume|smco_reemp/g
+				value : /modco_ecopointmodco_decheterie|modco_encombrants_resume|smco_reemp|ventevrac/g
 			}, {
 				text : "Déchèteries / Ecopoints",
 				value : "(modco_decheterie|modco_ecopoint)"
@@ -25,6 +25,9 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresForm', {
 			}, {
 				text : "Réemploi",
 				value : "smco_reemp"
+			}, {
+				text : "Vente vrac",
+				value : "ventevrac"
 			}
 
 			/*

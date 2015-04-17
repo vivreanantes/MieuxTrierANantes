@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.comments.CommentsForm', {
 	xtype : 'commentsForm_xtype',
 	style : 'background-color: #759E60;',
 	config : {
-		url : 'www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php',
+		url : 'www.mieuxtrieranantes.fr/scripts_php/send_mail.php',
 		headers : {
 			'Content-Type' : 'multipart/form-data; charset=UTF-8'
 		},

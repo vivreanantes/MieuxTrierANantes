@@ -7,10 +7,10 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone6', {
 	config : {
 		layout : 'hbox',
 		scrollable : true,
-		height : '50px',
+		height : '150px',
 		styleHtmlContent : true,
 		items : [{
-					html : " "
+					xtype : "homeglobalsearchlist_xtype"
 				}],
 		style : 'background-image:url(resources/images/background.png);background-repeat:repeat-y;background-size:100%;'
 	}

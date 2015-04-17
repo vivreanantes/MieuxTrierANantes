@@ -18,7 +18,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			}, {
 				ui : 'confirm',
 				html : "Réemploi "
-						+ "<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='www.mieuxtrieranantes.fr/dist/scripts/php/formulaire_reemploi.php' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Inscrire</A>&nbsp;&nbsp;"
+						+ "<IMG SRC='resources/images/images_non_libres/icone_forms.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='www.mieuxtrieranantes.fr/scripts_php/formulaire_reemploi.php' TARGET=_blank title='Formulaire de saisie des associations/entreprises de réeemploi'>Inscrire</A>&nbsp;&nbsp;"
 						+ "<IMG SRC='resources/images/images_non_libres/icone_spreadsheets.png' HEIGHT='18px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='https://docs.google.com/spreadsheets/d/1jvFIceePP8h4tjGUGa3EYu8_u_TdtaSBYctysMWXu2Y/edit?usp=sharing' TARGET=_blank title='Liste des associations/entreprises de réeemploi'>Liste</A>"
 			}, {
 				ui : 'confirm',

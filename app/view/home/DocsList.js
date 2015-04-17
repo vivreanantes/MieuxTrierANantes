@@ -6,6 +6,6 @@ Ext.define('MieuxTrierANantes.view.home.DocsList', {
 	xtype : 'docslist_xtype',
 	config : {
 		ui : 'dark',
-		itemTpl : "<div><strong>{nom}</strong><br/><a href='http://{url}' target=_new>{url}</a></div>"
+		itemTpl : "<strong>{nom}</strong><br/><a href='http://{url}' target=_new>{url}</a>"
 	}
 });

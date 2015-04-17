@@ -18,7 +18,8 @@ Ext.define('MieuxTrierANantes.view.garbages.Garbages', {
 								iconCls : 'home',
 								ui : 'round', // bouton arrondi
 								align : 'right',
-								id : 'garbagehomeButton'
+								id : 'garbagehomeButton',
+								disabled: true
 							}],
 					docked : 'top'
 				},

@@ -20,10 +20,10 @@ Ext.application({
 			'HomeCollectModsController', 'TrisacsController',
 			'CollectModsController', 'HomeController'],
 
-	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel'],
+	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel', 'SearchModel'],
 
 	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
-			'StructureGeoStore', 'HomeStore', 'DocsStore'],
+			'StructureGeoStore', 'HomeStore', 'DocsStore', 'SearchStore'],
 
 	views : [
 			'Main',
@@ -62,6 +62,7 @@ Ext.application({
 			'home.DocsList',
 			'home.DocsModal',
 			'home.QuizView',
+			'home.GlobalSearchList',
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/

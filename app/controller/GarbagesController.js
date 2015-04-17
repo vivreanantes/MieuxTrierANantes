@@ -597,6 +597,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}
 
 		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
+		
 		// éléments
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);

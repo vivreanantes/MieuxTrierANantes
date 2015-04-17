@@ -98,7 +98,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			iconurl : 'resources/icons/marker-icon-brown.png',
 			label : '<img style="width:10%" src="resources/icons/marker-icon-brown.png"> Conteneur'
 		};
-
+		this.mapOsm.layermapping[this.mapOsm.idVentevrac] = {
+			name : ' Vente au vrac',
+			iconurl : 'resources/icons/marker-icon-yellow.png',
+			label : '<img style="width:10%" src="resources/icons/marker-icon-yellow.png"> Vente au vrac'
+		};
 		this.mapOsm.posLatitudeInit = this.mapOsm.config.defaultLocation[0];
 		this.mapOsm.longitudeInit = this.mapOsm.config.defaultLocation[1];
 
@@ -130,8 +134,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 		baseLayers = {};
 		overlays = {};
 		this.mapOsm.controlLayer = L.control.layers(baseLayers, overlays, {
-            collapsed: true
-        });
+					collapsed : true
+				});
 
 	},
 	/**
@@ -183,7 +187,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			if (modesCollecte != this.mapOsm.idDistrisac
 					&& modesCollecte != this.mapOsm.idDecheterie
 					&& modesCollecte != this.mapOsm.idReemploi
-					&& modesCollecte != this.mapOsm.idConteneur) {
+					&& modesCollecte != this.mapOsm.idConteneur
+					&& modesCollecte != this.mapOsm.idVentevrac) {
 				afficheStructure = false;
 			}
 
@@ -196,7 +201,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			if (record.get('type') != null && record.get('type') != '') {
 				popuptext = popuptext + '<b>' + record.get('type')
 						+ '</b><br/>';
-				// popuptext = popuptext + '<a href="#" onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
+				// popuptext = popuptext + '<a href="#"
+				// onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
 			}
 			if (record.get('nom') != null && record.get('nom') != '') {
 				popuptext = popuptext + record.get('nom') + '<br/>';
@@ -206,11 +212,13 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 				popuptext = popuptext + record.get('adresseTemp') + '<br/>';
 			}
 			if (record.get('src') != null) {
-				popuptext = popuptext + "<i><font color=red>"+record.get('src')+"</font></i>";
+				popuptext = popuptext + "<i><font color=red>"
+						+ record.get('src') + "</font></i><br/>";
 			}
 			// Le détail du mode de collecte
 			if (record.get('modesCollecte') != null) {
-			
+				popuptext = popuptext
+						+ this.getModCoDetails(record.get('modesCollecte'))
 			}
 			newcoord = [longitude, latitude];
 
@@ -237,6 +245,42 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			this.mapOsm.mesCouches[layerId].addData(geojsonFeature);
 		}
 
+	},
+
+	/**
+	 * Renvoie les items (les éléments fils d'un container) correspondant à la
+	 * partie "cons" d'une page
+	 * 
+	 * @params advicesString chaine de caractère listant les codes des conseils
+	 *         (ex : ",cons_1,cons2,cons3")
+	 * @params prefix
+	 */
+	getModCoDetails : function(modCoString) {
+		var result = "";
+		var thisController = this;
+		var arModCo = modCoString.replace(", /g", ",").replace(" ,/g", ",")
+				.split(',');
+		// On parcourt les modes de collecte
+		if (arModCo.length > 0) {
+
+			for (j in _collectModsDatas) {
+				for (i in arModCo) {
+					if (_collectModsDatas[j]["code"] === arModCo[i]) {
+						if (_collectModsDatas[j]["admis"] != null
+								&& _collectModsDatas[j]["admis"] != "") {
+							// lien vers une fiche
+							result = result + ","
+									+ _collectModsDatas[j]["admis"];
+						}
+					}
+				}
+			}
+		}
+		// supprime le premier ','
+		if (result.substring(0, 1) == ",") {
+			result = "<i>" + result.substring(1) + "</i>";
+		}
+		return result;
 	},
 
 	/**

@@ -1,10 +1,10 @@
 Ext.define('MieuxTrierANantes.model.SettingsModel', {
     extend: 'Ext.data.Model',
     config: {
-        fields: ['id', 'query'],
+        fields: ['mail', 'zone', 'souszone', 'modcojaune'],
         proxy: {
             type: 'localstorage',
-            id  : 'twitter-Searches'
+            id  : 'userstoreproxy'
         }
     }
 });

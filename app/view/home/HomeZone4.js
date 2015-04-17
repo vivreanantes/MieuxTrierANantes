@@ -21,11 +21,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				}, {
 					id : "homeZone4_3",
 					xtype : "button",
-					text : 'Imprimables'
-				}, {
-					id : "homeZone4_4",
-					xtype : "button",
-					text : 'Quiz2'
+					text : 'Docs'
 				}, {
 					flex : 1
 				}]

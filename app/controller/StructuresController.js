@@ -100,7 +100,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					"MieuxTrierANantes.store.StructureStore", {
 						filters : [{
 							property : "modesCollecte",
-							value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp/g
+							value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp|ventevrac/g
 						}]
 					});
 			// value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g

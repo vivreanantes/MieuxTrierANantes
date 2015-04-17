@@ -35,7 +35,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	
 	ouvertureModaleLieu : function(idLieu) {
-		Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
+		Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' />"
 					+ "<br />"
@@ -48,7 +48,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	
 	ouvertureModaleCommenter : function(message) {
 		// http://stackoverflow.com/questions/18229486/how-can-i-include-two-textboxes-in-ext-msg-show
-	/*	Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
+	/*	Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' />"
 					+ "<br />"
@@ -66,7 +66,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			width : "300px",
 			height : "450px",
 			buttons : Ext.Msg.OKCANCEL,
-			message : "<form id='myform' action='www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php' accept-charset='UTF-8'"
+			message : "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' value='test@test.fr' />"
 					+ "<br />"
@@ -119,7 +119,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 		end = new Date().getTime();
 		time = end - start;
-		console.log("setDataInButtonsWithManyLines etape 1 : " + time);
+		// console.log("setDataInButtonsWithManyLines etape 1 : " + time);
 
 		for (var i = idElementToChange; i < nbMaxElements; i++) {
 			// Cache les éléments restants
@@ -140,7 +140,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 		end = new Date().getTime();
 		time = end - start;
-		console.log("setDataInButtonsWithManyLines etape 2 : " + time);
+		// console.log("setDataInButtonsWithManyLines etape 2 : " + time);
 	},
 
 	setDataInButtons : function(panel, prefix, arItems, nbMaxElements) {
@@ -445,6 +445,74 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		return res;
 	},
 
+
+	/**
+	 * Valorise les options des listes déroulantes "quartier" (pour Nantes Métropôle, ce sont les
+	 * quartiers administratifs)
+	 */
+	setOptionsSousZones : function(selectField) {
+
+		selectField.setOptions([{
+					text : 'Tous',
+					value : 'all'
+				}, {
+					text : "Bellevue Chantenay Sainte-Anne",
+					value : "qbcsa"
+				}, {
+					text : "Breil Barberie",
+					value : "qbb"
+				}, {
+					text : "Centre Ville",
+					value : "qcv"
+				}, {
+					text : "Dervallières Zola",
+					value : "qdz"
+				}, {
+					text : "Doulon Bottière",
+					value : "qdb"
+				}, {
+					text : "Hauts Pavés - Saint Félix",
+					value : "qhpsf"
+				}, {
+					text : "Ile De Nantes",
+					value : "qidn"
+				}, {
+					text : "Malakoff - Saint-Donatien",
+					value : "qmsd"
+				}, {
+					text : "Nantes Erdre",
+					value : "qne"
+				}, {
+					text : "Nantes Nord",
+					value : "qnn"
+				}, {
+					text : "Nantes Sud",
+					value : "qns"
+				}]);
+	},
+	
+
+	/**
+	 * Valorise les options des listes déroulantes "ville"
+	 */
+	setOptionsZones : function(selectField) {
+
+		selectField.setOptions([{
+					text : 'Toutes',
+					value : 'all'
+				}, {
+					text : "Nantes",
+					value : "Nantes"
+				}, {
+					text : "Hors Nantes : Nord Loire",
+					value : "hnnl"
+				}, {
+					text : "Hors Nantes : Sud Loire",
+					value : "hnsl"
+				}]);
+
+	},
+	
 	/**
 	 * Construit un bouton dont l'identifiant est mainPageXtype +
 	 * elementToShowInPage (ex : "garbagesView-dec_aerosols").

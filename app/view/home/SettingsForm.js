@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.home.SettingsForm', {
 	xtype : 'settingsForm_xtype',
 	style : 'background-color: #759E60;',
 	config : {
-		url : 'www.mieuxtrieranantes.fr/dist/scripts/php/send_mail.php',
+		url : 'www.mieuxtrieranantes.fr/scripts_php/send_mail.php',
 		headers : {
 			'Content-Type' : 'multipart/form-data; charset=UTF-8'
 		},
@@ -15,49 +15,63 @@ Ext.define('MieuxTrierANantes.view.home.SettingsForm', {
 		items : [{
 			xtype : 'fieldset',
 			items : [{
-						xtype : 'emailfield',
-						name : 'email',
-						label : 'Email *'
-					}, {
-						xtype : 'textfield',
-						name : 'sujet',
-						label : 'Sujet',
-						id : 'commentsFormTextfield'
-					}, {
-						xtype : 'textareafield',
-						height : '150px',
-						name : 'message',
-						label : 'Texte',
-						id : 'commentsFormTextareafield',
-						placeHolder : "Commentaires sur l'application ou la filière tri"
-					}]
+				html : "Ces valeurs seront remplies automatiquement dans les formulaires."
+			}, {
+				xtype : 'emailfield',
+				name : 'email',
+				label : 'Email',
+				labelWidth : '90px',
+				id : 'settingsFormMailTextfield'
+			}, {
+				xtype : 'selectfield',
+				usePicker : false,
+				label : 'Ville',
+				labelWidth : '90px',
+				id : 'settingsFormVilleTextfield'
+			}, {
+				xtype : 'selectfield',
+				usePicker : false,
+				label : 'Quartier',
+				labelWidth : '90px',
+				id : 'settingsFormQuartierTextfield'
+			}/* {
+			html : "si vous ne connaissez pas votre mode de collecte, allez sur la page 'collecte à domicile'"
+			}*/, {
+				xtype : 'selectfield',
+				usePicker : false,
+				label : 'Mode de collecte',
+				labelWidth : '90px',
+				id : 'settingsFormModCoTextfield',
+				options : [{
+							text : 'Trisac (uniquement dispo à Nantes)',
+							value : 'modco_sacjaune'
+						}, {
+							text : 'Bac jaune sur Nantes',
+							value : 'modco_bacjaunenantes'
+						}, {
+							text : 'Bac jaune hors Nantes',
+							value : 'modco_bacjaune'
+						}]
+			}, {
+				xtype : 'selectfield',
+				usePicker : false,
+				label : 'Langue',
+				labelWidth : '90px',
+				id : 'settingsFormLangTextfield',
+				options : [{
+							text : 'Français',
+							value : 'fr'
+						}, {
+							text : 'Anglais (expérimental)',
+							value : 'en'
+						}]
+			}]
 		}, {
 			xtype : 'button',
 			iconMask : true,
-			text : 'Envoyez',
+			text : 'Sauvez',
 			iu : 'confirm',
-			handler : function(button, e) {
-				// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
-
-				var store = Ext.create('Ext.data.Store', {
-							model : "MieuxTrierANantes.model.SettingsModel"
-						});
-
-				// loads any existing Search data from localStorage
-				store.load();
-
-				// now add some Searches
-				store.add({
-							query : 'Sencha Touch'
-						});
-				store.add({
-							query : 'Ext JS'
-						});
-
-				// finally, save our Search data to localStorage
-				store.sync();
-
-			}
+			id : 'settingsFormButton'
 		}]
 	}
 

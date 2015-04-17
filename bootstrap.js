@@ -685,12 +685,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.model.DocsModel": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
   "MieuxTrierANantes.model.HomeModel": [],
+  "MieuxTrierANantes.model.SearchModel": [],
   "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
   "MieuxTrierANantes.store.DocsStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
   "MieuxTrierANantes.store.HomeStore": [],
   "MieuxTrierANantes.store.News": [],
+  "MieuxTrierANantes.store.SearchStore": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
@@ -716,6 +718,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.geo.MapOSM": [],
   "MieuxTrierANantes.view.home.DocsList": [],
   "MieuxTrierANantes.view.home.DocsModal": [],
+  "MieuxTrierANantes.view.home.GlobalSearchList": [],
   "MieuxTrierANantes.view.home.Home": [],
   "MieuxTrierANantes.view.home.HomeContainer": [],
   "MieuxTrierANantes.view.home.HomeContainerOld": [],
@@ -1488,12 +1491,14 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.model.DocsModel": [],
   "MieuxTrierANantes.model.HomeCollectModModel": [],
   "MieuxTrierANantes.model.HomeModel": [],
+  "MieuxTrierANantes.model.SearchModel": [],
   "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
   "MieuxTrierANantes.store.DocsStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
   "MieuxTrierANantes.store.HomeStore": [],
   "MieuxTrierANantes.store.News": [],
+  "MieuxTrierANantes.store.SearchStore": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
@@ -1563,6 +1568,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.view.home.DocsModal": [
     "widget.docsmodal_xtype"
   ],
+  "MieuxTrierANantes.view.home.GlobalSearchList": [
+    "widget.homeglobalsearchlist_xtype"
+  ],
   "MieuxTrierANantes.view.home.Home": [
     "widget.home_xtype"
   ],
@@ -1597,7 +1605,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.settingsForm_xtype"
   ],
   "MieuxTrierANantes.view.home.SettingsView": [
-    "widget.widget.settingsView_xtype"
+    "widget.settingsView_xtype"
   ],
   "MieuxTrierANantes.view.homecollectmods.HomeCollectMods": [
     "widget.homecollectmods_xtype"

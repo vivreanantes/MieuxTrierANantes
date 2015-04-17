@@ -103,7 +103,7 @@ function _cutWithBr(stChaine) {
 }
 /**
  * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
- * des balises "<br/>
+ * des balises <br/>
  */
 function _decoupeAvecTaille(stChaine, iTailleMax) {
 	var result = "";
