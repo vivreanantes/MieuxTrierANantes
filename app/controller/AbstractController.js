@@ -35,7 +35,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	
 	ouvertureModaleLieu : function(idLieu) {
-		Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
+		Ext.Msg.show('Name', "<form id='myform' action='http://www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
 					+ "Email * : "
 					+ "<input type='text' id='commentsFormEmailfield' />"
 					+ "<br />"

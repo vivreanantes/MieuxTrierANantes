@@ -568,7 +568,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	filter : function() {
 		var start = new Date().getTime();
 		var result = new Array();
-		var text = _utilRetireAccent(this.getGarbagesFormText().getValue());
+		var text = _utilRetireAccentEtMinuscule(this.getGarbagesFormText().getValue());
 		var category = this.getGarbagesFormSelect();
 		var escaperegex = Ext.String.escapeRegex;
 

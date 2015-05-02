@@ -29,7 +29,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						width : '100%',
 						id : "homecollectmodsdetails_conseils_1",
 						items : [{
-							tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
+							tpl : "<br/><br/><b>{nom}</b><br/>{descr}<br/>",
 							id : "homecollectmodsdetails_conseils_1_nom"
 						}, {
 							xtype : 'label',
@@ -43,7 +43,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						width : '100%',
 						id : "homecollectmodsdetails_conseils_2",
 						items : [{
-							tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
+							tpl : "<br/><br/><b>{nom}</b><br/>{descr}<br/>",
 							id : "homecollectmodsdetails_conseils_2_nom"
 						}, {
 							xtype : 'label',

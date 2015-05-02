@@ -1,18 +1,17 @@
 /**
  * Conteneur avec le pied de page
  */
-Ext.define('MieuxTrierANantes.view.home.HomeZone5', {
+Ext.define('MieuxTrierANantes.view.home.HomeZone6', {
 	extend : 'Ext.Container',
-	xtype : 'homeZone5_xtype',
+	xtype : 'homeZone6_xtype',
 	config : {
-		layout : 'hbox',
-		scrollable : true,
-		height:'95px',
-		tpl : "ooo",
-		styleHtmlContent : true,
-		items : [
-					{
-		html : "<img src='resources/images/bandeau.png' width='300px'>"}],
-		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;'
+		/*layout : 'hbox',
+		scrollable : true,*/
+		height : '200px',
+		/*styleHtmlContent : true,*/
+		items : [{
+					xtype : "homeglobalsearchlist_xtype"
+				}]
+		//, style : 'background-image:url(resources/images/background.png);background-repeat:repeat-y;background-size:100%;'
 	}
 });

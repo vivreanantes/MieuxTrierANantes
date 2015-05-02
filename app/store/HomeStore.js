@@ -1,14 +1,14 @@
 Ext.define('MieuxTrierANantes.store.HomeStore', {
 			extend : 'Ext.data.Store',
 			config : {
-				autoLoad : false,
+				autoLoad : true,
 				model : 'MieuxTrierANantes.model.HomeModel',
 				proxy : {
 					type : 'rest',
 					//  url: 'http://www.mieuxtrieranantes.fr/news.json'
 					url : 'http://www.mieuxtrieranantes.fr/scripts_php/news_json.php',
 					// rootProperty : 'news',
-					rootProperty : 'data',
+					// rootProperty : 'data',
 					headers : {
 						'Accept' : 'application/json'
 					}

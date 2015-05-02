@@ -35,10 +35,10 @@ Ext.define('MieuxTrierANantes.view.home.Home', {
 				items : [{
 							xtype : 'homeContainer_xtype'
 						}],
-		// on cache le titre
-		/*navigationBar : {
-			hidden : true
-		},*/
+				// on cache le titre
+				/*
+				 * navigationBar : { hidden : true },
+				 */
 				defaultBackButtonText : "Retour"
 			}
 		});

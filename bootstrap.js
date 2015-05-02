@@ -34,9 +34,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
   "MieuxTrierANantes": "app",
   "MieuxTrierANantes.store.News": "app/store/Settings.js",
-  "MieuxTrierANantes.view.comments.StructuresModal": "app/view/structures/StructureModal.js",
-  "MieuxTrierANantes.view.home.HomeZone5": "app/view/home/HomeZone6.js",
-  "MieuxTrierANantes.view.home.HomeZone6": "app/view/home/HomeZone5.js"
+  "MieuxTrierANantes.view.comments.StructuresModal": "app/view/structures/StructureModal.js"
 });
 
 Ext.ClassManager.addNameAlternateMappings({

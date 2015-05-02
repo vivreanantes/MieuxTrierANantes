@@ -7,6 +7,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_1 : '#homeZone4_1',
 			homeZone4_2 : '#homeZone4_2',
 			homeZone4_3 : '#homeZone4_3',
+			homeZone3_1 : '#homeZone3_1',
+			homeZone3_2 : '#homeZone3_2',
 			homeZone1_bouton : '#homeZone1_bouton',
 			docsModal : 'docsmodal_xtype',
 			homeGlobalSearchFormButton : '#homeGlobalSearchFormButton',
@@ -32,6 +34,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			},
 			homeZone4_3 : {
 				tap : 'onTapHomeZone4_3'
+			},
+			homeZone3_1 : {
+				tap : 'onTapHomeZone3_1'
+			},
+			homeZone3_2 : {
+				tap : 'onTapHomeZone3_2'
 			},
 			homeZone1_bouton : {
 				tap : 'onTapHomeZone1_bouton'
@@ -77,26 +85,34 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		// Actualités
 		Ext.create('MieuxTrierANantes.store.HomeStore', {
-					listeners : {
-						load : function(self, records) {
-							var i = 28;
-							// var j = records[0];
-							thisControler.getHome().items.items[0].items.items[1]
-									.setData(records[0].getData());
-							// On valorise le contenu de la zone
-							// actualité
-							/*
-							 * thisControler.getHome().items.items[0].items.items[1].items.items[2].items.items[0]
-							 * .setData(records[0].getData());
-							 */
-						}
-					}
-				});
+			listeners : {
+				load : function(self, records) {
+					var i = 28;
+					// var j = records[0];
+					// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
+					// On valorise le contenu de la zone
+					// actualité
+					var nom1 = records[0].getData()["nom1"];
+					var nom2 = records[0].getData()["nom2"];
+					var nom3 = records[0].getData()["nom3"];
+					thisControler.descr1 = records[0].getData()["descr1"];
+					thisControler.descr2 = records[0].getData()["descr2"];
+					thisControler.descr3 = records[0].getData()["descr3"];
+					html = "<p><a href='#' id='news1'>" + nom1
+							+ "</a><br/><a href='#' id='news2'>" + nom2
+							+ "</a><br/><a href='#' id='news3'>" + nom3
+							+ "</a></p>"
+					thisControler.getHome().items.items[0].items.items[1].items.items[2].items.items[0]
+							.setHtml(html);
+
+				}
+			}
+		});
 
 		if (this.getHomeGlobalSearchList().getStore() == null) {
 			var searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
 			this.getHomeGlobalSearchList().setStore(searchStore);
-			// homecollectmodStore.load();
+			searchStore.load();
 		}
 		var store = this.getHomeGlobalSearchList().getStore();
 		if (store) {
@@ -105,8 +121,6 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			store.setData(datas);
 			store.sync();
 		}
-
-		var o = 8;
 	},
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
@@ -133,6 +147,48 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.getHome().push(this.docsModal);
 	},
 
+	/**
+	 * Ouvre une fenêtre de détail d'une actualité.
+	 */
+	onTapHomeZone3_1 : function(button, e, eOpts) {
+		if (e.target.id == "news1") {
+			var desc = this.descr1;
+		} else if (e.target.id == "news2") {
+			var desc = this.descr2;
+		} else if (e.target.id == "news3") {
+			var desc = this.descr3;
+		}
+		var nom = e.target.innerText;
+		Ext.Msg.show({
+					title : nom,
+					message : desc,
+					height : 400,
+					width : 300,
+					scrollable : true,
+					buttons : Ext.Msg.OK,
+					icon : Ext.Msg.INFO
+				});
+	},
+	/**
+	 * Un quiz
+	 */
+	onTapHomeZone3_2 : function(button, e, eOpts) {
+		// Crée la page si elle n'existe pas encore
+		if (this.quizView == null) {
+			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
+		}
+
+		if (e.target.id == "buttonquiz1") {
+			this.quizView.items.items[0].setData(_quizsDatas["quiz1"]);
+		} else if (e.target.id == "buttonquiz2") {
+			this.quizView.items.items[0].setData(_quizsDatas["quiz2"]);
+		}
+		
+		// Affectation du titre
+		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
+		this.getHome().push(this.quizView);
+	},
+	
 	onTapHomeZone1_bouton : function(button, e, eOpts) {
 
 		if (e.target.name == "settings") {
@@ -195,7 +251,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	filterElements : function() {
 
 		var store = this.getHomeGlobalSearchList().getStore();
-		var texteSansAccents = _utilRetireAccent(this
+		var texteSansAccents = _utilRetireAccentEtMinuscule(this
 				.getHomeGlobalSearchFormText().getValue());
 
 		// true sinon cela plante dans la version android
@@ -211,11 +267,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 							var texttest = new RegExp(
 									escaperegex(texteSansAccents), 'ig');
 							var motsCles_sansAccents = item.data["mots_cles"];
-							return (texttest.test(motsCles_sansAccents));
+							var temp = texttest.test(motsCles_sansAccents);
+							return (temp);
 						}
 					});
 			store.filter(filterGlobalSearch);
 		}
+		
 	},
 
 	clickSettingsFormButton : function(button, e) {
@@ -268,8 +326,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	calculer : function() {
 		// efface les compteurs
 		var taille = document.forms['quizviewform'].elements.length;
-		//for (var i = 0; i < nums.length; i++)
-		//	nums[i] = 0;
+		// for (var i = 0; i < nums.length; i++)
+		// nums[i] = 0;
 		var a = document.forms['quizviewform'].elements[0].value.split(',');
 		var nbOk = 0;
 		var nbKo = 0;
@@ -277,11 +335,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		for (var i = 1; i < taille; i++) {
 			var q = document.forms['quizviewform'].elements[i];
 			var indexReponseOk = a.indexOf(q["name"]);
-			if ((indexReponseOk > -1 && q["checked"] == true)
-					|| (indexReponseOk == -1 && q["checked"] == false)) {
+			// CORRECT : vrai coché
+			if ((indexReponseOk > -1 && q["checked"] == true)) {
 				nbOk++;
-			} else {
-				nbKo++;
+			}
+			// PAS CORRECT : faux , pas coché
+			else if (indexReponseOk == -1 && q["checked"] == false) {
+
 			}
 			// C'est une mauvaise reponse
 			if (indexReponseOk == -1) {
@@ -289,15 +349,19 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 			}
 		}
-		var message = "Quelques erreurs";
+		// todo prendre parmis le formulaire QuizView a la place de QuizForm
+		var nbTotal = _quizsDatas["quiz1"]["nbq"];
+		var nbKo = nbTotal - nbOk;
+		var message = "Quelques erreurs ";
 		if (nbKo == 0) {
-			message = "Bravo, aucune erreur !";
+			message = "Bravo, aucune erreur ! ";
 		} else if (nbOk == 0) {
-			message = "Tout faut !";
-		} else if (nbKo < nbOk * 3) {
-			message = "Plus de bonnes que de mauvaises réponses";
+			message = "Tout faux ! ";
+		} else if (nbKo < nbOk) {
+			message = "Plus de bonnes que de mauvaises réponses : ";
 		}
-		document.getElementById("resultat").innerHTML = message;
+		document.getElementById("resultat").innerHTML = message + nbOk + " / "
+				+ nbTotal;
 	},
 
 	showQuizView : function() {

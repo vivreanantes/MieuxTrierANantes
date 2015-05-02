@@ -60,7 +60,7 @@
    $to    = "chris-ren@netcourrier.com";
  
 	   // adresse MAIL OVH liee a l'hebergement.
-	   $from  = "mieuxtrieranantes@renoulin.fr";
+	   $from  = "mieuxtrieranantes@mieuxtrieranantes.fr";
 	 
 	   $JOUR  = date("Y-m-d");
 	   $HEURE = date("H:i");

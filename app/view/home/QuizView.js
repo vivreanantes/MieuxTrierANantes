@@ -8,8 +8,7 @@ Ext.define('MieuxTrierANantes.view.home.QuizView', {
 				scrollable : true,
 				title : "Quiz",
 				items : [{
-					tpl : "<span id='resultat' style='font-weight:bold;'>&nbsp;</span>"
-							 + "<form id='quizviewform'>{descr}"
+					tpl : "<form id='quizviewform'>{descr}"
 							+ "<input type='hidden' name='ok' value='{ok}'/>"
 							+ "<div class='qheader'>"
 							+ "<img src={q1i1} /><br/>1) {q1}</div>"
@@ -52,6 +51,7 @@ Ext.define('MieuxTrierANantes.view.home.QuizView', {
 							+ "<span id='q5e1'><span id='q1r1' style='font-weight:bold;'> {q5e1}</span>"
 							+ "</div>"
 							+ "</form><br/>"
+							+ "<span id='resultat' style='font-weight:bold;'>&nbsp;</span>"
 				}, {
 					xtype : 'button',
 					width : 200,

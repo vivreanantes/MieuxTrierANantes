@@ -173,7 +173,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			 */
 			this.setDatasConseils(
 					this.homeCollectModDetail.items.items['0'].items,
-					"homecollectmodsdetails_conseils", "libelle", "bouton",
+					"homecollectmodsdetails_conseils", "nom", "categ",
 					arsConseils.les_libelles, arsConseils.les_boutons,
 					arsConseils.le_html, nbElementsMax);
 

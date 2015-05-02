@@ -520,23 +520,21 @@
 		"src" : "MieuxTrierANantes 01/15",
 		"mots_cles" : "papier"
 	}, {
-		"code" : "stco_reemploi37",
-		"latitude" : "47.223204",
-		"longitude" : "-1.642425",
+		"code" : "stco_lesmarchandsdesable",
+		"latitude" : "47.200229",
+		"longitude" : "-1.561791",
 		"modesCollecte" : "smco_reemp",
-		"type" : " réemploi informatique",
+		"type" : " réemploi meuble",
 		"statut" : "Association",
-		"descr" : "Créée par l'assoation Actif Ouest, cette entreprise d'insertion est spécialisées dans la <br/>- rénovation de micro-ordinateurs réformés et leur revente avec garantie,<br/>- démantèlement assuré par l'atelier d'insertion pour le matériel ‘obsolète' ou en panne.<br/><br/>C'est un lieu de dépôt des Déchets d'équipement électrique et électronique (D3E).<br/>Tri Actif Ouest est labellisé Ordi2,0 (filoière nationale de collecte, rénovation est réemploi des ordinateurs)",
-		"nom" : "TRIS Actif Ouest",
-		"adresseTemp" : "8 rue du Charron  44800 SAINT-HERBLAIN",
-		"url" : "<a href='http://www.actifouest.fr' target='_blank'>http://www.actifouest.fr</a>",
-		"email" : "tris-actif-ouest@orange.fr",
-		"tel" : "02 51 80 05 38",
-		"src" : "MieuxTrierANantes 01/15",
-		"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00,",
-		"mots_cles" : "ordinateur"
-	}, {
+		"descr" : "Créations d'aménagements intérieurs à partir de matériaux de réemploi.<br/><img src='resources/images/images_non_libres/marchands_de_sable.jpg' />Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires <b>à base d'objets récupérés</b>.<br/>Ils recherchent surtout du mobilier, du bois (mais de préférence du dois brut et pas de l'aggloméré) et des structures métalliques.",
+		"nom" : "Les marchands de sable",
+		"adresseTemp" : "18 quai du président Wilson  44200 NANTES",
+		"url" : "<a href='marchandsdesable.com' target='_blank'>marchandsdesable.com</a>",
+		"email" : "lesmarchandsdesable@gmail.com",
+		"tel" : "06 81 67 42 06",
+		"src" : "MieuxTrierANantes 02/15",
+		"mots_cles" : "meuble,bois,structure metallique"
+	}, , {
 		"code" : "stco_lesmarchandsdesable",
 		"latitude" : "47.200229",
 		"longitude" : "-1.561791",
