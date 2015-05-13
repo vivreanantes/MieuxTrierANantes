@@ -60,7 +60,6 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 								geoController.addStructure(record);
 							});
 				}, this);
-
 	},
 
 	/**

@@ -38,7 +38,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 						//
 						{
 							flex : 1,
-							html : '1.13'
+							html : ' '
 						}]
 			}
 		});

@@ -76,7 +76,7 @@
 	 
 
 	   $mail_Data .= "<br> \n";
-	   $mail_Data .= "Emetteur : <font color='blue'>$courriel</font><br> \n";
+	   $mail_Data .= "emetteur : <font color='blue'>$nom</font><br> \n";
 	   $mail_Data .= "courriel : $courriel <br> \n";
 	   $mail_Data .= "infoPublique : $infoPublique <br> \n";
 	   $mail_Data .= "nomPersonne : $nomPersonne <br> \n";

@@ -3,8 +3,8 @@
 
 	{
 		"code" : "stco_reemploiajout1",
-		"latitude" : "-1.575083",
-		"longitude" : "47.20508",
+		"latitude" : "47.20508",
+		"longitude" : "-1.575083",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi vêtements, divers, livres/BD/CD/DVD",
 		"statut" : "Association",
@@ -21,8 +21,8 @@
 		"mots_cles" : "Vetements, bibelots, livres"
 	}, {
 		"code" : "stco_reemploisolidarimeuble",
-		"latitude" : "-1.596764",
-		"longitude" : "47.198314",
+		"latitude" : "47.198314",
+		"longitude" : "-1.596764",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi meuble, électroménager",
 		"statut" : "Association",
@@ -39,8 +39,8 @@
 		"mots_cles" : "meuble,electromenager"
 	}, {
 		"code" : "stco_spopaffaires",
-		"latitude" : "-1.550847",
-		"longitude" : "47.210229",
+		"latitude" : "47.210229",
+		"longitude" : "-1.550847",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi vêtements, divers, livres/BD/CD/DVD",
 		"statut" : "Association",
@@ -57,8 +57,8 @@
 		"mots_cles" : "vetement, petit mobilier, livre, jouet, vaisselle"
 	}, {
 		"code" : "stco_reemploiajout2",
-		"latitude" : "-1.610673",
-		"longitude" : "47.208928",
+		"latitude" : "47.208928",
+		"longitude" : "-1.610673",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi vélo",
 		"statut" : "Association",
@@ -75,8 +75,8 @@
 		"mots_cles" : "Velos entiers, pieces detachees fonctionnelles, accessoires, equipements"
 	}, {
 		"code" : "stco_reemploiajout3",
-		"latitude" : "-1.554955",
-		"longitude" : "47.243274",
+		"latitude" : "47.243274",
+		"longitude" : "-1.554955",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi vélo",
 		"statut" : "Association",
@@ -102,8 +102,8 @@
 		"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 15/07/2014"
 	}, {
 		"code" : "stco_reemploiajout5",
-		"latitude" : "-1.802187",
-		"longitude" : "47.112545",
+		"latitude" : "47.112545",
+		"longitude" : "-1.802187",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
 		"statut" : "Association",
@@ -121,8 +121,8 @@
 		"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
 		"code" : "stco_reemploiajout6",
-		"latitude" : "-1.755177",
-		"longitude" : "47.200633",
+		"latitude" : "47.200633",
+		"longitude" : "-1.755177",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
 		"statut" : "Association",
@@ -140,8 +140,8 @@
 		"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
 		"code" : "stco_reemploiajout7",
-		"latitude" : "-1.590294",
-		"longitude" : "47.231095",
+		"latitude" : "47.231095",
+		"longitude" : "-1.590294",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
 		"statut" : "Association",
@@ -159,8 +159,8 @@
 		"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
 		"code" : "stco_reemploiajout8",
-		"latitude" : "-2.154311",
-		"longitude" : "47.240987",
+		"latitude" : "47.240987",
+		"longitude" : "-2.154311",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
 		"statut" : "Association",
@@ -178,8 +178,8 @@
 		"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique"
 	}, {
 		"code" : "stco_reemploiajout9",
-		"latitude" : "-1.571628",
-		"longitude" : "47.201027",
+		"latitude" : "47.201027",
+		"longitude" : "-1.571628",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi livres/bd/cd/dvd, jouet, vêtements, divers",
 		"statut" : "Association",
@@ -227,8 +227,8 @@
 		"mots_cles" : "vetement"
 	}, {
 		"code" : "stco_reemploiajout12",
-		"latitude" : "-1.552638",
-		"longitude" : "47.216793",
+		"latitude" : "47.216793",
+		"longitude" : "-1.552638",
 		"modesCollecte" : "smco_reemp",
 		"type" : " réemploi 0",
 		"statut" : "Entreprise",
@@ -330,7 +330,7 @@
 		"latitude" : "47.242692",
 		"longitude" : "-1.571018",
 		"modesCollecte" : "smco_reemp",
-		"type" : " réemploi vêtement",
+		"type" : " réemploi vêtements",
 		"statut" : "Association",
 		"descr" : "RE-act est un service né en 2010 de proximité proposant aux gens de transformer leurs vêtements afin de s'offrir une nouvelle pièce unique et sur-mesure.<br/><br/>Il s'adresse majoritairement à des personnes peu consuméristes à la recherche d'originalité et de singularité par une nouvelle expérience du vêtement et leur offre ainsi une alternative séduisante à la consommation de textiles neufs.<br/>Les clients apportent leurs vieux vêtements en boutique, choisissent parmi les coupes disponibles et commandent leur nouveau vêtement, personnalisé, fait à partir de leurs propres vêtements",
 		"nom" : "Re-act",
@@ -520,21 +520,23 @@
 		"src" : "MieuxTrierANantes 01/15",
 		"mots_cles" : "papier"
 	}, {
-		"code" : "stco_lesmarchandsdesable",
-		"latitude" : "47.200229",
-		"longitude" : "-1.561791",
+		"code" : "stco_reemploi37",
+		"latitude" : "47.223204",
+		"longitude" : "-1.642425",
 		"modesCollecte" : "smco_reemp",
-		"type" : " réemploi meuble",
+		"type" : " réemploi informatique",
 		"statut" : "Association",
-		"descr" : "Créations d'aménagements intérieurs à partir de matériaux de réemploi.<br/><img src='resources/images/images_non_libres/marchands_de_sable.jpg' />Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires <b>à base d'objets récupérés</b>.<br/>Ils recherchent surtout du mobilier, du bois (mais de préférence du dois brut et pas de l'aggloméré) et des structures métalliques.",
-		"nom" : "Les marchands de sable",
-		"adresseTemp" : "18 quai du président Wilson  44200 NANTES",
-		"url" : "<a href='marchandsdesable.com' target='_blank'>marchandsdesable.com</a>",
-		"email" : "lesmarchandsdesable@gmail.com",
-		"tel" : "06 81 67 42 06",
-		"src" : "MieuxTrierANantes 02/15",
-		"mots_cles" : "meuble,bois,structure metallique"
-	}, , {
+		"descr" : "Créée par l'association Actif Ouest, cette entreprise d'insertion est spécialisées dans la <br/>- rénovation de micro-ordinateurs réformés et leur revente avec garantie,<br/>- démantèlement assuré par l'atelier d'insertion pour le matériel ‘obsolète' ou en panne.<br/><br/>C'est un lieu de dépôt des Déchets d'équipement électrique et électronique (D3E).<br/>Tri Actif Ouest est labellisé Ordi2.0 (filière nationale de collecte, rénovation est réemploi des ordinateurs).<br/><br/>C'est également un lieu de vente d'ordinateurs fixes ou portables (avec garantie), de dépannage et de vente de pièces détachées.",
+		"nom" : "TRIS Actif Ouest",
+		"adresseTemp" : "8 rue du Charron  44800 SAINT-HERBLAIN",
+		"url" : "<a href='http://www.actifouest.fr' target='_blank'>http://www.actifouest.fr</a>",
+		"email" : "tris-actif-ouest@orange.fr",
+		"tel" : "02 51 80 05 38",
+		"src" : "MieuxTrierANantes 01/15",
+		"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00,",
+		"mots_cles" : "ordi,ordinateur,pc,portable"
+	}, {
 		"code" : "stco_lesmarchandsdesable",
 		"latitude" : "47.200229",
 		"longitude" : "-1.561791",
@@ -941,10 +943,10 @@
 		"statut" : "Entreprise",
 		"descr" : "Situé dans le centre commercial 'Les grands prés', propose des viennoiseries en sac tissus et pâtisseries en boîte.",
 		"nom" : "Boulangerie L'arbre à pain",
-		"adresseTemp" : "44 Rue des Frères Rousseau  44860 SAINT-AIGNAN-GRANDLIEU",
+		"adresseTemp" : "44 Rue des Frères Rousseau  44860 Saint-Aignan de Grand Lieu",
 		"tel" : "02 40 31 00 85",
 		"src" : "MieuxTrierANantes 04/15",
-		"sous_zone" : "47.126671"
+		"sous_zone" : "hnsl"
 	}, {
 		"code" : "stco_ventevrac2",
 		"latitude" : "47.226519",
@@ -959,7 +961,7 @@
 		"tel" : "02 28 06 47 43",
 		"src" : "MieuxTrierANantes 04/15",
 		"horaires" : "lundi au jeudi 9h30-19h, vendredi 9h30-19h30, samedi 9h-19h.",
-		"sous_zone" : "47.226519"
+		"sous_zone" : "hnnl"
 	}, {
 		"code" : "stco_ventevrac3",
 		"latitude" : "47.204353",
@@ -974,7 +976,7 @@
 		"tel" : "02 40 48 55 67 ",
 		"src" : "MieuxTrierANantes 04/15",
 		"horaires" : "lundi au samedi 9h30-19h45",
-		"sous_zone" : "47.204353"
+		"sous_zone" : "Nantes"
 	}, {
 		"code" : "stco_ventevrac4",
 		"latitude" : "47.254254",
@@ -989,7 +991,7 @@
 		"tel" : "02 40 48 55 67 ",
 		"src" : "MieuxTrierANantes 04/15",
 		"horaires" : "lundi au vendredi 9h-19h15, samedi 9h-19h",
-		"sous_zone" : "47.254254"
+		"sous_zone" : "hnnl"
 	}, {
 		"code" : "stco_ventevrac5",
 		"latitude" : "47.216681",
@@ -1004,7 +1006,7 @@
 		"tel" : "09 72 43 32 94 ",
 		"src" : "MieuxTrierANantes 04/15",
 		"horaires" : "mardi à vendredi 11h30–19h, samedi 10h-19h",
-		"sous_zone" : "47.216681"
+		"sous_zone" : "Nantes"
 	}, {
 		"code" : "1011",
 		"zone" : "Nantes",

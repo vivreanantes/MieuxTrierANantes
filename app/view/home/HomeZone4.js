@@ -13,11 +13,11 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 		items : [{
 					id : "homeZone4_1",
 					xtype : "button",
-					text : 'Quiz'
+					text : 'Quiz<br/>Janvier'
 				}, {
 					id : "homeZone4_2",
 					xtype : "button",
-					text : 'Jeux'
+					text : 'Quiz<br/>Hellfest'
 				}, {
 					id : "homeZone4_3",
 					xtype : "button",
