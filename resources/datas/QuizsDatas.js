@@ -44,7 +44,7 @@ var _quizsDatas = {
 	'quiz2' : {
 		nom : "Quiz Hellfest",
 		descr : "Quiz spécial métal et bière pour Hellfest",
-		image : "resources/images/quiz/issiontrix-quiz-1.jpg",
+		image : "resources/images/quiz/issiontrix_hellfest.png.jpg",
 		src : "MieuxTrierANantes 05/2015",
 		nbq : "5",
 		q1 : "La canette en métal",
@@ -65,7 +65,7 @@ var _quizsDatas = {
 		q3r1 : "il se met à la poubelle",
 		q3r2 : "il se recycle",
 		q3r3 : "je le conserve pour la prochaine fois",
-		q3i1 : "resources/images/quiz/",
+		q3i1 : "resources/images/quiz/tirebouchon.png",
 		q3e1 : "Comme ce n'est ni un flacon ni une bouteille il ne se recycle pas.",
 		q3ok : "q3r1",
 		q4 : "Le gobelet en plastique réutilisable",

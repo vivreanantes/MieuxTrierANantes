@@ -134,8 +134,17 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
 		this.getHome().push(this.quizView);
 	},
+	
 	onTapHomeZone4_2 : function(button, e, eOpts) {
 		var thisControler = this;
+		// Crée la page si elle n'existe pas encore
+		if (this.quizView == null) {
+			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
+		}
+		this.quizView.items.items[0].setData(_quizsDatas["quiz2"]);
+		// Affectation du titre
+		this.quizView.setTitle(_quizsDatas["quiz2"]["nom"]);
+		this.getHome().push(this.quizView);
 	},
 	onTapHomeZone4_3 : function(button, e, eOpts) {
 
@@ -183,12 +192,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (e.target.id == "buttonquiz2") {
 			this.quizView.items.items[0].setData(_quizsDatas["quiz2"]);
 		}
-		
+
 		// Affectation du titre
 		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
 		this.getHome().push(this.quizView);
 	},
-	
+
 	onTapHomeZone1_bouton : function(button, e, eOpts) {
 
 		if (e.target.name == "settings") {
@@ -273,7 +282,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					});
 			store.filter(filterGlobalSearch);
 		}
-		
+
 	},
 
 	clickSettingsFormButton : function(button, e) {
@@ -350,9 +359,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			}
 		}
 		// todo prendre parmis le formulaire QuizView a la place de QuizForm
-		var nbTotal = _quizsDatas["quiz1"]["nbq"];
-		var nbKo = nbTotal - nbOk;
-		var message = "Quelques erreurs ";
+		var nbQ = _quizsDatas["quiz1"]["nbq"]
+		var nbTotalReponses = nbQ * 3;
+		var nbKo = nbTotalReponses - nbOk;
+		var message = "Quelques erreurs.";
 		if (nbKo == 0) {
 			message = "Bravo, aucune erreur ! ";
 		} else if (nbOk == 0) {
@@ -361,7 +371,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			message = "Plus de bonnes que de mauvaises réponses : ";
 		}
 		document.getElementById("resultat").innerHTML = message + nbOk + " / "
-				+ nbTotal;
+				+ nbQ;
 	},
 
 	showQuizView : function() {

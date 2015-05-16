@@ -23,7 +23,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone3', {
 						}
 					}
 
-				}, {
+				}/*, {
 					id : "homeZone3_2",
 					html : "<a href='#'><span id='buttonquiz1' />Quiz Janvier</span></a> - "
 							+ "<a href='#'><span id='buttonquiz2' />Quiz Hellfest</span></a>",
@@ -34,6 +34,6 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone3', {
 							this.fireEvent('tap', this, e, t);
 						}
 					}
-				}]
+				}*/]
 	}
 });
