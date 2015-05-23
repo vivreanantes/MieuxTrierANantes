@@ -23,7 +23,7 @@ Ext.application({
 	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel', 'SearchModel'],
 
 	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
-			'StructureGeoStore', 'HomeStore', 'DocsStore', 'SearchStore'],
+			'StructureGeoStore', 'HomeStore', 'DocsStore', 'GlobalSearchStore'],
 
 	views : [
 			'Main',
@@ -56,7 +56,7 @@ Ext.application({
 			'home.HomeZone3',
 			'home.HomeZone4',
 			'home.HomeZone5',
-			'home.HomeZone6',
+			'home.GlobalSearchResult',
 			'home.SettingsForm',
 			'home.SettingsView',
 			'home.DocsList',

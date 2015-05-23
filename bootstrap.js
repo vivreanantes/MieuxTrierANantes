@@ -687,10 +687,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
   "MieuxTrierANantes.store.DocsStore": [],
+  "MieuxTrierANantes.store.GlobalSearchStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
   "MieuxTrierANantes.store.HomeStore": [],
   "MieuxTrierANantes.store.News": [],
-  "MieuxTrierANantes.store.SearchStore": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
@@ -717,6 +717,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.home.DocsList": [],
   "MieuxTrierANantes.view.home.DocsModal": [],
   "MieuxTrierANantes.view.home.GlobalSearchList": [],
+  "MieuxTrierANantes.view.home.GlobalSearchResult": [],
   "MieuxTrierANantes.view.home.Home": [],
   "MieuxTrierANantes.view.home.HomeContainer": [],
   "MieuxTrierANantes.view.home.HomeContainerOld": [],
@@ -725,7 +726,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.home.HomeZone3": [],
   "MieuxTrierANantes.view.home.HomeZone4": [],
   "MieuxTrierANantes.view.home.HomeZone5": [],
-  "MieuxTrierANantes.view.home.HomeZone6": [],
   "MieuxTrierANantes.view.home.QuizView": [],
   "MieuxTrierANantes.view.home.SettingsForm": [],
   "MieuxTrierANantes.view.home.SettingsView": [],
@@ -1493,10 +1493,10 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.model.SettingsModel": [],
   "MieuxTrierANantes.model.StructureModel": [],
   "MieuxTrierANantes.store.DocsStore": [],
+  "MieuxTrierANantes.store.GlobalSearchStore": [],
   "MieuxTrierANantes.store.HomeCollectModStore": [],
   "MieuxTrierANantes.store.HomeStore": [],
   "MieuxTrierANantes.store.News": [],
-  "MieuxTrierANantes.store.SearchStore": [],
   "MieuxTrierANantes.store.StructureGeoStore": [],
   "MieuxTrierANantes.store.StructureStore": [],
   "MieuxTrierANantes.store.TrisacStore": [],
@@ -1569,6 +1569,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MieuxTrierANantes.view.home.GlobalSearchList": [
     "widget.homeglobalsearchlist_xtype"
   ],
+  "MieuxTrierANantes.view.home.GlobalSearchResult": [
+    "widget.globalSearchResult_xtype"
+  ],
   "MieuxTrierANantes.view.home.Home": [
     "widget.home_xtype"
   ],
@@ -1592,9 +1595,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.home.HomeZone5": [
     "widget.homeZone5_xtype"
-  ],
-  "MieuxTrierANantes.view.home.HomeZone6": [
-    "widget.homeZone6_xtype"
   ],
   "MieuxTrierANantes.view.home.QuizView": [
     "widget.quizview_xtype"

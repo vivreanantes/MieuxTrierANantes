@@ -31,8 +31,6 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 										xtype : 'homeZone4_xtype'
 									}, {
 										xtype : 'homeZone5_xtype'
-									}, {
-										xtype : 'homeZone6_xtype'
 									}]
 						},
 						//

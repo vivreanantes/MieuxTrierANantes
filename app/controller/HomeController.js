@@ -15,12 +15,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			quizView : 'quizview_xtype',
 			docsModal : 'docsmodal_xtype',
 			docsList : 'docslist_xtype',
-			homeGlobalSearchList : 'homeglobalsearchlist_xtype',
 			homeGlobalSearchFormText : '#homeGlobalSearchFormText',
 			settingsFormQuartierTextfield : '#settingsFormQuartierTextfield',
 			settingsFormVilleTextfield : '#settingsFormVilleTextfield',
 			quizviewButton : '#quizview_button',
-			settingsFormButton : '#settingsFormButton'
+			settingsFormButton : '#settingsFormButton',
+			globalSearchResult : 'globalSearchResult_xtype',
+			homeGlobalSearchList : 'homeglobalsearchlist_xtype'
 		},
 		control : {
 			home : {
@@ -56,9 +57,6 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			docsList : {
 				show : 'onShowDocsList'
 			},
-			homeGlobalSearchList : {
-				show : 'onShowHomeGlobalSearchList'
-			},
 			settingsFormQuartierTextfield : {
 				initialize : 'setOptionsSousZones'
 			},
@@ -73,6 +71,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			},
 			settingsFormButton : {
 				tap : 'clickSettingsFormButton'
+			},
+
+			globalSearchResult : {
+				show : 'onShowGlobalSearchResultList'
 			}
 		}
 
@@ -109,7 +111,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			}
 		});
 
-		if (this.getHomeGlobalSearchList().getStore() == null) {
+		/*if (this.getHomeGlobalSearchList().getStore() == null) {
 			var searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
 			this.getHomeGlobalSearchList().setStore(searchStore);
 			searchStore.load();
@@ -120,7 +122,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			var datas = _garbagesDatas;
 			store.setData(datas);
 			store.sync();
-		}
+		}*/
 	},
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
@@ -134,7 +136,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
 		this.getHome().push(this.quizView);
 	},
-	
+
 	onTapHomeZone4_2 : function(button, e, eOpts) {
 		var thisControler = this;
 		// Crée la page si elle n'existe pas encore
@@ -224,17 +226,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	onShowDocsModal : function() {
 		if (this.getDocsList().getStore() == null) {
-			var homecollectmodStore = Ext
-					.create('MieuxTrierANantes.store.DocsStore');
-			this.getDocsList().setStore(homecollectmodStore);
+			var store = Ext.create('MieuxTrierANantes.store.DocsStore');
+			this.getDocsList().setStore(store);
 		}
 	},
 
 	onShowDocsList : function() {
 		var temp = 8;
-	},
-
-	onShowHomeGlobalSearchList : function() {
 	},
 
 	onTapSearchButton : function() {
@@ -259,7 +257,22 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 */
 	filterElements : function() {
 
-		var store = this.getHomeGlobalSearchList().getStore();
+		// Crée la page si elle n'existe pas encore
+		if (this.globalSearchResult == null) {
+			this.globalSearchResult = Ext
+					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
+		}
+		this.getHome().push(this.globalSearchResult);
+
+		/*
+		home_xtype
+		
+		6: xtype : 'globalSearchResult_xtype',  
+		
+							this.getCollectModsView().push(this.collectModsDetails);
+		 */
+
+		/*var store = this.getHomeGlobalSearchList().getStore();
 		var texteSansAccents = _utilRetireAccentEtMinuscule(this
 				.getHomeGlobalSearchFormText().getValue());
 
@@ -281,8 +294,23 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 						}
 					});
 			store.filter(filterGlobalSearch);
-		}
+		}*/
 
+	},
+
+	/**
+	 * Crée le store
+	 */
+	onShowGlobalSearchResultList : function() {
+		if (this.getHomeGlobalSearchList().getStore() == null) {
+			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
+			this.getHomeGlobalSearchList().setStore(store);
+		}
+		/*if (this.getHomeGlobalSearchList().getStore() == null) {
+			var searchStore = Ext.create("MieuxTrierANantes.store.SearchStore");
+			this.getHomeGlobalSearchList().setStore(searchStore);
+			searchStore.load();
+		}*/
 	},
 
 	clickSettingsFormButton : function(button, e) {
