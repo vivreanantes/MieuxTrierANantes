@@ -59,7 +59,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				tap : 'onStructuresStoreFilter'
 			},
 			homeButton : {
-				// tap : 'onHomeButton'
+				tap : 'onHomeButton'
 			}
 		}
 	},
@@ -81,31 +81,42 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 	onInitStructures : function(list) {
 		// 1
 		// var homecollectmodStore = Ext.create(
-		// 		"MieuxTrierANantes.store.Structure2Store", {
-		// 			filters : [{
-		// 				property : "modesCollecte",
-		// 				// le type correspond aux modes de collectes possibles
-		// 				// voir
-		// 				// http://quentinc.net/javascript/testeur-expressions-regulieres/
-		// 				value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g					}]
-		// 		});
+		// "MieuxTrierANantes.store.Structure2Store", {
+		// filters : [{
+		// property : "modesCollecte",
+		// // le type correspond aux modes de collectes possibles
+		// // voir
+		// // http://quentinc.net/javascript/testeur-expressions-regulieres/
+		// value :
+		// /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g }]
+		// });
 		// list.setStore(homecollectmodStore);
 		// 2$
 		this.getStructuresFormSelectQuartier().setValue("all");
 	},
 
 	onShowStructures : function() {
-		if (this.getStructuresList().getStore() == null) {
-			var structureStore = Ext.create(
-					"MieuxTrierANantes.store.StructureStore", {
-						filters : [{
-							property : "modesCollecte",
-							value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp|ventevrac/g
-						}]
-					});
-			// value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
-			this.getStructuresList().setStore(structureStore);
-			structureStore.load();
+		var mainView = this.getMainView();
+		if (mainView.active != null) {
+			// Cas des liens qui ouvre la page
+			var record = _getStructure(mainView.active);
+			this.showStructuresDetail2(record);
+			mainView.active = null;
+		} else {
+			if (this.getStructuresList().getStore() == null) {
+				var structureStore = Ext.create(
+						"MieuxTrierANantes.store.StructureStore", {
+							filters : [{
+								property : "modesCollecte",
+								value : /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reemp|ventevrac/g
+							}]
+						});
+				// value :
+				// /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
+				structureStore.setData(_structures1Datas);
+				this.getStructuresList().setStore(structureStore);
+				structureStore.load();
+			}
 		}
 	},
 
@@ -132,7 +143,8 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		var escaperegex = Ext.String.escapeRegex;
 		var store = this.getStructuresList().getStore();
 		if (store != null) {
-			store.clearFilter(true); // true sinon cela plante dans la version android
+			store.clearFilter(true); // true sinon cela plante dans la
+			// version android
 			var filterElements = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var stTypeRegexp = new RegExp(selectType.getValue());
@@ -140,8 +152,9 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stType = item.data["modesCollecte"];
 					var stDechetsNoAccents = item.data["mots_cles"];
 					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["nom"]);
-					// Important : il faut recréer l'expression régulière à chaque fois
-					// 		sinon les résultats sont faux !
+					// Important : il faut recréer l'expression régulière à
+					// chaque fois
+					// sinon les résultats sont faux !
 					var texttest = new RegExp(escaperegex(text), 'ig');
 					return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
 							.getValue())

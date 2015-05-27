@@ -1333,7 +1333,32 @@
 		"plagesHoraires" : ",0101-3112_lu+ma_14h00-17h45,0101-3112_sa_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,111115_me_10h00-18h00",
 		"src" : "OpenDataNantes 01/2015",
 		"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
-	}, {
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 {
 		"code" : "stco_conteneur_593",
 		"adresseTemp" : "Rue de la Libération 44230 St-Sébastien-sur-Loire",
 		"latitude" : "47.1997754795774",
@@ -12990,7 +13015,42 @@
 		"type" : "Collecte encombrants",
 		"longitude" : "47.20",
 		"descr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
-	}, {
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 {
 		"code" : "81",
 		"sous_zone" : "qidn",
 		"nom" : "BUSWAY Ile de Nantes",

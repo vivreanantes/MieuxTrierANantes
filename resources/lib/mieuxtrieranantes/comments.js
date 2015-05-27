@@ -77,6 +77,19 @@ function _getGarbage(idElement) {
 	return result;
 }
 
+/**
+ * Renvoie la structure
+ */
+function _getStructure(idElement) {
+	var result = '';
+	for (j in _structures1Datas) {
+		if (_structures1Datas[j]["code"] === idElement) {
+			result = _structures1Datas[j];
+		}
+	}
+	return result;
+}
+
 function getDescriptionCompleteInfo(myElement) {
 	var description = myElement["descr"] + _getCommentsBloc(myElement["code"]);
 	return description;

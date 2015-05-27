@@ -35,3 +35,7 @@
 
 /* boutons_panneau */
 .boutons_panneau {line-height:75%}
+
+.x-categories.x-list .x-list-item .x-list-item-label {
+    padding: 0 0.65em 0 0.65em !important;
+}

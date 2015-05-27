@@ -86,7 +86,8 @@ function _utilRetireAccentEtMinuscule(result) {
 }
 
 function _utilRetireMotsInutiles(result) {
-	result = result.replace(/allee|avenue|bas chemin|basse tenue|boulevard|chemin|cours|esplanade|hameau|haute impasse|impasse|jardin|mail|nouvelle impasse|parvis|passage|petit chemin|petite avenue|petite rue|place|pont|promenade|quai|rond-point|route|rue|ruelle|sentier|square|venelle|voie|de la|de|du|des/g, "");
+	result = result.replace(/allee|avenue|bas chemin|basse tenue|boulevard|chemin|cours|esplanade|hameau|haute impasse|impasse|jardin|mail|nouvelle impasse|parvis|passage|petit chemin|petite avenue|petite rue|place|pont|promenade|quai|rond-point|route|rue|ruelle|sentier|square|venelle|voie/g, "");
+	// |de la|de|du|des
 	// todo_crn allee |allee |avenue |bas chemin |basse tenue |boulevard |chemin |cours |esplanade |hameau |haute impasse |impasse |jardin |mail |nouvelle impasse |parvis |passage |petit chemin |petite avenue |petite rue |place |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square |venelle |voie |de la |de |du |des
 	return result;
 }

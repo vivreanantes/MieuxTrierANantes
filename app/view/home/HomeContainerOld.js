@@ -50,7 +50,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainerOld', {
 				height : '100px',
 				tpl : " ",
 				styleHtmlContent : true,
-				style : 'background-image:url(resources/images/bandeau.png);background-repeat:no-repeat;background-size:100% 100%;'
+				style : 'background-image:url(resources/images/bandeau.png);background-repeat:no-repeat;background-size:3 100%;'
 			}]
 		}, {
 

@@ -21,7 +21,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			quizviewButton : '#quizview_button',
 			settingsFormButton : '#settingsFormButton',
 			globalSearchResult : 'globalSearchResult_xtype',
-			homeGlobalSearchList : 'homeglobalsearchlist_xtype'
+			homeGlobalSearchList : 'homeglobalsearchlist_xtype',
+			mainView : 'main_xtype'
 		},
 		control : {
 			home : {
@@ -75,6 +76,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 			globalSearchResult : {
 				show : 'onShowGlobalSearchResultList'
+			},
+
+			homeGlobalSearchList : {
+				itemtap : "itempTapHomeGlobalSearchList"
 			}
 		}
 
@@ -87,42 +92,39 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		// Actualités
 		Ext.create('MieuxTrierANantes.store.HomeStore', {
-			listeners : {
-				load : function(self, records) {
-					var i = 28;
-					// var j = records[0];
-					// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
-					// On valorise le contenu de la zone
-					// actualité
-					var nom1 = records[0].getData()["nom1"];
-					var nom2 = records[0].getData()["nom2"];
-					var nom3 = records[0].getData()["nom3"];
-					thisControler.descr1 = records[0].getData()["descr1"];
-					thisControler.descr2 = records[0].getData()["descr2"];
-					thisControler.descr3 = records[0].getData()["descr3"];
-					html = "<p><a href='#' id='news1'>" + nom1
-							+ "</a><br/><a href='#' id='news2'>" + nom2
-							+ "</a><br/><a href='#' id='news3'>" + nom3
-							+ "</a></p>"
-					thisControler.getHome().items.items[0].items.items[1].items.items[2].items.items[0]
-							.setHtml(html);
+					listeners : {
+						load : function(self, records) {
+							var i = 28;
+							// var j = records[0];
+							// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
+							// On valorise le contenu de la zone
+							// actualité
+							var nom1 = records[0].getData()["nom1"];
+							var nom2 = records[0].getData()["nom2"];
+							var nom3 = records[0].getData()["nom3"];
+							thisControler.descr1 = records[0].getData()["descr1"];
+							thisControler.descr2 = records[0].getData()["descr2"];
+							thisControler.descr3 = records[0].getData()["descr3"];
+							html = "<p><a href='#' id='news1'>" + nom1
+									+ "</a><br/><a href='#' id='news2'>" + nom2
+									+ "</a><br/><a href='#' id='news3'>" + nom3
+									+ "</a></p>"
+							thisControler.getHomeZone3_1().setHtml(html);
+							// thisControler.getHome().items.items[0].items.items[1].items.items[3].items.items[0].setHtml(html);
 
-				}
-			}
-		});
+						}
+					}
+				});
 
-		/*if (this.getHomeGlobalSearchList().getStore() == null) {
-			var searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
-			this.getHomeGlobalSearchList().setStore(searchStore);
-			searchStore.load();
-		}
-		var store = this.getHomeGlobalSearchList().getStore();
-		if (store) {
-			store.removeAll();
-			var datas = _garbagesDatas;
-			store.setData(datas);
-			store.sync();
-		}*/
+		/*
+		 * if (this.getHomeGlobalSearchList().getStore() == null) { var
+		 * searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
+		 * this.getHomeGlobalSearchList().setStore(searchStore);
+		 * searchStore.load(); } var store =
+		 * this.getHomeGlobalSearchList().getStore(); if (store) {
+		 * store.removeAll(); var datas = _garbagesDatas; store.setData(datas);
+		 * store.sync(); }
+		 */
 	},
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
@@ -263,19 +265,41 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
 		this.getHome().push(this.globalSearchResult);
+	},
 
-		/*
-		home_xtype
-		
-		6: xtype : 'globalSearchResult_xtype',  
-		
-							this.getCollectModsView().push(this.collectModsDetails);
-		 */
-
-		/*var store = this.getHomeGlobalSearchList().getStore();
+	/**
+	 * Crée le store
+	 */
+	onShowGlobalSearchResultList : function() {
+		if (this.getHomeGlobalSearchList().getStore() == null) {
+			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
+			this.getHomeGlobalSearchList().setStore(store);
+			var tempo = [];
+			utilPushArray(_garbagesDatas, tempo);
+			utilPushArray(_infosDatas, tempo);
+			utilPushArray(_structures1Datas, tempo);
+			// structures = this.getStructuresDataFromJson();
+			var taille = tempo.length;
+			for (var i = 1; i < taille; i++) {
+				if (tempo[i]["code"] != null) {
+					if (tempo[i]["code"].substring(0, 4) == "dec_") {
+						tempo[i]["type"] = "Déchet";
+					} else if (tempo[i]["code"].substring(0, 6) == "fiche_") {
+						tempo[i]["type"] = "Fiche";
+					}
+				}
+			}
+			// TODO chercher dans les documents.
+			// if (this.getDocsList().getStore() == null) {
+			// var store = Ext.create('MieuxTrierANantes.store.DocsStore');
+			// this.getDocsList().setStore(store);
+			// }
+			// structure.json
+			store.add(tempo);
+		}
+		var store = this.getHomeGlobalSearchList().getStore();
 		var texteSansAccents = _utilRetireAccentEtMinuscule(this
 				.getHomeGlobalSearchFormText().getValue());
-
 		// true sinon cela plante dans la version android
 		store.clearFilter(true);
 		if (store != null) {
@@ -294,23 +318,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 						}
 					});
 			store.filter(filterGlobalSearch);
-		}*/
-
-	},
-
-	/**
-	 * Crée le store
-	 */
-	onShowGlobalSearchResultList : function() {
-		if (this.getHomeGlobalSearchList().getStore() == null) {
-			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
-			this.getHomeGlobalSearchList().setStore(store);
 		}
-		/*if (this.getHomeGlobalSearchList().getStore() == null) {
-			var searchStore = Ext.create("MieuxTrierANantes.store.SearchStore");
-			this.getHomeGlobalSearchList().setStore(searchStore);
-			searchStore.load();
-		}*/
 	},
 
 	clickSettingsFormButton : function(button, e) {
@@ -404,6 +412,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	showQuizView : function() {
 		this.cacherMontrerReponses(true);
+	},
+
+	itempTapHomeGlobalSearchList : function(list, index, node, record) {
+		this.showActiveItemInPage(record.data["type"], record.data["code"]);
+		// this.getGarbagesView().setActiveItem(0);
 	}
 
 });

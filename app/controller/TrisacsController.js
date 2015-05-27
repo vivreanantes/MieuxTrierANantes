@@ -49,7 +49,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton12'
 			},
-			
+
 			trisacFormButton : {
 				tap : 'onTrisacStoreFilter'
 			},
@@ -58,8 +58,8 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			}
 		}
 	},
-	
-	onKeyUpTrisacFormText  : function(textbox, event) {
+
+	onKeyUpTrisacFormText : function(textbox, event) {
 		if (event.browserEvent.keyCode == 13) {
 			this.filterElements();
 		}
@@ -85,6 +85,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 									value : /modco_distrisac/g
 								}]
 					});
+			structureStore.setData(_structures1Datas);
 			this.getTrisacList().setStore(structureStore);
 			structureStore.load();
 		}

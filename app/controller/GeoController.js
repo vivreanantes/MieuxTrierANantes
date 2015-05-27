@@ -48,10 +48,17 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 		this.ajouteCerclesZoneLimitee();
 
 		// Charge le store
-		this.structureGeoStore = Ext.create(
-				'MieuxTrierANantes.store.StructureGeoStore', {
-					autoLoad : false
-				});
+		/*
+		 * this.structureGeoStore =
+		 * Ext.create('MieuxTrierANantes.store.StructureGeoStore', { autoLoad :
+		 * false });
+		 */
+		this.structureGeoStore = Ext
+				.create('MieuxTrierANantes.store.StructureGeoStore');
+		var tempo = [];
+		utilPushArray(_structures1Datas, tempo);
+		utilPushArray(_structures2Datas, tempo);
+		this.structureGeoStore.setData(tempo);
 
 		// Pour chaque élément du store, ajout d'un point sur la carte
 		var geoController = this;

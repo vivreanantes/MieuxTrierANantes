@@ -33,66 +33,62 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	IMAGE_DIR : "resources/images/",
 
-	
 	ouvertureModaleLieu : function(idLieu) {
-		Ext.Msg.show('Name', "<form id='myform' action='http://www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
-					+ "Email * : "
-					+ "<input type='text' id='commentsFormEmailfield' />"
-					+ "<br />"
-					+ "Commentaire "
-					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
-					+ "</form>");
-		
+		Ext.Msg
+				.show(
+						'Name',
+						"<form id='myform' action='http://www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
+								+ "Email * : "
+								+ "<input type='text' id='commentsFormEmailfield' />"
+								+ "<br />"
+								+ "Commentaire "
+								+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
+								+ "</form>");
+
 		Ext.create('MyApp.view.Login').show();
 	},
-	
+
 	ouvertureModaleCommenter : function(message) {
 		// http://stackoverflow.com/questions/18229486/how-can-i-include-two-textboxes-in-ext-msg-show
-	/*	Ext.Msg.show('Name', "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
-					+ "Email * : "
-					+ "<input type='text' id='commentsFormEmailfield' />"
-					+ "<br />"
-					+ "Commentaire "
-					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
-					+ "</form>", function(text) {
-   var value1 = document.getElementById('commentsFormEmailfield').value;
-   var value1 = document.getElementById('commentsFormTextareafield').value;
-   document.forms["myform"].submit();
-});
-		*/
+		/*
+		 * Ext.Msg.show('Name', "<form id='myform'
+		 * action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php'
+		 * accept-charset='UTF-8'" + "Email * : " + "<input type='text'
+		 * id='commentsFormEmailfield' />" + "<br />" + "Commentaire " + "<input
+		 * type='text' id='commentsFormTextareafield' value='Commentaires sur l
+		 * application ou la filière tri' />" + "</form>", function(text) { var
+		 * value1 = document.getElementById('commentsFormEmailfield').value; var
+		 * value1 = document.getElementById('commentsFormTextareafield').value;
+		 * document.forms["myform"].submit(); });
+		 */
 		Ext.create('MyApp.view.Login').show();
-		/*Ext.Msg.show({
-			title : "Commentaires sur l application et la filière tri",
-			width : "300px",
-			height : "450px",
-			buttons : Ext.Msg.OKCANCEL,
-			message : "<form id='myform' action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php' accept-charset='UTF-8'"
-					+ "Email * : "
-					+ "<input type='text' id='commentsFormEmailfield' value='test@test.fr' />"
-					+ "<br />"
-					+ "Commentaire "
-					+ "<input type='text' id='commentsFormTextareafield' value='Commentaires sur l application ou la filière tri' />"
-					+ "</form>",
-			fn : function(button) {
-				var value1 = document.getElementById('commentsFormEmailfield').value;
-				var value2 = document
-						.getElementById('commentsFormTextareafield').value;
-				document.forms["myform"].submit();
-			}
-		});*/
+		/*
+		 * Ext.Msg.show({ title : "Commentaires sur l application et la filière
+		 * tri", width : "300px", height : "450px", buttons : Ext.Msg.OKCANCEL,
+		 * message : "<form id='myform'
+		 * action='www.mieuxtrieranantes.fr/scripts_php/send_mail.php'
+		 * accept-charset='UTF-8'" + "Email * : " + "<input type='text'
+		 * id='commentsFormEmailfield' value='test@test.fr' />" + "<br />" +
+		 * "Commentaire " + "<input type='text' id='commentsFormTextareafield'
+		 * value='Commentaires sur l application ou la filière tri' />" + "</form>",
+		 * fn : function(button) { var value1 =
+		 * document.getElementById('commentsFormEmailfield').value; var value2 =
+		 * document .getElementById('commentsFormTextareafield').value;
+		 * document.forms["myform"].submit(); } });
+		 */
 	},
-	
+
 	/**
 	 * Remet la page d'accueil en premier.
 	 */
 	onHomeButton : function() {
-		
+
 		var mainView = this.getMainView();
-		if (mainView!=null) {
+		if (mainView != null) {
 			mainView.setActiveItem(6);
 		}
 	},
-	
+
 	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
 
@@ -191,8 +187,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 								html : "<img src='resources/icons/chat2.png' /><B>"
 										+ _commentsDatas[j]["nom"]
 										+ "</B><BR/>"
-										+ _commentsDatas[j]["descr"]
-										+ "<br/>"
+										+ _commentsDatas[j]["descr"] + "<br/>"
 							});
 						}
 
@@ -269,10 +264,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 						if (_advicesDatas[j]["code"] === arConseils[i]) {
 							// le conseil avec l'icone "info"
 							result1.push({
-								nom : "<img src='resources/icons/info.png' /> "
-										+ _advicesDatas[j]["nom"],
-								descr : _advicesDatas[j]["descr"]
-							});
+										nom : "<img src='resources/icons/info.png' /> "
+												+ _advicesDatas[j]["nom"],
+										descr : _advicesDatas[j]["descr"]
+									});
 							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
 									&& _advicesDatas[j]["fiche"] != "") {
@@ -287,8 +282,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 														+ _advicesDatas[j]["fiche"]
 											});
 									result3.push({
-										"html" : 
-										"Plus d'infos <i><a href='fich:"+ codeInfo+"'>"+libelleInfo+"</a></i>"});
+										"html" : "Plus d'infos <i><a href='fich:"
+												+ codeInfo
+												+ "'>"
+												+ libelleInfo
+												+ "</a></i>"
+									});
 
 								}
 							}
@@ -312,7 +311,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		for (var i = 0; i < arItems.length; i++) {
 			var element = arItems[i];
 			var elementButton = arItemsBoutons[i];
-			var elementHTML =  arItemsHTML[i];
+			var elementHTML = arItemsHTML[i];
 			var idElementToChange = i + 1;
 			// On retrouve l'index de l'élément parent
 			var indexParent = panel.keys.indexOf(prefix + "_"
@@ -327,20 +326,19 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 					panelParent.items.items[index].setData(element);
 					// panelParent.items.items[index].setHidden(false);
 				}
-				/*if (elementButton) {
-					var prefixComplet = prefix + "_" + idElementToChange + "_"
-							+ prefix3;
-					var index = panelParent.items.keys.indexOf(prefixComplet);
-					if (index != -1) {
-						panelParent.items.items[index].setData(elementButton);
-					}
-				}*/
+				/*
+				 * if (elementButton) { var prefixComplet = prefix + "_" +
+				 * idElementToChange + "_" + prefix3; var index =
+				 * panelParent.items.keys.indexOf(prefixComplet); if (index !=
+				 * -1) { panelParent.items.items[index].setData(elementButton); } }
+				 */
 				if (elementHTML) {
 					var prefixComplet = prefix + "_" + idElementToChange + "_"
 							+ prefix3;
 					var index = panelParent.items.keys.indexOf(prefixComplet);
 					if (index != -1) {
-						panelParent.items.items[index].setHtml(elementHTML.html);
+						panelParent.items.items[index]
+								.setHtml(elementHTML.html);
 					}
 				}
 			}
@@ -445,10 +443,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		return res;
 	},
 
-
 	/**
-	 * Valorise les options des listes déroulantes "quartier" (pour Nantes Métropôle, ce sont les
-	 * quartiers administratifs)
+	 * Valorise les options des listes déroulantes "quartier" (pour Nantes
+	 * Métropôle, ce sont les quartiers administratifs)
 	 */
 	setOptionsSousZones : function(selectField) {
 
@@ -490,7 +487,6 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 					value : "qns"
 				}]);
 	},
-	
 
 	/**
 	 * Valorise les options des listes déroulantes "ville"
@@ -512,7 +508,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				}]);
 
 	},
-	
+
 	/**
 	 * Construit un bouton dont l'identifiant est mainPageXtype +
 	 * elementToShowInPage (ex : "garbagesView-dec_aerosols").
@@ -669,23 +665,23 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				});
 		return arItemsToShow;
 	},
+
 	/**
 	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
 	 * des balises "<br/>
 	 */
 	/*
 	 * decoupe : function(stChaine) { var result = ""; if (stChaine !=
-	 * undefined) { var iTailleMax = 30;
-	 *  // séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " " var ar =
-	 * stChaine.split(/, | ,| -|- |-| /); var tailleRestanteLigne = iTailleMax;
-	 * for (var i = 0; i < ar.length; i++) { result += ar[i];
-	 * tailleRestanteLigne = tailleRestanteLigne - ar[i].length; // Si il reste
-	 * des mots if (i + 1 < ar.length) { // Si le prochain mot n'est pas trop
-	 * long, on ajoute juste // un // espace if (ar[i + 1].length <=
-	 * tailleRestanteLigne) { result += " "; tailleRestanteLigne =
-	 * tailleRestanteLigne - 1; } // Sinon on ajoute un retour à la ligne else {
-	 * result += "<br/>"; tailleRestanteLigne = iTailleMax; } } } } return
-	 * result; },
+	 * undefined) { var iTailleMax = 30; // séparateurs : ", " OU " ," OU " -"
+	 * OU "- " OU "-" OU " " var ar = stChaine.split(/, | ,| -|- |-| /); var
+	 * tailleRestanteLigne = iTailleMax; for (var i = 0; i < ar.length; i++) {
+	 * result += ar[i]; tailleRestanteLigne = tailleRestanteLigne -
+	 * ar[i].length; // Si il reste des mots if (i + 1 < ar.length) { // Si le
+	 * prochain mot n'est pas trop long, on ajoute juste // un // espace if
+	 * (ar[i + 1].length <= tailleRestanteLigne) { result += " ";
+	 * tailleRestanteLigne = tailleRestanteLigne - 1; } // Sinon on ajoute un
+	 * retour à la ligne else { result += "<br/>"; tailleRestanteLigne =
+	 * iTailleMax; } } } } return result; },
 	 */
 
 	/**
@@ -715,6 +711,20 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		};
 		return arItemsToShow;
 
+	},
+
+	showActiveItemInPage : function(type, code) {
+		var mainView = this.getMainView();
+		mainView.active = code;
+		if (type == "Déchet") {
+			mainView.setActiveItem(0);
+		} else if (type == "Fiche") {
+			mainView.setActiveItem(2);
+		} else if (type == "Mode de collecte") {
+			// mainView.setActiveItem(2);
+		} else if (type.substring(0,9) == " réemploi") {
+			mainView.setActiveItem(3);
+		}
 	}
 });
 

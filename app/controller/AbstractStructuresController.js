@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 	onTapLinkButton : function(button, e, eOpts) {
 
 		if (button.id === "commentez") {
-			
+
 			// Panneau commentez
 			Ext.Viewport.add({
 						xtype : 'commentmodal_xtype'
@@ -22,141 +22,131 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 	 */
 	showStructuresDetail : function(list, index, node, record) {
 		if (record) {
-			if (!this.structuresDetail) {
-				this.structuresDetail = Ext
-						.create("MieuxTrierANantes.view.structures.StructuresDetails");
-			}
-
-			var descriptionTraduit = "";
-			// Le titre
-			var title = record.data["nom"];
-			descriptionTraduit += title + "<br/><br/>";
-			// Ajout du logo
-			if (record.data["logo"] != null
-					&& record.data["logo"] !== "") {
-				descriptionTraduit += "<img src='"+record.data["logo"]+"' /><br/><br/>";
-			}
-			// Ajout de l'adresse
-			if (record.data["statut"] != null
-					&& record.data["statut"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_statut"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["statut"] + "<br/><br/>";
-			}
-			// Ajout du type
-			if (record.data["modesCollecte"] != null
-					&& record.data["modesCollecte"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_type"));
-				var modeCollecteTraduit = "";
-				var typeTraduit = "";
-				if (record.data["type"] != null && record.data["type"] !== "") {
-					typeTraduit = record.data["type"];
-				}
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ modeCollecteTraduit + " " + typeTraduit
-						+ "<br/><br/>";
-			}
-			// Ajout de l'adresse
-			if (record.data["adresseTemp"] != null
-					&& record.data["adresseTemp"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_adresse"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["adresseTemp"] + "<br/><br/>";
-			}
-			// Ajout de la description
-			if (record.data["descr"] != null
-					&& record.data["descr"] !== "") {
-				descriptionTraduit += record.data["descr"]
-						+ "<br/><br/>";
-			}
-			// Ajout du téléphone
-			if (record.data["tel"] != null
-					&& record.data["tel"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_telephone"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["tel"] + "<br/><br/>";
-			}
-			// Ajout de l'email
-			if (record.data["email"] != null
-					&& record.data["email"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_email"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["email"] + "<br/><br/>";
-			}
-			// Ajout du site
-			if (record.data["url"] != null
-					&& record.data["url"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_url"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["url"] + "<br/><br/>";
-			}
-			// Ajout de la plage horaire
-			if (record.data["plagesHoraires_lisible"] != null
-					&& record.data["plagesHoraires_lisible"] !== "") {
-				var label = _stringUpperFirstLetter(this
-						.translate("label_horaires"));
-				descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["plagesHoraires_prochainsJours"]
-						+ "<br/>" + record.data["plagesHoraires_lisible"]
-						+ "<br/><br/>";
-			} else {
-				// Ajout de l'horaire si on a pas plagesHoraires_lisible
-				if (record.data["horaires"] != null
-					&& record.data["horaires"] !== "") {
-					var label = _stringUpperFirstLetter(this
-						.translate("label_horaires"));
-					descriptionTraduit += "<b>" + label + "</b> : "
-						+ record.data["horaires"]
-						+ "<br/><br/>";
-					}
-			}
-			// Ajout de la source
-			if (record.data["src"] != null && record.data["src"] !== "") {
-				var label = _stringUpperFirstLetter(_translate("label_source"));
-				descriptionTraduit += "<b>" + label
-						+ "</b> : <font color='red'>" + record.data["src"]
-						+ "</font><br/><br/>";
-			}
-			this.setDataElement(this.structuresDetail,
-					"structuresDetails_description", {
-						'description' : descriptionTraduit
-					})
-
-			// Ajout des conseils
-			var conseils = "";
-			if (record.data["cons"] !== "") {
-				conseils = record.data["cons"] + ",";
-			}
-			var arsItemsAdvices = _getAdvicesBlock(conseils,
-					"garbagesdetails_commentaires_");
-			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_advices", arsItemsAdvices);
-
-			// Affectation du titre
-			var title = record.data["nom"];
-			this.structuresDetail.setTitle(title);
-
-			// Ajout des commentaires
-			var code = record.data["code"];
-			var arsCommentaires = this.getArrayItemsToShowComments(code, title);
-			var nbElementsMax = 3;
-			this.setDataInButtons(this.structuresDetail,
-					"structuresDetails_comments", arsCommentaires.les_libelles,
-					nbElementsMax);
-
-			// this.setItemsElement(this.structuresDetail, "", this.getItemsComments(code, title));
-
-			// Bind the record onto the show contact view
-			this.structuresDetail.setData(record.data);
-			// Push this view into the navigation view
-			this.getStructuresView().push(this.structuresDetail);
+			this.showStructuresDetail2(record.data);
 		}
+	},
+
+	showStructuresDetail2 : function(record) {
+		if (!this.structuresDetail) {
+			this.structuresDetail = Ext
+					.create("MieuxTrierANantes.view.structures.StructuresDetails");
+		}
+
+		var descriptionTraduit = "";
+		// Le titre
+		var title = record["nom"];
+		descriptionTraduit += title + "<br/><br/>";
+		// Ajout du logo
+		if (record["logo"] != null && record["logo"] !== "") {
+			descriptionTraduit += "<img src='" + record["logo"]
+					+ "' /><br/><br/>";
+		}
+		// Ajout de l'adresse
+		if (record["statut"] != null && record["statut"] !== "") {
+			var label = _stringUpperFirstLetter(this.translate("label_statut"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["statut"] + "<br/><br/>";
+		}
+		// Ajout du type
+		if (record["modesCollecte"] != null
+				&& record["modesCollecte"] !== "") {
+			var label = _stringUpperFirstLetter(this.translate("label_type"));
+			var modeCollecteTraduit = "";
+			var typeTraduit = "";
+			if (record["type"] != null && record["type"] !== "") {
+				typeTraduit = record["type"];
+			}
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ modeCollecteTraduit + " " + typeTraduit + "<br/><br/>";
+		}
+		// Ajout de l'adresse
+		if (record["adresseTemp"] != null
+				&& record["adresseTemp"] !== "") {
+			var label = _stringUpperFirstLetter(this.translate("label_adresse"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["adresseTemp"] + "<br/><br/>";
+		}
+		// Ajout de la description
+		if (record["descr"] != null && record["descr"] !== "") {
+			descriptionTraduit += record["descr"] + "<br/><br/>";
+		}
+		// Ajout du téléphone
+		if (record["tel"] != null && record["tel"] !== "") {
+			var label = _stringUpperFirstLetter(this
+					.translate("label_telephone"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["tel"] + "<br/><br/>";
+		}
+		// Ajout de l'email
+		if (record["email"] != null && record["email"] !== "") {
+			var label = _stringUpperFirstLetter(this.translate("label_email"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["email"] + "<br/><br/>";
+		}
+		// Ajout du site
+		if (record["url"] != null && record["url"] !== "") {
+			var label = _stringUpperFirstLetter(this.translate("label_url"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["url"] + "<br/><br/>";
+		}
+		// Ajout de la plage horaire
+		if (record["plagesHoraires_lisible"] != null
+				&& record["plagesHoraires_lisible"] !== "") {
+			var label = _stringUpperFirstLetter(this
+					.translate("label_horaires"));
+			descriptionTraduit += "<b>" + label + "</b> : "
+					+ record["plagesHoraires_prochainsJours"] + "<br/>"
+					+ record["plagesHoraires_lisible"] + "<br/><br/>";
+		} else {
+			// Ajout de l'horaire si on a pas plagesHoraires_lisible
+			if (record["horaires"] != null
+					&& record["horaires"] !== "") {
+				var label = _stringUpperFirstLetter(this
+						.translate("label_horaires"));
+				descriptionTraduit += "<b>" + label + "</b> : "
+						+ record["horaires"] + "<br/><br/>";
+			}
+		}
+		// Ajout de la source
+		if (record["src"] != null && record["src"] !== "") {
+			var label = _stringUpperFirstLetter(_translate("label_source"));
+			descriptionTraduit += "<b>" + label + "</b> : <font color='red'>"
+					+ record["src"] + "</font><br/><br/>";
+		}
+		this.setDataElement(this.structuresDetail,
+				"structuresDetails_description", {
+					'description' : descriptionTraduit
+				})
+
+		// Ajout des conseils
+		var conseils = "";
+		if (record["cons"] !== "") {
+			conseils = record["cons"] + ",";
+		}
+		var arsItemsAdvices = _getAdvicesBlock(conseils,
+				"garbagesdetails_commentaires_");
+		this.setItemsElement(this.structuresDetail,
+				"structuresDetails_advices", arsItemsAdvices);
+
+		// Affectation du titre
+		var title = record["nom"];
+		this.structuresDetail.setTitle(title);
+
+		// Ajout des commentaires
+		var code = record["code"];
+		var arsCommentaires = this.getArrayItemsToShowComments(code, title);
+		var nbElementsMax = 3;
+		this.setDataInButtons(this.structuresDetail,
+				"structuresDetails_comments", arsCommentaires.les_libelles,
+				nbElementsMax);
+
+		// this.setItemsElement(this.structuresDetail, "", this.getItemsComments(code, title));
+
+		// Bind the record onto the show contact view
+		this.structuresDetail.setData(record);
+		// Push this view into the navigation view
+		this.getStructuresView().push(this.structuresDetail);
+
 	},
 
 	/**

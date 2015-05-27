@@ -13,7 +13,8 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchResult', {
 		record : null,
 		items : [{
 					xtype : "homeglobalsearchlist_xtype",
-					height:'300px'
+					// height:'300px'
+				flex : 1
 				}]
 	}
 		/*

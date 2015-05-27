@@ -45,7 +45,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 				tap : 'onTapLinkButton'
 			},
 			homeButton : {
-				// tap : 'onHomeButton'
+				tap : 'onHomeButton'
 			}
 		}
 	},

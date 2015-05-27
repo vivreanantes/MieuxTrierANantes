@@ -8,7 +8,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 					informations : 'informations_xtype',
 					informationsList : 'informationsbuttonslist_xtype',
 					homeButton : '#informationhomebutton',
-					mainView: 'main_xtype'
+					mainView : 'main_xtype'
 				},
 				control : {
 
@@ -20,13 +20,11 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 						tap : 'onShowDetails'
 					},
 					homeButton : {
-						// tap : 'onHomeButton'
+						tap : 'onHomeButton'
 					}
 				}
 			},
-			
-			
-			
+
 			onShowDetails : function(button, e, eOpts) {
 				if (button.id === 'envoyez') {
 					Ext.Viewport.add({
@@ -67,29 +65,35 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 
 			onActivate : function(newActiveItem, container, oldActiveItem,
 					eOpts) {
-				var arItemsToShow = this.getArrayItemsToShowForButtons(
-						_infosDatas, "fiche");
+				var mainView = this.getMainView();
+				if (mainView.active != null) {
+					// Cas des liens qui ouvre la page
+					this.showDetails(mainView.active);
+					mainView.active = null;
+				} else {
+					var arItemsToShow = this.getArrayItemsToShowForButtons(
+							_infosDatas, "fiche");
 
-				var result = new Array();
-				if (arItemsToShow.length > 0) {
-					var theItems = arItemsToShow;
-					for (var i = 0; i < theItems.length; i++) {
-						if (theItems[i]["id"] != '') {
-							var stLibelle = _cutWithBr(theItems[i]["nom"]);
-							result.push({
-										code : theItems[i]["id"],
-										label : stLibelle,
-										image : theItems[i]["image"]
-									});
+					var result = new Array();
+					if (arItemsToShow.length > 0) {
+						var theItems = arItemsToShow;
+						for (var i = 0; i < theItems.length; i++) {
+							if (theItems[i]["id"] != '') {
+								var stLibelle = _cutWithBr(theItems[i]["nom"]);
+								result.push({
+											code : theItems[i]["id"],
+											label : stLibelle,
+											image : theItems[i]["image"]
+										});
+							}
 						}
 					}
+
+					var nbGarbagesMax = 39; // 39 éléments
+					this.setDataInButtonsWithManyLines(this
+									.getInformationsList(),
+							"informationsButtonsPanel", result, nbGarbagesMax,
+							3);
 				}
-
-				var nbGarbagesMax = 39; // 39 éléments
-				this.setDataInButtonsWithManyLines(this.getInformationsList(),
-						"informationsButtonsPanel", result, nbGarbagesMax, 3);
-
-				end = new Date().getTime();
 			}
-
 		});

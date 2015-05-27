@@ -8,8 +8,10 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 	config : {
 		layout : 'hbox',
 		scrollable : true,
-		height : '50px',
-		style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 100%;',
+		height:'50px',
+		// docked : 'top',
+		// style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 100%;',
+		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 					id : "homeZone4_1",
 					xtype : "button",

@@ -1,6 +1,7 @@
 var _quizsDatas = {
 	'quiz1' : {
 		nom : "Quiz spécial janvier (5 questions)",
+		mots_cles : "quiz,noel",
 		descr : "Tester vos connaissances sur le tri sur Nantes Métropole. Une seule réponse par question.",
 		image : "resources/images/quiz/issiontrix-quiz-1.jpg",
 		src : "MieuxTrierANantes 01/2015",
@@ -43,6 +44,7 @@ var _quizsDatas = {
 	},
 	'quiz2' : {
 		nom : "Quiz Hellfest",
+		mots_cles : "quiz,hellfest",
 		descr : "Quiz spécial métal et bière pour Hellfest",
 		image : "resources/images/quiz/issiontrix_hellfest.png.jpg",
 		src : "MieuxTrierANantes 05/2015",
@@ -85,6 +87,7 @@ var _quizsDatas = {
 	},
 	'quizx' : {
 		nom : "",
+		mots_cles : "",
 		descr : "",
 		image : "resources/images/quiz/",
 		src : "MieuxTrierANantes 05/2015",

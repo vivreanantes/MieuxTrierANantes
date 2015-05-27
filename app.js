@@ -20,7 +20,7 @@ Ext.application({
 			'HomeCollectModsController', 'TrisacsController',
 			'CollectModsController', 'HomeController'],
 
-	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel', 'SearchModel'],
+	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel', 'GlobalSearchModel'],
 
 	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
 			'StructureGeoStore', 'HomeStore', 'DocsStore', 'GlobalSearchStore'],

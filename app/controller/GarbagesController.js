@@ -116,7 +116,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				back : 'onPushBackButton6'
 			},
 			homeButton : {
-				// tap : 'onHomeButton'
+				tap : 'onHomeButton'
 			}
 		}
 	},
@@ -168,7 +168,15 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
-		this.putInButtonsPanel("cu");
+		var mainView = this.getMainView();
+		if (mainView.active!=null) {
+			// Cas des liens qui ouvre la page
+			this.showGarbagesDetail2(mainView.active);
+			mainView.active=null;
+		}
+		else {
+			this.putInButtonsPanel("cu");
+		}
 		// Permet l'interception des paramètres de la page HTML, qui vouvre une page particulière
 	},
 
@@ -348,10 +356,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	showGarbagesDetail : function(button, e, eOpts) {
-
+		this.showGarbagesDetail2(button._data["code"]);
+	},
+	
+	showGarbagesDetail2 : function(code) {
 		// Récupère l'élément
-		var record = _getGarbage(button._data["code"]);
-
+		var record = _getGarbage(code);
 		var thisController = this;
 		if (record) {
 			if (!this.garbageDetail) {

@@ -8,11 +8,11 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone3', {
 	config : {
 		layout : 'vbox',
 		scrollable : true,
-		height : '100px',
+		height:'80px',
 		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 					id : "homeZone3_1",
-					html : "Les actualités non récupérées",
+					html : "Pas d'actualités (connexion internet KO ?)",
 					width : '300px',
 					styleHtmlContent : true,
 					listeners : {

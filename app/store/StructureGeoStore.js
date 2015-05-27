@@ -3,7 +3,7 @@ Ext.define('MieuxTrierANantes.store.StructureGeoStore', {
 			id : 'structuregeostore', 	
 			config :{
 				autoLoad : true,
-				model : 'MieuxTrierANantes.model.StructureModel',
+				model : 'MieuxTrierANantes.model.StructureModel'/*,
 				proxy : {
 					type : 'ajax',
 					url : 'resources/datas/structures.json',
@@ -11,6 +11,6 @@ Ext.define('MieuxTrierANantes.store.StructureGeoStore', {
 						type : 'json',
 						rootProperty : 'structures'
 					}
-				}	
+				}*/
 			}
 		});

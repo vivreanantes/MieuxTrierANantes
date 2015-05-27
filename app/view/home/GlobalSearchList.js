@@ -5,22 +5,24 @@
 Ext.define('MieuxTrierANantes.view.home.GlobalSearchList', {
 	extend : 'Ext.List',
 	xtype : 'homeglobalsearchlist_xtype',
+
 	config : {
 		ui : 'dark',
-		itemTpl : "<strong>{nom}</strong><br/><a href='http://{url}' target=_new>{url}</a>"
+		itemTpl : "<table border='0'></tr><td width='50px'><img src='resources/images/{image}' width='80px' /></td><td><i>{type}</i> <strong>{nom}</strong></td></tr></table>",
+		cls : 'x-categories'
 	}
 		/*
-	 itemTpl: 'ggg{title}',
-	 data: [
-	 { title: 'Item 1' },
-	 { title: 'Item 2' },
-	 { title: 'Item 3' },
-	 { title: 'Item 4' }
-	 ]*/
+	itemTpl: 'ggg{title}',
+	data: [
+	{ title: 'Item 1' },
+	{ title: 'Item 2' },
+	{ title: 'Item 3' },
+	{ title: 'Item 4' }
+	]*/
 		/*config : {
-		// icône en forme de poubelle
-		iconCls : 'trash',
-		title : 'Modes de collecte à domicile',
-		itemTpl : 'ffff{mots_cles}'
+	// icône en forme de poubelle
+	iconCls : 'trash',
+	title : 'Modes de collecte à domicile',
+	itemTpl : 'ffff{mots_cles}'
 	}*/
 });

@@ -3,7 +3,7 @@ Ext.define('MieuxTrierANantes.store.GlobalSearchStore', {
 			extend : 'Ext.data.Store',
 			config : {
 				autoLoad : true,
-				model : 'MieuxTrierANantes.model.DocsModel',
+				model : 'MieuxTrierANantes.model.GlobalSearchModel'/*,
 				proxy : {
 					type : 'ajax',
 					url : 'resources/datas/docs.json',
@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.store.GlobalSearchStore', {
 						type : 'json',
 						rootProperty : 'docs'
 					}
-				}
+				}*/
 			}
 
 		});
