@@ -8,7 +8,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone2', {
 	config : {
 		layout : 'hbox',
 		scrollable : false,
-		height:'60px',
+		height:'50px',
 		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 					html : ' ',

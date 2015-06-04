@@ -6,7 +6,7 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchResult', {
 	xtype : 'globalSearchResult_xtype',
 
 	config : {
-		title : 'Mode de collecte',
+		title : 'Résultats',
 		layout : 'vbox',
 		scrollable : true,
 		styleHtmlContent : true,

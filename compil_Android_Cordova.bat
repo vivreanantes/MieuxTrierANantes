@@ -16,7 +16,8 @@ SET ANDROID_SDK=C:\dev\android-sdk\sdk
 SET PATH=%PATH%;C:\dev\tools\sencha-cmd-5.0.2.270
 del /Q %PROJECT_DIR%\build\testing\MieuxTrierANantes\dev.apk
 
-sencha --info app build native
+rem sencha --info app build native
+sencha app build native
 rem cd %PROJECT_DIR%\cordova\platforms\android
 rem ant release -Dkey.store=%KEY_STORE% -Dkey.alias=%KEY_ALIAS% -Dkey.store.password=%KEY_STORE_PASSWORD% -Dkey.alias.password=%KEY_ALIAS_PASSWORD%
 

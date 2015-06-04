@@ -16,7 +16,7 @@ Ext.define('MieuxTrierANantes.view.trisac.Trisacs', {
 					items : [{
 						xtype : 'button',
 						iconCls: 'home',
-						ui: 'round', // bouton arrondi
+						// ui: 'round', // bouton arrondi
 						align : 'right',
 						id : 'trisacshomebutton'
 					}],

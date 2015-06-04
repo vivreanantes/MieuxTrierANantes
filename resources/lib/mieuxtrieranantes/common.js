@@ -202,7 +202,7 @@ function _gestionLien(e) {
 		}
 		 e.stopEvent();
 	}
-	console.log('anchor tapped : ' + e.href);
+	// console.log('anchor tapped : ' + e.href);
 }
 
 function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {

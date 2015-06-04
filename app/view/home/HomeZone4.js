@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 
 	config : {
 		layout : 'hbox',
-		scrollable : true,
+		scrollable : false,
 		height:'50px',
 		// docked : 'top',
 		// style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 100%;',
@@ -23,7 +23,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				}, {
 					id : "homeZone4_3",
 					xtype : "button",
-					text : 'Docs'
+					text : 'Docs à<br/>imprimer'
 				}, {
 					flex : 1
 				}]

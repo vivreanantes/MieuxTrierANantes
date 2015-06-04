@@ -7,26 +7,29 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 
 	config : {
 		layout : 'hbox',
-		scrollable : true,
+		title : 'Mieux trier à Nantes',
+		scrollable : false,
+		height : '100%',
 		style : 'background-color:white',
 		items : [
 				//
 				{
 			flex : 1,
-			html : ''
+			html : '&nbsp;',
+			style:'background-color:#AEDC53'
 		},
 				//
 				{
 					xtype : 'container',
 					minWidth : '230px',
 					maxWidth : '600px',
-					width : '70%',
+					width : '90%',
 					layout : 'vbox',
 					items : [{
 								xtype : 'homeZone1_xtype'
 							}, {
 								html : '',
-								height : '10px',
+								height : '5px',
 								style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;'
 							}, {
 								xtype : 'homeZone2_xtype'
@@ -40,8 +43,12 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 								xtype : 'homeZone4_xtype'
 							}, {
 								html : '',
+								height : '150px',
+								style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 150px'
+							}, {
+								html : '',
 								flex : 1,
-								style : 'background-image:url(resources/images/background.png);background-repeat:no-repeat;background-size:100% 300px;'
+								style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;'
 							}, {
 								xtype : 'homeZone5_xtype'
 							}]
@@ -49,7 +56,8 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 				//
 				{
 					flex : 1,
-					html : '&nbsp;'
+					html : '&nbsp;',
+			style:'background-color:#AEDC53'
 				}]
 	}
 });

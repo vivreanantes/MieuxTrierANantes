@@ -4,14 +4,14 @@ Ext.define('MieuxTrierANantes.store.TrisacStore', {
 			config : {
 				autoLoad : true,
 				model : 'MieuxTrierANantes.model.StructureModel',
-				proxy : {
+				/*proxy : {
 					type : 'ajax',
 					url : 'resources/datas/structures.json',
 					reader : {
 						type : 'json',
 						rootProperty : 'structures'
 					}
-				},
+				},*/
 				filters : [{
 							property : "modesCollecte",
 							value : /modco_distrisac/

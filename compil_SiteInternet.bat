@@ -6,3 +6,4 @@ cd C:\dev\github-repositories\MieuxTrierANantes
 C:\dev\tools\sencha-cmd-5.0.2.270\sencha app build testing
 
 xcopy %PROJECT_DIR%\dist %PROJECT_DIR%\build\testing\MieuxTrierANantes\ /E /Y
+xcopy %PROJECT_DIR%\favicon.ico %PROJECT_DIR%\build\testing\MieuxTrierANantes\ /E /Y

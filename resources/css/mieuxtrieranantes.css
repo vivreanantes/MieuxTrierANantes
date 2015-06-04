@@ -39,3 +39,7 @@
 .x-categories.x-list .x-list-item .x-list-item-label {
     padding: 0 0.65em 0 0.65em !important;
 }
+
+.x-html {
+  padding: 0.2em;
+}

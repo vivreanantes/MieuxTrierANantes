@@ -15,7 +15,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectMods', {
 					items : [{
 								xtype : 'button',
 								iconCls : 'home',
-								ui : 'round', // bouton arrondi
+								// ui : 'round', // bouton arrondi
 								align : 'right',
 								id : 'homecollectmodshomebutton'
 							}],

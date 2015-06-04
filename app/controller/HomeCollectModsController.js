@@ -71,9 +71,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			// homecollectmodStore.load();
 		}
 
-		var end = new Date().getTime();
-		var time = end - start;
-		console.log("onShowHomeCollectModsView etape 1 : " + time);
+		// var end = new Date().getTime();
+		// var time = end - start;
+		// console.log("onShowHomeCollectModsView etape 1 : " + time);
 	},
 
 	/**

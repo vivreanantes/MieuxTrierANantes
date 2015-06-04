@@ -6,7 +6,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone5', {
 	xtype : 'homeZone5_xtype',
 	config : {
 		layout : 'hbox',
-		scrollable : true,
+		scrollable : false,
 		 height: 100,
 		tpl : "ooo",
 		styleHtmlContent : true,

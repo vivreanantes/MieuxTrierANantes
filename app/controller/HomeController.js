@@ -9,11 +9,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_3 : '#homeZone4_3',
 			homeZone3_1 : '#homeZone3_1',
 			homeZone3_2 : '#homeZone3_2',
+			homeContainer : '#homeContainer_xtype',
 			homeZone1_bouton : '#homeZone1_bouton',
 			docsModal : 'docsmodal_xtype',
 			homeGlobalSearchFormButton : '#homeGlobalSearchFormButton',
 			quizView : 'quizview_xtype',
-			docsModal : 'docsmodal_xtype',
 			docsList : 'docslist_xtype',
 			homeGlobalSearchFormText : '#homeGlobalSearchFormText',
 			settingsFormQuartierTextfield : '#settingsFormQuartierTextfield',
@@ -26,7 +26,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		},
 		control : {
 			home : {
-				show : 'onShowHome'
+				show : 'onShowHome',
+				initialize : 'onInitializeHome'
 			},
 			homeZone4_1 : {
 				tap : 'onTapHomeZone4_1'
@@ -45,6 +46,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			},
 			homeZone1_bouton : {
 				tap : 'onTapHomeZone1_bouton'
+			},
+			homeGlobalSearchFormText : {
+				keyup : 'onKeyUpHomeGlobalSearchFormText'
 			},
 			homeGlobalSearchFormButton : {
 				tap : 'onTapSearchButton',
@@ -87,34 +91,36 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	onShowHome : function() {
 		var thisControler = this;
-
-		// About
+		// this.getHome().push(this.homeContainer);
 
 		// Actualités
 		Ext.create('MieuxTrierANantes.store.HomeStore', {
-					listeners : {
-						load : function(self, records) {
-							var i = 28;
-							// var j = records[0];
-							// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
-							// On valorise le contenu de la zone
-							// actualité
-							var nom1 = records[0].getData()["nom1"];
-							var nom2 = records[0].getData()["nom2"];
-							var nom3 = records[0].getData()["nom3"];
-							thisControler.descr1 = records[0].getData()["descr1"];
-							thisControler.descr2 = records[0].getData()["descr2"];
-							thisControler.descr3 = records[0].getData()["descr3"];
-							html = "<p><a href='#' id='news1'>" + nom1
-									+ "</a><br/><a href='#' id='news2'>" + nom2
-									+ "</a><br/><a href='#' id='news3'>" + nom3
-									+ "</a></p>"
-							thisControler.getHomeZone3_1().setHtml(html);
-							// thisControler.getHome().items.items[0].items.items[1].items.items[3].items.items[0].setHtml(html);
+			listeners : {
+				load : function(self, records) {
+					var i = 28;
+					// var j = records[0];
+					// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
+					// On valorise le contenu de la zone
+					// actualité
+					var nom1 = records[0].getData()["nom1"];
+					var nom2 = records[0].getData()["nom2"];
+					var nom3 = records[0].getData()["nom3"];
+					thisControler.descr1 = records[0].getData()["descr1"];
+					thisControler.descr2 = records[0].getData()["descr2"];
+					thisControler.descr3 = records[0].getData()["descr3"];
+					html = "<p style='line-height:22px'><a href='#' id='news1'>"
+							+ nom1
+							+ "</a><br/><a href='#' id='news2'>"
+							+ nom2
+							+ "</a><br/><a href='#' id='news3'>"
+							+ nom3
+							+ "</a></p>"
+					thisControler.getHomeZone3_1().setHtml(html);
+					// thisControler.getHome().items.items[0].items.items[1].items.items[3].items.items[0].setHtml(html);
 
-						}
-					}
-				});
+				}
+			}
+		});
 
 		/*
 		 * if (this.getHomeGlobalSearchList().getStore() == null) { var
@@ -127,37 +133,42 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		 */
 	},
 
+	onInitializeHome : function() {
+		// 
+	},
+
 	onTapHomeZone4_1 : function(button, e, eOpts) {
-		var thisControler = this;
-		// Crée la page si elle n'existe pas encore
-		if (this.quizView == null) {
-			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
-		}
-		this.quizView.items.items[0].setData(_quizsDatas["quiz1"]);
-		// Affectation du titre
-		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
-		this.getHome().push(this.quizView);
+		this.show2(0);
 	},
 
 	onTapHomeZone4_2 : function(button, e, eOpts) {
+		this.show2(1);
+	},
+
+	show2 : function(indexElement) {
 		var thisControler = this;
 		// Crée la page si elle n'existe pas encore
 		if (this.quizView == null) {
 			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
 		}
-		this.quizView.items.items[0].setData(_quizsDatas["quiz2"]);
+		this.quizView.items.items[0].setData(_quizsDatas[indexElement]);
 		// Affectation du titre
-		this.quizView.setTitle(_quizsDatas["quiz2"]["nom"]);
+		this.quizView.setTitle(_quizsDatas[indexElement]["nom"]);
 		this.getHome().push(this.quizView);
 	},
-	onTapHomeZone4_3 : function(button, e, eOpts) {
 
+	onTapHomeZone4_3 : function(button, e, eOpts) {
+		this.showDocList();
+	},
+
+	showDocList : function() {
 		// Crée la page si elle n'existe pas encore
 		if (this.docsModal == null) {
 			this.docsModal = Ext
 					.create("MieuxTrierANantes.view.home.DocsModal");
 		}
 		this.getHome().push(this.docsModal);
+
 	},
 
 	/**
@@ -192,13 +203,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 
 		if (e.target.id == "buttonquiz1") {
-			this.quizView.items.items[0].setData(_quizsDatas["quiz1"]);
+			this.quizView.items.items[0].setData(_quizsDatas[0]);
 		} else if (e.target.id == "buttonquiz2") {
-			this.quizView.items.items[0].setData(_quizsDatas["quiz2"]);
+			this.quizView.items.items[0].setData(_quizsDatas[1]);
 		}
 
 		// Affectation du titre
-		this.quizView.setTitle(_quizsDatas["quiz1"]["nom"]);
+		this.quizView.setTitle(_quizsDatas[0]["nom"]);
 		this.getHome().push(this.quizView);
 	},
 
@@ -246,6 +257,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.filterElements();
 		}
 	},
+	onKeyUpHomeGlobalSearchFormText : function(textbox, event) {
+		if (event.browserEvent.keyCode == 13) {
+			this.filterElements();
+			// TODO cacher le clavier
+			// Ext.getCmp('garbagesFormButton').blur();
+		}
+	},
 
 	/**
 	 * Filtre en fonction de la chaine saisie
@@ -278,6 +296,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			utilPushArray(_garbagesDatas, tempo);
 			utilPushArray(_infosDatas, tempo);
 			utilPushArray(_structures1Datas, tempo);
+			utilPushArray(_quizsDatas, tempo);
 			// structures = this.getStructuresDataFromJson();
 			var taille = tempo.length;
 			for (var i = 1; i < taille; i++) {
@@ -395,7 +414,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			}
 		}
 		// todo prendre parmis le formulaire QuizView a la place de QuizForm
-		var nbQ = _quizsDatas["quiz1"]["nbq"]
+		var nbQ = _quizsDatas[0]["nbq"]
 		var nbTotalReponses = nbQ * 3;
 		var nbKo = nbTotalReponses - nbOk;
 		var message = "Quelques erreurs.";
@@ -415,7 +434,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
-		this.showActiveItemInPage(record.data["type"], record.data["code"]);
+		if (record.data["type"] == "Quiz") {
+			this.show2(record.data["code"]);
+		}
+		/* ele if (record.data["type"] == "Docs") {
+			this.showDocList();
+		}*/else {
+			this.showActiveItemInPage(record.data["type"], record.data["code"]);
+		}
 		// this.getGarbagesView().setActiveItem(0);
 	}
 

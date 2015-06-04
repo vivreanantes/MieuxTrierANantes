@@ -1001,6 +1001,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 31 00 85",
 	"src" : "MieuxTrierANantes 04/15",
 	"sous_zone" : "hnsl",
+	"mots_cles" : "vente,vrac,Boulangerie,arbre a pain",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1017,6 +1018,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"sous_zone" : "hnnl",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beausejour",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1033,6 +1035,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beaujoire",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1049,6 +1052,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"sous_zone" : "hnsl",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beauceane",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1065,6 +1069,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"sous_zone" : "hnsl",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beausud",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1081,6 +1086,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"sous_zone" : "hnsl",
+	"mots_cles" : "vente,vrac,Chlorophylle,Bio,Goulaine",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1098,6 +1104,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au jeudi 9h30-19h, vendredi 9h30-19h30, samedi 9h-19h.",
 	"sous_zone" : "hnnl",
+	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1114,6 +1121,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
 	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1130,6 +1138,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
 	"sous_zone" : "ST SEBASTIEN SUR LOIRE",
+	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac3",
@@ -1146,6 +1155,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au samedi 9h30-19h45",
 	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac4",
@@ -1162,6 +1172,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au vendredi 9h-19h15, samedi 9h-19h",
 	"sous_zone" : "hnnl",
+	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1178,6 +1189,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "mardi à vendredi 11h30–19h, samedi 10h-19h",
 	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,Pirouette",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1191,8 +1203,10 @@ var _structures1Datas = [{
 	"adresseTemp" : "3 rue Pierre-Chéreau  44000 NANTES",
 	"url" : "<a href='http://www.obocal.com/' target='_blank'>http://www.obocal.com/</a>",
 	"src" : "MieuxTrierANantes 04/15",
-	"horaires" : "ouvert du mardi au samedi ",
+	"horaires" : "mardi au samedi , 9h30 à 13h et 15h à 19h30",
+	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_09h30-13h00+15h00-19h30",
 	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,O Bocal,obocal,Day by Day,Day by Day,day",
 	"image" : "paperbag.png"
 }, {
 	"code" : "1011",

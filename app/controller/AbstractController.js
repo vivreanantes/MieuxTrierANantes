@@ -86,6 +86,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var mainView = this.getMainView();
 		if (mainView != null) {
 			mainView.setActiveItem(6);
+			mainView.getActiveItem(6);
 		}
 	},
 
@@ -715,6 +716,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	showActiveItemInPage : function(type, code) {
 		var mainView = this.getMainView();
+		mainView.type = type;
 		mainView.active = code;
 		if (type == "Déchet") {
 			mainView.setActiveItem(0);
@@ -722,8 +724,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			mainView.setActiveItem(2);
 		} else if (type == "Mode de collecte") {
 			// mainView.setActiveItem(2);
-		} else if (type.substring(0,9) == " réemploi") {
+		} else if (type.substring(0,9) == " réemploi" || type.substring(0,14) == " vente au vrac") {
 			mainView.setActiveItem(3);
+		} else if (type == "Quiz") {
+			mainView.setActiveItem(6);
+			// mainView.this.show2(1);
 		}
 	}
 });

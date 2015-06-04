@@ -1,42 +1,42 @@
 Ext.define('MieuxTrierANantes.controller.CollectModsController', {
-			extend : 'MieuxTrierANantes.controller.AbstractController',
-			id : 'collectModsController',
-			config : {
-				refs : {
-					collectModsView : 'collectMods_xtype',
-					collectModsList : 'collectModsButtonsPanel_xtype',
-					collectModsDetails : 'collectModsDetails_xtype',
-					buttonConteneurPapierCarton : '#modco_contpapiercarton'
-				},
-				control : {
-					collectModsView : {
-						activate : 'onActivate'
-					},
-					collectModsList : {
-						// initialize : "onInitCollectModsList"
-					},
-					collectModsDetails : {
-						back : 'onPushBackButton3'
-					},
-					// fonctionne comme une CSS selecteur
-					'collectModsButtonsPanel_xtype button' : {
-						tap : 'onShowDetails'
-					},
-					// fonctionne comme une CSS selector
-					// (http://www.w3.org/TR/CSS2/selector.html)
-					'collectModsDetails_xtype button' : {
-						tap : 'onTapLinkButton'
-					}
-				}
+	extend : 'MieuxTrierANantes.controller.AbstractController',
+	id : 'collectModsController',
+	config : {
+		refs : {
+			collectModsView : 'collectMods_xtype',
+			collectModsList : 'collectModsButtonsPanel_xtype',
+			collectModsDetails : 'collectModsDetails_xtype',
+			buttonConteneurPapierCarton : '#modco_contpapiercarton'
+		},
+		control : {
+			collectModsView : {
+				activate : 'onActivate'
 			},
-			
-			onActivate : function(newActiveItem, container, oldActiveItem,
-					eOpts) {
-				//		// STORE dataCollectMods
+			collectModsList : {
+// initialize : "onInitCollectModsList"
+			},
+			collectModsDetails : {
+				back : 'onPushBackButton3'
+			},
+			// fonctionne comme une CSS selecteur
+			'collectModsButtonsPanel_xtype button' : {
+				tap : 'onShowDetails'
+			},
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			'collectModsDetails_xtype button' : {
+				tap : 'onTapLinkButton'
+			}
+		}
+	},
+
+	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+		//		// STORE dataCollectMods
 		//		var dataCollectMods = this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getCollectModList().getStore();
 		//		var arItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
 
-		var arItemsToShow = this.getArrayItemsToShowForButtons(_collectModsDatas, "modco");
+		var arItemsToShow = this.getArrayItemsToShowForButtons(
+				_collectModsDatas, "modco");
 
 		var result = new Array();
 		if (arItemsToShow.length > 0) {
@@ -45,80 +45,78 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 			for (var i = 0; i < theItems.length; i++) {
 				var stLibelle = _cutWithBr(theItems[i]["nom"]);
 				result.push({
-					code : theItems[i].id,
-					label : stLibelle,
-					image : theItems[i].image
-				});
+							code : theItems[i].id,
+							label : stLibelle,
+							image : theItems[i].image
+						});
 			}
 		}
 
 		var nbMax = 18; // la page affiche 18 éléments
-		this.setDataInButtonsWithManyLines(this.getCollectModsList(), "collectModsButtonsPanel", result, nbMax, 3);
+		this.setDataInButtonsWithManyLines(this.getCollectModsList(),
+				"collectModsButtonsPanel", result, nbMax, 3);
 
 		//	var arItems = this.getContentButtonsPanel(arItemsToShow);
 		// 	this.removeAllAndSetItems(this.getCollectModsList(), arItems);
-			},
+	},
 
-			onTapLinkButton : function(button, e, eOpts) {
-				this.manageLinkButtons(button._data["code"]);
-			},
-			
-			onShowDetails : function(button, e, eOpts) {
-				this.showDetails(button.id);
-			},
+	onTapLinkButton : function(button, e, eOpts) {
+		this.manageLinkButtons(button._data["code"]);
+	},
 
-			showDetails : function(elementId) {
+	onShowDetails : function(button, e, eOpts) {
+		this.showDetails(button.id);
+	},
 
-				// Crée la page si elle n'existe pas encore
-				if (this.collectModsDetails == null) {
-					this.collectModsDetails = Ext
-							.create("MieuxTrierANantes.view.collectMod.CollectModsDetails");
-				}
+	showDetails : function(elementId) {
 
-				// Récupère l'élément
-				var collectModFromStore = _getCollectMod(elementId);
+		// Crée la page si elle n'existe pas encore
+		if (this.collectModsDetails == null) {
+			this.collectModsDetails = Ext
+					.create("MieuxTrierANantes.view.collectMod.CollectModsDetails");
+		}
 
-				// Ajout de la description
-				var descriptionTraduit = "";
-				if (collectModFromStore["descr"] != "") {
-					descriptionTraduit = collectModFromStore["descr"]
-							+ "<br/><br/>";
-				}
-				this.setDataElement(this.collectModsDetails,
-						"collectModsDetails_description", {
-							'description' : descriptionTraduit
-						})
+		// Récupère l'élément
+		var collectModFromStore = _getCollectMod(elementId);
 
-				// Ajout des conseils
-				var conseils = "";
-				if (collectModFromStore["cons"] !== "") {
-					conseils = collectModFromStore["cons"] + ",";
-				}
-				var arsItemsAdvices = _getAdvicesBlock(conseils);
-				this.setItemsElement(this.collectModsDetails,
-						"collectModsDetails_advices", arsItemsAdvices);
+		// Ajout de la description
+		var descriptionTraduit = "";
+		if (collectModFromStore["descr"] != "") {
+			descriptionTraduit = collectModFromStore["descr"] + "<br/><br/>";
+		}
+		this.setDataElement(this.collectModsDetails,
+				"collectModsDetails_description", {
+					'description' : descriptionTraduit
+				})
 
-				// Affectation du titre
-				var title = "<I>"
-						+ _translateWithUpperFirstLetter("label_modeDeCollecte")
-						+ "</I> "
-						+ _stringUpperFirstLetter(collectModFromStore["nom"]);
-				this.collectModsDetails.setTitle(title);
-				
-				// Ajout des commentaires
-				var code = collectModFromStore["code"];
-				this.setItemsElement(this.collectModsDetails,
-						"collectModsDetails_comments", this
-								.getItemsComments(code, title));
+		// Ajout des conseils
+		var conseils = "";
+		if (collectModFromStore["cons"] !== "") {
+			conseils = collectModFromStore["cons"] + ",";
+		}
+		var arsItemsAdvices = _getAdvicesBlock(conseils);
+		this.setItemsElement(this.collectModsDetails,
+				"collectModsDetails_advices", arsItemsAdvices);
 
+		// Affectation du titre
+		var title = "<I>"
+				+ _translateWithUpperFirstLetter("label_modeDeCollecte")
+				+ "</I> " + _stringUpperFirstLetter(collectModFromStore["nom"]);
+		this.collectModsDetails.setTitle(title);
 
-				// Bind the record onto the show contact view
-				this.collectModsDetails.setData(collectModFromStore.data);
+		// Ajout des commentaires
+		var code = collectModFromStore["code"];
+		this.setItemsElement(this.collectModsDetails,
+				"collectModsDetails_comments", this.getItemsComments(code,
+						title));
 
-				this.getCollectModsView().push(this.collectModsDetails);
+		// Bind the record onto the show contact view
+		this.collectModsDetails.setData(collectModFromStore.data);
 
-			}/*,
-			onInitCollectModsList : function(container) {
-			}*/
+		this.getCollectModsView().push(this.collectModsDetails);
 
-		});
+	}/*,
+	onInitCollectModsList : function(container) {
+	}*/
+
+});

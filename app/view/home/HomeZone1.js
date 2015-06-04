@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone1', {
 		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 			// Le logo
-			minWidth : '180px',
+			minWidth : '215px',
 			width : '80%',
 			html : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'>Aider les habitants de Nantes Métropole à trier.</td></tr></table>",
 			styleHtmlContent : true

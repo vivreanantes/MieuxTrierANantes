@@ -39,7 +39,7 @@ Ext.define('MieuxTrierANantes.view.home.SettingsForm', {
 			}*/, {
 				xtype : 'selectfield',
 				usePicker : false,
-				label : 'Mode de collecte',
+				label : 'Réglages',
 				labelWidth : '90px',
 				id : 'settingsFormModCoTextfield',
 				options : [{

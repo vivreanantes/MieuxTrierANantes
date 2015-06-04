@@ -5,9 +5,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	extend : 'MieuxTrierANantes.controller.AbstractController',
 	requires : ['MieuxTrierANantes.view.garbages.GarbagesContainer',
 			'MieuxTrierANantes.view.garbages.GarbagesForm'/*
-															 * ,
-															 * 'MieuxTrierANantes.view.garbages.GarbagesList'
-															 */],
+			 * ,
+			 * 'MieuxTrierANantes.view.garbages.GarbagesList'
+			 */],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -46,7 +46,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 			garbagesView : {
 				push : 'onGarbagesViewPush',
-				show : 'onActivate',
+				show : 'onShow',
+				onActivate : 'onActivate',
 				back : 'onPushBackButton1'
 			},
 
@@ -73,8 +74,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
 			},/*
-				 * advicesList : { initialize : 'onInitGarbagesAdvices' },
-				 */
+			 * advicesList : { initialize : 'onInitGarbagesAdvices' },
+			 */
 			/*
 			 * wasteTreatmentsCategoriesList : { initialize :
 			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
@@ -167,17 +168,24 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		// this.onPushBackButton();
 	},
 
-	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
 		var mainView = this.getMainView();
-		if (mainView.active!=null) {
+		// mainView.type = "Fiche";
+		//  (mainView.type == "Déchet" || typeof mainView.type == 'undefined') {
+		// 1. On est sur la page déchet
+		if (mainView.active != null) {
 			// Cas des liens qui ouvre la page
 			this.showGarbagesDetail2(mainView.active);
-			mainView.active=null;
-		}
-		else {
+			mainView.active = null;
+		} else {
 			this.putInButtonsPanel("cu");
 		}
-		// Permet l'interception des paramètres de la page HTML, qui vouvre une page particulière
+
+	},
+
+	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+		this.suspendEvents();
+		mainView.setActiveItem(2);
 	},
 
 	putInButtonsPanel : function(stringFilter) {
@@ -239,8 +247,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 									}
 								}
 							});
-							
-							
+
 				}
 			}
 		} else if (arButtonsId[0] === "comments_xtype") {
@@ -291,6 +298,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
 		_gestionLienExterne();
+
 	},
 
 	/*
@@ -358,7 +366,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	showGarbagesDetail : function(button, e, eOpts) {
 		this.showGarbagesDetail2(button._data["code"]);
 	},
-	
+
 	showGarbagesDetail2 : function(code) {
 		// Récupère l'élément
 		var record = _getGarbage(code);
@@ -379,8 +387,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			modesDeCollecte = record["modco"];
 			treatmentCategories = record["recyc"];
 			/*
-			 * if (record["cons"] !== '') { conseils = record["cons"] +
-			 * ","; } // conseils de catégories de traitement if
+			 * if (record["cons"] !== '') { conseils = record["cons"] + ","; } //
+			 * conseils de catégories de traitement if
 			 * (record["categorie_traitement"] !== '') { var
 			 * dataWasteTreatmentsCategories = this
 			 * .getWasteTreatmentsCategoriesList().getStore() .getData();
@@ -578,7 +586,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	filter : function() {
 		var start = new Date().getTime();
 		var result = new Array();
-		var text = _utilRetireAccentEtMinuscule(this.getGarbagesFormText().getValue());
+		var text = _utilRetireAccentEtMinuscule(this.getGarbagesFormText()
+				.getValue());
 		var category = this.getGarbagesFormSelect();
 		var escaperegex = Ext.String.escapeRegex;
 
@@ -588,8 +597,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
 			var mots_cles = _garbagesDatas[j]["mots_cles"];
-			if ((_garbagesDatas[j]["cat_usuel"] === category
-					.getValue() || category.getValue() === "all")
+			if ((_garbagesDatas[j]["cat_usuel"] === category.getValue() || category
+					.getValue() === "all")
 					&& texttest.test(mots_cles)) {
 				// Ajoute les <br/>
 				var stLibelle = _cutWithBr(_garbagesDatas[j]["nom"]);
@@ -607,7 +616,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}
 
 		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
-		
+
 		// éléments
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);

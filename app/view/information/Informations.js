@@ -22,7 +22,7 @@ Ext.define('MieuxTrierANantes.view.information.Informations', {
 					items : [{
 								xtype : 'button',
 								iconCls : 'home',
-								ui : 'round', // bouton arrondi
+								// ui : 'round', // bouton arrondi
 								title : 'Accueil',
 								align : 'right',
 								id : 'informationhomebutton'
