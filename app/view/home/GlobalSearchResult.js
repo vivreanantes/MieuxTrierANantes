@@ -12,9 +12,26 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchResult', {
 		styleHtmlContent : true,
 		record : null,
 		items : [{
+					layout : {
+						type : 'hbox',
+						align : 'stretch'
+					},
+					items : [{
+								html : "<div align='center' style='font-size:14px;font-weight:bold'>Résultats</div>",
+								flex : 1
+							}, {
+								xtype : 'button',
+								iconCls : 'home',
+								// ui : 'round', // bouton arrondi
+								align : 'right',
+								id : 'globalsearchhomebutton',
+								disabled : false,
+								width : '100px'
+							}]
+				}, {
 					xtype : "homeglobalsearchlist_xtype",
 					// height:'300px'
-				flex : 1
+					flex : 1
 				}]
 	}
 		/*

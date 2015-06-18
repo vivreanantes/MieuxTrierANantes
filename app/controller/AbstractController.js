@@ -86,7 +86,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var mainView = this.getMainView();
 		if (mainView != null) {
 			mainView.setActiveItem(6);
-			mainView.getActiveItem(6);
+			// mainView.getActiveItem(6).setActiveItem(0);
+			
 		}
 	},
 

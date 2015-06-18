@@ -7,10 +7,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_1 : '#homeZone4_1',
 			homeZone4_2 : '#homeZone4_2',
 			homeZone4_3 : '#homeZone4_3',
+			homeZone4_4 : '#homeZone4_4',
 			homeZone3_1 : '#homeZone3_1',
 			homeZone3_2 : '#homeZone3_2',
 			homeContainer : '#homeContainer_xtype',
 			homeZone1_bouton : '#homeZone1_bouton',
+			homeButton : '#docshomebutton',
+			quizHomeButton : '#quizhomebutton',
+			globalSearchHomeButton : '#globalsearchhomebutton',
 			docsModal : 'docsmodal_xtype',
 			homeGlobalSearchFormButton : '#homeGlobalSearchFormButton',
 			quizView : 'quizview_xtype',
@@ -37,6 +41,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			},
 			homeZone4_3 : {
 				tap : 'onTapHomeZone4_3'
+			},
+			homeZone4_4 : {
+				tap : 'onTapHomeZone4_4'
 			},
 			homeZone3_1 : {
 				tap : 'onTapHomeZone3_1'
@@ -84,6 +91,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 			homeGlobalSearchList : {
 				itemtap : "itempTapHomeGlobalSearchList"
+			},
+			homeButton : {
+				tap : 'onHomeButton2'
+			},
+			quizHomeButton : {
+				tap : 'onHomeButton2'
+			},
+			globalSearchHomeButton : {
+				tap : 'onHomeButton2'
 			}
 		}
 
@@ -136,6 +152,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onInitializeHome : function() {
 		// 
 	},
+	
+	onHomeButton2 : function() {
+		var homeView = this.getHome();
+		homeView.getNavigationBar().fireEvent('back', this);
+	},
+	
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
 		this.show2(0);
@@ -151,14 +173,23 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (this.quizView == null) {
 			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
 		}
-		this.quizView.items.items[0].setData(_quizsDatas[indexElement]);
+		this.quizView.items.items[1].setData(_quizsDatas[indexElement]);
 		// Affectation du titre
-		this.quizView.setTitle(_quizsDatas[indexElement]["nom"]);
+		// this.quizView.setTitle(_quizsDatas[indexElement]["nom"]);
 		this.getHome().push(this.quizView);
 	},
 
 	onTapHomeZone4_3 : function(button, e, eOpts) {
 		this.showDocList();
+	},
+
+	onTapHomeZone4_4 : function(button, e, eOpts) {
+		e.target = {
+			href : "http://mieuxtrieranantes.fr/docs/listing_reemploi.xls"
+		};
+
+		// this.showDocList();
+		_gestionLien(e);
 	},
 
 	showDocList : function() {
@@ -415,8 +446,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 		// todo prendre parmis le formulaire QuizView a la place de QuizForm
 		var nbQ = _quizsDatas[0]["nbq"]
-		var nbTotalReponses = nbQ * 3;
-		var nbKo = nbTotalReponses - nbOk;
+		// var nbTotalReponses = nbQ * 3;
+		var nbKo = nbQ - nbOk;
 		var message = "Quelques erreurs.";
 		if (nbKo == 0) {
 			message = "Bravo, aucune erreur ! ";
@@ -437,9 +468,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (record.data["type"] == "Quiz") {
 			this.show2(record.data["code"]);
 		}
-		/* ele if (record.data["type"] == "Docs") {
-			this.showDocList();
-		}*/else {
+		/*
+		 * ele if (record.data["type"] == "Docs") { this.showDocList(); }
+		 */else {
 			this.showActiveItemInPage(record.data["type"], record.data["code"]);
 		}
 		// this.getGarbagesView().setActiveItem(0);

@@ -3,7 +3,7 @@
  * @author Jacky Nguyen <jacky@sencha.com>
  */
 (function() {
-    var head = document.head || document.getElementsByTagName('head')[0];
+    var head = document.head;
 
     function write(content) {
         document.write(content);
@@ -156,13 +156,9 @@
             if (!filterPlatform(platform) || filterPlatform(exclude)) {
                 continue;
             }
-
-            if(!Ext.theme) {
-                Ext.theme = {};
-            }
-            if(!Ext.theme.name) {
-                Ext.theme.name = theme || 'Default';
-            }
+            Ext.theme = {
+                name: theme || 'Default'
+            };
         }
 
         write('<link rel="stylesheet" href="'+path+'">');

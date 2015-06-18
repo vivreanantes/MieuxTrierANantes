@@ -6,7 +6,7 @@
     var emptyFn = function(){},
         callbacks = [],
         doc = global.document,
-        head = doc.head || doc.getElementsByTagName('head')[0],
+        head = doc.head,
         addWindowListener = global.addEventListener,
         removeWindowListener = global.removeEventListener,
         jsonParse = JSON.parse,
@@ -182,16 +182,11 @@
             var platform = css.platform,
                 exclude = css.exclude;
 
-            css.type = "css";
-
             if (platform) {
                 if (filterPlatform(platform) && !filterPlatform(exclude)) {
-                    if(!Ext.theme) {
-                        Ext.theme = {};
-                    }
-                    if(!Ext.theme.name) {
-                        Ext.theme.name = css.theme || 'Default';
-                    }
+                    Ext.theme = {
+                        name: css.theme || 'Default'
+                    };
                     return true;
                 }
                 css.filtered = true;
@@ -203,8 +198,6 @@
         this.js = this.js.filter(function(js) {
             var platform = js.platform,
                 exclude = js.exclude;
-
-            js.type = "js";
 
             if (platform) {
                 if (filterPlatform(platform) && !filterPlatform(exclude)) {
@@ -289,51 +282,12 @@
         doc.body.appendChild(iframe);
     }
 
-    // for remote assets, inject a script element
-    function addRemoteScript(uri, onSuccess, onFailure) {
-        var script = document.createElement('script');
-        script.src = uri;
-        script.type = "text/javascript";
-        script.charset = "UTF-8";
-
-        script.onerror = onFailure;
-
-        if ('addEventListener' in script ) {
-            script.onload = onSuccess;
-        } else if ('readyState' in script) {
-            script.onreadystatechange = function() {
-                if (this.readyState === 'loaded' ||
-                    this.readyState === 'complete') {
-                    onSuccess();
-                }
-            };
-        } else {
-            script.onload = onSuccess;
-        }
-
-        head.appendChild(script);
-    }
-
-    function addRemoteLink(uri) {
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        link.href = uri;
-        head.appendChild(link);
-    }
-
     function requestAsset(asset, onSuccess, onFailure) {
         var isRemote = !!asset.remote,
             isShared = !!asset.shared;
 
         if (isRemote) {
-            if(asset.type === "js") {
-                addRemoteScript(asset.uri, function(){
-                    onSuccess('');
-                }, onFailure);
-            } else {
-                addRemoteLink(asset.uri);
-                onSuccess('');
-            }
+            onSuccess('');
             return;
         }
 
@@ -351,7 +305,7 @@
                     }
                 }
                 else if (checksumType == 'f') {
-                    if (content.substring(10, versionLn + 10) !== version) {
+                    if (content.substring(9, versionLn + 9) !== version) {
                         checksumFail = true;
                     }
                 }

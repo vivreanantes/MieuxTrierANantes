@@ -36,9 +36,7 @@ Ext.define('MieuxTrierANantes.view.home.Home', {
 							xtype : 'homeContainer_xtype'
 						}],
 				// on cache le titre
-				/*
-				 * navigationBar : { hidden : true },
-				 */
+				 navigationBar : { hidden : true },
 				defaultBackButtonText : "Retour"
 			}
 		});
