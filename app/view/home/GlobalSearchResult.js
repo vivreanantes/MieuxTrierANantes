@@ -26,7 +26,7 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchResult', {
 								align : 'right',
 								id : 'globalsearchhomebutton',
 								disabled : false,
-								width : '100px'
+								width : '50px'
 							}]
 				}, {
 					xtype : "homeglobalsearchlist_xtype",

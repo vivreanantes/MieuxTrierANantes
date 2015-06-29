@@ -86,7 +86,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var mainView = this.getMainView();
 		if (mainView != null) {
 			mainView.setActiveItem(6);
-			// mainView.getActiveItem(6).setActiveItem(0);
+			// TODO
+			// je reviens sur la page de depart
+			/*if (this.getHome().getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
+				var homeView = this.getHome();
+				homeView.getNavigationBar().fireEvent('back', this);
+			}*/
 			
 		}
 	},

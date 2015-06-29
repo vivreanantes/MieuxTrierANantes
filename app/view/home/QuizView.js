@@ -22,11 +22,10 @@ Ext.define('MieuxTrierANantes.view.home.QuizView', {
 				align : 'right',
 				id : 'quizhomebutton',
 				disabled : false,
-				width : '100px'
+				width : '50px'
 			}]
 		}, {
 			tpl : "<div align='center' style='font-size:14px;font-weight:bold'>{nom}</div>"
-					+ "{descr}"
 					+ "<form id='quizviewform'>{descr}"
 					+ "<input type='hidden' name='ok' value='{ok}'/>"
 					+ "<div class='qheader'>"

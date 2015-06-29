@@ -31,7 +31,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		control : {
 			home : {
 				show : 'onShowHome',
-				initialize : 'onInitializeHome'
+				initialize : 'onInitializeHome',
+				activate : 'onActivateHome'
+
 			},
 			homeZone4_1 : {
 				tap : 'onTapHomeZone4_1'
@@ -105,6 +107,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	},
 
+	onActivateHome : function(newActiveItem, container, oldActiveItem, eOpts) {
+		if (container.getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
+			var homeView = this.getHome();
+			homeView.getNavigationBar().fireEvent('back', this);
+		}
+	},
 	onShowHome : function() {
 		var thisControler = this;
 		// this.getHome().push(this.homeContainer);
@@ -152,12 +160,17 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onInitializeHome : function() {
 		// 
 	},
-	
+
 	onHomeButton2 : function() {
-		var homeView = this.getHome();
-		homeView.getNavigationBar().fireEvent('back', this);
+		// Si je suis sur la page 'home', je mets le bouton back
+		if (this.getMainView().getActiveItem().id.indexOf("home_xtype") != -1) {
+			if (this.getHome().getActiveItem().id
+					.indexOf("homeContainer_xtype") == -1) {
+				var homeView = this.getHome();
+				homeView.getNavigationBar().fireEvent('back', this);
+			}
+		}
 	},
-	
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
 		this.show2(0);

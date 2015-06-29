@@ -21,7 +21,7 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 										align : 'right',
 										id : 'docshomebutton',
 										disabled : false,
-										width : '100px'
+										width : '50px'
 									}]
 						}, {
 							xtype : 'docslist_xtype',
