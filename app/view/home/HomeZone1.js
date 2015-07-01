@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone1', {
 	config : {
 		layout : 'hbox',
 		scrollable : false,
-		height : '60px',
+		height : '70px',
 		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 			// Le logo

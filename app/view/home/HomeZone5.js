@@ -7,7 +7,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone5', {
 	config : {
 		layout : 'hbox',
 		scrollable : false,
-		 height: 100,
+		 height: '100px',
 		tpl : "ooo",
 		styleHtmlContent : true,
 		items : [

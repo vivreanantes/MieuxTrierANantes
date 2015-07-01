@@ -15,19 +15,19 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 		items : [
 			{
 				id : "homeZone4_1",
-				xtype : "button",height : '80px', width : '60px', cls : 'boutons_panneau',
+				xtype : "button",height : '80px', width : '55px', cls : 'boutons_panneau',
 				tpl : "<center><font size='2'>Quiz<br/>Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='50px' /></center>", data : { label:"", image : ""}
 			}, {
 				id : "homeZone4_2",
-				xtype : "button",height : '80px', width : '60px', cls : 'boutons_panneau',
+				xtype : "button",height : '80px', width : '55px', cls : 'boutons_panneau',
 				tpl : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='50px' /></center>", data : { label:"", image : ""}
 			}, {
 				id : "homeZone4_3",
-				xtype : "button",height : '80px', width : '60px', cls : 'boutons_panneau',
+				xtype : "button",height : '80px', width : '55px', cls : 'boutons_panneau',
 				tpl : "<center><font size='2'>Docs à<br/>imprimer</font><br/><img src='resources/images/icon_pdf.png' height='50px' /></center>", data : { label:"", image : ""}
 			}, {
 				id : "homeZone4_4",
-				xtype : "button",height : '80px', width : '60px', cls : 'boutons_panneau',
+				xtype : "button",height : '80px', width : '55px', cls : 'boutons_panneau',
 				tpl : "<center><font size='2'>Listing<br/>réemploi</font><br/><img src='resources/images/application-vnd.ms-excel.png' height='50px' /></center>", data : { label:"", image : ""}
 			},{
 					flex : 1

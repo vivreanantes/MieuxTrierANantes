@@ -18,13 +18,9 @@ del /Q %PROJECT_DIR%\build\testing\MieuxTrierANantes\dev.apk
 
 rem sencha --info app build native
 sencha app build native
-rem cd %PROJECT_DIR%\cordova\platforms\android
-rem ant release -Dkey.store=%KEY_STORE% -Dkey.alias=%KEY_ALIAS% -Dkey.store.password=%KEY_STORE_PASSWORD% -Dkey.alias.password=%KEY_ALIAS_PASSWORD%
-
-rem copy %PROJECT_DIR%\cordova\platforms\android\bin\CordovaApp-release.apk %PROJECT_DIR%\build\testing\MieuxTrierANantes\dev.apk
-
-
-rem tempo
-rem cd C:\dev\github-repositories\MieuxTrierANantes
+cd %PROJECT_DIR%\cordova\platforms\android
+ant release -Dkey.store=%KEY_STORE% -Dkey.alias=%KEY_ALIAS% -Dkey.store.password=%KEY_STORE_PASSWORD% -Dkey.alias.password=%KEY_ALIAS_PASSWORD%
+copy %PROJECT_DIR%\cordova\platforms\android\bin\CordovaApp-release.apk %PROJECT_DIR%\build\testing\MieuxTrierANantes\dev.apk
+cd C:\dev\github-repositories\MieuxTrierANantes
 
 pause
