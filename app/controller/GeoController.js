@@ -219,8 +219,14 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			}
 			if (record.get('src') != null) {
 				popuptext = popuptext + "<i><font color=red>"
-						+ record.get('src') + "</font></i><br/>";
+						+ record.get('src') + "</font></i><br/>"
+
 			}
+			/*url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + latitude +  "," + longitude;
+			popuptext = popuptext+ "<a href='"+url+"' target=_blank>Y aller</a><br/>";
+			// popuptext = popuptext + "<a href='" + _getUrlYAller(latitude +
+			// "," + longitude) + "' target=_blank>y aller</a><br/>"; +"<br/>";
+			 */
 			// Le détail du mode de collecte
 			if (record.get('modesCollecte') != null) {
 				popuptext = popuptext

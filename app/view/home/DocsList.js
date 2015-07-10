@@ -6,6 +6,13 @@ Ext.define('MieuxTrierANantes.view.home.DocsList', {
 	xtype : 'docslist_xtype',
 	config : {
 		ui : 'dark',
-		itemTpl : "<strong>{nom}</strong><br/><a href='http://{url}' target=_new>{url}</a>"
+		itemTpl : "<strong>{nom}</strong><br/><a href='http://{url}' target=_new>{url}</a>",
+		listeners : {
+			element : 'element',
+			delegate : 'a',
+			tap : function(e) {
+				_gestionLien(e);
+			}
+		}
 	}
 });

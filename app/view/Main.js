@@ -8,6 +8,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 	config : {
 		tabBarPosition : 'bottom',
 		items : [
+		
 			/*{
 			xtype : 'titlebar',
 			id : 'main_titlebar',
@@ -35,7 +36,13 @@ Ext.define('MieuxTrierANantes.view.Main', {
 				html : "Amis "
 						+ "<IMG SRC='resources/images/images_non_libres/logo_les_boites_vertes_rogne_mini.png' HEIGHT='22px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='http://lesboitesvertes.fr/' TARGET=_blank title='Association les boîtes vertes (Baludik, PlusDeVers)'>les boîtes vertes</A>"
 			}]
-		}, */{
+		}, */
+		 {
+			title : 'Actualités_',
+			iconCls : 'livreclass', 
+			xtype : 'home_xtype',
+			hidden : 'true'
+		}, {
 			title : 'Déchets',
 			/// iconCls : 'trash',
 			iconCls : 'garbageclass', // icône en forme de déchets 
@@ -63,11 +70,6 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			// iconCls : 'add',
 			iconCls : 'distrisacclass', // icône en forme de sacs
 			xtype : 'trisac_xtype'
-		}, {
-			title : 'Actualités_',
-			iconCls : 'livreclass', 
-			xtype : 'home_xtype',
-			hidden : 'true'
 		}]
 	}
 });

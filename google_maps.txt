@@ -5,3 +5,7 @@ For Android Maps App: window.open("geo:"+addressLongLat);
 For iOs Maps App: window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
 
 For Google Maps in App Browser: window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+
+http://maps.google.fr/maps?f=q&hl=fr&q=48.873847,2.295005
+
+http://stackoverflow.com/questions/26502183/phonegap-geo-href-to-google-maps 

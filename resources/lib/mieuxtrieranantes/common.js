@@ -1,7 +1,7 @@
 var _SEPARATOR = "#";
 
 /**
- * Ajoute les éléments d'un tableau arSrc  à un tableau existant arTarget
+ * Ajoute les éléments d'un tableau arSrc à un tableau existant arTarget
  */
 function utilPushArray(arSrc, arTarget) {
 	arTarget.push.apply(arTarget, arSrc);
@@ -80,15 +80,22 @@ function _utilRetireAccentEtMinuscule(result) {
 	result = result.toLowerCase();
 	// Retire les mots inutiles
 	result = _utilRetireMotsInutiles(result);
-	// trim : permet de retirer les blancs en début et fin de chaîne. 
+	// trim : permet de retirer les blancs en début et fin de chaîne.
 	result = result.trim();
 	return result;
 }
 
 function _utilRetireMotsInutiles(result) {
-	result = result.replace(/allee|avenue|bas chemin|basse tenue|boulevard|chemin|cours|esplanade|hameau|haute impasse|impasse|jardin|mail|nouvelle impasse|parvis|passage|petit chemin|petite avenue|petite rue|place|pont|promenade|quai|rond-point|route|rue|ruelle|sentier|square|venelle|voie/g, "");
+	result = result
+			.replace(
+					/allee|avenue|bas chemin|basse tenue|boulevard|chemin|cours|esplanade|hameau|haute impasse|impasse|jardin|mail|nouvelle impasse|parvis|passage|petit chemin|petite avenue|petite rue|place|pont|promenade|quai|rond-point|route|rue|ruelle|sentier|square|venelle|voie/g,
+					"");
 	// |de la|de|du|des
-	// todo_crn allee |allee |avenue |bas chemin |basse tenue |boulevard |chemin |cours |esplanade |hameau |haute impasse |impasse |jardin |mail |nouvelle impasse |parvis |passage |petit chemin |petite avenue |petite rue |place |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square |venelle |voie |de la |de |du |des
+	// todo_crn allee |allee |avenue |bas chemin |basse tenue |boulevard |chemin
+	// |cours |esplanade |hameau |haute impasse |impasse |jardin |mail |nouvelle
+	// impasse |parvis |passage |petit chemin |petite avenue |petite rue |place
+	// |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square
+	// |venelle |voie |de la |de |du |des
 	return result;
 }
 
@@ -115,8 +122,8 @@ function _cutWithBr(stChaine) {
 	return _decoupeAvecTaille(stChaine, 30);
 }
 /**
- * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
- * des balises <br/>
+ * Découpe une chaîne de caractère (notamment pour les boutons) en insérant des
+ * balises <br/>
  */
 function _decoupeAvecTaille(stChaine, iTailleMax) {
 	var result = "";
@@ -175,34 +182,82 @@ function _detectePetiteTaille() {
 	}
 }
 
+/**
+ * Ouvre un lien (soit dans le navigateur, soit dans google maps)
+ */
 function _gestionLien(e) {
-	if (e.target.href.length > 5) {
-		protocole = e.target.href.substring(0, 4);
-		complement = e.target.href.substring(5);
+	var hrefValue = 0
+	// on prend soit le href, soit le lien parent (dans le cas des images)
+	if (e.target.href != undefined) {
+		hrefValue = e.target.href;
+	} else if (e.getTarget().href != undefined) {
+		hrefValue = e.getTarget().href;
+	}
+	if (hrefValue.length > 5) {
+		protocole = hrefValue.substring(0, 4);
+		complement = hrefValue.substring(5);
 		if (protocole == "http" || protocole == "www.") {
-			var url = e.target.href;
 			if (typeof navigator !== "undefined" && navigator.app) {
 				// Mobile device.
-				Ext.Msg.alert('Externe', 'La page '+ url + ' a été ouverte dans le navigateur.');
-				navigator.app.loadUrl(url, {
+				Ext.Msg.alert('Externe',
+						'La page a été ouverte dans le navigateur.');
+				navigator.app.loadUrl(hrefValue, {
 							openExternal : true
 						});
 				e.stopPropagation();
-                e.preventDefault();
-              	return false;
+				e.preventDefault();
+				return false;
 			} else {
 				// Possible web browser
-				window.open(url, "_blank");
+				// window.open(hrefValue, "_blank");
+				// e.stopPropagation();
+				// e.preventDefault();
+				// e.stopEvent();
+				// return false;
 			}
 			// navigator.app.loadUrl(url, {openExternal: true});
 		} else if (protocole == "fich") {
 			_detailleFiche(complement, 300, 400, false);
 		} else if (protocole == "lieu") {
 			_detailleLieu(complement, 300, 400, false);
+		} else if (protocole == "lalo") {
+
+			// complement = e.target.href.substring(4);
+
+			if (typeof navigator !== "undefined" && navigator.app) {
+				// Mobile device.
+				url = "geo:0,0?q=" + complement;
+				Ext.Msg.alert('Externe', 'La page a été ouverte dans maps.');
+				/*
+				 * navigator.app.oenNativeAppWindow(url, { openExternal : true
+				 * });
+				 */
+				navigator.app.loadUrl(url, {
+							openExternal : true
+						});
+				e.stopPropagation();
+				e.preventDefault();
+				return false;
+			} else {
+				// Possible web browser
+				url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + complement;
+				window.open(url, "_system");
+				e.stopPropagation();
+				e.preventDefault();
+				e.stopEvent();
+				return false;
+			}
 		}
-		 e.stopEvent();
+		e.stopEvent();
 	}
-	// console.log('anchor tapped : ' + e.href);
+}
+
+function _getUrlYAllerLatLong(latitude, longitude) {
+	var lien = "lalo:" + latitude + "," + longitude;
+	var url = "<a href="
+			+ lien
+			+ "><img src='resources/images/images_non_libres/y_aller.png' /></a>";
+	return url;
 }
 
 function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
@@ -218,8 +273,7 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	}
 	Ext.Msg.show({
 				title : info["nom"],
-				message : "<font color=black>" + info["descr"]
-						+ "</font>",
+				message : "<font color=black>" + info["descr"] + "</font>",
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,
@@ -234,8 +288,8 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 					}
 				}
 			});
-	
-	//	cls: moncss,padding : monPadding
+
+	// cls: moncss,padding : monPadding
 
 }
 
@@ -263,10 +317,11 @@ function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
 					}
 				}
 			});
-	
+
 }
 
-// Permet l'interception des paramètres de la page HTML, qui ouvre une page particulière
+// Permet l'interception des paramètres de la page HTML, qui ouvre une page
+// particulière
 function _gestionLienExterne() {
 	var t = location.search.substring(1).split('&');
 	var f = [];

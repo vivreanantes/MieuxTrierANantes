@@ -1017,6 +1017,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 40 10 10",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,Chlorophylle,Beausejour",
 	"image" : "paperbag.png"
@@ -1034,6 +1035,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 25 11 11",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,Chlorophylle,Beaujoire",
 	"image" : "paperbag.png"
@@ -1051,6 +1053,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 76 76 00",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,Chlorophylle,Beauceane",
 	"image" : "paperbag.png"
@@ -1068,6 +1071,7 @@ var _structures1Datas = [{
 	"tel" : "02 51 82 00 82",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,Chlorophylle,Beausud",
 	"image" : "paperbag.png"
@@ -1085,6 +1089,7 @@ var _structures1Datas = [{
 	"tel" : "02 52 200 200",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,Chlorophylle,Bio,Goulaine",
 	"image" : "paperbag.png"
@@ -1103,6 +1108,7 @@ var _structures1Datas = [{
 	"tel" : "02 28 06 47 43",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au jeudi 9h30-19h, vendredi 9h30-19h30, samedi 9h-19h.",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je_09h30-19h00,0101-3112_ve_09h30-19h00,0101-3112_sa_09h00-19h00",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
@@ -1120,6 +1126,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 89 13 90 ",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
+	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
@@ -1137,6 +1144,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 04 05 18 ",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
+	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "ST SEBASTIEN SUR LOIRE",
 	"mots_cles" : "vente,vrac,Biocoop,Halles",
 	"image" : "paperbag.png"
@@ -1154,6 +1162,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 48 55 67 ",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au samedi 9h30-19h45",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-1945",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
 	"image" : "paperbag.png"
@@ -1171,6 +1180,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 48 55 67 ",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "lundi au vendredi 9h-19h15, samedi 9h-19h",
+	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h30-19h15,0101-3112_sa_09h30-1900",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
 	"image" : "paperbag.png"
@@ -1188,6 +1198,7 @@ var _structures1Datas = [{
 	"tel" : "09 72 43 32 94 ",
 	"src" : "MieuxTrierANantes 04/15",
 	"horaires" : "mardi à vendredi 11h30–19h, samedi 10h-19h",
+	"plagesHoraires" : "0101-3112_ma+me+je+ve_11h30-19h00,0101-3112_sa_10h00-19h00",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,Pirouette",
 	"image" : "paperbag.png"
@@ -1207,6 +1218,25 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_09h30-13h00+15h00-19h30",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,O Bocal,obocal,Day by Day,Day by Day,day",
+	"image" : "paperbag.png"
+}, {
+	"code" : "stco_ventevrac5",
+	"latitude" : "47.252055",
+	"longitude" : "-1.499535",
+	"modesCollecte" : "ventevrac",
+	"type" : " vente au vrac",
+	"statut" : "Entreprise",
+	"descr" : "FRUITS ET LEGUMES :<br/>- un rayon de produits en VRAC,<br/>- un large choix en alimentation et produits de Santé avec le CONSEIL en plus !<br/><br/>Fleuron Bio travaille  avec les producteurs et fabricants locaux qui s'inscrivent dans la même démarche.",
+	"nom" : "FleuronBio",
+	"adresseTemp" : "1 Rue du Marché Commun Centre de Gros - Nant'Est Entreprises 44300 NANTES",
+	"url" : "<a href='www.fleuronbio44.com/ ' target='_blank'>www.fleuronbio44.com/ </a>",
+	"email" : "serviceclient@fleuronbio44.com",
+	"tel" : "02 40 25 94 71",
+	"src" : "MieuxTrierANantes 07/15",
+	"horaires" : "Ouvert de 9h30 à 19H sauf lundi de 15H à 19H ",
+	"plagesHoraires" : "0101-3112_lu_15h00-19h00,0101-3112_ma+me+je+ve+sa_15h00-19h00",
+	"sous_zone" : "Nantes",
+	"mots_cles" : "vente,vrac,fleuronbio,fleuronbio44",
 	"image" : "paperbag.png"
 }, {
 	"code" : "1011",

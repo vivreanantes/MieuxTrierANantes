@@ -44,12 +44,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		// Ajout de l'adresse
 		if (record["statut"] != null && record["statut"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_statut"));
-			descriptionTraduit += "<b>" + label + "</b> : "
-					+ record["statut"] + "<br/><br/>";
+			descriptionTraduit += "<b>" + label + "</b> : " + record["statut"]
+					+ "<br/><br/>";
 		}
 		// Ajout du type
-		if (record["modesCollecte"] != null
-				&& record["modesCollecte"] !== "") {
+		if (record["modesCollecte"] != null && record["modesCollecte"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_type"));
 			var modeCollecteTraduit = "";
 			var typeTraduit = "";
@@ -60,12 +59,23 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ modeCollecteTraduit + " " + typeTraduit + "<br/><br/>";
 		}
 		// Ajout de l'adresse
-		if (record["adresseTemp"] != null
-				&& record["adresseTemp"] !== "") {
+		if (record["adresseTemp"] != null && record["adresseTemp"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_adresse"));
 			descriptionTraduit += "<b>" + label + "</b> : "
-					+ record["adresseTemp"] + "<br/><br/>";
+					+ record["adresseTemp"] + "<br/>";
 		}
+		// Ajout du lien "y aller"
+		if (record["latitude"] != null && record["latitude"] !== ""
+				&& record["longitude"] != null && record["longitude"] !== "") {
+
+			descriptionTraduit += _getUrlYAllerLatLong(record["latitude"],
+					record["longitude"])
+					+ "<br/><br/>";
+
+		} else {
+			descriptionTraduit += "<br/>";
+		}
+
 		// Ajout de la description
 		if (record["descr"] != null && record["descr"] !== "") {
 			descriptionTraduit += record["descr"] + "<br/><br/>";
@@ -74,20 +84,20 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		if (record["tel"] != null && record["tel"] !== "") {
 			var label = _stringUpperFirstLetter(this
 					.translate("label_telephone"));
-			descriptionTraduit += "<b>" + label + "</b> : "
-					+ record["tel"] + "<br/><br/>";
+			descriptionTraduit += "<b>" + label + "</b> : " + record["tel"]
+					+ "<br/><br/>";
 		}
 		// Ajout de l'email
 		if (record["email"] != null && record["email"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_email"));
-			descriptionTraduit += "<b>" + label + "</b> : "
-					+ record["email"] + "<br/><br/>";
+			descriptionTraduit += "<b>" + label + "</b> : " + record["email"]
+					+ "<br/><br/>";
 		}
 		// Ajout du site
 		if (record["url"] != null && record["url"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_url"));
-			descriptionTraduit += "<b>" + label + "</b> : "
-					+ record["url"] + "<br/><br/>";
+			descriptionTraduit += "<b>" + label + "</b> : " + record["url"]
+					+ "<br/><br/>";
 		}
 		// Ajout de la plage horaire
 		if (record["plagesHoraires_lisible"] != null
@@ -99,8 +109,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ record["plagesHoraires_lisible"] + "<br/><br/>";
 		} else {
 			// Ajout de l'horaire si on a pas plagesHoraires_lisible
-			if (record["horaires"] != null
-					&& record["horaires"] !== "") {
+			if (record["horaires"] != null && record["horaires"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_horaires"));
 				descriptionTraduit += "<b>" + label + "</b> : "

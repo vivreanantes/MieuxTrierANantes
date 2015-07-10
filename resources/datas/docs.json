@@ -98,10 +98,10 @@
 				"src" : "03/2015"
 			}, {
 				"code" : "doc_listeasso",
-				"nom" : "Liste Associations Ou Entreprises Réemploi Loire-Atlantique",
-				"mots_cles" : "association,entreprise,reemploi,loire,atlantique",
-				"url" : "docs.google.com/spreadsheets/d/1jvFIceePP8h4tjGUGa3EYu8_u_TdtaSBYctysMWXu2Y/edit?usp=sharing",
+				"nom" : "Liste Associations Ou Entreprises Réemploi Loire-Atlantique (et lieux vente en vrac)",
+				"mots_cles" : "association,entreprise,reemploi,loire,atlantique,vrac",
+				"url" : "http://mieuxtrieranantes.fr/docs/listing_reemploi.xls",
 				"image" : "application-vnd.ms-excel.png",
-				"src" : "05/2015"
+				"src" : "07/2015"
 			}, {}]
 }

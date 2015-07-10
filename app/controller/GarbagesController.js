@@ -139,8 +139,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onPushBackButton1 : function() {
-		// console.log("onPushBackButton1");
-		// this.onPushBackButton();
+		console.log("onPushBackButton1");
+		this.onPushBackButton();
 
 		// Retour sur la page principale de "déchets"
 		// this.getGarbagesView().setActiveItem(0);
@@ -171,7 +171,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
 		var mainView = this.getMainView();
 		// mainView.type = "Fiche";
-		//  (mainView.type == "Déchet" || typeof mainView.type == 'undefined') {
+		// (mainView.type == "Déchet" || typeof mainView.type == 'undefined') {
 		// 1. On est sur la page déchet
 		if (mainView.active != null) {
 			// Cas des liens qui ouvre la page
@@ -183,6 +183,17 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 	},
 
+	onPushBackButton : function() {
+		// TODO : back une seule fois
+		/* if (this.getMainView().getActiveItem().id.indexOf("garbages_xtype") != -1) {
+			var garbageView = this.getGarbagesView();
+			if (garbageView.getActiveItem().id
+					.indexOf("garbagescontainer_xtype") == -1) {
+
+				garbageView.getNavigationBar().fireEvent('back', this);
+			}
+		} */
+	},
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.suspendEvents();
 		mainView.setActiveItem(2);
