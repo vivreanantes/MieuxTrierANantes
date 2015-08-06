@@ -57,8 +57,13 @@ build/**
 cordova/platforms
 cordova/www
 resources/sass/.sass-cache/
+.sencha_backup
 .sencha
-.sencha/**
+.sencha/
+.sencha/*
+.sencha\
+.sencha\*
+.sencha*
 
 # Grails #
 ##########
