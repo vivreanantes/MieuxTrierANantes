@@ -42,11 +42,11 @@ Ext.define('MieuxTrierANantes.view.geo.MapOSM', {
 			idConteneur : 'modco_conteneur',
 			idVentevrac : 'ventevrac',
 			// Texte dans la couche contrôle de la couche 'zoneLimitee'
-			labelZone5Kms : "Zone diam 5 km",
-			// La longeur de la chaîne "Zone de 5 km"
+			labelZone5Kms : "Zone diam 2 km",
+			// La longeur de la chaîne "Zone de 2 km"
 			tailleChaineZone5Kms : 14,
 			// le rayon de la zone limitée (en mètre)
-			distanceZone : 2500,
+			distanceZone : 1000,
 			// distance entre le point de dernier dessin et le nouveau dessin
 			distanceAvantRedessiner : 1000,
 			// temps maximum pour recalculer la position (60 secondes)

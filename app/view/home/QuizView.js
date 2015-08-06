@@ -70,6 +70,11 @@ Ext.define('MieuxTrierANantes.view.home.QuizView', {
 					+ "</div>"
 					+ "</form><br/>"
 					+ "<span id='resultat' style='font-weight:bold;'>&nbsp;</span>"
+					+ "<div id='qres1'><img src='resources/images/quiz/1.png' height='80px' /></div>"
+					+ "<div id='qres2'><img src='resources/images/quiz/2.png' height='80px' /></div>"
+					+ "<div id='qres3'><img src='resources/images/quiz/3.png' height='80px' /></div>"
+					+ "<div id='qres4'><img src='resources/images/quiz/4.png' height='80px' /></div>"
+					+ "<div id='qres5'><img src='resources/images/quiz/5.png' height='80px' /></div>"
 		}, {
 			xtype : 'button',
 			width : 200,

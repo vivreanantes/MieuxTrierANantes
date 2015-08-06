@@ -333,36 +333,51 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 * Crée le store
 	 */
 	onShowGlobalSearchResultList : function() {
-		if (this.getHomeGlobalSearchList().getStore() == null) {
-			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
-			this.getHomeGlobalSearchList().setStore(store);
-			var tempo = [];
-			utilPushArray(_garbagesDatas, tempo);
-			utilPushArray(_infosDatas, tempo);
-			utilPushArray(_structures1Datas, tempo);
-			utilPushArray(_quizsDatas, tempo);
-			// structures = this.getStructuresDataFromJson();
-			var taille = tempo.length;
-			for (var i = 1; i < taille; i++) {
-				if (tempo[i]["code"] != null) {
-					if (tempo[i]["code"].substring(0, 4) == "dec_") {
-						tempo[i]["type"] = "Déchet";
-					} else if (tempo[i]["code"].substring(0, 6) == "fiche_") {
-						tempo[i]["type"] = "Fiche";
+
+		var texteSansAccents = _utilRetireAccentEtMinuscule(this
+				.getHomeGlobalSearchFormText().getValue());
+
+		// if (this.getHomeGlobalSearchList().getStore() == null) {
+		var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
+		this.getHomeGlobalSearchList().setStore(store);
+		var tempo = [];
+		var temp = 28;
+		tempo = ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas, texteSansAccents);
+		// utilPushArray(_garbagesDatas, tempo);
+		// utilPushArray(_infosDatas, tempo);
+		// utilPushArray(_structures1Datas, tempo);
+		// utilPushArray(_quizsDatas, tempo);
+		var cles = _hashGarbagesDatas[0][texteSansAccents];
+		if (cles != undefined) {
+			var codesDechets = cles.split(',');
+			var taille = codesDechets.length;
+			for (var j = 1; j < taille; j++) {
+				var codeDechet = codesDechets[j];
+				for (var k = 0; k < _garbagesDatas.length; k++) {
+					if (_garbagesDatas[k]["code"] == codeDechet) {
+						// _garbagesDatas[k]["type"] = "Déchet";
+						tempo.push(_garbagesDatas[k]);
 					}
 				}
 			}
-			// TODO chercher dans les documents.
-			// if (this.getDocsList().getStore() == null) {
-			// var store = Ext.create('MieuxTrierANantes.store.DocsStore');
-			// this.getDocsList().setStore(store);
-			// }
-			// structure.json
-			store.add(tempo);
 		}
+		/*
+		 * var taille = tempo.length; for (var i = 1; i < taille; i++) { if
+		 * (tempo[i]["code"] != null) { if (tempo[i]["code"].substring(0, 4) ==
+		 * "dec_") { tempo[i]["type"] = "Déchet"; } else if
+		 * (tempo[i]["code"].substring(0, 6) == "fiche_") { tempo[i]["type"] =
+		 * "Fiche"; } } }
+		 */
+		// TODO chercher dans les documents.
+		// if (this.getDocsList().getStore() == null) {
+		// var store = Ext.create('MieuxTrierANantes.store.DocsStore');
+		// this.getDocsList().setStore(store);
+		// }
+		// structure.json
+		store.add(tempo);
+		// }
 		var store = this.getHomeGlobalSearchList().getStore();
-		var texteSansAccents = _utilRetireAccentEtMinuscule(this
-				.getHomeGlobalSearchFormText().getValue());
+
 		// true sinon cela plante dans la version android
 		store.clearFilter(true);
 		if (store != null) {
@@ -382,6 +397,24 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					});
 			store.filter(filterGlobalSearch);
 		}
+	},
+	
+	ajouteDatas : function(tempo,_hashGarbagesDatas, _garbagesDatas, texteSansAccents) {
+		var cles = _hashGarbagesDatas[0][texteSansAccents];
+		if (cles != undefined) {
+			var codesDechets = cles.split(',');
+			var taille = codesDechets.length;
+			for (var j = 1; j < taille; j++) {
+				var codeDechet = codesDechets[j];
+				for (var k = 0; k < _garbagesDatas.length; k++) {
+					if (_garbagesDatas[k]["code"] == codeDechet) {
+						// _garbagesDatas[k]["type"] = "Déchet";
+						tempo.push(_garbagesDatas[k]);
+					}
+				}
+			}
+		}
+		return tempo;
 	},
 
 	clickSettingsFormButton : function(button, e) {
@@ -408,7 +441,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	clickQuizViewButton : function() {
 		this.calculer();
-		this.cacherMontrerReponses(false);
+		// this.cacherMontrerReponses(false);
 	},
 
 	/**
@@ -428,6 +461,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			document.getElementById("q3e1").style.display = display;
 			document.getElementById("q4e1").style.display = display;
 			document.getElementById("q5e1").style.display = display;
+			document.getElementById("qres1").style.display = 'none';
+			document.getElementById("qres2").style.display = 'none';
+			document.getElementById("qres3").style.display = 'none';
+			document.getElementById("qres4").style.display = 'none';
+			document.getElementById("qres5").style.display = 'none';
 		}
 	},
 
@@ -471,9 +509,34 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 		document.getElementById("resultat").innerHTML = message + nbOk + " / "
 				+ nbQ;
+		if (nbOk == 0 || nbOk == 1 || nbOk == 2 || nbOk == 3 || nbOk == 4) {
+			document.getElementById("qres5").style.display = 'none';
+		} else {
+			document.getElementById("qres5").style.display = 'block';
+		}
+		if (nbOk == 0 || nbOk == 1 || nbOk == 2 || nbOk == 3 || nbOk == 5) {
+			document.getElementById("qres4").style.display = 'none';
+		} else {
+			document.getElementById("qres4").style.display = 'block';
+		}
+		if (nbOk == 0 || nbOk == 1 || nbOk == 2 || nbOk == 4 || nbOk == 5) {
+			document.getElementById("qres3").style.display = 'none';
+		} else {
+			document.getElementById("qres3").style.display = 'block';
+		}
+		if (nbOk == 0 || nbOk == 1 || nbOk == 3 || nbOk == 4 || nbOk == 5) {
+			document.getElementById("qres2").style.display = 'none';
+		} else {
+			document.getElementById("qres2").style.display = 'block';
+		}
+		if (nbOk == 2 || nbOk == 3 || nbOk == 4 || nbOk == 5) {
+			document.getElementById("qres1").style.display = 'none';
+		} else {
+			document.getElementById("qres1").style.display = 'block';
+		}
 	},
 
-	showQuizView : function() {
+	showQuizView : function(views, eOpts) {
 		this.cacherMontrerReponses(true);
 	},
 

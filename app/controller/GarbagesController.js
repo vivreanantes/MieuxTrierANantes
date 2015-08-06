@@ -46,8 +46,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 			garbagesView : {
 				push : 'onGarbagesViewPush',
-				show : 'onShow',
-				onActivate : 'onActivate',
+				// onActivate : 'onActivate',
+				onShow : 'onShow',
+				activate : 'onActivate',
 				back : 'onPushBackButton1'
 			},
 
@@ -169,6 +170,21 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
+	// 	this.top();
+	},
+	
+	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+		this.top();
+	},
+
+	
+	top : function() {
+		
+		// on initialise la liste des boutons si cela n'a pas encore eu lieu.
+		if (this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label=="") {
+			this.putInButtonsPanel("cu");
+		}
+		
 		var mainView = this.getMainView();
 		// mainView.type = "Fiche";
 		// (mainView.type == "Déchet" || typeof mainView.type == 'undefined') {
@@ -177,12 +193,11 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// Cas des liens qui ouvre la page
 			this.showGarbagesDetail2(mainView.active);
 			mainView.active = null;
-		} else {
+		}/* else {
 			this.putInButtonsPanel("cu");
-		}
-
+		}*/
 	},
-
+	
 	onPushBackButton : function() {
 		// TODO : back une seule fois
 		/* if (this.getMainView().getActiveItem().id.indexOf("garbages_xtype") != -1) {
@@ -194,10 +209,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			}
 		} */
 	},
-	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+	/*onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.suspendEvents();
 		mainView.setActiveItem(2);
-	},
+	},*/
 
 	putInButtonsPanel : function(stringFilter) {
 

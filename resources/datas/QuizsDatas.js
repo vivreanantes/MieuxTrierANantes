@@ -43,7 +43,7 @@ var _quizsDatas = [
 	nom : "Quiz Hellfest",
 	type : "Quiz",
 	mots_cles : "quiz,hellfest",
-	descr : "Quiz spécial métal et bière pour Hellfest",
+	descr : "Quiz spécial métal et bière pour Hellfest. Une seule réponse par question.",
 	image : "quiz/issiontrix_hellfest.png",
 	src : "MieuxTrierANantes 05/2015",
 	ok : "q1r1,q2r1,q3r1,q4r3,q5r2",

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.MieuxVivreANantes.MieuxTrierANantes" version="1.15"
+	android-versionCode="15" xmlns="http://www.w3.org/ns/widgets"
+	xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>MieuxTrierANantes</name>
+	<description>
+		Application libre (et gratuite) pour aider les habitants
+		de Nantes Métropole à trier.
+	</description>
+	<author email="supprimeravantlepoint.mieuxtrieranantes@gmail.com"
+		href="http://mieuxtrieranantes.fr">
+		Bénévoles
+	</author>
+	<content src="index.html" />
+	<access origin="*" />
+	<icon src="www/resources/icons/Icon@2x.png" width="114" height="114"
+		density="mdpi" />
+	<feature name="Geolocation">
+		<param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+	</feature>
+	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+	<access origin="*" browserOnly="true" />
+	<access origin="geo:*" launch-external="yes"/>
+	<access origin="tel:*" launch-external="yes"/>
+</widget>

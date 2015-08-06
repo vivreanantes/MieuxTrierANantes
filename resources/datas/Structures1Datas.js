@@ -15,7 +15,7 @@ var _structures1Datas = [{
 	"horaires" : "Lundi, mardi, jeudi, vendredi de 13h à 17h",
 	"plagesHoraires" : "0101-3112_lu+ma+je+ve_13h00-17h00",
 	"sous_zone" : "qbcsa",
-	"mots_cles" : "Vetements, bibelots, livres",
+	"mots_cles" : "Vetements, bibelots, livres,Po',Fringues,Secours,Populaire,Francais,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploisolidarimeuble",
@@ -34,7 +34,7 @@ var _structures1Datas = [{
 	"horaires" : "Les mardi et jeudi de 9h30 à 12h et de 13h30 à 17h, Le vendredi de 9h30 à 12h et 13h30 à 15h30",
 	"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+13h30-17h00,0101-3112_ve_09h30-12h00+13h30-15h30,",
 	"sous_zone" : "qbcsa",
-	"mots_cles" : "meuble,electromenager",
+	"mots_cles" : "meuble,electromenager,Solidari'meubles,Secours,Populaire,Francais,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_spopaffaires",
@@ -53,7 +53,7 @@ var _structures1Datas = [{
 	"horaires" : "Lundi Ouverture matin : 10:00 Fermeture matin : 12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Mardi Ouverture matin : 10:00 Fermeture après-midi : 12:30<br/>Jeudi Ouverture matin : 10:00 Fermeture matin :  12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Vendredi 14:00 Fermeture après-midi : 17:00",
 	"plagesHoraires" : "0101-3112_lu_10h00-12h30+14h00-17h00,0101-3112_ma_10h00-12h30,0101-3112_je_10h00-12h30+14h00-17h00,0101-3112_ve_14h00-17h00",
 	"sous_zone" : "qcv",
-	"mots_cles" : "vetement, petit mobilier, livre, jouet, vaisselle",
+	"mots_cles" : "vetement, petit mobilier, livre, jouet, vaisselle,S'POP,affaires,Secours,Populaire,Francais,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout2",
@@ -72,7 +72,7 @@ var _structures1Datas = [{
 	"horaires" : "Mercredi de 14h à 18h",
 	"plagesHoraires" : "0101-3112_me_14h00-18h00",
 	"sous_zone" : "qbcsa",
-	"mots_cles" : "Velos entiers, pieces detachees fonctionnelles, accessoires, equipements",
+	"mots_cles" : "Velos entiers, pieces detachees fonctionnelles, accessoires, equipements,Transformeurs",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout3",
@@ -92,7 +92,7 @@ var _structures1Datas = [{
 	"horaires" : "du lundi au vendredi 13h30-18h",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve 13h30-18h",
 	"sous_zone" : "qnn",
-	"mots_cles" : "tous types de velos, pieces et carcasses",
+	"mots_cles" : "tous types de velos, pieces et carcasses,Velocampus",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout4",
@@ -102,6 +102,7 @@ var _structures1Datas = [{
 	"nom" : "Déchèterie Paimboeuf / Saint Viaud",
 	"adresseTemp" : "   ",
 	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 15/07/2014",
+	"mots_cles" : "0,Decheterie,Paimboeuf,/,Saint,Viaud",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout5",
@@ -121,7 +122,7 @@ var _structures1Datas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique",
+	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique,Atelier,du,Retz,Emploi,Sainte Pazanne",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout6",
@@ -141,7 +142,7 @@ var _structures1Datas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique",
+	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique,Atelier,du,Retz,Emploi,Le,Pelerin",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout7",
@@ -161,7 +162,7 @@ var _structures1Datas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique",
+	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique,Atelier,du,Retz,Emploi,Le,Breil",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout8",
@@ -181,7 +182,7 @@ var _structures1Datas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique",
+	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,CD,DVD,outillage,materiel electrique,Atelier,du,Retz,Emploi,Saint,Brevin",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout9",
@@ -199,7 +200,7 @@ var _structures1Datas = [{
 	"horaires" : "Du Mardi au Samedi de 10 h à 18 h",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-18h",
 	"sous_zone" : "qidn",
-	"mots_cles" : "linge,textile,chaussure,vaisselle,outillage,jouet,livre,meuble",
+	"mots_cles" : "linge,textile,chaussure,vaisselle,outillage,jouet,livre,meuble,Le,comptoir,du,Solilab,Atelier,du,Retz,Emploi,et,Ding,Fring",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout10",
@@ -219,7 +220,7 @@ var _structures1Datas = [{
 	"horaires" : "Du mardi au samedi, de 10h à 12h et de 13h à 18h",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-12h00+13h00-18h00",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "ordinateur",
+	"mots_cles" : "ordinateur,Naga",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout11",
@@ -233,7 +234,7 @@ var _structures1Datas = [{
 	"tel" : "06.33.63.35.52",
 	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 01/09/2014",
 	"horaires" : "10h-12h/14h-19h",
-	"mots_cles" : "vetement",
+	"mots_cles" : "vetement,La,Pomme,et,La,Lionne",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout12",
@@ -251,7 +252,7 @@ var _structures1Datas = [{
 	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 14/01/2015",
 	"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve+sa_10h30-19h00 ",
 	"sous_zone" : "qcv",
-	"mots_cles" : "ordinateurs,imrpmantes,smartphones,tablettes",
+	"mots_cles" : "ordinateurs,imrpmantes,smartphones,tablettes,Tech,Recyclage",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout13",
@@ -269,7 +270,7 @@ var _structures1Datas = [{
 	"horaires" : "Mardi au Vendredi 09h00 à 12h15 - 15h00 à 18h30, Samedi : 10h00 à 12h00 ",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve_09h00-12h15,0101-3112_sa_10h00-12h00",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vetement",
+	"mots_cles" : "vetement,Ca,Tourn'au,Troc,Coueron",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout14",
@@ -286,7 +287,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 59 93 68",
 	"logo" : "resources/images/images_non_libres/logo_atao.jpg",
 	"src" : "MieuxTrierANantes 12/2014",
-	"mots_cles" : "velo,cyclomoteur",
+	"mots_cles" : "velo,cyclomoteur,ATAO,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout15",
@@ -304,7 +305,7 @@ var _structures1Datas = [{
 	"logo" : "resources/images/images_non_libres/logo_atao.jpg",
 	"src" : "MieuxTrierANantes 12/2014",
 	"sous_zone" : "hnnl",
-	"mots_cles" : "velo,cyclomoteur",
+	"mots_cles" : "velo,cyclomoteur,ATAO,Saint Herblain",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout16",
@@ -322,7 +323,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/2015",
 	"horaires" : "lundi, mercredi et vendredi de 9 h à 12 h et de 14 h à 16 h 30, le jeudi de 9 h à 12 h",
 	"plagesHoraires" : "0101-3112_lu+me+ve_09h00-12h00+14h00-16h30,0101-3112_je_09h00-12h00",
-	"mots_cles" : "vetement,bibelot,velo",
+	"mots_cles" : "vetement,bibelot,velo,A,prendre,ou,a,laisser,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout17",
@@ -340,6 +341,7 @@ var _structures1Datas = [{
 	"horaires" : "Ouvert tout le temps",
 	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
 	"sous_zone" : "qidn",
+	"mots_cles" : "0,La,Boite,Utile",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout18",
@@ -357,7 +359,7 @@ var _structures1Datas = [{
 	"logo" : "resources/images/images_non_libres/logo_react.png",
 	"src" : "MieuxTrierANantes 01/2015",
 	"sous_zone" : "qbb",
-	"mots_cles" : "vetement",
+	"mots_cles" : "vetement,Re act",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout19",
@@ -373,7 +375,7 @@ var _structures1Datas = [{
 	"tel" : "06 24 55 39 07",
 	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 25/01/2015",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "matieres premieres : bois, metal, plastiques, textille…",
+	"mots_cles" : "matieres premieres : bois, metal, plastiques, textille…,Stations,services",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout20",
@@ -392,7 +394,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/2015",
 	"horaires" : "La boutique est ouverte :<br/>- tous les mercredis 9h à 13h et de 14h à 17h,<br/>- tous les vendredis matins 9h à 13h,<br/>- tous les 2èmes samedis du mois 10h à 17h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vaisselle et batterie de cuisine, outils de bricolage et de jardin, bibelots et objets de decoration, vetements propres et en bon etat, jouets et materiel de puericulture, livres / cd / vinyles, meubles en bon etat, luminaires",
+	"mots_cles" : "vaisselle et batterie de cuisine, outils de bricolage et de jardin, bibelots et objets de decoration, vetements propres et en bon etat, jouets et materiel de puericulture, livres / cd / vinyles, meubles en bon etat, luminaires,La,recuperette,Clisson",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi62",
@@ -410,7 +412,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je_12h00-14h00,0101-3112_lu+ma+me+je_14h00-17h00,0101-3112_ve_09h00-12h30,0101-3112_ve_14h00-16h00",
-	"mots_cles" : "papier",
+	"mots_cles" : "papier,Arbres",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi30",
@@ -428,7 +430,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_14h00-18h00",
-	"mots_cles" : "ordinateur",
+	"mots_cles" : "ordinateur,ALIS44",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi26",
@@ -444,7 +446,7 @@ var _structures1Datas = [{
 	"email" : "atelier-baramel@asso-trajet.fr",
 	"tel" : "02 51 78 64 62",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "pain",
+	"mots_cles" : "pain,Atelier,Bar'Amel,trajet",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi55",
@@ -461,7 +463,7 @@ var _structures1Datas = [{
 	"tel" : "02 28 23 64 47",
 	"src" : "MieuxTrierANantes 03/15",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-17h00,0101-3112_me+sa_09h30-17h30,sauf_ferie",
-	"mots_cles" : "mobilier,meuble,jouet,puericulture,vaisselle,bibelot,cadre,livre,vetement,linge de maison,outillage,jardinerie,velo,luminaire,CD DVD,jeux videos,literie,article de sport,electromenager",
+	"mots_cles" : "mobilier,meuble,jouet,puericulture,vaisselle,bibelot,cadre,livre,vetement,linge de maison,outillage,jardinerie,velo,luminaire,CD DVD,jeux videos,literie,article de sport,electromenager,La,Ressourcerie,de,l'ile",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi6",
@@ -479,7 +481,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30 (fermés dimanche et jours fériés). Ventes mercredi 10h-12h et 14h-18h, vendredi 14h-18h et samedi 10h-12h et 14h-18h (hivers jusqu'à 17h30)",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-11h30+14h00-17h30,sauf_ferie",
-	"mots_cles" : "electromenager,meuble,vetement,livres,BD,CD,DVD,lit,linge,luste,lampe,vetement,vaisselle,divers,jouet",
+	"mots_cles" : "electromenager,meuble,vetement,livres,BD,CD,DVD,lit,linge,luste,lampe,vetement,vaisselle,divers,jouet,Emmaus,Bouguenais",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi19",
@@ -497,7 +499,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Dépots de meubles : les lundis, mardis et jeudis de 9h00 à 12h00 et de 14h00 à 17h00, Les mercredis de 9h00 à 12h00<br/>Pour effectuer un devis : Les mardis de 14h00 à 17h00, Les jeudis de 9h00 à 12h00",
 	"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-12h00+14h00-17h00,0101-3112_me_09h00-12h00",
-	"mots_cles" : "meuble",
+	"mots_cles" : "meuble,L'homme,debout",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi53",
@@ -513,7 +515,7 @@ var _structures1Datas = [{
 	"email" : "p.laforge@lerelais.org",
 	"tel" : "02 28 03 18 57",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "vetement,linge",
+	"mots_cles" : "vetement,linge,Relais,Atlantique",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi71",
@@ -529,7 +531,7 @@ var _structures1Datas = [{
 	"email" : "contact@oser-foret-vivante.com",
 	"tel" : "02 40 75 40 75",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "papier,carton,housse plastique",
+	"mots_cles" : "papier,carton,housse plastique,Oser,foret,vivante",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi17",
@@ -545,7 +547,7 @@ var _structures1Datas = [{
 	"email" : "papiersdelespoir@free.fr",
 	"tel" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "papier",
+	"mots_cles" : "papier,Papiers,de,l'espoir",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi37",
@@ -563,7 +565,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00,",
-	"mots_cles" : "ordi,ordinateur,pc,portable",
+	"mots_cles" : "ordi,ordinateur,pc,portable,TRIS,Actif,Ouest",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_lesmarchandsdesable",
@@ -579,7 +581,7 @@ var _structures1Datas = [{
 	"email" : "lesmarchandsdesable@gmail.com",
 	"tel" : "06 81 67 42 06",
 	"src" : "MieuxTrierANantes 02/15",
-	"mots_cles" : "meuble,bois,structure metallique",
+	"mots_cles" : "meuble,bois,structure metallique,Les,marchands,de,sable",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi18",
@@ -596,7 +598,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge",
+	"mots_cles" : "vetement,linge,DING FRING,Reze",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi41",
@@ -613,7 +615,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge",
+	"mots_cles" : "vetement,linge,DING FRING,Palais,des,Congres",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi52",
@@ -630,7 +632,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge",
+	"mots_cles" : "vetement,linge,DING FRING,Chantier,Navals",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi64",
@@ -647,7 +649,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge",
+	"mots_cles" : "vetement,linge,DING FRING,Nantes,Erdre,Grand,Clos",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi33",
@@ -665,7 +667,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Du lundi au samedi de 10h à 13h et de 14h à 19h",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_12h00-14h00+14h00-19h00",
-	"mots_cles" : "electromenager,refrigerateur,television,lave vaisselle,congelateur,envie44",
+	"mots_cles" : "electromenager,refrigerateur,television,lave vaisselle,congelateur,envie44,Envie,44,Saint,Herblain",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi68",
@@ -682,7 +684,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Le jeudi de 9h à 12h et de 14h à 17h30 ",
 	"plagesHoraires" : "0101-3112_je_09h00-12h00+14h00-17h30",
-	"mots_cles" : "lunette,auditif,fauteuil roulant",
+	"mots_cles" : "lunette,auditif,fauteuil roulant,Orthopedie,sans,Frontieres",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi60",
@@ -700,7 +702,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "du mardi au vendredi de 14h à 17h30, Le samedi de 10h à 12h15",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve_14h00-17h30,0101-3112_sa_10h00-12h15",
-	"mots_cles" : "electromenager, livres/BD/CD/DVD, jouet, meuble, vetements, divers",
+	"mots_cles" : "electromenager, livres/BD/CD/DVD, jouet, meuble, vetements, divers,Veti,Frat, ,La,Fraternite,",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi61",
@@ -719,7 +721,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Tous les jours du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h30 (17h00 le vendredi)",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30,0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h00",
-	"mots_cles" : "vetement,meuble,electromenager",
+	"mots_cles" : "vetement,meuble,electromenager,Secours,populaire",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi47",
@@ -737,7 +739,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
 	"plagesHoraires" : "0101-3112_ma+je_09h30-12h00,0101-3112_ma+je_14h00-17h00",
-	"mots_cles" : "vetement,livre,jouet,vaisselle,bibelot",
+	"mots_cles" : "vetement,livre,jouet,vaisselle,bibelot,La,Croix,Rouge,/,Vestiboutique",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi47",
@@ -755,7 +757,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Vendredi de 14 h à 17 h",
 	"plagesHoraires" : "0101-3112_ve_14h00-17h00",
-	"mots_cles" : "meubles,luminaire,canape,literie,petit et gros electromenager,articles de decoration",
+	"mots_cles" : "meubles,luminaire,canape,literie,petit et gros electromenager,articles de decoration,La,Croix,Rouge,/,Meubles",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi35",
@@ -773,7 +775,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
-	"mots_cles" : "livre,revue,BD",
+	"mots_cles" : "livre,revue,BD,Nantes,Ecologie,L'Air,Livre,chateau,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi51",
@@ -792,7 +794,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
 	"plagesHoraires" : "0101-3112_ve_09h00-13h00",
-	"mots_cles" : "livre,revue,BD,manuel,scolaire",
+	"mots_cles" : "livre,revue,BD,manuel,scolaire,Nantes,Ecologie,L'Air,Livre,Cite,des,Congres,Nantes",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi54",
@@ -809,6 +811,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Le mardi de 10h à 12 h.",
 	"plagesHoraires" : "0101-3112_ma_10h00-12h00",
+	"mots_cles" : "0,ARCADE",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi57",
@@ -826,7 +829,7 @@ var _structures1Datas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Lundi et jeudi de 13h30 à 15h30",
 	"plagesHoraires" : "0101-3112_lu+je_13h30-15h30",
-	"mots_cles" : "bouchon",
+	"mots_cles" : "bouchon,Bouchon,d'Amour",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi1",
@@ -842,7 +845,7 @@ var _structures1Datas = [{
 	"email" : "info@trait-union.net",
 	"tel" : "02 40 86 04 81 ou 06 67 23 03 95",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "pelouse,bois,carton,plastique,ferraille",
+	"mots_cles" : "pelouse,bois,carton,plastique,ferraille,TRAIT,D'UNION",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi32",
@@ -860,7 +863,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "du lundi au samedi de 10h à 18h30",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h30",
-	"mots_cles" : "telephone,ordinateur",
+	"mots_cles" : "telephone,ordinateur,Ecophone,44",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi15",
@@ -875,7 +878,7 @@ var _structures1Datas = [{
 	"url" : "<a href='http://wwwerlencre.fr' target='_blank'>http://wwwerlencre.fr</a>",
 	"email" : "contact@leverlencre.fr",
 	"src" : "DeuxiemeVie 03/14",
-	"mots_cles" : "cartouche,toner",
+	"mots_cles" : "cartouche,toner,LEVER,L'ENCRE",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi36",
@@ -893,7 +896,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 9h30 à  12h30 et de 14h à  19h et le samedi de 10h à  12h30 et de 14h à  17h",
 	"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_09h30-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-17h00",
-	"mots_cles" : "cartouche,toner",
+	"mots_cles" : "cartouche,toner,ENCRE,STATION",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi31",
@@ -911,7 +914,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
 	"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
-	"mots_cles" : "cartouche",
+	"mots_cles" : "cartouche,OCE'ENCRE",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi63",
@@ -928,7 +931,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
 	"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_08h300-12h45,0101-3112_ma+me+je+ve_13h45-19h00,0101-3112_sa_14h00-19h00",
-	"mots_cles" : "cartouche,toner",
+	"mots_cles" : "cartouche,toner,Point,Encre,Et,Toner",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi64",
@@ -943,7 +946,7 @@ var _structures1Datas = [{
 	"tel" : "02.40.75.35.96 ",
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Tous les jours",
-	"mots_cles" : "bouchons de liege",
+	"mots_cles" : "bouchons de liege,Action,cancer,44,Reze",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi65",
@@ -958,7 +961,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 77 81 17",
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Tous les jours",
-	"mots_cles" : "bouchons de liege",
+	"mots_cles" : "bouchons de liege,Action,cancer,44,La,Chapelle,Sur,Erdre",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_solutionrecyclage",
@@ -969,7 +972,7 @@ var _structures1Datas = [{
 	"nom" : "Solution recyclage",
 	"adresseTemp" : "   ",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "entreprise",
+	"mots_cles" : "entreprise,Solution,recyclage",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi66",
@@ -986,7 +989,7 @@ var _structures1Datas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Du lundi au samedi de 8 heures à 20 heures.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
-	"mots_cles" : "ferraille,metal,electromenager",
+	"mots_cles" : "ferraille,metal,electromenager,RECUPFER44",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_ventevrac1",
@@ -1001,7 +1004,7 @@ var _structures1Datas = [{
 	"tel" : "02 40 31 00 85",
 	"src" : "MieuxTrierANantes 04/15",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,Boulangerie,arbre a pain",
+	"mots_cles" : "vente,vrac,Boulangerie,arbre a pain,Boulangerie,L'arbre,a,pain,Saint Aignan,de,Grand,Lieu",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1019,7 +1022,7 @@ var _structures1Datas = [{
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnnl",
-	"mots_cles" : "vente,vrac,Chlorophylle,Beausejour",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beausejour,Chlorophylle,Beausejour",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1037,7 +1040,7 @@ var _structures1Datas = [{
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,Chlorophylle,Beaujoire",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beaujoire,Chlorophylle,Beaujoire",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1055,7 +1058,7 @@ var _structures1Datas = [{
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,Chlorophylle,Beauceane",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beauceane,Chlorophylle,Beauceane",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1073,7 +1076,7 @@ var _structures1Datas = [{
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,Chlorophylle,Beausud",
+	"mots_cles" : "vente,vrac,Chlorophylle,Beausud,Chlorophylle,Beausud",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1091,7 +1094,7 @@ var _structures1Datas = [{
 	"horaires" : "Magasins ouverts de 9h00 à 19h30 du lundi au samedi sans interruption",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,Chlorophylle,Bio,Goulaine",
+	"mots_cles" : "vente,vrac,Chlorophylle,Bio,Goulaine,Chlorophylle,Bio,Goulaine",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1110,7 +1113,7 @@ var _structures1Datas = [{
 	"horaires" : "lundi au jeudi 9h30-19h, vendredi 9h30-19h30, samedi 9h-19h.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je_09h30-19h00,0101-3112_ve_09h30-19h00,0101-3112_sa_09h00-19h00",
 	"sous_zone" : "hnnl",
-	"mots_cles" : "vente,vrac,Biocoop,Halles",
+	"mots_cles" : "vente,vrac,Biocoop,Halles,Biocoop,les,Halles,Nantes,Ouest",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1128,7 +1131,7 @@ var _structures1Datas = [{
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
 	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,Biocoop,Halles",
+	"mots_cles" : "vente,vrac,Biocoop,Halles,Biocoop,les,Halles,Nantes,Nord",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1146,7 +1149,7 @@ var _structures1Datas = [{
 	"horaires" : "Lundi 14h à 19h30, mardi au samedi 9h30 à 19h30, samedi 9h30 à 18h30",
 	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "ST SEBASTIEN SUR LOIRE",
-	"mots_cles" : "vente,vrac,Biocoop,Halles",
+	"mots_cles" : "vente,vrac,Biocoop,Halles,Biocoop,les,Halles,Nantes,Sud",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac3",
@@ -1164,7 +1167,7 @@ var _structures1Datas = [{
 	"horaires" : "lundi au samedi 9h30-19h45",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-1945",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
+	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert,Horizon,Vert,Ile,Beaulieu",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac4",
@@ -1182,7 +1185,7 @@ var _structures1Datas = [{
 	"horaires" : "lundi au vendredi 9h-19h15, samedi 9h-19h",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h30-19h15,0101-3112_sa_09h30-1900",
 	"sous_zone" : "hnnl",
-	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert",
+	"mots_cles" : "vente,vrac,Horizon,Vert,Horizon Vert,Horizon,Vert,Nantes",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1200,7 +1203,7 @@ var _structures1Datas = [{
 	"horaires" : "mardi à vendredi 11h30–19h, samedi 10h-19h",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve_11h30-19h00,0101-3112_sa_10h00-19h00",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,Pirouette",
+	"mots_cles" : "vente,vrac,Pirouette,Pirouette",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1217,7 +1220,7 @@ var _structures1Datas = [{
 	"horaires" : "mardi au samedi , 9h30 à 13h et 15h à 19h30",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_09h30-13h00+15h00-19h30",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,O Bocal,obocal,Day by Day,Day by Day,day",
+	"mots_cles" : "vente,vrac,O Bocal,obocal,Day by Day,Day by Day,day,O,Bocal,Day,by,Day",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1236,7 +1239,7 @@ var _structures1Datas = [{
 	"horaires" : "Ouvert de 9h30 à 19H sauf lundi de 15H à 19H ",
 	"plagesHoraires" : "0101-3112_lu_15h00-19h00,0101-3112_ma+me+je+ve+sa_15h00-19h00",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,fleuronbio,fleuronbio44",
+	"mots_cles" : "vente,vrac,fleuronbio,fleuronbio44,FleuronBio",
 	"image" : "paperbag.png"
 }, {
 	"code" : "1011",

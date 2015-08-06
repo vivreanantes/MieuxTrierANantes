@@ -1,4 +1,4 @@
-*.pydevproject
+*.pydevprojectc
 
 .metadata
 bin/**
@@ -54,7 +54,8 @@ local.properties
 ##########
 *.apk
 build/**
-cordova
+cordova/platforms
+cordova/www
 resources/sass/.sass-cache/
 .sencha
 .sencha/**

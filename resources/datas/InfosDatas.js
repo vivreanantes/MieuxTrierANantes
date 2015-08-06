@@ -196,6 +196,13 @@ var _infosDatas = [{
 	"image" : "sacs_jaune_et_bleu.png",
 	"mots_cles" : "sacs,jaunes,et,bleus"
 }, {
+	"code" : "fiche_telephone",
+	"nom" : "Numéros de téléphones",
+	"descr" : "AlloNantes est un numéro gratuit pour les Nantais (notamment pour les questions sur le tri). Ouvert de 8h à 19h du lundi au vendredi, et le samedi de 8h à 13h.<br/><br/>Pour les autres villes, joindre les pôles de proximité:<br/>Pôle Erdre et Loire<br/>Sainte-Luce-sur-Loire, Nantes : quartiers Bottière-Doulon-Erdre,Mauves-sur-Loire, Carquefou<br/>2-4, rue Edouard Nignon<br/>44300 Nantes<br/>Tél : 02 28 20 22 00<br/><br/>Pôle Erdre-et-Cens<br/>Orvault,La-Chapelle-sur-Erdre,Sautron,Nantes quartiers Nord<br/>37, bd Einstein<br/>44300 Nantes<br/>Tél : 02 51 83 65 00<br/><br/>Pôle Loire, Sèvre et Vignoble<br/>Rezé, Saint-Sébastien-sur-Loire,Nantes: quartier sud, Basse-Goulaine, Les-Sorinières, Vertou<br/>6 rue Marie Curie<br/>44120 Vertou<br/>Tél : 02 72 01 26 00<br/><br/>Pôle Loire-Chézine<br/>Couëron, Indre, Saint-Herblain<br/>6, rue Virginia Woolf<br/>44800 Saint-Herblain<br/>Tél : 02 28 03 41 50<br/><br/>Pôle Nantes-Loire<br/>Centre ville, Malakoff, Saint-Donatien, Île-de-Nantes<br/>14 Mail Pablo Picasso<br/>44000 Nantes<br/>Tél : 02 51 86 54 00<br/><br/>Pôle Nantes-Ouest<br/>Bellevue, Chantenay, Sainte-Anne Dervallières, Zola, Hauts-Pavés, Saint-Félix, Breil,Barberie<br/>La Maison des services publics<br/>Place de la Liberté<br/>44100 Nantes<br/>Tél : 02 28 03 47 00<br/><br/>Pôle Sud-Ouest<br/>Bouaye, Bouguenais, Brains, Le-Pellerin, La-Montagne, Saint-Jean-de-Boisseau, Saint-Aignan-de-Grand-Lieu, Saint-Léger-les-Vignes<br/>2, rue Galilée<br/>44340 Bouguenais<br/>Tél. : 02 28 00 16 00<br/>",
+	"bouton" : "fiche",
+	"image" : "phone_black.png",
+	"mots_cles" : "allo,allonantes,proximite,telephone,tel,appeler"
+}, {
 	"code" : "fiche_arcenciel",
 	"nom" : "Usine Arc-en-ciel",
 	"descr" : "<IMG SRC='resources/images/usine_arcenciel.jpg' ALIGN='left' />Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.",
@@ -209,4 +216,4 @@ var _infosDatas = [{
 	"bouton" : "fiche",
 	"image" : "images_non_libres/usine_valorena.png",
 	"mots_cles" : "usine,valorena"
-}];
+}, {}];

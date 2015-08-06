@@ -222,12 +222,14 @@ function _gestionLien(e) {
 			_detailleLieu(complement, 300, 400, false);
 		} else if (protocole == "lalo") {
 
-			// complement = e.target.href.substring(4);
+			// Ouverture des liens navigation
 
 			if (typeof navigator !== "undefined" && navigator.app) {
 				// Mobile device.
 				url = "geo:0,0?q=" + complement;
-				Ext.Msg.alert('Externe', 'La page a été ouverte dans maps.');
+				Ext.Msg
+						.alert('Externe',
+								'La position a été ouverte dans l\'application de navigation.');
 				/*
 				 * navigator.app.oenNativeAppWindow(url, { openExternal : true
 				 * });
@@ -247,6 +249,22 @@ function _gestionLien(e) {
 				e.stopEvent();
 				return false;
 			}
+		} else if (protocole == "tel:") {
+
+			// Ouverture des liens téléphone
+			if (typeof navigator !== "undefined" && navigator.app) {
+				// Mobile device.
+				url = "tel:" + complement;
+				Ext.Msg
+						.alert('Externe',
+								'Le numéro a été envoyé au téléphone.');
+				navigator.app.loadUrl(url, {
+							openExternal : true
+						});
+				e.stopPropagation();
+				e.preventDefault();
+				return false;
+			}
 		}
 		e.stopEvent();
 	}
@@ -259,6 +277,17 @@ function _getUrlYAllerLatLong(latitude, longitude) {
 			+ "><img src='resources/images/images_non_libres/y_aller.png' /></a>";
 	return url;
 }
+
+
+function _getTelephone(tel) {
+	var lien = "tel:" + tel;
+	var url = "<a href='"
+			+ lien
+			+ "'><img src='resources/images/images_non_libres/appeler.png' /></a>";
+	return url;
+}
+
+
 
 function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	var info = _getInfo(fiche);
