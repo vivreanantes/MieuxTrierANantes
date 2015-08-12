@@ -81,7 +81,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				tap : 'clickQuizViewButton'
 			},
 			quizView : {
-				show : 'showQuizView'
+				activate : 'activateQuizView'
 			},
 			settingsFormButton : {
 				tap : 'clickSettingsFormButton'
@@ -536,7 +536,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 	},
 
-	showQuizView : function(views, eOpts) {
+	activateQuizView : function(views, eOpts) {
 		this.cacherMontrerReponses(true);
 	},
 
