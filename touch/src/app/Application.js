@@ -1,11 +1,6 @@
 /**
  * @author Ed Spencer
  *
- * @aside guide apps_intro
- * @aside guide first_app
- * @aside video mvc-part-1
- * @aside video mvc-part-2
- *
  * Ext.app.Application defines the set of {@link Ext.data.Model Models}, {@link Ext.app.Controller Controllers},
  * {@link Ext.app.Profile Profiles}, {@link Ext.data.Store Stores} and {@link Ext.Component Views} that an application
  * consists of. It automatically loads all of those dependencies and can optionally specify a {@link #launch} function
@@ -173,8 +168,8 @@
  * ## Find out more
  *
  * If you are not already familiar with writing applications with Sencha Touch we recommend reading the
- * [intro to applications guide](#!/guide/apps_intro), which lays out the core principles of writing apps
- * with Sencha Touch.
+ * [intro to applications guide](../../../getting_started/building_your_first_app.html), which 
+ * lays out the core principles of writing apps with Sencha Touch.
  */
 Ext.define('Ext.app.Application', {
     extend: 'Ext.app.Controller',
@@ -344,7 +339,7 @@ Ext.define('Ext.app.Application', {
         /**
          * @cfg {Ext.app.History} history The global {@link Ext.app.History History} instance attached to this
          * Application. For more information, see 
-         * [Routing, Deep Linking, and the Back Button](http://docs.sencha.com/touch/#!/guide/history_support).
+         * [Routing, Deep Linking, and the Back Button](../../../core_concepts/history_support.html).
          * @accessor
          * @readonly
          */
@@ -416,7 +411,34 @@ Ext.define('Ext.app.Application', {
          * has been processed properly, but before anything else to ensure overrides get executed first.
          * @accessor
          */
-        requires: []
+        requires: [],
+
+        /**
+         * @cfg {String} themeVariationPrefix Used only with {@link themeVariation} this prefix will be added before the variation as a class on the HTML
+         * tag of your application.
+         */
+        themeVariationPrefix: Ext.baseCSSPrefix + 'theme-variation-',
+
+        /**
+         * @cfg {String} themeVariationTransitionCls This is only used with {@link themeVariation}. The Class provided will be added to the HTML tag
+         * then removed once the transition is complete. The duration of this delayed removal is parsed from the class itself, for example if the class
+         * has the property 'transition: color 4s, background 6s, background-color 1s' the delay will be 6s (the largest time used in that class.
+         *
+         * @accessor
+        */
+        themeVariationTransitionCls: null,
+
+        /**
+         * @cfg {String/Function} themeVariation A string to determine the variation on the current theme being used. This string will be prefixed by
+         * {@link themeVariationPrefix} and the resulting string will be added to the HTML tag of your application. If a function is provided that function
+         * must return a string.
+         *
+         *  //This will result in 'x-theme-variation-dark' being added as a class to the html tag of your application
+         *  MyApp.app.setThemeVariation("dark");
+         *
+         * @accessor
+         */
+        themeVariation: null
     },
 
     /**
@@ -840,6 +862,54 @@ Ext.define('Ext.app.Application', {
      */
     onHistoryChange: function(url) {
         this.dispatch(this.getRouter().recognize(url), false);
+    },
+
+    updateThemeVariation: function(newVariation, oldVariation) {
+        var html = Ext.getBody().getParent(),
+            themeVariationPrefix = this.getThemeVariationPrefix() || "",
+            transitionCls = this.getThemeVariationTransitionCls();
+
+        if (Ext.isFunction(newVariation)) {
+            newVariation = newVariation.call(this);
+        }
+
+        if(!Ext.isString(newVariation)) {
+            Ext.Error.raise("Theme variation must be a String.'");
+        }
+
+        if(transitionCls) {
+            var css = "", duration = 0,
+                rules = document.styleSheets[0].cssRules,
+                i, rule, times, time;
+
+            html.addCls(transitionCls);
+            for(i in rules) {
+                rule = rules[i];
+                if(rule.selectorText && rule.selectorText.indexOf("." + transitionCls) >=1) {
+                    css += rule.cssText;
+                }
+            }
+
+            times = css.match(/[0-9]+s/g);
+            for(i in times) {
+                time = parseInt(times[i]);
+                if(time > duration) {
+                    duration = time;
+                }
+            }
+
+            if(this.$themeVariationChangeTimeout) {
+                clearTimeout(this.$themeVariationChangeTimeout);
+                this.$themeVariationChangeTimeout = null;
+            }
+
+            this.$themeVariationChangeTimeout = Ext.defer(function() {
+                html.removeCls(transitionCls);
+            }, time * 1000);
+        }
+
+        html.removeCls(themeVariationPrefix + oldVariation);
+        html.addCls(themeVariationPrefix + newVariation);
     }
 }, function() {
     // <deprecated product=touch since=2.0>

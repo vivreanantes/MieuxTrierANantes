@@ -1,7 +1,7 @@
 /*
-This file is part of Sencha Touch 2.3
+This file is part of Sencha Touch 2.4
 
-Copyright (c) 2011-2013 Sencha Inc
+Copyright (c) 2011-2015 Sencha Inc
 
 Contact:  http://www.sencha.com/contact
 
@@ -13,7 +13,7 @@ terms contained in a written agreement between you and Sencha.
 If you are unsure which license is appropriate for your use, please contact the sales department
 at http://www.sencha.com/contact.
 
-Build date: 2013-09-27 12:04:54 (070dc180307b1c68852dd89a4819c1516e341359)
+Build date: 2015-06-10 14:41:48 (dd5f81fb46d0676281fdd021ada1da3ef06abd27)
 */
 //@tag foundation,core
 //@define Ext
@@ -676,7 +676,7 @@ Build date: 2013-09-27 12:04:54 (070dc180307b1c68852dd89a4819c1516e341359)
 (function() {
 
 // Current core version
-var version = '4.1.0', Version;
+var version = '2.4.2.571', Version;
     Ext.Version = Version = Ext.extend(Object, {
 
         /**
@@ -3712,7 +3712,7 @@ Ext.JSON = new(function() {
      * __The returned value includes enclosing double quotation marks.__
      *
      * The default return format is "yyyy-mm-ddThh:mm:ss".
-     * 
+     *
      * To override this:
      *
      *     Ext.JSON.encodeDate = function(d) {
@@ -3723,7 +3723,7 @@ Ext.JSON = new(function() {
      * @return {String} The string literal to use in a JSON string.
      */
     this.encodeDate = function(o) {
-        return '"' + o.getFullYear() + "-" 
+        return '"' + o.getFullYear() + "-"
         + pad(o.getMonth() + 1) + "-"
         + pad(o.getDate()) + "T"
         + pad(o.getHours()) + ":"
@@ -3779,6 +3779,13 @@ Ext.JSON = new(function() {
     }();
 
 })();
+
+//@private Alias for backwards compatibility
+if (!Ext.util) {
+    Ext.util = {};
+}
+Ext.util.JSON = Ext.JSON;
+
 /**
  * Shorthand for {@link Ext.JSON#encode}.
  * @member Ext
@@ -3843,17 +3850,14 @@ Ext.Date = {
 
 /**
  * @class Ext.Base
- *
  * @author Jacky Nguyen <jacky@sencha.com>
- * @aside guide class_system
- * @aside video class-system
  *
  * The root of all classes created with {@link Ext#define}.
  *
  * Ext.Base is the building block of all Ext classes. All classes in Ext inherit from Ext.Base. All prototype and static
  * members of this class are inherited by all other classes.
  *
- * See the [Class System Guide](#!/guide/class_system) for more.
+ * See the [Class System Guide](../../../core_concepts/class_system.html) for more.
  *
  */
 (function(flexSetter) {
@@ -5187,10 +5191,7 @@ var noArgs = [],
 
 /**
  * @class Ext.Class
- *
  * @author Jacky Nguyen <jacky@sencha.com>
- * @aside guide class_system
- * @aside video class-system
  *
  * Handles class creation throughout the framework. This is a low level factory that is used by Ext.ClassManager and generally
  * should not be used directly. If you choose to use Ext.Class you will lose out on the namespace, aliasing and dependency loading
@@ -5201,6 +5202,8 @@ var noArgs = [],
  *
  * Ext.Class is the factory and **not** the superclass of everything. For the base class that **all** Ext classes inherit
  * from, see {@link Ext.Base}.
+ *
+ * For more information about Sencha Touch's Class System, please check out the [class system guide](../../../core_concepts/class_system.html).
  */
 (function() {
     var ExtClass,
@@ -6083,10 +6086,7 @@ var noArgs = [],
 
 /**
  * @class  Ext.ClassManager
- *
  * @author Jacky Nguyen <jacky@sencha.com>
- * @aside guide class_system
- * @aside video class-system
  *
  * Ext.ClassManager manages all classes and handles mapping from string class name to
  * actual class objects throughout the whole framework. It is not generally accessed directly, rather through
@@ -6098,6 +6098,8 @@ var noArgs = [],
  * - {@link Ext#getClass Ext.getClass}
  * - {@link Ext#getClassName Ext.getClassName}
  *
+ * For more information about Sencha Touch's Class System, please check out the [class system guide](../../../core_concepts/class_system.html).
+ * 
  * ## Basic syntax:
  *
  *     Ext.define(className, properties);
@@ -7698,7 +7700,6 @@ var noArgs = [],
  *
  * @author Jacky Nguyen <jacky@sencha.com>
  * @docauthor Jacky Nguyen <jacky@sencha.com>
- * @aside guide mvc_dependencies
  *
  * Ext.Loader is the heart of the new dynamic dependency loading capability in Ext JS 4+. It is most commonly used
  * via the {@link Ext#require} shorthand. Ext.Loader supports both asynchronous and synchronous loading
@@ -7830,9 +7831,7 @@ var noArgs = [],
  * possible. Internally {@link Ext.Loader#history Ext.Loader.history} maintains the list of all dependencies your application
  * needs in the exact loading sequence. It's as simple as concatenating all files in this array into one,
  * then include it on top of your application.
- *
- * This process will be automated with Sencha Command, to be released and documented towards Ext JS 4 Final.
- *
+ * 
  * @singleton
  */
 (function(Manager, Class, flexSetter, alias, pass, arrayFrom, arrayErase, arrayInclude) {
@@ -9008,16 +9007,15 @@ var noArgs = [],
  * functions (like {@link #apply}, {@link #min} and others), but most of the framework that you use day to day exists
  * in specialized classes (for example {@link Ext.Panel}, {@link Ext.Carousel} and others).
  *
- * If you are new to Sencha Touch we recommend starting with the [Getting Started Guide][getting_started] to
+ * If you are new to Sencha Touch we recommend starting with the [Getting Started Guide][../../../getting_started/getting_started.html] to
  * get a feel for how the framework operates. After that, use the more focused guides on subjects like panels, forms and data
- * to broaden your understanding. The MVC guides take you through the process of building full applications using the
- * framework, and detail how to deploy them to production.
+ * to broaden your understanding. 
  *
  * The functions listed below are mostly utility functions used internally by many of the classes shipped in the
  * framework, but also often useful in your own apps.
  *
  * A method that is crucial to beginning your application is {@link #setup Ext.setup}. Please refer to it's documentation, or the
- * [Getting Started Guide][getting_started] as a reference on beginning your application.
+ * [Getting Started Guide][../../../getting_started/getting_started.html] as a reference on beginning your application.
  *
  *     Ext.setup({
  *         onReady: function() {
@@ -9028,9 +9026,10 @@ var noArgs = [],
  *         }
  *     });
  *
- * [getting_started]: #!/guide/getting_started
+ * ###Further Reading
+ * [Getting Started Guide](../../../getting_started/getting_started.html)
  */
-Ext.setVersion('touch', '2.3.0');
+Ext.setVersion('touch', '2.4.2.571');
 
 Ext.apply(Ext, {
     /**
@@ -9665,7 +9664,7 @@ Ext.apply(Ext, {
             addMeta('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
         }
         else {
-            addMeta('viewport', 'initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
+            addMeta('viewport', 'initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimum-ui');
         }
         addMeta('apple-mobile-web-app-capable', 'yes');
         addMeta('apple-touch-fullscreen', 'yes');
@@ -10653,6 +10652,10 @@ Ext.define('Ext.env.Browser', {
             browserVersion = new Ext.Version(browserMatch[1]);
         }
 
+        if(browserName === 'Safari' && userAgent.match(/BB10/)) {
+            browserName = 'BlackBerry';
+        }
+
         Ext.apply(this, {
             engineName: engineName,
             engineVersion: engineVersion,
@@ -10703,6 +10706,10 @@ Ext.define('Ext.env.Browser', {
         else if (!!window.isNK) {
             isWebView = true;
             this.setFlag('Sencha');
+        }
+
+        if (/(Glass)/i.test(userAgent)) {
+            this.setFlag('GoogleGlass');
         }
 
         // Check if running in UIWebView
@@ -10780,7 +10787,7 @@ Ext.define('Ext.env.Browser', {
      *
      * For a full list of supported values, refer to {@link #is} property/method.
      *
-     * @aside guide environment_package
+     * For more information, see the [Environment Detect Guide](../../../core_concepts/environment_detection.html)
      */
     var browserEnv = Ext.browser = new this(Ext.global.navigator.userAgent);
 
@@ -11026,7 +11033,7 @@ Ext.define('Ext.env.OS', {
      *
      * For a full list of supported values, refer to the {@link #is} property/method.
      *
-     * @aside guide environment_package
+     * For more information, see the [Environment Detect Guide](../../../core_concepts/environment_detection.html)
      */
     Ext.os = osEnv = new this(userAgent, navigation.platform);
 
@@ -11053,7 +11060,7 @@ Ext.define('Ext.env.OS', {
             // always set it to false when you are on a desktop not using Ripple Emulation
             Ext.browser.is.WebView = Ext.browser.is.Ripple ? true : false;
         }
-        else if (osEnv.is.iPad || osEnv.is.RIMTablet || osEnv.is.Android3 || Ext.browser.is.Silk || (osEnv.is.Android4 && userAgent.search(/mobile/i) == -1)) {
+        else if (osEnv.is.iPad || osEnv.is.RIMTablet || osEnv.is.Android3 || Ext.browser.is.Silk || (osEnv.is.Android && userAgent.search(/mobile/i) == -1)) {
             deviceType = 'Tablet';
         }
         else {
@@ -11114,6 +11121,9 @@ Ext.define('Ext.env.Feature', {
                 name: 'Default'
             };
         }
+
+        Ext.theme.is = {};
+        Ext.theme.is[Ext.theme.name] = true;
 
         Ext.onDocumentReady(function() {
             this.registerTest({
@@ -11237,7 +11247,7 @@ Ext.define('Ext.env.Feature', {
      *
      * See the {@link #has} property/method for details of the features that can be detected.
      *
-     * @aside guide environment_package
+     * For more information, see the [Environment Detect Guide](../../../core_concepts/environment_detection.html)
      */
     Ext.feature = new this;
 
@@ -11326,7 +11336,7 @@ Ext.define('Ext.env.Feature', {
         },
 
         Orientation: function() {
-            return ('orientation' in window) && this.isEventSupported('orientationchange');
+            return 'orientation' in window;
         },
 
         OrientationChange: function() {
@@ -11367,7 +11377,14 @@ Ext.define('Ext.env.Feature', {
         },
 
         CssTransformNoPrefix: function() {
-            return this.isStyleSupportedWithoutPrefix('transform');
+            // This extra check is needed to get around a browser bug where both 'transform' and '-webkit-transform' are present
+            // but the device really only uses '-webkit-transform'. This is seen on the HTC One for example.
+            // https://sencha.jira.com/browse/TOUCH-5029
+            if(!Ext.browser.is.AndroidStock) {
+                return this.isStyleSupportedWithoutPrefix('transform')
+            } else {
+                return this.isStyleSupportedWithoutPrefix('transform') && !this.isStyleSupportedWithoutPrefix('-webkit-transform');
+            }
         },
 
         Css3dTransforms: function() {
@@ -11409,6 +11426,10 @@ Ext.define('Ext.env.Feature', {
             } catch ( e ) {}
 
             return supported;
+        },
+
+        MatchMedia: function() {
+            return "matchMedia" in window;
         },
 
         XHR2 : function() {
@@ -11619,6 +11640,7 @@ Ext.define('Ext.dom.Query', {
 /**
  * @class Ext.DomHelper
  * @alternateClassName Ext.dom.Helper
+ * @singleton
  *
  * The DomHelper class provides a layer of abstraction from DOM and transparently supports creating elements via DOM or
  * using HTML fragments. It also has the ability to create HTML fragment templates from your DOM building code.
@@ -12446,6 +12468,35 @@ Ext.define('Ext.dom.Element', {
                 }
             }
             return data.substr(0, data.length - 1);
+        },
+
+        /**
+         * Serializes a DOM element and its children recursively into a string.
+         * @param {Object} node DOM element to serialize.
+         * @returns {String}
+         */
+        serializeNode: function (node) {
+            var result = '',
+                i, n, attr, child;
+            if (node.nodeType === document.TEXT_NODE) {
+                return node.nodeValue;
+            }
+            result += '<' + node.nodeName;
+            if (node.attributes.length) {
+                for (i = 0, n = node.attributes.length; i < n; i++) {
+                    attr = node.attributes[i];
+                    result += ' ' + attr.name + '="' + attr.value + '"';
+                }
+            }
+            result += '>';
+            if (node.childNodes && node.childNodes.length) {
+                for (i = 0, n = node.childNodes.length; i < n; i++) {
+                    child = node.childNodes[i];
+                    result += this.serializeNode(child);
+                }
+            }
+            result += '</' + node.nodeName + '>';
+            return result;
         }
     },
 
@@ -13512,18 +13563,19 @@ Ext.dom.Element.override({
      */
     getPageBox: function(getRegion) {
         var me = this,
-            el = me.dom,
-            w = el.offsetWidth,
+            el = me.dom;
+
+        if (!el) {
+            return new Ext.util.Region();
+        }
+
+        var w = el.offsetWidth,
             h = el.offsetHeight,
             xy = me.getXY(),
             t = xy[1],
             r = xy[0] + w,
             b = xy[1] + h,
             l = xy[0];
-
-        if (!el) {
-            return new Ext.util.Region();
-        }
 
         if (getRegion) {
             return new Ext.util.Region(t, r, b, l);
@@ -15930,7 +15982,7 @@ Ext.define('Ext.mixin.Mixin', {
  *
  *     newEmployee.quitJob(); // Will log 'Ed Spencer has quit!'
  *
- *  @aside guide events
+ * For more information, please check out our [Events Guide](../../../core_concepts/events.html).
  */
 Ext.define('Ext.mixin.Observable', {
 
@@ -15970,7 +16022,7 @@ Ext.define('Ext.mixin.Observable', {
          * should be a valid listeners `config` object as specified in the {@link #addListener} example for attaching
          * multiple handlers at once.
          *
-         * See the [Event guide](#!/guide/events) for more
+         * See the [Events Guide](../../../core_concepts/events.html) for more
          *
          * __Note:__ It is bad practice to specify a listener's `config` when you are defining a class using `Ext.define()`.
          * Instead, only specify listeners when you are instantiating your class with `Ext.create()`.
@@ -16405,11 +16457,11 @@ Ext.define('Ext.mixin.Observable', {
      *         swipe: { fn: button.onSwipe, scope: button }
      *     });
      *
-     * See the [Events Guide](#!/guide/events) for more.
+     * See the [Events Guide](../../../core_concepts/events.html) for more.
      *
      * @param {String/String[]/Object} eventName The name of the event to listen for. May also be an object who's property names are
      * event names.
-     * @param {Function/String} fn The method the event invokes.  Will be called with arguments given to
+     * @param {Function/String} [fn] The method the event invokes.  Will be called with arguments given to
      * {@link #fireEvent} plus the `options` parameter described below.
      * @param {Object} [scope] The scope (`this` reference) in which the handler function is executed. **If
      * omitted, defaults to the object which fired the event.**
@@ -21595,6 +21647,8 @@ Ext.define('Ext.util.Draggable', {
             drag     : 'onDrag',
             dragend  : 'onDragEnd',
             resize   : 'onElementResize',
+            touchstart : 'onPress',
+            touchend   : 'onRelease',
             scope: this
         };
 
@@ -21751,6 +21805,14 @@ Ext.define('Ext.util.Draggable', {
         }
 
         return (direction === this.DIRECTION_BOTH || direction === this.DIRECTION_VERTICAL);
+    },
+
+    onPress: function(e) {
+        this.fireAction('touchstart', [this, e]);
+    },
+
+    onRelease: function(e) {
+        this.fireAction('touchend', [this, e]);
     },
 
     onDragStart: function(e) {
@@ -22080,7 +22142,7 @@ Ext.define('Ext.behavior.Draggable', {
  * ### Common xtypes
  *
  * These are the xtypes that are most commonly used. For an exhaustive list please see the
- * [Components Guide](#!/guide/components).
+ * [Components Guide](../../../core_concepts/components.html).
  *
  * <pre>
  xtype                   Class
@@ -22161,11 +22223,8 @@ Ext.define('Ext.behavior.Draggable', {
  *
  * ## Further Reading
  *
- * See the [Component & Container Guide](#!/guide/components) for more information, and check out the
+ * See the [Component & Container Guide](../../../core_concepts/components.html) for more information, and check out the
  * {@link Ext.Container} class docs also.
- *
- * @aside guide components
- * @aside guide events
  *
  */
 Ext.define('Ext.Component', {
@@ -23294,11 +23353,22 @@ Ext.define('Ext.Component', {
     },
 
     /**
-     * @private
+     * Add or removes a class based on if the class is already added to the Component.
+     *
+     * @param {String} className The class to toggle.
      * @chainable
      */
-    toggleCls: function(className, force) {
-        this.element.toggleCls(className, force);
+    toggleCls: function(className, /* private */ force) {
+        var oldCls = this.getCls(),
+            newCls = (oldCls) ? oldCls.slice() : [];
+
+        if (force || newCls.indexOf(className) == -1) {
+            newCls.push(className);
+        } else {
+            Ext.Array.remove(newCls, className);
+        }
+
+        this.setCls(newCls);
 
         return this;
     },
@@ -25428,17 +25498,13 @@ Ext.define('Ext.layout.Default', {
 });
 
 /**
- * @aside guide layouts
- * @aside video layouts
- *
  * Box is a superclass for the two box layouts:
  *
  * * {@link Ext.layout.HBox hbox}
  * * {@link Ext.layout.VBox vbox}
  *
  * Box itself is never used directly, but its subclasses provide flexible arrangement of child components
- * inside a {@link Ext.Container Container}. For a full overview of layouts check out the
- * [Layout Guide](#!/guide/layouts).
+ * inside a {@link Ext.Container Container}. 
  *
  * ## Horizontal Box
  *
@@ -25452,13 +25518,16 @@ Ext.define('Ext.layout.Default', {
  *
  * ## Vertical Box
  *
- * VBox allows you to easily lay out child components verticaly. It can size items based on a fixed height or a
+ * VBox allows you to easily lay out child components vertically. It can size items based on a fixed height or a
  * fraction of the total height available, enabling you to achieve flexible layouts that expand or contract to fill the
  * space available.
  *
  * {@img ../guides/layouts/vbox.jpg}
  *
  * See the {@link Ext.layout.VBox VBox layout docs} for more information on using vboxes.
+ *
+ * For a more detailed overview of Sencha Touch 2 layouts, check out the
+ * [Layout Guide](../../../core_concepts/layouts.html).
  */
 Ext.define('Ext.layout.Box', {
     extend:  Ext.layout.Default ,
@@ -25475,7 +25544,7 @@ Ext.define('Ext.layout.Box', {
          * - ** end ** : child items are packed together at right side of container
          * - **stretch** : child items are stretched vertically to fill the height of the container
          *
-         * Please see the 'Pack and Align' section of the [Layout guide](#!/guide/layouts) for a detailed example and
+         * Please see the 'Pack and Align' section of the [Events Guide](../../../core_concepts/events.html) for a detailed example and
          * explanation.
          * @accessor
          */
@@ -25491,7 +25560,7 @@ Ext.define('Ext.layout.Box', {
          * - ** end ** : child items are packed together at right side of container
          * - ** justify ** : child items are packed evenly across the container. Uses the 'justify-content: space-between' css property
          *
-         * Please see the 'Pack and Align' section of the [Layout guide](#!/guide/layouts) for a detailed example and
+         * Please see the 'Pack and Align' section of the [Events Guide](../../../core_concepts/events.html) for a detailed example and
          * explanation.
          * @accessor
          */
@@ -25526,17 +25595,13 @@ Ext.define('Ext.layout.Box', {
 });
 
 /**
- * @aside guide layouts
- * @aside video layouts
- *
  * AbstractBox is a superclass for the two box layouts:
  *
  * * {@link Ext.layout.HBox hbox}
  * * {@link Ext.layout.VBox vbox}
  *
  * FlexBox itself is never used directly, but its subclasses provide flexible arrangement of child components
- * inside a {@link Ext.Container Container}. For a full overview of layouts check out the
- * [Layout Guide](#!/guide/layouts).
+ * inside a {@link Ext.Container Container}. 
  *
  * ## Horizontal Box
  *
@@ -25550,13 +25615,16 @@ Ext.define('Ext.layout.Box', {
  *
  * ## Vertical Box
  *
- * VBox allows you to easily lay out child components verticaly. It can size items based on a fixed height or a
+ * VBox allows you to easily lay out child components vertically. It can size items based on a fixed height or a
  * fraction of the total height available, enabling you to achieve flexible layouts that expand or contract to fill the
  * space available.
  *
  * {@img ../guides/layouts/vbox.jpg}
  *
  * See the {@link Ext.layout.VBox VBox layout docs} for more information on using vboxes.
+ *
+ * For a more detailed overview of Sencha Touch 2 layouts, check out the
+ * [Layout Guide](../../../core_concepts/layouts.html).
  */
 Ext.define('Ext.layout.FlexBox', {
     extend:  Ext.layout.Box ,
@@ -25774,9 +25842,6 @@ Ext.define('Ext.layout.FlexBox', {
 });
 
 /**
- * @aside guide layouts
- * @aside video layouts
- *
  * The HBox (short for horizontal box) layout makes it easy to position items horizontally in a
  * {@link Ext.Container Container}. It can size items based on a fixed width or a fraction of the total width
  * available.
@@ -25836,8 +25901,8 @@ Ext.define('Ext.layout.FlexBox', {
  *
  * {@img ../guides/layouts/hboxfixed.jpg}
  *
- * For a more detailed overview of what layouts are and the types of layouts shipped with Sencha Touch 2, check out the
- * [Layout Guide](#!/guide/layouts).
+ * For a more detailed overview of Sencha Touch 2 layouts, check out the
+ * [Layout Guide](../../../core_concepts/layouts.html).
  */
 Ext.define('Ext.layout.HBox', {
     extend:  Ext.layout.FlexBox ,
@@ -26127,9 +26192,6 @@ Ext.define('Ext.layout.wrapper.Dock', {
 });
 
 /**
- * @aside guide layouts
- * @aside video layouts
- *
  * The VBox (short for vertical box) layout makes it easy to position items horizontally in a
  * {@link Ext.Container Container}. It can size items based on a fixed height or a fraction of the total height
  * available.
@@ -26189,8 +26251,8 @@ Ext.define('Ext.layout.wrapper.Dock', {
  *
  * {@img ../guides/layouts/vboxfixed.jpg}
  *
- * For a more detailed overview of what layouts are and the types of layouts shipped with Sencha Touch 2, check out the
- * [Layout Guide](#!/guide/layouts).
+ * For a more detailed overview of Sencha Touch 2 layouts, check out the
+ * [Layout Guide](../../../core_concepts/layouts.html).
  *
  */
 Ext.define('Ext.layout.VBox', {
@@ -27765,9 +27827,6 @@ Ext.define('Ext.fx.layout.Card', {
 });
 
 /**
- * @aside guide layouts
- * @aside video layouts
- *
  * Sometimes you want to show several screens worth of information but you've only got a small screen to work with.
  * TabPanels and Carousels both enable you to see one screen of many at a time, and underneath they both use a Card
  * Layout.
@@ -27807,8 +27866,8 @@ Ext.define('Ext.fx.layout.Card', {
  * so 1 corresponds to the second item). Normally you're better off using a {@link Ext.tab.Panel tab panel} or a
  * {@link Ext.carousel.Carousel carousel}.
  *
- * For a more detailed overview of what layouts are and the types of layouts shipped with Sencha Touch 2, check out the
- * [Layout Guide](#!/guide/layouts).
+ * For a more detailed overview of Sencha Touch 2 layouts, check out the
+ * [Layout Guide](../../../core_concepts/layouts.html).
  */
 
 
@@ -29774,14 +29833,36 @@ Ext.define('Ext.fx.easing.EaseOut', {
  * Here is a simple example of how to adjust the scroller settings when using a {@link Ext.Container} (or anything
  * that extends it).
  *
- *     @example
- *     var container = Ext.create('Ext.Container', {
- *         fullscreen: true,
- *         html: 'This container is scrollable!',
- *         scrollable: {
- *             direction: 'vertical'
- *         }
- *     });
+ *      @example
+ *      Ext.create('Ext.Container', {
+ *           fullscreen: true,
+ *           html: "Macaroni cheese roquefort<br>" +
+ *                "port-salut. The big cheese<br>" + 
+ *                "fondue camembert de normandie<br>" + 
+ *                "cow boursin cheese swiss stinking<br>" +  
+ *                "bishop. Fromage feta edam fromage<br>" + 
+ *                "frais bavarian bergkase paneer<br>" + 
+ *                "paneer cheese and wine. Cow danish<br>" +  
+ *                "fontina roquefort bocconcini<br>" + 
+ *                "jarlsberg parmesan cheesecake<br>" + 
+ *                "danish fontina. Mascarpone<br>" +
+ *                "bishop. Fromage feta edam fromage<br>" + 
+ *                "frais bavarian bergkase paneer<br>" + 
+ *                "paneer cheese and wine. Cow danish<br>" +  
+ *                "fontina roquefort bocconcini<br>" + 
+ *                "jarlsberg parmesan cheesecake<br>" + 
+ *                "emmental fromage frais cheesy<br>" + 
+ *                "grin say cheese squirty cheese<br>" + 
+ *                "parmesan queso. Cheese triangles<br>" + 
+ *                "st. agur blue cheese chalk and cheese<br>" + 
+ *                "cream cheese lancashire manchego<br>" + 
+ *                "taleggio blue castello. Port-salut<br>" + 
+ *                "paneer monterey jack<br>" + 
+ *                "say cheese fondue.",
+ *           scrollable: {
+ *              direction: 'vertical'
+ *           }
+ *       });
  *
  * As you can see, we are passing the {@link #direction} configuration into the scroller instance in our container.
  *
@@ -30194,11 +30275,30 @@ Ext.define('Ext.scroll.Scroller', {
     /**
      * @private
      */
-    updateDirection: function(direction) {
-        var isAxisEnabledFlags = this.isAxisEnabledFlags;
+    updateDirection: function(direction, oldDirection) {
+        var isAxisEnabledFlags = this.isAxisEnabledFlags,
+            verticalCls = this.cls + '-vertical',
+            horizontalCls = this.cls + '-horizontal',
+            element = this.getElement();
 
-        isAxisEnabledFlags.x = (direction === 'both' || direction === 'horizontal');
-        isAxisEnabledFlags.y = (direction === 'both' || direction === 'vertical');
+        if (oldDirection === 'both' || oldDirection === 'horizontal') {
+            element.removeCls(horizontalCls);
+        }
+
+        if (oldDirection === 'both' || oldDirection === 'vertical') {
+            element.removeCls(verticalCls);
+        }
+
+        isAxisEnabledFlags.x = isAxisEnabledFlags.y = false;
+        if (direction === 'both' || direction === 'horizontal') {
+            isAxisEnabledFlags.x = true;
+            element.addCls(horizontalCls);
+        }
+
+        if (direction === 'both' || direction === 'vertical') {
+            isAxisEnabledFlags.y = true;
+            element.addCls(verticalCls);
+        }
     },
 
     /**
@@ -32351,7 +32451,6 @@ Ext.define('Ext.behavior.Scrollable', {
  */
 Ext.define('Ext.util.InputBlocker', {
     singleton: true,
-    alternateClassName: "InputBlocker",
     blockInputs: function () {
         if (Ext.browser.is.ie) {
             Ext.select('.x-field-text .x-field-input:not(.x-item-disabled) .x-input-el, .x-field-textarea .x-field-input:not(.x-item-disabled) .x-input-el, .x-field-search .x-field-input:not(.x-item-disabled) .x-input-el').each(function (item) {
@@ -32492,12 +32591,12 @@ Ext.define('Ext.Mask', {
  *
  * - Adding child Components at instantiation and run time
  * - Removing child Components
- * - Specifying a [Layout](#!/guide/layouts)
+ * - Specifying a [Layout](../../../core_concepts/layouts.html)
  *
  * Layouts determine how the child Components should be laid out on the screen. In our mail app example we'd use an
  * HBox layout so that we can pin the email list to the left hand edge of the screen and allow the preview pane to
  * occupy the rest. There are several layouts in Sencha Touch 2, each of which help you achieve your desired
- * application structure, further explained in the [Layout guide](#!/guide/layouts).
+ * application structure, further explained in the [Layout guide](../../../core_concepts/layouts.html).
  *
  * ## Adding Components to Containers
  *
@@ -32550,11 +32649,8 @@ Ext.define('Ext.Mask', {
  *
  * ## Further Reading
  *
- * See the [Component & Container Guide](#!/guide/components) for more information, and check out the
+ * See the [Component & Container Guide](../../../core_concepts/components.html) for more information, and check out the
  * {@link Ext.Container} class docs also.
- *
- * @aside guide components
- * @aside guide layouts
  */
 Ext.define('Ext.Container', {
     extend:  Ext.Component ,
@@ -32682,7 +32778,7 @@ Ext.define('Ext.Container', {
          *         ]
          *     });
          *
-         * See the [Layouts Guide](#!/guide/layouts) for more information.
+         * See the [Layouts Guide](../../../core_concepts/layouts.html) for more information.
          *
          * @accessor
          */
@@ -33762,6 +33858,8 @@ Ext.define('Ext.Container', {
         if (modal) {
             modal.setHidden(false);
         }
+
+        return this;
     },
 
     hide:function(){
@@ -33772,6 +33870,8 @@ Ext.define('Ext.Container', {
         if (modal) {
             modal.setHidden(true);
         }
+
+        return this;
     },
 
     doSetHidden: function(hidden) {
@@ -34269,8 +34369,6 @@ Ext.define('Ext.util.LineSegment', {
 });
 
 /**
- * @aside guide floating_components
- *
  * Panels are most useful as Overlays - containers that float over your application. They contain extra styling such
  * that when you {@link #showBy} another component, the container will appear in a rounded black box with a 'tip'
  * pointing to a reference component.
@@ -34304,6 +34402,7 @@ Ext.define('Ext.util.LineSegment', {
  *          padding: 10
  *      }).showBy(button);
  *
+ * For more information, see our [Floating Components Guide](../../../components/floating_components.html).
  */
 Ext.define('Ext.Panel', {
     extend:  Ext.Container ,
@@ -35907,29 +36006,41 @@ Ext.define('Ext.data.Connection', {
         });
     },
 
-    onUploadComplete: function(frame, options, id) {
+    onUploadComplete : function(frame, options, id) {
         // bogus response object
         var response = {
                 responseText: '',
-                responseXML: null
-            }, doc, firstChild;
+                responseXML: null,
+                request: {
+                    options: options
+                }
+            },
+            doc, body, firstChild;
 
         try {
-            doc = frame.contentWindow || frame.contentWindow.document || frame.contentDocument || window.frames[id].document;
+            doc = (frame.contentWindow && frame.contentWindow.document) || frame.contentDocument || window.frames[id].document;
+
             if (doc) {
-                if (doc.hasOwnProperty("body") && doc.body) {
-                    if (this.textAreaRe.test((firstChild = doc.body.firstChild || {}).tagName)) { // json response wrapped in textarea
+                if (doc.hasOwnProperty('body') && doc.body) {
+                    body = doc.body;
+                }
+
+                if (body) {
+                    firstChild = body.firstChild || {};
+
+                    if (this.textAreaRe.test(firstChild.tagName)) { // json response wrapped in textarea
                         response.responseText = firstChild.value;
                     } else {
-                        response.responseText = doc.body.innerHTML;
+                        response.responseText = firstChild.innerHTML;
                     }
+
+                    //in IE the document may still have a body even if returns XML.
+                    response.responseXML = body.XMLDocument;
                 }
-                //in IE the document may still have a body even if returns XML.
-                response.responseXML = doc.XMLDocument || doc;
             }
         } catch (e) {
             response.success = false;
-            response.message = "Cross-Domain access is not permitted between frames. XHR2 is recommended for this type of request.";
+            response.message = 'Cross-Domain access is not permitted between frames. XHR2 is recommended for this type of request.';
             response.error = e;
         }
 
@@ -35941,7 +36052,6 @@ Ext.define('Ext.data.Connection', {
 
         me.fireEvent('requestcomplete', me, response, options);
 
-        Ext.callback(options.success, options.scope, [response, options]);
         Ext.callback(options.callback, options.scope, [options, true, response]);
 
         setTimeout(function() {
@@ -36469,8 +36579,6 @@ Ext.define('Ext.data.Connection', {
 });
 
 /**
- * @aside guide ajax
- *
  * A singleton instance of an {@link Ext.data.Connection}. This class
  * is used to communicate with your server side code. It can be used as follows:
  *
@@ -36503,6 +36611,9 @@ Ext.define('Ext.data.Connection', {
  * The main reason for creating a separate {@link Ext.data.Connection} is for a
  * series of requests that share common settings that are different to all other
  * requests in the application.
+ *
+ * For more information about utilizing AJAX in Sencha Touch, please review 
+ * our [AJAX Guide](../../../core_concepts/using_ajax.html).
  */
 Ext.define('Ext.Ajax', {
     extend:  Ext.data.Connection ,
@@ -37584,7 +37695,6 @@ Ext.define('Ext.Media', {
  *             }
  *         ]
  *     });
- * @aside example audio
  */
 Ext.define('Ext.Audio', {
     extend:  Ext.Media ,
@@ -38071,7 +38181,6 @@ Ext.define('Ext.util.Geolocation', {
  *         useCurrentLocation: true
  *     });
  *
- * @aside example maps
  */
 Ext.define('Ext.Map', {
     extend:  Ext.Container ,
@@ -38581,6 +38690,30 @@ Ext.define('Ext.BingMap', {
  * - `component[autoScroll]`
  * - `panel[title="Test"]`
  *
+ * Attributes can use the '=' or '~=' operators to do the pattern matching.
+ *
+ * The <strong>'='</strong> operator will return the results that <strong>exactly</strong> match:
+ *
+ *     Ext.Component.query('panel[cls=my-cls]')
+ *
+ * Will match the following Component:
+ *
+ *     Ext.create('Ext.Panel', {
+ *         cls : 'my-cls'
+ *     });
+ *
+ * The <strong>'~='</strong> operator will return results that <strong>exactly</strong> matches one of the whitespace-separated values:
+ *
+ *     Ext.Component.query('panel[cls~=my-cls]')
+ *
+ * Will match the follow Component:
+ *
+ *     Ext.create('My.Panel', {
+ *         cls : 'foo-cls my-cls bar-cls'
+ *     });
+ *
+ * This is because it <strong>exactly</strong> matched the 'my-cls' within the cls config.
+ *
  * Member expressions from candidate Components may be tested. If the expression returns a *truthy* value,
  * the candidate Component will be included in the query:
  *
@@ -38736,7 +38869,44 @@ Ext.define('Ext.ComponentQuery', {
             for (; i < length; i++) {
                 candidate = items[i];
                 getter = Ext.Class.getConfigNameMap(property).get;
-                if (candidate[getter]) {
+                if (operator === '~=') {
+                    getValue = null;
+
+                    if (candidate[getter]) {
+                        getValue = candidate[getter]();
+                    } else if (candidate.config && candidate.config[property]) {
+                        getValue = String(candidate.config[property]);
+                    } else if (candidate[property]) {
+                        getValue = String(candidate[property]);
+                    }
+
+                    if (getValue) {
+                        //normalize to an array
+                        if (!Ext.isArray(getValue)) {
+                            getValue = getValue.split(' ');
+                        }
+
+                        var v = 0,
+                            vLen = getValue.length,
+                            val;
+
+                        for (; v < vLen; v++) {
+                            /**
+                             * getValue[v] could still be whitespaced-separated, this normalizes it. This is an example:
+                             *
+                             * {
+                             *     html : 'Imprint',
+                             *     cls  : 'overlay-footer-item overlay-footer-imprint'
+                             * }
+                             */
+                            val = String(getValue[v]).split(' ');
+
+                            if (Ext.Array.indexOf(val, value) !== -1) {
+                                result.push(candidate);
+                            }
+                        }
+                    }
+                } else if (candidate[getter]) {
                     getValue = candidate[getter]();
                     if (!value ? !!getValue : (String(getValue) === value)) {
                         result.push(candidate);
@@ -39650,6 +39820,39 @@ Ext.define('Ext.LoadMask', {
 }, function() {
 });
 
+/**
+ * {@link Ext.Menu}'s are used with {@link Ext.Viewport#setMenu}. A menu can be linked with any side of the screen (top, left, bottom or right)
+ *  and will simply describe the contents of your menu. To use this menu you will call various menu related functions on the {@link Ext.Viewport}
+ * such as {@link Ext.Viewport#showMenu}, {@link Ext.Viewport#hideMenu}, {@link Ext.Viewport#toggleMenu}, {@link Ext.Viewport#hideOtherMenus},
+ * or {@link Ext.Viewport#hideAllMenus}.
+ *
+ *      @example preview
+ *      var menu = Ext.create('Ext.Menu', {
+ *          items: [
+ *              {
+ *                  text: 'Settings',
+ *                  iconCls: 'settings'
+ *              },
+ *              {
+ *                  text: 'New Item',
+ *                  iconCls: 'compose'
+ *              },
+ *              {
+ *                  text: 'Star',
+ *                  iconCls: 'star'
+ *              }
+ *          ]
+ *      });
+ *
+ *      Ext.Viewport.setMenu(menu, {
+ *          side: 'left',
+ *          reveal: true
+ *      });
+ *
+ *      Ext.Viewport.showMenu('left');
+ *
+ * The {@link #defaultType} of a Menu item is a {@link Ext.Button button}.
+ */
 Ext.define('Ext.Menu', {
     extend:  Ext.Sheet ,
     xtype: 'menu',
@@ -39744,7 +39947,7 @@ Ext.define('Ext.Menu', {
     platformConfig: [{
         theme: ['Windows']
     }, {
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103'],
         ui: 'context',
         layout: {
             pack: 'center'
@@ -39754,7 +39957,7 @@ Ext.define('Ext.Menu', {
     updateUi: function(newUi, oldUi) {
         this.callParent(arguments);
 
-        if (newUi != oldUi && Ext.theme.name == 'Blackberry') {
+        if (newUi != oldUi && (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103)) {
             if (newUi == 'context') {
                 this.innerElement.swapCls('x-vertical', 'x-horizontal');
             }
@@ -39957,8 +40160,6 @@ Ext.define('Ext.Spacer', {
 });
 
 /**
- * @aside video tabs-toolbars
- *
  * {@link Ext.Toolbar}s are most commonly used as docked items as within a {@link Ext.Container}. They can be docked either `top` or `bottom` using the {@link #docked} configuration.
  *
  * They allow you to insert items (normally {@link Ext.Button buttons}) and also add a {@link #title}.
@@ -40119,7 +40320,7 @@ Ext.define('Ext.Toolbar', {
          *         ]
          *     });
          *
-         * See the [layouts guide](#!/guides/layouts) for more information
+         * See the [layouts guide](../../../core_concepts/layouts.html) for more information
          *
          * __Note:__ If you set the {@link #docked} configuration to `left` or `right`, the default layout will change from the
          * `hbox` to a `vbox`.
@@ -40152,7 +40353,7 @@ Ext.define('Ext.Toolbar', {
         if (typeof title == 'string') {
             title = {
                 title: title,
-                centered: true
+                centered : Ext.theme.is.Tizen ? false : true
             };
         }
 
@@ -40508,6 +40709,19 @@ Ext.define('Ext.field.Input', {
             tap: 'onInputTap'
         });
 
+
+        // Stock android has a delayed mousedown event that is dispatched
+        // this prevents the mousedown from focus's an input when not intended (click a message box button or picker button that lays over an input)
+        // we then force focus on touchend.
+        if(Ext.browser.is.AndroidStock) {
+            me.input.dom.addEventListener("mousedown", function(e) {
+                if(document.activeElement != e.target) {
+                    e.preventDefault();
+                }
+            } );
+            me.input.dom.addEventListener("touchend", function() { me.focus(); });
+        }
+
         me.mask.on({
             scope: me,
             tap: 'onMaskTap'
@@ -40820,7 +41034,7 @@ Ext.define('Ext.field.Input', {
      * @private
      */
     updateReadOnly: function(readOnly) {
-        this.updateFieldAttribute('readonly', readOnly);
+        this.updateFieldAttribute('readonly', readOnly ? true : null);
     },
 
     //<debug>
@@ -41096,8 +41310,6 @@ Ext.define('Ext.field.Input', {
 });
 
 /**
- * @aside guide forms
- *
  * Field is the base class for all form fields used in Sencha Touch. It provides a lot of shared functionality to all
  * field subclasses (for example labels, simple validation, {@link #clearIcon clearing} and tab index management), but
  * is rarely used directly. Instead, it is much more common to use one of the field subclasses:
@@ -41120,6 +41332,8 @@ Ext.define('Ext.field.Input', {
  * for usage of individual field types. If you wish to create your own Field subclasses you can extend this class,
  * though it is sometimes more useful to extend {@link Ext.field.Text} as this provides additional text entry
  * functionality.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Field', {
     extend:  Ext.Decorator ,
@@ -41241,7 +41455,7 @@ Ext.define('Ext.field.Field', {
     },
 
     platformConfig: [{
-        theme: ['Windows', 'MountainView', 'Blackberry'],
+        theme: ['Windows', 'MountainView', 'Blackberry', 'Blackberry103', 'Tizen'],
         labelAlign: 'top'
     }],
 
@@ -41445,8 +41659,6 @@ Ext.define('Ext.field.Field', {
 });
 
 /**
- * @aside guide forms
- *
  * The text field is the basis for most of the input fields in Sencha Touch. It provides a baseline of shared
  * functionality such as input validation, standard events, state management and look and feel. Typically we create
  * text fields inside a form, like this:
@@ -41509,6 +41721,8 @@ Ext.define('Ext.field.Field', {
  * Text field inherits from {@link Ext.field.Field}, which is the base class for all fields in Sencha Touch and provides
  * a lot of shared functionality for all fields, including setting values, clearing and basic validation. See the
  * {@link Ext.field.Field} documentation to see how to leverage its capabilities.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Text', {
     extend:  Ext.field.Field ,
@@ -41556,6 +41770,7 @@ Ext.define('Ext.field.Text', {
      * @preventable doClearIconTap
      * Fires when the clear icon is tapped
      * @param {Ext.field.Text} this This field
+     * @param {Ext.field.Input} input The field's input component.
      * @param {Ext.event.Event} e
      */
 
@@ -41838,8 +42053,8 @@ Ext.define('Ext.field.Text', {
         this.blur();
     },
 
-    onClearIconTap: function(e) {
-        this.fireAction('clearicontap', [this, e], 'doClearIconTap');
+    onClearIconTap: function(input, e) {
+        this.fireAction('clearicontap', [this, input, e], 'doClearIconTap');
     },
 
     // @private
@@ -41947,8 +42162,6 @@ Ext.define('Ext.field.TextAreaInput', {
 });
 
 /**
- * @aside guide forms
- *
  * Creates an HTML textarea field on the page. This is useful whenever you need the user to enter large amounts of text
  * (i.e. more than a few words). Typically, text entry on mobile devices is not a pleasant experience for the user so
  * it's good to limit your use of text areas to only those occasions when free form text is required or alternative
@@ -41991,6 +42204,8 @@ Ext.define('Ext.field.TextAreaInput', {
  *         label: 'About You',
  *         {@link #placeHolder}: 'Tell us about yourself...'
  *     });
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.TextArea', {
     extend:  Ext.field.Text ,
@@ -42203,7 +42418,7 @@ Ext.define('Ext.MessageBox', {
             type: 'fadeOut'
         }
     }, {
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103'],
         ui: 'plain'
     }, {
         theme: ['MoutainView']
@@ -42284,12 +42499,25 @@ Ext.define('Ext.MessageBox', {
             };
         }
 
+        var minHeight = '1.3em';
+        if (Ext.theme.is.Cupertino) {
+            minHeight = '1.5em'
+        } else if (Ext.filterPlatform('blackberry') || Ext.filterPlatform('ie10')) {
+            minHeight = '2.6em';
+        }
+
         Ext.applyIf(config, {
             docked: 'top',
-            minHeight: (Ext.filterPlatform('blackberry') || Ext.filterPlatform('ie10')) ? '2.6em' : '1.3em',
+            minHeight: minHeight,
             ui: Ext.filterPlatform('blackberry') ? 'light' : 'dark',
             cls   : this.getBaseCls() + '-title'
         });
+
+        if (Ext.theme.is.Tizen) {
+            Ext.applyIf(config, {
+                centered: false
+            });
+        }
 
         return Ext.factory(config, Ext.Toolbar, this.getTitle());
     },
@@ -42326,14 +42554,14 @@ Ext.define('Ext.MessageBox', {
                     pack: 'center'
                 };
 
-                var isFlexed = Ext.theme.name == "CupertinoClassic"  || Ext.theme.name == "MountainView"  || Ext.theme.name == "Blackberry";
+                var isFlexed = Ext.theme.is.CupertinoClassic  || Ext.theme.is.MountainView  || Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103;
 
                 me.buttonsToolbar = Ext.create('Ext.Toolbar', {
                     docked: 'bottom',
                     defaultType: 'button',
                     defaults: {
                         flex: (isFlexed) ? 1 : undefined,
-                        ui: (Ext.theme.name == "Blackberry") ? 'action' : undefined
+                        ui: (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) ? 'action' : undefined
                     },
                     layout: layout,
                     ui: me.getUi(),
@@ -44242,7 +44470,7 @@ Ext.define('Ext.TitleBar', {
     },
 
     platformConfig: [{
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103', 'Tizen'],
         titleAlign: 'left'
     }, {
         theme: ['Cupertino'],
@@ -44410,18 +44638,24 @@ Ext.define('Ext.TitleBar', {
             }
         }
 
-        var spacerBox = this.spacer.renderElement.getPageBox(),
-            titleBox = titleElement.getPageBox(),
+        var spacerBox = this.spacer.renderElement.getPageBox();
+
+        if (Ext.browser.is.IE) {
+            titleElement.setWidth(spacerBox.width);
+        }
+
+        var titleBox = titleElement.getPageBox(),
             widthDiff = titleBox.width - spacerBox.width,
             titleLeft = titleBox.left,
             titleRight = titleBox.right,
             halfWidthDiff, leftDiff, rightDiff;
 
+
         if (widthDiff > 0) {
-            titleElement.setWidth(spacerBox.width);
             halfWidthDiff = widthDiff / 2;
             titleLeft += halfWidthDiff;
             titleRight -= halfWidthDiff;
+            titleElement.setWidth(spacerBox.width);
         }
 
         leftDiff = spacerBox.left - titleLeft;
@@ -44448,7 +44682,271 @@ Ext.define('Ext.TitleBar', {
 });
 
 /**
- * @aside example video
+ * A 'Toast' is a simple modal message that is displayed on the screen and then automatically closed by a timeout or by a user tapping
+ * outside of the toast itself. Think about it like a text only alert box that will self destruct. **A Toast should not be instantiated manually**
+ * but creating by calling 'Ext.toast(message, timeout)'. This will create one reusable toast container and content will be swapped out as
+ * toast messages are queued or displayed.
+ *
+ *  # Simple Toast
+ *
+ *      @example miniphone
+ *      Ext.toast('Hello Sencha!'); // Toast will close in 1000 milliseconds (default)
+ *
+ *  # Toast with Timeout
+ *
+ *      @example miniphone
+ *      Ext.toast('Hello Sencha!', 5000); // Toast will close in 5000 milliseconds
+ *
+ *  # Toast with config
+ *
+ *      @example miniphone
+ *      Ext.toast({message: 'Hello Sencha!', timeout: 2000}); // Toast will close in 2000 milliseconds
+ *
+ * # Multiple Toasts queued
+ *
+ *      @example miniphone
+ *      Ext.toast('Hello Sencha!');
+ *      Ext.toast('Hello Sencha Again!');
+ *      Ext.toast('Hello Sencha One More Time!');
+ */
+Ext.define('Ext.Toast', {
+    extend:  Ext.Sheet ,
+               
+                               
+      
+
+    config: {
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        ui: 'dark',
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        baseCls: Ext.baseCSSPrefix + 'toast',
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        showAnimation: {
+            type: 'popIn',
+            duration: 250,
+            easing: 'ease-out'
+        },
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        hideAnimation: {
+            type: 'popOut',
+            duration: 250,
+            easing: 'ease-out'
+        },
+
+        /**
+         * Override the default `zIndex` so it is normally always above floating components.
+         */
+        zIndex: 999,
+
+        /**
+         * @cfg {String} message
+         * The message to be displayed in the {@link Ext.Toast}.
+         * @accessor
+         */
+        message: null,
+
+        /**
+         * @cfg {Number} timeout
+         * The amount of time in milliseconds to wait before destroying the toast automatically
+         */
+        timeout: 1000,
+
+        /**
+         * @cfg{Boolean/Object} animation
+         * The animation that should be used between toast messages when they are queued up
+         */
+        messageAnimation: true,
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        hideOnMaskTap: true,
+
+        /**
+         * @private
+         */
+        modal: true,
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        layout: {
+            type: 'vbox',
+            pack: 'center'
+        }
+    },
+
+    /**
+     * @private
+     */
+    applyMessage: function(config) {
+        config = {
+            html: config,
+            cls: this.getBaseCls() + '-text'
+        };
+
+        return Ext.factory(config, Ext.Component, this._message);
+    },
+
+    /**
+     * @private
+     */
+    updateMessage: function(newMessage) {
+        if (newMessage) {
+            this.add(newMessage);
+        }
+    },
+
+    /**
+     * @private
+     */
+    applyTimeout: function(timeout) {
+        if (this._timeoutID) {
+            clearTimeout(this._timeoutID);
+            if (!Ext.isEmpty(timeout)) {
+                this._timeoutID = setTimeout(Ext.bind(this.onTimeout, this), timeout);
+            }
+        }
+        return timeout;
+    },
+
+    /**
+     * @internal
+     */
+    next: Ext.emptyFn,
+
+    /**
+     * @private
+     */
+    show: function(config) {
+        var me = this,
+            timeout = config.timeout,
+            msgAnimation = me.getMessageAnimation(),
+            message = me.getMessage();
+
+        if (me.isRendered() && me.isHidden() === false) {
+            config.timeout = null;
+            message.onAfter({
+                hiddenchange: function() {
+                    me.setMessage(config.message);
+                    message = me.getMessage();
+                    message.onAfter({
+                        hiddenchange: function() {
+
+                            // Forces applyTimeout to create a timer
+                            this._timeoutID = true;
+                            me.setTimeout(timeout);
+                        },
+                        scope: me,
+                        single: true
+                    });
+                    message.show(msgAnimation);
+                },
+                scope: me,
+                single: true
+            });
+
+            message.hide(msgAnimation);
+        } else {
+            Ext.util.InputBlocker.blockInputs();
+            me.setConfig(config);
+
+            //if it has not been added to a container, add it to the Viewport.
+            if (!me.getParent() && Ext.Viewport) {
+                Ext.Viewport.add(me);
+            }
+
+            if (!Ext.isEmpty(timeout)) {
+                me._timeoutID = setTimeout(Ext.bind(me.onTimeout, me), timeout);
+            }
+
+            me.callParent(arguments);
+        }
+    },
+
+    /**
+     * @private
+     */
+    hide: function(animation) {
+        clearTimeout(this._timeoutID);
+        if (!this.next()) {
+            this.callParent(arguments);
+        }
+    },
+
+    /**
+     * @private
+     */
+    onTimeout: function() {
+        this.hide();
+    }
+}, function(Toast) {
+    var _queue = [], _isToasting = false;
+
+    function next() {
+        var config = _queue.shift();
+
+        if (config) {
+            _isToasting = true;
+            this.show(config);
+        } else {
+            _isToasting = false;
+        }
+
+        return _isToasting;
+    }
+
+    function getInstance() {
+        if (!Ext.Toast._instance) {
+            Ext.Toast._instance = Ext.create('Ext.Toast');
+            Ext.Toast._instance.next = next;
+        }
+        return Ext.Toast._instance;
+    }
+
+    Ext.toast = function(message, timeout) {
+        var toast = getInstance(),
+            config = message;
+
+        if (Ext.isString(message)) {
+            config = {
+                message: message,
+                timeout: timeout
+            };
+        }
+
+        if (config.timeout === undefined) {
+            config.timeout = Ext.Toast.prototype.config.timeout;
+        }
+
+        _queue.push(config);
+        if (!_isToasting) {
+            toast.next();
+        }
+
+        return toast;
+    }
+});
+
+
+/**
  * Provides a simple Container for HTML5 Video.
  *
  * ## Notes
@@ -44507,7 +45005,13 @@ Ext.define('Ext.Video', {
          * @cfg
          * @inheritdoc
          */
-        cls: Ext.baseCSSPrefix + 'video'
+        baseCls: Ext.baseCSSPrefix + 'video',
+
+        /**
+         * @cfg {Boolean} controls
+         * Determines if native controls should be shown for this video player.
+         */
+        controls: true
     },
 
     template: [{
@@ -44577,6 +45081,10 @@ Ext.define('Ext.Video', {
         if (me.isPlaying()) {
             me.play();
         }
+    },
+
+    updateControls: function(value) {
+        this.media.set({controls:value ? true : undefined});
     },
 
     onErased: function() {
@@ -44787,12 +45295,6 @@ Ext.define('Ext.app.Action', {
 /**
  * @author Ed Spencer
  *
- * @aside guide controllers
- * @aside guide apps_intro
- * @aside guide history_support
- * @aside video mvc-part-1
- * @aside video mvc-part-2
- *
  * Controllers are responsible for responding to events that occur within your app. If your app contains a Logout
  * {@link Ext.Button button} that your user can tap on, a Controller would listen to the Button's tap event and take
  * the appropriate action. It allows the View classes to handle the display of data and the Model classes to handle the
@@ -44987,12 +45489,12 @@ Ext.define('Ext.app.Action', {
  * function that is called by that route is completely responsible for loading its data and restoring state. This is
  * because your user could either send that url to another person or simply refresh the page, which we wipe clear any
  * cached data you had already loaded. There is a more thorough discussion of restoring state with routes in the
- * application architecture guides.
+ * [application architecture guides](../../../core_concepts/about_applications.html).
  *
  * ## Advanced Usage
  *
- * See [the Controllers guide](#!/guide/controllers) for advanced Controller usage including before filters
- * and customizing for different devices.
+ * See [the Controllers guide](../../../core_concepts/controllers.html) for advanced Controller 
+ * usage including before filters and customizing for different devices.
  */
 Ext.define('Ext.app.Controller', {
     mixins: {
@@ -45602,9 +46104,7 @@ Ext.define('Ext.app.History', {
  * was not injected.
  *
  * For a fuller understanding of the ideas behind Profiles and how best to use them in your app, we suggest you read
- * the [device profiles guide](#!/guide/profiles).
- * 
- * @aside guide profiles
+ * the [device profiles guide](../../../core_concepts/device_profiles.html).
  */
 Ext.define('Ext.app.Profile', {
     mixins: {
@@ -45800,9 +46300,9 @@ Ext.define('Ext.app.Profile', {
  *
  * For information on how to use routes we suggest reading the following guides:
  *
- * - [Using History Support](#!/guide/history_support)
- * - [Intro to Applications](#!/guide/apps_intro)
- * - [Using Controllers](#!/guide/controllers)
+ * - [Using History Support](../../../core_concepts/history_support.html)
+ * - [Intro to Applications](../../../core_concepts/about_applications.html)
+ * - [Using Controllers](../../../core_concepts/controllers.html)
  *
  */
 Ext.define('Ext.app.Route', {
@@ -46100,11 +46600,6 @@ Ext.define('Ext.app.Router', {
 /**
  * @author Ed Spencer
  *
- * @aside guide apps_intro
- * @aside guide first_app
- * @aside video mvc-part-1
- * @aside video mvc-part-2
- *
  * Ext.app.Application defines the set of {@link Ext.data.Model Models}, {@link Ext.app.Controller Controllers},
  * {@link Ext.app.Profile Profiles}, {@link Ext.data.Store Stores} and {@link Ext.Component Views} that an application
  * consists of. It automatically loads all of those dependencies and can optionally specify a {@link #launch} function
@@ -46272,8 +46767,8 @@ Ext.define('Ext.app.Router', {
  * ## Find out more
  *
  * If you are not already familiar with writing applications with Sencha Touch we recommend reading the
- * [intro to applications guide](#!/guide/apps_intro), which lays out the core principles of writing apps
- * with Sencha Touch.
+ * [intro to applications guide](../../../getting_started/building_your_first_app.html), which 
+ * lays out the core principles of writing apps with Sencha Touch.
  */
 Ext.define('Ext.app.Application', {
     extend:  Ext.app.Controller ,
@@ -46443,7 +46938,7 @@ Ext.define('Ext.app.Application', {
         /**
          * @cfg {Ext.app.History} history The global {@link Ext.app.History History} instance attached to this
          * Application. For more information, see 
-         * [Routing, Deep Linking, and the Back Button](http://docs.sencha.com/touch/#!/guide/history_support).
+         * [Routing, Deep Linking, and the Back Button](../../../core_concepts/history_support.html).
          * @accessor
          * @readonly
          */
@@ -46515,7 +47010,34 @@ Ext.define('Ext.app.Application', {
          * has been processed properly, but before anything else to ensure overrides get executed first.
          * @accessor
          */
-        requires: []
+        requires: [],
+
+        /**
+         * @cfg {String} themeVariationPrefix Used only with {@link themeVariation} this prefix will be added before the variation as a class on the HTML
+         * tag of your application.
+         */
+        themeVariationPrefix: Ext.baseCSSPrefix + 'theme-variation-',
+
+        /**
+         * @cfg {String} themeVariationTransitionCls This is only used with {@link themeVariation}. The Class provided will be added to the HTML tag
+         * then removed once the transition is complete. The duration of this delayed removal is parsed from the class itself, for example if the class
+         * has the property 'transition: color 4s, background 6s, background-color 1s' the delay will be 6s (the largest time used in that class.
+         *
+         * @accessor
+        */
+        themeVariationTransitionCls: null,
+
+        /**
+         * @cfg {String/Function} themeVariation A string to determine the variation on the current theme being used. This string will be prefixed by
+         * {@link themeVariationPrefix} and the resulting string will be added to the HTML tag of your application. If a function is provided that function
+         * must return a string.
+         *
+         *  //This will result in 'x-theme-variation-dark' being added as a class to the html tag of your application
+         *  MyApp.app.setThemeVariation("dark");
+         *
+         * @accessor
+         */
+        themeVariation: null
     },
 
     /**
@@ -46924,6 +47446,54 @@ Ext.define('Ext.app.Application', {
      */
     onHistoryChange: function(url) {
         this.dispatch(this.getRouter().recognize(url), false);
+    },
+
+    updateThemeVariation: function(newVariation, oldVariation) {
+        var html = Ext.getBody().getParent(),
+            themeVariationPrefix = this.getThemeVariationPrefix() || "",
+            transitionCls = this.getThemeVariationTransitionCls();
+
+        if (Ext.isFunction(newVariation)) {
+            newVariation = newVariation.call(this);
+        }
+
+        if(!Ext.isString(newVariation)) {
+            Ext.Error.raise("Theme variation must be a String.'");
+        }
+
+        if(transitionCls) {
+            var css = "", duration = 0,
+                rules = document.styleSheets[0].cssRules,
+                i, rule, times, time;
+
+            html.addCls(transitionCls);
+            for(i in rules) {
+                rule = rules[i];
+                if(rule.selectorText && rule.selectorText.indexOf("." + transitionCls) >=1) {
+                    css += rule.cssText;
+                }
+            }
+
+            times = css.match(/[0-9]+s/g);
+            for(i in times) {
+                time = parseInt(times[i]);
+                if(time > duration) {
+                    duration = time;
+                }
+            }
+
+            if(this.$themeVariationChangeTimeout) {
+                clearTimeout(this.$themeVariationChangeTimeout);
+                this.$themeVariationChangeTimeout = null;
+            }
+
+            this.$themeVariationChangeTimeout = Ext.defer(function() {
+                html.removeCls(transitionCls);
+            }, time * 1000);
+        }
+
+        html.removeCls(themeVariationPrefix + oldVariation);
+        html.addCls(themeVariationPrefix + newVariation);
     }
 }, function() {
 });
@@ -47120,7 +47690,7 @@ Ext.define('Ext.util.TranslatableGroup', {
  * @class Ext.carousel.Carousel
  * @author Jacky Nguyen <jacky@sencha.com>
  *
- * Carousels, like [tabs](#!/guide/tabs), are a great way to allow the user to swipe through multiple full-screen pages.
+ * Carousels, like [tabs](../../../components/tabpanel.html), are a great way to allow the user to swipe through multiple full-screen pages.
  * A Carousel shows only one of its pages at a time but allows you to swipe through with your finger.
  *
  * Carousels can be oriented either horizontally or vertically and are easy to configure - they just work like any other
@@ -47184,10 +47754,7 @@ Ext.define('Ext.util.TranslatableGroup', {
  *
  * ## Further Reading
  *
- * For more information about Carousels see the [Carousel guide](#!/guide/carousel).
- *
- * @aside guide carousel
- * @aside example carousel
+ * For more information about Carousels see the [Carousel guide](../../../components/carousel.html).
  */
 Ext.define('Ext.carousel.Carousel', {
     extend:  Ext.Container ,
@@ -49556,7 +50123,7 @@ Ext.define('Ext.util.Collection', {
             this.updateIndices();
         }
 
-        var index = this.indices[this.getKey(item)];
+        var index = item ? this.indices[this.getKey(item)] : -1;
         return (index === undefined) ? -1 : index;
     },
 
@@ -49979,7 +50546,7 @@ Ext.define('Ext.data.ResultSet', {
  *                 // iterate over the OrderItems for each Order
  *                 order.orderItems().each(function(orderItem) {
  *                     // We know that the Product data is already loaded, so we can use the
- *                     // synchronous getProduct() method. Usually, we would use the 
+ *                     // synchronous getProduct() method. Usually, we would use the
  *                     // asynchronous version (see Ext.data.association.BelongsTo).
  *                     var product = orderItem.getProduct();
  *                     output.push(orderItem.get("quantity") + " orders of " + product.get("name"));
@@ -51973,7 +52540,6 @@ Ext.define('Ext.data.Operation', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * Proxies are used by {@link Ext.data.Store Stores} to handle the loading and saving of {@link Ext.data.Model Model}
  * data. Usually developers will not need to create or interact with proxies directly.
@@ -52002,6 +52568,12 @@ Ext.define('Ext.data.Operation', {
  *
  * Proxies also support batching of Operations via a {@link Ext.data.Batch batch} object, invoked by the {@link #batch}
  * method.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.Proxy', {
     extend:  Ext.Evented ,
@@ -52339,7 +52911,6 @@ Ext.define('Ext.data.proxy.Client', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * In-memory proxy. This proxy simply uses a local variable for data storage/retrieval, so its contents are lost on
  * every page refresh.
@@ -52390,6 +52961,12 @@ Ext.define('Ext.data.proxy.Client', {
  *             }
  *         }
  *     });
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.Memory', {
     extend:  Ext.data.proxy.Client ,
@@ -52566,7 +53143,6 @@ Ext.define('Ext.data.reader.Array', {
 
 /**
  * @docauthor Evan Trimboli <evan@sencha.com>
- * @aside guide stores
  *
  * Contains a collection of all stores that are created that have an identifier. An identifier can be assigned by
  * setting the {@link Ext.data.Store#storeId storeId} property. When a store is in the StoreManager, it can be
@@ -52593,6 +53169,12 @@ Ext.define('Ext.data.reader.Array', {
  *         store: 'myStore'
  *         // other configuration here
  *     });
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.StoreManager', {
     extend:  Ext.util.Collection ,
@@ -54127,8 +54709,6 @@ Ext.define('Ext.dataview.element.Container', {
 });
 
 /**
- * @aside guide dataview
- *
  * DataView makes it easy to create lots of components dynamically, usually based off a {@link Ext.data.Store Store}.
  * It's great for rendering lots of data from your server backend or any other data source and is what powers
  * components like {@link Ext.List}.
@@ -54247,6 +54827,9 @@ Ext.define('Ext.dataview.element.Container', {
  * The last thing we did is update our template to render the image, Twitter username and message. All we need to do
  * now is add a little CSS to style the list the way we want it and we end up with a very basic Twitter viewer. Click
  * the preview button on the example above to see it in action.
+ *
+ * ###Further Reading
+ * [Sencha Touch DataView Guide](../../../components/dataview.html)
  */
 Ext.define('Ext.dataview.DataView', {
     extend:  Ext.Container ,
@@ -54518,7 +55101,7 @@ Ext.define('Ext.dataview.DataView', {
          * Flag the use a component based DataView implementation.  This allows the full use of components in the
          * DataView at the cost of some performance.
          *
-         * Checkout the [DataView Guide](#!/guide/dataview) for more information on using this configuration.
+         * Checkout the [Sencha Touch DataView Guide](../../../components/dataview.html) for more information on using this configuration.
          * @accessor
          */
         useComponents: null,
@@ -55571,7 +56154,6 @@ Ext.define('Ext.data.Types', {
 
 /**
  * @author Ed Spencer
- * @aside guide models
  *
  * Fields are used to define what a Model is. They aren't instantiated directly - instead, when we create a class that
  * extends {@link Ext.data.Model}, it will automatically create a Field instance for each field configured in a {@link
@@ -55663,6 +56245,12 @@ Ext.define('Ext.data.Types', {
  *
  *     ed.set('age', 25.4);
  *     ed.get('age'); //returns 25 - we wanted an int, not a float, so no decimal places allowed
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.Field', {
                                                        
@@ -56780,7 +57368,6 @@ Ext.define('Ext.data.proxy.Server', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * AjaxProxy is one of the most widely-used ways of getting data into your application. It uses AJAX
  * requests to load data from the server, usually to be placed into a {@link Ext.data.Store Store}.
@@ -56986,6 +57573,13 @@ Ext.define('Ext.data.proxy.Server', {
  *
  * We can also provide a custom {@link #encodeFilters} function to encode our filters.
  *
+ * ###Further Reading
+ * [Sencha Touch AJAX Guide](../../../core_concepts/using_ajax.html)
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
+ * 
  * @constructor
  * Note that if this HttpProxy is being used by a {@link Ext.data.Store Store}, then the Store's
  * call to {@link Ext.data.Store#method-load load} will override any specified callback and params
@@ -57122,7 +57716,6 @@ Ext.define('Ext.data.proxy.Ajax', {
 
 /**
  * @author Ed Spencer
- * @aside guide models
  *
  * Associations enable you to express relationships between different {@link Ext.data.Model Models}. Let's say we're
  * writing an ecommerce system where Users can make Orders - there's a relationship between these Models that we can
@@ -57238,6 +57831,9 @@ Ext.define('Ext.data.proxy.Ajax', {
  *         });
  *
  *     });
+ *
+ * ###Further Reading
+ * [Sencha Touch Models and Associations](../../../core_concepts/data/models.html)
  */
 Ext.define('Ext.data.association.Association', {
     alternateClassName: 'Ext.data.Association',
@@ -57706,8 +58302,6 @@ Ext.define('Ext.util.Inflector', {
 });
 
 /**
- * @aside guide models
- *
  * Represents a one-to-many relationship between two models. Usually created indirectly via a model definition:
  *
  *     Ext.define('Product', {
@@ -57732,8 +58326,6 @@ Ext.define('Ext.util.Inflector', {
  *             hasMany: {model: 'Product', name: 'products'}
  *         }
  *     });
- *
- * `
  *
  * Above we created Product and User models, and linked them by saying that a User hasMany Products. This gives us a new
  * function on every User instance, in this case the function is called 'products' because that is the name we specified
@@ -57808,6 +58400,9 @@ Ext.define('Ext.util.Inflector', {
  *             }
  *         ]
  *     });
+ *
+ * ###Further Reading
+ * [Sencha Touch Models and Associations](../../../core_concepts/data/models.html)
  */
 Ext.define('Ext.data.association.HasMany', {
     extend:  Ext.data.association.Association ,
@@ -58016,12 +58611,13 @@ Ext.define('Ext.data.association.HasMany', {
                     filters      : [filter],
                     remoteFilter : true,
                     autoSync     : autoSync,
-                    modelDefaults: modelDefaults,
-                    listeners    : listeners
+                    modelDefaults: modelDefaults
                 });
 
                 store = record[storeName] = Ext.create('Ext.data.Store', config);
                 store.boundTo = record;
+
+                store.onAfter(listeners);
 
                 if (autoLoad) {
                     record[storeName].load();
@@ -58097,7 +58693,6 @@ Ext.define('Ext.data.association.HasMany', {
 
 /**
  * @author Ed Spencer
- * @aside guide models
  *
  * Represents a many to one association with another model. The owner model is expected to have
  * a foreign key which references the primary key of the associated model:
@@ -58121,7 +58716,9 @@ Ext.define('Ext.data.association.HasMany', {
  *                 { name: 'name',        type: 'string' }
  *             ],
  *             // we can use the belongsTo shortcut on the model to create a belongsTo association
- *             associations: { type: 'belongsTo', model: 'Category' }
+ *             belongsTo: {
+ *                 model: 'Category'
+ *             }
  *         }
  *     });
  *
@@ -58208,14 +58805,19 @@ Ext.define('Ext.data.association.HasMany', {
  *                 // ...
  *             ],
  *
- *             associations: [
- *                 { type: 'belongsTo', model: 'Category', primaryKey: 'unique_id', foreignKey: 'cat_id' }
- *             ]
+ *             belongsTo: {
+ *                 model     : 'Category',
+ *                 primaryKey: 'unique_key',
+ *                 foreignKey: 'cat_id'
+ *             }
  *         }
  *     });
  *
  * Here we replaced the default primary key (defaults to 'id') and foreign key (calculated as 'category_id')
  * with our own settings. Usually this will not be needed.
+ *
+ * ###Further Reading
+ * [Sencha Touch Models and Associations](../../../core_concepts/data/models.html)
  */
 Ext.define('Ext.data.association.BelongsTo', {
     extend:  Ext.data.association.Association ,
@@ -58498,8 +59100,6 @@ Ext.define('Ext.data.association.BelongsTo', {
 });
 
 /**
- * @aside guide models
- *
  * Represents a one to one association with another model. The owner model is expected to have
  * a foreign key which references the primary key of the associated model:
  *
@@ -58513,7 +59113,10 @@ Ext.define('Ext.data.association.BelongsTo', {
  *             ],
  *
  *             // we can use the hasOne shortcut on the model to create a hasOne association
- *             associations: { type: 'hasOne', model: 'Address' }
+ *             hasOne: {
+ *                 model: 'Address',
+ *                 name : 'address'
+ *             }
  *         }
  *     });
  *
@@ -58613,14 +59216,19 @@ Ext.define('Ext.data.association.BelongsTo', {
  *                 // ...
  *             ],
  *
- *             associations: [
- *                 { type: 'hasOne', model: 'Address', primaryKey: 'unique_id', foreignKey: 'addr_id' }
- *             ]
+ *             hasOne: {
+ *                 model     : 'Address', 
+ *                 primaryKey: 'unique_id',
+ *                 foreignKey: 'addr_id'
+ *             }
  *         }
  *     });
  *
  * Here we replaced the default primary key (defaults to 'id') and foreign key (calculated as 'address_id')
  * with our own settings. Usually this will not be needed.
+ *
+ * ###Further Reading
+ * [Sencha Touch Models and Associations](../../../core_concepts/data/models.html)
  */
 Ext.define('Ext.data.association.HasOne', {
     extend:  Ext.data.association.Association ,
@@ -58981,10 +59589,15 @@ Ext.define('Ext.data.Errors', {
 
 /**
  * @author Ed Spencer
- * @aside guide models
  *
  * This singleton contains a set of validation functions that can be used to validate any type of data. They are most
  * often used in {@link Ext.data.Model Models}, where they are automatically set up and executed.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.Validations', {
     alternateClassName: 'Ext.data.validations',
@@ -59138,7 +59751,8 @@ Ext.define('Ext.data.Validations', {
     },
 
     /**
-     * Validates that the given value is present in the configured `list`.
+     * Validates that the given value is not present in the configured `list`.
+     * 
      * For example:
      *
      *     validations: [{type: 'exclusion', field: 'username', list: ['Admin', 'Operator']}]
@@ -59154,7 +59768,6 @@ Ext.define('Ext.data.Validations', {
 
 /**
  * @author Ed Spencer
- * @aside guide models
  *
  * A Model represents some object that your application manages. For example, one might define a Model for Users,
  * Products, Cars, or any other real-world object that we want to model in the system. Models are registered via the
@@ -59367,6 +59980,12 @@ Ext.define('Ext.data.Validations', {
  * A Store is just a collection of Model instances - usually loaded from a server somewhere. Store can also maintain a
  * set of added, updated and removed Model instances to be synchronized with the server via the Proxy. See the {@link
  * Ext.data.Store Store docs} for more information on Stores.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.Model', {
     alternateClassName: 'Ext.data.Record',
@@ -59748,6 +60367,7 @@ Ext.define('Ext.data.Model', {
             fields = me.getFields().items,
             ln = fields.length,
             modified = me.modified,
+            modifiedFieldNames = [],
             data = me.data,
             i, field, fieldName, value, id;
 
@@ -59761,6 +60381,14 @@ Ext.define('Ext.data.Model', {
                     value = field._convert(value, me);
                 }
 
+                if(data[fieldName] !== value) {
+                    if(modifiedFieldNames.length === 0 && !me.editing) {
+                        this.beginEdit()
+                    }
+
+                    modifiedFieldNames.push(fieldName);
+                }
+
                 data[fieldName] = value;
             } else if (Ext.isFunction(field._convert)) {
 				value = field._convert(value, me);
@@ -59770,6 +60398,10 @@ Ext.define('Ext.data.Model', {
 
         if (me.associations.length) {
             me.handleInlineAssociationData(rawData);
+        }
+
+        if(modifiedFieldNames.length > 0 && me.editing) {
+            this.endEdit(false, modifiedFieldNames);
         }
 
         return this;
@@ -60994,7 +61626,6 @@ Ext.define('Ext.util.Grouper', {
 
 /**
  * @author Ed Spencer
- * @aside guide stores
  *
  * The Store class encapsulates a client side cache of {@link Ext.data.Model Model} objects. Stores load
  * data via a {@link Ext.data.proxy.Proxy Proxy}, and also provide functions for {@link #sort sorting},
@@ -61484,7 +62115,7 @@ Ext.define('Ext.data.Store', {
         proxy: undefined,
 
         /**
-         * @cfg {Object[]} fields
+         * @cfg {Object[]/Ext.util.Collection} fields
          * Returns Ext.util.Collection not just an Object.
          * Use in place of specifying a {@link #model} configuration. The fields should be a
          * set of {@link Ext.data.Field} configuration objects. The store will automatically create a {@link Ext.data.Model}
@@ -62106,9 +62737,7 @@ Ext.define('Ext.data.Store', {
                 });
             }
         }
-        if (oldGrouper) {
-            this.fireEvent('refresh', this, data);
-        }
+        this.fireEvent('refresh', this, data);
     },
 
     /**
@@ -63977,7 +64606,6 @@ Ext.define('Ext.event.publisher.Publisher', {
 
 /**
  * @author Ed Spencer
- * @aside guide stores
  *
  * Small helper class to make creating {@link Ext.data.Store}s from Array data easier. An ArrayStore will be
  * automatically configured with a {@link Ext.data.reader.Array}.
@@ -64013,6 +64641,12 @@ Ext.define('Ext.event.publisher.Publisher', {
  *
  * **Note:** Although not listed here, this class accepts all of the configuration options of
  * **{@link Ext.data.reader.Array ArrayReader}**.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.ArrayStore', {
     extend:  Ext.data.Store ,
@@ -64299,8 +64933,6 @@ Ext.define('Ext.direct.Manager', {
 });
 
 /**
- * @aside guide proxies
- *
  * This class is used to send requests to the server using {@link Ext.direct.Manager Ext.Direct}. When a
  * request is made, the transport mechanism is handed off to the appropriate
  * {@link Ext.direct.RemotingProvider Provider} to complete the call.
@@ -64333,6 +64965,12 @@ Ext.define('Ext.direct.Manager', {
  *         }
  *     });
  *     User.load(1);
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.Direct', {
     extend:  Ext.data.proxy.Server ,
@@ -64510,8 +65148,6 @@ Ext.define('Ext.data.proxy.Direct', {
 });
 
 /**
- * @aside guide stores
- *
  * Small helper class to create an {@link Ext.data.Store} configured with an {@link Ext.data.proxy.Direct}
  * and {@link Ext.data.reader.Json} to make interacting with an {@link Ext.direct.Manager} server-side
  * {@link Ext.direct.Provider Provider} easier. To create a different proxy/reader combination create a basic
@@ -64531,7 +65167,12 @@ Ext.define('Ext.data.proxy.Direct', {
  *             }
  *         }
  *     });
- *
+ *     
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.DirectStore', {
     extend:  Ext.data.Store ,
@@ -64549,7 +65190,6 @@ Ext.define('Ext.data.DirectStore', {
 });
 
 /**
- * @aside guide ajax
  * @singleton
  *
  * This class is used to create JsonP requests. JsonP is a mechanism that allows for making requests for data cross
@@ -64596,6 +65236,14 @@ Ext.define('Ext.data.DirectStore', {
  *     });
  *
  * See the {@link #request} method for more details on making a JsonP request.
+ *
+ * ###Further Reading
+ * [Sencha Touch AJAX Guide](../../../core_concepts/using_ajax.html)
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
+ * 
  */
 Ext.define('Ext.data.JsonP', {
     alternateClassName: 'Ext.util.JSONP',
@@ -66252,8 +66900,6 @@ Ext.define('Ext.data.NodeStore', {
 });
 
 /**
- * @aside guide stores
- *
  * The TreeStore is a store implementation that allows for nested data.
  *
  * It provides convenience methods for loading nodes, as well as the ability to use
@@ -66271,6 +66917,12 @@ Ext.define('Ext.data.NodeStore', {
  * For the tree to read nested data, the {@link Ext.data.reader.Reader} must be configured with a root property,
  * so the reader can find nested data for each node. If a root is not specified, it will default to
  * 'children'.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.TreeStore', {
     extend:  Ext.data.NodeStore ,
@@ -66421,6 +67073,10 @@ Ext.define('Ext.data.TreeStore', {
      * @return {Ext.data.NodeInterface}
      */
     getNodeById: function(id) {
+        return this.data.getByKey(id);
+    },
+
+    getById: function(id) {
         return this.data.getByKey(id);
     },
 
@@ -66916,7 +67572,6 @@ Ext.define('Ext.data.identifier.Uuid', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * The JsonP proxy is useful when you need to load data from a domain other than the one your application is running on. If
  * your application is running on http://domainA.com it cannot use {@link Ext.data.proxy.Ajax Ajax} to load its data
@@ -67043,6 +67698,12 @@ Ext.define('Ext.data.identifier.Uuid', {
  *         responseString = jsonString;
  *     }
  *     Response.Write(responseString);
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.JsonP', {
     extend:  Ext.data.proxy.Server ,
@@ -67267,7 +67928,7 @@ Ext.define('Ext.data.proxy.WebStorage', {
         if (!this.getId()) {
             this.setId(model.modelName);
         }
-        
+
         this.callParent(arguments);
     },
 
@@ -67554,6 +68215,7 @@ Ext.define('Ext.data.proxy.WebStorage', {
             me.setIds(ids);
         }
 
+        delete this.cache[id];
         me.getStorageObject().removeItem(me.getRecordKey(id));
     },
 
@@ -67691,7 +68353,6 @@ Ext.define('Ext.data.proxy.WebStorage', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * The LocalStorageProxy uses the new HTML5 localStorage API to save {@link Ext.data.Model Model} data locally on the
  * client browser. HTML5 localStorage is a key-value store (e.g. cannot save complex objects like JSON), so
@@ -67750,6 +68411,12 @@ Ext.define('Ext.data.proxy.WebStorage', {
  *
  * It's important to supply this unique ID as it cannot be reliably determined otherwise. If no id is provided but the
  * attached store has a storeId, the storeId will be used. If neither option is presented the proxy will throw an error.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html) 
  */
 Ext.define('Ext.data.proxy.LocalStorage', {
     extend:  Ext.data.proxy.WebStorage ,
@@ -67764,7 +68431,6 @@ Ext.define('Ext.data.proxy.LocalStorage', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * The Rest proxy is a specialization of the {@link Ext.data.proxy.Ajax AjaxProxy} which simply maps the four actions
  * (create, read, update and destroy) to RESTful HTTP verbs. For example, let's set up a {@link Ext.data.Model Model}
@@ -67861,6 +68527,12 @@ Ext.define('Ext.data.proxy.LocalStorage', {
  * details.
  *
  * [1]: source/Rest.html#Ext-data-proxy-Rest-method-buildUrl
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.Rest', {
     extend:  Ext.data.proxy.Ajax ,
@@ -67939,7 +68611,6 @@ Ext.define('Ext.data.proxy.Rest', {
 
 /**
  * @author Ed Spencer
- * @aside guide proxies
  *
  * Proxy which uses HTML5 session storage as its data storage/retrieval mechanism. If this proxy is used in a browser
  * where session storage is not supported, the constructor will throw an error. A session storage proxy requires a
@@ -67966,6 +68637,12 @@ Ext.define('Ext.data.proxy.Rest', {
  * Note that session storage is different to local storage (see {@link Ext.data.proxy.LocalStorage}) - if a browser
  * session is ended (e.g. by closing the browser) then all data in a SessionStorageProxy are lost. Browser restarts
  * don't affect the {@link Ext.data.proxy.LocalStorage} - the data are preserved.
+ *
+ * ###Further Reading
+ * [Sencha Touch Data Overview](../../../core_concepts/data/data_package_overview.html)
+ * [Sencha Touch Store Guide](../../../core_concepts/data/stores.html)
+ * [Sencha Touch Models Guide](../../../core_concepts/data/models.html)
+ * [Sencha Touch Proxy Guide](../../../core_concepts/data/proxies.html)
  */
 Ext.define('Ext.data.proxy.SessionStorage', {
     extend:  Ext.data.proxy.WebStorage ,
@@ -67985,14 +68662,14 @@ Ext.define('Ext.data.proxy.SessionStorage', {
  *
  * You can create a Store for the proxy, for example:
  *
- *    Ext.require(["Ext.data.proxy.SQL"]);
+ *     Ext.require(["Ext.data.proxy.SQL"]);
  *
- *    Ext.define("User", {
- *       extend: "Ext.data.Model",
- *       config: {
- *          fields: [ "firstName", "lastName" ]
- *       }
- *     });
+ *     Ext.define("User", {
+ *        extend: "Ext.data.Model",
+ *        config: {
+ *           fields: [ "firstName", "lastName" ]
+ *        }
+ *      });
  *
  *     Ext.create("Ext.data.Store", {
  *        model: "User",
@@ -68011,7 +68688,7 @@ Ext.define('Ext.data.proxy.SessionStorage', {
  *
  * To destroy a table use:
  *
- *    Ext.getStore("Users").getModel().getProxy().dropTable();
+ *     Ext.getStore("Users").getProxy().dropTable();
  *
  * To recreate a table use:
  *
@@ -69089,9 +69766,6 @@ Ext.define('Ext.data.writer.Xml', {
 });
 
 /**
- * @aside video list
- * @aside guide list
- *
  * IndexBar is a component used to display a list of data (primarily an alphabet) which can then be used to quickly
  * navigate through a list (see {@link Ext.List}) of data. When a user taps on an item in the {@link Ext.IndexBar},
  * it will fire the {@link #index} event.
@@ -69143,6 +69817,8 @@ Ext.define('Ext.data.writer.Xml', {
  *        hideOnMaskTap: false
  *     });
  *
+ * ###Further Reading
+ * [Sencha Touch DataView Guide](../../../components/list.html)
 */
 Ext.define('Ext.dataview.IndexBar', {
     extend:  Ext.Component ,
@@ -69183,6 +69859,13 @@ Ext.define('Ext.dataview.IndexBar', {
          */
         listPrefix: null
     },
+    platformConfig: [
+        {
+            theme: ['Blackberry', 'Blackberry103'],
+            direction: 'vertical',
+            letters: ['*', '#', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+        }
+    ],
     // @private
     itemCls: Ext.baseCSSPrefix + '',
 
@@ -69193,11 +69876,31 @@ Ext.define('Ext.dataview.IndexBar', {
     },
 
     getElementConfig: function() {
-        return {
-            reference: 'wrapper',
-            classList: ['x-centered', 'x-indexbar-wrapper'],
-            children: [this.callParent()]
-        };
+        // Blackberry Specific code for Index Bar Indicator
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
+            return {
+                reference: 'wrapper',
+                classList: ['x-centered', 'x-indexbar-wrapper'],
+                children: [
+                    {
+                        reference: 'indicator',
+                        classList: ['x-indexbar-indicator'],
+                        hidden: true,
+                        children: [{
+                            reference: 'indicatorInner',
+                            classList: ['x-indexbar-indicator-inner']
+                        }]
+                    },
+                    this.callParent()
+                ]
+            };
+        } else {
+            return {
+                reference: 'wrapper',
+                classList: ['x-centered', 'x-indexbar-wrapper'],
+                children: [this.callParent()]
+            };
+        }
     },
 
     updateLetters: function(letters) {
@@ -69229,6 +69932,7 @@ Ext.define('Ext.dataview.IndexBar', {
 
         this.innerElement.on({
             touchstart: this.onTouchStart,
+            touchend: this.onTouchEnd,
             dragend: this.onDragEnd,
             drag: this.onDrag,
             scope: this
@@ -69242,35 +69946,62 @@ Ext.define('Ext.dataview.IndexBar', {
         this.onDrag(e);
     },
 
+    onTouchEnd: function(e) {
+        this.onDragEnd();
+    },
+
     // @private
     onDragEnd: function() {
         this.innerElement.removeCls(this.getBaseCls() + '-pressed');
+
+        // Blackberry Specific code for Index Bar Indicator
+        if(this.indicator) {
+            this.indicator.hide();
+        }
     },
 
     // @private
     onDrag: function(e) {
         var point = Ext.util.Point.fromEvent(e),
-            target,
+            target, isValidTarget,
             pageBox = this.pageBox;
 
         if (!pageBox) {
             pageBox = this.pageBox = this.el.getPageBox();
         }
 
+
         if (this.getDirection() === 'vertical') {
             if (point.y > pageBox.bottom || point.y < pageBox.top) {
                 return;
             }
             target = Ext.Element.fromPoint(pageBox.left + (pageBox.width / 2), point.y);
+            isValidTarget = target.getParent() == this.element;
+
+            // Blackberry Specific code for Index Bar Indicator
+            if(this.indicator) {
+                this.indicator.show();
+
+                var halfIndicatorHeight = this.indicator.getHeight() / 2,
+                    y = point.y - this.element.getY();
+
+                y = Math.min(Math.max(y, halfIndicatorHeight), this.element.getHeight() - halfIndicatorHeight);
+
+                if (this.indicatorInner && isValidTarget) {
+                    this.indicatorInner.setHtml(target.getHtml().toUpperCase());
+                }
+                this.indicator.setTop(y - (halfIndicatorHeight));
+            }
         }
         else {
             if (point.x > pageBox.right || point.x < pageBox.left) {
                 return;
             }
             target = Ext.Element.fromPoint(point.x, pageBox.top + (pageBox.height / 2));
+            isValidTarget = target.getParent() == this.element;
         }
 
-        if (target) {
+        if (target && isValidTarget) {
             this.fireEvent('index', this, target.dom.innerHTML, target);
         }
     },
@@ -69591,14 +70322,6 @@ Ext.define('Ext.dataview.component.SimpleListItem', {
             var disclosureProperty = dataview.getDisclosureProperty();
             disclosure[(data.hasOwnProperty(disclosureProperty) && data[disclosureProperty] === false) ? 'hide' : 'show']();
         }
-
-        /**
-         * @event updatedata
-         * Fires whenever the data of the DataItem is updated.
-         * @param {Ext.dataview.component.DataItem} this The DataItem instance.
-         * @param {Object} newData The new data.
-         */
-        me.fireEvent('updatedata', me, data);
     },
 
     destroy: function() {
@@ -69738,11 +70461,8 @@ Ext.define('Ext.util.PositionMap', {
 });
 
 /**
- * @aside guide list
- * @aside video list
- *
  * List is a custom styled DataView which allows Grouping, Indexing, Icons, and a Disclosure. See the
- * [Guide](#!/guide/list) and [Video](#!/video/list) for more.
+ * [Guide](../../../components/list.html) for more.
  *
  *     @example miniphone preview
  *     Ext.create('Ext.List', {
@@ -69848,6 +70568,9 @@ Ext.define('Ext.util.PositionMap', {
  *             text: 'Load More...'
  *         }]
  *     });
+ *
+ * ###Further Reading
+ * [Sencha Touch DataView Guide](../../../components/list.html)
  */
 Ext.define('Ext.dataview.List', {
     alternateClassName: 'Ext.List',
@@ -69920,7 +70643,7 @@ Ext.define('Ext.dataview.List', {
          * Whether or not to group items in the provided Store with a header for each item.
          * @accessor
          */
-        grouped: false,
+        grouped: null,
 
         /**
          * @cfg {Boolean/Function/Object} onItemDisclosure
@@ -70047,8 +70770,6 @@ Ext.define('Ext.dataview.List', {
 
         minimumBufferDistance: 5,
 
-        useHeaders: true,
-
         /**
          * @cfg {Boolean} striped
          * Set this to true if you want the items in the list to be zebra striped, alternating their
@@ -70089,6 +70810,7 @@ Ext.define('Ext.dataview.List', {
     beforeInitialize: function() {
         var me = this,
             container = me.container,
+            baseCls = me.getBaseCls(),
             scrollable, scrollViewElement, pinnedHeader;
 
         Ext.apply(me, {
@@ -70140,7 +70862,7 @@ Ext.define('Ext.dataview.List', {
             translatable: {
                 translationMethod: this.translationMethod
             },
-            cls: ['x-list-header', 'x-list-header-swap']
+            cls: [baseCls + '-header', baseCls + '-header-swap']
         });
         pinnedHeader.translate(0, -10000);
         pinnedHeader.$position = -10000;
@@ -70481,7 +71203,7 @@ Ext.define('Ext.dataview.List', {
                     }
                 }
 
-                if (grouped && me.getUseHeaders() && me.headerIndices && me.headerIndices[item.$dataIndex]) {
+                if (grouped && me.headerIndices && me.headerIndices[item.$dataIndex]) {
                     item.getHeader().translate(0, transY);
                     transY += me.headerHeight;
                 }
@@ -70549,7 +71271,6 @@ Ext.define('Ext.dataview.List', {
             listItems = me.listItems,
             infinite = me.getInfinite(),
             scrollElement = me.scrollElement,
-            useHeaders = me.getUseHeaders(),
             item, header, itemCls;
 
         item = Ext.factory(config);
@@ -70561,18 +71282,16 @@ Ext.define('Ext.dataview.List', {
             item.addCls(itemCls);
         }
 
-        if (useHeaders) {
-            header = item.getHeader();
-            if (!infinite) {
-                header.addCls(itemCls);
-            } else {
-                header.setTranslatable({
-                    translationMethod: this.translationMethod
-                });
-                header.translate(0, -10000);
+        header = item.getHeader();
+        if (!infinite) {
+            header.addCls(itemCls);
+        } else {
+            header.setTranslatable({
+                translationMethod: this.translationMethod
+            });
+            header.translate(0, -10000);
 
-                scrollElement.insertFirst(header.renderElement);
-            }
+            scrollElement.insertFirst(header.renderElement);
         }
 
         container.doAdd(item);
@@ -70624,12 +71343,11 @@ Ext.define('Ext.dataview.List', {
             record = info.store.getAt(index),
             headerIndices = me.headerIndices,
             footerIndices = me.footerIndices,
-            useHeaders = me.getUseHeaders(),
-            header = useHeaders && item.getHeader(),
+            header = item.getHeader(),
             scrollDockItems = me.scrollDockItems,
             updatedItems = me.updatedItems,
-            currentItemCls = item.renderElement.classList,
-            currentHeaderCls = useHeaders && header.renderElement.classList,
+            currentItemCls = item.renderElement.classList.slice(),
+            currentHeaderCls = header.renderElement.classList.slice(),
             infinite = me.getInfinite(),
             storeCount = info.store.getCount(),
             itemCls = [],
@@ -70654,12 +71372,10 @@ Ext.define('Ext.dataview.List', {
                 item.hide();
             }
 
-            if (useHeaders) {
-                if (infinite) {
-                    header.translate(0, -10000);
-                } else {
-                    header.hide();
-                }
+            if (infinite) {
+                header.translate(0, -10000);
+            } else {
+                header.hide();
             }
             item.$hidden = true;
             return;
@@ -70715,7 +71431,7 @@ Ext.define('Ext.dataview.List', {
             itemCls.push(info.selectedCls);
         }
 
-        if (info.grouped && useHeaders) {
+        if (info.grouped) {
             if (headerIndices[index]) {
                 itemCls.push(info.headerCls);
                 headerCls.push(info.headerCls);
@@ -70723,8 +71439,8 @@ Ext.define('Ext.dataview.List', {
 
                 if (!infinite) {
                     header.renderElement.insertBefore(item.renderElement);
-                    header.show();
                 }
+                header.show();
             } else {
                 if (infinite) {
                     header.translate(0, -10000);
@@ -70736,6 +71452,10 @@ Ext.define('Ext.dataview.List', {
                 itemCls.push(info.footerCls);
                 headerCls.push(info.footerCls);
             }
+        }
+
+        if (!info.grouped) {
+            header.hide();
         }
 
         if (index === 0) {
@@ -70789,7 +71509,7 @@ Ext.define('Ext.dataview.List', {
             itemCls = Ext.Array.merge(itemCls, currentItemCls);
         }
 
-        if (useHeaders && currentHeaderCls) {
+        if (currentHeaderCls) {
             for (i = 0; i < headerRemoveCls.length; i++) {
                 Ext.Array.remove(currentHeaderCls, headerRemoveCls[i]);
             }
@@ -70800,13 +71520,10 @@ Ext.define('Ext.dataview.List', {
 
         if (item.classCache !== classCache) {
             item.renderElement.setCls(itemCls);
+            item.classCache = classCache;
         }
 
-        item.classCache = classCache;
-
-        if (useHeaders) {
-            header.renderElement.setCls(headerCls);
-        }
+        header.renderElement.setCls(headerCls);
     },
 
     updateAllListItems: function() {
@@ -70882,7 +71599,7 @@ Ext.define('Ext.dataview.List', {
                 // This is a private event used by some plugins
                 me.fireEvent('updatevisiblecount', this, me.visibleCount, currentVisibleCount);
             }
-        } else if (me.listItems.length && me.getUseHeaders() && me.getGrouped() && me.getPinHeaders()) {
+        } else if (me.listItems.length && me.getGrouped() && me.getPinHeaders()) {
             // Whenever the container resizes, headers might be in different locations. For this reason
             // we refresh the header position map
             me.updateHeaderMap();
@@ -71023,11 +71740,16 @@ Ext.define('Ext.dataview.List', {
         if (grouped) {
             me.addCls(cls);
             me.removeCls(unCls);
-        } else {
+        }
+        else {
             me.addCls(unCls);
             me.removeCls(cls);
         }
 
+        if (me.getInfinite()) {
+            me.refreshHeaderIndices();
+            me.handleItemHeights();
+        }
         me.updateAllListItems();
     },
 
@@ -71208,12 +71930,16 @@ Ext.define('Ext.dataview.List', {
         var me = this,
             store = me.getStore(),
             storeLn = store && store.getCount(),
-            groups = store.getGroups(),
-            groupLn = groups.length,
+            groups = store.getGrouper() ? store.getGroups() : null,
+            grouped = me.getGrouped(),
             headerIndices = me.headerIndices = {},
             footerIndices = me.footerIndices = {},
-            i, previousIndex, firstGroupedRecord, storeIndex;
+            i, previousIndex, firstGroupedRecord, storeIndex, groupLn;
 
+        if (!grouped || !groups) {
+            return footerIndices;
+        }
+        groupLn = groups.length;
         me.groups = groups;
 
         for (i = 0; i < groupLn; i++) {
@@ -71257,6 +71983,14 @@ Ext.define('Ext.dataview.List', {
         }
     },
 
+    /**
+     *
+     * Scrolls the list so that the specified record is at the top.
+     *
+     * @param record {Ext.data.Model} Record in the lists store to scroll to
+     * @param animate {Boolean} Determines if scrolling is animated to a cut
+     * @param overscroll {Boolean} Determines if list can be overscrolled
+     */
     scrollToRecord: function(record, animate, overscroll) {
         var me = this,
             scroller = me.container.getScrollable().getScroller(),
@@ -71277,7 +72011,7 @@ Ext.define('Ext.dataview.List', {
         }
         else {
             item = me.listItems[index];
-            if (me.getUseHeaders() && item.getHeader().isPainted()) {
+            if (item.getHeader().isPainted()) {
                 offset = item.getHeader().renderElement.dom.offsetTop;
             }
             else {
@@ -71405,7 +72139,7 @@ Ext.define('Ext.dataview.List', {
 
         var item = me.getItemAt(me.getStore().indexOf(record));
         if (me.container && !me.isDestroyed && item && item.isComponent) {
-            item.classCache = item.renderElement.classList;
+            item.classCache = item.renderElement.classList.slice();
         }
     },
 
@@ -71414,7 +72148,7 @@ Ext.define('Ext.dataview.List', {
 
         var item = me.getItemAt(me.getStore().indexOf(record));
         if (item && item.isComponent) {
-            item.classCache = item.renderElement.classList;
+            item.classCache = item.renderElement.classList.slice();
         }
     },
 
@@ -71552,9 +72286,9 @@ Ext.define('Ext.dataview.List', {
  *          store: store
  *      });
  *
- * @aside guide nested_list
- * @aside example nested-list
- * @aside example navigation-view
+ *
+ * ###Further Reading
+ * [Sencha Touch Nested List Guide](../../../components/nested_list.html)
  */
 Ext.define('Ext.dataview.NestedList', {
     alternateClassName: 'Ext.NestedList',
@@ -71690,7 +72424,7 @@ Ext.define('Ext.dataview.NestedList', {
          * A detailContainer is a reference to the container where a detail card
          * displays.
          *
-         * See http://docs.sencha.com/touch/2-2/#!/guide/nested_list-section-4
+         * See [Sencha Touch Nested List Guide](../../../components/nested_list.html)
          * and http://en.wikipedia.org/wiki/Miller_columns
          *
          * The two possible values for a detailContainer are undefined (default),
@@ -71724,7 +72458,7 @@ Ext.define('Ext.dataview.NestedList', {
          * about the item in the list. The detailCard lists the information at
          * the leaf.
          *
-         * See http://docs.sencha.com/touch/2-2/#!/guide/nested_list-section-3
+         * See [Sencha Touch Nested List Guide](../../../components/nested_list.html)
          * and http://en.wikipedia.org/wiki/Miller_columns
          *
          * @accessor
@@ -71790,10 +72524,14 @@ Ext.define('Ext.dataview.NestedList', {
             updateTitleText: false
         },
         {
-            theme: ['Blackberry'],
+            theme: ['Blackberry', 'Blackberry103'],
             toolbar: {
                 splitNavigation: true
             }
+        },
+        {
+            theme: ['Tizen'],
+            backText: ''
         }
     ],
 
@@ -72079,8 +72817,8 @@ Ext.define('Ext.dataview.NestedList', {
         }
 
         if (newStore) {
-            me.goToNode(newStore.getRoot());
             newStore.on(listeners);
+            me.goToNode(newStore.getRoot());
         }
     },
 
@@ -74873,7 +75611,9 @@ Ext.define('Ext.event.publisher.Dom', {
 
         var defaultView = doc.defaultView;
 
-        if (Ext.os.is.iOS && Ext.os.version.getMajor() < 5) {
+        // Some AndroidStock browsers (HP Slate for example) will not process any touch events unless a listener is added to document or body
+        // this listener must be to a touch event (touchstart, touchmove, touchend)
+        if ((Ext.os.is.iOS && Ext.os.version.getMajor() < 5) || Ext.browser.is.AndroidStock) {
             document.addEventListener(eventName, this.onEvent, !this.doesEventBubble(eventName));
         }
         else if (defaultView && defaultView.addEventListener) {
@@ -74892,7 +75632,7 @@ Ext.define('Ext.event.publisher.Dom', {
 
         var defaultView = doc.defaultView;
 
-        if (Ext.os.is.iOS && Ext.os.version.getMajor() < 5) {
+        if ((Ext.os.is.iOS && Ext.os.version.getMajor() < 5) && Ext.browser.is.AndroidStock) {
             document.removeEventListener(eventName, this.onEvent, !this.doesEventBubble(eventName));
         }
         else if (defaultView && defaultView.addEventListener) {
@@ -75333,37 +76073,15 @@ Ext.define('Ext.util.paintmonitor.CssAnimation', {
 });
 
 /**
- * @private
- */
-Ext.define('Ext.util.paintmonitor.OverflowChange', {
-
-    extend:  Ext.util.paintmonitor.Abstract ,
-
-    eventName: Ext.browser.is.Firefox ? 'overflow' : 'overflowchanged',
-
-    monitorClass: 'overflowchange',
-
-    onElementPainted: function(e) {
-        this.getCallback().apply(this.getScope(), this.getArgs());
-    }
-});
-
-/**
  *
  */
 Ext.define('Ext.util.PaintMonitor', {
                
-                                             
-                                              
+                                            
       
 
-    constructor: function(config) {
-        if (Ext.browser.is.Firefox || (Ext.browser.is.WebKit && Ext.browser.engineVersion.gtEq('536') && !Ext.os.is.Blackberry)) {
-            return new Ext.util.paintmonitor.OverflowChange(config);
-        }
-        else {
-            return new Ext.util.paintmonitor.CssAnimation(config);
-        }
+    constructor: function (config) {
+        return new Ext.util.paintmonitor.CssAnimation(config);
     }
 });
 
@@ -75845,13 +76563,8 @@ Ext.define('Ext.util.SizeMonitor', {
         if (Ext.browser.is.Firefox) {
             return new namespace.OverflowChange(config);
         }
-        else if (Ext.browser.is.WebKit) {
-            if (!Ext.browser.is.Silk && Ext.browser.engineVersion.gtEq('535')) {
-                return new namespace.OverflowChange(config);
-            }
-            else {
-                return new namespace.Scroll(config);
-            }
+        else if (Ext.browser.is.WebKit || Ext.browser.is.IE11) {
+            return new namespace.Scroll(config);
         }
         else {
             return new namespace.Default(config);
@@ -75976,6 +76689,8 @@ Ext.define('Ext.event.publisher.TouchGesture', {
     },
 
     constructor: function(config) {
+        var me = this;
+
         this.eventProcessors = {
             touchstart: this.onTouchStart,
             touchmove: this.onTouchMove,
@@ -76007,6 +76722,12 @@ Ext.define('Ext.event.publisher.TouchGesture', {
             this.screenPositionRatio = window.innerWidth / window.screen.width;
         }
         this.initConfig(config);
+
+        if (Ext.feature.has.Touch) {
+            // bind handlers that are only invoked when the browser has touchevents
+            me.onTargetTouchMove = me.onTargetTouchMove.bind(me);
+            me.onTargetTouchEnd = me.onTargetTouchEnd.bind(me);
+        }
 
         return this.callSuper();
     },
@@ -76053,10 +76774,10 @@ Ext.define('Ext.event.publisher.TouchGesture', {
             // when the element is being animated with webkit-transition (2 mousedowns without any mouseup)
             if (type === 'mousedown' && lastEventType && lastEventType !== 'mouseup') {
                 var fixedEvent = document.createEvent("MouseEvent");
-                    fixedEvent.initMouseEvent('mouseup', e.bubbles, e.cancelable,
-                        document.defaultView, e.detail, e.screenX, e.screenY, e.clientX,
-                        e.clientY, e.ctrlKey, e.altKey, e.shiftKey, e.metaKey, e.metaKey,
-                        e.button, e.relatedTarget);
+                fixedEvent.initMouseEvent('mouseup', e.bubbles, e.cancelable,
+                    document.defaultView, e.detail, e.screenX, e.screenY, e.clientX,
+                    e.clientY, e.ctrlKey, e.altKey, e.shiftKey, e.metaKey, e.metaKey,
+                    e.button, e.relatedTarget);
 
                 this.onEvent(fixedEvent);
             }
@@ -76221,6 +76942,28 @@ Ext.define('Ext.event.publisher.TouchGesture', {
         return changedTouches;
     },
 
+    syncTouches: function (touches) {
+        var touchIDs = [], len = touches.length,
+            i, id, touch, ghostTouches;
+
+        // Collect the actual touch IDs that exist
+        for (i = 0; i < len; i++) {
+            touch = touches[i];
+            touchIDs.push(touch.identifier);
+        }
+
+        // Compare actual IDs to cached IDs
+        // Remove any that are not real anymore
+        ghostTouches = Ext.Array.difference(this.currentIdentifiers, touchIDs);
+        len = ghostTouches.length;
+
+        for (i = 0; i < len; i++) {
+            id = ghostTouches[i];
+            Ext.Array.remove(this.currentIdentifiers, id);
+            delete this.touchesMap[id];
+        }
+    },
+
     factoryEvent: function(e) {
         return new Ext.event.Touch(e, null, this.touchesMap, this.currentIdentifiers);
     },
@@ -76228,14 +76971,38 @@ Ext.define('Ext.event.publisher.TouchGesture', {
     onTouchStart: function(e) {
         var changedTouches = e.changedTouches,
             target = e.target,
+            touches = e.touches,
             ln = changedTouches.length,
             isNotPreventable = this.isNotPreventable,
+            isTouch = (e.type === 'touchstart'),
+            me = this,
             i, touch, parent;
+
+        // Potentially sync issue from various reasons.
+        // example: ios8 does not dispatch touchend on audio element play/pause tap.
+        if (touches && touches.length < this.currentIdentifiers.length + 1) {
+            this.syncTouches(touches);
+        }
 
         this.updateTouches(changedTouches);
 
         e = this.factoryEvent(e);
         changedTouches = e.changedTouches;
+
+        // TOUCH-3934
+        // Android event system will not dispatch touchend for any multitouch
+        // event that has not been preventDefaulted.
+        if(Ext.browser.is.AndroidStock && this.currentIdentifiers.length >= 2) {
+            e.preventDefault();
+        }
+
+        // If targets are destroyed while touches are active on them
+        // we need these listeners to sync up our internal TouchesMap
+        if (isTouch) {
+            target.addEventListener('touchmove', me.onTargetTouchMove);
+            target.addEventListener('touchend', me.onTargetTouchEnd);
+            target.addEventListener('touchcancel', me.onTargetTouchEnd);
+        }
 
         for (i = 0; i < ln; i++) {
             touch = changedTouches[i];
@@ -76327,9 +77094,10 @@ Ext.define('Ext.event.publisher.TouchGesture', {
 
         this.invokeRecognizers('onTouchEnd', e);
 
-        // Only one touch currently active, and we're ending that one. So currentTouches should be 0 and clear the touchMap.
-        // This resolves an issue in iOS where it can sometimes not report a touchend/touchcancel
-        if (e.touches.length === 1 && currentIdentifiers.length) {
+        // This previously was set to e.touches.length === 1 to catch errors in syncing
+        // this has since been addressed to keep proper sync and now this is a catch for
+        // a sync error in touches to reset our internal maps
+        if (e.touches && e.touches.length === 0 && currentIdentifiers.length) {
             currentIdentifiers.length = 0;
             this.touchesMap = {};
         }
@@ -76341,6 +77109,38 @@ Ext.define('Ext.event.publisher.TouchGesture', {
                 this.animationQueued = false;
                 Ext.AnimationQueue.stop('onAnimationFrame', this);
             }
+        }
+    },
+
+    onTargetTouchMove: function(e) {
+        if (!Ext.getBody().contains(e.target)) {
+            this.onTouchMove(e);
+        }
+    },
+
+    onTargetTouchEnd: function(e) {
+        var me = this,
+            target = e.target,
+            touchCount=0,
+            touchTarget;
+
+        // Determine how many active touches there are on this target
+        for (identifier in this.touchesMap) {
+            touchTarget = this.touchesMap[identifier].target;
+            if (touchTarget === target ) {
+                touchCount++;
+            }
+        }
+
+        // If this is the last active touch on the target remove the target listeners
+        if (touchCount <= 1) {
+            target.removeEventListener('touchmove', me.onTargetTouchMove);
+            target.removeEventListener('touchend', me.onTargetTouchEnd);
+            target.removeEventListener('touchcancel', me.onTargetTouchEnd);
+        }
+
+        if (!Ext.getBody().contains(target)) {
+            me.onTouchEnd(e);
         }
     }
 
@@ -76376,12 +77176,22 @@ Ext.define('Ext.event.publisher.TouchGesture', {
             },
 
             onEvent: function(e) {
+                var type = e.type;
+                if (
+                        this.currentIdentifiers.length === 0 &&
+                        // This is for IE 10 and IE 11
+                        (e.pointerType === e.MSPOINTER_TYPE_TOUCH || e.pointerType === "touch") &&
+                        // This is for IE 10 and IE 11
+                        (type === "MSPointerMove" || type === "pointermove")
+                    ) {
+                    type = "MSPointerDown";
+                }
+
                 if ('button' in e && e.button > 0) {
                     return;
                 }
 
-                var type = this.pointerToTouchMap[e.type];
-
+                type = this.pointerToTouchMap[type];
                 e.identifier = e.pointerId;
                 e.changedTouches = [e];
 
@@ -77693,8 +78503,6 @@ Ext.define('Ext.event.recognizer.VerticalSwipe', {
 });
 
 /**
- * @aside guide forms
- *
  * The checkbox field is an enhanced version of the native browser checkbox and is great for enabling your user to
  * choose one or more items from a set (for example choosing toppings for a pizza order). It works like any other
  * {@link Ext.field.Field field} and is usually found in the context of a form:
@@ -77749,7 +78557,8 @@ Ext.define('Ext.event.recognizer.VerticalSwipe', {
  *
  *     form.getValues(); //contains a key called 'tomato' if the Tomato field is still checked
  *     form.submit(); //will send 'tomato' in the form submission data
- *
+ *     
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Checkbox', {
     extend:  Ext.field.Field ,
@@ -77826,7 +78635,7 @@ Ext.define('Ext.field.Checkbox', {
     },
 
     platformConfig: [{
-        theme: ['Windows', 'Blackberry'],
+        theme: ['Windows', 'Blackberry', 'Blackberry103', 'Tizen'],
         labelAlign: 'left'
     }],
 
@@ -78516,7 +79325,6 @@ Ext.define('Ext.picker.Slot', {
 });
 
 /**
- * @aside example pickers
  * A general picker class. {@link Ext.picker.Slot}s are used to organize multiple scrollable slots into a single picker. {@link #slots} is
  * the only necessary configuration.
  *
@@ -79132,8 +79940,6 @@ Ext.define('Ext.picker.Picker', {
 
 
 /**
- * @aside guide forms
- *
  * Simple Select field wrapper. Example usage:
  *
  *     @example
@@ -79157,6 +79963,8 @@ Ext.define('Ext.picker.Picker', {
  *             }
  *         ]
  *     });
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Select', {
     extend:  Ext.field.Text ,
@@ -79305,6 +80113,10 @@ Ext.define('Ext.field.Select', {
         {
             theme: ['Windows'],
             pickerSlotAlign: 'left'
+        },
+        {
+            theme: ['Tizen'],
+            usePicker: false
         }
     ],
 
@@ -79326,7 +80138,7 @@ Ext.define('Ext.field.Select', {
             component.input.dom.disabled = true;
         }
 
-        if (Ext.theme.name === "Blackberry") {
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
             this.label.on({
                 scope: me,
                 tap: "onFocus"
@@ -79335,7 +80147,7 @@ Ext.define('Ext.field.Select', {
     },
 
     getElementConfig: function() {
-        if (Ext.theme.name === "Blackberry") {
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
                 var prefix = Ext.baseCSSPrefix;
 
                 return {
@@ -79714,7 +80526,7 @@ Ext.define('Ext.field.Select', {
 
     // @private
     updateLabelWidth: function() {
-        if (Ext.theme.name === "Blackberry") {
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
             return;
         } else {
             this.callParent(arguments);
@@ -79723,7 +80535,7 @@ Ext.define('Ext.field.Select', {
 
     // @private
     updateLabelAlign: function() {
-        if (Ext.theme.name === "Blackberry") {
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
             return;
         } else {
             this.callParent(arguments);
@@ -79736,14 +80548,29 @@ Ext.define('Ext.field.Select', {
      * @chainable
      */
     reset: function() {
-        var store = this.getStore(),
-            record = (this.originalValue) ? this.originalValue : store.getAt(0);
+        var me = this,
+            record;
 
-        if (store && record) {
-            this.setValue(record);
+        if (me.getAutoSelect()) {
+            var store = me.getStore();
+
+            record = (me.originalValue) ? me.originalValue : store.getAt(0);
+        } else {
+            var usePicker = me.getUsePicker(),
+                picker = usePicker ? me.picker : me.listPanel;
+
+            if (picker) {
+                picker = picker.child(usePicker ? 'pickerslot' : 'dataview');
+
+                picker.deselectAll();
+            }
+
+            record = null;
         }
 
-        return this;
+        me.setValue(record);
+
+        return me;
     },
 
     onFocus: function(e) {
@@ -80247,8 +81074,6 @@ Ext.define('Ext.picker.Date', {
 });
 
 /**
- * @aside guide forms
- *
  * This is a specialized field which shows a {@link Ext.picker.Date} when tapped. If it has a predefined value,
  * or a value is selected in the {@link Ext.picker.Date}, it will be displayed like a normal {@link Ext.field.Text}
  * (but not selectable/changable).
@@ -80260,6 +81085,8 @@ Ext.define('Ext.picker.Date', {
  *
  * {@link Ext.field.DatePicker} fields are very simple to implement, and have no required configurations.
  *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
+ * 
  * ## Examples
  *
  * It can be very useful to set a default {@link #value} configuration on {@link Ext.field.DatePicker} fields. In
@@ -80662,8 +81489,6 @@ Ext.define('Ext.field.DatePickerNative', {
 });
 
 /**
- * @aside guide forms
- *
  * The Email field creates an HTML5 email input and is usually created inside a form. Because it creates an HTML email
  * input field, most browsers will show a specialized virtual keyboard for email address input. Aside from that, the
  * email field is just a normal text field. Here's an example of how to use it in a form:
@@ -80702,6 +81527,8 @@ Ext.define('Ext.field.DatePickerNative', {
  * provide, including getting and setting the value at runtime, validations and various events that are fired as the
  * user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional functionality
  * available.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Email', {
     extend:  Ext.field.Text ,
@@ -80736,6 +81563,14 @@ Ext.define('Ext.field.Email', {
 Ext.define('Ext.field.FileInput', {
     extend:  Ext.field.Input ,
     xtype: 'fileinput',
+
+    /**
+     * @event change
+     * Fires just before the field blurs if the field value has changed
+     * @param {Ext.field.Text} this This field
+     * @param {Mixed} newValue The new value
+     * @param {Mixed} oldValue The original value
+     */
 
     config: {
         type: "file",
@@ -80887,8 +81722,6 @@ Ext.define('Ext.field.FileInput', {
 });
 
 /**
- * @aside guide forms
- *
  * Creates an HTML file input field on the page. This is usually used to upload files to remote server. File fields are usually
  * created inside a form like this:
  *
@@ -80910,6 +81743,8 @@ Ext.define('Ext.field.FileInput', {
  *             }
  *         ]
  *     });
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 
 Ext.define('Ext.field.File', {
@@ -80917,9 +81752,18 @@ Ext.define('Ext.field.File', {
     xtype : 'filefield',
                                       
 
+    /**
+     * @event change
+     * Fires when a file has been selected
+     * @param {Ext.field.File} this This field
+     * @param {Mixed} newValue The new value
+     * @param {Mixed} oldValue The original value
+     */
+
     config : {
         component: {
-            xtype : 'fileinput'
+            xtype : 'fileinput',
+            fastFocus: false
         }
     },
 
@@ -80971,8 +81815,6 @@ Ext.define('Ext.field.File', {
 });
 
 /**
- * @aside guide forms
- *
  * Hidden fields allow you to easily inject additional data into a {@link Ext.form.Panel form} without displaying
  * additional fields on the screen. This is often useful for sending dynamic or previously collected data back to the
  * server in the same request as the normal form submission. For example, here is how we might set up a form to send
@@ -81010,6 +81852,8 @@ Ext.define('Ext.field.File', {
  *
  *     var userId = form.down('hiddenfield')[0];
  *     userId.setValue(1234);
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Hidden', {
     extend:  Ext.field.Text ,
@@ -81047,8 +81891,6 @@ Ext.define('Ext.field.Hidden', {
 });
 
 /**
- * @aside guide forms
- *
  * The Number field creates an HTML5 number input and is usually created inside a form. Because it creates an HTML
  * number input field, most browsers will show a specialized virtual keyboard for entering numbers. The Number field
  * only accepts numerical input and also provides additional spinner UI that increases or decreases the current value
@@ -81116,6 +81958,8 @@ Ext.define('Ext.field.Hidden', {
  * fields provide, including getting and setting the value at runtime, validations and various events that are fired as
  * the user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional functionality
  * available.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Number', {
     extend:  Ext.field.Text ,
@@ -81219,8 +82063,6 @@ Ext.define('Ext.field.Number', {
 });
 
 /**
- * @aside guide forms
- *
  * The Password field creates a password input and is usually created inside a form. Because it creates a password
  * field, when the user enters text it will show up as stars. Aside from that, the password field is just a normal text
  * field. Here's an example of how to use it in a form:
@@ -81259,6 +82101,8 @@ Ext.define('Ext.field.Number', {
  * fields provide, including getting and setting the value at runtime, validations and various events that are fired as
  * the user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional functionality
  * available.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Password', {
     extend:  Ext.field.Text ,
@@ -81267,24 +82111,152 @@ Ext.define('Ext.field.Password', {
 
     config: {
         /**
-         * @cfg
+         * @cfg autoCapitalize
          * @inheritdoc
          */
         autoCapitalize: false,
 
         /**
-         * @cfg
+         * @cfg revealable {Boolean}
+         * Enables the reveal toggle button that will show the password in clear text. This is currently only implemented in the Blackberry theme
+         */
+        revealable: false,
+
+        /**
+         * @cfg revealed {Boolean}
+         * A value of 'true' for this config will show the password from clear text
+         */
+        revealed: false,
+
+        /**
+         * @cfg component
          * @inheritdoc
          */
         component: {
 	        type: 'password'
 	    }
+    },
+
+    platformConfig: [{
+        theme: ['Blackberry', 'Blackberry103'],
+        revealable: true
+    }],
+
+    isPassword: true,
+
+    initialize: function() {
+        this.callParent(arguments);
+        this.addCls(Ext.baseCSSPrefix + 'field-password');
+    },
+
+    updateRevealable: function(newValue, oldValue) {
+        if(newValue === oldValue) return;
+
+        if(this.$revealIcon) {
+            this.getComponent().element.removeChild(this.$revealIcon);
+            this.$revealIcon = null;
+        }
+
+        if(newValue === true) {
+            this.$revealIcon = new Ext.Element(Ext.Element.create({cls:'x-reveal-icon'}, true));
+            this.$revealIcon.on({
+                tap: 'onRevealIconTap',
+                touchstart: 'onRevealIconPress',
+                touchend: 'onRevealIconRelease',
+                scope: this
+            });
+            this.getComponent().element.appendChild(this.$revealIcon);
+        }
+    },
+
+    updateRevealed: function(newValue, oldValue) {
+        var component = this.getComponent();
+
+        if(newValue) {
+            this.element.addCls(Ext.baseCSSPrefix + 'revealed');
+            component.setType("text");
+        } else {
+            this.element.removeCls(Ext.baseCSSPrefix + 'revealed');
+            component.setType("password");
+        }
+    },
+
+    // @private
+    updateValue: function(newValue) {
+        var component  = this.getComponent(),
+        // allows newValue to be zero but not undefined or null (other falsey values)
+            valueValid = newValue !== undefined && newValue !== null && newValue !== "";
+
+        if (component) {
+            component.setValue(newValue);
+        }
+
+        this[valueValid && this.isDirty() ? 'showClearIcon' : 'hideClearIcon']();
+
+        this.syncEmptyCls();
+
+        this[valueValid ? 'showRevealIcon' : 'hideRevealIcon']();
+    },
+
+    doKeyUp: function(me, e) {
+        // getValue to ensure that we are in sync with the dom
+        var value      = me.getValue(),
+        // allows value to be zero but not undefined or null (other falsey values)
+            valueValid = value !== undefined && value !== null && value !== "";
+
+        this[valueValid ? 'showClearIcon' : 'hideClearIcon']();
+
+        if (e.browserEvent.keyCode === 13) {
+            me.fireAction('action', [me, e], 'doAction');
+        }
+
+        this[valueValid ? 'showRevealIcon' : 'hideRevealIcon']();
+    },
+
+    // @private
+    showRevealIcon: function() {
+        var me         = this,
+            value      = me.getValue(),
+        // allows value to be zero but not undefined or null (other falsey values)
+            valueValid = value !== undefined && value !== null && value !== "";
+
+        if (me.getRevealable() && !me.getDisabled() && valueValid) {
+            me.element.addCls(Ext.baseCSSPrefix + 'field-revealable');
+        }
+
+        return me;
+    },
+
+    // @private
+    hideRevealIcon: function() {
+        if (this.getRevealable()) {
+            this.element.removeCls(Ext.baseCSSPrefix + 'field-revealable');
+        }
+    },
+
+    onRevealIconTap: function(e) {
+        this.fireAction('revealicontap', [this, e], 'doRevealIconTap');
+    },
+
+    // @private
+    doRevealIconTap: function(me, e) {
+        if(this.getRevealed()) {
+            this.setRevealed(false)
+        } else {
+            this.setRevealed(true)
+        }
+    },
+
+    onRevealIconPress: function() {
+        this.$revealIcon.addCls(Ext.baseCSSPrefix + 'pressing');
+    },
+
+    onRevealIconRelease: function() {
+        this.$revealIcon.removeCls(Ext.baseCSSPrefix + 'pressing');
     }
 });
 
 /**
- * @aside guide forms
- *
  * The radio field is an enhanced version of the native browser radio controls and is a good way of allowing your user
  * to choose one option out of a selection of several (for example, choosing a favorite color):
  *
@@ -81322,6 +82294,7 @@ Ext.define('Ext.field.Password', {
  *     form.getValues(); //looks like {color: 'red'}
  *     form.submit(); //sends a single field back to the server (in this case color: red)
  *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Radio', {
     extend:  Ext.field.Checkbox ,
@@ -81450,8 +82423,6 @@ Ext.define('Ext.field.Radio', {
 });
 
 /**
- * @aside guide forms
- *
  * The Search field creates an HTML5 search input and is usually created inside a form. Because it creates an HTML
  * search input type, the visual styling of this input is slightly different to normal text input controls (the corners
  * are rounded), though the virtual keyboard displayed by the operating system is the standard keyboard control.
@@ -81488,6 +82459,8 @@ Ext.define('Ext.field.Radio', {
  * fields provide, including getting and setting the value at runtime, validations and various events that are fired
  * as the user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional
  * functionality available.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Search', {
     extend:  Ext.field.Text ,
@@ -81534,6 +82507,13 @@ Ext.define('Ext.slider.Thumb', {
         baseCls: Ext.baseCSSPrefix + 'thumb',
 
         /**
+         * @cfg {String} pressedCls
+         * The CSS class to add to the Slider when it is pressed.
+         * @accessor
+         */
+        pressedCls: Ext.baseCSSPrefix + 'thumb-pressing',
+
+        /**
          * @cfg
          * @inheritdoc
          */
@@ -81544,14 +82524,16 @@ Ext.define('Ext.slider.Thumb', {
 
     // Strange issue where the thumbs translation value is not being set when it is not visible. Happens when the thumb 
     // is contained within a modal panel.
-    platformConfig: [{
-        platform: ['ie10'],
-        draggable: {
-            translatable: {
-                translationMethod: 'csstransform'
+    platformConfig: [
+        {
+            platform: ['ie10'],
+            draggable: {
+                translatable: {
+                    translationMethod: 'csstransform'
+                }
             }
         }
-    }],
+    ],
 
     elementWidth: 0,
 
@@ -81565,7 +82547,62 @@ Ext.define('Ext.slider.Thumb', {
             scope: this
         });
 
+        this.getDraggable().on({
+            touchstart: 'onPress',
+            touchend: 'onRelease',
+            scope: this
+        });
+
         this.element.on('resize', 'onElementResize', this);
+    },
+
+    getTemplate: function() {
+        if (Ext.theme.is.Blackberry || Ext.theme.is.Blackberry103) {
+            return [
+                {
+                    tag: 'div',
+                    className: Ext.baseCSSPrefix + 'thumb-inner',
+                    reference: 'innerElement'
+                }
+            ]
+        } else {
+            return this.template;
+        }
+    },
+
+
+    /**
+     * @private
+     */
+    updatePressedCls: function(pressedCls, oldPressedCls) {
+        var element = this.element;
+
+        if (element.hasCls(oldPressedCls)) {
+            element.replaceCls(oldPressedCls, pressedCls);
+        }
+    },
+
+    // @private
+    onPress: function() {
+        var me = this,
+            element = me.element,
+            pressedCls = me.getPressedCls();
+
+        if (!me.getDisabled()) {
+            element.addCls(pressedCls);
+        }
+    },
+
+    // @private
+    onRelease: function(e) {
+        this.fireAction('release', [this, e], 'doRelease');
+    },
+
+    // @private
+    doRelease: function(me, e) {
+        if (!me.getDisabled()) {
+            me.element.removeCls(me.getPressedCls());
+        }
     },
 
     onDragStart: function() {
@@ -81920,7 +82957,7 @@ Ext.define('Ext.slider.Slider', {
 
     // @private
     onTap: function(e) {
-        if (this.isDisabled()) {
+        if (this.isDisabled() || this.getReadOnly()) {
             return;
         }
 
@@ -82152,8 +83189,6 @@ Ext.define('Ext.slider.Slider', {
 });
 
 /**
- * @aside guide forms
- *
  * The slider is a way to allow the user to select a value from a given numerical range. You might use it for choosing
  * a percentage, combine two of them to get min and max values, or use three of them to specify the hex values for a
  * color. Each slider contains a single 'thumb' that can be dragged along the slider's length to change the value.
@@ -82212,6 +83247,8 @@ Ext.define('Ext.slider.Slider', {
  * Here we listened to the {@link #change} event on the slider and updated the background image of an
  * {@link Ext.Img image component} based on what size the user selected. Of course, you can use any logic inside your
  * event listener.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Slider', {
     extend  :  Ext.field.Field ,
@@ -82555,20 +83592,19 @@ Ext.define('Ext.util.TapRepeater', {
 });
 
 /**
- * @aside guide forms
- *
  * Wraps an HTML5 number field. Example usage:
  *
  *     @example miniphone
  *     var spinner = Ext.create('Ext.field.Spinner', {
- *         label: 'Spinner Field',
- *         minValue: 0,
- *         maxValue: 100,
- *         increment: 2,
- *         cycle: true
+ *         label     : 'Spinner Field',
+ *         minValue  : 0,
+ *         maxValue  : 100,
+ *         stepValue : 2,
+ *         cycle     : true
  *     });
  *     Ext.Viewport.add({ xtype: 'container', items: [spinner] });
  *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Spinner', {
     extend:  Ext.field.Number ,
@@ -82993,8 +84029,6 @@ Ext.define('Ext.slider.Toggle', {
 });
 
 /**
- * @aside guide forms
- *
  * Specialized {@link Ext.field.Slider} with a single thumb which only supports two {@link #value values}.
  *
  * ## Examples
@@ -83044,6 +84078,8 @@ Ext.define('Ext.slider.Toggle', {
  *             ]
  *         }
  *     ]);
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Toggle', {
     extend:  Ext.field.Slider ,
@@ -83083,7 +84119,7 @@ Ext.define('Ext.field.Toggle', {
         theme: ['Windows'],
         labelAlign: 'left'
     }, {
-        theme: ['Blackberry', 'MountainView'],
+        theme: ['Blackberry', 'Blackberry103', 'MountainView'],
         activeLabel: 'On',
         inactiveLabel: 'Off'
     }],
@@ -83201,10 +84237,8 @@ Ext.define('Ext.field.Toggle', {
 });
 
 /**
- * @aside guide forms
- *
- * The Url field creates an HTML5 url input and is usually created inside a form. Because it creates an HTML url input
- * field, most browsers will show a specialized virtual keyboard for web address input. Aside from that, the url field
+ * The urlfield creates an HTML5 url input and is usually created inside a form. Because it creates an HTML url input
+ * field, most browsers will show a specialized virtual keyboard for web address input. Aside from that, the urlfield
  * is just a normal text field. Here's an example of how to use it in a form:
  *
  *     @example
@@ -83236,6 +84270,8 @@ Ext.define('Ext.field.Toggle', {
  * provide, including getting and setting the value at runtime, validations and various events that are fired as the
  * user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional functionality
  * available.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.field.Url', {
     extend:  Ext.field.Text ,
@@ -83260,10 +84296,6 @@ Ext.define('Ext.field.Url', {
 });
 
 /**
- * @aside guide forms
- * @aside example forms
- * @aside example forms-toolbars
- *
  * A FieldSet is a great way to visually separate elements of a form. It's normally used when you have a form with
  * fields that can be divided into groups - for example a customer's billing details in one fieldset and their shipping
  * address in another. A fieldset can be used inside a form or on its own elsewhere in your app. Fieldsets can
@@ -83298,6 +84330,8 @@ Ext.define('Ext.field.Url', {
  * of the form fields are in the same fieldset, but for longer forms we may choose to use multiple fieldsets. We also
  * configured a {@link #title} and {@link #instructions} to give the user more information on filling out the form if
  * required.
+ *
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.form.FieldSet', {
     extend  :  Ext.Container ,
@@ -83589,9 +84623,7 @@ Ext.define('Ext.form.FieldSet', {
  * form submission was successful. These functions are usually used to take some action in your app after your data
  * has been saved to the server side.
  *
- * @aside guide forms
- * @aside example forms
- * @aside example forms-toolbars
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.form.Panel', {
     alternateClassName: 'Ext.form.FormPanel',
@@ -83771,7 +84803,17 @@ Ext.define('Ext.form.Panel', {
          * @cfg {Boolean} multipartDetection
          * If this is enabled the form will automatically detect the need to use 'multipart/form-data' during submission.
          */
-        multipartDetection: true
+        multipartDetection: true,
+
+        /**
+         * @cfg {Boolean} enableSubmissionForm
+         * The submission form is generated but never added to the dom. It is a submittable version of your form panel, allowing for fields
+         * that are not simple textfields to be properly submitted to servers. It will also send values that are easier to parse
+         * with server side code.
+         *
+         * If this is false we will attempt to subject the raw form inside the form panel.
+         */
+        enableSubmissionForm: true
     },
 
     getElementConfig: function() {
@@ -83846,6 +84888,10 @@ Ext.define('Ext.form.Panel', {
         if (e && !me.getStandardSubmit()) {
             e.stopEvent();
         } else {
+            // Stop the submit event on the original for if we are swapping a form in
+            if (me.getEnableSubmissionForm()) {
+                e.stopEvent();
+            }
             this.submit(null, e);
         }
     },
@@ -83939,8 +84985,9 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the action.
      *
-     * @param {Ext.form.Panel} options.success.result
-     * The result object returned by the server as a result of the submit request.
+     * @param {Object/Ext.direct.Event} options.success.result
+     * The result object returned by the server as a result of the submit request. If the submit is sent using Ext.Direct,
+     * this will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -83966,9 +85013,15 @@ Ext.define('Ext.form.Panel', {
      * If the standardSubmit config is true, then the return value is undefined.
      */
     submit: function(options, e) {
+        options = options || {};
+
         var me = this,
-            form = me.element.dom || {},
-            formValues;
+            formValues = me.getValues(me.getStandardSubmit() || !options.submitDisabled),
+            form = me.element.dom || {};
+
+        if(this.getEnableSubmissionForm()) {
+            form = this.createSubmissionForm(form, formValues);
+        }
 
         options = Ext.apply({
             url : me.getUrl() || form.action,
@@ -83983,15 +85036,52 @@ Ext.define('Ext.form.Panel', {
             failure : null
         }, options || {});
 
-        formValues = me.getValues(me.getStandardSubmit() || !options.submitDisabled);
-
         return me.fireAction('beforesubmit', [me, formValues, options, e], 'doBeforeSubmit');
     },
 
-    doBeforeSubmit: function(me, formValues, options) {
-        var form = me.element.dom || {};
+    createSubmissionForm: function(form, values) {
+        var fields = this.getFields(),
+            name, input, field, fileinputElement, inputComponent;
 
-        var multipartDetected = false;
+        if(form.nodeType === 1) {
+            form = form.cloneNode(false);
+
+            for (name in values) {
+                input = document.createElement("input");
+                input.setAttribute("type", "text");
+                input.setAttribute("name", name);
+                input.setAttribute("value", values[name]);
+                form.appendChild(input);
+            }
+        }
+
+        for (name in fields) {
+            if (fields.hasOwnProperty(name)) {
+                field = fields[name];
+                if(field.isFile) {
+                    if(!form.$fileswap) form.$fileswap = [];
+
+                    inputComponent = field.getComponent().input;
+                    fileinputElement = inputComponent.dom;
+                    input = fileinputElement.cloneNode(true);
+                    fileinputElement.parentNode.insertBefore(input, fileinputElement.nextSibling);
+                    form.appendChild(fileinputElement);
+                    form.$fileswap.push({original: fileinputElement, placeholder: input});
+                } else if(field.isPassword) {
+                    if(field.getComponent().getType !== "password") {
+                        field.setRevealed(false);
+                    }
+                }
+            }
+        }
+
+        return form;
+    },
+
+    doBeforeSubmit: function(me, formValues, options) {
+        var form = options.form || {},
+            multipartDetected = false;
+
         if(this.getMultipartDetection() === true) {
             this.getFieldsAsArray().forEach(function(field) {
                 if(field.isFile === true) {
@@ -84108,10 +85198,22 @@ Ext.define('Ext.form.Panel', {
                     options.headers || {}
                 );
                 request.callback = function(callbackOptions, success, response) {
-                    var me = this,
-                        responseText = response.responseText,
+                    var responseText = response.responseText,
                         responseXML = response.responseXML,
                         statusResult = Ext.Ajax.parseStatus(response.status, response);
+
+                    if(form.$fileswap) {
+                        var original, placeholder;
+                        Ext.each(form.$fileswap, function(item) {
+                            original = item.original;
+                            placeholder = item.placeholder;
+
+                            placeholder.parentNode.insertBefore(original, placeholder.nextSibling);
+                            placeholder.parentNode.removeChild(placeholder);
+                        });
+                        form.$fileswap = null;
+                        delete form.$fileswap;
+                    }
 
                     me.setMasked(false);
 
@@ -84221,8 +85323,9 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the load.
      *
-     * @param {Ext.form.Panel} options.success.result
-     * The result object returned by the server as a result of the load request.
+     * @param {Object/Ext.direct.Event} options.success.result
+     * The result object returned by the server as a result of the load request. If the loading was done via Ext.Direct,
+     * will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -84253,7 +85356,7 @@ Ext.define('Ext.form.Panel', {
             api = me.getApi(),
             url = me.getUrl() || options.url,
             waitMsg = options.waitMsg,
-            successFn = function(data, response) {
+            successFn = function(response, data) {
                 me.setValues(data.data);
 
                 if (Ext.isFunction(options.success)) {
@@ -84262,7 +85365,7 @@ Ext.define('Ext.form.Panel', {
 
                 me.fireEvent('load', me, response);
             },
-            failureFn = function(data, response) {
+            failureFn = function(response, data) {
                 if (Ext.isFunction(options.failure)) {
                     options.failure.call(scope, me, response, data);
                 }
@@ -84312,7 +85415,6 @@ Ext.define('Ext.form.Panel', {
         } else if (url) {
             return Ext.Ajax.request({
                 url: url,
-                scope: me,
                 timeout: (options.timeout || this.getTimeout()) * 1000,
                 method: options.method || 'GET',
                 autoAbort: options.autoAbort,
@@ -84323,8 +85425,7 @@ Ext.define('Ext.form.Panel', {
                     options.headers || {}
                 ),
                 callback: function(callbackOptions, success, response) {
-                    var me = this,
-                        responseText = response.responseText,
+                    var responseText = response.responseText,
                         statusResult = Ext.Ajax.parseStatus(response.status, response);
 
                     me.setMasked(false);
@@ -84465,7 +85566,7 @@ Ext.define('Ext.form.Panel', {
         // Function which you give a field and a name, and it will add it into the values
         // object accordingly
         addValue = function(field, name) {
-            if (!all && (!name || name === 'null')) {
+            if (!all && (!name || name === 'null') || field.isFile) {
                 return;
             }
 
@@ -84572,7 +85673,6 @@ Ext.define('Ext.form.Panel', {
     },
 
     /**
-     * @private
      * Returns all {@link Ext.field.Field field} instances inside this form.
      * @param {Boolean} byName return only fields that match the given name, otherwise return all fields.
      * @return {Object/Array} All field instances, mapped by field name; or an array if `byName` is passed.
@@ -84994,7 +86094,7 @@ Ext.define('Ext.fx.runner.Css', {
             formattedName = cache[name];
 
         if (!formattedName) {
-            if (!Ext.feature.has.CssTransformNoPrefix && this.prefixedProperties[name]) {
+            if ((Ext.os.is.Tizen || !Ext.feature.has.CssTransformNoPrefix) && this.prefixedProperties[name]) {
                 formattedName = this.vendorPrefix + name;
             }
             else {
@@ -86760,7 +87860,7 @@ Ext.define('Ext.navigation.Bar', {
     },
 
     platformConfig: [{
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103'],
         animation: false
     }],
 
@@ -87302,7 +88402,8 @@ Ext.define('Ext.navigation.Bar', {
  *  Applications that need compatibility with ##Older Android## devices will want to see the {@link #layout} config for details on
  *  disabling navigation view animations as these devices have poor animation support and performance.
  *
- * @aside guide navigation_view
+ * ###Further Reading
+ * [Sencha Touch Navigation View Guide](../../../components/navigation_view.html)
  */
 Ext.define('Ext.navigation.View', {
     extend:  Ext.Container ,
@@ -87426,7 +88527,7 @@ Ext.define('Ext.navigation.View', {
      */
 
     platformConfig: [{
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103'],
         navigationBar: {
             splitNavigation: true
         }
@@ -87616,8 +88717,66 @@ Ext.define('Ext.navigation.View', {
         }
     },
 
+    /**
+     * This is called when an Item is added to the BackButtonContainer of a SplitNavigation View
+     * @private
+     *
+     * @param toolbar
+     * @param item
+     */
+    onBackButtonContainerAdd: function(toolbar, item) {
+        item.on({
+            scope: this,
+            show: this.refreshBackButtonContainer,
+            hide: this.refreshBackButtonContainer
+        });
+        this.refreshBackButtonContainer();
+    },
+
+    /**
+     * This is called when an Item is removed from the BackButtonContainer of a SplitNavigation View
+     * @private
+     *
+     * @param toolbar
+     * @param item
+     */
+    onBackButtonContainerRemove: function(toolbar, item) {
+        item.un({
+            scope: this,
+            show: this.refreshBackButtonContainer,
+            hide: this.refreshBackButtonContainer
+        });
+        this.refreshBackButtonContainer();
+    },
+
+    /**
+     * This is used for Blackberry SplitNavigation to monitor the state of child items in the bottom toolbar.
+     * if no visible children exist the toolbar will be hidden
+     * @private
+     */
+    refreshBackButtonContainer: function() {
+        if (!this.$backButtonContainer) {
+            return;
+        }
+        var i = 0,
+            backButtonContainer = this.$backButtonContainer,
+            items = backButtonContainer.items,
+            item;
+
+        for(;i < items.length; i++) {
+            item = items.get(i);
+            if(!item.isHidden()) {
+                this.$backButtonContainer.show();
+                return;
+            }
+        }
+
+        this.$backButtonContainer.hide();
+    },
+
     // @private
     applyNavigationBar: function(config) {
+        var me = this;
         if (!config) {
             config = {
                 hidden: true,
@@ -87629,13 +88788,14 @@ Ext.define('Ext.navigation.View', {
             delete config.title;
             //<debug>
             Ext.Logger.warn("Ext.navigation.View: The 'navigationBar' configuration does not accept a 'title' property. You " +
-                            "set the title of the navigationBar by giving this navigation view's children a 'title' property.");
+                "set the title of the navigationBar by giving this navigation view's children a 'title' property.");
             //</debug>
         }
 
         config.view = this;
         config.useTitleForBackButtonText = this.getUseTitleForBackButtonText();
-
+        
+        // Blackberry specific nav setup where title is on the top title bar and the bottom toolbar is used for buttons and BACK
         if (config.splitNavigation) {
             this.$titleContainer = this.add({
                 docked: 'top',
@@ -87646,10 +88806,19 @@ Ext.define('Ext.navigation.View', {
 
             var containerConfig = (config.splitNavigation === true) ? {} : config.splitNavigation;
 
-            this.$backButtonContainer = this.add(Ext.apply({
+            this.$backButtonContainer = this.add({
                 xtype: 'toolbar',
-                docked: 'bottom'
-            }, containerConfig));
+                docked: 'bottom',
+                hidden: true
+            });
+
+            // Any item that is added to the BackButtonContainer should be monitored for visibility
+            // this will allow the toolbar to be hidden when no items exist in it.
+            this.$backButtonContainer.on ({
+                scope: me,
+                add: me.onBackButtonContainerAdd,
+                remove: me.onBackButtonContainerRemove
+            });
 
             this.$backButton = this.$backButtonContainer.add({
                 xtype: 'button',
@@ -87657,6 +88826,16 @@ Ext.define('Ext.navigation.View', {
                 hidden: true,
                 ui: 'back'
             });
+
+            // Default config items go into the bottom bar
+            if(config.items) {
+                this.$backButtonContainer.add(config.items);
+            }
+
+            // If the user provided items and splitNav items, default items go into the bottom bar, split nav items go into the top
+            if(containerConfig.items) {
+                this.$titleContainer.add(containerConfig.items);
+            }
 
             this.$backButton.on({
                 scope: this,
@@ -88170,6 +89349,7 @@ Ext.define('Ext.plugin.PullRefresh', {
                                  
 
     config: {
+        width: '100%',
         /**
          * @cfg {Ext.dataview.List} list
          * The list to which this PullRefresh plugin is connected.
@@ -88534,7 +89714,39 @@ Ext.define('Ext.plugin.PullRefresh', {
 /**
  * @class Ext.plugin.SortableList
  * @extends Ext.Component
- * Description
+ * The SortableList plugin gives your list items the ability to be reordered by tapping and 
+ * dragging elements within the item.   
+ *
+ * The list-sortablehandle is not added to your tpl by default, so it's important that you 
+ * manually include it. It's also important to recognize that list-items are not draggable 
+ * themselves.  You must add an element to the itemTpl for it to be dragged.
+ *
+ *     Ext.Viewport.add({
+ *          xtype: 'list',
+ *          infinite: true,
+ *          plugins: 'sortablelist',
+ *          itemTpl: '<span class="myStyle ' + Ext.baseCSSPrefix + 'list-sortablehandle"></span>{text}',
+ *          data: [{
+ *              text: 'Item 1'
+ *          }, {
+ *              text: 'Item 2'
+ *          }, {
+ *              text: 'Item 3'
+ *          }]
+ *     });
+ *
+ * The CSS for MyStyle can be anything that creates an element to tap and drag.  For this 
+ * example we made a simple rectangle like so:
+ *
+ *      .myStyle{
+ *          width:30px;
+ *          height:20px;
+ *          background:gray;
+ *          float:left;
+ *      }
+ * 
+ * Note: You must have infinite set to 'true' when using the SortableList plugin.
+ * 
  */
 Ext.define('Ext.plugin.SortableList', {
     extend:  Ext.Component ,
@@ -88864,7 +90076,7 @@ Ext.define('Ext.tab.Bar', {
      */
 
     platformConfig: [{
-        theme: ['Blackberry', 'CupertinoClassic', 'MountainView'],
+        theme: ['Blackberry', 'Blackberry103', 'CupertinoClassic', 'MountainView'],
         defaults: {
             flex: 1
         }
@@ -88962,11 +90174,6 @@ Ext.define('Ext.tab.Bar', {
 });
 
 /**
- * @aside guide tabs
- * @aside video tabs-toolbars
- * @aside example tabs
- * @aside example tabs-bottom
- *
  * Tab Panels are a great way to allow the user to switch between several pages that are all full screen. Each
  * Component in the Tab Panel gets its own Tab, which shows the Component when tapped on. Tabs can be positioned at
  * the top or the bottom of the Tab Panel, and can optionally accept title and icon configurations.
@@ -89021,6 +90228,7 @@ Ext.define('Ext.tab.Bar', {
  *         ]
  *     });
  *
+ * For more information, see our [Tab Panel Guide](../../../components/tabpanel.html).
  */
 Ext.define('Ext.tab.Panel', {
     extend:  Ext.Container ,
@@ -89101,7 +90309,7 @@ Ext.define('Ext.tab.Panel', {
     },
 
     platformConfig: [{
-        theme: ['Blackberry'],
+        theme: ['Blackberry', 'Blackberry103'],
         tabBarPosition: 'bottom'
     }],
 
@@ -89603,528 +90811,6 @@ Ext.define('Ext.util.Droppable', {
     }
 });
 
-/*
-    http://www.JSON.org/json2.js
-    2010-03-20
-
-    Public Domain.
-
-    NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
-
-    See http://www.JSON.org/js.html
-
-
-    This code should be minified before deployment.
-    See http://javascript.crockford.com/jsmin.html
-
-    USE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO
-    NOT CONTROL.
-
-
-    This file creates a global JSON object containing two methods: stringify
-    and parse.
-
-        JSON.stringify(value, replacer, space)
-            value       any JavaScript value, usually an object or array.
-
-            replacer    an optional parameter that determines how object
-                        values are stringified for objects. It can be a
-                        function or an array of strings.
-
-            space       an optional parameter that specifies the indentation
-                        of nested structures. If it is omitted, the text will
-                        be packed without extra whitespace. If it is a number,
-                        it will specify the number of spaces to indent at each
-                        level. If it is a string (such as '\t' or '&nbsp;'),
-                        it contains the characters used to indent at each level.
-
-            This method produces a JSON text from a JavaScript value.
-
-            When an object value is found, if the object contains a toJSON
-            method, its toJSON method will be called and the result will be
-            stringified. A toJSON method does not serialize: it returns the
-            value represented by the name/value pair that should be serialized,
-            or undefined if nothing should be serialized. The toJSON method
-            will be passed the key associated with the value, and this will be
-            bound to the value
-
-            For example, this would serialize Dates as ISO strings.
-
-                Date.prototype.toJSON = function (key) {
-                    function f(n) {
-                        // Format integers to have at least two digits.
-                        return n < 10 ? '0' + n : n;
-                    }
-
-                    return this.getUTCFullYear()   + '-' +
-                         f(this.getUTCMonth() + 1) + '-' +
-                         f(this.getUTCDate())      + 'T' +
-                         f(this.getUTCHours())     + ':' +
-                         f(this.getUTCMinutes())   + ':' +
-                         f(this.getUTCSeconds())   + 'Z';
-                };
-
-            You can provide an optional replacer method. It will be passed the
-            key and value of each member, with this bound to the containing
-            object. The value that is returned from your method will be
-            serialized. If your method returns undefined, then the member will
-            be excluded from the serialization.
-
-            If the replacer parameter is an array of strings, then it will be
-            used to select the members to be serialized. It filters the results
-            such that only members with keys listed in the replacer array are
-            stringified.
-
-            Values that do not have JSON representations, such as undefined or
-            functions, will not be serialized. Such values in objects will be
-            dropped; in arrays they will be replaced with null. You can use
-            a replacer function to replace those with JSON values.
-            JSON.stringify(undefined) returns undefined.
-
-            The optional space parameter produces a stringification of the
-            value that is filled with line breaks and indentation to make it
-            easier to read.
-
-            If the space parameter is a non-empty string, then that string will
-            be used for indentation. If the space parameter is a number, then
-            the indentation will be that many spaces.
-
-            Example:
-
-            text = JSON.stringify(['e', {pluribus: 'unum'}]);
-            // text is '["e",{"pluribus":"unum"}]'
-
-
-            text = JSON.stringify(['e', {pluribus: 'unum'}], null, '\t');
-            // text is '[\n\t"e",\n\t{\n\t\t"pluribus": "unum"\n\t}\n]'
-
-            text = JSON.stringify([new Date()], function (key, value) {
-                return this[key] instanceof Date ?
-                    'Date(' + this[key] + ')' : value;
-            });
-            // text is '["Date(---current time---)"]'
-
-
-        JSON.parse(text, reviver)
-            This method parses a JSON text to produce an object or array.
-            It can throw a SyntaxError exception.
-
-            The optional reviver parameter is a function that can filter and
-            transform the results. It receives each of the keys and values,
-            and its return value is used instead of the original value.
-            If it returns what it received, then the structure is not modified.
-            If it returns undefined then the member is deleted.
-
-            Example:
-
-            // Parse the text. Values that look like ISO date strings will
-            // be converted to Date objects.
-
-            myData = JSON.parse(text, function (key, value) {
-                var a;
-                if (typeof value === 'string') {
-                    a =
-/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-                    if (a) {
-                        return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4],
-                            +a[5], +a[6]));
-                    }
-                }
-                return value;
-            });
-
-            myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
-                var d;
-                if (typeof value === 'string' &&
-                        value.slice(0, 5) === 'Date(' &&
-                        value.slice(-1) === ')') {
-                    d = new Date(value.slice(5, -1));
-                    if (d) {
-                        return d;
-                    }
-                }
-                return value;
-            });
-
-
-    This is a reference implementation. You are free to copy, modify, or
-    redistribute.
-*/
-
-/*jslint evil: true, strict: false */
-
-/*members "", "\b", "\t", "\n", "\f", "\r", "\"", JSON, "\\", apply,
-    call, charCodeAt, getUTCDate, getUTCFullYear, getUTCHours,
-    getUTCMinutes, getUTCMonth, getUTCSeconds, hasOwnProperty, join,
-    lastIndex, length, parse, prototype, push, replace, slice, stringify,
-    test, toJSON, toString, valueOf
-*/
-
-
-// Create a JSON object only if one does not already exist. We create the
-// methods in a closure to avoid creating global variables.
-
-if (!this.JSON) {
-    this.JSON = {};
-}
-
-(function () {
-
-    function f(n) {
-        // Format integers to have at least two digits.
-        return n < 10 ? '0' + n : n;
-    }
-
-    if (typeof Date.prototype.toJSON !== 'function') {
-
-        Date.prototype.toJSON = function (key) {
-
-            return isFinite(this.valueOf()) ?
-                   this.getUTCFullYear()   + '-' +
-                 f(this.getUTCMonth() + 1) + '-' +
-                 f(this.getUTCDate())      + 'T' +
-                 f(this.getUTCHours())     + ':' +
-                 f(this.getUTCMinutes())   + ':' +
-                 f(this.getUTCSeconds())   + 'Z' : null;
-        };
-
-        String.prototype.toJSON =
-        Number.prototype.toJSON =
-        Boolean.prototype.toJSON = function (key) {
-            return this.valueOf();
-        };
-    }
-
-    var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
-        escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
-        gap,
-        indent,
-        meta = {    // table of character substitutions
-            '\b': '\\b',
-            '\t': '\\t',
-            '\n': '\\n',
-            '\f': '\\f',
-            '\r': '\\r',
-            '"' : '\\"',
-            '\\': '\\\\'
-        },
-        rep;
-
-
-    function quote(string) {
-
-// If the string contains no control characters, no quote characters, and no
-// backslash characters, then we can safely slap some quotes around it.
-// Otherwise we must also replace the offending characters with safe escape
-// sequences.
-
-        escapable.lastIndex = 0;
-        return escapable.test(string) ?
-            '"' + string.replace(escapable, function (a) {
-                var c = meta[a];
-                return typeof c === 'string' ? c :
-                    '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-            }) + '"' :
-            '"' + string + '"';
-    }
-
-
-    function str(key, holder) {
-
-// Produce a string from holder[key].
-
-        var i,          // The loop counter.
-            k,          // The member key.
-            v,          // The member value.
-            length,
-            mind = gap,
-            partial,
-            value = holder[key];
-
-// If the value has a toJSON method, call it to obtain a replacement value.
-
-        if (value && typeof value === 'object' &&
-                typeof value.toJSON === 'function') {
-            value = value.toJSON(key);
-        }
-
-// If we were called with a replacer function, then call the replacer to
-// obtain a replacement value.
-
-        if (typeof rep === 'function') {
-            value = rep.call(holder, key, value);
-        }
-
-// What happens next depends on the value's type.
-
-        switch (typeof value) {
-        case 'string':
-            return quote(value);
-
-        case 'number':
-
-// JSON numbers must be finite. Encode non-finite numbers as null.
-
-            return isFinite(value) ? String(value) : 'null';
-
-        case 'boolean':
-        case 'null':
-
-// If the value is a boolean or null, convert it to a string. Note:
-// typeof null does not produce 'null'. The case is included here in
-// the remote chance that this gets fixed someday.
-
-            return String(value);
-
-// If the type is 'object', we might be dealing with an object or an array or
-// null.
-
-        case 'object':
-
-// Due to a specification blunder in ECMAScript, typeof null is 'object',
-// so watch out for that case.
-
-            if (!value) {
-                return 'null';
-            }
-
-// Make an array to hold the partial results of stringifying this object value.
-
-            gap += indent;
-            partial = [];
-
-// Is the value an array?
-
-            if (Object.prototype.toString.apply(value) === '[object Array]') {
-
-// The value is an array. Stringify every element. Use null as a placeholder
-// for non-JSON values.
-
-                length = value.length;
-                for (i = 0; i < length; i += 1) {
-                    partial[i] = str(i, value) || 'null';
-                }
-
-// Join all of the elements together, separated with commas, and wrap them in
-// brackets.
-
-                v = partial.length === 0 ? '[]' :
-                    gap ? '[\n' + gap +
-                            partial.join(',\n' + gap) + '\n' +
-                                mind + ']' :
-                          '[' + partial.join(',') + ']';
-                gap = mind;
-                return v;
-            }
-
-// If the replacer is an array, use it to select the members to be stringified.
-
-            if (rep && typeof rep === 'object') {
-                length = rep.length;
-                for (i = 0; i < length; i += 1) {
-                    k = rep[i];
-                    if (typeof k === 'string') {
-                        v = str(k, value);
-                        if (v) {
-                            partial.push(quote(k) + (gap ? ': ' : ':') + v);
-                        }
-                    }
-                }
-            } else {
-
-// Otherwise, iterate through all of the keys in the object.
-
-                for (k in value) {
-                    if (Object.hasOwnProperty.call(value, k)) {
-                        v = str(k, value);
-                        if (v) {
-                            partial.push(quote(k) + (gap ? ': ' : ':') + v);
-                        }
-                    }
-                }
-            }
-
-// Join all of the member texts together, separated with commas,
-// and wrap them in braces.
-
-            v = partial.length === 0 ? '{}' :
-                gap ? '{\n' + gap + partial.join(',\n' + gap) + '\n' +
-                        mind + '}' : '{' + partial.join(',') + '}';
-            gap = mind;
-            return v;
-        }
-        return v;
-    }
-
-// If the JSON object does not yet have a stringify method, give it one.
-
-    if (typeof JSON.stringify !== 'function') {
-        JSON.stringify = function (value, replacer, space) {
-
-// The stringify method takes a value and an optional replacer, and an optional
-// space parameter, and returns a JSON text. The replacer can be a function
-// that can replace values, or an array of strings that will select the keys.
-// A default replacer method can be provided. Use of the space parameter can
-// produce text that is more easily readable.
-
-            var i;
-            gap = '';
-            indent = '';
-
-// If the space parameter is a number, make an indent string containing that
-// many spaces.
-
-            if (typeof space === 'number') {
-                for (i = 0; i < space; i += 1) {
-                    indent += ' ';
-                }
-
-// If the space parameter is a string, it will be used as the indent string.
-
-            } else if (typeof space === 'string') {
-                indent = space;
-            }
-
-// If there is a replacer, it must be a function or an array.
-// Otherwise, throw an error.
-
-            rep = replacer;
-            if (replacer && typeof replacer !== 'function' &&
-                    (typeof replacer !== 'object' ||
-                     typeof replacer.length !== 'number')) {
-                throw new Error('JSON.stringify');
-            }
-
-// Make a fake root object containing our value under the key of ''.
-// Return the result of stringifying the value.
-
-            return str('', {'': value});
-        };
-    }
-
-
-// If the JSON object does not yet have a parse method, give it one.
-
-    if (typeof JSON.parse !== 'function') {
-        JSON.parse = function (text, reviver) {
-
-// The parse method takes a text and an optional reviver function, and returns
-// a JavaScript value if the text is a valid JSON text.
-
-            var j;
-
-            function walk(holder, key) {
-
-// The walk method is used to recursively walk the resulting structure so
-// that modifications can be made.
-
-                var k, v, value = holder[key];
-                if (value && typeof value === 'object') {
-                    for (k in value) {
-                        if (Object.hasOwnProperty.call(value, k)) {
-                            v = walk(value, k);
-                            if (v !== undefined) {
-                                value[k] = v;
-                            } else {
-                                delete value[k];
-                            }
-                        }
-                    }
-                }
-                return reviver.call(holder, key, value);
-            }
-
-
-// Parsing happens in four stages. In the first stage, we replace certain
-// Unicode characters with escape sequences. JavaScript handles many characters
-// incorrectly, either silently deleting them, or treating them as line endings.
-
-            text = String(text);
-            cx.lastIndex = 0;
-            if (cx.test(text)) {
-                text = text.replace(cx, function (a) {
-                    return '\\u' +
-                        ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-                });
-            }
-
-// In the second stage, we run the text against regular expressions that look
-// for non-JSON patterns. We are especially concerned with '()' and 'new'
-// because they can cause invocation, and '=' because it can cause mutation.
-// But just to be safe, we want to reject all unexpected forms.
-
-// We split the second stage into 4 regexp operations in order to work around
-// crippling inefficiencies in IE's and Safari's regexp engines. First we
-// replace the JSON backslash pairs with '@' (a non-JSON character). Second, we
-// replace all simple value tokens with ']' characters. Third, we delete all
-// open brackets that follow a colon or comma or that begin the text. Finally,
-// we look to see that the remaining characters are only whitespace or ']' or
-// ',' or ':' or '{' or '}'. If that is so, then the text is safe for eval.
-
-            if (/^[\],:{}\s]*$/.
-test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, '@').
-replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']').
-replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
-
-// In the third stage we use the eval function to compile the text into a
-// JavaScript structure. The '{' operator is subject to a syntactic ambiguity
-// in JavaScript: it can begin a block or an object literal. We wrap the text
-// in parens to eliminate the ambiguity.
-
-                j = eval('(' + text + ')');
-
-// In the optional fourth stage, we recursively walk the new structure, passing
-// each name/value pair to a reviver function for possible transformation.
-
-                return typeof reviver === 'function' ?
-                    walk({'': j}, '') : j;
-            }
-
-// If the text is not JSON parseable, then a SyntaxError is thrown.
-
-            throw new SyntaxError('JSON.parse');
-        };
-    }
-}());
-
-/**
- * @class Ext.util.JSON
- * Modified version of Douglas Crockford"s json.js that doesn"t
- * mess with the Object prototype
- * http://www.json.org/js.html
- * @singleton
- * @ignore
- */
-Ext.util.JSON = {
-    encode: function(o) {
-        return JSON.stringify(o);
-    },
-
-    decode: function(s) {
-        return JSON.parse(s);
-    }
-};
-
-/**
- * Shorthand for {@link Ext.util.JSON#encode}
- * @param {Mixed} o The variable to encode
- * @return {String} The JSON string
- * @member Ext
- * @method encode
- * @ignore
- */
-Ext.encode = Ext.util.JSON.encode;
-/**
- * Shorthand for {@link Ext.util.JSON#decode}
- * @param {String} json The JSON string
- * @param {Boolean} safe (optional) Whether to return null or throw an exception if the JSON is invalid.
- * @return {Object} The resulting object
- * @member Ext
- * @method decode
- * @ignore
- */
-Ext.decode = Ext.util.JSON.decode;
-
 /**
  * @private
  */
@@ -90153,6 +90839,22 @@ Ext.define('Ext.util.TranslatableList', {
                 item.translate(0, translateY);
             }
         }
+    }
+});
+
+/**
+ * @private
+ */
+Ext.define('Ext.util.paintmonitor.OverflowChange', {
+
+    extend:  Ext.util.paintmonitor.Abstract ,
+
+    eventName: Ext.browser.is.Firefox ? 'overflow' : 'overflowchanged',
+
+    monitorClass: 'overflowchange',
+
+    onElementPainted: function(e) {
+        this.getCallback().apply(this.getScope(), this.getArgs());
     }
 });
 
@@ -90198,17 +90900,7 @@ Ext.define('Ext.viewport.Default', {
 
     config: {
         /**
-         * @cfg {Boolean} autoMaximize
-         * Whether or not to always automatically maximize the viewport on first load and all subsequent orientation changes.
-         *
-         * This is set to `false` by default for a number of reasons:
-         *
-         * - Orientation change performance is drastically reduced when this is enabled, on all devices.
-         * - On some devices (mostly Android) this can sometimes cause issues when the default browser zoom setting is changed.
-         * - When wrapping your phone in a native shell, you may get a blank screen.
-         * - When bookmarked to the homescreen (iOS), you may get a blank screen.
-         *
-         * @accessor
+         * @private
          */
         autoMaximize: false,
 
@@ -90261,7 +90953,7 @@ Ext.define('Ext.viewport.Default', {
          *         ]
          *     });
          *
-         * See the [layouts guide](#!/guides/layouts) for more information.
+         * See the [layouts guide](../../../core_concepts/layouts.html) for more information.
          *
          * @accessor
          */
@@ -90285,7 +90977,22 @@ Ext.define('Ext.viewport.Default', {
          * An object of all the menus on this viewport.
          * @private
          */
-        menus: {}
+        menus: {},
+
+        /**
+         * @private
+         */
+        orientation: null
+    },
+
+    getElementConfig: function() {
+        var cfg = this.callParent(arguments);
+
+        // Used in legacy browser that do not support matchMedia. Hidden element is used for checking of orientation
+        if (!Ext.feature.has.MatchMedia) {
+            cfg.children.unshift({reference: 'orientationElement', className: 'x-orientation-inspector'});
+        }
+        return cfg;
     },
 
     /**
@@ -90301,6 +91008,8 @@ Ext.define('Ext.viewport.Default', {
     id: 'ext-viewport',
 
     isInputRegex: /^(input|textarea|select|a)$/i,
+
+    isInteractiveWebComponentRegEx: /^(audio|video)$/i,
 
     focusedElement: null,
 
@@ -90326,23 +91035,18 @@ Ext.define('Ext.viewport.Default', {
 
         this.callSuper([config]);
 
-        this.orientation = this.determineOrientation();
         this.windowWidth = this.getWindowWidth();
         this.windowHeight = this.getWindowHeight();
         this.windowOuterHeight = this.getWindowOuterHeight();
 
         if (!this.stretchHeights) {
-        this.stretchHeights = {};
+            this.stretchHeights = {};
         }
 
-        // Android is handled separately
-        if (!Ext.os.is.Android || Ext.browser.is.ChromeMobile) {
-            if (this.supportsOrientation()) {
-                this.addWindowListener('orientationchange', bind(this.onOrientationChange, this));
-            }
-            else {
-                this.addWindowListener('resize', bind(this.onResize, this));
-            }
+        if(Ext.feature.has.OrientationChange) {
+            this.addWindowListener('orientationchange', bind(this.onOrientationChange, this));
+        } else {
+            this.addWindowListener('resize', bind(this.onResize, this));
         }
 
         document.addEventListener('focus', bind(this.onElementFocus, this), true);
@@ -90351,9 +91055,7 @@ Ext.define('Ext.viewport.Default', {
         Ext.onDocumentReady(this.onDomReady, this);
 
         this.on('ready', this.onReady, this, {single: true});
-
         this.getEventDispatcher().addListener('component', '*', 'fullscreen', 'onItemFullscreenChange', this);
-
         return this;
     },
 
@@ -90388,8 +91090,7 @@ Ext.define('Ext.viewport.Default', {
                 osEnv = Ext.os,
                 osName = osEnv.name.toLowerCase(),
                 browserName = Ext.browser.name.toLowerCase(),
-                osMajorVersion = osEnv.version.getMajor(),
-                orientation = this.getOrientation();
+                osMajorVersion = osEnv.version.getMajor();
 
             this.renderTo(body);
 
@@ -90408,6 +91109,9 @@ Ext.define('Ext.viewport.Default', {
 
             if (osEnv.is.BlackBerry) {
                 classList.push(clsPrefix + 'bb');
+                if (Ext.browser.userAgent.match(/Kbd/gi)) {
+                    classList.push(clsPrefix + 'bb-keyboard');
+                }
             }
 
             if (Ext.browser.is.WebKit) {
@@ -90422,8 +91126,12 @@ Ext.define('Ext.viewport.Default', {
                 classList.push(clsPrefix + 'android-stock');
             }
 
-            classList.push(clsPrefix + orientation);
+            if (Ext.browser.is.GoogleGlass) {
+                classList.push(clsPrefix + 'google-glass');
+            }
 
+            this.setOrientation(this.determineOrientation());
+            classList.push(clsPrefix + this.getOrientation());
             body.addCls(classList);
         }
     },
@@ -90534,7 +91242,22 @@ Ext.define('Ext.viewport.Default', {
     },
 
     doPreventPanning: function(e) {
-        e.preventDefault();
+        var target = e.target, touch;
+
+        // If we have an interaction on a WebComponent we need to check the actual shadow dom element selected
+        // to determine if it is an input before preventing default behavior
+        // Side effect to this is if the shadow input does not do anything with 'touchmove' the user could pan
+        // the screen.
+        if (this.isInteractiveWebComponentRegEx.test(target.tagName) && e.touches && e.touches.length > 0) {
+            touch = e.touches[0];
+            if (touch && touch.target && this.isInputRegex.test(touch.target.tagName)) {
+                return;
+            }
+        }
+
+        if (target && target.nodeType === 1 && !this.isInputRegex.test(target.tagName)) {
+            e.preventDefault();
+        }
     },
 
     doPreventZooming: function(e) {
@@ -90543,7 +91266,13 @@ Ext.define('Ext.viewport.Default', {
             return;
         }
 
-        var target = e.target;
+        var target = e.target, touch;
+        if (this.isInteractiveWebComponentRegEx.test(target.tagName) && e.touches && e.touches.length > 0) {
+            touch = e.touches[0];
+            if (touch && touch.target && this.isInputRegex.test(touch.target.tagName)) {
+                return;
+            }
+        }
 
         if (target && target.nodeType === 1 && !this.isInputRegex.test(target.tagName)) {
             e.preventDefault();
@@ -90567,39 +91296,51 @@ Ext.define('Ext.viewport.Default', {
         return this.callSuper(arguments);
     },
 
-    supportsOrientation: function() {
-        return Ext.feature.has.Orientation;
-    },
-
-    onResize: function() {
-        var oldWidth = this.windowWidth,
-            oldHeight = this.windowHeight,
-            width = this.getWindowWidth(),
-            height = this.getWindowHeight(),
-            currentOrientation = this.getOrientation(),
-            newOrientation = this.determineOrientation();
-
-        // Determine orientation change via resize. BOTH width AND height much change, otherwise
-        // this is a keyboard popping up.
-        if ((oldWidth !== width && oldHeight !== height) && currentOrientation !== newOrientation) {
-            this.fireOrientationChangeEvent(newOrientation, currentOrientation);
+    determineOrientation: function() {
+        // First attempt will be to use Native Orientation information
+        if (Ext.feature.has.Orientation) {
+            var nativeOrientation= this.getWindowOrientation();
+            // 90 || -90 || 270 is landscape
+            if (Math.abs(nativeOrientation) === 90 || nativeOrientation === 270) {
+                return this.LANDSCAPE;
+            } else {
+                return this.PORTRAIT;
+            }
+        // Second attempt will be to use MatchMedia and a media query
+        } else if (Ext.feature.has.MatchMedia) {
+            return window.matchMedia('(orientation : landscape)').matches ? this.LANDSCAPE : this.PORTRAIT;
+        // Fall back on hidden element with media query attached to it (media query in Base Theme)
+        } else if (this.orientationElement) {
+            return this.orientationElement.getStyle('content');
         }
     },
 
+    updateOrientation: function(newValue, oldValue) {
+        if (oldValue) {
+            this.fireOrientationChangeEvent(newValue, oldValue);
+        }
+    },
+
+    /**
+     * Listener for Orientation Change in environments that support orientationchange events
+     * @private
+     */
     onOrientationChange: function() {
-        var currentOrientation = this.getOrientation(),
-            newOrientation = this.determineOrientation();
+        this.setOrientation(this.determineOrientation());
+    },
 
-        if (newOrientation !== currentOrientation) {
-            this.fireOrientationChangeEvent(newOrientation, currentOrientation);
-        }
+    /**
+     * Listener for Orientation Change in environments that do no support orientationchange events
+     * @private
+     */
+    onResize: function() {
+        this.updateSize();
+        this.setOrientation(this.determineOrientation());
     },
 
     fireOrientationChangeEvent: function(newOrientation, oldOrientation) {
         var clsPrefix = Ext.baseCSSPrefix;
         Ext.getBody().replaceCls(clsPrefix + oldOrientation, clsPrefix + newOrientation);
-
-        this.orientation = newOrientation;
 
         this.updateSize();
         this.fireEvent('orientationchange', this, newOrientation, this.windowWidth, this.windowHeight);
@@ -90610,39 +91351,6 @@ Ext.define('Ext.viewport.Default', {
         this.windowHeight = height !== undefined ? height : this.getWindowHeight();
 
         return this;
-    },
-
-    waitUntil: function(condition, onSatisfied, onTimeout, delay, timeoutDuration) {
-        if (!delay) {
-            delay = 50;
-        }
-
-        if (!timeoutDuration) {
-            timeoutDuration = 2000;
-        }
-
-        var scope = this,
-            elapse = 0;
-
-        setTimeout(function repeat() {
-            elapse += delay;
-
-            if (condition.call(scope) === true) {
-                if (onSatisfied) {
-                    onSatisfied.call(scope);
-                }
-            }
-            else {
-                if (elapse >= timeoutDuration) {
-                    if (onTimeout) {
-                        onTimeout.call(scope);
-                    }
-                }
-                else {
-                    setTimeout(repeat, delay);
-                }
-            }
-        }, delay);
     },
 
     maximize: function() {
@@ -90694,14 +91402,6 @@ Ext.define('Ext.viewport.Default', {
         return window.orientation;
     },
 
-    /**
-     * Returns the current orientation.
-     * @return {String} `portrait` or `landscape`
-     */
-    getOrientation: function() {
-        return this.orientation;
-    },
-
     getSize: function() {
         return {
             width: this.windowWidth,
@@ -90709,29 +91409,41 @@ Ext.define('Ext.viewport.Default', {
         };
     },
 
-    determineOrientation: function() {
-        var portrait = this.PORTRAIT,
-            landscape = this.LANDSCAPE;
-
-        if (!Ext.os.is.Android && this.supportsOrientation()) {
-            if (this.getWindowOrientation() % 180 === 0) {
-                return portrait;
-            }
-
-            return landscape;
-        }
-        else {
-            if (this.getWindowHeight() >= this.getWindowWidth()) {
-                return portrait;
-            }
-
-            return landscape;
-        }
-    },
-
     onItemFullscreenChange: function(item) {
         item.addCls(this.fullscreenItemCls);
         this.add(item);
+    },
+    waitUntil: function(condition, onSatisfied, onTimeout, delay, timeoutDuration) {
+        if (!delay) {
+            delay = 50;
+        }
+
+        if (!timeoutDuration) {
+            timeoutDuration = 2000;
+        }
+
+        var scope = this,
+            elapse = 0;
+
+        setTimeout(function repeat() {
+            elapse += delay;
+
+            if (condition.call(scope) === true) {
+                if (onSatisfied) {
+                    onSatisfied.call(scope);
+                }
+            }
+            else {
+                if (elapse >= timeoutDuration) {
+                    if (onTimeout) {
+                        onTimeout.call(scope);
+                    }
+                }
+                else {
+                    setTimeout(repeat, delay);
+                }
+            }
+        }, delay);
     },
 
     /**
@@ -91405,8 +92117,9 @@ Ext.define('Ext.viewport.Default', {
  * @private
  * Android version of viewport.
  */
-Ext.define('Ext.viewport.Android', {
+Ext.define('Ext.viewport.AndroidStock', {
     extend:  Ext.viewport.Default ,
+    alternateClassName: ['Ext.viewport.Android'],
 
     config: {
         translatable: {
@@ -91418,10 +92131,6 @@ Ext.define('Ext.viewport.Android', {
         this.on('orientationchange', 'hideKeyboardIfNeeded', this, { prepend: true });
 
         this.callSuper(arguments);
-
-        this.bodyElement.on('resize', this.onResize, this, {
-            buffer: 1
-        });
     },
 
     getWindowWidth: function () {
@@ -91491,44 +92200,13 @@ Ext.define('Ext.viewport.Android', {
         }
     },
 
-    doFireOrientationChangeEvent: function() {
-        var eventController = arguments[arguments.length - 1];
-
-        this.orientationChanging = true;
-
-        eventController.pause();
-
-        this.waitUntil(function() {
-            return this.getWindowOuterHeight() !== this.windowOuterHeight;
-        }, function() {
-            this.windowOuterHeight = this.getWindowOuterHeight();
-            this.updateSize();
-
-            eventController.firingArguments[2] = this.windowWidth;
-            eventController.firingArguments[3] = this.windowHeight;
-            eventController.resume();
-            this.orientationChanging = false;
-
-        }, function() {
-            //<debug error>
-            Ext.Logger.error("Timeout waiting for viewport's outerHeight to change before firing orientationchange", this);
-            //</debug>
-        });
-
-        return this;
-    },
-
-    determineOrientation: function() {
-        return (this.getWindowHeight() >= this.getWindowWidth()) ? this.PORTRAIT : this.LANDSCAPE;
-    },
-
     getActualWindowOuterHeight: function() {
         return Math.round(this.getWindowOuterHeight() / window.devicePixelRatio);
     },
 
     maximize: function() {
         var stretchHeights = this.stretchHeights,
-            orientation = this.orientation,
+            orientation = this.getOrientation(),
             height;
 
         height = stretchHeights[orientation];
@@ -91552,28 +92230,6 @@ Ext.define('Ext.viewport.Android', {
     isHeightMaximized: function(height) {
         this.scrollToTop();
         return this.getWindowHeight() === height;
-    },
-
-    supportsOrientation: function () {
-        return false;
-    },
-
-    onResize: function () {
-        this.waitUntil(function () {
-            var oldWidth = this.windowWidth,
-                oldHeight = this.windowHeight,
-                width = this.getWindowWidth(),
-                height = this.getWindowHeight(),
-                currentOrientation = this.getOrientation(),
-                newOrientation = this.determineOrientation();
-
-            return ((oldWidth !== width && oldHeight !== height) && currentOrientation !== newOrientation);
-        }, function () {
-            var currentOrientation = this.getOrientation(),
-                newOrientation = this.determineOrientation();
-
-            this.fireOrientationChangeEvent(newOrientation, currentOrientation);
-         }, Ext.emptyFn, 250);
     },
 
     doPreventZooming: function (e) {
@@ -91729,7 +92385,7 @@ Ext.define('Ext.viewport.Ios', {
         }
 
         var stretchHeights = this.stretchHeights,
-            orientation = this.orientation,
+            orientation = this.getOrientation(),
             currentHeight = this.getWindowHeight(),
             height = stretchHeights[orientation];
 
@@ -91772,7 +92428,8 @@ Ext.define('Ext.viewport.Ios', {
     },
 
     getScreenHeight: function() {
-        return window.screen[this.orientation === this.PORTRAIT ? 'height' : 'width'];
+        var orientation = this.getOrientation();
+        return window.screen[orientation === this.PORTRAIT ? 'height' : 'width'];
     },
 
     onElementFocus: function() {
@@ -91872,11 +92529,13 @@ Ext.define('Ext.viewport.Ios', {
                 },
 
                 getWindowHeight: function() {
-                    return this.stretchHeights[this.orientation];
+                    var orientation = this.getOrientation();
+                    return this.stretchHeights[orientation];
                 },
 
                 getWindowWidth: function() {
-                    return this.stretchWidths[this.orientation];
+                    var orientation = this.getOrientation();
+                    return this.stretchWidths[orientation];
                 },
 
                 setViewportSizeToAbsolute: function() {
@@ -91903,8 +92562,15 @@ Ext.define('Ext.viewport.Ios', {
                     window.scrollTo(0, 0);
 
                     this.callOverridden(arguments);
+                },
+
+                onElementBlur: function() {
+                    this.callOverridden(arguments);
+                    if (window.scrollY !== 0) {
+                        window.scrollTo(0, 0);
+                    }
                 }
-            })
+            });
         }
     }
 });
@@ -91946,28 +92612,6 @@ Ext.define('Ext.viewport.WindowsPhone', {
         document.body.addEventListener('onselectstart', preventSelection);
 
         this.callParent(arguments);
-    },
-
-    supportsOrientation: function() {
-        return false;
-    },
-
-    onResize: function() {
-        this.waitUntil(function() {
-            var oldWidth = this.windowWidth,
-                oldHeight = this.windowHeight,
-                width = this.getWindowWidth(),
-                height = this.getWindowHeight(),
-                currentOrientation = this.getOrientation(),
-                newOrientation = this.determineOrientation();
-
-            return ((oldWidth !== width && oldHeight !== height) && currentOrientation !== newOrientation);
-        }, function() {
-            var currentOrientation = this.getOrientation(),
-                newOrientation = this.determineOrientation();
-            this.fireOrientationChangeEvent(newOrientation, currentOrientation);
-
-        }, Ext.emptyFn, 250);
     }
 });
 
@@ -91980,7 +92624,7 @@ Ext.define('Ext.viewport.WindowsPhone', {
 Ext.define('Ext.viewport.Viewport', {
                
                            
-                               
+                                    
                                    
       
 
@@ -91990,7 +92634,7 @@ Ext.define('Ext.viewport.Viewport', {
 
         switch (osName) {
             case 'Android':
-                viewportName = (Ext.browser.name == 'ChromeMobile') ? 'Default' : 'Android';
+                viewportName = (Ext.browser.name == 'ChromeMobile') ? 'Default' : 'AndroidStock';
                 break;
 
             case 'iOS':

@@ -57,6 +57,7 @@ build/**
 cordova/platforms
 cordova/www
 resources/sass/.sass-cache/
+resources/sass/
 .sencha_backup
 .sencha
 .sencha/

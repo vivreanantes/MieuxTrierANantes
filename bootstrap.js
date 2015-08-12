@@ -84,6 +84,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.Template": [],
   "Ext.Title": [],
   "Ext.TitleBar": [],
+  "Ext.Toast": [],
   "Ext.Toolbar": [],
   "Ext.Video": [],
   "Ext.XTemplate": [],
@@ -568,7 +569,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.picker.Slot": [
     "Ext.Picker.Slot"
   ],
-  "Ext.plugin.BufferedList": [],
   "Ext.plugin.ListPaging": [],
   "Ext.plugin.PullRefresh": [],
   "Ext.plugin.SortableList": [],
@@ -613,9 +613,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.util.Grouper": [],
   "Ext.util.HashMap": [],
   "Ext.util.Inflector": [],
-  "Ext.util.InputBlocker": [
-    "InputBlocker"
-  ],
+  "Ext.util.InputBlocker": [],
   "Ext.util.LineSegment": [],
   "Ext.util.MixedCollection": [],
   "Ext.util.Offset": [],
@@ -663,7 +661,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.parse.Store": [],
   "Ext.ux.parse.association.Pointer": [],
   "Ext.ux.parse.association.Relation": [],
-  "Ext.viewport.Android": [],
+  "Ext.viewport.AndroidStock": [
+    "Ext.viewport.Android"
+  ],
   "Ext.viewport.Default": [],
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
@@ -720,7 +720,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MieuxTrierANantes.view.home.GlobalSearchResult": [],
   "MieuxTrierANantes.view.home.Home": [],
   "MieuxTrierANantes.view.home.HomeContainer": [],
-  "MieuxTrierANantes.view.home.HomeContainerOld": [],
   "MieuxTrierANantes.view.home.HomeZone1": [],
   "MieuxTrierANantes.view.home.HomeZone2": [],
   "MieuxTrierANantes.view.home.HomeZone3": [],
@@ -826,6 +825,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.TitleBar": [
     "widget.titlebar"
   ],
+  "Ext.Toast": [],
   "Ext.Toolbar": [
     "widget.toolbar"
   ],
@@ -1358,9 +1358,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.picker.Slot": [
     "widget.pickerslot"
   ],
-  "Ext.plugin.BufferedList": [
-    "plugin.bufferedlist"
-  ],
   "Ext.plugin.ListPaging": [
     "plugin.listpaging"
   ],
@@ -1469,7 +1466,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.parse.association.Relation": [
     "association.relation"
   ],
-  "Ext.viewport.Android": [],
+  "Ext.viewport.AndroidStock": [],
   "Ext.viewport.Default": [
     "widget.viewport"
   ],
@@ -1577,9 +1574,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MieuxTrierANantes.view.home.HomeContainer": [
     "widget.homeContainer_xtype"
-  ],
-  "MieuxTrierANantes.view.home.HomeContainerOld": [
-    "widget.homeContainer_xtype_old"
   ],
   "MieuxTrierANantes.view.home.HomeZone1": [
     "widget.homeZone1_xtype"

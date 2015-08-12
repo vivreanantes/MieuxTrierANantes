@@ -129,9 +129,7 @@
  * form submission was successful. These functions are usually used to take some action in your app after your data
  * has been saved to the server side.
  *
- * @aside guide forms
- * @aside example forms
- * @aside example forms-toolbars
+ * For more information regarding forms and fields, please review [Using Forms in Sencha Touch Guide](../../../components/forms.html)
  */
 Ext.define('Ext.form.Panel', {
     alternateClassName: 'Ext.form.FormPanel',
@@ -311,7 +309,17 @@ Ext.define('Ext.form.Panel', {
          * @cfg {Boolean} multipartDetection
          * If this is enabled the form will automatically detect the need to use 'multipart/form-data' during submission.
          */
-        multipartDetection: true
+        multipartDetection: true,
+
+        /**
+         * @cfg {Boolean} enableSubmissionForm
+         * The submission form is generated but never added to the dom. It is a submittable version of your form panel, allowing for fields
+         * that are not simple textfields to be properly submitted to servers. It will also send values that are easier to parse
+         * with server side code.
+         *
+         * If this is false we will attempt to subject the raw form inside the form panel.
+         */
+        enableSubmissionForm: true
     },
 
     getElementConfig: function() {
@@ -386,6 +394,10 @@ Ext.define('Ext.form.Panel', {
         if (e && !me.getStandardSubmit()) {
             e.stopEvent();
         } else {
+            // Stop the submit event on the original for if we are swapping a form in
+            if (me.getEnableSubmissionForm()) {
+                e.stopEvent();
+            }
             this.submit(null, e);
         }
     },
@@ -479,8 +491,9 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the action.
      *
-     * @param {Ext.form.Panel} options.success.result
-     * The result object returned by the server as a result of the submit request.
+     * @param {Object/Ext.direct.Event} options.success.result
+     * The result object returned by the server as a result of the submit request. If the submit is sent using Ext.Direct,
+     * this will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -506,9 +519,15 @@ Ext.define('Ext.form.Panel', {
      * If the standardSubmit config is true, then the return value is undefined.
      */
     submit: function(options, e) {
+        options = options || {};
+
         var me = this,
-            form = me.element.dom || {},
-            formValues;
+            formValues = me.getValues(me.getStandardSubmit() || !options.submitDisabled),
+            form = me.element.dom || {};
+
+        if(this.getEnableSubmissionForm()) {
+            form = this.createSubmissionForm(form, formValues);
+        }
 
         options = Ext.apply({
             url : me.getUrl() || form.action,
@@ -523,15 +542,52 @@ Ext.define('Ext.form.Panel', {
             failure : null
         }, options || {});
 
-        formValues = me.getValues(me.getStandardSubmit() || !options.submitDisabled);
-
         return me.fireAction('beforesubmit', [me, formValues, options, e], 'doBeforeSubmit');
     },
 
-    doBeforeSubmit: function(me, formValues, options) {
-        var form = me.element.dom || {};
+    createSubmissionForm: function(form, values) {
+        var fields = this.getFields(),
+            name, input, field, fileinputElement, inputComponent;
 
-        var multipartDetected = false;
+        if(form.nodeType === 1) {
+            form = form.cloneNode(false);
+
+            for (name in values) {
+                input = document.createElement("input");
+                input.setAttribute("type", "text");
+                input.setAttribute("name", name);
+                input.setAttribute("value", values[name]);
+                form.appendChild(input);
+            }
+        }
+
+        for (name in fields) {
+            if (fields.hasOwnProperty(name)) {
+                field = fields[name];
+                if(field.isFile) {
+                    if(!form.$fileswap) form.$fileswap = [];
+
+                    inputComponent = field.getComponent().input;
+                    fileinputElement = inputComponent.dom;
+                    input = fileinputElement.cloneNode(true);
+                    fileinputElement.parentNode.insertBefore(input, fileinputElement.nextSibling);
+                    form.appendChild(fileinputElement);
+                    form.$fileswap.push({original: fileinputElement, placeholder: input});
+                } else if(field.isPassword) {
+                    if(field.getComponent().getType !== "password") {
+                        field.setRevealed(false);
+                    }
+                }
+            }
+        }
+
+        return form;
+    },
+
+    doBeforeSubmit: function(me, formValues, options) {
+        var form = options.form || {},
+            multipartDetected = false;
+
         if(this.getMultipartDetection() === true) {
             this.getFieldsAsArray().forEach(function(field) {
                 if(field.isFile === true) {
@@ -648,10 +704,22 @@ Ext.define('Ext.form.Panel', {
                     options.headers || {}
                 );
                 request.callback = function(callbackOptions, success, response) {
-                    var me = this,
-                        responseText = response.responseText,
+                    var responseText = response.responseText,
                         responseXML = response.responseXML,
                         statusResult = Ext.Ajax.parseStatus(response.status, response);
+
+                    if(form.$fileswap) {
+                        var original, placeholder;
+                        Ext.each(form.$fileswap, function(item) {
+                            original = item.original;
+                            placeholder = item.placeholder;
+
+                            placeholder.parentNode.insertBefore(original, placeholder.nextSibling);
+                            placeholder.parentNode.removeChild(placeholder);
+                        });
+                        form.$fileswap = null;
+                        delete form.$fileswap;
+                    }
 
                     me.setMasked(false);
 
@@ -761,8 +829,9 @@ Ext.define('Ext.form.Panel', {
      * @param {Ext.form.Panel} options.success.form
      * The {@link Ext.form.Panel} that requested the load.
      *
-     * @param {Ext.form.Panel} options.success.result
-     * The result object returned by the server as a result of the load request.
+     * @param {Object/Ext.direct.Event} options.success.result
+     * The result object returned by the server as a result of the load request. If the loading was done via Ext.Direct,
+     * will return the {@link Ext.direct.Event} instance, otherwise will return an Object.
      *
      * @param {Object} options.success.data
      * The parsed data returned by the server.
@@ -793,7 +862,7 @@ Ext.define('Ext.form.Panel', {
             api = me.getApi(),
             url = me.getUrl() || options.url,
             waitMsg = options.waitMsg,
-            successFn = function(data, response) {
+            successFn = function(response, data) {
                 me.setValues(data.data);
 
                 if (Ext.isFunction(options.success)) {
@@ -802,7 +871,7 @@ Ext.define('Ext.form.Panel', {
 
                 me.fireEvent('load', me, response);
             },
-            failureFn = function(data, response) {
+            failureFn = function(response, data) {
                 if (Ext.isFunction(options.failure)) {
                     options.failure.call(scope, me, response, data);
                 }
@@ -852,7 +921,6 @@ Ext.define('Ext.form.Panel', {
         } else if (url) {
             return Ext.Ajax.request({
                 url: url,
-                scope: me,
                 timeout: (options.timeout || this.getTimeout()) * 1000,
                 method: options.method || 'GET',
                 autoAbort: options.autoAbort,
@@ -863,8 +931,7 @@ Ext.define('Ext.form.Panel', {
                     options.headers || {}
                 ),
                 callback: function(callbackOptions, success, response) {
-                    var me = this,
-                        responseText = response.responseText,
+                    var responseText = response.responseText,
                         statusResult = Ext.Ajax.parseStatus(response.status, response);
 
                     me.setMasked(false);
@@ -1005,7 +1072,7 @@ Ext.define('Ext.form.Panel', {
         // Function which you give a field and a name, and it will add it into the values
         // object accordingly
         addValue = function(field, name) {
-            if (!all && (!name || name === 'null')) {
+            if (!all && (!name || name === 'null') || field.isFile) {
                 return;
             }
 
@@ -1112,7 +1179,6 @@ Ext.define('Ext.form.Panel', {
     },
 
     /**
-     * @private
      * Returns all {@link Ext.field.Field field} instances inside this form.
      * @param {Boolean} byName return only fields that match the given name, otherwise return all fields.
      * @return {Object/Array} All field instances, mapped by field name; or an array if `byName` is passed.

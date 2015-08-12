@@ -1,6 +1,5 @@
 /**
  * @author Ed Spencer
- * @aside guide stores
  *
  * The Store class encapsulates a client side cache of {@link Ext.data.Model Model} objects. Stores load
  * data via a {@link Ext.data.proxy.Proxy Proxy}, and also provide functions for {@link #sort sorting},
@@ -490,7 +489,7 @@ Ext.define('Ext.data.Store', {
         proxy: undefined,
 
         /**
-         * @cfg {Object[]} fields
+         * @cfg {Object[]/Ext.util.Collection} fields
          * Returns Ext.util.Collection not just an Object.
          * Use in place of specifying a {@link #model} configuration. The fields should be a
          * set of {@link Ext.data.Field} configuration objects. The store will automatically create a {@link Ext.data.Model}
@@ -1137,9 +1136,7 @@ Ext.define('Ext.data.Store', {
                 });
             }
         }
-        if (oldGrouper) {
-            this.fireEvent('refresh', this, data);
-        }
+        this.fireEvent('refresh', this, data);
     },
 
     /**
