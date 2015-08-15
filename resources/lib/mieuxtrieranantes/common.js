@@ -244,10 +244,10 @@ function _gestionLien(e) {
 				// Possible web browser
 				url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + complement;
 				window.open(url, "_system");
-				e.stopPropagation();
-				e.preventDefault();
-				e.stopEvent();
-				return false;
+				// e.stopPropagation();
+				// e.preventDefault();
+				// e.stopEvent();
+				// return false;
 			}
 		} else if (protocole == "tel:") {
 
@@ -274,7 +274,7 @@ function _getUrlYAllerLatLong(latitude, longitude) {
 	var lien = "lalo:" + latitude + "," + longitude;
 	var url = "<a href="
 			+ lien
-			+ "><img src='resources/images/images_non_libres/y_aller.png' /></a>";
+			+ "><img src='resources/images/y_aller.png' height='30px' /></a>";
 	return url;
 }
 
@@ -283,7 +283,7 @@ function _getTelephone(tel) {
 	var lien = "tel:" + tel;
 	var url = "<a href='"
 			+ lien
-			+ "'><img src='resources/images/images_non_libres/appeler.png' /></a>";
+			+ "'><img src='resources/images/appeler.png' height='30px' /></a>";
 	return url;
 }
 

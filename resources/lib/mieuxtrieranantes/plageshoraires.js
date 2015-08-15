@@ -32,7 +32,7 @@ function _verifieOuvertAujourdhuiDemain(stPlagesHoraire) {
 			var plageHoraire = arPlagesHoraires[i];
 			// Cas des "sauf_"
 			if (plageHoraire.substring(0, 5) == "sauf_") {
-				specialDayZone = arPlagesHoraires;
+				specialDayZone = plageHoraire;
 			}
 			// Cas des plages
 			else if (plageHoraire.length > 0) {
@@ -129,13 +129,13 @@ function _verifSpecialDay(stSpecialDay, specialDayZone) {
 	var result = false;
 
 	// Si le jour recherché est un jour férié
-	if (stSpecialDay != "") {
+	if (stSpecialDay != "" && specialDayZone != "") {
 		// Je transforme la zone des jours fériés, puis je recherche mon
 		// jour
 		var arSpecialDays = specialDayZone.split(separatorEt);
 		if (specialDayZone == "sauf_ferie") {
 			result = true;
-		} else if (this.utilArrayContainObject(arSpecialDays, stSpecialDay)) {
+		} else if (_utilArrayContainObject(arSpecialDays, stSpecialDay)) {
 			result = true;
 		}
 	}

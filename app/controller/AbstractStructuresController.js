@@ -65,7 +65,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ record["adresseTemp"] + "<br/>";
 		}
 		// Ajout du lien "y aller"
-		/*if (record["latitude"] != null && record["latitude"] !== ""
+		if (record["latitude"] != null && record["latitude"] !== ""
 				&& record["longitude"] != null && record["longitude"] !== "") {
 
 			descriptionTraduit += _getUrlYAllerLatLong(record["latitude"],
@@ -74,7 +74,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 		} else {
 			descriptionTraduit += "<br/>";
-		}*/
+		}
 
 		// Ajout de la description
 		if (record["descr"] != null && record["descr"] !== "") {
@@ -88,12 +88,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ "<br/><br/>";
 		}
 		// Ajout du lien "telephone"
-		/*if (record["tel"] != null && record["tel"] !== "") {
+		if (record["tel"] != null && record["tel"] !== "" && _detecteMobile()==true) {
 			descriptionTraduit += _getTelephone(record["tel"]) + "<br/><br/>";
 
 		} else {
 			descriptionTraduit += "<br/>";
-		}*/
+		}
 		// Ajout de l'email
 		if (record["email"] != null && record["email"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_email"));
