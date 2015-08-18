@@ -141,6 +141,9 @@ Ext.application({
 		// This method accepts a Position object, which contains the
 		// current GPS coordinates
 		//
+		
+		 navigator.splashscreen.hide();
+		
 		var geolocationSuccess = function(position) {
 
 			var msg = 'Latitude: ' + position.coords.latitude + '\n'

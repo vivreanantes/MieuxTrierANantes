@@ -724,15 +724,17 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var mainView = this.getMainView();
 		mainView.type = type;
 		mainView.active = code;
-		if (type == "Déchet") {
+		// on passe le type en minuscule
+		type = type.toLowerCase();
+		if (type == "déchet" || type=="dechet") {
 			mainView.setActiveItem(1);
-		} else if (type == "Fiche") {
+		} else if (type == "fiche") {
 			mainView.setActiveItem(3);
-		} else if (type == "Mode de collecte") {
+		} else if (type == "mode de collecte" || type == "modedecollecte") {
 			// mainView.setActiveItem(2);
 		} else if (type.substring(0,9) == " réemploi" || type.substring(0,14) == " vente au vrac") {
 			mainView.setActiveItem(4);
-		} else if (type == "Quiz") {
+		} else if (type == "quiz") {
 			mainView.setActiveItem(0);
 			// mainView.this.show2(1);
 		}

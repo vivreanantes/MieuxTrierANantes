@@ -323,7 +323,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
-		_gestionLienExterne();
+		// _gestionLienExterne();
 
 	},
 

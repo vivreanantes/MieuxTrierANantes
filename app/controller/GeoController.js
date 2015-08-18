@@ -3,7 +3,7 @@
  */
 
 Ext.define('MieuxTrierANantes.controller.GeoController', {
-	extend : 'MieuxTrierANantes.controller.AbstractController',
+	extend : 'MieuxTrierANantes.controller.AbstractStructuresController',
 	config : {
 		refs : {
 			mapOSM : 'maposm_xtype'
@@ -14,7 +14,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 		},
 		control : {
 			mapOSM : {
-				activate : 'onMapActivate',
+				// activate : 'onMapActivate',
 				show : 'onShowMapOSM'
 			}
 		}
@@ -25,13 +25,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	 */
 	onMapActivate : function(container, newc) {
 
-		this.mapOsm = this.getMapOSM();
-		this.initialiseCarte();
-
-		if (!Ext.isDefined(this.structureGeoStore)) {
-			this.loadStructures();
-		};
-
+	
 	},
 
 	/**
@@ -217,11 +211,21 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			if (record.get('adresseTemp') != null) {
 				popuptext = popuptext + record.get('adresseTemp') + '<br/>';
 			}
+			if (record.get('plagesHoraires') != null) {
+				this.getAttributsPlagesHoraires(record, "fr");
+				if (record.get('plagesHoraires_prochainsJours')!=" ") {
+					popuptext = popuptext + record.get('plagesHoraires_prochainsJours')+"<br/>";
+				}
+			}
+			
 			if (record.get('src') != null) {
 				popuptext = popuptext + "<i><font color=red>"
 						+ record.get('src') + "</font></i><br/>"
 
 			}
+			
+
+			
 			/*url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + latitude +  "," + longitude;
 			popuptext = popuptext+ "<a href='"+url+"' target=_blank>Y aller</a><br/>";
 			// popuptext = popuptext + "<a href='" + _getUrlYAller(latitude +
@@ -356,9 +360,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	 * 
 	 */
 	onShowMapOSM : function() {
+		
+		this.mapOsm = this.getMapOSM();
 
-		// console.debug('LEAFLET : EXT onShowMapOSM');
-
+		this.initialiseCarte();
+		
 		if (!Ext.isDefined(this.lmap)) {
 
 			// INIT MAX BOUNDS (Nantes et agglo)
@@ -428,6 +434,13 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			}
 
 		}
+
+
+
+		if (!Ext.isDefined(this.structureGeoStore)) {
+			this.loadStructures();
+		};
+
 
 	},
 

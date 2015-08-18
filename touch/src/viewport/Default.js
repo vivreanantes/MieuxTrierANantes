@@ -377,7 +377,13 @@ Ext.define('Ext.viewport.Default', {
         //In IE9/10 browser window loses focus and becomes inactive if focused element is <body>. So we shouldn't call blur for <body>
         if (focusedElement && focusedElement.nodeName.toUpperCase() != 'BODY' && !this.isInputRegex.test(target.tagName)) {
             delete this.focusedElement;
-            focusedElement.blur();
+           try{
+				focusedElement.blur();
+			}catch(e){ 
+				// CRN
+				// http://developer.sencha.com/forum/showthread.php?294609-Viewport-focusedElement.blur-is-not-a-function&p=1081100
+			}
+			
         }
     },
 

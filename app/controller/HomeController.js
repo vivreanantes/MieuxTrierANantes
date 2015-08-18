@@ -108,6 +108,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	onActivateHome : function(newActiveItem, container, oldActiveItem, eOpts) {
+
+		// TODO_CRN tempo à tester.
+		var t = location.search.substring(1).split('&');
+		for (var i = 0; i < t.length; i++) {
+			var x = t[i].split('=');
+			this.showActiveItemInPage(x[0],x[1]);
+		}
+		
 		if (container.getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
 			var homeView = this.getHome();
 			homeView.getNavigationBar().fireEvent('back', this);
@@ -158,7 +166,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	onInitializeHome : function() {
-		// 
+	
 	},
 
 	onHomeButton2 : function() {
@@ -327,6 +335,39 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
 		this.getHome().push(this.globalSearchResult);
+
+		var texteNoAccents = _utilRetireAccentEtMinuscule(this
+				.getHomeGlobalSearchFormText().getValue());
+
+		var store = this.getHomeGlobalSearchList().getStore();
+		if (store == null) {
+			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
+			this.getHomeGlobalSearchList().setStore(store);
+		}
+		var tempo = [];
+		this.ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas,
+				texteNoAccents);
+		this.ajouteDatas(tempo, _hashFichesDatas, _infosDatas, texteNoAccents);
+		this.ajouteDatas(tempo, _hashDocsDatas, _garbagesDatas, texteNoAccents);
+		this.ajouteDatas(tempo, _hashStructuresDatas, _structures1Datas,
+				texteNoAccents);
+
+		// utilPushArray(_garbagesDatas, tempo);
+		// utilPushArray(_infosDatas, tempo);
+		// utilPushArray(_structures1Datas, tempo);
+		// utilPushArray(_quizsDatas, tempo);
+		/*
+		 * var cles = _hashGarbagesDatas[0][texteNoAccents]; if (cles !=
+		 * undefined) { var codesDechets = cles.split(','); var taille =
+		 * codesDechets.length; for (var j = 1; j < taille; j++) { var
+		 * codeDechet = codesDechets[j]; for (var k = 0; k <
+		 * _garbagesDatas.length; k++) { if (_garbagesDatas[k]["code"] ==
+		 * codeDechet) { // _garbagesDatas[k]["type"] = "Déchet";
+		 * tempo.push(_garbagesDatas[k]); } } } }
+		 */
+		store.removeAll();
+		store.setData(tempo);
+		store.sync();
 	},
 
 	/**
@@ -334,87 +375,23 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 */
 	onShowGlobalSearchResultList : function() {
 
-		var texteSansAccents = _utilRetireAccentEtMinuscule(this
-				.getHomeGlobalSearchFormText().getValue());
-
-		// if (this.getHomeGlobalSearchList().getStore() == null) {
-		var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
-		this.getHomeGlobalSearchList().setStore(store);
-		var tempo = [];
-		var temp = 28;
-		tempo = ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas, texteSansAccents);
-		// utilPushArray(_garbagesDatas, tempo);
-		// utilPushArray(_infosDatas, tempo);
-		// utilPushArray(_structures1Datas, tempo);
-		// utilPushArray(_quizsDatas, tempo);
-		var cles = _hashGarbagesDatas[0][texteSansAccents];
-		if (cles != undefined) {
-			var codesDechets = cles.split(',');
-			var taille = codesDechets.length;
-			for (var j = 1; j < taille; j++) {
-				var codeDechet = codesDechets[j];
-				for (var k = 0; k < _garbagesDatas.length; k++) {
-					if (_garbagesDatas[k]["code"] == codeDechet) {
-						// _garbagesDatas[k]["type"] = "Déchet";
-						tempo.push(_garbagesDatas[k]);
-					}
-				}
-			}
-		}
-		/*
-		 * var taille = tempo.length; for (var i = 1; i < taille; i++) { if
-		 * (tempo[i]["code"] != null) { if (tempo[i]["code"].substring(0, 4) ==
-		 * "dec_") { tempo[i]["type"] = "Déchet"; } else if
-		 * (tempo[i]["code"].substring(0, 6) == "fiche_") { tempo[i]["type"] =
-		 * "Fiche"; } } }
-		 */
-		// TODO chercher dans les documents.
-		// if (this.getDocsList().getStore() == null) {
-		// var store = Ext.create('MieuxTrierANantes.store.DocsStore');
-		// this.getDocsList().setStore(store);
-		// }
-		// structure.json
-		store.add(tempo);
-		// }
-		var store = this.getHomeGlobalSearchList().getStore();
-
-		// true sinon cela plante dans la version android
-		store.clearFilter(true);
-		if (store != null) {
-			thisController = this;
-
-			// Filtrer sans casse, en cherchant la chaine dans le nom, en
-			// filtrant sur la catégorie
-			var filterGlobalSearch = Ext.create('Ext.util.Filter', {
-						filterFn : function(item) {
-							var escaperegex = Ext.String.escapeRegex;
-							var texttest = new RegExp(
-									escaperegex(texteSansAccents), 'ig');
-							var motsCles_sansAccents = item.data["mots_cles"];
-							var temp = texttest.test(motsCles_sansAccents);
-							return (temp);
-						}
-					});
-			store.filter(filterGlobalSearch);
-		}
 	},
-	
-	ajouteDatas : function(tempo,_hashGarbagesDatas, _garbagesDatas, texteSansAccents) {
-		var cles = _hashGarbagesDatas[0][texteSansAccents];
+
+	ajouteDatas : function(tempo, _hash, _datas, texteNoAccents) {
+		var cles = _hash[0][texteNoAccents];
 		if (cles != undefined) {
 			var codesDechets = cles.split(',');
 			var taille = codesDechets.length;
-			for (var j = 1; j < taille; j++) {
+			for (var j = 0; j < taille; j++) {
 				var codeDechet = codesDechets[j];
-				for (var k = 0; k < _garbagesDatas.length; k++) {
-					if (_garbagesDatas[k]["code"] == codeDechet) {
+				for (var k = 0; k < _datas.length; k++) {
+					if (_datas[k]["code"] == codeDechet) {
 						// _garbagesDatas[k]["type"] = "Déchet";
-						tempo.push(_garbagesDatas[k]);
+						tempo.push(_datas[k]);
 					}
 				}
 			}
 		}
-		return tempo;
 	},
 
 	clickSettingsFormButton : function(button, e) {
@@ -534,6 +511,19 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else {
 			document.getElementById("qres1").style.display = 'block';
 		}
+
+		Ext.Msg.show({
+					title : "Résultats",
+					message : message + "<br/><img src='resources/images/quiz/"
+							+ nbOk + ".png' height='80px' />",
+					height : 280,
+					width : 200,
+					minWidth : 200,
+					scrollable : true,
+					buttons : Ext.Msg.OK,
+					icon : Ext.Msg.INFO
+				});
+
 	},
 
 	activateQuizView : function(views, eOpts) {
@@ -543,13 +533,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
 		if (record.data["type"] == "Quiz") {
 			this.show2(record.data["code"]);
-		}
-		/*
-		 * ele if (record.data["type"] == "Docs") { this.showDocList(); }
-		 */else {
+		} else {
 			this.showActiveItemInPage(record.data["type"], record.data["code"]);
 		}
-		// this.getGarbagesView().setActiveItem(0);
 	}
 
 });

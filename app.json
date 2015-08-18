@@ -88,8 +88,8 @@
      */
     "css": [
         {
-            "path": "resources/css/app.css",
-            "update": "delta"
+            "path": "resources/css/app.css"
+            // ,"update": "delta"
         },
 		{
 			"path" : "resources/css/mieuxtrieranantes.css"
@@ -107,7 +107,7 @@
          * List of items in the CACHE MANIFEST section
          */
         "cache": [
-            "index.html"
+            // TODO_CRN vérifier que ca ne pose pas de soucis 20150817 "index.html"
         ],
         /**
          * List of items in the NETWORK section
