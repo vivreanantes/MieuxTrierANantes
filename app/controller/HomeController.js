@@ -26,7 +26,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			settingsFormButton : '#settingsFormButton',
 			globalSearchResult : 'globalSearchResult_xtype',
 			homeGlobalSearchList : 'homeglobalsearchlist_xtype',
-			mainView : 'main_xtype'
+			mainView : 'main_xtype',
+			nav : 'navigation'
 		},
 		control : {
 			home : {
@@ -102,6 +103,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			},
 			globalSearchHomeButton : {
 				tap : 'onHomeButton2'
+			},
+			nav : {
+				pop : 'addBackButtonListener',
+				initialize : 'initializeNav'
 			}
 		}
 
@@ -113,9 +118,9 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		var t = location.search.substring(1).split('&');
 		for (var i = 0; i < t.length; i++) {
 			var x = t[i].split('=');
-			this.showActiveItemInPage(x[0],x[1]);
+			this.showActiveItemInPage(x[0], x[1]);
 		}
-		
+
 		if (container.getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
 			var homeView = this.getHome();
 			homeView.getNavigationBar().fireEvent('back', this);
@@ -140,12 +145,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					thisControler.descr1 = records[0].getData()["descr1"];
 					thisControler.descr2 = records[0].getData()["descr2"];
 					thisControler.descr3 = records[0].getData()["descr3"];
-					html = "<p style='line-height:22px'><a href='#' id='news1'>"
-							+ nom1
-							+ "</a><br/><a href='#' id='news2'>"
-							+ nom2
-							+ "</a><br/><a href='#' id='news3'>"
-							+ nom3
+					html = "<p style='line-height:22px'><a href='#' id='news1'>" + nom1
+							+ "</a><br/><a href='#' id='news2'>" + nom2 + "</a><br/><a href='#' id='news3'>" + nom3
 							+ "</a></p>"
 					thisControler.getHomeZone3_1().setHtml(html);
 					// thisControler.getHome().items.items[0].items.items[1].items.items[3].items.items[0].setHtml(html);
@@ -166,14 +167,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	onInitializeHome : function() {
-	
+
 	},
 
 	onHomeButton2 : function() {
 		// Si je suis sur la page 'home', je mets le bouton back
 		if (this.getMainView().getActiveItem().id.indexOf("home_xtype") != -1) {
-			if (this.getHome().getActiveItem().id
-					.indexOf("homeContainer_xtype") == -1) {
+			if (this.getHome().getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
 				var homeView = this.getHome();
 				homeView.getNavigationBar().fireEvent('back', this);
 			}
@@ -216,8 +216,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	showDocList : function() {
 		// Crée la page si elle n'existe pas encore
 		if (this.docsModal == null) {
-			this.docsModal = Ext
-					.create("MieuxTrierANantes.view.home.DocsModal");
+			this.docsModal = Ext.create("MieuxTrierANantes.view.home.DocsModal");
 		}
 		this.getHome().push(this.docsModal);
 
@@ -236,14 +235,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 		var nom = e.target.innerText;
 		Ext.Msg.show({
-					title : nom,
-					message : desc,
-					height : 400,
-					width : 300,
-					scrollable : true,
-					buttons : Ext.Msg.OK,
-					icon : Ext.Msg.INFO
-				});
+			title : nom,
+			message : desc,
+			height : 400,
+			width : 300,
+			scrollable : true,
+			buttons : Ext.Msg.OK,
+			icon : Ext.Msg.INFO
+		});
 	},
 	/**
 	 * Un quiz
@@ -270,22 +269,21 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (e.target.name == "settings") {
 			// Crée la page si elle n'existe pas encore
 			if (this.settingsView == null) {
-				this.settingsView = Ext
-						.create("MieuxTrierANantes.view.home.SettingsView");
+				this.settingsView = Ext.create("MieuxTrierANantes.view.home.SettingsView");
 			}
 			this.getHome().push(this.settingsView);
 		} else {
 			var description = _labelsDatas["about"]["fr"];
 			var nom = _labelsDatas["about_titre"]["fr"];
 			Ext.Msg.show({
-						title : nom,
-						message : description,
-						height : 400,
-						width : 300,
-						scrollable : true,
-						buttons : Ext.Msg.OK,
-						icon : Ext.Msg.INFO
-					});
+				title : nom,
+				message : description,
+				height : 400,
+				width : 300,
+				scrollable : true,
+				buttons : Ext.Msg.OK,
+				icon : Ext.Msg.INFO
+			});
 		}
 	},
 
@@ -331,13 +329,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		// Crée la page si elle n'existe pas encore
 		if (this.globalSearchResult == null) {
-			this.globalSearchResult = Ext
-					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
+			this.globalSearchResult = Ext.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
 		this.getHome().push(this.globalSearchResult);
 
-		var texteNoAccents = _utilRetireAccentEtMinuscule(this
-				.getHomeGlobalSearchFormText().getValue());
+		var texteNoAccents = _utilRetireAccentEtMinuscule(this.getHomeGlobalSearchFormText().getValue());
 
 		var store = this.getHomeGlobalSearchList().getStore();
 		if (store == null) {
@@ -345,12 +341,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas,
-				texteNoAccents);
+		this.ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas, texteNoAccents);
 		this.ajouteDatas(tempo, _hashFichesDatas, _infosDatas, texteNoAccents);
 		this.ajouteDatas(tempo, _hashDocsDatas, _garbagesDatas, texteNoAccents);
-		this.ajouteDatas(tempo, _hashStructuresDatas, _structures1Datas,
-				texteNoAccents);
+		this.ajouteDatas(tempo, _hashStructuresDatas, _structures1Datas, texteNoAccents);
 
 		// utilPushArray(_garbagesDatas, tempo);
 		// utilPushArray(_infosDatas, tempo);
@@ -397,19 +391,19 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	clickSettingsFormButton : function(button, e) {
 		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
 		var store = Ext.create('Ext.data.Store', {
-					model : "MieuxTrierANantes.model.SettingsModel"
-				});
+			model : "MieuxTrierANantes.model.SettingsModel"
+		});
 
 		// loads any existing Search data from localStorage
 		store.load();
 
 		// now add some Searches
 		store.add({
-					mail : 'Sencha Touch'
-				});
+			mail : 'Sencha Touch'
+		});
 		store.add({
-					mail : 'Ext JS'
-				});
+			mail : 'Ext JS'
+		});
 
 		// finally, save our Search data to localStorage
 		store.sync();
@@ -484,8 +478,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (nbKo < nbOk) {
 			message = "Plus de bonnes que de mauvaises réponses : ";
 		}
-		document.getElementById("resultat").innerHTML = message + nbOk + " / "
-				+ nbQ;
+		document.getElementById("resultat").innerHTML = message + nbOk + " / " + nbQ;
 		if (nbOk == 0 || nbOk == 1 || nbOk == 2 || nbOk == 3 || nbOk == 4) {
 			document.getElementById("qres5").style.display = 'none';
 		} else {
@@ -513,16 +506,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 
 		Ext.Msg.show({
-					title : "Résultats",
-					message : message + "<br/><img src='resources/images/quiz/"
-							+ nbOk + ".png' height='80px' />",
-					height : 280,
-					width : 200,
-					minWidth : 200,
-					scrollable : true,
-					buttons : Ext.Msg.OK,
-					icon : Ext.Msg.INFO
-				});
+			title : "Résultats",
+			message : message + "<br/><img src='resources/images/quiz/" + nbOk + ".png' height='80px' />",
+			height : 280,
+			width : 200,
+			minWidth : 200,
+			scrollable : true,
+			buttons : Ext.Msg.OK,
+			icon : Ext.Msg.INFO
+		});
 
 	},
 
@@ -536,6 +528,35 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else {
 			this.showActiveItemInPage(record.data["type"], record.data["code"]);
 		}
+	},
+
+	
+	// http://blog.dev001.net/post/95273889750/sencha-touch-integrating-android-back-button-by
+	initializeNav : function() {
+		var viewport = this;
+
+		// listen to hardware back button
+		document.addEventListener("backbutton", function() {
+			var nav = viewport.getNav();
+			if (nav.getInnerItems().length > 1)
+				nav.getNavigationBar().fireEvent('back');
+			else
+				navigator.app.exitApp();
+		}, false);
+
+		// HACK: override back button listener
+		this.getNav().getNavigationBar().removeListener('back', nav.onBackButtonTap, nav);
+		this.addBackButtonListener();
+	},
+
+	addBackButtonListener : function() {
+		var nav = this.getNav();
+		var navBar = nav.getNavigationBar();
+		navBar.on({
+			back : nav.onBackButtonTap,
+			scope : nav,
+			single : true
+		});
 	}
 
 });

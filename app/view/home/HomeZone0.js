@@ -19,7 +19,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone1', {
 			// xtype : 'label',
 			id : "homeZone1_bouton",
 			minWidth : '20px',
-			html : "<br/><a href=#><img src='resources/icons/info.png' name='info' /></a><div style='display:none'><a href=#><img src='resources/icons/settings.png' name='settings' /></a></div>",
+			html : "<br/><a href=#><img src='resources/icons/info.png' name='info' /></a><div style='display:none'><a href=#><img src='resources/icons/settings.png' name='settings' /></a><br/><a href=#><img src='resources/images/images_externes_libres/flag-fr.png' name='info' /></a></div>",
 			listeners : {
 				element : 'element',
 				delegate : 'a',

@@ -125,14 +125,17 @@ Ext.application({
 
 	onEvenementCordovaBackButton : function(e) {
 		e.preventDefault();
-		// Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
-		//		function(btn, text) {
-		//			if (btn == 'Yes') {
-		//				// Ceci ne fonctionne pas.
-		//				navigator.app.exitApp();
-		//				app.exitApp();
-		//			}
-		//		});
+		
+
+		
+		/* Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
+				function(btn, text) {
+					if (btn == 'Yes') {
+						// Ceci ne fonctionne pas.
+						navigator.app.exitApp();
+						app.exitApp();
+					}
+				});*/
 	},
 
 	onEvenementCordovaDeviceReady : function() {

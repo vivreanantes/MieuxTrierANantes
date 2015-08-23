@@ -376,3 +376,27 @@ function _gestionLienExterne() {
 		_detailleFiche(fiche, width, height, true);
 	}
 }
+
+
+/**
+ *  Renvoie la version du navigateur Internet Explorer (ou 0 pas IE).
+ */
+function _detectIeVersion(){
+	var iev=0;
+	var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
+	var trident = !!navigator.userAgent.match(/Trident\/7.0/);
+	var rv=navigator.userAgent.indexOf("rv:11.0");
+
+	if (ieold) iev=new Number(RegExp.$1);
+	if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
+	if (trident&&rv!=-1) iev=11;
+
+	return iev;
+}
+
+/**
+ * Renvoie true si le navigateur est Internet Explorer.
+ */
+function _isIE() {
+	return (_detectIeVersion()==0)
+}
