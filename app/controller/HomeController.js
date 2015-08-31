@@ -114,7 +114,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	onActivateHome : function(newActiveItem, container, oldActiveItem, eOpts) {
 
-		// TODO_CRN tempo à tester.
+		// TRELLO_EXTERNE tempo à tester.
 		var t = location.search.substring(1).split('&');
 		for (var i = 0; i < t.length; i++) {
 			var x = t[i].split('=');
@@ -136,21 +136,23 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				load : function(self, records) {
 					var i = 28;
 					// var j = records[0];
-					// thisControler.getHome().items.items[0].items.items[1].setData(records[0].getData());
-					// On valorise le contenu de la zone
-					// actualité
-					var nom1 = records[0].getData()["nom1"];
-					var nom2 = records[0].getData()["nom2"];
-					var nom3 = records[0].getData()["nom3"];
-					thisControler.descr1 = records[0].getData()["descr1"];
-					thisControler.descr2 = records[0].getData()["descr2"];
-					thisControler.descr3 = records[0].getData()["descr3"];
-					html = "<p style='line-height:22px'><a href='#' id='news1'>" + nom1
-							+ "</a><br/><a href='#' id='news2'>" + nom2 + "</a><br/><a href='#' id='news3'>" + nom3
-							+ "</a></p>"
-					thisControler.getHomeZone3_1().setHtml(html);
-					// thisControler.getHome().items.items[0].items.items[1].items.items[3].items.items[0].setHtml(html);
-
+					// On valorise le contenu de la zone actualité UNIQUEMENT si on a pu récupérée le record.
+					if (typeof records[0] != 'undefined') {
+						var nom1 = records[0].getData()["nom1"];
+						var nom2 = records[0].getData()["nom2"];
+						var nom3 = records[0].getData()["nom3"];
+						thisControler.descr1 = records[0].getData()["descr1"];
+						thisControler.descr2 = records[0].getData()["descr2"];
+						thisControler.descr3 = records[0].getData()["descr3"];
+						html = "<p style='line-height:22px'><a href='#' id='news1'>"
+								+ nom1
+								+ "</a><br/><a href='#' id='news2'>"
+								+ nom2
+								+ "</a><br/><a href='#' id='news3'>"
+								+ nom3
+								+ "</a></p>"
+						thisControler.getHomeZone3_1().setHtml(html);
+					}
 				}
 			}
 		});
@@ -173,7 +175,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onHomeButton2 : function() {
 		// Si je suis sur la page 'home', je mets le bouton back
 		if (this.getMainView().getActiveItem().id.indexOf("home_xtype") != -1) {
-			if (this.getHome().getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
+			if (this.getHome().getActiveItem().id
+					.indexOf("homeContainer_xtype") == -1) {
 				var homeView = this.getHome();
 				homeView.getNavigationBar().fireEvent('back', this);
 			}
@@ -216,7 +219,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	showDocList : function() {
 		// Crée la page si elle n'existe pas encore
 		if (this.docsModal == null) {
-			this.docsModal = Ext.create("MieuxTrierANantes.view.home.DocsModal");
+			this.docsModal = Ext
+					.create("MieuxTrierANantes.view.home.DocsModal");
 		}
 		this.getHome().push(this.docsModal);
 
@@ -235,14 +239,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 		var nom = e.target.innerText;
 		Ext.Msg.show({
-			title : nom,
-			message : desc,
-			height : 400,
-			width : 300,
-			scrollable : true,
-			buttons : Ext.Msg.OK,
-			icon : Ext.Msg.INFO
-		});
+					title : nom,
+					message : desc,
+					height : 400,
+					width : 300,
+					scrollable : true,
+					buttons : Ext.Msg.OK,
+					icon : Ext.Msg.INFO
+				});
 	},
 	/**
 	 * Un quiz
@@ -269,21 +273,38 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (e.target.name == "settings") {
 			// Crée la page si elle n'existe pas encore
 			if (this.settingsView == null) {
-				this.settingsView = Ext.create("MieuxTrierANantes.view.home.SettingsView");
+				this.settingsView = Ext
+						.create("MieuxTrierANantes.view.home.SettingsView");
 			}
 			this.getHome().push(this.settingsView);
+		} else if (e.target.name == "flag") {
+			// Si pas défini ou si francais on met anglais, sinon on met en
+			// francais.
+			if (typeof stGlobalLocale == 'undefined') {
+				stGlobalLocale = "fr";
+			}
+			if (stGlobalLocale == "fr") {
+				stGlobalLocale = "en";
+				document.getElementById("flag-fr").style.display = 'none';
+				document.getElementById("flag-gb").style.display = 'block';
+			} else {
+				stGlobalLocale = "fr";
+				document.getElementById("flag-fr").style.display = 'block';
+				document.getElementById("flag-gb").style.display = 'none';
+			}
+
 		} else {
 			var description = _labelsDatas["about"]["fr"];
 			var nom = _labelsDatas["about_titre"]["fr"];
 			Ext.Msg.show({
-				title : nom,
-				message : description,
-				height : 400,
-				width : 300,
-				scrollable : true,
-				buttons : Ext.Msg.OK,
-				icon : Ext.Msg.INFO
-			});
+						title : nom,
+						message : description,
+						height : 400,
+						width : 300,
+						scrollable : true,
+						buttons : Ext.Msg.OK,
+						icon : Ext.Msg.INFO
+					});
 		}
 	},
 
@@ -329,11 +350,21 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		// Crée la page si elle n'existe pas encore
 		if (this.globalSearchResult == null) {
-			this.globalSearchResult = Ext.create("MieuxTrierANantes.view.home.GlobalSearchResult");
+			this.globalSearchResult = Ext
+					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
+		var temp = "";
+		var locale = this.getLocale();
+		if (locale == "en") {
+			temp = "_en";
+		}
+		this.getHomeGlobalSearchList().setItemTpl( "<img src='resources/images/{image}' height='40px' align='left' />&nbsp;<i>{type"
+				+ temp + "}</i>&nbsp;<strong>{nom" + temp + "}</strong>");
+
 		this.getHome().push(this.globalSearchResult);
 
-		var texteNoAccents = _utilRetireAccentEtMinuscule(this.getHomeGlobalSearchFormText().getValue());
+		var texteNoAccents = _utilRetireAccentEtMinuscule(this
+				.getHomeGlobalSearchFormText().getValue());
 
 		var store = this.getHomeGlobalSearchList().getStore();
 		if (store == null) {
@@ -341,10 +372,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatas(tempo, _hashGarbagesDatas, _garbagesDatas, texteNoAccents);
-		this.ajouteDatas(tempo, _hashFichesDatas, _infosDatas, texteNoAccents);
-		this.ajouteDatas(tempo, _hashDocsDatas, _garbagesDatas, texteNoAccents);
-		this.ajouteDatas(tempo, _hashStructuresDatas, _structures1Datas, texteNoAccents);
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas, _garbagesDatas,
+				texteNoAccents, locale, "garbages");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas, _infosDatas, texteNoAccents, locale, "fiches");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _garbagesDatas, texteNoAccents, locale, "docs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas, _structures1Datas,
+				texteNoAccents, locale, "structures");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas, _homeCollectModsDatas,
+				texteNoAccents, locale, "homecollectmods");
 
 		// utilPushArray(_garbagesDatas, tempo);
 		// utilPushArray(_infosDatas, tempo);
@@ -368,42 +403,35 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 * Crée le store
 	 */
 	onShowGlobalSearchResultList : function() {
-
+		this.updateTextTranslated();
 	},
-
-	ajouteDatas : function(tempo, _hash, _datas, texteNoAccents) {
-		var cles = _hash[0][texteNoAccents];
-		if (cles != undefined) {
-			var codesDechets = cles.split(',');
-			var taille = codesDechets.length;
-			for (var j = 0; j < taille; j++) {
-				var codeDechet = codesDechets[j];
-				for (var k = 0; k < _datas.length; k++) {
-					if (_datas[k]["code"] == codeDechet) {
-						// _garbagesDatas[k]["type"] = "Déchet";
-						tempo.push(_datas[k]);
-					}
-				}
-			}
+	
+	updateTextTranslated : function() {
+				// Crée la page si elle n'existe pas encore
+		if (this.globalSearchResult == null) {
+			this.globalSearchResult = Ext
+					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
+		this.globalSearchResult.setTitle(this.translate("label_results"));
 	},
+
 
 	clickSettingsFormButton : function(button, e) {
 		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
 		var store = Ext.create('Ext.data.Store', {
-			model : "MieuxTrierANantes.model.SettingsModel"
-		});
+					model : "MieuxTrierANantes.model.SettingsModel"
+				});
 
 		// loads any existing Search data from localStorage
 		store.load();
 
 		// now add some Searches
 		store.add({
-			mail : 'Sencha Touch'
-		});
+					mail : 'Sencha Touch'
+				});
 		store.add({
-			mail : 'Ext JS'
-		});
+					mail : 'Ext JS'
+				});
 
 		// finally, save our Search data to localStorage
 		store.sync();
@@ -478,7 +506,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (nbKo < nbOk) {
 			message = "Plus de bonnes que de mauvaises réponses : ";
 		}
-		document.getElementById("resultat").innerHTML = message + nbOk + " / " + nbQ;
+		document.getElementById("resultat").innerHTML = message + nbOk + " / "
+				+ nbQ;
 		if (nbOk == 0 || nbOk == 1 || nbOk == 2 || nbOk == 3 || nbOk == 4) {
 			document.getElementById("qres5").style.display = 'none';
 		} else {
@@ -506,15 +535,16 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		}
 
 		Ext.Msg.show({
-			title : "Résultats",
-			message : message + "<br/><img src='resources/images/quiz/" + nbOk + ".png' height='80px' />",
-			height : 280,
-			width : 200,
-			minWidth : 200,
-			scrollable : true,
-			buttons : Ext.Msg.OK,
-			icon : Ext.Msg.INFO
-		});
+					title : "Résultats",
+					message : message + "<br/><img src='resources/images/quiz/"
+							+ nbOk + ".png' height='80px' />",
+					height : 280,
+					width : 200,
+					minWidth : 200,
+					scrollable : true,
+					buttons : Ext.Msg.OK,
+					icon : Ext.Msg.INFO
+				});
 
 	},
 
@@ -526,26 +556,26 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (record.data["type"] == "Quiz") {
 			this.show2(record.data["code"]);
 		} else {
-			this.showActiveItemInPage(record.data["type"], record.data["code"]);
+			this.showActiveItemInPage(record.data["page"], record.data["code"]);
 		}
 	},
 
-	
 	// http://blog.dev001.net/post/95273889750/sencha-touch-integrating-android-back-button-by
 	initializeNav : function() {
 		var viewport = this;
 
 		// listen to hardware back button
 		document.addEventListener("backbutton", function() {
-			var nav = viewport.getNav();
-			if (nav.getInnerItems().length > 1)
-				nav.getNavigationBar().fireEvent('back');
-			else
-				navigator.app.exitApp();
-		}, false);
+					var nav = viewport.getNav();
+					if (nav.getInnerItems().length > 1)
+						nav.getNavigationBar().fireEvent('back');
+					else
+						navigator.app.exitApp();
+				}, false);
 
 		// HACK: override back button listener
-		this.getNav().getNavigationBar().removeListener('back', nav.onBackButtonTap, nav);
+		this.getNav().getNavigationBar().removeListener('back',
+				nav.onBackButtonTap, nav);
 		this.addBackButtonListener();
 	},
 
@@ -553,10 +583,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		var nav = this.getNav();
 		var navBar = nav.getNavigationBar();
 		navBar.on({
-			back : nav.onBackButtonTap,
-			scope : nav,
-			single : true
-		});
+					back : nav.onBackButtonTap,
+					scope : nav,
+					single : true
+				});
 	}
 
 });

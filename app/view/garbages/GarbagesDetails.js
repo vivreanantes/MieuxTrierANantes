@@ -31,10 +31,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 						id : "garbagesdetails_recyclableetmodesdecollecte",
 						items : [{
 							id : "garbagesdetails_recyclable",
-							tpl : "{recyclable_string}<br/><br/>Modes de collecte : ",
-							// ,tpl : 'Recyclable
-							// {recyclable_string}<br/><br/>Modes de collecte
-							// :',
+							tpl : "{recyclable_string}",
 							data : {
 								recyclable_string : ""
 							}

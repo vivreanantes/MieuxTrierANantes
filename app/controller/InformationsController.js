@@ -79,7 +79,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 						var theItems = arItemsToShow;
 						for (var i = 0; i < theItems.length; i++) {
 							if (theItems[i]["id"] != '') {
-								var stLibelle = _cutWithBr(theItems[i]["nom"]);
+								var stLibelle = _cutWithBr(this.getRecordValue(theItems[i], "nom"));
 								result.push({
 											code : theItems[i]["id"],
 											label : stLibelle,

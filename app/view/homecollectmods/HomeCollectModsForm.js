@@ -7,8 +7,8 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 			xtype : 'homecollectmodsform_xtype',
 			config : {
 				items : [ {
-							html : 'Recherche par rue (Nantes) ou par nom de ville (hors Nantes). <i>Saisissez 2 caractères min.</i>',
-							height : '70px'
+							html : 'Recherche par rue (Nantes) ou par nom de ville (hors Nantes). <i></i>',
+							height : '40px'
 						},
 							{
 							layout : {
@@ -23,7 +23,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsForm', {
 										labelWidth : '80px',
 										width : '285px',
 										id : 'homeCollectModsFormText',
-										placeHolder : "Ex : royal"
+										placeHolder : "Ex : royale"
 									},
 									{
 										xtype : 'button',

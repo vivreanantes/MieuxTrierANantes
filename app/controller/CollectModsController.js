@@ -31,9 +31,11 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 	},
 
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
-		//		// STORE dataCollectMods
-		//		var dataCollectMods = this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getCollectModList().getStore();
-		//		var arItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
+		// // STORE dataCollectMods
+		// var dataCollectMods =
+		// this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getCollectModList().getStore();
+		// var arItemsToShow = this.getDatasForButtons_old(dataCollectMods,
+		// "modco");
 
 		var arItemsToShow = this.getArrayItemsToShowForButtons(
 				_collectModsDatas, "modco");
@@ -43,7 +45,7 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 			var theItems = arItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = _cutWithBr(theItems[i]["nom"]);
+				var stLibelle = _cutWithBr(this.getRecordValue(theItems[i],"nom"));
 				result.push({
 							code : theItems[i].id,
 							label : stLibelle,
@@ -56,8 +58,8 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 		this.setDataInButtonsWithManyLines(this.getCollectModsList(),
 				"collectModsButtonsPanel", result, nbMax, 3);
 
-		//	var arItems = this.getContentButtonsPanel(arItemsToShow);
-		// 	this.removeAllAndSetItems(this.getCollectModsList(), arItems);
+		// var arItems = this.getContentButtonsPanel(arItemsToShow);
+		// this.removeAllAndSetItems(this.getCollectModsList(), arItems);
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
@@ -81,8 +83,9 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 		// Ajout de la description
 		var descriptionTraduit = "";
-		if (collectModFromStore["descr"] != "") {
-			descriptionTraduit = collectModFromStore["descr"] + "<br/><br/>";
+		var descr = this.getRecordValue(collectModFromStore, "descr");
+		if (descr != "") {
+			descriptionTraduit = descr + "<br/><br/>";
 		}
 		this.setDataElement(this.collectModsDetails,
 				"collectModsDetails_description", {
@@ -115,8 +118,8 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 		this.getCollectModsView().push(this.collectModsDetails);
 
-	}/*,
-	onInitCollectModsList : function(container) {
-	}*/
+	}/*
+		 * , onInitCollectModsList : function(container) { }
+		 */
 
 });

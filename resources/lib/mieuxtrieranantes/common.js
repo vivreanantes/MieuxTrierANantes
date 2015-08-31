@@ -398,5 +398,5 @@ function _detectIeVersion(){
  * Renvoie true si le navigateur est Internet Explorer.
  */
 function _isIE() {
-	return (_detectIeVersion()==0)
+	return (_detectIeVersion()!=0)
 }

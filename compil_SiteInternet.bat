@@ -8,5 +8,5 @@ C:\dev\tools\sencha-cmd-5.1.3.61\sencha app build testing
 xcopy %PROJECT_DIR%\dist %PROJECT_DIR%\build\testing\MieuxTrierANantes\ /E /Y
 xcopy %PROJECT_DIR%\favicon.ico %PROJECT_DIR%\build\testing\MieuxTrierANantes\ /Y
 
-xcopy %PROJECT_DIR%\build\testing\MieuxTrierANantes C:\dev\UwAmp\phpapps\MieuxTrierANantes\ /E /Y
+REM xcopy %PROJECT_DIR%\build\testing\MieuxTrierANantes C:\dev\UwAmp\phpapps\MieuxTrierANantes\ /E /Y
 pause

@@ -5,7 +5,6 @@ var _labelsDatas = {
 	"about" : {
 		"fr" : "Application android (gratuite) et site mieuxtrieranantes.fr pour aider les habitants de Nantes Métropole à trier. "
 				+ "C'est un logiciel libre (code, photos, données) créé par des bénévoles (Christian Renoulin et Romain Debernardi).<br/>"
-				+ "<i>Plus d'infos<a href='http://mieuxtrieranantes.fr/index.html?fiche=fiche_mieuxtrierannantes'> ici </a>."
 				+ "<br/>"
 				+ "<a href='https://mieuxtrieranantes.wordpress.com'>blog</a> "
 				+ " <A HREF='https://www.facebook.com/pages/Mieux-trier-à-Nantes/266725983531595' TARGET=_blank title='Facebook'><IMG SRC='resources/icons/facebook.png' HEIGHT='18px' style='vertical-align:middle;'/></A> "

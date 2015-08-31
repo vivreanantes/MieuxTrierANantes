@@ -25,4 +25,28 @@ var _hashDocsDatas = [{
 	'sebastien' : 'doc_memosaintsebastien',
 	'saintjeanboisseau' : 'doc_memosjb',
 	'boisseau' : 'doc_memosjb'
+}, {
+	'z' : 'z',
+	'composting' : 'doc_compostage',
+	'trisac' : 'doc_trisacs',
+	'ess' : 'doc_trisacs',
+	'directoryess' : 'doc_annuaireess',
+	'nantes' : 'doc_jours_collectes_nantes',
+	'schedules' : 'doc_jours_collectes_nantes,doc_memoboug,doc_memocarquefou,doc_memolamontagne,doc_memolachapellesurerdre,doc_memoorvault,doc_memoreze,doc_memosaintherblain,doc_memosaintsebastien,doc_memosjb',
+	'collection' : 'doc_jours_collectes_nantes,doc_memoboug,doc_memocarquefou,doc_memolamontagne,doc_memolachapellesurerdre,doc_memoorvault,doc_memoreze,doc_memosaintherblain,doc_memosaintsebastien,doc_memosjb',
+	'memo' : 'doc_jours_collectes_nantes,doc_memoboug,doc_memocarquefou,doc_memolamontagne,doc_memolachapellesurerdre,doc_memoorvault,doc_memoreze,doc_memosaintherblain,doc_memosaintsebastien,doc_memosjb',
+	'bouguenais' : 'doc_memoboug',
+	'a' : 'bba',
+	'carquefou' : 'doc_memocarquefou,doc_memosaintsebastien',
+	'mountain' : 'doc_memolamontagne',
+	'chapelerdre' : 'doc_memolachapellesurerdre',
+	'orvault' : 'doc_memoorvault',
+	'reze' : 'doc_memoreze',
+	'saintherblain' : 'doc_memosaintherblain',
+	'stherblain' : 'doc_memosaintherblain',
+	'herblain' : 'doc_memosaintherblain',
+	'stsebastian' : 'doc_memosaintsebastien',
+	'st.sebastian' : 'doc_memosaintsebastien',
+	'sebastian' : 'doc_memosaintsebastien',
+	'saintjeanbushelbushel' : 'doc_memosjb'
 }];

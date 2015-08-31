@@ -16,7 +16,6 @@
 				"code" : "doc_annuaireess",
 				"nom" : "Annuaire économie sociale et solidaire – Nantes",
 				"mots_cles" : "annuaire,ess",
-				"url" : "www.ecoresp.net/ged/448/Annuaire_acteurs_ESS_prevention_dechet.pdf",
 				"image" : "application-vnd.ms-excel.png",
 				"src" : "MieuxTrierANantes 03/2015"
 			}, {
@@ -71,21 +70,21 @@
 			}, {
 				"code" : "doc_memosaintherblain",
 				"nom" : "Mémo Saint-Herblain sur site 'Nantes Métropole'",
-				"mots_cles" : "saint herblain,st herblain,herblain,horaires,collecte,memo",
+				"mots_cles" : "saint,herblain,st,herblain,herblain,horaires,collecte,memo",
 				"url" : "www.mieuxtrieranantes.fr/docs/memo-saint-herblain_1282835815451.pdf",
 				"image" : "application-pdf.png",
 				"src" : "03/2015"
 			}, {
 				"code" : "doc_memosaintsebastien",
 				"nom" : "Mémo Saint-Sébastien sur site 'Nantes Métropole'",
-				"mots_cles" : "st sebastien,saint sebastien,sebastien,carquefou,horaires,collecte,memo",
+				"mots_cles" : "st,sebastien,saint,sebastien,sebastien,carquefou,horaires,collecte,memo",
 				"url" : "www.mieuxtrieranantes.fr/docs/memo-saint-sebastien_1282835889068.pdf",
 				"image" : "application-pdf.png",
 				"src" : "03/2015"
 			}, {
 				"code" : "doc_memosjb",
 				"nom" : "Mémo Saint-Jean-Boiseau sur site 'Nantes Métropole'",
-				"mots_cles" : "saint jean boisseau,boisseau,horaires,collecte,memo",
+				"mots_cles" : "saint,jean,boisseau,boisseau,horaires,collecte,memo",
 				"url" : "www.mieuxtrieranantes.fr/docs/memo-st-jean-boiseau-1296561133663_1302269567876.pdf",
 				"image" : "application-pdf.png",
 				"src" : "03/2015"
@@ -100,7 +99,6 @@
 				"code" : "doc_listeasso",
 				"nom" : "Liste Associations Ou Entreprises Réemploi Loire-Atlantique (et lieux vente en vrac)",
 				"mots_cles" : "association,entreprise,reemploi,loire,atlantique,vrac",
-				"url" : "http://mieuxtrieranantes.fr/docs/listing_reemploi.xls",
 				"image" : "application-vnd.ms-excel.png",
 				"src" : "07/2015"
 			}, {}]

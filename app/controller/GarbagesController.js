@@ -5,9 +5,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	extend : 'MieuxTrierANantes.controller.AbstractController',
 	requires : ['MieuxTrierANantes.view.garbages.GarbagesContainer',
 			'MieuxTrierANantes.view.garbages.GarbagesForm'/*
-			 * ,
-			 * 'MieuxTrierANantes.view.garbages.GarbagesList'
-			 */],
+															 * ,
+															 * 'MieuxTrierANantes.view.garbages.GarbagesList'
+															 */],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -75,8 +75,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
 			},/*
-			 * advicesList : { initialize : 'onInitGarbagesAdvices' },
-			 */
+				 * advicesList : { initialize : 'onInitGarbagesAdvices' },
+				 */
 			/*
 			 * wasteTreatmentsCategoriesList : { initialize :
 			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
@@ -170,21 +170,20 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
-	// 	this.top();
+		// this.top();
 	},
-	
+
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.top();
 	},
 
-	
 	top : function() {
-		
+
 		// on initialise la liste des boutons si cela n'a pas encore eu lieu.
-		if (this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label=="") {
+		if (this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label == "") {
 			this.putInButtonsPanel("cu");
 		}
-		
+
 		var mainView = this.getMainView();
 		// mainView.type = "Fiche";
 		// (mainView.type == "Déchet" || typeof mainView.type == 'undefined') {
@@ -193,26 +192,26 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// Cas des liens qui ouvre la page
 			this.showGarbagesDetail2(mainView.active);
 			mainView.active = null;
-		}/* else {
-			this.putInButtonsPanel("cu");
-		}*/
+		}/*
+			 * else { this.putInButtonsPanel("cu"); }
+			 */
 	},
-	
+
 	onPushBackButton : function() {
 		// TODO : back une seule fois
-		/* if (this.getMainView().getActiveItem().id.indexOf("garbages_xtype") != -1) {
-			var garbageView = this.getGarbagesView();
-			if (garbageView.getActiveItem().id
-					.indexOf("garbagescontainer_xtype") == -1) {
-
-				garbageView.getNavigationBar().fireEvent('back', this);
-			}
-		} */
+		/*
+		 * if (this.getMainView().getActiveItem().id.indexOf("garbages_xtype") !=
+		 * -1) { var garbageView = this.getGarbagesView(); if
+		 * (garbageView.getActiveItem().id .indexOf("garbagescontainer_xtype") ==
+		 * -1) {
+		 * 
+		 * garbageView.getNavigationBar().fireEvent('back', this); } }
+		 */
 	},
-	/*onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
-		this.suspendEvents();
-		mainView.setActiveItem(2);
-	},*/
+	/*
+	 * onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+	 * this.suspendEvents(); mainView.setActiveItem(2); },
+	 */
 
 	putInButtonsPanel : function(stringFilter) {
 
@@ -225,11 +224,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 			var theItems = arItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-
-				var stLibelle = _cutWithBr(theItems[i]["nom"]);
 				result.push({
 							code : theItems[i].id,
-							label : stLibelle,
+							// nom est déja mis en francais ou en anglais
+							label : theItems[i].nom,
 							image : theItems[i].image
 						});
 			}
@@ -256,10 +254,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 					// var description = element['description'] + '<br/><a
 					// href="#" class="moreinfo" onclick="return
 					// false;">rr</a>';
-					var description = element['description'];
+					// var description = element['description'];
+					var nom = this.getRecordValue(element, "nom");
+					var descr = this.getRecordValue(element, "descr");
 					Ext.Msg.show({
-								title : element["nom"],
-								message : element["descr"],
+								title : nom,
+								message : descr,
 								height : 400,
 								width : 300,
 								scrollable : true,
@@ -402,8 +402,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				this.garbageDetail = Ext
 						.create('MieuxTrierANantes.view.garbages.GarbagesDetails');
 			}
-			/* "<I>" + this.translate("label_dechet") + "</I> + " */
-			var title = record["nom"];
+			var title = this.getRecordValue(record, "nom");
 			this.garbageDetail.setTitle(title);
 
 			var conseils = "";
@@ -447,11 +446,14 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				treatmentCategories = "";
 			}
 			treatmentCategories = _stringUpperFirstLetter(treatmentCategories);
-
 			// Modes de collecte
 			this.garbageDetail.items.items['0'].items.items['1'].items.items['0']
 					.setData({
 								recyclable_string : treatmentCategories
+										+ "<br/><br/>"
+										+ this
+												.translate("label_modes_de_collecte")
+										+ " :"
 							});
 			var modesDeCollecteTraduit = "";
 
@@ -527,9 +529,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// arItemsToShow);
 			// Ajout de la description
 			var descriptionTraduit = "";
-			if (record["descr"] != "") {
+			var descr = this.getRecordValue(record, "descr");
+			if (descr != "") {
 				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record["descr"] + "<br/>";
+						+ " : " + descr + "<br/>";
 			}
 			var source = "Non mentionné";
 			if (record["src"] != undefined && record["src"] != "") {
@@ -627,7 +630,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 					.getValue() === "all")
 					&& texttest.test(mots_cles)) {
 				// Ajoute les <br/>
-				var stLibelle = _cutWithBr(_garbagesDatas[j]["nom"]);
+				var stLibelle = _cutWithBr(this.getRecordValue(
+						_garbagesDatas[j], "nom"));
 				result.push({
 							code : _garbagesDatas[j]["code"],
 							label : stLibelle,

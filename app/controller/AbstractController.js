@@ -22,12 +22,34 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * LocalStorageController.
 	 */
 	getLocale : function() {
-		var result = "fr";
+		if (typeof stGlobalLocale == 'undefined') {
+			stGlobalLocale = "fr";
+		}
+		return stGlobalLocale;
+		// var result = "fr";
 		/*
 		 * var localStorageController = this .getApplication()
 		 * .getController("MieuxTrierANantes.controller.LocalStorageController");
 		 * result = localStorageController.getLocale();
 		 */
+		// return result;
+	},
+
+	/**
+	 * Renvoie la valeur d'un des champs, selon la langue.<br/> Exemple :
+	 * getRecordValue(record,'nom') renvoie 'car' si locale vaut 'en'.
+	 */
+	getRecordValue : function(record, key) {
+		var result = "";
+		this.stLocale = this.getLocale();
+		// if (key == "descr" || key == "nom") {
+		var enKey = key + "_en"
+		if (this.stLocale == 'en' && (typeof record[enKey] != 'undefined')) {
+			result = record[enKey];
+		} else {
+			result = record[key];
+		}
+		// }
 		return result;
 	},
 
@@ -88,11 +110,13 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			mainView.setActiveItem(0);
 			// TODO
 			// je reviens sur la page de depart
-			/*if (this.getHome().getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
-				var homeView = this.getHome();
-				homeView.getNavigationBar().fireEvent('back', this);
-			}*/
-			
+			/*
+			 * if
+			 * (this.getHome().getActiveItem().id.indexOf("homeContainer_xtype") ==
+			 * -1) { var homeView = this.getHome();
+			 * homeView.getNavigationBar().fireEvent('back', this); }
+			 */
+
 		}
 	},
 
@@ -270,17 +294,22 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 					for (i in arConseils) {
 						if (_advicesDatas[j]["code"] === arConseils[i]) {
 							// le conseil avec l'icone "info"
+							var nom = this.getRecordValue(_advicesDatas[j],
+									"nom");
+							var descr = this.getRecordValue(_advicesDatas[j],
+									"descr");
 							result1.push({
 										nom : "<img src='resources/icons/info.png' /> "
-												+ _advicesDatas[j]["nom"],
-										descr : _advicesDatas[j]["descr"]
+												+ nom,
+										descr : descr
 									});
 							// le texte "voir fiche fff"
 							if (_advicesDatas[j]["fiche"] != null
 									&& _advicesDatas[j]["fiche"] != "") {
 								var info = _getInfo(_advicesDatas[j]["fiche"]);
 								if (info != null) {
-									var libelleInfo = info["nom"];
+									var libelleInfo = this.getRecordValue(info,
+											"nom");
 									var codeInfo = info["code"];
 									result2.push({
 												"nom" : libelleInfo,
@@ -289,7 +318,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 														+ _advicesDatas[j]["fiche"]
 											});
 									result3.push({
-										"html" : "Plus d'infos <i><a href='fich:"
+										"html" : this
+												.translate("label_plus_d_infos")
+												+ " <i><a href='fich:"
 												+ codeInfo
 												+ "'>"
 												+ libelleInfo
@@ -375,10 +406,13 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 				for (i in arElementsFaq) {
 
 					if (arElementsFaq[i] === commentsString) {
+						var nom = this.getRecordValue(_commentsDatas[j], "nom");
+						var descr = this.getRecordValue(_commentsDatas[j],
+								"descr");
 						result.push({
 							libelle : "<img src='resources/icons/chat2.png' /> "
-									+ _commentsDatas[j]["nom"],
-							description : _commentsDatas[j]["descr"]
+									+ nom,
+							description : descr
 						});
 					}
 				}
@@ -658,10 +692,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var thisController = this;
 		datas.each(function(record) {
 					if (record.data["categ"] == buttonLabel) {
-
 						// Ajoute les <br/>
-						var stLibelle = _cutWithBr(record.data["nom"]);
-
+						var stLibelle = _cutWithBr(this.getRecordValue(
+								record.data, "nom"));
 						arItemsToShow.push({
 									"nom" : stLibelle,
 									"image" : record.data["image"],
@@ -706,11 +739,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	getArrayItemsToShowForButtons : function(datas, buttonLabel) {
 		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
-			if (datas[i].bouton == buttonLabel) {
-				var stLibelle = _cutWithBr(datas[i]["nom"]); // Ajoute
-				// les <br/>
+			if (typeof datas[i].bouton != "undefined"
+					&& datas[i].bouton == buttonLabel) {
+				// Ajoute les <br/>
+				var nom = _cutWithBr(this.getRecordValue(datas[i], "nom"));
 				arItemsToShow.push({
-							"nom" : stLibelle,
+							"nom" : nom,
 							"image" : datas[i].image,
 							"id" : datas[i].code
 						});
@@ -720,23 +754,82 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 
 	},
 
-	showActiveItemInPage : function(type, code) {
+	showActiveItemInPage : function(page, code) {
 		var mainView = this.getMainView();
-		mainView.type = type;
+		mainView.page = page;
 		mainView.active = code;
 		// on passe le type en minuscule
-		type = type.toLowerCase();
-		if (type == "déchet" || type=="dechet") {
+		// type = type.toLowerCase();
+		if (page == "garbages") {
 			mainView.setActiveItem(1);
-		} else if (type == "fiche") {
+		} else if (page == "fiches") {
 			mainView.setActiveItem(3);
-		} else if (type == "mode de collecte" || type == "modedecollecte") {
+		} else if (page == "collectmods") {
 			// mainView.setActiveItem(2);
-		} else if (type.substring(0,9) == " réemploi" || type.substring(0,14) == " vente au vrac") {
+		} else if (page == "structures") {
 			mainView.setActiveItem(4);
-		} else if (type == "quiz") {
+		} else if (page == "quiz") {
 			mainView.setActiveItem(0);
-			// mainView.this.show2(1);
+		} else if (page == "homecollectmods") {
+			mainView.setActiveItem(5);
+		}
+	},
+
+	/**
+	 * Renvoie la distance
+	 */
+	calculeDistance : function(posLatitudeInit, longitudeInit, posLatitude, posLongitude) {
+		var latLngCentre = L.latLng(posLatitudeInit, longitudeInit);
+		var latLngStructure = L.latLng(posLatitude, posLongitude);
+		var distanceEnMetre = latLngStructure.distanceTo(latLngCentre);
+		return distanceEnMetre;
+	},
+
+	/**
+	 * Cette fonctionne modifie un tableau fourni en paramètre, en ajoutant des
+	 * éléments du tableau _datas.<br/> On ajoute les éléments du tableau
+	 * _datas après avoir rechercher dans le tableau _hash tous les éléments
+	 * dont les codes sont exacement la chaine texteNoAccents.<br/> On prend en
+	 * compte locale dans la recherche de _hash.<br/> page est le nom de la
+	 * page sur laquelle sera affichée la donnée, et qui est mise sur la donnée
+	 */
+	ajouteDatasSelonFiltreSurHash : function(tableauARetourner, _hash, _datas,
+			texteNoAccents, locale, page) {
+		if (locale == "en" && _hash.length > 1) {
+			var cles = _hash[1][texteNoAccents];
+		} else {
+			var cles = _hash[0][texteNoAccents];
+		}
+		if (cles != undefined) {
+			var codesCles = cles.split(',');
+			var taille = codesCles.length;
+			for (var j = 0; j < taille; j++) {
+				var codeCle = codesCles[j];
+				for (var k = 0; k < _datas.length; k++) {
+					if (typeof _datas[k] != "undefined"
+							&& _datas[k]["code"] == codeCle) {
+						if (page == "homecollectmods") {
+							_datas[k]["type"] = "Collecte à domicile";
+							_datas[k]["type_en"] = "Home collect";
+							_datas[k]["image"] = "icon-go-home.png";
+							_datas[k]["nom"] = _datas[k]["dcv"];
+							_datas[k]["nom_en"] = _datas[k]["dcv"];
+						}
+						_datas[k]["page"] = page;
+						// Permet de prendre le français quand on a pas la
+						// traduction
+						_datas[k]["nom"] = this
+								.getRecordValue(_datas[k], "nom");
+						_datas[k]["type"] = this.getRecordValue(_datas[k],
+								"type");
+						// TRELLO_DISTANCE_JOURS
+						if (typeof _datas[k]["latitude"] != "undefined") {
+							var diste = this.calculeDistance(_datas[k]["latitude"], _datas[k]["longitude"], _datas[k]["latitude"], _datas[k]["longitude"]);
+						}
+						tableauARetourner.push(_datas[k]);
+					}
+				}
+			}
 		}
 	}
 });

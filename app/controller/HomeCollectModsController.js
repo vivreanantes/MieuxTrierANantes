@@ -20,14 +20,14 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 			homeCollectModDetail : {},
 
 			homeCollectModsList : {
-				itemtap : 'showHomeCollectModsDetail',
-				activate : 'onActivateHomeCollectModsList'
+				itemtap : 'showHomeCollectModsDetail'
 			},
 
 			homeCollectModsView : {
 				// On maitient ce control pour pouvoir faire
 				// this.getHomeCollectModsView().
-				show : 'onShowHomeCollectModsView'
+				show : 'onShowHomeCollectModsView',
+				activate : 'onActivateHomeCollectModsList'
 			},
 
 			homeCollectModsFormText : {
@@ -50,8 +50,48 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		}
 	},
 
-	onActivateHomeCollectModsList : function() {
+	/**
+	 * Renvoie une information
+	 */
+	getHomeCollectMods : function(idElement) {
 
+		var dcv = "";
+		var jcbj = "";
+		var mco = "";
+		var mots_cles = "";
+		var src = "";
+		var cons = "";
+
+		for (j in _homeCollectModsDatas) {
+			if (_homeCollectModsDatas[j]["code"] === idElement) {
+				dcv = _homeCollectModsDatas[j]["dcv"];
+				jcbj = _homeCollectModsDatas[j]["jcbj"];
+				mco = _homeCollectModsDatas[j]["mco"];
+				mots_cles = _homeCollectModsDatas[j]["mots_cles"];
+				src = _homeCollectModsDatas[j]["src"];
+				cons = _homeCollectModsDatas[j]["cons"];
+			}
+		}
+		return {
+			"code" : idElement,
+			"dcv" : dcv,
+			"jcbj" : jcbj,
+			"mco" : mco,
+			"mots_cles" : mots_cles,
+			"src" : src,
+			"cons" : cons
+		}
+	},
+
+	onActivateHomeCollectModsList : function() {
+		var mainView = this.getMainView();
+		if (mainView.active != null) {
+
+			var myElement = this.getHomeCollectMods(mainView.active);
+			this.showDetail(myElement);
+			mainView.active = null;
+
+		}
 	},
 
 	onKeyUpHomeCollectModsFormText : function(textbox, event) {
@@ -61,20 +101,20 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	},
 
 	onShowHomeCollectModsView : function() {
-		this.miseAJourDatasSelonHash(null);
-		var start = new Date().getTime();
+		// this.miseAJourDatasSelonHash(null);
 
 		if (this.getHomeCollectModsList().getStore() == null) {
-			var homecollectmodStore = Ext
+			var store = Ext
 					.create('MieuxTrierANantes.store.HomeCollectModStore');
-			this.getHomeCollectModsList().setStore(homecollectmodStore);
-			// homecollectmodStore.load();
+			this.getHomeCollectModsList().setStore(store);
 		}
-
-		// var end = new Date().getTime();
-		// var time = end - start;
-		// console.log("onShowHomeCollectModsView etape 1 : " + time);
+	
 	},
+	
+	updateTextTranslated : function() {
+		// this.homeCollectModDetail.setTitle(this.translate("label_collete_a_domicile"));
+	},
+
 
 	/**
 	 * Met à jour le data du store selon le hash (compare les 2 premiers
@@ -119,26 +159,21 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	},
 
 	showHomeCollectModsDetail : function(list, index, node, record) {
+		this.showDetail(record.data);
+	},
 
+	showDetail : function(record) {
 		if (record) {
 			if (!this.homeCollectModDetail) {
 				this.homeCollectModDetail = Ext
 						.create('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails');
-				// var stSrc = "<b>Source</b> : <font color=red>OpenDataNantes
-				// 09/2013</font></I><br/><br/>";
 				this.homeCollectModDetail.items.items['0'].setTpl('');
-				// '<UL><LI>si vous êtes en <B>"sac bleu et sac jaune"</B>
-				// (appelés "Trisac") : les sacs sont à déposer dans le même
-				// bac, les déchets recyclables dans le sac jaune, les déchets
-				// non recyclables dans le sac bleu.</LI>'+
-				// '<LI>si vous êtes en <B>"bac bleu et bac jaune"</B> : les
-				// déchets recyclables est à déposer dans le bac jaune, les
-				// déchets non recyclables dans le bac bleu.</LI></UL> {src}');
 			}
+			this.updateTextTranslated();
 
 			// Récupère les modes de collecte
 			var thisController = this;
-			var arModesDeCollecte = record.raw["mco"].split(',');
+			var arModesDeCollecte = record["mco"].split(',');
 			var arItemsToShow = new Array();
 
 			for (var j = 0; j < _collectModsDatas.length; j++) {
@@ -163,13 +198,12 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 					nbGarbagesdetailsCollectmodsMax);
 
 			// Ajout des conseils
-			var conseils = record.data["cons"];
+			var conseils = record["cons"];
 			var nbElementsMax = 2; // la page HomeCollectModsDetails.js affiche
 			// 2 éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			/*
-			 * for (var j = 0; j < arsConseils.length; j++) { arsConseils
-			 *  }
+			 * for (var j = 0; j < arsConseils.length; j++) { arsConseils }
 			 */
 			this.setDatasConseils(
 					this.homeCollectModDetail.items.items['0'].items,
@@ -179,7 +213,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.items.items['0'].items.items['0']
-					.setData(record.data);
+					.setData(record);
 
 			// Push the show contact view into the navigation view
 			this.getHomeCollectModsView().push(this.homeCollectModDetail);
@@ -191,9 +225,10 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 	/**
 	 * Filtre sur les rues, selon la chaine saisie.
 	 */
-	onHomeCollectModStoreFilter : function() {
+	old_onHomeCollectModStoreFilter : function() {
 		var value = this.getHomeCollectModsFormText().getValue();
 		var texteSansAccents = _utilRetireAccentEtMinuscule(value);
+
 		this.miseAJourDatasSelonHash(texteSansAccents);
 		var store = this.getHomeCollectModsList().getStore();
 		// true sinon cela plante dans la version android
@@ -216,6 +251,23 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		}
 	},
 
+	/**
+	 * Filtre sur les rues, selon la chaine saisie.
+	 */
+	onHomeCollectModStoreFilter : function() {
+		var value = this.getHomeCollectModsFormText().getValue();
+		var texteSansAccents = _utilRetireAccentEtMinuscule(value);
+		var tempo = [];
+		var locale = this.getLocale();
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+				_homeCollectModsDatas, texteSansAccents, locale,
+				"homecollectmods");
+		var store = this.getHomeCollectModsList().getStore();
+		store.removeAll();
+		store.setData(tempo);
+		store.sync();
+	},
+
 	onTapLinkButton : function(button, e, eOpts) {
 		var arButtonsId = button._data["code"].split(_SEPARATOR);
 		if (arButtonsId[0] === "collectMods_xtype") {
@@ -223,7 +275,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 				var element = _getCollectMod(arButtonsId[1]);
 				if (element != null) {
 					Ext.Msg
-							.alert(element['nom'], element['descr'],
+							.alert(element['nom'], element["descr"],
 									Ext.emptyFn);
 				}
 			}

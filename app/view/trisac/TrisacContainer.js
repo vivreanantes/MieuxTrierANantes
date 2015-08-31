@@ -11,7 +11,7 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacContainer', {
 				title : 'Distribution de Trisac',
 				items : [{
 							xtype : 'TrisacForm_xtype',
-							height : 140,
+							height : 100,
 							scrollable : false
 						}, {
 							xtype : 'TrisacList_xtype',

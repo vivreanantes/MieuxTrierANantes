@@ -10,6 +10,10 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 							type : 'string',
 							defaultValue : ''
 						}, {
+							name : "nom_en",
+							type : 'string',
+							defaultValue : ''
+						}, {
 							name : 'type',
 							type : 'string'
 						}, {
@@ -33,6 +37,9 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 							type : 'string'
 						}, {
 							name : "descr",
+							type : 'string'
+						}, {
+							name : "descr_en",
 							type : 'string'
 						}, {
 							name : 'modesCollecte',
@@ -63,6 +70,9 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 							type : 'string'
 						}, {
 							name : 'mots_cles',
+							type : 'string'
+						}, {
+							name : 'mots_cles_en',
 							type : 'string'
 						}, {
 							name : 'url',

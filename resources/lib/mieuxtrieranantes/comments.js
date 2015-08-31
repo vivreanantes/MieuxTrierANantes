@@ -46,21 +46,25 @@ function _getCollectMod(idElement) {
 
 	for (j in _collectModsDatas) {
 		if (_collectModsDatas[j].code === idElement) {
-			description = _collectModsDatas[j]["descr"];
+			descr = _collectModsDatas[j]["descr"];
+			descr_en = _collectModsDatas[j]["descr_en"];
 			conseils = _collectModsDatas[j]["cons"];
 			faq = _collectModsDatas[j]["faq"];
-			libelle = _collectModsDatas[j]["nom"];
+			nom = _collectModsDatas[j]["nom"];
+			nom_en = _collectModsDatas[j]["nom_en"];
 			image = _collectModsDatas[j]["image"];
 		}
 	}
 
 	return {
 		"code" : idElement,
-		"descr" : description,
+		"descr" : descr,
+		"descr_en" : descr_en,
 		"cons" : conseils,
 		"faq" : faq,
 		"image" : image,
-		"nom" : libelle
+		"nom" : nom,
+		"nom_en" : nom_en
 	}
 }
 
@@ -106,8 +110,10 @@ function _getInfo(idElement) {
 
 	for (j in _infosDatas) {
 		if (_infosDatas[j]["code"] === idElement) {
-			description = _infosDatas[j]["descr"];
-			libelle = _infosDatas[j]["nom"];
+			descr = _infosDatas[j]["descr"];
+			descr_en = _infosDatas[j]["descr_en"];
+			nom = _infosDatas[j]["nom"];
+			nom_en = _infosDatas[j]["nom_en"];
 			image = _infosDatas[j]["image"];
 			bouton = _infosDatas[j]["categ"];
 			faq = _infosDatas[j]["faq"];
@@ -116,8 +122,10 @@ function _getInfo(idElement) {
 	return {
 		"code" : idElement,
 		"faq" : faq,
-		"descr" : description,
-		"nom" : libelle,
+		"descr" : descr,
+		"descr_en" : descr_en,
+		"nom" : nom,
+		"nom_en" : nom_en,
 		"image" : image,
 		"categ" : bouton
 	}

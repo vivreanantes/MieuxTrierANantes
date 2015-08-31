@@ -30,6 +30,10 @@ function _translate(stKey, stLocale) {
 			"en" : "NO",
 			"fr" : "NON"
 		},
+		"label_modes_de_collecte" : {
+			"en" : "Collect mods",
+			"fr" : "Modes de collecte"
+		},
 		"label_pas_poubelle" : {
 			"en" : ", but <br/>do not put on the trash",
 			"fr" : ", mais <br/>ne pas mettre à la poubelle"
@@ -46,6 +50,11 @@ function _translate(stKey, stLocale) {
 			"en" : "only following official holiday",
 			"fr" : "uniquement les jours fériés suivant"
 		},
+		"label_plus_d_infos" : {
+			"en" : "More informations",
+			"fr" : "Plus d'infos"
+		},
+
 		"label_le" : {
 			"en" : " ",
 			"fr" : "le"
@@ -386,49 +395,170 @@ function _translate(stKey, stLocale) {
 			"en" : "december",
 			"fr" : "décembre"
 		},
-		"label_lundi" : { "en" : "monday", "fr" : "lundi" },
-		"label_mardi" : { "en" : "tuesday", "fr" : "mardi" },
-		"label_mercredi" : { "en" : "wednesday", "fr" : "mercredi" },
-		"label_jeudi" : { "en" : "thursday", "fr" : "jeudi" },
-		"label_vendredi" : { "en" : "friday", "fr" : "vendredi" },
-		"label_samedi" : { "en" : "saturday", "fr" : "samedi" },
-		"label_dimanche" : { "en" : "sunday", "fr" : "dimanche" },
-		"label_adresse" : { "en" : "address", "fr" : "adresse" },
-		"label_type" : { "en" : "type", "fr" : "type" },
-		"label_statut" : { "en" : "statut", "fr" : "statut" },
-		"label_telephone" : { "en" : "phone number", "fr" : "téléphone" },
-		"label_email" : { "en" : "email", "fr" : "email" },
-		"label_url" : { "en" : "web site", "fr" : "site" },
-		"label_horaires" : { "en" : "schedules", "fr" : "horaires" },
-
-
-		"label_ouvert_aujourdhui_et_demain" : { "en" : "Open today and tomorrow", "fr" : "Ouvert aujourd'hui et demain" },
-		"label_ouvert_aujourdhui" : { "en" : "Open today", "fr" : "Ouvert aujourd'hui" },
-		"label_ouvert_demain" : { "en" : "Open tomorrow", "fr" : "Ouvert demain" },
-		"label_dechets" : { "en" : "garbages", "fr" : "déchets" },
-		"label_cu_plastique" : { "en" : "plastic", "fr" : "plastique" },
-		"label_cu_papierscartons" : { "en" : "paper-cardboard", "fr" : "papiers-cartons" },
-		"label_cu_metal" : { "en" : "", "fr" : "métal" },
-		"label_cu_vertbois" : { "en" : "", "fr" : "déchets verts / bois" },
-		"label_cu_verrevaisselle" : { "en" : "glass / dishes / ", "fr" : "verre / Vaisselle / Pots" },
-		"label_cu_vetementtissu" : { "en" : "clothes / ", "fr" : "vêtements / tissu" },
-		"label_cu_encombrant" : { "en" : "", "fr" : "encombrants" },
-		"label_cu_divers" : { "en" : "others", "fr" : "divers" },
-		"label_cu_nourriture" : { "en" : "food", "fr" : "nourriture" },
-		"label_cu_electronique" : { "en" : "electronic", "fr" : "électronique" },
-		"label_cu_toxique" : { "en" : "toxic", "fr" : "toxique" },
-		"label_source" : { "en" : "source", "fr" : "source" },
-		"label_dechet" : { "en" : "garbage", "fr" : "déchet" },
-		"label_modeDeCollecte" : { "en" : "collect mod", "fr" : "mode de collecte" },
-		"label_fiche" : { "en" : "", "fr" : "fiche" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" },
-		"label_" : { "en" : "", "fr" : "" }
+		"label_lundi" : {
+			"en" : "monday",
+			"fr" : "lundi"
+		},
+		"label_mardi" : {
+			"en" : "tuesday",
+			"fr" : "mardi"
+		},
+		"label_mercredi" : {
+			"en" : "wednesday",
+			"fr" : "mercredi"
+		},
+		"label_jeudi" : {
+			"en" : "thursday",
+			"fr" : "jeudi"
+		},
+		"label_vendredi" : {
+			"en" : "friday",
+			"fr" : "vendredi"
+		},
+		"label_samedi" : {
+			"en" : "saturday",
+			"fr" : "samedi"
+		},
+		"label_dimanche" : {
+			"en" : "sunday",
+			"fr" : "dimanche"
+		},
+		"label_adresse" : {
+			"en" : "address",
+			"fr" : "adresse"
+		},
+		"label_type" : {
+			"en" : "type",
+			"fr" : "type"
+		},
+		"label_statut" : {
+			"en" : "status",
+			"fr" : "statut"
+		},
+		"label_telephone" : {
+			"en" : "phone number",
+			"fr" : "téléphone"
+		},
+		"label_email" : {
+			"en" : "email",
+			"fr" : "email"
+		},
+		"label_url" : {
+			"en" : "web site",
+			"fr" : "site"
+		},
+		"label_horaires" : {
+			"en" : "schedules",
+			"fr" : "horaires"
+		},
+		"label_ouvert_aujourdhui_et_demain" : {
+			"en" : "Open today and tomorrow",
+			"fr" : "Ouvert aujourd'hui et demain"
+		},
+		"label_ouvert_aujourdhui" : {
+			"en" : "Open today",
+			"fr" : "Ouvert aujourd'hui"
+		},
+		"label_ouvert_demain" : {
+			"en" : "Open tomorrow",
+			"fr" : "Ouvert demain"
+		},
+		"label_dechets" : {
+			"en" : "garbages",
+			"fr" : "déchets"
+		},
+		"label_cu_plastique" : {
+			"en" : "plastic",
+			"fr" : "plastique"
+		},
+		"label_cu_papierscartons" : {
+			"en" : "paper-cardboard",
+			"fr" : "papiers-cartons"
+		},
+		"label_cu_metal" : {
+			"en" : "",
+			"fr" : "métal"
+		},
+		"label_cu_vertbois" : {
+			"en" : "",
+			"fr" : "déchets verts / bois"
+		},
+		"label_cu_verrevaisselle" : {
+			"en" : "glass / dishes / ",
+			"fr" : "verre / Vaisselle / Pots"
+		},
+		"label_cu_vetementtissu" : {
+			"en" : "clothes / ",
+			"fr" : "vêtements / tissu"
+		},
+		"label_cu_encombrant" : {
+			"en" : "",
+			"fr" : "encombrants"
+		},
+		"label_cu_divers" : {
+			"en" : "others",
+			"fr" : "divers"
+		},
+		"label_cu_nourriture" : {
+			"en" : "food",
+			"fr" : "nourriture"
+		},
+		"label_cu_electronique" : {
+			"en" : "electronic",
+			"fr" : "électronique"
+		},
+		"label_cu_toxique" : {
+			"en" : "toxic",
+			"fr" : "toxique"
+		},
+		"label_source" : {
+			"en" : "source",
+			"fr" : "source"
+		},
+		"label_dechet" : {
+			"en" : "garbage",
+			"fr" : "déchet"
+		},
+		"label_modeDeCollecte" : {
+			"en" : "collect mod",
+			"fr" : "mode de collecte"
+		},
+		"label_fiche" : {
+			"en" : "card",
+			"fr" : "fiche"
+		},
+		"label_results" : {
+			"en" : "Results",
+			"fr" : "Résultats"
+		},
+		"label_collete_a_domicile" : {
+			"en" : "Home collect",
+			"fr" : "Collecte à domicile"
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		},
+		"label_" : {
+			"en" : "",
+			"fr" : ""
+		}
 
 	};
 	if (map[stKey] == null) {
