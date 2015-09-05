@@ -2,7 +2,7 @@
 <widget id="com.MieuxVivreANantes.MieuxTrierANantes" version="1.15"
 	android-versionCode="15" xmlns="http://www.w3.org/ns/widgets"
 	xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>MieuxTrierANantes</name>
+	<name>Mieux trier à Nantes</name>
 	<description>
 		Application libre (et gratuite) pour aider les habitants
 		de Nantes Métropole à trier.

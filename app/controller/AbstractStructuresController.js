@@ -34,7 +34,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 		var descriptionTraduit = "";
 		// Le titre
-		var title = record["nom"];
+		var title = this.getRecordValue(record, "nom");
 		descriptionTraduit += title + "<br/><br/>";
 		// Ajout du logo
 		if (record["logo"] != null && record["logo"] !== "") {
@@ -52,7 +52,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 			var label = _stringUpperFirstLetter(this.translate("label_type"));
 			var modeCollecteTraduit = "";
 			var typeTraduit = "";
-			if (record["type"] != null && record["type"] !== "") {
+			var type = this.getRecordValue(record, "record");
+			if (type!="") {
+			// if (record["type"] != null && record["type"] !== "") {
 				typeTraduit = record["type"];
 			}
 			descriptionTraduit += "<b>" + label + "</b> : "
@@ -77,8 +79,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		}
 
 		// Ajout de la description
-		if (record["descr"] != null && record["descr"] !== "") {
-			descriptionTraduit += record["descr"] + "<br/><br/>";
+		var descr = this.getRecordValue(record, "descr");
+		if (descr!="") {
+			descriptionTraduit += descr + "<br/><br/>";
 		}
 		// Ajout du téléphone
 		if (record["tel"] != null && record["tel"] !== "") {
@@ -145,7 +148,6 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 				"structuresDetails_advices", arsItemsAdvices);
 
 		// Affectation du titre
-		var title = record["nom"];
 		this.structuresDetail.setTitle(title);
 
 		// Ajout des commentaires

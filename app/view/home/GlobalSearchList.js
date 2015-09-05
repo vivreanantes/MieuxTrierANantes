@@ -8,8 +8,8 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchList', {
 
 	config : {
 		ui : 'dark',
-		itemTpl : "<img src='resources/images/{image}' width='80px' align='left' /><i>{type}</i><strong>{nom}</strong>",
-		cls : 'x-categories'
+		itemTpl : "<img src='resources/images/{image}' width='80px' align='left' /><i>{type}</i><strong>{nom}</strong>"
+		// cls : 'x-categories'
 	}
 		/*
 	itemTpl: 'ggg{title}',

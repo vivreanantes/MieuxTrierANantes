@@ -272,22 +272,17 @@ function _gestionLien(e) {
 
 function _getUrlYAllerLatLong(latitude, longitude) {
 	var lien = "lalo:" + latitude + "," + longitude;
-	var url = "<a href="
-			+ lien
+	var url = "<a href=" + lien
 			+ "><img src='resources/images/y_aller.png' height='30px' /></a>";
 	return url;
 }
 
-
 function _getTelephone(tel) {
 	var lien = "tel:" + tel;
-	var url = "<a href='"
-			+ lien
+	var url = "<a href='" + lien
 			+ "'><img src='resources/images/appeler.png' height='30px' /></a>";
 	return url;
 }
-
-
 
 function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 	var info = _getInfo(fiche);
@@ -377,19 +372,21 @@ function _gestionLienExterne() {
 	}
 }
 
-
 /**
  *  Renvoie la version du navigateur Internet Explorer (ou 0 pas IE).
  */
-function _detectIeVersion(){
-	var iev=0;
+function _detectIeVersion() {
+	var iev = 0;
 	var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
 	var trident = !!navigator.userAgent.match(/Trident\/7.0/);
-	var rv=navigator.userAgent.indexOf("rv:11.0");
+	var rv = navigator.userAgent.indexOf("rv:11.0");
 
-	if (ieold) iev=new Number(RegExp.$1);
-	if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
-	if (trident&&rv!=-1) iev=11;
+	if (ieold)
+		iev = new Number(RegExp.$1);
+	if (navigator.appVersion.indexOf("MSIE 10") != -1)
+		iev = 10;
+	if (trident && rv != -1)
+		iev = 11;
 
 	return iev;
 }
@@ -398,5 +395,34 @@ function _detectIeVersion(){
  * Renvoie true si le navigateur est Internet Explorer.
  */
 function _isIE() {
-	return (_detectIeVersion()!=0)
+	return (_detectIeVersion() != 0)
+}
+
+/**
+ * Renvoie la valeur d'un des champs, selon la langue.<br/> Exemple :
+ * getRecordValue(record,'nom') renvoie 'car' si locale vaut 'en'.
+ */
+function getRecordValue(record, key) {
+	var result = "";
+	stLocale = getLocale();
+	// if (key == "descr" || key == "nom") {
+	var enKey = key + "_en"
+	if (stLocale == 'en' && (typeof record[enKey] != 'undefined')) {
+		result = record[enKey];
+	} else {
+		result = record[key];
+	}
+	// }
+	return result;
+}
+
+/**
+	 * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
+	 * LocalStorageController.
+	 */
+function getLocale() {
+		if (typeof stGlobalLocale == 'undefined') {
+			stGlobalLocale = "fr";
+		}
+		return stGlobalLocale;
 }

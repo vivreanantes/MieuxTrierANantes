@@ -19,1101 +19,6 @@ var _structures1Datas = [{
 	"mots_cles_en" : "clothing,,trinkets,,books,,sweater,,pants,,jacket,pop,fringues,secours,populaire,francais,nantes",
 	"image" : "icon-go-home.png"
 }, {
-	"code" : "stco_reemploisolidarimeuble",
-	"latitude" : "47.198314",
-	"longitude" : "-1.596764",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, électroménager",
-	"statut" : "Association",
-	"descr" : "Vous ne savez que faire de vos meubles, vos appareils, de vos nécessaires ménager ou de vos livres qui méritent une seconde vie, pensez à en faire don, et ainsi vous pourrez apporter une aide précieuse aux plus déshérités.<br/>Dépôt des dons : Les mardi et jeudi de 9h30 à 12h et de 13h30 à 17h, Le vendredi de 9h30 à 12h et 13h30 à 15h30",
-	"descr_en" : "You do not know what to do with your furniture, appliances, your necessary household or your books that deserve a second life, consider donating it, and so you can provide valuable assistance to the poorest. <br/> Depot Donations: The Tuesday and Thursday from 9:30 to 12 am and from 13h30 to 17h, Friday from 9:30 am to 12 noon and 1:30 p.m. to 3:30 p.m.",
-	"nom" : "Solidari'meubles (Secours Populaire Français Nantes)",
-	"adresseTemp" : "1 rue des Granits  44100 Nantes",
-	"url" : "<a href='http://typo.spf44.org/granits.0.html' target='_blank'>http://typo.spf44.org/granits.0.html</a>",
-	"tel" : "02 40 95 10 61 ",
-	"logo" : "resources/images/images_non_libres/logo_secours_populaire_francais.png",
-	"src" : "MieuxTrierANantes 03/2015",
-	"horaires" : "Les mardi et jeudi de 9h30 à 12h et de 13h30 à 17h, Le vendredi de 9h30 à 12h et 13h30 à 15h30",
-	"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+13h30-17h00,0101-3112_ve_09h30-12h00+13h30-15h30,",
-	"sous_zone" : "qbcsa",
-	"mots_cles" : "meuble,electromenager,solidarimeubles,secours,populaire,francais,nantes",
-	"mots_cles_en" : "furniture,,household,appliances,solidarimeubles,secours,populaire,francais,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_spopaffaires",
-	"latitude" : "47.210229",
-	"longitude" : "-1.550847",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, divers, livres/BD/CD/DVD",
-	"statut" : "Association",
-	"descr" : "Vêtements, petits mobiliers, livres, jouets, vaisselle.",
-	"descr_en" : "Clothing, small furniture, books, toys, dishes.",
-	"nom" : "S'POP affaires (Secours Populaire Français Nantes)",
-	"adresseTemp" : "31 chaussée de la Madeleine  44000 Nantes",
-	"url" : "<a href='https://www.secourspopulaire.fr/spop-affaires' target='_blank'>https://www.secourspopulaire.fr/spop-affaires</a>",
-	"tel" : "02 40 29 45 26",
-	"logo" : "resources/images/images_non_libres/logo_secours_populaire_francais.png",
-	"src" : "MieuxTrierANantes 03/2015",
-	"horaires" : "Lundi Ouverture matin : 10:00 Fermeture matin : 12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Mardi Ouverture matin : 10:00 Fermeture après-midi : 12:30<br/>Jeudi Ouverture matin : 10:00 Fermeture matin :  12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Vendredi 14:00 Fermeture après-midi : 17:00",
-	"plagesHoraires" : "0101-3112_lu_10h00-12h30+14h00-17h00,0101-3112_ma_10h00-12h30,0101-3112_je_10h00-12h30+14h00-17h00,0101-3112_ve_14h00-17h00",
-	"sous_zone" : "qcv",
-	"mots_cles" : "vetement,,petit,mobilier,,livre,,jouet,,vaisselle,,pull,,pantalon,,veste,spop,affaires,secours,populaire,francais,nantes",
-	"mots_cles_en" : "clothing,,small,furniture,,books,,toys,,dishes,,sweater,,pants,,jacket,spop,affaires,secours,populaire,francais,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout2",
-	"latitude" : "47.208928",
-	"longitude" : "-1.610673",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vélo",
-	"statut" : "Association",
-	"descr" : "Nous récupérons les vélos. Ils sont démontés et réparés.<br/><br/>Nous sommes ouverts également pour la réparation d'objets de la maison, tels que : mobiliers, ustensiles, jouets, petites réparations électriques (fil, interrupteur, douille...), éléments de décoration...<br/><br/>.ATTENTION, nous ne réparons pas : l'électroménager, les engins à moteurs, les appareils numériques (imprimantes, écrans, téléphones...)",
-	"descr_en" : "We collect the bikes. They are disassembled and repaired <br/> We are open also for the repair of household objects, such as:. Furniture, utensils, toys, small electrical repairs (wire, switch, socket ...) , decorative items ... <br/> .attention, we do not repair: household appliances, gear motors, digital devices (printers, monitors, telephones ...)",
-	"nom" : "Transformeurs",
-	"adresseTemp" : "28, bd Winston Churchill  44100 Nantes",
-	"url" : "<a href='http://www.transformeurs.net' target='_blank'>http://www.transformeurs.net</a>",
-	"email" : "atelierbelevue@transformeurs.net",
-	"tel" : "06 89 35 20 05",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 04/06/2014",
-	"horaires" : "Mercredi de 14h à 18h",
-	"plagesHoraires" : "0101-3112_me_14h00-18h00",
-	"sous_zone" : "qbcsa",
-	"mots_cles" : "velos,entiers,,pieces,detachees,fonctionnelles,,accessoires,,equipements,transformeurs",
-	"mots_cles_en" : "bicycles,whole,,functional,parts,,accessories,,equipment,transformeurs",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout3",
-	"latitude" : "47.243274",
-	"longitude" : "-1.554955",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vélo",
-	"statut" : "Association",
-	"descr" : "Vélocampus est une association qui anime des ateliers participatifs et solidaires qui visent à fournir aux participants une certaine autonomie à l'entretien et la réparation de leur vélo. C'est ce qu'on appelle la vélonomie ! Ils permettent de nombreux échanges et une pratique pour acquérir, appliquer et aussi transmettre des savoir-faire dans ce domaine.<br/>Nous récupérons tous types de vélos, dans tous les états, pour leur offrir une seconde vie.",
-	"descr_en" : "Velocampus is an association that conducts participatory workshops and solidarity that aim to provide participants with some autonomy for the maintenance and repair their bikes. It's called the vélonomie! They allow many exchanges and practical to acquire, apply and also transmit know-how in this field. <br/> We collect all bikes in all states, to offer them a second life.",
-	"nom" : "Velocampus",
-	"adresseTemp" : "3 chemin censive du tertre  44300 nantes",
-	"url" : "<a href='http://www.velocampus.net/' target='_blank'>http://www.velocampus.net/</a>",
-	"email" : "contact@velocampus.net",
-	"tel" : "02 40 16 26 45",
-	"logo" : "resources/images/images_non_libres/logo-velocampus.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 04/06/2014",
-	"horaires" : "du lundi au vendredi 13h30-18h",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve 13h30-18h",
-	"sous_zone" : "qnn",
-	"mots_cles" : "tous,types,de,velos,,pieces,et,carcasses,velocampus",
-	"mots_cles_en" : "all,bikes,,parts,and,carcasses,velocampus",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout4",
-	"latitude" : "47.286783",
-	"longitude" : "-2.025536",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
-	"statut" : "Entreprise",
-	"descr" : "Certains déchets ne sont pas acceptés en déchèteries : ordures ménagères et tri sélectif, pneumatiques (sauf pneumatiques vélo), bouteilles de gaz, extincteurs, déchets explosifs ou radioactifs, cadavres d’animaux ou déchets anatomiques, médicaments, déchets hospitaliers, bâches agricoles, souches d’arbres, épaves de véhicules à moteur…",
-	"descr_en" : "Some wastes are not accepted in déchèteries: refuse and recycling, tires (except bicycle tires), gas bottles, fire extinguishers, explosives or radioactive waste, animal carcasses or anatomical waste, medicines, hospital waste, agricultural sheeting, strains trees, motor vehicle wrecks ...",
-	"nom" : "Déchèterie Paimboeuf / Saint Viaud",
-	"adresseTemp" : "6 Bd Dumesnildot - BP 3014  44560 PAIMBOEUF",
-	"url" : "<a href='http://www.cc-sudestuaire.fr/les-decheteries/' target='_blank'>http://www.cc-sudestuaire.fr/les-decheteries/</a>",
-	"email" : "environnement@cc-sudestuaire.fr ",
-	"tel" : "02 40 27 75 15 ",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 15/07/2014",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "0,decheterie,paimboeuf,/,saint,viaud",
-	"mots_cles_en" : "0,decheterie,paimboeuf,/,saint,viaud",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout5",
-	"latitude" : "47.112545",
-	"longitude" : "-1.802187",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...<br/><br/>Permances sur Déchèterie du Pont-Béranger",
-	"descr_en" : "Collection, resale at low prices what is recoverable, sorting for recycling: dishes, toys, books, disks, appliances in working order, tools, clothes, shoes, trinkets, furniture ... <br/> <br /> Permances Recycling center on the Pont Beranger",
-	"nom" : "Atelier du Retz Emploi (Sainte-Pazanne)",
-	"adresseTemp" : "7 impasse du Clos Neuf - ZA les Berthaudières  44680 SAINTE-PAZANNE",
-	"url" : "<a href='http://www.atelierduretzemploi.org' target='_blank'>http://www.atelierduretzemploi.org</a>",
-	"email" : "contact@atelierduretzemploi.org",
-	"tel" : "02 40 65 89 09",
-	"logo" : "resources/images/images_non_libres/logo_lesateliersduretzemploi.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014",
-	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique,atelier,du,retz,emploi,sainte,pazanne",
-	"mots_cles_en" : "bicycle,,furniture,,textiles,,tableware,,toy,,baby,,book,,cd,,dvd,,tools,,electrical,equipment,atelier,du,retz,emploi,sainte,pazanne",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout6",
-	"latitude" : "47.200633",
-	"longitude" : "-1.755177",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...<br/><br/>Permanences sur Déchèterie du Pont-Béranger",
-	"descr_en" : "Collection, resale at low prices what is recoverable, sorting for recycling: dishes, toys, books, disks, appliances in working order, tools, clothes, shoes, trinkets, furniture ... <br/> <br /> Permanences Recycling center on the Pont Beranger",
-	"nom" : "Atelier du Retz Emploi (Le Pèlerin)",
-	"adresseTemp" : "18 rue du docteur Sourdille  44640 LE PELLERIN",
-	"url" : "<a href='http://www.atelierduretzemploi.org' target='_blank'>http://www.atelierduretzemploi.org</a>",
-	"email" : "contact@atelierduretzemploi.org",
-	"tel" : "06 77 63 83 04",
-	"logo" : "resources/images/images_non_libres/logo_lesateliersduretzemploi.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014",
-	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique,atelier,du,retz,emploi,le,pelerin",
-	"mots_cles_en" : "bicycle,,furniture,,textiles,,tableware,,toy,,baby,,book,,cd,,dvd,,tools,,electrical,equipment,atelier,du,retz,emploi,le,pelerin",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout7",
-	"latitude" : "47.231095",
-	"longitude" : "-1.590294",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...<br/><br/>Permanences sur Déchèterie de Saint-Jean de Boiseau",
-	"descr_en" : "Collection, resale at low prices what is recoverable, sorting for recycling: dishes, toys, books, disks, appliances in working order, tools, clothes, shoes, trinkets, furniture ... <br/> <br /> Permanences on Recycling center of Saint-Jean de Boiseau",
-	"nom" : "Atelier du Retz Emploi (Le Breil)",
-	"adresseTemp" : "78 rue des plantes (côté cour)  44640 NANTES",
-	"url" : "<a href='http://www.atelierduretzemploi.org' target='_blank'>http://www.atelierduretzemploi.org</a>",
-	"email" : "contact@atelierduretzemploi.org",
-	"tel" : "07 81 63 00 48",
-	"logo" : "resources/images/images_non_libres/logo_lesateliersduretzemploi.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014",
-	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique,atelier,du,retz,emploi,le,breil",
-	"mots_cles_en" : "bicycle,,furniture,,textiles,,tableware,,toy,,baby,,book,,cd,,dvd,,tools,,electrical,equipment,atelier,du,retz,emploi,le,breil",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout8",
-	"latitude" : "47.240987",
-	"longitude" : "-2.154311",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état<br/><br/>Permanences sur Déchèterie de Saint-Brevin-les-Pins (Route de la gendarmerie)",
-	"descr_en" : "Collection, resale at low prices what is recoverable, sorting for recycling: dishes, toys, books, disks, appliances capable <br/> Permanences on Recycling center of Saint-Brevin-les-Pins (Route Gendarmerie)",
-	"nom" : "Atelier du Retz Emploi (Saint Brévin)",
-	"adresseTemp" : "Chemin des potences, PA de la Guerche  44250 SAINT-BREVIN-LES-PAINS",
-	"url" : "<a href='http://www.atelierduretzemploi.org' target='_blank'>http://www.atelierduretzemploi.org</a>",
-	"email" : "contact@atelierduretzemploi.org",
-	"tel" : "02 40 27 69 05",
-	"logo" : "resources/images/images_non_libres/logo_lesateliersduretzemploi.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014",
-	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
-	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique,atelier,du,retz,emploi,saint,brevin",
-	"mots_cles_en" : "bicycle,,furniture,,textiles,,tableware,,toy,,baby,,book,,cd,,dvd,,tools,,electrical,equipment,atelier,du,retz,emploi,saint,brevin",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout9",
-	"latitude" : "47.201027",
-	"longitude" : "-1.571628",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "<ul>Deux acteurs locaux du réemploi et de la valorisation s'unissent dans une nouvelle boutique pour proposer un grand choix d'objets de seconde main : Le Comptoir. <li>l'Atelier du Retz Emploi, anime une filière professionnelle de récupération et de traitement des objets en vue du réemploi.<br/>C'est une Ressourcerie qui collecte, valorise, trie, nettoie et revend à petits prix dans ses boutiques solidaires en recréant du lien social et en proposant un accueil chaleureux.</li><li>Le Relais Atlantique est une entreprise d'insertion en SCOP qui collecte, trie et valorise les textiles, les chaussures et le linge de maison.<br/>Les vêtements et articles en bon état sont commercialisés à petit prix dans son réseau de boutiques de seconde main 'DING FRING' et au Comptoir du Solilab.</li></ul><br/>HORAIRES D'OUVERTURE : Du Mardi au Samedi de 10 h à 18 h <br/>Permanences sur déchèterie (déchèterie de Tougas à Saint-Herblain et Déchèterie de Saint-Sébastien) : vous pouvez y déposer chaque jour des objets réutilisables<br/>Accès : Tan : Ligne C5 Arrêt «Quai des Antilles»",
-	"descr_en" : "<ul> Two local players re-use and recovery unite in a new shop to offer a wide range of second-hand items: Le Comptoir. <li> Atelier du Retz Employment, runs a vocational track recovery and processing of objects for reuse. This is a Ressourcerie <br/> collecting, values, sorts, cleans and sells at low prices in its charity shopping recreating social links and providing a warm welcome. </ li> <li> The Atlantic Relais is an insertion company SCOP that collects, sorts and values ​​the textiles, footwear and linens. < br /> The clothing and items in good condition are sold at low prices in its network of second-hand shops 'DING FRING' and desk Solilab </ li> </ ul> <br/> OPENING HOURS.: From Tuesday to Saturday from 10 am to 18 pm on déchèterie <br/> Permanences (déchèterie Tougas of Saint-Herblain and Recycling center of San Sebastian) you can deposit each day reusable objects <br/> Access: Tan: Off Line C5 'Quai des Antilles'",
-	"nom" : "Le comptoir du Solilab (Atelier du Retz Emploi et Ding Fring)",
-	"adresseTemp" : "8 rue Saint Domingue  44200 Nantes",
-	"url" : "<a href='www.atelierduretzemploi.org' target='_blank'>www.atelierduretzemploi.org</a>",
-	"logo" : "resources/images/images_non_libres/logo_lecomptoir_du_solilab.jpg",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 22/07/2014",
-	"horaires" : "Du Mardi au Samedi de 10 h à 18 h",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-18h",
-	"sous_zone" : "qidn",
-	"mots_cles" : "linge,textile,chaussure,vaisselle,outillage,jouet,livre,meuble,le,comptoir,du,solilab,atelier,du,retz,emploi,et,ding,fring",
-	"mots_cles_en" : "linen,,textiles,,shoes,,dishes,,tools,,toy,,book,,furniture,le,comptoir,du,solilab,atelier,du,retz,emploi,et,ding,fring",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout10",
-	"latitude" : "47.187252",
-	"longitude" : "-1.5476762",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi informatique",
-	"statut" : "Association",
-	"descr" : "Récupération, reconditionnement et don d'ordinateurs sur Nantes Métropole",
-	"descr_en" : "Recovery, reconditioning and donate computers to Nantes Métropole",
-	"nom" : "Nâga",
-	"adresseTemp" : "17 chemin fontaine Launay  44400 Rezé",
-	"url" : "<a href='www.naga44.org' target='_blank'>www.naga44.org</a>",
-	"email" : "contact@naga44.org",
-	"tel" : "02 85 52 31 22",
-	"logo" : "resources/images/images_non_libres/logo_naga.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 31/07/2014",
-	"horaires" : "Du mardi au samedi, de 10h à 12h et de 13h à 18h",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-12h00+13h00-18h00",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "ordinateur,naga",
-	"mots_cles_en" : "computer,naga",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout11",
-	"latitude" : "47.279850",
-	"longitude" : "-2.207535",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "Entreprise",
-	"descr" : "début mars 2015, un espace sera disponible pour mon atelier boutique à ST Nazaire, près du marché",
-	"descr_en" : "beginning in March 2015, a space will be available to my shop workshop ST Nazaire, near the market",
-	"nom" : "La Pomme et La Lionne",
-	"adresseTemp" : "18 r Gauloise  44600 SAINT NAZAIRE  ",
-	"email" : "lapommelalionne@gmail.com",
-	"tel" : "06.33.63.35.52",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 01/09/2014",
-	"horaires" : "10h-12h/14h-19h",
-	"sous_zone" : "hnnl",
-	"mots_cles" : "vetement,,pull,,pantalon,,veste,la,pomme,et,la,lionne",
-	"mots_cles_en" : "garment,,sweater,,pants,,jacket,la,pomme,et,la,lionne",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout12",
-	"latitude" : "47.216793",
-	"longitude" : "-1.552638",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
-	"statut" : "Entreprise",
-	"descr" : "Tech-Recyclage recycle vos appareils informatiques cassés ou obsolètes. Nous réparons aussi vos ordinateurs portables (écrans cassés, plasturgie...).<br/>Enlèvement gratuit sur demande téléphonique ou mail.",
-	"descr_en" : "Tech-Recycling recycles your broken or obsolete computer equipment. We also repair your laptops (broken screens, plastics ...). Removal <br/> free on telephone request or email.",
-	"nom" : "Tech Recyclage",
-	"adresseTemp" : "22 rue de Verdun Magasin Nelumbo 44000 Nantes",
-	"email" : "contact@tech-recyclage.com",
-	"tel" : "06 66 97 99 68",
-	"logo" : "resources/images/images_non_libres/logo_techrecyclage.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 14/01/2015",
-	"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve+sa_10h30-19h00 ",
-	"sous_zone" : "qcv",
-	"mots_cles" : "ordinateurs,imrpmantes,smartphones,tablettes,tech,recyclage",
-	"mots_cles_en" : "computers,,imrpmantes,,smartphones,,tablets,tech,recyclage",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout13",
-	"latitude" : "47.209943",
-	"longitude" : "-1.730260 ",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "Entreprise",
-	"descr" : "Dépôt-vente vêtements et accessoires. Femme et enfant. Reprise uniquement sur rendez-vous, n'hésitez pas à téléphoner. ",
-	"descr_en" : "Consignment clothing and accessories. Woman and child. Resume by appointment only, please call.",
-	"nom" : "Ça Tourn'au Troc (Couëron)",
-	"adresseTemp" : "1 rue de la Marne   44220 Couëron",
-	"email" : "catourneautroc@free.fr",
-	"tel" : "09 51 49 22 88",
-	"src" : "MieuxTrierANantes 09/2014",
-	"horaires" : "Mardi au Vendredi 09h00 à 12h15 - 15h00 à 18h30, Samedi : 10h00 à 12h00 ",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve_09h00-12h15,0101-3112_sa_10h00-12h00",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "vetement,,pull,,pantalon,,veste,ca,tournau,troc,coueron",
-	"mots_cles_en" : "garment,,sweater,,pants,,jacket,ca,tournau,troc,coueron",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout14",
-	"latitude" : "47.258869",
-	"longitude" : "-1.573717",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vélo",
-	"statut" : "Association",
-	"descr" : "Trois types de services sont proposés aux entreprises et aux particuliers :<br/>- la vente de bicyclettes remises en état et garanties<br/>-la location de bicyclettes afin de vous permettre d'organiser des sorties de groupe.<br/>-L'entretien de bicyclettes de particuliers ou d'un parc d'entreprise.",
-	"descr_en" : "Three types of services are offered to businesses and individuals: <br/> - selling bicycles repaired and guarantees <br/> -the bicycle rental to allow you to organize group outings <br /. > -L'entretien specific bicycle or a business park.",
-	"nom" : "ATAO (Nantes)",
-	"adresseTemp" : "7 bis, rue Jacques Cartier  44300 NANTES",
-	"url" : "<a href='http://atao-insertion.fr/' target='_blank'>http://atao-insertion.fr/</a>",
-	"email" : "contact@atao-insertion.fr",
-	"tel" : "02 40 59 93 68",
-	"logo" : "resources/images/images_non_libres/logo_atao.jpg",
-	"src" : "MieuxTrierANantes 12/2014",
-	"mots_cles" : "velo,cyclomoteur,atao,nantes",
-	"mots_cles_en" : "bicycle,,moped,atao,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout15",
-	"latitude" : "47.223984",
-	"longitude" : "-1.641127",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vélo",
-	"statut" : "Association",
-	"descr" : "Trois types de services sont proposés aux entreprises et aux particuliers :<br/>- la vente de bicyclettes remises en état et garanties<br/>-la location de bicyclettes afin de vous permettre d'organiser des sorties de groupe.<br/>-L'entretien de bicyclettes de particuliers ou d'un parc d'entreprise.",
-	"descr_en" : "Three types of services are offered to businesses and individuals: <br/> - selling bicycles repaired and guarantees <br/> -the bicycle rental to allow you to organize group outings <br /. > -L'entretien specific bicycle or a business park.",
-	"nom" : "ATAO (Saint-Herblain)",
-	"adresseTemp" : "4 rue des compagnons  44800 SAINT-HERBLAIN",
-	"url" : "<a href='http://atao-insertion.fr/' target='_blank'>http://atao-insertion.fr/</a>",
-	"email" : "contact@atao-insertion.fr",
-	"tel" : "02 40 92 28 91",
-	"logo" : "resources/images/images_non_libres/logo_atao.jpg",
-	"src" : "MieuxTrierANantes 12/2014",
-	"sous_zone" : "hnnl",
-	"mots_cles" : "velo,cyclomoteur,atao,saint,herblain",
-	"mots_cles_en" : "bicycle,,moped,atao,saint,herblain",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout16",
-	"latitude" : "47.238984",
-	"longitude" : "-1.519824",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, divers, vélo",
-	"statut" : "Association",
-	"descr" : "Cette association récupère les dons de vêtements qui sont ensuite redistribués gratuitement à des familles en grand besoin, qui s'inscrivent à l'année. <br/>Des objets et bibelots sont aussi déposés (contrairement aux vêtements, ils sont revendus à petits prix).<br/>Il y a également possibilité de réparer des vélos.",
-	"descr_en" : "This association collects donations of clothes that are then distributed free to families in great need who enter the year. <br/> objects and trinkets are also deposited (unlike clothes, they are sold at low prices). <br/> There is also possibility of repairing bicycles.",
-	"nom" : "À prendre ou à laisser (Nantes)",
-	"adresseTemp" : "60, rue de la Bottière (côté jardin)  44300 NANTES",
-	"email" : "asso-a-prendre-ou-a-laisser@hotmail.fr",
-	"tel" : "02 28 22 30 00",
-	"logo" : "resources/images/images_non_libres/logo_catournautroc.png",
-	"src" : "MieuxTrierANantes 01/2015",
-	"horaires" : "lundi, mercredi et vendredi de 9 h à 12 h et de 14 h à 16 h 30, le jeudi de 9 h à 12 h",
-	"plagesHoraires" : "0101-3112_lu+me+ve_09h00-12h00+14h00-16h30,0101-3112_je_09h00-12h00",
-	"mots_cles" : "vetement,bibelot,velo,a,prendre,ou,a,laisser,nantes",
-	"mots_cles_en" : "clothing,,trinket,,bike,a,prendre,ou,a,laisser,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout17",
-	"latitude" : "47.205534",
-	"longitude" : "-1.550461",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Impulsé par les associations locales monECOCITY Nantes et La Nizanerie, le collectif Les Boîtes Utiles a pour objet de promouvoir, aider et fédérer les différents projets de ‘GiveBox' sur l'agglo.<br/><br/>Dédiées au don et à l'échange, ces boîtes se présentent sous la forme d'une armoire, d'une cabine ou d'une cabane grand format. Elles invitent les habitants d'un quartier à déposer et/ou dénicher toutes sortes d'objets en bon état. Ni poubelle, ni mini-déchetterie, la Boîte utile est une solution citoyenne de proximité pour éviter le gaspillage et favoriser une consommation plus durable. Elle crée aussi un point de rencontre et de convivialité.",
-	"descr_en" : "Driven by local associations monECOCITY Nantes and La Nizanerie, the collective Useful Boxes aims to promote, assist and unite the different projects 'GiveBox' on the chipboard. <br/> Dedicated donation and exchange, these boxes come in the form of a wardrobe, a cabin or a large format cabin. They invite the residents of a neighborhood to file and / or find all sorts of items in good condition. Neither trash or mini recycling center, the useful citizen Box is a local solution to avoid waste and promote more sustainable consumption. It also creates a meeting place and conviviality.",
-	"nom" : "La Boîte Utile",
-	"adresseTemp" : "rue de Nizan  44200 NANTES",
-	"url" : "<a href='http://lesboitesutiles.tumblr.com/' target='_blank'>http://lesboitesutiles.tumblr.com/</a>",
-	"email" : "lesboitesutiles@gmail.com",
-	"src" : "MieuxTrierANantes 01/2015",
-	"horaires" : "Ouvert tout le temps",
-	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
-	"sous_zone" : "qidn",
-	"mots_cles" : "0,la,boite,utile",
-	"mots_cles_en" : "0,la,boite,utile",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout18",
-	"latitude" : "47.242692",
-	"longitude" : "-1.571018",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "Association",
-	"descr" : "RE-act est un service né en 2010 de proximité proposant aux gens de transformer leurs vêtements afin de s'offrir une nouvelle pièce unique et sur-mesure.<br/><br/>Il s'adresse majoritairement à des personnes peu consuméristes à la recherche d'originalité et de singularité par une nouvelle expérience du vêtement et leur offre ainsi une alternative séduisante à la consommation de textiles neufs.<br/>Les clients apportent leurs vieux vêtements en boutique, choisissent parmi les coupes disponibles et commandent leur nouveau vêtement, personnalisé, fait à partir de leurs propres vêtements",
-	"descr_en" : "RE-act is a born commissioned in 2010 offering local people to transform their clothes in order to offer a new unique and customized. <br/> It mainly caters to low-consumerist looking for originality and uniqueness through a new experience of the garment and thus offers an attractive alternative to the use of new textiles. <br/> Customers bring their old clothes shop, choose from the available sections and control their new clothing, personalized, made from their own clothes",
-	"nom" : "Re-act",
-	"adresseTemp" : "chez Adeline Letscher, 1 allée des Iles Marquises  44300 NANTES",
-	"url" : "<a href='http://re-act.fr/' target='_blank'>http://re-act.fr/</a>",
-	"email" : "react.nantes@gmail.com",
-	"tel" : "06 69 17 33 89",
-	"logo" : "resources/images/images_non_libres/logo_react.png",
-	"src" : "MieuxTrierANantes 01/2015",
-	"sous_zone" : "qbb",
-	"mots_cles" : "vetement,,pull,,pantalon,,veste,re,act",
-	"mots_cles_en" : "garment,,sweater,,pants,,jacket,re,act",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout19",
-	"latitude" : "47.164283",
-	"longitude" : "-1.543663",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Nous récupérons des matières premières propres qui puissent ensuite être revendues à très bas prix aux créatifs pour être réemployer",
-	"descr_en" : "We recover the own raw materials that could then be resold at very low prices to be creative reuse",
-	"nom" : "Stations services",
-	"adresseTemp" : "9 Rue de la Bauche Thiraud  44400 REZE",
-	"url" : "<a href='http://stations-services.org/ ' target='_blank'>http://stations-services.org/ </a>",
-	"tel" : "06 24 55 39 07",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 25/01/2015",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "matieres,premieres,:,bois,,metal,,plastiques,,textille…,stations,services",
-	"mots_cles_en" : "raw,materials:,wood,,metal,,plastics,,...,textille,stations,services",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploiajout20",
-	"latitude" : "47.077636",
-	"longitude" : "-1.282525",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, livres/bd/cd/dvd, jouet, divers",
-	"statut" : "Association",
-	"descr" : "Les dépots peuvent se faire sur les horaires d'ouverture de la boutique.<br/><br/>RÉCUPÈRE le matériel en bon état :<br/>- Vaisselle et batterie de cuisine<br/>- Outils de bricolage et de jardin<br/>- Bibelots et objets de décoration<br/>- Vêtements propres et en bon état<br/>- Jouets et matériel de puériculture<br/>- Livres / CD / Vinyles<br/>- Meubles en bon état<br/>- Luminaires<br/><br/>Ne RÉCUPÈRE pas le matériel en mauvais état ainsi que ...<br/>- Déchets verts<br/>- Cartouches et toners d'imprimantes<br/>- K7 vidéo<br/>- Téléphones portables, chargeurs<br/>- Téléviseurs, télécommandes<br/>- Matériel informatique<br/>- Vêtements sales ou abîmés<br/>",
-	"descr_en" : "The deposits can be made on the opening hours of the shop <br/> RECOVERED it in good equipment. <br/> - Crockery and battery <br/> kitchen - DIY and Tools <br/> garden - Trinkets <br/> and decorative objects - clean clothing in good condition <br/> - <br/> Toys and baby equipment - Books / CD / Vinyl <br/> - Furniture of good <br/> state - Lighting <br/> Do not RECOVERED equipment in disrepair and ... <br/> - Green waste <br/> - Cartridges and toners for printers <br/> - K7 video <br/> - Mobile Phones, <br/> Chargers - Televisions, <br/> remote controls - Hardware <br/> - dirty or damaged clothing <br/>",
-	"nom" : "La récupérette (Clisson)",
-	"adresseTemp" : "4 rue des Châtaigniers  44190 CLISSON",
-	"url" : "<a href='http://larecuperette.jimdo.com/' target='_blank'>http://larecuperette.jimdo.com/</a>",
-	"email" : "larecuperette@gmail.com",
-	"tel" : "07 81 95 54 13",
-	"logo" : "resources/images/images_non_libres/logo_larecuperette.png",
-	"src" : "MieuxTrierANantes 01/2015",
-	"horaires" : "La boutique est ouverte :<br/>- tous les mercredis 9h à 13h et de 14h à 17h,<br/>- tous les vendredis matins 9h à 13h,<br/>- tous les 2èmes samedis du mois 10h à 17h",
-	"sous_zone" : "hnsl",
-	"mots_cles" : "vaisselle,et,batterie,de,cuisine,,outils,de,bricolage,et,de,jardin,,bibelots,et,objets,de,decoration,,vetements,propres,et,en,bon,etat,,jouets,et,materiel,de,puericulture,,livres,/,cd,/,vinyles,,meubles,en,bon,etat,,luminaires,la,recuperette,clisson",
-	"mots_cles_en" : "tableware,and,kitchenware,,diy,and,garden,tools,,ornaments,and,decorative,items,,and,clean,clothes,in,good,condition,,toys,and,baby,equipment,,books,/,cds,/,vinyl,,furniture,in,good,condition,,lighting,la,recuperette,clisson",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi62",
-	"latitude" : "47.260956",
-	"longitude" : "-1.570404",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Récupération de papier (même pour des volumes moyens)",
-	"descr_en" : "Recovered paper (even for average volumes)",
-	"nom" : "Arbres",
-	"adresseTemp" : "105, Rue des Renards  44300 NANTES",
-	"url" : "<a href='http://www.arbres44.org' target='_blank'>http://www.arbres44.org</a>",
-	"email" : "arbresnord@wanadoo.fr",
-	"tel" : "02 40 40 35 55",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je_12h00-14h00,0101-3112_lu+ma+me+je_14h00-17h00,0101-3112_ve_09h00-12h30,0101-3112_ve_14h00-16h00",
-	"mots_cles" : "papier,arbres",
-	"mots_cles_en" : "paper,arbres",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi30",
-	"latitude" : "47.239259",
-	"longitude" : "-1.51986",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi informatique",
-	"statut" : "Association",
-	"descr" : "Récupération, reconditionnement et distribution d'ordinateurs",
-	"descr_en" : "Recovery, reconditioning and distribution of computers",
-	"nom" : "ALIS44",
-	"adresseTemp" : "60 rue de la Bottière  44300 NANTES",
-	"url" : "<a href='http://www.alis44.org' target='_blank'>http://www.alis44.org</a>",
-	"email" : "alis-asso@alis44.org",
-	"tel" : "06.47.98.02.68",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_14h00-18h00",
-	"mots_cles" : "ordinateur,alis44",
-	"mots_cles_en" : "computer,alis44",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi26",
-	"latitude" : "47.258053",
-	"longitude" : "-1.654222",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Récupération de pain. Cette structure d'insertion (pilotée par l'association Trajet) fait travailler 32 personnes. Elle s'approvisionne auprès de 200 commerces qui fournissent les invendus. Le pain transformé est ensuite revendu pour être intégré à la nourriture pour animaux.",
-	"descr_en" : "Recovery of bread. This insertion structure (controlled by the association Journey) is working 32 people. She stocks among 200 businesses that provide unsold. The transformed bread is then sold to be incorporated into the feed.",
-	"nom" : "Atelier Bar'Amel trajet",
-	"adresseTemp" : "9, Route de Brimberne  44880 SAUTRON",
-	"url" : "<a href='http://www.asso-trajet.fr/baramel.php' target='_blank'>http://www.asso-trajet.fr/baramel.php</a>",
-	"email" : "atelier-baramel@asso-trajet.fr",
-	"tel" : "02 51 78 64 62",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "pain,atelier,baramel,trajet",
-	"mots_cles_en" : "bread,atelier,baramel,trajet",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi55",
-	"latitude" : "47.196638",
-	"longitude" : "-1.565745",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "(Ancien nom : Ecorev)<br/>Réemploi d'objets de la vie courante : collecte en déchèterie et à domicile sur Nantes Métropole, et en apport volontaire à Rezé, puis revente à bas prix (mobilier, vaisselle, jouets, livres, vêtements, articles de loisirs, outillage...)<br/><br/>Quels objets peut-on donner/acheter ? Mobilier, jouet, puériculture, vaisselle, bibelot, cadre, livre, vêtement, linge de maison, outillage, jardinerie, vélo, luminaire, CD-DVD, jeux vidéos, literie, article de sport …. Ces objets du quotidien doivent être en état d'utilisation, propres, même s'ils présentent des dommages d'usure.<br/>Depuis janvier 2015 il est possible de déposer les petits appareils ménager (qui seront revendus en boutique) ou le gros électroménager (qui sera transmis à Envie44)<br/><br/>Dépôt d'objets : lundi-samedi de 9h30 à 17h (il n'y a plus de coupures le midi)<br/>Boutique solidaire : les mercredis et samedis de 9h30 à 17h30 (hors jours fériés)<br/>Util'o'Bus : 2ème mercredi du mois au Dervallières (9h-12h), 3ème mercredi du mois à La Bottière (14h-17h)",
-	"descr_en" : "(Former name: Ecorev) <br/> Reuse of objects of everyday life collection and recycling center at home on Nantes Métropole, and voluntary contributions to Rezé then resell cheap (furniture, dishes, toys, books, clothing, leisure items, tools ...) <br/> What objects can we give / buy? Furniture, toy, baby, crockery, trinket, frame, book, clothing, linens, tools, gardening, cycling, lighting, CD-DVD, video games, bedding, sports equipment .... These everyday items must be in working order, clean, even if they have wear damage. <br/> Since January 2015 it is possible to deposit small household appliances (which will be sold in stores) or large appliances (which will be sent to Envie44) <br/> deposit of objects: Monday-Saturday from 9:30 am to 17h (there are more cuts noon) <br/> Boutique solidarity: Wednesdays and Saturdays from 9:30 to 17:30 (excluding holidays) <br/> Util'o'Bus: 2nd Wednesday of the month Dervallières (9h-12h), 3rd Wednesday of the month at La Bottière (14h-17h)",
-	"nom" : "La Ressourcerie de l'ïle",
-	"adresseTemp" : "90 rue de la basse île  44400 REZE",
-	"url" : "<a href='http://www.laressourceriedelile.com' target='_blank'>http://www.laressourceriedelile.com</a>",
-	"email" : "contact@laressourceriedelile.com",
-	"tel" : "02 28 23 64 47",
-	"src" : "MieuxTrierANantes 03/15",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-17h00,0101-3112_me+sa_09h30-17h30,sauf_ferie",
-	"mots_cles" : "mobilier,meuble,jouet,puericulture,vaisselle,bibelot,cadre,livre,vetement,linge,de,maison,outillage,jardinerie,velo,luminaire,cd,dvd,jeux,videos,literie,article,de,sport,electromenager,pull,pantalon,veste,la,ressourcerie,de,lile",
-	"mots_cles_en" : "furnishings,,furniture,,toy,,baby,,crockery,,trinket,,frame,,book,,clothing,,linens,,tools,,gardening,,cycling,,lighting,,cd,dvd,,video,games,,bedding,,sports,equipment,,household,appliances,,sweater,,pants,,jacket,la,ressourcerie,de,lile",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi6",
-	"latitude" : "47.161667",
-	"longitude" : "-1.560690",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, livres/bd/cd/dvd, jouet, vêtements, divers",
-	"statut" : "Association",
-	"descr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
-	"descr_en" : "Furniture, appliances and utensils, bedding, blankets, towels, chandeliers and lamps, clothes, books, crockery ...",
-	"nom" : "Emmaus Bouguenais",
-	"adresseTemp" : "La Guilloterie Rue d'Emmaus  44430 BOUGENAIS",
-	"url" : "<a href='http://www.emmaus44.fr/Nantes/' target='_blank'>http://www.emmaus44.fr/Nantes/</a>",
-	"email" : "contact@emmaus44.fr",
-	"tel" : "02 40 75 63 36",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30 (fermés dimanche et jours fériés). Ventes mercredi 10h-12h et 14h-18h, vendredi 14h-18h et samedi 10h-12h et 14h-18h (hivers jusqu'à 17h30)",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-11h30+14h00-17h30,sauf_ferie",
-	"mots_cles" : "electromenager,meuble,vetement,livres,bd,cd,dvd,lit,linge,luste,lampe,vetement,vaisselle,divers,jouet,emmaus,bouguenais",
-	"mots_cles_en" : "electromenager,meuble,vetement,livres,bd,cd,dvd,lit,linge,luste,lampe,vetement,vaisselle,divers,jouet,emmaus,bouguenais",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi19",
-	"latitude" : "47.224091",
-	"longitude" : "-1.641401",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble",
-	"statut" : "Association",
-	"descr" : "Récupération de meubles :<br/>chantier d'insertion réalisant le reconditionnement de meuble :<br/>Des meubles sont récupérés chez des particuliers qui souhaitent en faire don à l'association. Ceux-ci sont ensuite restaurer ou transformer au niveau du chantier puis redistribuer gratuitement à des personnes qui n'ont pas les moyens financiers pour acheter du mobilier. Les demandes de meubles se font dans ce cas sur demande écrite par l'intermédiaire de services sociaux.",
-	"descr_en" : "Recovery furniture <br/> insertion site carrying the furniture reconditioning <br/> furniture is collected from individuals who wish to donate to the association. These are then restore or transform at the site and redistribute for free to people who do not have the financial means to buy the furniture. Furniture applications are in this case written request via social services.",
-	"nom" : "L'homme debout",
-	"adresseTemp" : "22, rue du Coutelier  44800 SAINT-HERBLAIN",
-	"url" : "<a href='http://www.lhommedebout.com' target='_blank'>http://www.lhommedebout.com</a>",
-	"email" : "lhommedebout@wanadoo.fr",
-	"tel" : "02 40 92 26 91",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Dépots de meubles : les lundis, mardis et jeudis de 9h00 à 12h00 et de 14h00 à 17h00, Les mercredis de 9h00 à 12h00<br/>Pour effectuer un devis : Les mardis de 14h00 à 17h00, Les jeudis de 9h00 à 12h00",
-	"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-12h00+14h00-17h00,0101-3112_me_09h00-12h00",
-	"mots_cles" : "meuble,lhomme,debout",
-	"mots_cles_en" : "furniture,lhomme,debout",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi53",
-	"latitude" : "47.222275",
-	"longitude" : "-1.643064",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, divers",
-	"statut" : "SCOP",
-	"descr" : "Centre de traitement des vêtements déposés dans les bornes Le Relais : récupération de vêtements, chaussures, linge.<br/>Le relais Atlantique a déménagé en octobre 2014. En 2014, cette SCOP de 17 salariés-sociétaires (50 % bénéfices aux sociétaires, 50% aux investissements) gère 300 tonnes de vêtements par mois, compte 14 camions et des fourgons.<br/><br/>Voir <a href='fiche:fiche_contvet'>Conteneurs de vêtements</a>",
-	"descr_en" : "Processing center clothing deposited in the Le Relais terminals. Reclamation of clothes, shoes, linen <br/> Atlantic relay moved in October 2014. In 2014, this SCOP 17 employees-members (50% profits to members, 50% investment) manages 300 tonnes of clothing a month, has 14 trucks and vans. <br/> See <a href='fiche:fiche_contvet'> clothing containers </a>",
-	"nom" : "Relais Atlantique",
-	"adresseTemp" : "Rue Jan Palach  44220 COUERON",
-	"url" : "<a href='www.lerelais.org' target='_blank'>www.lerelais.org</a>",
-	"email" : "p.laforge@lerelais.org",
-	"tel" : "02 28 03 18 57",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "vetement,linge,,pull,,pantalon,,veste,relais,atlantique",
-	"mots_cles_en" : "clothing,,linen,,sweater,,pants,,jacket,relais,atlantique",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi71",
-	"latitude" : "47.190903",
-	"longitude" : "-1.545704",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Cette association d'insertion vers l'emploi a parmi ces activités la collecte des déchets recyclables, pour les entreprises du sud de l'agglomération nantaise:<br/>Papiers, Cartons, Housses plastiques",
-	"descr_en" : "This association insertion into employment of these activities the collection of recyclable waste for southern companies of Nantes <br/> Paper, Cards, Plastic Bags",
-	"nom" : "Oser forêt vivante",
-	"adresseTemp" : "12 rue Jean-Baptiste Vigier BP 60073  44402 REZE",
-	"url" : "<a href='http://www.oser-foret-vivante.com' target='_blank'>http://www.oser-foret-vivante.com</a>",
-	"email" : "contact@oser-foret-vivante.com",
-	"tel" : "02 40 75 40 75",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "papier,carton,housse,plastique,oser,foret,vivante",
-	"mots_cles_en" : "paper,,cardboard,,plastic,cover,oser,foret,vivante",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi17",
-	"latitude" : "47.1842788",
-	"longitude" : "-1.4852487",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Collecte de papiers usagés. L'association a pour objectif de financer des actions humanitaires éducatives à partir d'un geste écologique, le tri du papier.<br/>En 2010, l'activité de Papiers de l'Espoir (70 kms environ autour de Nantes) de participer et d'aider à la scolarisation de 7 000 enfants.",
-	"descr_en" : "Collecting used paper. The association aims to finance educational humanitarian actions from an environmental gesture, sorting the paper. <br/> In 2010, the paper activity of Hope (70 kms around Nantes) of participate and assist in the education of 7,000 children.",
-	"nom" : "Papiers de l'espoir",
-	"adresseTemp" : "29 Rue Maladrie  44120 VERTOU",
-	"url" : "<a href='http://www.lespapiersdelespoir.fr' target='_blank'>http://www.lespapiersdelespoir.fr</a>",
-	"email" : "papiersdelespoir@free.fr",
-	"tel" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "papier,papiers,de,lespoir",
-	"mots_cles_en" : "paper,papiers,de,lespoir",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi37",
-	"latitude" : "47.223204",
-	"longitude" : "-1.642425",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi informatique",
-	"statut" : "Association",
-	"descr" : "Créée par l'association Actif Ouest, cette entreprise d'insertion est spécialisées dans la <br/>- rénovation de micro-ordinateurs réformés et leur revente avec garantie,<br/>- démantèlement assuré par l'atelier d'insertion pour le matériel ‘obsolète' ou en panne.<br/><br/>C'est un lieu de dépôt des Déchets d'équipement électrique et électronique (D3E).<br/>Tri Actif Ouest est labellisé Ordi2.0 (filière nationale de collecte, rénovation est réemploi des ordinateurs).<br/><br/>C'est également un lieu de vente d'ordinateurs fixes ou portables (avec garantie), de dépannage et de vente de pièces détachées.",
-	"descr_en" : "Created by the association Western Asset, the insertion company is specialized in <br/> - Renovation reformed microcomputers and resale with warranty, <br/> - dismantling provided by the insertion workshop for material 'obsolete' or down. <br/> It is a repository of electrical and electronic equipment waste (D3E). <br/> Tri Active West is labeled Ordi2.0 (national chain collection, renovation is reuse of computers). <br/> It is also a place of sale of fixed or portable computers (with warranty), troubleshooting and parts sales.",
-	"nom" : "TRIS Actif Ouest",
-	"adresseTemp" : "8 rue du Charron  44800 SAINT-HERBLAIN",
-	"url" : "<a href='http://www.actifouest.fr' target='_blank'>http://www.actifouest.fr</a>",
-	"email" : "tris-actif-ouest@orange.fr",
-	"tel" : "02 51 80 05 38",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00,",
-	"mots_cles" : "ordi,ordinateur,pc,portable,tris,actif,ouest",
-	"mots_cles_en" : "computer,,computer,,pc,,laptop,tris,actif,ouest",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_lesmarchandsdesable",
-	"latitude" : "47.200229",
-	"longitude" : "-1.561791",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble",
-	"statut" : "Association",
-	"descr" : "Créations d'aménagements intérieurs à partir de matériaux de réemploi.<br/><img src='resources/images/images_non_libres/marchands_de_sable.jpg' />Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires <b>à base d'objets récupérés</b>.<br/>Ils recherchent surtout du mobilier, du bois (mais de préférence du dois brut et pas de l'aggloméré) et des structures métalliques.",
-	"descr_en" : "Interior design creations from reused materials. <br/> <img src='resources/images/images_non_libres/marchands_de_sable.jpg' /> Set Design Architecture Built Experimental Places. Our work is used in the creation of urban installation and temporary constructions <b> recovered object-based </ b>. <br/> They look especially furniture, wood (but preferably do not gross chipboard) and metal structures.",
-	"nom" : "Les marchands de sable",
-	"adresseTemp" : "18 quai du président Wilson  44200 NANTES",
-	"url" : "<a href='marchandsdesable.com' target='_blank'>marchandsdesable.com</a>",
-	"email" : "lesmarchandsdesable@gmail.com",
-	"tel" : "06 81 67 42 06",
-	"src" : "MieuxTrierANantes 02/15",
-	"mots_cles" : "meuble,bois,structure,metallique,les,marchands,de,sable",
-	"mots_cles_en" : "furniture,,wood,,metal,structure,les,marchands,de,sable",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi18",
-	"latitude" : "47.1879293",
-	"longitude" : "-1.5515172",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "SCOP",
-	"descr" : "Les boutiques 'Ding Fring' proposent certains des vêtements déposés dans les bornes Le Relais.<br/>Un quart du stock renouvelé toutes les semaines.<br/>Il y en 7 en Loire-Atlantique, dont 4 sur Nantes Métropole.<br/>Vente au kilo à partir de 7€50.",
-	"descr_en" : "The shops 'Ding Fring' offer some clothes deposited in the Le Relais terminals. <br/> A quarter of the stock renewed every week. There <br/> 7 in Loire-Atlantique, 4 Nantes Métropole. < br /> Sale kilo from 7 € 50.",
-	"nom" : "DING-FRING Rezé",
-	"adresseTemp" : "75 Rue de la Commune de 1871  44400 REZE",
-	"url" : "<a href='http://www.lerelais.org/aussi.php?page=ding_fring' target='_blank'>http://www.lerelais.org/aussi.php?page=ding_fring</a>",
-	"tel" : "02 51 70 28 35",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge,,pull,,pantalon,,veste,ding,fring,reze",
-	"mots_cles_en" : "clothing,,linen,,sweater,,pants,,jacket,ding,fring,reze",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi41",
-	"latitude" : "47.2119882",
-	"longitude" : "-1.5468354",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "SCOP",
-	"descr" : "Les boutiques 'Ding Fring' proposent certains des vêtements déposés dans les bornes Le Relais.<br/>Un quart du stock renouvelé toutes les semaines.<br/>Il y en 7 en Loire-Atlantique, dont 4 sur Nantes Métropole.<br/>Vente au kilo à partir de 7€50.",
-	"descr_en" : "The shops 'Ding Fring' offer some clothes deposited in the Le Relais terminals. <br/> A quarter of the stock renewed every week. There <br/> 7 in Loire-Atlantique, 4 Nantes Métropole. < br /> Sale kilo from 7 € 50.",
-	"nom" : "DING-FRING Palais des Congrès",
-	"adresseTemp" : "32 rue Fourré  44200 NANTES",
-	"url" : "<a href='http://www.lerelais.org/aussi.php?page=ding_fring' target='_blank'>http://www.lerelais.org/aussi.php?page=ding_fring</a>",
-	"tel" : "02 40 75 46 91",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge,,pull,,pantalon,,veste,ding,fring,palais,des,congres",
-	"mots_cles_en" : "clothing,,linen,,sweater,,pants,,jacket,ding,fring,palais,des,congres",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi52",
-	"latitude" : "47.2092982",
-	"longitude" : "-1.5692261",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "SCOP",
-	"descr" : "Les boutiques 'Ding Fring' proposent certains des vêtements déposés dans les bornes Le Relais.<br/>Un quart du stock renouvelé toutes les semaines.<br/>Il y en 7 en Loire-Atlantique, dont 4 sur Nantes Métropole.<br/>Vente au kilo à partir de 7€50.",
-	"descr_en" : "The shops 'Ding Fring' offer some clothes deposited in the Le Relais terminals. <br/> A quarter of the stock renewed every week. There <br/> 7 in Loire-Atlantique, 4 Nantes Métropole. < br /> Sale kilo from 7 € 50.",
-	"nom" : "DING-FRING Chantier Navals",
-	"adresseTemp" : "5 rue Charles Brunelière  44200 NANTES",
-	"url" : "<a href='http://www.lerelais.org/aussi.php?page=ding_fring' target='_blank'>http://www.lerelais.org/aussi.php?page=ding_fring</a>",
-	"tel" : "02 40 69 13 89",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h30 à 18h45. Le samedi de 10h à 12h30 et de 14h30 à 18h15.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge,,pull,,pantalon,,veste,ding,fring,chantier,navals",
-	"mots_cles_en" : "clothing,,linen,,sweater,,pants,,jacket,ding,fring,chantier,navals",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi64",
-	"latitude" : "47.2414082",
-	"longitude" : "-1.5318757",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements",
-	"statut" : "SCOP",
-	"descr" : "Les boutiques 'Ding Fring' proposent certains des vêtements déposés dans les bornes Le Relais.<br/>Un quart du stock renouvelé toutes les semaines.<br/>Il y en 7 en Loire-Atlantique, dont 4 sur Nantes Métropole.<br/>Vente au kilo à partir de 7€50.",
-	"descr_en" : "The shops 'Ding Fring' offer some clothes deposited in the Le Relais terminals. <br/> A quarter of the stock renewed every week. There <br/> 7 in Loire-Atlantique, 4 Nantes Métropole. < br /> Sale kilo from 7 € 50.",
-	"nom" : "DING-FRING Nantes Erdre Grand Clos",
-	"adresseTemp" : "15 rue des Marsauderies   44000 NANTES",
-	"url" : "<a href='http://www.lerelais.org/aussi.php?page=ding_fring' target='_blank'>http://www.lerelais.org/aussi.php?page=ding_fring</a>",
-	"tel" : "02 40 20 87 11",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h30-18h45,0101-3112_sa_10h00-12h30+14h30-18h45",
-	"mots_cles" : "vetement,linge,,pull,,pantalon,,veste,ding,fring,nantes,erdre,grand,clos",
-	"mots_cles_en" : "clothing,,linen,,sweater,,pants,,jacket,ding,fring,nantes,erdre,grand,clos",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi33",
-	"latitude" : "47.233582",
-	"longitude" : "-1.652637",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi électroménager",
-	"statut" : "Association",
-	"descr" : "Récupération et vente d'électroménager <br/><img src='resources/images/images_non_libres/envie44_petit.jpg' />Créés par des membres d'Emmaûs, Envie regroupe désormais 50 entreprises, dont 2 en Loire Atlantique (Saint-Nazaire et Saint-Herblain), ce qui représente 90 salariés dans le département.<br/><br/>C'est un lieu de dépôt des Déchets d'équipement électrique et électronique (D3E).<br/>Les particuliers peuvent déposer en déchèteries ou directement chez Envie 44.<br/><br/>C'est également un magasin qui présente les appareils électroménagers à prix abordables.",
-	"descr_en" : "Recovery and sale of appliances <br/> <img src='resources/images/images_non_libres/envie44_petit.jpg '/>Created by members of Emmaus, want now comprises 50 companies, including 2 in Loire Atlantique (Saint-Nazaire and St. Herblain), which represents 90 employees in the department. <br/> It is a repository of electrical and electronic equipment waste (D3E). Individuals can drop <br/> in waste collection centers or directly at Envie <br/> 44. It is also a store that has appliances at affordable prices.",
-	"nom" : "Envie 44 Saint Herblain",
-	"adresseTemp" : "18 rue Bobby Sands  44800 SAINT-HERBLAIN",
-	"url" : "<a href='http://www.envie-44.org/nos-magasins/nantes-st-herblain.html' target='_blank'>http://www.envie-44.org/nos-magasins/nantes-st-herblain.html</a>",
-	"email" : "magasin44sth@envie.org",
-	"tel" : "02 40 43 21 11 ",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Du lundi au samedi de 10h à 13h et de 14h à 19h",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_12h00-14h00+14h00-19h00",
-	"mots_cles" : "electromenager,refrigerateur,television,lave,vaisselle,congelateur,envie44,envie,44,saint,herblain",
-	"mots_cles_en" : "appliances,,refrigerator,,television,,dishwasher,,freezer,,envie44,envie,44,saint,herblain",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi68",
-	"latitude" : "47.229244",
-	"longitude" : "-1.661669",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Récupération de matériels pour chambre d'hôpital, fauteuils roulant, lunettes, appareils auditifs<br/><br/>Collecter, réparer et distribuer vers les plus démunis et en particulier dans les pays du sud en voie de développement des matériels, médicaux, paramédicaux et orthopédiques collectés dans les cliniques, hopitaux, centre des personnes agées ou handicapés et aussi les particuliers.<br/><br/>Lieu de collecte : La Métairie, 44800 Saint Herblain",
-	"descr_en" : "Recovery of materials for hospital room, wheelchairs, eyeglasses, hearing aids <br/> collect, repair and distribute to the poor, particularly in the southern developing hardware, medical, paramedical and orthopedic collected in clinics, hospitals, center for elderly and disabled as well as individuals <br/> Place collection. La Metairie, 44800 Saint Herblain",
-	"nom" : "Orthopédie sans Frontières",
-	"adresseTemp" : "La Métairie  44800 SAINT-HERBLAIN",
-	"url" : "<a href='osfafrique.org' target='_blank'>osfafrique.org</a>",
-	"tel" : "06.83.45.78.96",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Le jeudi de 9h à 12h et de 14h à 17h30 ",
-	"plagesHoraires" : "0101-3112_je_09h00-12h00+14h00-17h30",
-	"mots_cles" : "lunette,auditif,fauteuil,roulant,orthopedie,sans,frontieres",
-	"mots_cles_en" : "glasses,,hearing,,wheelchair,orthopedie,sans,frontieres",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi60",
-	"latitude" : "47.2097351",
-	"longitude" : "-1.5801384",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
-	"statut" : "Association",
-	"descr" : "Les petits frères des Pauvres accompagnent des personnes – en priorité de plus de cinquante ans - souffrant d'isolement, de pauvreté, de maladie, d'exclusions.<br/><br/><i>je dépose mes fringues que je ne mets plus et où j'en achète d'autres pour un, deux ou cinq euros (5 euros c'est pour les ensembles)...En face de la fripe, il y a la brocante où l'on achète des livres, des verres, des vieux sacs à dos tachés, des vases magnifiques pour pas un rond… aucune logique en relation avec les monde extérieur à la frat. Le livre vaut 50 Cts d'euros qu'il soit de 1700 ou de 1999.</i>",
-	"descr_en" : "The Little Brothers escort individuals - primarily over fifty years. - With isolation, poverty, sickness, exclusions <br/> <i> I lay my clothes that I put more and where I bought some for one, two or five euros (5 euros is for sets) ... In front of the crumples, there is the flea market where we buy books, glasses, old stained bags back, wonderful vases for a round ... not any logic in relation to the world outside the frat. The book is worth 50 euros Cts whether of 1700 or 1999. </ I>",
-	"nom" : "Véti Frat - La Fraternité ",
-	"adresseTemp" : "3, rue Amiral Du Chaffault   44100 NANTES",
-	"url" : "<a href='http://www.petitsfreres.asso.fr/nos-implantations/44016-01-fraternite-de-nantes.html' target='_blank'>http://www.petitsfreres.asso.fr/nos-implantations/44016-01-fraternite-de-nantes.html</a>",
-	"email" : "ecoutedelarue@orange.fr ",
-	"tel" : "02 40 69 37 63",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "du mardi au vendredi de 14h à 17h30, Le samedi de 10h à 12h15",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve_14h00-17h30,0101-3112_sa_10h00-12h15",
-	"mots_cles" : "electromenager,,livres/bd/cd/dvd,,jouet,,meuble,,vetements,,divers,veti,frat,,,la,fraternite,",
-	"mots_cles_en" : "appliances,,books,/,bd,/,cd,/,dvd,,toy,,furniture,,clothing,,miscellaneous,veti,frat,,,la,fraternite,",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi61",
-	"latitude" : "47.227348",
-	"longitude" : "-1.560953",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi meuble, vêtements, électroménager",
-	"statut" : "Association",
-	"descr" : "Récupération de vêtements, meubles, électroménagers",
-	"descr_en" : "Recovery of clothing, furniture, appliances",
-	"nom" : "Secours populaire",
-	"adresseTemp" : "163 Rue Paul Bellamy  44000 NANTES",
-	"url" : "<a href='https://www.secourspopulaire.fr/44/' target='_blank'>https://www.secourspopulaire.fr/44/</a>",
-	"email" : "contact@spf44.org",
-	"tel" : "02 40 74 14 14 ",
-	"logo" : "resources/images/images_non_libres/logo_secours_populaire_francais.png",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Tous les jours du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h30 (17h00 le vendredi)",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30,0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h00",
-	"mots_cles" : "vetement,meuble,electromenager,secours,populaire",
-	"mots_cles_en" : "clothing,,furniture,,appliances,secours,populaire",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi47",
-	"latitude" : "47.23558",
-	"longitude" : "-1.53276",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, livres/bd/cd/dvd, jouet, divers",
-	"statut" : "Association",
-	"descr" : "Récupération et distribution de vêtements, livres, jouets, vaisselle, bibelots",
-	"descr_en" : "Recovery and distribution of clothes, books, toys, dishes, knickknacks",
-	"nom" : "La Croix Rouge / Vestiboutique",
-	"adresseTemp" : "51 bis rue de la Moisdonnière  44300 NANTES",
-	"url" : "<a href='www.croix-rouge.fr' target='_blank'>www.croix-rouge.fr</a>",
-	"email" : "dl.nantes@croix-rouge.fr",
-	"tel" : "02 51 89 10 70 ",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
-	"plagesHoraires" : "0101-3112_ma+je_09h30-12h00,0101-3112_ma+je_14h00-17h00",
-	"mots_cles" : "vetement,livre,jouet,vaisselle,bibelot,la,croix,rouge,/,vestiboutique",
-	"mots_cles_en" : "clothing,,books,,toys,,crockery,,trinket,la,croix,rouge,/,vestiboutique",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi47",
-	"latitude" : "47.265602",
-	"longitude" : "-1.493419 ",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi vêtements, livres/bd/cd/dvd, jouet, divers",
-	"statut" : "Association",
-	"descr" : "Ventes de meubles, petits meubles, meubles de bureau, luminaire, canapé, literie, meubles de cuisine, petit et gros électroménager, articles de décoration. À petits prix.",
-	"descr_en" : "Sales of furniture, small furniture, office furniture, lighting, sofa, beds, kitchen furniture, small and large appliances, decorative items. At low prices.",
-	"nom" : "La Croix Rouge / Meubles",
-	"adresseTemp" : "8 rue des petites industries  44470 CARQUEFOU",
-	"url" : "<a href='www.croix-rouge.fr' target='_blank'>www.croix-rouge.fr</a>",
-	"email" : "henrilonguemard@yahoo.fr ",
-	"tel" : "02 51 89 47 62",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Vendredi de 14 h à 17 h",
-	"plagesHoraires" : "0101-3112_ve_14h00-17h00",
-	"mots_cles" : "meubles,luminaire,canape,literie,petit,et,gros,electromenager,articles,de,decoration,la,croix,rouge,/,meubles",
-	"mots_cles_en" : "furniture,,lighting,,sofa,,bedding,,small,and,large,appliances,,decorative,items,la,croix,rouge,/,meubles",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi35",
-	"latitude" : "47.217117",
-	"longitude" : "-1.548943",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi livres/bd/cd/dvd",
-	"statut" : "Association",
-	"descr" : "Récupération de livres, revues, BD",
-	"descr_en" : "Recovery of books, magazines, comics",
-	"nom" : "Nantes Ecologie L'Air Livre (château Nantes)",
-	"adresseTemp" : "3 bis rue Prémion  44015 NANTES",
-	"url" : "<a href='http://nantesecologie.free.fr' target='_blank'>http://nantesecologie.free.fr</a>",
-	"email" : "nantes.ecologie@free.fr",
-	"tel" : "02 40 47 18 27 (public) / 02 51 82 05 41 (bureau)",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
-	"mots_cles" : "livre,revue,bd,nantes,ecologie,lair,livre,chateau,nantes",
-	"mots_cles_en" : "book,,magazine,,comics,nantes,ecologie,lair,livre,chateau,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi51",
-	"latitude" : "47.213765",
-	"longitude" : "-1.5484173",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi livres/bd/cd/dvd",
-	"statut" : "Association",
-	"descr" : "Récupération de livres, revues, BD et de manuels scolaires",
-	"descr_en" : "Recovery of books, magazines, comics and textbooks",
-	"nom" : "Nantes Ecologie L'Air Livre (Cité des Congrès Nantes)",
-	"adresseTemp" : "6 rue Monteil  44000 NANTES",
-	"url" : "<a href='http://nantesecologie.free.fr' target='_blank'>http://nantesecologie.free.fr</a>",
-	"email" : "nantes.ecologie@free.fr",
-	"tel" : "02 51 82 78 30",
-	"logo" : "resources/images/images_non_libres/logo_nantesecologie.png",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
-	"plagesHoraires" : "0101-3112_ve_09h00-13h00",
-	"mots_cles" : "livre,revue,bd,manuel,scolaire,nantes,ecologie,lair,livre,cite,des,congres,nantes",
-	"mots_cles_en" : "book,,magazine,,comic,,manual,,school,nantes,ecologie,lair,livre,cite,des,congres,nantes",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi54",
-	"latitude" : "47.259354",
-	"longitude" : "-1.633449",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Récupération de matériels divers pour le tiers monde",
-	"descr_en" : "Recovery of various materials for the Third World",
-	"nom" : "ARCADE",
-	"adresseTemp" : "10 rue Stévin  44700 ORVAULT",
-	"url" : "<a href='http://www.arcade44-benin.com/' target='_blank'>http://www.arcade44-benin.com/</a>",
-	"tel" : "02 40 63 74 20",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "Le mardi de 10h à 12 h.",
-	"plagesHoraires" : "0101-3112_ma_10h00-12h00",
-	"mots_cles" : "0,arcade",
-	"mots_cles_en" : "0,arcade",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi57",
-	"latitude" : "47.201511",
-	"longitude" : "-1.550624",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "Récupération de bouchons plastiques",
-	"descr_en" : "Recovery of plastics caps",
-	"nom" : "Bouchon d'Amour",
-	"adresseTemp" : "Stockage : Château d'eau du MIN de Nantes  44200 NANTES",
-	"url" : "<a href='http://bouchonsdamour-r3.over-blog.com/' target='_blank'>http://bouchonsdamour-r3.over-blog.com/</a>",
-	"email" : "bouchonsdamournantes@gmail.com ",
-	"tel" : "02 40 86 57 29",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Lundi et jeudi de 13h30 à 15h30",
-	"plagesHoraires" : "0101-3112_lu+je_13h30-15h30",
-	"mots_cles" : "bouchon,bouchon,damour",
-	"mots_cles_en" : "cork,bouchon,damour",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi1",
-	"latitude" : "47.199656",
-	"longitude" : "-1.624346",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Entreprise",
-	"descr" : "Entreprise (lauréte en 2011 Entreprise Responsabilité Globale) dont une des activité est la dollecte des déchets et communication sur le tri.<br/>Sur le tri : <i>Vous ne savez que faire de résidus de tonte de pelouses, de coupe de bois ? de cartons, plastiques, ferraille, etc. ? Nos spécialistes de la collecte des déchets valorisables viennent chez vous, les récupèrent et les orientent vers les filières de recyclage adaptées.</i>",
-	"descr_en" : "Company (lauréte in 2011 Global Responsibility Company), one of whose business is dollecte waste and communication on sorting <br/> On sorting. <I> You do not know what to do with lawn clippings, cutting wood? cartons, plastics, scrap metal, etc. ? Our specialists in the collection of recyclable waste come to you, recover and moving towards the appropriate recycling channels. </ I>",
-	"nom" : "TRAIT D'UNION",
-	"adresseTemp" : "95 rue Robert Schuman  44800 SAINT-HERBLAIN",
-	"url" : "<a href='www.trait-union.net' target='_blank'>www.trait-union.net</a>",
-	"email" : "info@trait-union.net",
-	"tel" : "02 40 86 04 81 ou 06 67 23 03 95",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "pelouse,bois,carton,plastique,ferraille,trait,dunion",
-	"mots_cles_en" : "lawn,,wood,,cardboard,,plastic,,scrap,metal,trait,dunion",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi32",
-	"latitude" : "47.209536",
-	"longitude" : "-1.558127",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi informatique, divers",
-	"statut" : "Entreprise",
-	"descr" : "Ouverture d'une boutique Ecophone 44 au 2 rue Deurbroucq à Nantes. 2 entreprises : Ecophone 44 et SAFETY PC 44 et nous récupérons les téléphones et les ordinateurs hors d'usage.",
-	"descr_en" : "Ecophone opening a boutique at 44 rue Deurbroucq 2 in Nantes. 2 companies: PC SAFETY Ecophone 44 and 44 and we get the phones and computers unusable.",
-	"nom" : "Ecophone 44",
-	"adresseTemp" : "2 rue Deurbroucq  44000 NANTES",
-	"url" : "<a href='http://www.ecophone44.com' target='_blank'>http://www.ecophone44.com</a>",
-	"email" : "ecophone44@sfr.fr",
-	"tel" : "02 52 10 37 71",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "du lundi au samedi de 10h à 18h30",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h30",
-	"mots_cles" : "telephone,ordinateur,ecophone,44",
-	"mots_cles_en" : "phone,,computer,ecophone,44",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi15",
-	"latitude" : "47.2062095",
-	"longitude" : "-1.6133603",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi cartouches encre/tuners",
-	"statut" : "Entreprise",
-	"descr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-	"descr_en" : "Printer cartridge refill and toner remanufacturing",
-	"nom" : "LEVER L'ENCRE",
-	"adresseTemp" : "14 Boulevard Winston Churchill  44100 NANTES",
-	"url" : "<a href='http://wwwerlencre.fr' target='_blank'>http://wwwerlencre.fr</a>",
-	"email" : "contact@leverlencre.fr",
-	"src" : "DeuxiemeVie 03/14",
-	"mots_cles" : "cartouche,toner,lever,lencre",
-	"mots_cles_en" : "cartridges,,toner,lever,lencre",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi36",
-	"latitude" : "47.247658",
-	"longitude" : "-1.608134",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi cartouches encre/tuners",
-	"statut" : "Entreprise",
-	"descr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-	"descr_en" : "Printer cartridge refill and toner remanufacturing",
-	"nom" : "ENCRE STATION",
-	"adresseTemp" : "113 route de Vannes  44800 SAINT-HERBLAIN",
-	"url" : "<a href='www.encrestation.com' target='_blank'>www.encrestation.com</a>",
-	"email" : "nantes@encrestation.com",
-	"tel" : "02 40 74 42 16",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 9h30 à  12h30 et de 14h à  19h et le samedi de 10h à  12h30 et de 14h à  17h",
-	"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_09h30-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-17h00",
-	"mots_cles" : "cartouche,toner,encre,station",
-	"mots_cles_en" : "cartridges,,toner,encre,station",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi31",
-	"latitude" : "47.2125716",
-	"longitude" : "-1.5591834",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi cartouches encre/tuners",
-	"statut" : "Entreprise",
-	"descr" : "Recharge de cartouche d'imprimante",
-	"descr_en" : "Printer cartridge refill",
-	"nom" : "OCE'ENCRE",
-	"adresseTemp" : "7 place Bourse  44000 NANTES",
-	"url" : "<a href='http://www.oceencre.com' target='_blank'>http://www.oceencre.com</a>",
-	"email" : "oce.encreboutique@free.fr",
-	"tel" : "02 51 88 98 65",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
-	"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
-	"mots_cles" : "cartouche,oceencre",
-	"mots_cles_en" : "cartridge,oceencre",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi63",
-	"latitude" : "47.217781",
-	"longitude" : "-1.556319",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi cartouches encre/tuners",
-	"statut" : "Entreprise",
-	"descr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-	"descr_en" : "Printer cartridge refill and toner remanufacturing",
-	"nom" : "Point Encre Et Toner",
-	"adresseTemp" : "13 Rue de l'Hotel de Ville  44000 NANTES",
-	"email" : "contact.nantes@economax.fr",
-	"tel" : "02 40 35 64 29",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
-	"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_08h300-12h45,0101-3112_ma+me+je+ve_13h45-19h00,0101-3112_sa_14h00-19h00",
-	"mots_cles" : "cartouche,toner,point,encre,et,toner",
-	"mots_cles_en" : "cartridges,,toner,point,encre,et,toner",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi64",
-	"latitude" : "47.177256",
-	"longitude" : "-1.551247",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "<img src='resources/images/images_non_libres/actionscancer44_petit.jpg' /><br/>L'association Actions Cancer 44 réalisent plusieurs actions qui lui permettent de donner de l'argent contre le cancer. En particulier ils récupèrent les bouchons de liège. Plusieurs particuliers récupèrent à leurs domiciles ces bouchons (et en général ils vont en chercher dans les restaurants proches).Sur la région nantaise il existe une personne à Rezé et une personne à La Chapelle Sur Erdre. <br/><br/>Les bouchons doivent être déposés dans des sacs plastiques devant leurs domiciles. Ils sont ensuite regroupés, puis envoyés au siège de l'association à La Baule. Ils sont recyclés par une entreprise spécialisée et la somme récupérée est envoyée pour le centre anti-cancéreux de l'Hôpital Gauducheau (10 000 euros en 2010).",
-	"descr_en" : "<img src='resources/images/images_non_libres/actionscancer44_petit.jpg'/> The association Actions <br/> 44 Cancer realize several actions that enable it to give money against cancer. In particular they recover corks. Several individuals recover in their homes these plugs (and usually they will seek in nearby restaurants) .On the Nantes region there is a person in Rezé and one in La Chapelle Sur Erdre. <br/> caps must be placed in plastic bags outside their homes. They are then grouped together and sent to the association's headquarters in La Baule. They are recycled by a specialized company and the sum recovered is sent for anti-cancer Center Hospital Gauducheau (10 000 in 2010).",
-	"nom" : "Action cancer 44 (Rezé)",
-	"adresseTemp" : "15 avenue de l'Esterel  44000 REZE",
-	"tel" : "02.40.75.35.96 ",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Tous les jours",
-	"mots_cles" : "bouchons,de,liege,action,cancer,44,reze",
-	"mots_cles_en" : "corks,action,cancer,44,reze",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi65",
-	"latitude" : "47.278727",
-	"longitude" : "-1.554889",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"statut" : "Association",
-	"descr" : "<img src='resources/images/images_non_libres/actionscancer44_petit.jpg' /><br/>L'association Actions Cancer 44 réalisent plusieurs actions qui lui permettent de donner de l'argent contre le cancer. En particulier ils récupèrent les bouchons de liège. Plusieurs particuliers récupèrent à leurs domiciles ces bouchons (et en général ils vont en chercher dans les restaurants proches).Sur la région nantaise il existe une personne à Rezé et une personne à La Chapelle Sur Erdre. <br/><br/>Les bouchons doivent être déposés dans des sacs plastiques devant leurs domiciles. Ils sont ensuite regroupés, puis envoyés au siège de l'association à La Baule. Ils sont recyclés par une entreprise spécialisée et la somme récupérée est envoyée pour le centre anti-cancéreux de l'Hôpital Gauducheau (10 000 euros en 2010).",
-	"nom" : "Action cancer 44 (La Chapelle Sur Erdre)",
-	"adresseTemp" : "52 rue du Château-d'Eau  44240 LA CHAPELLE SUR ERDRE",
-	"tel" : "02 40 77 81 17",
-	"src" : "MieuxTrierANantes 01/15",
-	"horaires" : "Tous les jours",
-	"mots_cles" : "bouchons,de,liege,action,cancer,44,la,chapelle,sur,erdre",
-	"mots_cles_en" : "corks,action,cancer,44,la,chapelle,sur,erdre",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_solutionrecyclage",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
-	"statut" : "Entreprise",
-	"descr" : "Centre de recyclage, pour entreprise<br/>Adresse : 18 Quai Emile Cormerais, 44800 Saint-Herblain<br/>Site : www.solution-recyclage.fr/<br/>Téléphone :+33 2 53 55 07 17<br/>Message posté 3 fév 2015 : 'Bonjour, Nous vous informons que nous ne souhaitons pas être rajouter dans votre base de données. Cordialement'",
-	"descr_en" : "Recycling center for business <br/> Address: 18 Quai Emile Cormerais, 44800 Saint-Herblain <br/> site: www.solution-recyclage.fr/ <br/> Phone: +33 2 53 55 July 17 <br /> Message posted February 3, 2015: 'Hello, We inform you that we do not wish to add to your database. Regards'",
-	"nom" : "Solution recyclage",
-	"adresseTemp" : "   ",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "entreprise,solution,recyclage",
-	"mots_cles_en" : "business,solution,recyclage",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi66",
-	"latitude" : "47.1819242",
-	"longitude" : "-1.5324433",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi électroménager, divers",
-	"statut" : "Entreprise",
-	"descr" : "Récupération de ferraille, métaux, électroménager, voiture, camion, bateau, engins agricole... Déplacement à domicile dans toute la loire-atlantique.",
-	"descr_en" : "Recovering scrap metal, appliances, car, truck, boat, farm equipment ... Home visit across the Atlantic-Loire.",
-	"nom" : "RECUPFER44",
-	"adresseTemp" : "1 résidence du parc  44400 REZE",
-	"url" : "<a href='<a href='http://www.recupfer44.com' target='_blank' >www.recupfer44.com</a>' target='_blank'><a href='http://www.recupfer44.com' target='_blank' >www.recupfer44.com</a></a>",
-	"tel" : "06 38 39 72 78",
-	"src" : "DeuxiemeVie 03/14",
-	"horaires" : "Du lundi au samedi de 8 heures à 20 heures.",
-	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
-	"mots_cles" : "ferraille,metal,electromenager,recupfer44",
-	"mots_cles_en" : "scrap,metal,,appliances,,recupfer44",
-	"image" : "icon-go-home.png"
-}, {
 	"code" : "stco_ventevrac1",
 	"latitude" : "47.126671",
 	"longitude" : "-1.628940",
@@ -1129,8 +34,8 @@ var _structures1Datas = [{
 	"tel" : "02 40 31 00 85",
 	"src" : "MieuxTrierANantes 04/15",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,boulangerie,arbre,a,pain,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
-	"mots_cles_en" : "sale,,bulk,,bakery,,breadfruit,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
+	"mots_cles" : "vente,vrac,boulangerie,arbre,pain,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
+	"mots_cles_en" : "sale,bulk,bakery,breadfruit,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1152,7 +57,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,chlorophylle,beausejour,chlorophylle,beausejour",
-	"mots_cles_en" : "sales,,bulk,chlorophyll,beausejour,chlorophylle,beausejour",
+	"mots_cles_en" : "sale,bulk,chlorophylle,beausejour,chlorophylle,beausejour",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1174,7 +79,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,chlorophylle,beaujoire,chlorophylle,beaujoire",
-	"mots_cles_en" : "sales,,bulk,chlorophyll,beaujoire,chlorophylle,beaujoire",
+	"mots_cles_en" : "sale,bulk,chlorophylle,beaujoire,chlorophylle,beaujoire",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1196,7 +101,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,chlorophylle,beauceane,chlorophylle,beauceane",
-	"mots_cles_en" : "sales,,bulk,chlorophyll,beauceane,chlorophylle,beauceane",
+	"mots_cles_en" : "sale,bulk,chlorophylle,beauceane,chlorophylle,beauceane",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1218,7 +123,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,chlorophylle,beausud,chlorophylle,beausud",
-	"mots_cles_en" : "sales,,bulk,chlorophyll,beausud,chlorophylle,beausud",
+	"mots_cles_en" : "sale,bulk,chlorophylle,beausud,chlorophylle,beausud",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1240,7 +145,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-19h30",
 	"sous_zone" : "hnsl",
 	"mots_cles" : "vente,vrac,chlorophylle,bio,goulaine,chlorophylle,bio,goulaine",
-	"mots_cles_en" : "sale,,bulk,,chlorophyll,,bio,,goulaine,chlorophylle,bio,goulaine",
+	"mots_cles_en" : "sale,bulk,chlorophyll,bio,goulaine,chlorophylle,bio,goulaine",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1263,7 +168,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je_09h30-19h00,0101-3112_ve_09h30-19h00,0101-3112_sa_09h00-19h00",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,biocoop,halles,biocoop,les,halles,nantes,ouest",
-	"mots_cles_en" : "sale,,bulk,,biocoop,,halles,biocoop,les,halles,nantes,ouest",
+	"mots_cles_en" : "sale,bulk,biocoop,halles,biocoop,les,halles,nantes,ouest",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1284,7 +189,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,biocoop,halles,biocoop,les,halles,nantes,nord",
-	"mots_cles_en" : "sale,,bulk,,biocoop,,halles,biocoop,les,halles,nantes,nord",
+	"mots_cles_en" : "sale,bulk,biocoop,halles,biocoop,les,halles,nantes,nord",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
@@ -1305,7 +210,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu_14h00-19h30,0101-3112_ma+me+je+ve+sa_09h30-19h30,0101-3112_sa_09h30-18h30",
 	"sous_zone" : "ST SEBASTIEN SUR LOIRE",
 	"mots_cles" : "vente,vrac,biocoop,halles,biocoop,les,halles,nantes,sud",
-	"mots_cles_en" : "sale,,bulk,,biocoop,,halles,biocoop,les,halles,nantes,sud",
+	"mots_cles_en" : "sale,bulk,biocoop,halles,biocoop,les,halles,nantes,sud",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac3",
@@ -1327,7 +232,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-1945",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,horizon,vert,horizon,vert,horizon,vert,ile,beaulieu",
-	"mots_cles_en" : "sale,,bulk,,horizon,green,horizon,vert,horizon,vert,ile,beaulieu",
+	"mots_cles_en" : "sale,bulk,horizon,vert,horizon,vert,ile,beaulieu",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac4",
@@ -1349,7 +254,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h30-19h15,0101-3112_sa_09h30-1900",
 	"sous_zone" : "hnnl",
 	"mots_cles" : "vente,vrac,horizon,vert,horizon,vert,horizon,vert,nantes",
-	"mots_cles_en" : "sale,,bulk,,horizon,green,horizon,vert,horizon,vert,nantes",
+	"mots_cles_en" : "sale,bulk,horizon,vert,horizon,vert,nantes",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1371,7 +276,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_ma+me+je+ve_11h30-19h00,0101-3112_sa_10h00-19h00",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,pirouette,pirouette",
-	"mots_cles_en" : "sale,,bulk,,pirouette,pirouette",
+	"mots_cles_en" : "sale,bulk,pirouette,pirouette",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1381,7 +286,7 @@ var _structures1Datas = [{
 	"type" : " vente au vrac",
 	"type_en" : " bulk sale",
 	"statut" : "Entreprise",
-	"descr" : "Boutique sans emballage jetable à Nantes. Quelque 450 références de pâtes, graines, légumes, fruits secs, confiseries, thés et autres huiles, mais aussi des produits ménagers ou pour le corps, sont disponibles dans cette boutique de 50 m2, approvisionnée par une centrale basée en région parisienne. On y trouve une dizaine de sortes de farine. Il est aussi possible de moudre son café sur place.",
+	"descr" : "Boutique sans emballage jetable à Nantes. Quelque 450 références de pâtes, graines, légumes, fruits secs, confiseries, thés et autres huiles, mais aussi des produits ménagers ou pour le corps, sont disponibles dans cette boutique de 50 m2, approvisionnée par une centrale basée en région parisienne. On y trouve une dizaine de sortes de farine. Il est aussi possible de moudre son café sur place.<br/>Les sacs 'sacaïdé' sont vendus (produits artisanaux faits main dont l'objectif principal est de permettre la réduction de nos déchets en utilisant des articles lavables et réutilisables à la place de produits jetables).",
 	"descr_en" : "Shop without disposable packaging in Nantes. Some 450 references pasta, seeds, vegetables, dry fruits, sweets, teas and other oils, but also household products or for the body, are available in this shop of 50 m2, supplied by a center based in Paris. There are ten sorts of flour. It is also possible to grind the coffee on site.",
 	"nom" : "Ô Bocal (Day by Day)",
 	"nom_en" : "Ô Bocal (Day by Day)",
@@ -1391,8 +296,8 @@ var _structures1Datas = [{
 	"horaires" : "mardi au samedi , 9h30 à 13h et 15h à 19h30",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_09h30-13h00+15h00-19h30",
 	"sous_zone" : "Nantes",
-	"mots_cles" : "vente,vrac,o,bocal,obocal,day,by,day,day,by,day,day,o,bocal,day,by,day",
-	"mots_cles_en" : "sale,,bulk,,jar,o,,obocal,,day,by,day,,day,by,day,,day,o,bocal,day,by,day",
+	"mots_cles" : "vente,vrac,bocal,obocal,day,sakaide,sac,o,bocal,day,by,day",
+	"mots_cles_en" : "sale,bulk,bocal,obocal,day,sakaide,bag,o,bocal,day,by,day",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac5",
@@ -1403,7 +308,7 @@ var _structures1Datas = [{
 	"type_en" : " bulk sale",
 	"statut" : "Entreprise",
 	"descr" : "FRUITS ET LEGUMES :<br/>- un rayon de produits en VRAC,<br/>- un large choix en alimentation et produits de Santé avec le CONSEIL en plus !<br/><br/>Fleuron Bio travaille  avec les producteurs et fabricants locaux qui s'inscrivent dans la même démarche.",
-	"descr_en" : "FRUIT AND VEGETABLES: <br/> - a range of products in BULK, <br/> - a wide choice in food and health products with increasingly COUNCIL <br/> jewel Bio works with producers and local manufacturers who are part of the same approach.",
+	"descr_en" : "FRUIT AND VEGETABLES: <br/> - a range of products in BULK, <br/> - a wide choice in food and health products with increasingly COUNCIL <br/> jewel Bio works with producers and local manufacturers who are part of the same approach.<br/>The bags 'sacaïdé' are sold (handmade craft products whose main objective is to reduce our waste by using washable and reusable products instead of disposables).",
 	"nom" : "FleuronBio",
 	"nom_en" : "FleuronBio",
 	"adresseTemp" : "1 Rue du Marché Commun Centre de Gros - Nant'Est Entreprises 44300 NANTES",
@@ -1415,7 +320,7 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu_15h00-19h00,0101-3112_ma+me+je+ve+sa_15h00-19h00",
 	"sous_zone" : "Nantes",
 	"mots_cles" : "vente,vrac,fleuronbio,fleuronbio44,fleuronbio",
-	"mots_cles_en" : "sale,,bulk,,fleuronbio,,fleuronbio44,fleuronbio",
+	"mots_cles_en" : "sale,bulk,fleuronbio,fleuronbio44,fleuronbio",
 	"image" : "paperbag.png"
 }, {
 	"code" : "1011",
@@ -1430,7 +335,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,feries_suivant,060415_lu_10h00-17h45,010515_ve_10h00-17h45,080515_ve_10h00-17h45,140515_je_10h00-17h45,250515_lu_10h00-17h45,140715_ma_10h00-17h45,150815_sa_10h00-17h45,011115__10h00-17h45,111115_me_10h00-17h45,251215_ve_10h00-17h45",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, tires, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from family crafts, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "1012",
 	"zone" : "Nantes",
@@ -1444,7 +350,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,feries_suivant,010515_ve_10h00-17h45,080515_ve_10h00-17h45,140515_je_10h00-17h45,140715_ma_10h00-17h45,150815_sa_10h00-17h45,111115_me_10h00-17h45,251215_ve_10h00-17h45",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "1013",
 	"zone" : "Nantes",
@@ -1458,7 +365,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,feries_suivant,010515_ve_10h00-17h45,080515_ve_10h00-17h45,140515_je_10h00-17h45,140715_ma_10h00-17h45,150815_sa_10h00-17h45,111115_me_10h00-17h45,251215_ve_10h00-17h45",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "1014",
 	"zone" : "Nantes",
@@ -1472,7 +380,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,feries_suivant,010515_ve_10h00-17h45,080515_ve_10h00-17h45,140515_je_10h00-17h45,140715_ma_10h00-17h45,150815_sa_10h00-17h45,111115_me_10h00-17h45,251215_ve_10h00-17h45",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "1015",
 	"zone" : "Nantes",
@@ -1486,7 +395,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,feries_suivant,060415_lu_10h00-17h45,010515_ve_10h00-17h45,080515_ve_10h00-17h45,140515_je_10h00-17h45,250515_lu_10h00-17h45,140715_ma_10h00-17h45,150815_sa_10h00-17h45,011115__10h00-17h45,111115_me_10h00-17h45,251215_ve_10h00-17h45",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "2152",
 	"zone" : "hnsl",
@@ -1500,7 +410,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "2220",
 	"zone" : "hnnl",
@@ -1514,7 +425,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3139",
 	"zone" : "hnnl",
@@ -1528,7 +440,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3140",
 	"zone" : "hnsl",
@@ -1542,7 +455,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3141",
 	"zone" : "hnnl",
@@ -1556,7 +470,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3142",
 	"zone" : "hnsl",
@@ -1570,7 +485,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3143",
 	"zone" : "hnnl",
@@ -1584,7 +500,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3144",
 	"zone" : "hnsl",
@@ -1597,7 +514,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3145",
 	"zone" : "hnnl",
@@ -1611,7 +529,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3146",
 	"zone" : "hnsl",
@@ -1625,7 +544,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,010515_ve_10h00-18h00,080515_ve_10h00-18h00,140515_je_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,011115__10h00-18h00,111115_me_10h00-18h00,251215_ve_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "3148",
 	"zone" : "hnnl",
@@ -1638,7 +558,8 @@ var _structures1Datas = [{
 	"plagesHoraires" : ",0101-3112_lu+ma_14h00-17h45,0101-3112_sa_10h00-17h45,feries_suivant,060415_lu_10h00-18h00,250515_lu_10h00-18h00,140715_ma_10h00-18h00,150815_sa_10h00-18h00,111115_me_10h00-18h00",
 	"src" : "OpenDataNantes 01/2015",
 	"image" : "panneau_dechetterie_mini.png",
-	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	"descr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité.",
+	"descr_en" : "Reserved for individuals living in Nantes Métropole.Déchets admitted: batteries, wood, cardboard, debris and rubble from the family crafts, waste electrical and electronic equipment, various household bulky, scrap metal, motor oil, paper, newspapers, books, household plastic, textiles, mowing lawn-products garden-pruning branches (eligible production for a household, and length of branches less than 1 meter), verre.Déchets prohibited: dead animals, debris-debris other than those from DIY family, anatomical or infectious waste, hospital waste, whole car body parts or truck, medicines, household waste, tires, explosives, flammable, radioactive products, industrielle.Déchets manufacturing residues allowed with conditions: ask at the recycling center FRONT deposits: asbestos waste linked products, grass clippings, garden pruning branches in large quantities."
 }, {
 	"code" : "stco_er_1",
 	"sous_zone" : "qne",
@@ -1730,7 +651,7 @@ var _structures1Datas = [{
 	"image" : "encombrant_mini.png",
 	"descr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
 }, {
-	"code" : "81",
+	"code" : "trisac_81",
 	"sous_zone" : "qidn",
 	"nom" : "BUSWAY Ile de Nantes",
 	"modesCollecte" : "modco_distrisac",
@@ -1744,7 +665,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "82",
+	"code" : "trisac_82",
 	"sous_zone" : "qidn",
 	"nom" : "Place de la Galarne",
 	"modesCollecte" : "modco_distrisac",
@@ -1758,7 +679,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "78",
+	"code" : "trisac_78",
 	"sous_zone" : "qidn",
 	"nom" : "Mairie Annexe Ile de Nantes",
 	"modesCollecte" : "modco_distrisac",
@@ -1772,7 +693,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "75",
+	"code" : "trisac_75",
 	"sous_zone" : "qidn",
 	"nom" : "Magasin Spar",
 	"modesCollecte" : "modco_distrisac",
@@ -1785,7 +706,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "76",
+	"code" : "trisac_76",
 	"sous_zone" : "qidn",
 	"nom" : "Boulangerie Pain de Sophie",
 	"modesCollecte" : "modco_distrisac",
@@ -1799,7 +720,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "77",
+	"code" : "trisac_77",
 	"sous_zone" : "qidn",
 	"nom" : "Boulangerie Le Fournil de Mangin",
 	"modesCollecte" : "modco_distrisac",
@@ -1812,7 +733,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "109",
+	"code" : "trisac_109",
 	"sous_zone" : "qnn",
 	"nom" : "Ecole Jonelière",
 	"modesCollecte" : "modco_distrisac",
@@ -1826,7 +747,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "106",
+	"code" : "trisac_106",
 	"sous_zone" : "qnn",
 	"nom" : "Rue de la Fantaisie/Rue Clément Marot",
 	"modesCollecte" : "modco_distrisac",
@@ -1840,7 +761,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "107",
+	"code" : "trisac_107",
 	"sous_zone" : "qbb",
 	"nom" : "Rue du Chêne Vert (Parking Beauséjour)",
 	"modesCollecte" : "modco_distrisac",
@@ -1854,7 +775,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "108",
+	"code" : "trisac_108",
 	"sous_zone" : "qbb",
 	"nom" : "Rue Pierre Yvernogeau (skatepark)",
 	"modesCollecte" : "modco_distrisac",
@@ -1868,7 +789,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "105",
+	"code" : "trisac_105",
 	"sous_zone" : "qnn",
 	"nom" : "Café tabac Le Sulky",
 	"modesCollecte" : "modco_distrisac",
@@ -1882,7 +803,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "102",
+	"code" : "trisac_102",
 	"sous_zone" : "qbb",
 	"nom" : "Carrefour City",
 	"modesCollecte" : "modco_distrisac",
@@ -1896,7 +817,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "103",
+	"code" : "trisac_103",
 	"sous_zone" : "qbb",
 	"nom" : "Mairie Annexe Barberie",
 	"modesCollecte" : "modco_distrisac",
@@ -1910,7 +831,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "104",
+	"code" : "trisac_104",
 	"sous_zone" : "qnn",
 	"nom" : "Velo Campus",
 	"modesCollecte" : "modco_distrisac",
@@ -1924,7 +845,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "101",
+	"code" : "trisac_101",
 	"sous_zone" : "qnn",
 	"nom" : "Rue de Questembert (Ecole Françoise Dolto)",
 	"modesCollecte" : "modco_distrisac",
@@ -1938,7 +859,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "97",
+	"code" : "trisac_97",
 	"sous_zone" : "qnn",
 	"nom" : "84, route de la Chapelle",
 	"modesCollecte" : "modco_distrisac",
@@ -1952,7 +873,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "98",
+	"code" : "trisac_98",
 	"sous_zone" : "qnn",
 	"nom" : "TRAM Santos Dumont",
 	"modesCollecte" : "modco_distrisac",
@@ -1966,7 +887,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "99",
+	"code" : "trisac_99",
 	"sous_zone" : "qnn",
 	"nom" : "Face au 19 rue du Paraguay",
 	"modesCollecte" : "modco_distrisac",
@@ -1980,7 +901,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "100",
+	"code" : "trisac_100",
 	"sous_zone" : "qnn",
 	"nom" : "TRAM Bourgeonnière",
 	"modesCollecte" : "modco_distrisac",
@@ -1994,7 +915,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "96",
+	"code" : "trisac_96",
 	"sous_zone" : "qnn",
 	"nom" : "Pôle de proximité Erdre et Cens",
 	"modesCollecte" : "modco_distrisac",
@@ -2008,7 +929,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "94",
+	"code" : "trisac_94",
 	"sous_zone" : "qnn",
 	"nom" : "Mairie Annexe Nantes Nord",
 	"modesCollecte" : "modco_distrisac",
@@ -2022,7 +943,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "95",
+	"code" : "trisac_95",
 	"sous_zone" : "qnn",
 	"nom" : "Boulangerie La p'tite cantine",
 	"modesCollecte" : "modco_distrisac",
@@ -2036,7 +957,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "57",
+	"code" : "trisac_57",
 	"sous_zone" : "qne",
 	"nom" : "Rue de Koufra (Parking du gymnase Marsauderies)",
 	"modesCollecte" : "modco_distrisac",
@@ -2050,7 +971,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "52",
+	"code" : "trisac_52",
 	"sous_zone" : "qdb",
 	"nom" : "Place de la Bottière",
 	"modesCollecte" : "modco_distrisac",
@@ -2064,7 +985,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "53",
+	"code" : "trisac_53",
 	"sous_zone" : "qne",
 	"nom" : "Face au 22 Boulevard Professeur René Auvigné",
 	"modesCollecte" : "modco_distrisac",
@@ -2078,7 +999,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "54",
+	"code" : "trisac_54",
 	"sous_zone" : "qdb",
 	"nom" : "Place du Commandant Cousteau",
 	"modesCollecte" : "modco_distrisac",
@@ -2093,7 +1014,7 @@ var _structures1Datas = [{
 	"image" : "relais_trisac.jpg",
 	"descr" : "consulter les horaires dans les piscines"
 }, {
-	"code" : "55",
+	"code" : "trisac_55",
 	"sous_zone" : "qne",
 	"nom" : "3 Rue de la Planche au Gué",
 	"modesCollecte" : "modco_distrisac",
@@ -2107,7 +1028,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "56",
+	"code" : "trisac_56",
 	"sous_zone" : "qdb",
 	"nom" : "9 Rue Frédéric Mistral",
 	"modesCollecte" : "modco_distrisac",
@@ -2121,7 +1042,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "51",
+	"code" : "trisac_51",
 	"sous_zone" : "qdb",
 	"nom" : "Mairie Annexe Bottière",
 	"modesCollecte" : "modco_distrisac",
@@ -2135,7 +1056,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "46",
+	"code" : "trisac_46",
 	"sous_zone" : "qne",
 	"nom" : "Pôle de Proximité Erdre et Loire",
 	"modesCollecte" : "modco_distrisac",
@@ -2149,7 +1070,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "47",
+	"code" : "trisac_47",
 	"sous_zone" : "qne",
 	"nom" : "Mairie Annexe Ranzay",
 	"modesCollecte" : "modco_distrisac",
@@ -2163,7 +1084,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "48",
+	"code" : "trisac_48",
 	"sous_zone" : "qne",
 	"nom" : "Intermarché Eraudière",
 	"modesCollecte" : "modco_distrisac",
@@ -2177,7 +1098,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "49",
+	"code" : "trisac_49",
 	"sous_zone" : "qdb",
 	"nom" : "Mairie Annexe Doulon",
 	"modesCollecte" : "modco_distrisac",
@@ -2191,7 +1112,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "50",
+	"code" : "trisac_50",
 	"sous_zone" : "qne",
 	"nom" : "Boulangerie Gergaud",
 	"modesCollecte" : "modco_distrisac",
@@ -2204,7 +1125,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "92",
+	"code" : "trisac_92",
 	"sous_zone" : "qmsd",
 	"nom" : "Pôle commercial Boulevard de Sarrebruck",
 	"modesCollecte" : "modco_distrisac",
@@ -2218,7 +1139,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "89",
+	"code" : "trisac_89",
 	"sous_zone" : "qns",
 	"nom" : "Gare routière Pirmil",
 	"modesCollecte" : "modco_distrisac",
@@ -2232,7 +1153,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "90",
+	"code" : "trisac_90",
 	"sous_zone" : "qmsd",
 	"nom" : "Piscine Petite Amazonie",
 	"modesCollecte" : "modco_distrisac",
@@ -2246,7 +1167,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "91",
+	"code" : "trisac_91",
 	"sous_zone" : "qns",
 	"nom" : "Place du Muguet Nantais",
 	"modesCollecte" : "modco_distrisac",
@@ -2261,7 +1182,7 @@ var _structures1Datas = [{
 	"image" : "relais_trisac.jpg",
 	"descr" : "ouvert les lundis uniquement si férié"
 }, {
-	"code" : "88",
+	"code" : "trisac_88",
 	"sous_zone" : "qmsd",
 	"nom" : "Mairie Annexe Malakoff",
 	"modesCollecte" : "modco_distrisac",
@@ -2275,7 +1196,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "84",
+	"code" : "trisac_84",
 	"sous_zone" : "qmsd",
 	"nom" : "Nantes Habitat Agence Angleterre",
 	"modesCollecte" : "modco_distrisac",
@@ -2289,7 +1210,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "85",
+	"code" : "trisac_85",
 	"sous_zone" : "qns",
 	"nom" : "Nantes Habitat Agence Goudy",
 	"modesCollecte" : "modco_distrisac",
@@ -2303,7 +1224,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "86",
+	"code" : "trisac_86",
 	"sous_zone" : "qns",
 	"nom" : "Mairie Annexe Nantes Sud",
 	"modesCollecte" : "modco_distrisac",
@@ -2317,7 +1238,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "87",
+	"code" : "trisac_87",
 	"sous_zone" : "qns",
 	"nom" : "Super U Saint Jacques",
 	"modesCollecte" : "modco_distrisac",
@@ -2330,7 +1251,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "121",
+	"code" : "trisac_121",
 	"sous_zone" : "qmsd",
 	"nom" : "Rue Gaston Turpin/ Rue Gambetta",
 	"modesCollecte" : "modco_distrisac",
@@ -2344,7 +1265,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "117",
+	"code" : "trisac_117",
 	"sous_zone" : "qmsd",
 	"nom" : "Rue Pitre Chevalier/Allée de la Reine Margot",
 	"modesCollecte" : "modco_distrisac",
@@ -2358,7 +1279,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "118",
+	"code" : "trisac_118",
 	"sous_zone" : "qmsd",
 	"nom" : "Boulevard Ernest Dalby -  parking Super U",
 	"modesCollecte" : "modco_distrisac",
@@ -2372,7 +1293,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "119",
+	"code" : "trisac_119",
 	"sous_zone" : "qne",
 	"nom" : "Rue des Roches Grises (Eglise Saint-Augustin)",
 	"modesCollecte" : "modco_distrisac",
@@ -2386,7 +1307,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "120",
+	"code" : "trisac_120",
 	"sous_zone" : "qmsd",
 	"nom" : "Place des enfants nantais",
 	"modesCollecte" : "modco_distrisac",
@@ -2400,7 +1321,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "116",
+	"code" : "trisac_116",
 	"sous_zone" : "qmsd",
 	"nom" : "Pôle Municipal Strasbourg, Manufacture des tabacs",
 	"modesCollecte" : "modco_distrisac",
@@ -2413,7 +1334,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "110",
+	"code" : "trisac_110",
 	"sous_zone" : "qmsd",
 	"nom" : "Casino",
 	"modesCollecte" : "modco_distrisac",
@@ -2427,7 +1348,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "111",
+	"code" : "trisac_111",
 	"sous_zone" : "qmsd",
 	"nom" : "Carrefour Contact",
 	"modesCollecte" : "modco_distrisac",
@@ -2441,7 +1362,7 @@ var _structures1Datas = [{
 	"image" : "relais_trisac.jpg",
 	"descr" : "ouvert les lundis uniquement si férié"
 }, {
-	"code" : "112",
+	"code" : "trisac_112",
 	"sous_zone" : "qmsd",
 	"nom" : "Super U",
 	"modesCollecte" : "modco_distrisac",
@@ -2455,7 +1376,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "113",
+	"code" : "trisac_113",
 	"sous_zone" : "qmsd",
 	"nom" : "Intermarché",
 	"modesCollecte" : "modco_distrisac",
@@ -2469,7 +1390,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "114",
+	"code" : "trisac_114",
 	"sous_zone" : "qmsd",
 	"nom" : "Boulangerie Le blé d'or",
 	"modesCollecte" : "modco_distrisac",
@@ -2483,7 +1404,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "115",
+	"code" : "trisac_115",
 	"sous_zone" : "qne",
 	"nom" : "Boulangerie Rainard",
 	"modesCollecte" : "modco_distrisac",
@@ -2497,7 +1418,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "45",
+	"code" : "trisac_45",
 	"sous_zone" : "qcv",
 	"nom" : "Rue Emile Masson/Rue Fouré",
 	"modesCollecte" : "modco_distrisac",
@@ -2511,7 +1432,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "36",
+	"code" : "trisac_36",
 	"sous_zone" : "qcv",
 	"nom" : "Carrefour City",
 	"modesCollecte" : "modco_distrisac",
@@ -2525,7 +1446,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "37",
+	"code" : "trisac_37",
 	"sous_zone" : "qcv",
 	"nom" : "Devant la Piscine Léo Lagrange",
 	"modesCollecte" : "modco_distrisac",
@@ -2539,7 +1460,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "38",
+	"code" : "trisac_38",
 	"sous_zone" : "qcv",
 	"nom" : "Place du Bouffay",
 	"modesCollecte" : "modco_distrisac",
@@ -2553,7 +1474,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "39",
+	"code" : "trisac_39",
 	"sous_zone" : "qcv",
 	"nom" : "Place de Bretagne",
 	"modesCollecte" : "modco_distrisac",
@@ -2567,7 +1488,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "40",
+	"code" : "trisac_40",
 	"sous_zone" : "qcv",
 	"nom" : "Place Dulcie September",
 	"modesCollecte" : "modco_distrisac",
@@ -2581,7 +1502,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "41",
+	"code" : "trisac_41",
 	"sous_zone" : "qcv",
 	"nom" : "Quai Turenne/Square Jean-Baptiste Daviais",
 	"modesCollecte" : "modco_distrisac",
@@ -2595,7 +1516,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "42",
+	"code" : "trisac_42",
 	"sous_zone" : "qcv",
 	"nom" : "Rue Huchette/Rue Gigant",
 	"modesCollecte" : "modco_distrisac",
@@ -2609,7 +1530,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "43",
+	"code" : "trisac_43",
 	"sous_zone" : "qcv",
 	"nom" : "Cours Saint Pierre",
 	"modesCollecte" : "modco_distrisac",
@@ -2623,7 +1544,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "44",
+	"code" : "trisac_44",
 	"sous_zone" : "qcv",
 	"nom" : "Cours Cambronne",
 	"modesCollecte" : "modco_distrisac",
@@ -2637,7 +1558,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "22",
+	"code" : "trisac_22",
 	"sous_zone" : "qcv",
 	"nom" : "Nantes Métropole, bâtiment Valmy",
 	"modesCollecte" : "modco_distrisac",
@@ -2651,7 +1572,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "23",
+	"code" : "trisac_23",
 	"sous_zone" : "qcv",
 	"nom" : "Casino",
 	"modesCollecte" : "modco_distrisac",
@@ -2665,7 +1586,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "24",
+	"code" : "trisac_24",
 	"sous_zone" : "qhpsf",
 	"nom" : "Le Fournil d'Aristide",
 	"modesCollecte" : "modco_distrisac",
@@ -2679,7 +1600,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "25",
+	"code" : "trisac_25",
 	"sous_zone" : "qcv",
 	"nom" : "Mairie Centrale",
 	"modesCollecte" : "modco_distrisac",
@@ -2693,7 +1614,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "26",
+	"code" : "trisac_26",
 	"sous_zone" : "qcv",
 	"nom" : "Tabac Presse",
 	"modesCollecte" : "modco_distrisac",
@@ -2708,7 +1629,7 @@ var _structures1Datas = [{
 	"image" : "relais_trisac.jpg",
 	"descr" : "Juillet/Août fermeture entre 12h30 et 14h30"
 }, {
-	"code" : "27",
+	"code" : "trisac_27",
 	"sous_zone" : "qcv",
 	"nom" : "Tabac Presse Le Voltaire",
 	"modesCollecte" : "modco_distrisac",
@@ -2722,7 +1643,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "28",
+	"code" : "trisac_28",
 	"sous_zone" : "qcv",
 	"nom" : "Glup's",
 	"modesCollecte" : "modco_distrisac",
@@ -2736,7 +1657,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "29",
+	"code" : "trisac_29",
 	"sous_zone" : "qcv",
 	"nom" : "Du Vert en Ville",
 	"modesCollecte" : "modco_distrisac",
@@ -2750,7 +1671,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "30",
+	"code" : "trisac_30",
 	"sous_zone" : "qcv",
 	"nom" : "Carrefour City",
 	"modesCollecte" : "modco_distrisac",
@@ -2764,7 +1685,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "31",
+	"code" : "trisac_31",
 	"sous_zone" : "qcv",
 	"nom" : "Boulangerie",
 	"modesCollecte" : "modco_distrisac",
@@ -2778,7 +1699,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "32",
+	"code" : "trisac_32",
 	"sous_zone" : "qcv",
 	"nom" : "Papeterie Pouteau",
 	"modesCollecte" : "modco_distrisac",
@@ -2792,7 +1713,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "33",
+	"code" : "trisac_33",
 	"sous_zone" : "qcv",
 	"nom" : "Tabac Presse",
 	"modesCollecte" : "modco_distrisac",
@@ -2806,7 +1727,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "34",
+	"code" : "trisac_34",
 	"sous_zone" : "qcv",
 	"nom" : "Tabac Presse du Pilori",
 	"modesCollecte" : "modco_distrisac",
@@ -2820,7 +1741,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "35",
+	"code" : "trisac_35",
 	"sous_zone" : "qcv",
 	"nom" : "Boulangerie La Mie Câline",
 	"modesCollecte" : "modco_distrisac",
@@ -2834,7 +1755,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "58",
+	"code" : "trisac_58",
 	"sous_zone" : "qdb",
 	"nom" : "Leclerc Paridis",
 	"modesCollecte" : "modco_distrisac",
@@ -2848,7 +1769,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "59",
+	"code" : "trisac_59",
 	"sous_zone" : "qdb",
 	"nom" : "Piscine Jules Verne",
 	"modesCollecte" : "modco_distrisac",
@@ -2861,7 +1782,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "123",
+	"code" : "trisac_123",
 	"sous_zone" : "qmsd",
 	"nom" : "Intermarché",
 	"modesCollecte" : "modco_distrisac",
@@ -2875,7 +1796,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "122",
+	"code" : "trisac_122",
 	"sous_zone" : "qmsd",
 	"nom" : "Super U Dalby",
 	"modesCollecte" : "modco_distrisac",
@@ -2889,7 +1810,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "74",
+	"code" : "trisac_74",
 	"sous_zone" : "qhpsf",
 	"nom" : "Marché de Talensac",
 	"modesCollecte" : "modco_distrisac",
@@ -2902,7 +1823,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "2",
+	"code" : "trisac_2",
 	"sous_zone" : "qbcsa",
 	"nom" : "Mairie annexe Chantenay",
 	"modesCollecte" : "modco_distrisac",
@@ -2915,7 +1836,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "93",
+	"code" : "trisac_93",
 	"sous_zone" : "qmsd",
 	"nom" : "Piscine Petite Amazonie",
 	"modesCollecte" : "modco_distrisac",
@@ -2928,7 +1849,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "1",
+	"code" : "trisac_1",
 	"sous_zone" : "qcv",
 	"nom" : "Comptoir du tri",
 	"modesCollecte" : "modco_distrisac",
@@ -2941,7 +1862,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "14",
+	"code" : "trisac_14",
 	"sous_zone" : "qbcsa",
 	"nom" : "Place de la Liberté (Face à la mairie annexe Chantenay)",
 	"modesCollecte" : "modco_distrisac",
@@ -2955,7 +1876,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "10",
+	"code" : "trisac_10",
 	"sous_zone" : "qbcsa",
 	"nom" : "Place des Garennes",
 	"modesCollecte" : "modco_distrisac",
@@ -2969,7 +1890,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "11",
+	"code" : "trisac_11",
 	"sous_zone" : "qbcsa",
 	"nom" : "Rue Lucien Aubert (Groupe scolaire Jean Zay)",
 	"modesCollecte" : "modco_distrisac",
@@ -2983,7 +1904,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "12",
+	"code" : "trisac_12",
 	"sous_zone" : "qbcsa",
 	"nom" : "Rue des Bourderies (Centre Socioculturel Bourderies)",
 	"modesCollecte" : "modco_distrisac",
@@ -2997,7 +1918,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "13",
+	"code" : "trisac_13",
 	"sous_zone" : "qdz",
 	"nom" : "Quai de la Fosse (Musée bateau Maille-Brézé)",
 	"modesCollecte" : "modco_distrisac",
@@ -3011,7 +1932,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "9",
+	"code" : "trisac_9",
 	"sous_zone" : "qbcsa",
 	"nom" : "Pôle de proximité Nantes Ouest",
 	"modesCollecte" : "modco_distrisac",
@@ -3025,7 +1946,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "3",
+	"code" : "trisac_3",
 	"sous_zone" : "qbcsa",
 	"nom" : "Café la butte",
 	"modesCollecte" : "modco_distrisac",
@@ -3039,7 +1960,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "4",
+	"code" : "trisac_4",
 	"sous_zone" : "qdz",
 	"nom" : "Bar Tabac l'Hebdo",
 	"modesCollecte" : "modco_distrisac",
@@ -3053,7 +1974,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "5",
+	"code" : "trisac_5",
 	"sous_zone" : "qbcsa",
 	"nom" : "Mairie Annexe Bellevue",
 	"modesCollecte" : "modco_distrisac",
@@ -3067,7 +1988,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "6",
+	"code" : "trisac_6",
 	"sous_zone" : "qbcsa",
 	"nom" : "Nantes Habitat Agence Jamet",
 	"modesCollecte" : "modco_distrisac",
@@ -3081,7 +2002,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "7",
+	"code" : "trisac_7",
 	"sous_zone" : "qbcsa",
 	"nom" : "Epicerie Aux 4 saisons",
 	"modesCollecte" : "modco_distrisac",
@@ -3095,7 +2016,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "8",
+	"code" : "trisac_8",
 	"sous_zone" : "qbcsa",
 	"nom" : "Boulangerie Tijou",
 	"modesCollecte" : "modco_distrisac",
@@ -3108,7 +2029,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "21",
+	"code" : "trisac_21",
 	"sous_zone" : "qbb",
 	"nom" : "Face au 47 Rue Georges Mélies",
 	"modesCollecte" : "modco_distrisac",
@@ -3122,7 +2043,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "19",
+	"code" : "trisac_19",
 	"sous_zone" : "qbb",
 	"nom" : "Pôle commercial Coubertin",
 	"modesCollecte" : "modco_distrisac",
@@ -3136,7 +2057,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "20",
+	"code" : "trisac_20",
 	"sous_zone" : "qdz",
 	"nom" : "Place des Dervallières",
 	"modesCollecte" : "modco_distrisac",
@@ -3150,7 +2071,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "18",
+	"code" : "trisac_18",
 	"sous_zone" : "qbb",
 	"nom" : "Carrefour City",
 	"modesCollecte" : "modco_distrisac",
@@ -3164,7 +2085,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "15",
+	"code" : "trisac_15",
 	"sous_zone" : "qbb",
 	"nom" : "Nantes Habitat Agence Feyder",
 	"modesCollecte" : "modco_distrisac",
@@ -3178,7 +2099,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "16",
+	"code" : "trisac_16",
 	"sous_zone" : "qdz",
 	"nom" : "Mairie Annexe Dervallières",
 	"modesCollecte" : "modco_distrisac",
@@ -3192,7 +2113,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "17",
+	"code" : "trisac_17",
 	"sous_zone" : "qdz",
 	"nom" : "Nantes Habitat Agence Watteau",
 	"modesCollecte" : "modco_distrisac",
@@ -3206,7 +2127,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "73",
+	"code" : "trisac_73",
 	"sous_zone" : "qhpsf",
 	"nom" : "Place Emile Fritsch (Devant l'église Saint-Pasquier)",
 	"modesCollecte" : "modco_distrisac",
@@ -3220,7 +2141,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "68",
+	"code" : "trisac_68",
 	"sous_zone" : "qhpsf",
 	"nom" : "Angle Rue des Dervallières/Rue Octave Feuillet",
 	"modesCollecte" : "modco_distrisac",
@@ -3234,7 +2155,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "69",
+	"code" : "trisac_69",
 	"sous_zone" : "qhpsf",
 	"nom" : "Place de Talensac",
 	"modesCollecte" : "modco_distrisac",
@@ -3248,7 +2169,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "70",
+	"code" : "trisac_70",
 	"sous_zone" : "qhpsf",
 	"nom" : "TRAM Saint-Mihiel",
 	"modesCollecte" : "modco_distrisac",
@@ -3262,7 +2183,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "71",
+	"code" : "trisac_71",
 	"sous_zone" : "qhpsf",
 	"nom" : "Angle Boulevard Gaston Serpette/Boulevard des Anglais",
 	"modesCollecte" : "modco_distrisac",
@@ -3276,7 +2197,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "72",
+	"code" : "trisac_72",
 	"sous_zone" : "qhpsf",
 	"nom" : "Place Saint-Félix",
 	"modesCollecte" : "modco_distrisac",
@@ -3290,7 +2211,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "67",
+	"code" : "trisac_67",
 	"sous_zone" : "qhpsf",
 	"nom" : "Association ADDA",
 	"modesCollecte" : "modco_distrisac",
@@ -3304,7 +2225,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "60",
+	"code" : "trisac_60",
 	"sous_zone" : "qhpsf",
 	"nom" : "Café tabac le Bel Air",
 	"modesCollecte" : "modco_distrisac",
@@ -3317,7 +2238,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "61",
+	"code" : "trisac_61",
 	"sous_zone" : "qhpsf",
 	"nom" : "Carrefour City",
 	"modesCollecte" : "modco_distrisac",
@@ -3331,7 +2252,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "62",
+	"code" : "trisac_62",
 	"sous_zone" : "qbb",
 	"nom" : "Carrefour Market",
 	"modesCollecte" : "modco_distrisac",
@@ -3345,7 +2266,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "63",
+	"code" : "trisac_63",
 	"sous_zone" : "qhpsf",
 	"nom" : "Aux Délices de Procé",
 	"modesCollecte" : "modco_distrisac",
@@ -3359,7 +2280,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "64",
+	"code" : "trisac_64",
 	"sous_zone" : "qhpsf",
 	"nom" : "Maison de l'Environnement Ecopole",
 	"modesCollecte" : "modco_distrisac",
@@ -3373,7 +2294,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "65",
+	"code" : "trisac_65",
 	"sous_zone" : "qhpsf",
 	"nom" : "Intermarché",
 	"modesCollecte" : "modco_distrisac",
@@ -3387,7 +2308,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "66",
+	"code" : "trisac_66",
 	"sous_zone" : "qhpsf",
 	"nom" : "Le Monselet",
 	"modesCollecte" : "modco_distrisac",
@@ -3401,7 +2322,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "83",
+	"code" : "trisac_83",
 	"sous_zone" : "qidn",
 	"nom" : "Rue La Noue Bras de Fer (Ecole d'Architecture)",
 	"modesCollecte" : "modco_distrisac",
@@ -3415,7 +2336,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "79",
+	"code" : "trisac_79",
 	"sous_zone" : "qidn",
 	"nom" : "Place Victor Mangin",
 	"modesCollecte" : "modco_distrisac",
@@ -3430,7 +2351,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "80",
+	"code" : "trisac_80",
 	"sous_zone" : "qidn",
 	"nom" : "Place Victor Mangin",
 	"modesCollecte" : "modco_distrisac",
@@ -3444,7 +2365,7 @@ var _structures1Datas = [{
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
 }, {
-	"code" : "57",
+	"code" : "trisac_57",
 	"sous_zone" : "qdb",
 	"nom" : "Piscine Jules Verne",
 	"modesCollecte" : "modco_distrisac",

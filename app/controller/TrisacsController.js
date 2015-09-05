@@ -70,24 +70,33 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 		// this.onPushBackButton();
 	},
 	/**
-	 * A l"initialisation de la fenêtre
+	 * A l'initialisation de la fenêtre
 	 */
 	onInitTrisacsController : function(list) {
 		this.getTrisacFormSelect().setValue("all");
 	},
 
 	onShowTrisac : function() {
-		if (this.getTrisacList().getStore() == null) {
-			var structureStore = Ext.create(
-					"MieuxTrierANantes.store.StructureStore", {
-						filters : [{
-									property : "modesCollecte",
-									value : /modco_distrisac/g
-								}]
-					});
-			structureStore.setData(_structures1Datas);
-			this.getTrisacList().setStore(structureStore);
-			structureStore.load();
+		var mainView = this.getMainView();
+		if (mainView.active != null) {
+			// Cas des liens qui ouvre la page
+			var record = _getStructure(mainView.active);
+			this.showStructuresDetail2(record);
+			mainView.active = null;
+		} else {
+			// Cas normal : on affiche la page
+			if (this.getTrisacList().getStore() == null) {
+				var structureStore = Ext.create(
+						"MieuxTrierANantes.store.StructureStore", {
+							filters : [{
+										property : "modesCollecte",
+										value : /modco_distrisac/g
+									}]
+						});
+				structureStore.setData(_structures1Datas);
+				this.getTrisacList().setStore(structureStore);
+				structureStore.load();
+			}
 		}
 	},
 
@@ -107,7 +116,6 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 		if (this.getTrisacList() != null) {
 			var text = this.getTrisacFormText();
 			var selectQuartier = this.getTrisacFormSelect();
-			/* CRN_MIGRATION */
 			var store = this.getTrisacList().getStore();
 			if (store != null) {
 

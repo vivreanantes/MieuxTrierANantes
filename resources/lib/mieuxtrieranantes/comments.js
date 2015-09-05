@@ -16,13 +16,14 @@ function _getCommentsBloc(code) {
 	for (var j = 0; j < _commentsDatas.length; j++) {
 		if (_commentsDatas[j]["elements"] != null) {
 
-			var arComments = _commentsDatas[j]["elements"]
-					.replace(", /g", ",").replace(" ,/g", ",").split(',');
+			var arComments = _commentsDatas[j]["elements"].replace(", /g", ",")
+					.replace(" ,/g", ",").split(',');
 			for (var i = 0; i < arComments.length; i++) {
 				if (arComments[i] === code) {
+					var nom = getRecordValue(_commentsDatas[j], "nom");
+					var descr = getRecordValue(_commentsDatas[j], "descr");
 					faqTraduit += "<br/><img src='resources/icons/info.png' /> <B>"
-							+ _commentsDatas[j]["nom"] + "</B><BR/>"
-							+ _commentsDatas[j]["descr"];
+							+ nom + "</B><BR/>" + descr;
 				}
 			}
 		}
@@ -132,65 +133,73 @@ function _getInfo(idElement) {
 }
 
 /**
-	 * Renvoie les items (les éléments fils d'un container) correspondant à la
-	 * partie "cons" d'une page
-	 * 
-	 * @params advicesString chaine de caractère listant les codes des conseils
-	 *         (ex : ",cons_1,cons2,cons3")
-	 * @params prefix
-	 */
-function _getAdvicesBlock (advicesString, prefixString) {
-		var result = new Array();
-		var thisController = this;
-		var arConseils = advicesString.replace(", /g", ",").replace(" ,/g",
-				",").split(',');
-		// On parcourt les conseils
-		if (arConseils.length > 0) {
+ * Renvoie les items (les éléments fils d'un container) correspondant à la
+ * partie "cons" d'une page
+ * 
+ * @params advicesString chaine de caractère listant les codes des conseils (ex :
+ *         ",cons_1,cons2,cons3")
+ * @params prefix
+ */
+function _getAdvicesBlock(advicesString, prefixString) {
+	var result = new Array();
+	var thisController = this;
+	var arConseils = advicesString.replace(", /g", ",").replace(" ,/g", ",")
+			.split(',');
+	// On parcourt les conseils
+	if (arConseils.length > 0) {
 
-			for (j in _advicesDatas) {
-				// STORE datasAdvices
-				// var dataAdvices = this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
-				// var thisController = this;
-				// dataAdvices.each(function (recordAdvice) {
-				for (i in arConseils) {
-					if (_advicesDatas[j]["code"] === arConseils[i]) {
-						if (_advicesDatas[j]["fiche"] != null && _advicesDatas[j]["fiche"] != "") {
-							// lien vers une fiche
-							result.push({
-								xtype : 'container',
-								layout : 'hbox',
-								id : prefixString + _advicesDatas[j]["code"],
-								items : [{
-										html : "<b>" + _advicesDatas[j]["nom"] + "</b><br/>" + _advicesDatas[j]["descr"] + "<br/><br/>",
+		for (j in _advicesDatas) {
+			// STORE datasAdvices
+			// var dataAdvices =
+			// this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
+			// var thisController = this;
+			// dataAdvices.each(function (recordAdvice) {
+			for (i in arConseils) {
+				if (_advicesDatas[j]["code"] === arConseils[i]) {
+					var nom = getRecordValue(_advicesDatas[j], "nom");
+					var descr = getRecordValue(_advicesDatas[j], "descr");
+					if (_advicesDatas[j]["fiche"] != null
+							&& _advicesDatas[j]["fiche"] != "") {
+						// lien vers une fiche
+						result.push({
+									xtype : 'container',
+									layout : 'hbox',
+									id : prefixString
+											+ _advicesDatas[j]["code"],
+									items : [{
+										html : "<b>" + nom + "</b><br/>"
+												+ descr + "<br/><br/>",
 										flex : 1
 									}, {
 										xtype : 'container',
 										layout : 'vbox',
 										items : [{
-												xtype : 'button',
-												id : "garbagesdetails_informations",
-												text : "Plus d'infos",
-												data : {
-													code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
-												}
+											xtype : 'button',
+											id : "garbagesdetails_informations",
+											text : "Plus d'infos",
+											data : {
+												code : "informations"
+														+ _SEPARATOR
+														+ _advicesDatas[j]["fiche"]
 											}
-										]
-									}
-								]
-							});
-						}
+										}]
+									}]
+								});
+					}
 
-						// pas de lien vers une fiche
-						else {
-							result.push({
-								id : prefixString + _advicesDatas[j]["code"],
-								html : "<b>" + _advicesDatas[j]["nom"] + "<br/></b>" + _advicesDatas[j]["descr"] + "<br/><br/>"
-							});
-						}
+					// pas de lien vers une fiche
+					else {
+						result.push({
+									id : prefixString
+											+ _advicesDatas[j]["code"],
+									html : "<b>" + nom + "<br/></b>" + descr
+											+ "<br/><br/>"
+								});
 					}
 				}
-				// });
 			}
+			// });
 		}
-		return result;
 	}
+	return result;
+}

@@ -89,7 +89,7 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 						}
 					}
 
-					var nbGarbagesMax = 39; // 39 éléments
+					var nbGarbagesMax = 42; // 42 éléments
 					this.setDataInButtonsWithManyLines(this
 									.getInformationsList(),
 							"informationsButtonsPanel", result, nbGarbagesMax,

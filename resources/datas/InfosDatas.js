@@ -79,6 +79,16 @@ var _infosDatas = [{
 	"mots_cles" : "conteneurs,vetements",
 	"mots_cles_en" : ""
 }, {
+	"code" : "fiche_coucheslavables",
+	"nom" : "Couches lavables",
+	"nom_en" : "Cloth diapers",
+	"descr" : "Pourquoi ne pas tester les couches lavables ? Une couche de bonne qualité coûte entre 15 et 20 euros, et se revend 7 euros d'occasion. Il en faut environ 25 (il est recommandé de changer le bébé 8-9 fois par jour pour ce type de couche). Certaines couches sont moins épaisses, et ne donnent pas cet effet 'gros popotin'. Voir 'vente en vrac' sur la page Lieux.",
+	"descr_en" : "Why not test cloth diapers? A layer of good quality costs between 15 and 20 euros, and resells used 7 euros. It takes about 25 (it is recommended to change the baby 8-9 times per day for this type of layer). Some layers are thinner, and do not give this effect 'big butt'. See 'loose sales' on the page 'Lieux'. ",
+	"bouton" : "fiche",
+	"image" : "couches_lavables_1.png",
+	"mots_cles" : "couche,lavable",
+	"mots_cles_en" : "cloth,diaper"
+}, {
 	"code" : "fiche_contpapiercarton",
 	"nom" : "Conteneur papier carton",
 	"nom_en" : "Paper cardboard container",
@@ -169,6 +179,16 @@ var _infosDatas = [{
 	"mots_cles" : "mieux,trier,a,nantes",
 	"mots_cles_en" : "mieux,trier,a,nantes"
 }, {
+	"code" : "fiche_plastik",
+	"nom" : "PP Plastic Pickup",
+	"nom_en" : "PP Plastic Pickup",
+	"descr" : "Cette association est née d'une réflexion pour les membres fondateurs : je ramasse naturellement le plastique que je trouve. Deuxième constat : je ne suis pas isolé dans ce geste.<br/>Sous l’impulsion de la mairie de Rezé, l’association a été créée en 2012.<br/>L'objectif est de valoriser cet acte de ramassage, d'en faire un geste naturel et adopté par tous, de changer le regard sur ce déchet banalisé et dangereux pour l'environnement.<br/>Les 60 membres environ participent à des opérations nationales de <b>ramassage de déchets</b>comme les initiatives Océanes et le World Clean Up.<br/>RCette association ralise également des actions de sensibilisation du public comme le Plastic Flashmob et le Plastic Mobile.<br/>Voir la page <a href='www.plastiques.eu/' target=_new>www.plastiques.eu/</a>",
+	"descr_en" : "Originally a reflection to the founding members, I naturally picks up the plastic I find. Second observation: I am not alone in this gesture. Under the leadership of the municipality of Rezé, the association was created in 2012. <br/> The objective is to enhance this act of collecting, to make it a natural gesture and adopted by all, to change the look trivialized this waste and dangerous for the environment. <br/> about 60 members involved in domestic operations like the Ocean initiatives and World Clean Up. <br/> also Conducts public awareness actions like Plastic Flashmob Plastic and mobile.",
+	"bouton" : "fiche",
+	"image" : "images_non_libres/logo_plasticpickup.png",
+	"mots_cles" : "plastique,pp,plastic,pickup,oceane,reze",
+	"mots_cles_en" : "pp,plastic,pickup,oceane,reze"
+}, {
 	"code" : "fiche_plus2vers",
 	"nom" : "Plus2vers - échange de lombrics",
 	"nom_en" : "Plus2vers - exchange of earthworms",
@@ -214,6 +234,7 @@ var _infosDatas = [{
 	"nom_en" : "Recycling company",
 	"descr" : "L'association nantaise <b>A.R.B.R.E.S.</b> a 2 objectifs : récupérer certains déchets (surtour le papier et le carton, mais aussi cartouches d'encre et matériel electronique) et accompagner les bénéficiaires du RMI qui travaillent pour l'association. Elle dispose des récipients dans les entreprises, et s'occupe complètement . Plus d'infos sur <a href='http://arbres44.org'>http://arbres44.org</a>.<br/><img src='images/images_non_libres/association_arbres.png' /><br/><br/>",
 	"descr_en" : "The association Nantes <b> TREES </ b> has two objectives: to recover certain waste (Surtour paper and cardboard, but also ink cartridges and electronic equipment) and support RMI recipients who work for the association. It has containers in businesses, and handles completely. More information <a href='http://arbres44.org'> http://arbres44.org </a>. <br/> <Img src='images / images_non_libres / association_arbres.png' /> <br/>",
+	"bouton" : "fiche",
 	"image" : "images_non_libres/association_arbres_mini.png",
 	"mots_cles" : "recyclage,en,entreprise",
 	"mots_cles_en" : "recycling,in,company"
@@ -278,6 +299,16 @@ var _infosDatas = [{
 	"mots_cles" : "sacs,jaunes,et,bleus",
 	"mots_cles_en" : "bags,,yellow,,,and,blue"
 }, {
+	"code" : "fiche_solutionrecyclage",
+	"nom" : "Solution recyclage",
+	"nom_en" : "Solution recyclage",
+	"descr" : "Propose des solutions pour les entreprises : récupère plus de quarante déchets différents. Le papier, le carton, les bouteilles, la moquette, mais aussi les gobelets.<br/>Adresse : 181 Quai Emile Cormerais, 44800 Saint-Herblain<br/>Téléphone : 02 53 55 07 17",
+	"descr_en" : "Offers solutions for companies: recovers over forty different wastes. Paper, cardboard, bottles, carpets, but also cups <br/>. Address: 181 Quai Emile Cormerais, 44800 Saint-Herblain <br/> Phone 02 53 55 July 17",
+	"bouton" : "fiche",
+	"image" : "images_non_libres/logo_solutionrecyclage.png",
+	"mots_cles" : "solution,recyclage,entreprise",
+	"mots_cles_en" : "solution,recyclage,entreprise"
+}, {
 	"code" : "fiche_telephone",
 	"nom" : "Numéros de téléphones",
 	"nom_en" : "Phone numbers",
@@ -307,4 +338,4 @@ var _infosDatas = [{
 	"image" : "images_non_libres/usine_valorena.png",
 	"mots_cles" : "usine,valorena",
 	"mots_cles_en" : "factory,,valorena,"
-}, {}];
+}];

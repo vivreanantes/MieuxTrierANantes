@@ -40,17 +40,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * getRecordValue(record,'nom') renvoie 'car' si locale vaut 'en'.
 	 */
 	getRecordValue : function(record, key) {
-		var result = "";
-		this.stLocale = this.getLocale();
-		// if (key == "descr" || key == "nom") {
-		var enKey = key + "_en"
-		if (this.stLocale == 'en' && (typeof record[enKey] != 'undefined')) {
-			result = record[enKey];
-		} else {
-			result = record[key];
-		}
-		// }
-		return result;
+		return getRecordValue(record, key);
 	},
 
 	IMAGE_DIR : "resources/images/",
@@ -739,8 +729,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	getArrayItemsToShowForButtons : function(datas, buttonLabel) {
 		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
-			if (typeof datas[i].bouton != "undefined"
-					&& datas[i].bouton == buttonLabel) {
+			if (typeof datas[i].bouton !="undefined" && datas[i].bouton == buttonLabel) {
 				// Ajoute les <br/>
 				var nom = _cutWithBr(this.getRecordValue(datas[i], "nom"));
 				arItemsToShow.push({
@@ -772,6 +761,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 			mainView.setActiveItem(0);
 		} else if (page == "homecollectmods") {
 			mainView.setActiveItem(5);
+		} else if (page == "trisacs") {
+			mainView.setActiveItem(6);
 		}
 	},
 

@@ -375,9 +375,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas, _garbagesDatas,
 				texteNoAccents, locale, "garbages");
 		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas, _infosDatas, texteNoAccents, locale, "fiches");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _garbagesDatas, texteNoAccents, locale, "docs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas, texteNoAccents, locale, "docs");
 		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas, _structures1Datas,
 				texteNoAccents, locale, "structures");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas, _structures1Datas,
+				texteNoAccents, locale, "trisacs");
 		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas, _homeCollectModsDatas,
 				texteNoAccents, locale, "homecollectmods");
 

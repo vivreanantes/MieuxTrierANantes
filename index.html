@@ -71,12 +71,14 @@
 	<script src="resources/datas/HashFichesDatas.js"></script>
 	<script src="resources/datas/HashDocsDatas.js"></script>
 	<script src="resources/datas/HashStructuresDatas.js"></script>
+	<script src="resources/datas/HashTrisacsDatas.js"></script>
 	<script src="resources/datas/HashHomeCollectModsDatas.js"></script>
 	<script src="resources/datas/HomeCollectModsDatas.js"></script>
 	<script src="resources/datas/HashADomicileDatas.js"></script>
 	<script src="resources/datas/CollectModsDatas.js"></script>
 	<script src="resources/datas/CommentsDatas.js"></script>
 	<script src="resources/datas/AdvicesDatas.js"></script>
+	<script src="resources/datas/DocsDatas.js"></script>
 	<script src="resources/datas/InfosDatas.js"></script>
 	<script src="resources/datas/LabelsDatas.js"></script>
 	<script src="resources/datas/QuizsDatas.js"></script>
@@ -92,14 +94,13 @@
    
 		
         <script type="text/javascript">
-			
   			if (_isIE()) {
-  				var texte = "<br/><center><img src='resources/images/issiontrix/issiontrix_travaux_petit.png' /><div style='color:red'>Le site ne fonctionne plus avec le navigateur Internet Explorer.</div><div>Nous ne sommes pas en mesure de corriger ceci rapidement.</div><br/><div style='color:red'>Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Chromium, Edge...)</div></center>";
-  				document.write(texte);
-  			} else {
-				var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>Par des b&eacute;n&eacute;voles<br/>www.mieuxtrieranantes.fr<br/>Version 1.15 (speed)<br/><i>Nouveaut&eacute;s : rapidit&eacute; recherches, anglais disponible</i></center></div>";
-				document.write(texte);
-			}
+	  			// <br/><center><img src='resources/images/issiontrix/issiontrix_travaux_petit.png' /><div style='color:red'>Le site ne fonctionne plus avec le navigateur Internet Explorer.</div><div>Nous ne sommes pas en mesure de corriger ceci rapidement.</div><br/><div style='color:red'>Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Chromium, Edge...)</div></center>
+  				var texte = "Le site fonctionne mal avec le navigateur Internet Explorer (boutons page d'accueil...). Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Opera, Chromium, Edge...)";
+  				alert(texte);
+  			}
+			var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>Par des b&eacute;n&eacute;voles<br/>www.mieuxtrieranantes.fr<br/>Version 1.15 (speed)<br/><i>Nouveaut&eacute;s : rapidit&eacute; recherches page accueil et 'à domicile', bascule en anglais sur clic sur drapeau (bêta)</i></center></div>";
+			document.write(texte);
  
 </script>
     

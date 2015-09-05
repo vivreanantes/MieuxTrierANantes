@@ -1,6 +1,6 @@
 var _labelsDatas = {
 	"about_titre" : {
-	"fr" : "« Mieux trier à Nantes », v. 1.14"
+	"fr" : "« Mieux trier à Nantes », v. 1.15"
 	},
 	"about" : {
 		"fr" : "Application android (gratuite) et site mieuxtrieranantes.fr pour aider les habitants de Nantes Métropole à trier. "

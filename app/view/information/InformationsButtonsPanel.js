@@ -249,6 +249,24 @@ Ext.define('MieuxTrierANantes.view.information.InformationsButtonsPanel', {
 				xtype : "button",height : '125px', width : '33%', cls : 'boutons_panneau',
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' width='80px' /></center>", data : { label:"", image : ""}
 			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsPanel_40",
+				xtype : "button",height : '125px', width : '33%', cls : 'boutons_panneau',
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' width='80px' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_41",
+				xtype : "button",height : '125px', width : '33%', cls : 'boutons_panneau',
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' width='80px' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_42",
+				xtype : "button",height : '125px', width : '33%', cls : 'boutons_panneau',
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' width='80px' /></center>", data : { label:"", image : ""}
+			}]
 		}]
 		}
 		});
