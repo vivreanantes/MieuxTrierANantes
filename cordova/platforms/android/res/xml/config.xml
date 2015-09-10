@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="15" id="com.MieuxVivreANantes.MieuxTrierANantes" version="1.15" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+    <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+    <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+    <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+    <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+    <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+    <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+    <name>Mieux trier à Nantes</name>
+    <description>
+		Application libre (et gratuite) pour aider les habitants
+		de Nantes Métropole à trier.
+	</description>
+    <author email="supprimeravantlepoint.mieuxtrieranantes@gmail.com" href="http://mieuxtrieranantes.fr">
+		Bénévoles
+	</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon density="mdpi" height="114" src="www/resources/icons/Icon@2x.png" width="114" />
+    <access browserOnly="true" origin="*" />
+    <access launch-external="yes" origin="geo:*" />
+    <access launch-external="yes" origin="tel:*" />
+    <preference name="SplashScreenDelay" value="10000" />
+</widget>

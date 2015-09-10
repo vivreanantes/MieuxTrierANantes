@@ -1,0 +1,1261 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/www/resources/images/bac_bleu_mini.png
+SHA1-Digest: XGrU3XSxMG67pwY9UPGqCzYzvCM=
+
+Name: assets/www/resources/lib/mieuxtrieranantes/date.js
+SHA1-Digest: 3/qR5XcMRiyegghA9C1sbiXL1Qg=
+
+Name: assets/www/resources/images/casserolles_mini.png
+SHA1-Digest: mYOQbm+vbQyRlMWKRRT9iFE0xU0=
+
+Name: assets/www/resources/images/sacs_jaune_et_bleu.png
+SHA1-Digest: IAMZlYLlagPHR5CoF2jtlDIVO0A=
+
+Name: assets/www/resources/icons/Icon.png
+SHA1-Digest: 3Z3tA+EsimRLJX0+tWD4qqRzVNs=
+
+Name: assets/www/resources/css/app.css
+SHA1-Digest: d3towJjfNlroKep1McDmehMwt7w=
+
+Name: assets/www/resources/images/marteau_2_mini.png
+SHA1-Digest: cSqAH9IH1ewaDp57UG1KgSHvgNs=
+
+Name: assets/www/resources/images/bouteille_transparente_mini.png
+SHA1-Digest: b7chmhnl1KxWTMHvF/9u9n23sa0=
+
+Name: assets/www/resources/images/cartouches_imprimantes_mini.png
+SHA1-Digest: W3O42HoFj8dbA/Wp/zwXYaWJnZk=
+
+Name: assets/www/resources/images/raquette_ping_pong_mini.png
+SHA1-Digest: WJXAkYQgHS7nSl6tO+B2X9aKSWk=
+
+Name: assets/www/resources/images/maquillage_mini.png
+SHA1-Digest: F5Hkuvkq4MutuAOrHRfC1e+jMv8=
+
+Name: assets/www/resources/images/antilimace_mini.png
+SHA1-Digest: R5wVzsmluM96E+bEoPzQk5JZlNs=
+
+Name: res/drawable-land-hdpi-v4/screen.png
+SHA1-Digest: SnEeLBNJPYyr+znAdl3VZcz93hY=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/images/marker-shadow.png
+SHA1-Digest: Ht1Bz9CLGfDqGKH8P2A7e7m7K5U=
+
+Name: assets/www/resources/images/canape_mini.png
+SHA1-Digest: SVprZCyLUVh354nhm2rs1uqHWiY=
+
+Name: assets/www/resources/images/scie_a_metaux_mini.png
+SHA1-Digest: Ump1OwwWE2dfJMwSpOyoGu07cPY=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-autres_old_mini.png
+SHA1-Digest: W54q3h96/B0ty1sISMm2nQ0lcqw=
+
+Name: assets/www/resources/images/conteneur_carton_instructions.jpg
+SHA1-Digest: 9PjjVRDJI99LlprUlSbSuwh8YZ8=
+
+Name: assets/www/resources/images/plastique_dur_propre_mini.png
+SHA1-Digest: v/b+RaWkjHbi2i4QueWw+BjOqqk=
+
+Name: assets/www/resources/images/creme_main_mini.png
+SHA1-Digest: o3Bgh90hy02hpy2rTDeWQt2YR6k=
+
+Name: assets/www/resources/datas/structures.json
+SHA1-Digest: dBtLlFo9B2/V4cUXOAE3w1ofPpg=
+
+Name: assets/www/resources/images/carte_retrait_trisacs.jpg
+SHA1-Digest: SRH1PnqzORy7eOvjmKyVbno8gVA=
+
+Name: assets/www/resources/images/refrigerateur_mini.png
+SHA1-Digest: 1GNCJrhW/xRvm+aYqeFSK9/oIYI=
+
+Name: assets/www/resources/images/carte_postale_verso_mini.png
+SHA1-Digest: 9PajHWp+XxkvmbTmCPPDB2eQusc=
+
+Name: assets/www/resources/images/cotons_tiges_mini.png
+SHA1-Digest: ggGkJe/hrY7I/joBrbGGyUJNygM=
+
+Name: assets/www/resources/images/vernis_mini.png
+SHA1-Digest: dywYbvRM2/n0Vga+2lGrCWF6haY=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/leaflet.css
+SHA1-Digest: FbnSaok+RDBmAw6vtaMuTs7CO+o=
+
+Name: assets/www/resources/images/papier_cadeau_mini.png
+SHA1-Digest: 36wXV3tr4ELiGGMqUnnTNsbO4Zc=
+
+Name: assets/www/resources/images/lunette_mini.png
+SHA1-Digest: IBVGpC/dsipZTvN63S5HQ3U7Aic=
+
+Name: assets/www/resources/images/cuillere_mini.png
+SHA1-Digest: 9UlJfDaVC/8dkx+b8sWlYJ/UMas=
+
+Name: assets/www/resources/images/pelouse_mini.png
+SHA1-Digest: kNGgwFSsp0AFOcQV8Dcqb5lP6xY=
+
+Name: assets/www/resources/images/relais_trisac.jpg
+SHA1-Digest: dnc7SkIB759jk2qexDh/1ISqiH8=
+
+Name: assets/www/resources/images/biberon_mini.png
+SHA1-Digest: cqewalSqx3eJkLHZpSqERWdp51g=
+
+Name: assets/www/resources/images/cd_sansemballage_mini.png
+SHA1-Digest: rGYwB5fazr1GxuFn19jgueOzikc=
+
+Name: assets/www/resources/images/yaourt_mini.png
+SHA1-Digest: qT4uU094E3iYClftB5dLHy4iqxQ=
+
+Name: assets/www/resources/images/ecotox_camion.jpg
+SHA1-Digest: t40UtU8vv94QsXEU3wl+CSkjROY=
+
+Name: assets/www/resources/images/bouteille_lait_mini.png
+SHA1-Digest: naaky6azsz8EPOmrhfMFP9NXrMs=
+
+Name: assets/www/resources/images/lave_linge_mini.png
+SHA1-Digest: 1GNCJrhW/xRvm+aYqeFSK9/oIYI=
+
+Name: assets/www/resources/images/eponge-ENCOURS_mini.png
+SHA1-Digest: fsZFrSyTBZ+5xMPHIgN+sWYmpQ4=
+
+Name: assets/www/resources/images/desinfectant_toilette_mini.png
+SHA1-Digest: 3SktNjhq9viwsUcUbXsyKy+LZZY=
+
+Name: assets/www/resources/images/moquette_mini.png
+SHA1-Digest: eX0dSVMfXTLEOojsc3o+xvGUTAc=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-hdpe_mini.png
+SHA1-Digest: 0DHGz3PjS4/xpB+pfYpYCrqV4ps=
+
+Name: assets/www/resources/images/alcool_a_bruler_mini.png
+SHA1-Digest: HG3yvvkJpxzNEq5D8B+seRYAc1w=
+
+Name: assets/www/resources/images/bouteille_mini.png
+SHA1-Digest: 4TcpXcErQA7cSAZ1bxrQKU4Esnk=
+
+Name: assets/www/resources/images/assiette_plastique_mini.png
+SHA1-Digest: cn90j6PbBasVObShnX1Fyltu+/4=
+
+Name: assets/www/resources/images/tasse_mini.png
+SHA1-Digest: Fo3Lc13QOZm9tPqMWIRbqWjcses=
+
+Name: assets/www/resources/images/annuaire_mini.png
+SHA1-Digest: 9Mvqo4WZBhNLiFIfwGiI+4TQUwo=
+
+Name: assets/www/resources/images/brique_lait_mini.png
+SHA1-Digest: x3erU/oQEl8aBNacrly2Lvy/LAc=
+
+Name: assets/www/resources/startup/748x1024.png
+SHA1-Digest: fri7XbqxDW0SWc1PSeXGw0iktZ0=
+
+Name: assets/www/resources/images/sachet_the_mini.png
+SHA1-Digest: lU5Bx5Wg4I3s49urZZ+vUEB5wjo=
+
+Name: assets/www/resources/images/chauffage_soufflant_mini.png
+SHA1-Digest: tOIyKKQ35KvlG8T7hsYHVeWFSQQ=
+
+Name: assets/www/resources/images/papiers_dechires_mini.png
+SHA1-Digest: 1ax/1xywjdEtS44/87Tkgps4yHk=
+
+Name: assets/www/resources/icons/marker-icon-red.png
+SHA1-Digest: z44Ob2pd8UzZEDLeQ/cpXbRP3kg=
+
+Name: assets/www/resources/icons/Icon_Android36.png
+SHA1-Digest: UbgIPmZFwGugIMlM4iTsPGlojaM=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-ldpe_mini.png
+SHA1-Digest: iz4p8vfifqLtrxxpA+ZG4l9v+Y0=
+
+Name: assets/www/resources/images/cle_usb_mini.png
+SHA1-Digest: VugeyH/wsuyt53VjfGsjsHnJ/G0=
+
+Name: assets/www/resources/images/images_non_libres/moebius_mini.png
+SHA1-Digest: Uo+GlWk4LDXEi74AS/YUHZqT11k=
+
+Name: assets/www/resources/images/images_non_libres/aremacs_mini.png
+SHA1-Digest: 6t4FF5Gix2DZeCCEvZFcCJre49w=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-autres_mini.png
+SHA1-Digest: WlOeD1xFLahIdgKrhWOU309G7no=
+
+Name: assets/www/resources/icons/marker-icon-brown.png
+SHA1-Digest: Qi/UxQFVdFvVPPCWQ5+jPbNsWug=
+
+Name: assets/www/resources/images/traitement_de_bois_mini.png
+SHA1-Digest: OXADhhIWgDGBO7mZ8X+OAZ8H49U=
+
+Name: assets/www/resources/images/image_defaut_mini.png
+SHA1-Digest: YmgujNcCw56LEa7UBi4bUV4MaIU=
+
+Name: assets/www/resources/images/lingette_mini.png
+SHA1-Digest: DfbyfK8YFoSj8QlgqOrAifSUxbc=
+
+Name: assets/www/resources/images/encombrant2.jpg
+SHA1-Digest: OThJGZ68JEcSPKh9Bg39ljx2/68=
+
+Name: assets/www/resources/images/bouteille_white_spirit_mini.png
+SHA1-Digest: 9nEjDb8jpeImVNrVPGv1ArQvv1Q=
+
+Name: assets/www/resources/images/batterie_voiture_mini.png
+SHA1-Digest: R0CRs0VYbsXP4oHt7W9glrNzsEg=
+
+Name: assets/www/resources/images/barquette_polystyrene_mini.png
+SHA1-Digest: R1Ii0FgqAuBmEtX5JPxK3ZaSSo4=
+
+Name: assets/www/resources/images/voiture_mini.png
+SHA1-Digest: asOts7L0UVomPceyH2Pe03IhTRo=
+
+Name: assets/www/resources/datas/UsualCategoriesDatas.js
+SHA1-Digest: Px0YWZhkhoac2sq/6ca7P2CIiWo=
+
+Name: assets/www/resources/images/aerosol_mini.png
+SHA1-Digest: 3UORv+7MiZOiXBQRsJ9hGIv7wYU=
+
+Name: assets/www/resources/images/rouleau_scotch_mini.png
+SHA1-Digest: hekyHTRnhh+JFVP9WJtC2ZhsYS0=
+
+Name: assets/www/resources/images/lampe_chevet_mini.png
+SHA1-Digest: MhUePUuQKE3Q8CNrdUpW/od01YQ=
+
+Name: assets/www/resources/images/boite_metal_mini.png
+SHA1-Digest: BmIluyFbyAA/7LWB5Srtmo/c4jI=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: V29pfkn63ZKvWbMehv1gXLydfEg=
+
+Name: assets/www/resources/images/composteur_mini.png
+SHA1-Digest: aAGQb6EYYbLbxZmW2JGnwhsrGws=
+
+Name: assets/www/resources/images/images_non_libres/icone_documents.pn
+ g
+SHA1-Digest: hJYxXgNILQcqVIdukJKWSLM59JQ=
+
+Name: assets/www/resources/images/bouteille_savon_mini.png
+SHA1-Digest: kM4Q6H+4GGDR5RsVsK/5DG0+8Kc=
+
+Name: assets/www/resources/images/carte_postale_mini.png
+SHA1-Digest: IT2M13bF6tV9+EdNkotiUwranKQ=
+
+Name: assets/www/resources/images/negatif_photos_mini.png
+SHA1-Digest: xlnba44LY5muOKJI1w81gdDHqDg=
+
+Name: assets/www/resources/images/images_non_libres/icone_forms.png
+SHA1-Digest: lAx+OJW1A2Mz/fODirGTHjftvqo=
+
+Name: assets/www/resources/icons/windows-phone.png
+SHA1-Digest: Viv/hJVsOQrAxaAd3vNESJiKp8I=
+
+Name: assets/www/resources/images/images_non_libres/association_arbres
+ .png
+SHA1-Digest: htKXfJ6ET06xDfa1vRsboFYwSyU=
+
+Name: assets/www/resources/images/enveloppes_mini.png
+SHA1-Digest: WnO3vVbbZepgQCBoNrRz52Gbgfw=
+
+Name: assets/www/resources/images/cire_dabeille_mini.png
+SHA1-Digest: 1sYW2CFkB+RY24amuW7es0wCPrk=
+
+Name: assets/www/resources/images/gobelet_plastique_mini.png
+SHA1-Digest: obpbTAYB/AtfAouLLpeQ/oy80/c=
+
+Name: assets/www/resources/images/produits_entretien_mini.png
+SHA1-Digest: 3BcMKmaTf+dyxOh4Bi4A2Y0B2ko=
+
+Name: assets/www/resources/images/papier_peint_mini.png
+SHA1-Digest: Mj14Kul4It8mxR5E5dTq0Zu25kU=
+
+Name: assets/www/resources/images/parpaing_mini.png
+SHA1-Digest: 06JnuFM5h/5SwE1w4u1BrmRij08=
+
+Name: assets/www/resources/images/brique_alimentaire_mini.png
+SHA1-Digest: ORC7iiCrnnB4ZlPca1MjNXYiGok=
+
+Name: assets/www/resources/images/bouchon_liege_mini.png
+SHA1-Digest: Wn8AvY2J4fJkOlYXRPtVytgYEo0=
+
+Name: assets/www/resources/images/essui_tout_mini.png
+SHA1-Digest: epKXNs3POuMNxhLY98U+DsmMY3k=
+
+Name: assets/www/resources/images/pochette_cd_mini.png
+SHA1-Digest: w1QwQh3tnxtxNkcJ42t8ZYfWK04=
+
+Name: assets/www/resources/images/rasoir_mini.png
+SHA1-Digest: BuoFeGLxfnj6zqrt6QH7WK/Nks4=
+
+Name: assets/www/resources/images/ordi_portable_mini.png
+SHA1-Digest: sZW9kPiP/T+xYDou+o7cRj4bygM=
+
+Name: assets/www/resources/images/souris_mini.png
+SHA1-Digest: bdW0HGuOXUycxBvKbZeaRauazNI=
+
+Name: assets/www/resources/images/ecotox_panneau_malakoff_mini.png
+SHA1-Digest: hAzw8cDjMzL2nisMC3Q0STO1Qtg=
+
+Name: assets/www/resources/images/brique_potage_mini.png
+SHA1-Digest: BB27Sc4C1I03p0jSdXvUdaCcFp8=
+
+Name: assets/www/resources/images/barbecue_mini.png
+SHA1-Digest: FcCLsii4aPicSmKCEzfaZEhtbEA=
+
+Name: assets/www/resources/images/mode_collecte_trisac_mini.png
+SHA1-Digest: 1yyBQMENs6UWNm4hsiiNeIxvnls=
+
+Name: assets/www/resources/images/conteneur_carton_instructions_2_mini
+ .png
+SHA1-Digest: aNmEPb6Y8SnMV15oCOSECpRERqw=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-pvc_mini.png
+SHA1-Digest: chaXOrGVCBQ5qTfYFYJPHCgLRxI=
+
+Name: assets/www/resources/images/distributeur_trisac_mini.png
+SHA1-Digest: en1DZK/ae4Iue3bfIIq7EMs4lBo=
+
+Name: assets/www/resources/images/ecopoint_panneau_labeaujoire.jpg
+SHA1-Digest: mDkHuy5eEDlq4uQWfjv1KRrGhe4=
+
+Name: assets/www/resources/images/colle_papier_peint_mini.png
+SHA1-Digest: mdpsjrSe0KNhIKIOjPhnEToNZbo=
+
+Name: assets/www/resources/images/conteneur_verre_instructions_mini.pn
+ g
+SHA1-Digest: J7maSq4vyHt76XaApJrN0Qn1trc=
+
+Name: assets/www/resources/images/emballage_quinoa_mini.png
+SHA1-Digest: I37eivAP1wSo7cIFuh9LQvwUuSs=
+
+Name: assets/www/resources/icons/chat2.png
+SHA1-Digest: mUOMKpluSOCdYqUg0EVBeio3PkY=
+
+Name: assets/www/resources/icons/android.png
+SHA1-Digest: nHua1ESMZc0bS7wIVHFuk2tVlwc=
+
+Name: assets/www/resources/images/miroir_mini.png
+SHA1-Digest: E4kb61Nm1ejw9KXVrx3qEwJK9WA=
+
+Name: assets/www/resources/images/desherbant_mini.png
+SHA1-Digest: FAEElTEtXdQC45Soq3wFHnmOfJg=
+
+Name: res/drawable-land-mdpi-v4/screen.png
+SHA1-Digest: YVTonnvTeGj2Yhf0CYjFyC55TZE=
+
+Name: assets/www/resources/datas/InfosDatas.js
+SHA1-Digest: dY9u4xIOlbtMUZqSFwjGHTQ9Oyo=
+
+Name: assets/www/resources/images/scooter_mini.png
+SHA1-Digest: x3ivZfOrxsbY7B9dTTdkyN7NGkM=
+
+Name: assets/www/resources/images/distributeur_trisac.jpg
+SHA1-Digest: u0W/aboKw+wvmGkuOP/iB3mCPaA=
+
+Name: assets/www/resources/images/bouteille_huile_de_lin_mini.png
+SHA1-Digest: 1RYSISHsRiRjJKIoyqhjbSi5F2Q=
+
+Name: assets/www/resources/images/barquette_allu_mini.png
+SHA1-Digest: EQ40GkHcsaCacVck5QEEtwMXf1I=
+
+Name: assets/www/resources/icons/marker-cible.png
+SHA1-Digest: 4GAy4MFparYIMzUFXoqTIcC8gEU=
+
+Name: assets/www/resources/images/couteau_mini.png
+SHA1-Digest: e+iknhJZ5MeZ3zPGX2R5a5xlAVQ=
+
+Name: assets/www/resources/images/bouteille_plastique_mini.png
+SHA1-Digest: co1e+mVE8GmP+hd02BVqgATXpWk=
+
+Name: assets/www/resources/images/compost_mini.png
+SHA1-Digest: 4J2A4MaoGLTsyRiyEh+MU9psuHo=
+
+Name: assets/www/resources/images/creme_en_tube_mini.png
+SHA1-Digest: HikKTw7Kb5KrB8MXjuWnb5mRctk=
+
+Name: assets/www/resources/images/souvenir_porcelaine_mini.png
+SHA1-Digest: RynjaoJpJ1gDjI7+bs6UgOiz4DQ=
+
+Name: assets/www/resources/images/usine_arcenciel_mini.png
+SHA1-Digest: 8uuTSlLpk65+zycrva69MKdvdlE=
+
+Name: assets/www/resources/images/carte_retrait_trisacs.png
+SHA1-Digest: iS1TY3NOnYtxN0Wp8A2A1byudW4=
+
+Name: assets/www/resources/images/nettoyant_cuivre_mini.png
+SHA1-Digest: bhypM/2qUoBLtZYg1TR958Njick=
+
+Name: assets/www/resources/images/calendrier_mini.png
+SHA1-Digest: MVkQFOrP/L3kfniKNM8bHaxk/J4=
+
+Name: assets/www/css/index.css
+SHA1-Digest: Xn5KKnRg99sIQW5z0rf5zJjEDgI=
+
+Name: assets/www/resources/icons/marker-icon-blue.png
+SHA1-Digest: SN9cSQ//YrYqekHMIdvvB0gzwFA=
+
+Name: AndroidManifest.xml
+SHA1-Digest: i3Bs5o6jR5IBEpaI3yKvcsYp7DQ=
+
+Name: assets/www/resources/images/ampoules_basse_consommation_mini.png
+SHA1-Digest: iDNQfjG2Nu+LoKKDEvdXtgzVYz0=
+
+Name: assets/www/resources/images/colle_a_bois_mini.png
+SHA1-Digest: B7un+ro8K92dRfKKHHf/DJjKiWU=
+
+Name: assets/www/resources/icons/icone_livre.png
+SHA1-Digest: itSD9JFFWSJCsToHocYWHUYOBV0=
+
+Name: assets/www/img/logo.png
+SHA1-Digest: MW0GF0+VJyF3L6n2kH6NKUswUL0=
+
+Name: assets/www/resources/images/ecotox_lieu_malakoff_mini.png
+SHA1-Digest: XRKs6BKUmEQmqUfMIrZWvqABdUc=
+
+Name: assets/www/resources/images/encombrant_mini.png
+SHA1-Digest: Q733fjuSAdbiVy0X90RKXp+vsN0=
+
+Name: assets/www/resources/images/conteneur_carton_mini.png
+SHA1-Digest: FUtTc/bXmlmmUO/Vb2f+F/qJegQ=
+
+Name: assets/www/resources/images/pot_creme_fraiche_mini.png
+SHA1-Digest: s2nV6n8wwjxDt2Qk0BznL1kjC90=
+
+Name: assets/www/resources/icons/icone_dechets.png
+SHA1-Digest: pKClYlfpHC6mZLKInQTV0DEJbSU=
+
+Name: assets/www/resources/images/bouteille_sirop_mini.png
+SHA1-Digest: Qe8DII5EiSXH2KNHB9ZTcqQH7TQ=
+
+Name: classes.dex
+SHA1-Digest: mmt+6USY0qjfjRWht43Ra8eElYs=
+
+Name: assets/www/resources/images/camion_poubelle.jpg
+SHA1-Digest: d83/EXQpBKFORAcloEKBbDNkZdE=
+
+Name: assets/www/resources/images/panneaux_photovoltaiques_mini.png
+SHA1-Digest: l1EgCzoINHkm85ILH6V6SeQe+LE=
+
+Name: assets/www/resources/images/sirop_mini.png
+SHA1-Digest: qX5Dg1M0iSRjemn9SNJW02VrBSQ=
+
+Name: assets/www/resources/images/camion_poubelle_mini.png
+SHA1-Digest: 63qx3VoBMf1ZSxoeRrA9fGhqJQ8=
+
+Name: assets/www/resources/images/bouton_ecotox_mini.png
+SHA1-Digest: p8nCz6qScevCBd5UULmo0Cz9Kfs=
+
+Name: assets/www/resources/images/morceaux_de_bois_mini.png
+SHA1-Digest: Pz6QRr1BJhaSA46XClcdKjWiFLo=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/images/marker-icon.png
+SHA1-Digest: cPBWETBfd2WOjxqYJ+Xdvfl0YrY=
+
+Name: assets/www/resources/icons/Icon~ipad.png
+SHA1-Digest: DA4aFGWEBRmOyv+gsJ2ZnuD73e8=
+
+Name: assets/www/resources/images/conteneur_emballages_journaux_magazi
+ nes_instructions2.jpg
+SHA1-Digest: KydqiimzUEoYjXwKJtU6XOGzQ7E=
+
+Name: assets/www/resources/images/encombrant2_mini.png
+SHA1-Digest: kMrxHUckI4SeEpvwNFIyYNHJw0g=
+
+Name: assets/www/resources/images/panneau_dechetterie_mini.png
+SHA1-Digest: 7tKnfQowOmTNM9gTeiB7OtoNfCs=
+
+Name: assets/www/resources/images/conserve_mini.png
+SHA1-Digest: /ZAHbntKQ83GNdDvooW0vsEmjtE=
+
+Name: res/drawable-port-ldpi-v4/screen.png
+SHA1-Digest: 0xgQIHIbfOrpLeNb8Awy2KsX/rk=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/images/marker-icon-2x.png
+SHA1-Digest: d6l6FVKpl5X7frz5EXy+f6ZT64o=
+
+Name: assets/www/resources/icons/search.png
+SHA1-Digest: 90hRU+cI4zBpv4VlsUGwloPjBi4=
+
+Name: assets/www/resources/icons/Icon@2x.png
+SHA1-Digest: baYH/NiRzVwhIEl4WEB1mxmy5Fs=
+
+Name: assets/www/resources/images/bidon_assouplissant_mini.png
+SHA1-Digest: i60f3L3T8qGJGXwPfIsQtkRemLw=
+
+Name: assets/www/resources/startup/640x920.png
+SHA1-Digest: XBRisISMlF+iOG1qKA/ITwgyNow=
+
+Name: assets/www/resources/images/conserve_ratatouille_mini.png
+SHA1-Digest: ulFlBmPQZZ7r7wM3+935X0ue7XI=
+
+Name: assets/www/resources/lib/mieuxtrieranantes/plageshoraires.js
+SHA1-Digest: j5pzQfOmRiN18wiSNdm9f5GPaCk=
+
+Name: assets/www/resources/images/conteneur_plastique_instructions_2.j
+ pg
+SHA1-Digest: yr6RUTc+CXQbLEzXwU3EwzySpkg=
+
+Name: assets/www/resources/images/bouteille_huile_plastique_mini.png
+SHA1-Digest: xvxlp1qqi6VcsxhhBifJv6HyG/8=
+
+Name: assets/www/resources/lib/mieuxtrieranantes/common.js
+SHA1-Digest: Qh8O7+ia/Q3MudlwEFszueUUKHE=
+
+Name: res/drawable-land-xhdpi-v4/screen.png
+SHA1-Digest: Eme1m+KzdcxmzKWK1Sn3tLqwBxk=
+
+Name: assets/www/resources/images/machine_a_cafe_mini.png
+SHA1-Digest: YE+i7SaTnFfakH+CfgSL3fXgeOg=
+
+Name: assets/www/resources/images/rouge_a_levre_mini.png
+SHA1-Digest: r8JZeQXPtjtGSuD27gEqq9Mcp2w=
+
+Name: assets/www/resources/images/annuaire2_mini.png
+SHA1-Digest: 3SAWfHZgSWWyQG4XtLBceujxDqs=
+
+Name: assets/www/resources/images/plat_en_faience_mini.png
+SHA1-Digest: 2YJ0LHvPp39mR5j6ilDb+6hSsgg=
+
+Name: assets/www/resources/images/ampoule_mini.png
+SHA1-Digest: 7HY8o8xwDcROQ3kFfRlad+EaitA=
+
+Name: assets/www/resources/images/bouteille_acetone_mini.png
+SHA1-Digest: 8Vf4/k0AUcVaPSshOh26c6DL0GI=
+
+Name: assets/www/resources/images/pile_mini.png
+SHA1-Digest: Gz8gCknOoOYHlzEqNwu89mvO0jA=
+
+Name: assets/www/resources/datas/HomeCollectModsDatas.js
+SHA1-Digest: Dr/gIIpGwjofFkLBEJgBvtuhglI=
+
+Name: assets/www/resources/images/conteneur_verre_instructions.jpg
+SHA1-Digest: n80wDtYH8nufQLkyWobtZFU6aQg=
+
+Name: assets/www/resources/images/pot_mini.png
+SHA1-Digest: OsYumf48L6saksqPVQfMlGYYvIk=
+
+Name: assets/www/resources/images/dentifrice_mini.png
+SHA1-Digest: qZxrKYe4gQTCMKzTp20GfvXackI=
+
+Name: assets/www/index.html
+SHA1-Digest: 73VWp0XB6fK936R/ux62uzTMqq0=
+
+Name: assets/www/resources/images/jouet_enfant_mini.png
+SHA1-Digest: AgONb+KtgMRmYPQX3hqDhGsyrgk=
+
+Name: assets/www/resources/images/boite_a_oeufs_plastique_mini.png
+SHA1-Digest: vXoMTqSRU4i4pIpOYrprMDyxzes=
+
+Name: assets/www/resources/images/images_non_libres/logo_contribution_
+ mini.png
+SHA1-Digest: 6JjVKu3Xr/kjtxP62kXT98Kt7ZY=
+
+Name: assets/www/resources/images/balle_tennis_mini.png
+SHA1-Digest: xsljdZjD/e5vkjtWLCDJTO6Y5io=
+
+Name: assets/www/resources/images/conteneur_plastique_instructions_2_m
+ ini.png
+SHA1-Digest: pJVNg7lo6YMuCElkgzXLs1nRDiA=
+
+Name: assets/www/resources/images/assiette_cassee_mini.png
+SHA1-Digest: 9bTHTMegfD4H3uYu64Ii5v163ws=
+
+Name: assets/www/resources/images/bouteille_acide_chlorhydrique_mini.p
+ ng
+SHA1-Digest: HF8Sb6VRWaKvkWR3g4D3XybjF5I=
+
+Name: assets/www/resources/icons/marker-icon-green.png
+SHA1-Digest: ngNSxQ0zl2dlvnpi3n2LolhID4g=
+
+Name: assets/www/resources/images/bloc_note_mini.png
+SHA1-Digest: pjBKlLx2l/ccif88qcksLq/7rqk=
+
+Name: assets/www/resources/images/barquette_aluminium_mini.png
+SHA1-Digest: ehC+fVUlINFktYZ716Or0nIJpWo=
+
+Name: assets/www/resources/images/couche_bebe_mini.png
+SHA1-Digest: Q/3JdYd1zTox8jfNRg1lKjEPscg=
+
+Name: assets/www/resources/images/recyclage_point_de_vente_mini.png
+SHA1-Digest: RE5b7Ta6QuCfQ3gFgaCrMgG8IIs=
+
+Name: assets/www/resources/images/journal_mini.png
+SHA1-Digest: 9efz1+J00wFuQ2tpXD5RqsTOmqc=
+
+Name: assets/www/resources/images/bol_mini.png
+SHA1-Digest: 07yu6r65y++RELw7MVJIechh7Uw=
+
+Name: assets/www/resources/images/_readme_licence_images.txt
+SHA1-Digest: vLIipcvRrXj8j5tglJZBcVyCOIQ=
+
+Name: assets/www/resources/startup/768x1004.png
+SHA1-Digest: pTv3djBYDZz2GuxWjge72TaidHM=
+
+Name: assets/www/resources/images/matelas_mini.png
+SHA1-Digest: MMj9lAOfiGN15saK1jSeu1ELvQg=
+
+Name: assets/www/resources/images/medicaments_mini.png
+SHA1-Digest: 4OKjo+GjjXbNvS/9HX2LDAz2Cdo=
+
+Name: assets/www/resources/icons/Icon_Android48.png
+SHA1-Digest: arR3mud5cL7PlUyZ+MJPkeElZCM=
+
+Name: assets/www/resources/images/megot_mini.png
+SHA1-Digest: LLEh82KDoys9D506UOxfBEto5hk=
+
+Name: assets/www/resources/images/flacon_savon_mini.png
+SHA1-Digest: USGSHoIjQ2W66xBsGEkCiqMo7c0=
+
+Name: assets/www/resources/css/mieuxtrieranantes.css
+SHA1-Digest: vOW5d1TTUyvVvK3RmucdIpCKTd8=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/leaflet-src.js
+SHA1-Digest: GMJmYM0+RPDo4XdtSXuypEK6ZAk=
+
+Name: assets/www/resources/images/structures_reemplois_mini.png
+SHA1-Digest: k0JHy+3WWIQhEqlmnoxmZzE9HPs=
+
+Name: assets/www/resources/images/images_externes_libres/portrait_euge
+ ne_poubelle.jpg
+SHA1-Digest: Ssdsfv+dzLcufkAzd16BkH1/rs8=
+
+Name: res/xml/config.xml
+SHA1-Digest: pJrSAgsNKnkC3gmKdKsRdcZ7gYM=
+
+Name: res/drawable-port-xhdpi-v4/screen.png
+SHA1-Digest: vFPeQjaqLAS6sZilCZUrPyl6jrw=
+
+Name: assets/www/resources/images/sac_papier_mini.png
+SHA1-Digest: Gs/VkZaLe/zLq3EGCMJO+/gEalk=
+
+Name: assets/www/resources/startup/1536x2008.png
+SHA1-Digest: HdViW30ecYJb04wAOjrlX2F6Ohs=
+
+Name: assets/www/resources/images/bacs_jaune_et_bleu.png
+SHA1-Digest: xtuCTijmhWUwWqzVFQV6m/mpoX8=
+
+Name: assets/www/resources/images/planche_bois_mini.png
+SHA1-Digest: LZFjHnFyb6+XweMc+SVRSSUnWjg=
+
+Name: assets/www/resources/images/images_non_libres/logo_compostri.jpg
+SHA1-Digest: lhdXKigHj0P9pvNbFIpvNkWYtaw=
+
+Name: assets/www/resources/icons/iTunesArtwork.png
+SHA1-Digest: ytuwHbp3ia19o9yHbcwbc9TIgq0=
+
+Name: assets/www/resources/images/conteneur_emballages_journaux_magazi
+ nes_instructions.jpg
+SHA1-Digest: U/VSlnvc2W4/lphps7NpAIXaOkE=
+
+Name: assets/www/resources/images/agenda_mini.png
+SHA1-Digest: xnBVRff/AAioZfnRLcPMAOoxsDk=
+
+Name: assets/www/resources/images/parapluie_mini.png
+SHA1-Digest: 37Jvtu1rpD50IUafAiSjeNhHTGE=
+
+Name: assets/www/resources/images/cartonette_mini.png
+SHA1-Digest: hH43hBit4PEn4e0t42t0oB+UyGc=
+
+Name: assets/www/resources/lib/mieuxtrieranantes/comments.js
+SHA1-Digest: M76Qfd4pkYnwHp91xSugtMqFYKo=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: 7k0R15Eowd7viwJeIN6gaJ1z0j0=
+
+Name: assets/www/resources/startup/320x460.jpg
+SHA1-Digest: Qm1gTbLW/a0MYsQmxZH5K79vOTo=
+
+Name: assets/www/resources/icons/info.png
+SHA1-Digest: YSZNIYKrraFyj0Y/p9s/fVhg0rE=
+
+Name: assets/www/resources/images/theiere_mini.png
+SHA1-Digest: 7L0JwwyzgafhBJlGWk9iFBQQgns=
+
+Name: assets/www/resources/images/pile_45_mini.png
+SHA1-Digest: D2wOOFnmICidWyvU6i23B1lWbcw=
+
+Name: assets/www/resources/images/bouteille_eau_de_javel_mini.png
+SHA1-Digest: HLAkS5CrTmTa1Syns9VzCqAmOzw=
+
+Name: assets/www/resources/images/images_externes_libres/portrait_euge
+ ne_poubelle_mini.png
+SHA1-Digest: nJbRJFqEfgBQvt/uIh0OiuiLEbg=
+
+Name: assets/www/resources/icons/icon-spot~ipad.png
+SHA1-Digest: gyb58/PWoz7wRm8DKqBg0NkjTAg=
+
+Name: assets/www/cordova.js
+SHA1-Digest: oJ0ESkPlbmOnH0qguWuut2CG4Uk=
+
+Name: assets/www/resources/images/conteneur_plastique_instructions_min
+ i.png
+SHA1-Digest: 52fijNEVs5V+I/o55/8VrahNt4Y=
+
+Name: assets/www/resources/images/detacheur_universel_vetement_mini.pn
+ g
+SHA1-Digest: qGZQlm5KFIUdPh8o2ZdVm2WhWvY=
+
+Name: assets/www/resources/images/feuilles_petit_2.png
+SHA1-Digest: 3B2Ugi4b9tSJnIVamF7NW4jpt5o=
+
+Name: assets/www/resources/images/images_non_libres/logo_lecomptoir_du
+ _solilab.jpg
+SHA1-Digest: H6ZpaKhujkBINvMGqobj+0B3UjY=
+
+Name: assets/www/resources/images/micro-onde_mini.png
+SHA1-Digest: GA42ecNIsn9lOSqz+6s34Vi5CZ4=
+
+Name: assets/www/resources/datas/HashHomeCollectModsDatas.js
+SHA1-Digest: 2Oa9aZ95UiZXzHI5gQ9ml1piBNE=
+
+Name: assets/www/resources/datas/modes_collecte_a_domicile.json
+SHA1-Digest: 1+Fl5f9f+xscsHHw2Xqs/U7FibA=
+
+Name: res/drawable-land-ldpi-v4/screen.png
+SHA1-Digest: ZfZgMgv6EzcmpS1oX2OZ+2L3Xg4=
+
+Name: assets/www/resources/images/guitare_mini.png
+SHA1-Digest: 8dW1CSiWhjrXSmGSPaxU5kAeXu4=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-pp_mini.png
+SHA1-Digest: a1hxrmFPf91Fay+l/+u4kMgug1c=
+
+Name: assets/www/resources/images/bouteille_vinaigrette_mini.png
+SHA1-Digest: UFNLJEfj805yHpboUQ2r6cYNWmU=
+
+Name: assets/www/resources/images/ballon_mini.png
+SHA1-Digest: 4Pr/jQFFkhaOGVG/CjqlibaKFoo=
+
+Name: assets/www/resources/images/neon_mini.png
+SHA1-Digest: hu0S1hTjVL7hs074t/NAOuyUxNs=
+
+Name: assets/www/resources/images/bouteille_biere_mini.png
+SHA1-Digest: f1JP/dpVZU2rdePZ1NI7qk4f9Fc=
+
+Name: assets/www/resources/images/feuilles_mini_2.png
+SHA1-Digest: 3/U013BPzgt2cr3qDIirfrQADyk=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/images/layers.png
+SHA1-Digest: DbxCv2+bcWYZbdiL27RaETB+yKU=
+
+Name: assets/www/resources/images/grande_bouteille_huile_mini.png
+SHA1-Digest: PRwVMJiQoE4DO3kOxYbDvKsF2fc=
+
+Name: assets/www/resources/images/marteau_mini.png
+SHA1-Digest: pZvMe/mEuS8VopPkoXe+qQDhZOs=
+
+Name: assets/www/resources/images/bouteille_huile_verre_mini.png
+SHA1-Digest: PbRg+6UVDz7pge/H55GhOGS64YM=
+
+Name: assets/www/resources/images/pot_fleur_plastique_mini.png
+SHA1-Digest: mTmjsr831A3JZtj7s1S9Tr6B03E=
+
+Name: assets/www/resources/images/images_non_libres/usine_valorena.jpg
+SHA1-Digest: tXvhL4hhjyp4uHYcrV3HvE7cqGE=
+
+Name: assets/www/resources/images/conteneur_le_relais_instructions_min
+ i.png
+SHA1-Digest: OjX/zi+R0IULzK1gilz1lrCBrPA=
+
+Name: assets/www/resources/images/conteneur_emballages_journaux_magazi
+ nes_instructions2_mini.png
+SHA1-Digest: S9fCy5dSaEYno4kbPkQfkLQwDjQ=
+
+Name: assets/www/cordova_plugins.js
+SHA1-Digest: xD6IOli7OMH0ptsG6S3M2AJWLBo=
+
+Name: assets/www/resources/images/images_non_libres/logo_atelier_retz_
+ emploi.jpg
+SHA1-Digest: ctuK5djvEKwgUEs5/9n1ool1nxg=
+
+Name: assets/www/resources/images/images_non_libres/logo_compostri_min
+ i.png
+SHA1-Digest: n/tRJfHIbPSkX+zvPP+JK3JzPDo=
+
+Name: assets/www/resources/images/telephone_fixe_mini.png
+SHA1-Digest: ymiuPxhoWV2NemgoYBtbYCzFV1A=
+
+Name: assets/www/resources/images/emballage_polystyrene_mini.png
+SHA1-Digest: 4vFpCu2myYvxwQ92p6xH8IuhJzs=
+
+Name: assets/www/resources/images/pot_en_terre_mini.png
+SHA1-Digest: fPLo3cj12wrPXo8/K1VUIeEcTk8=
+
+Name: assets/www/resources/images/ketchup_mini.png
+SHA1-Digest: niYt5dGn5N+fXLd8mhjDjjnTewY=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: 2J9Tvy/YaxPRs/ZafKZe/EsVt/o=
+
+Name: assets/www/resources/images/tasse_plastique_mini.png
+SHA1-Digest: hvI9QuBbMlWOyhdaE+rY3CckXww=
+
+Name: assets/www/resources/images/clavier_ordi_mini.png
+SHA1-Digest: ISyIxmVzszKCcEA2iQ5CIzrwgYc=
+
+Name: assets/www/resources/images/taille_crayon_mini.png
+SHA1-Digest: PZpIzvRR8vD609GJ/DsB7gJPFJw=
+
+Name: assets/www/resources/images/jean_usage_mini.png
+SHA1-Digest: /Xdvf9p06+jSVZTodiHFBGQEid4=
+
+Name: assets/www/resources/images/image_defaut.png
+SHA1-Digest: 90QLMlgylQ1MXxCUwqg9j5rzxAw=
+
+Name: assets/www/resources/images/mouchoirs_mini.png
+SHA1-Digest: 80OoCKE6KblPy9fZMrGHNQ4jioY=
+
+Name: assets/www/resources/images/skateboard_mini.png
+SHA1-Digest: h/f3wk5jSNwxW37SGQ/P21fwf7E=
+
+Name: assets/www/resources/images/conteneur_emballages_journaux_magazi
+ nes_instructions_mini.png
+SHA1-Digest: qzwfKBHYGrEsxSYG5rKI88NOyqY=
+
+Name: assets/www/resources/images/papier_alu_mini.png
+SHA1-Digest: 47TxYKKMLCS8fvNsxaFkSAZSLrM=
+
+Name: assets/www/resources/images/bidon_produits_toxique_non_vide_mini
+ .png
+SHA1-Digest: VsIyzyUGbr9FtEpXnmwv+FdKN5w=
+
+Name: assets/www/resources/images/gravat_mini.png
+SHA1-Digest: 0WuryeMnRHZKU22wGsE5930k7lA=
+
+Name: assets/www/resources/images/mortaurat_mini.png
+SHA1-Digest: e31PvMotdvn1MIvht8Y6lLecm2c=
+
+Name: assets/www/resources/images/bouchon_plastique_mini.png
+SHA1-Digest: RFlHAcst79L/dMb3k2BnVTvlDPo=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-pete_mini.png
+SHA1-Digest: vlYg8hIkGnL65PZeyPgTeGOqPbk=
+
+Name: assets/www/resources/images/classeur_mini.png
+SHA1-Digest: bmo60aACtrBF8jx3kBMcnvfYuvA=
+
+Name: assets/www/resources/images/ecopoint_panneau_labeaujoire_mini.pn
+ g
+SHA1-Digest: zLtCc0WV0mbLeBreeFeunGoSlIs=
+
+Name: assets/www/resources/images/bouteille_essence_de_terebenthine_mi
+ ni.png
+SHA1-Digest: aZiSRyODLRYnkK4A9bzocBo+T1c=
+
+Name: assets/www/resources/images/huile_moteur_mini.png
+SHA1-Digest: AVuw+tAJHkI5Ninq2gHQLHcIYCc=
+
+Name: assets/www/resources/images/veloenfant_mini.png
+SHA1-Digest: SFWTyaaL4Xm2XFLTIMtR7DjeroI=
+
+Name: assets/www/resources/images/conteneur_carton_instructions_mini.p
+ ng
+SHA1-Digest: 9dsA3RR39fNbuvlfSDB/i9sAvjw=
+
+Name: assets/www/resources/images/chaussures_mini.png
+SHA1-Digest: 1LPp1TGaUmTdkrTVsCOquTGQv0c=
+
+Name: assets/www/resources/images/pelotes_laine_mini.png
+SHA1-Digest: +BMKSRieWCY/yQEpKoi0ms/JsmA=
+
+Name: assets/www/resources/images/cagette_mini.png
+SHA1-Digest: QLuqyj4SDEskTnE0xZw8TpLLyC0=
+
+Name: assets/www/resources/images/four_mini.png
+SHA1-Digest: zn4pAQKUMgf5JYe7NBD4gkPZ6U0=
+
+Name: assets/www/resources/images/pelouse_2_mini.png
+SHA1-Digest: NT4ljrOrKrfEh4j2UNDrhw4hNlk=
+
+Name: assets/www/resources/images/conteneur_emballages_journaux_magazi
+ nes_mini.png
+SHA1-Digest: c9WhOpo4SOPO2oqmwnmS0oubQlE=
+
+Name: assets/www/resources/images/images_non_libres/usine_valorena.png
+SHA1-Digest: 1Bv8eoc2IYv+AufzGq+KR/nSjDE=
+
+Name: assets/www/resources/images/allumettes_mini.png
+SHA1-Digest: 0uGyzL4FtS6U8loDFThdYxgcmI0=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: Lw/SqxqQxDgeX1jWQ7pEzoJ873E=
+
+Name: assets/www/resources/images/ticket_caisse_ecoparticipation_mini.
+ png
+SHA1-Digest: FE4pWDbccJskyMpzmOJy+rKQuBE=
+
+Name: assets/www/resources/images/conteneur_le_relais_instructions.jpg
+SHA1-Digest: gKhURayh5BRwnTt7wpRl6dtlbjo=
+
+Name: assets/www/resources/images/plat_inox_mini.png
+SHA1-Digest: 0SY0EOOIMeaVOTmxXCsvH4hypXo=
+
+Name: assets/www/resources/images/chaine_hifi_mini.png
+SHA1-Digest: 0YqzhsqS6jHdD4QOwoJLdp07u2s=
+
+Name: assets/www/resources/images/conteneur_enterre_nantes_mini.png
+SHA1-Digest: kVwM3878NbQmCWXVLHO64OzMGcY=
+
+Name: assets/www/resources/images/rouleau_carton_essui_tout_mini.png
+SHA1-Digest: RM1u6hTWs1mKA9vZRjvV7EBL+ug=
+
+Name: assets/www/resources/images/feuillages_mini.png
+SHA1-Digest: sb73wcoLR+s5JAVkQBcID0Vt/vc=
+
+Name: assets/www/resources/images/boite_camembert_mini.png
+SHA1-Digest: g1MoEmVtU4Kwv8svtEMBgYcaB+M=
+
+Name: assets/www/resources/images/brosse_cheveux_mini.png
+SHA1-Digest: /S4IMEG/mCWmpRjhHZBbFIxCQx8=
+
+Name: assets/www/resources/images/lave-vitre_mini.png
+SHA1-Digest: cgUdaivYlMmGdCj3xucZU7Hp88Q=
+
+Name: assets/www/resources/icons/icone_camion_poubelle.png
+SHA1-Digest: DGJq3KxDJDF9BKy8jKXrPn4G+kg=
+
+Name: assets/www/resources/images/telephone_mini.png
+SHA1-Digest: kuzuw3nRp+IQMiqPSKX+LtezGKg=
+
+Name: assets/www/resources/images/montre_mini.png
+SHA1-Digest: 3DWSD5s3Q5fNDbF3G8o6LF7lEj0=
+
+Name: assets/www/resources/images/pneu_mini.png
+SHA1-Digest: ld9bkh8XovwzEZcI5zC4b9ziV0k=
+
+Name: assets/www/resources/images/bouteille_lessive_de_coude_mini.png
+SHA1-Digest: 9ECtOkgkaeoYK1SpOqGq9a4uzEE=
+
+Name: assets/www/resources/images/usine_arcenciel.jpg
+SHA1-Digest: 2BgKxyWCAq5DNa/NwR1MAe0td/I=
+
+Name: assets/www/resources/images/sac_poubelle_mini.png
+SHA1-Digest: 4OQe50bLwS7Im5bIZet0j4w0hl0=
+
+Name: assets/www/resources/images/dosette_cafe_plastique_mini.png
+SHA1-Digest: sqgMPHQFgZFqa6PILfqJ2n/ZAFE=
+
+Name: assets/www/resources/images/nettoyant_four_mini.png
+SHA1-Digest: 3mLGB2OwRo1yOQWH+GurPlNmeso=
+
+Name: assets/www/resources/images/bouteille_huile_olive_mini.png
+SHA1-Digest: I8hQr+gPefk53WqmjbS49s7xAqY=
+
+Name: assets/www/resources/images/bidon_metal_mini.png
+SHA1-Digest: UJ+GkT9fceRbHIh1W2aSP1rKDns=
+
+Name: assets/www/resources/images/magazines_mini.png
+SHA1-Digest: 03Zp0Vsw8iRunU1byuYhODqJP/I=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/images/layers-2x.png
+SHA1-Digest: NCORMMOuoi8hRVdGKE1aJmQ1+jk=
+
+Name: assets/www/resources/images/teinte_a_bois_mini.png
+SHA1-Digest: ENspoP2NyFAJ1Jm5Llb2dKWZi44=
+
+Name: assets/www/resources/images/crayon_mini.png
+SHA1-Digest: EeZIfDSqHAXM6tftfYrVwMLpXB4=
+
+Name: assets/www/resources/images/lave_cuisine_mini.png
+SHA1-Digest: cS53TAkltBuG3RQK2J+8bnU7C50=
+
+Name: assets/www/resources/images/assiette_mini.png
+SHA1-Digest: oraPeSBngn8gZNFucihErmDuifk=
+
+Name: assets/www/resources/images/ecopoint_lieu_labeaujoire_mini.png
+SHA1-Digest: wgm2Yvvfo6yp+u3iXCnls2ZMZIA=
+
+Name: assets/www/resources/images/bac_jaune_en_cours_mini.png
+SHA1-Digest: 3TqP18OtjX8+sXdM8IXJEU6HMkA=
+
+Name: assets/www/resources/images/livre_mini.png
+SHA1-Digest: ewmFho3B0VFDKvCOuoJ0CjpYFuQ=
+
+Name: assets/www/resources/images/sac_bleu_mini.png
+SHA1-Digest: KUQtGc2eG4WpEjzYx+972Er9nyc=
+
+Name: assets/www/resources/images/chemise_mini.png
+SHA1-Digest: KXbkHbhW+YCFxhBMvKevw4reSnc=
+
+Name: assets/www/resources/images/couvercle_bocal_mini.png
+SHA1-Digest: UuuLdQ48dApC/eXANrXmC3oYTjI=
+
+Name: assets/www/resources/images/recyclage_point_de_vente.jpg
+SHA1-Digest: TrWPfJxXh4wtWyJMLfZHbuTtssk=
+
+Name: assets/www/resources/icons/icon-green.png
+SHA1-Digest: MgZsMmc5083uxbTRfm1J4drWXCQ=
+
+Name: assets/www/resources/icons/icones_trisacs.png
+SHA1-Digest: +OBZTQwXJIikIHC6DERbN7tMpxQ=
+
+Name: assets/www/resources/images/congelateur_mini.png
+SHA1-Digest: pC7Qq0Pvzi40wplu3A3kuw6Xi0s=
+
+Name: assets/_where-is-www.txt
+SHA1-Digest: avAF2z5NXxA7dhGqngRyQ0ETAG0=
+
+Name: assets/www/resources/images/cahier_mini.png
+SHA1-Digest: BIYwqA3vbq6Xh6yi4T5eS3e6l6E=
+
+Name: res/drawable-port-hdpi-v4/screen.png
+SHA1-Digest: QqszXVs7DAO7cpkZYgDYRx2o7mQ=
+
+Name: assets/www/resources/images/mousse_a_raser_mini.png
+SHA1-Digest: ceFC8SC2D19JgfT/t7lqnZ2LOaU=
+
+Name: assets/www/resources/images/bocal_verre_mini.png
+SHA1-Digest: vQa+1MOTJE60HujfsvSuv9ek/Fo=
+
+Name: assets/www/resources/images/ecotox_camion_mini.png
+SHA1-Digest: GBUkhptk9zqt+VFvBoDqTXF7NyU=
+
+Name: assets/www/resources/images/images_non_libres/association_arbres
+ _mini.png
+SHA1-Digest: YCe/radcenqrQ9IuWAgaX1O/Rn8=
+
+Name: assets/www/resources/images/conteneur_verre_mini.png
+SHA1-Digest: NEzXBCN7xhNM8CxjsiRQDoiMQhE=
+
+Name: assets/www/resources/images/conteneur_plastique_instructions.jpg
+SHA1-Digest: nd5jXu1hO2RISKCjBPN5KAgkHBQ=
+
+Name: assets/www/resources/images/barquette_carton_sale_mini.png
+SHA1-Digest: BtWg4ovyQ9BR+SKb71lSfA/n2Cc=
+
+Name: assets/www/resources/images/arrosoir_mini.png
+SHA1-Digest: dWnJX/eHgWxC7xGoczOIfelF8SE=
+
+Name: assets/www/resources/images/peinture_mini.png
+SHA1-Digest: D8AlTAMuERqTC5UsSEB6u+YURyY=
+
+Name: assets/www/resources/images/table_a_repasser_mini.png
+SHA1-Digest: Ogwx1qHowfPpLAI4BSI1GkNO3sI=
+
+Name: assets/www/resources/images/sac_jaune_mini.png
+SHA1-Digest: QrRDz9MFV5T5iIVkBhKOQ11IYkQ=
+
+Name: assets/www/resources/images/emballage_couscous_mini.png
+SHA1-Digest: oFVRq49J5h71FwJp8Mevl+6NyxM=
+
+Name: assets/www/resources/icons/marker-icon-pink.png
+SHA1-Digest: 8OXHBsDxdFi+3e8ciKcJ+EablYY=
+
+Name: assets/www/resources/startup/1496x2048.png
+SHA1-Digest: VPnh0DfYrrX/o7sxg+APxF8Hm/M=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-pvc_old_mini.png
+SHA1-Digest: A/cE30/yj41y0aNxfltgdZA8Gys=
+
+Name: assets/www/resources/images/conteneur_carton_instructions_2.jpg
+SHA1-Digest: z3b8ad4DK7ietFaRhNSV5VKg+gc=
+
+Name: assets/www/resources/images/polystyrene_mini.png
+SHA1-Digest: fQbYTCxZiD9SyrrX3BHmz2V1urc=
+
+Name: resources.arsc
+SHA1-Digest: 0pJTunfYzdROCZDJH9ZVRejI4Ts=
+
+Name: assets/www/resources/images/pile9v_mini.png
+SHA1-Digest: ndXTebKSWf4j8j+8R8vRLjApz4A=
+
+Name: assets/www/resources/images/images_non_libres/logo-emballage-pla
+ stique-ps_mini.png
+SHA1-Digest: 5P57H0Re7pKrUE0TAhYQ5RW152Y=
+
+Name: assets/www/resources/images/boite_a_oeufs_mini.png
+SHA1-Digest: DLsVoIfazvaCj8KuEbG1vYt6M1M=
+
+Name: assets/www/resources/images/grillage_mini.png
+SHA1-Digest: /zZ3GVGwh5/9LsFlxndysLx+/mA=
+
+Name: assets/www/resources/images/creme_mini.png
+SHA1-Digest: EJL/QfTpjQ8nJAFiwzr1Ztiz1+A=
+
+Name: assets/www/resources/images/cannette_mini.png
+SHA1-Digest: A2TJ96rBa7hxPPK71puVOfl28hY=
+
+Name: assets/www/resources/images/vase_mini.png
+SHA1-Digest: VaRsICKAmsaZqazzsVuZwLk2SIA=
+
+Name: assets/www/resources/images/pot_peinture_mini.png
+SHA1-Digest: Py5tLH0KnwRvJGmR4Mu6rIbXfnU=
+
+Name: assets/www/resources/images/cagette_bois_mini.png
+SHA1-Digest: BUOE5/qyZ7jULoHEGJOCIafHXUc=
+
+Name: assets/www/resources/datas/AdvicesDatas.js
+SHA1-Digest: UXmewvJHK7wMaPGHLyio8UKjgmo=
+
+Name: assets/www/resources/datas/CommentsDatas.js
+SHA1-Digest: FK2HxWS6uEL3bIWP58wmraERuhQ=
+
+Name: assets/www/resources/images/epeluchure_mini.png
+SHA1-Digest: g7IbS0XZav/ahs4OzehX5NKpVP0=
+
+Name: assets/www/resources/images/carton_mini.png
+SHA1-Digest: UbOkrz8ldJ+C46KsZGPwdhGXE7Y=
+
+Name: assets/www/resources/images/ecopoint_viarme_mini.png
+SHA1-Digest: bTC/E2D9PycQ1qczMlorjF+oLzk=
+
+Name: res/drawable/icon.png
+SHA1-Digest: V29pfkn63ZKvWbMehv1gXLydfEg=
+
+Name: assets/www/resources/images/conteneur_verre_instructions_2_mini.
+ png
+SHA1-Digest: aHAw0IsFCoMk8tqkpeE2+6L4aWc=
+
+Name: assets/www/resources/datas/CollectModsDatas.js
+SHA1-Digest: LVuP0hnbQAHVZlmr+NajP5VC2M8=
+
+Name: assets/www/resources/images/barbecue_electrique_mini.png
+SHA1-Digest: S233Nl+dCsY7VJzWQJrdLcig/Oc=
+
+Name: assets/www/resources/images/bouteille_ammoniaque_mini.png
+SHA1-Digest: G6qpgQ1tFMJkl6tez3tVYEEy0HE=
+
+Name: assets/www/resources/images/peinture_aerosol_mini.png
+SHA1-Digest: 8zST67iYKZfPADP/PlYPebPDfxE=
+
+Name: assets/www/resources/images/conteneur_verre_instructions_2.jpg
+SHA1-Digest: VQ2KFxbeM/jZdh3viF4m19/yyf0=
+
+Name: assets/www/resources/datas/GarbagesDatas.js
+SHA1-Digest: SH07/Er7/SJYq7LmMtG4/VU7qNY=
+
+Name: assets/www/resources/images/herbicide_mini.png
+SHA1-Digest: ZyM40QrxkfVmmRF2XV96ZqpZGgQ=
+
+Name: assets/www/resources/images/images_non_libres/icone_presentation
+ .png
+SHA1-Digest: ILvf2PYT1z0V7eJ1M3uFXgE4fCQ=
+
+Name: assets/www/resources/images/nettoyant_argent_mini.png
+SHA1-Digest: /m8UhiXSSPWlyK0s1TuFfoQl7eg=
+
+Name: assets/www/resources/images/fourchette_mini.png
+SHA1-Digest: bv/0iFOgZg5wQH6vAyFL9IAZiJU=
+
+Name: assets/www/resources/images/plaquette_beurre_mini.png
+SHA1-Digest: fR4NBCN2SM3WwmBIjFQsizRhb/o=
+
+Name: assets/www/resources/images/sac_plastique_mini.png
+SHA1-Digest: V3vlY+/m0YD1ysURrWOLc/5ZBiY=
+
+Name: assets/www/resources/images/yahourt_mini.png
+SHA1-Digest: tvTe7KN/EajS16Y37mObSUEGnlA=
+
+Name: assets/www/resources/images/thermometre_mercure_mini.png
+SHA1-Digest: 70QGlAgHYJSKbM3VmrCLQRgpOTA=
+
+Name: assets/www/resources/lib/leaflet-0.7.3/leaflet.js
+SHA1-Digest: a2oLAzyR/ZFJmdnOMvxJtWcDLj0=
+
+Name: assets/www/resources/images/baril_lessive_mini.png
+SHA1-Digest: 3NeygngandhuMnFbketSymKTIj4=
+
+Name: assets/www/resources/images/creme_main_2_mini.png
+SHA1-Digest: U9iuhCI/9p/ukp9v4qKVlfEH104=
+
+Name: assets/www/resources/images/recharge_gaz_mini.png
+SHA1-Digest: iT0dLANJX+DBionbG+reb1SjPw8=
+
+Name: assets/www/app.js
+SHA1-Digest: VaFg2mZVYvko9rtvrPtRbgQBoQQ=
+
+Name: assets/www/resources/images/pot_confiture_mini.png
+SHA1-Digest: Ugf3bDmO1ZGnh4uf8S7ZnYrByg8=
+
+Name: assets/www/resources/images/rasoir_jetable_mini.png
+SHA1-Digest: Y5q1yB7cG4RjjiB5ruAD/2M50Rw=
+
+Name: assets/www/resources/images/bouteille_cidre_mini.png
+SHA1-Digest: 40ZjaQtlhwg5p3eR+VzV3eEforo=
+
+Name: assets/www/resources/images/laine_roche_mini.png
+SHA1-Digest: cXHuX0/wPD156zX4CDXi1bb086c=
+
+Name: assets/www/js/index.js
+SHA1-Digest: YYj6w/c1eCli3yrwbqTIv8w01wM=
+
+Name: assets/www/resources/images/petite_voiture_mini.png
+SHA1-Digest: Yg9hn3AAdtNz7lEZm1kQ1smG/+c=
+
+Name: assets/www/resources/icons/iphone.png
+SHA1-Digest: JyW7JZ7O6LVAmI6IQu7lue94Sto=
+
+Name: assets/www/resources/lib/mieuxtrieranantes/translation.js
+SHA1-Digest: Op0t7PFW3Z5ZVXqDoGvNfXMjbPY=
+
+Name: assets/www/resources/images/images_non_libres/icone_spreadsheets
+ .png
+SHA1-Digest: x11l7ApiJwdmbRKXvko9n+2zOEY=
+
+Name: assets/www/resources/images/jeu_enfant_avec_pile_mini.png
+SHA1-Digest: 9HuP0Uoh9fB/RFtbbyrXx4le87E=
+
+Name: res/drawable-port-mdpi-v4/screen.png
+SHA1-Digest: xQF9FkF91ssL80U0ZZIBCcr9Qs0=
+
+Name: assets/www/resources/images/neon2_mini.png
+SHA1-Digest: srXNg502oZ8NIRO31/6u8dCLwl4=
+
+Name: assets/www/resources/images/plante_mini.png
+SHA1-Digest: l9u5T6WSkY8O6N6Nrb/k3Ikz2Hk=
+
+Name: assets/www/resources/images/televiseur_mini.png
+SHA1-Digest: R5R1kSrjHrysvIq/U7ncgN44fSk=
+
+Name: assets/www/resources/datas/fitbit-app.js
+SHA1-Digest: apMVEfG4SGmgB5vxNskb5Jy1c+0=
+
+Name: assets/www/resources/images/conteneur_lerelais_mini.png
+SHA1-Digest: 4vwmLz+9g2su6cahn6lyquaPcJ4=
+
+Name: assets/www/resources/images/encombrant.jpg
+SHA1-Digest: zyznjEJZRxhCs6zLPDKvD+CqwNM=
+
+Name: assets/www/resources/images/petite_voiture.png
+SHA1-Digest: CEjqfCIr6fHlj77jYmHK2MJRz98=
+
+Name: assets/www/resources/images/vente_trisacs.jpg
+SHA1-Digest: 2B17oOH4AyXdeuROrw2m8rgZHDQ=
+
+Name: assets/www/resources/images/bouteille_pec_citron_mini.png
+SHA1-Digest: c7GnHyhyyN7SgosSmZqS41LnABA=
+
+Name: assets/www/resources/images/bouilloire_mini.png
+SHA1-Digest: rfVb542M0sujNQofl/zNit0ZzXY=
+
+Name: assets/www/resources/images/images_non_libres/moebius_sans_mini.
+ png
+SHA1-Digest: JtbjqQmdI5J/hZsjSNukkfzFEQI=
+
+Name: assets/www/resources/icons/icone_direction.png
+SHA1-Digest: EeCwADrT82HapD7k3XN/wLjXtQE=
+
+Name: assets/www/resources/images/peinture_acrylique_mini.png
+SHA1-Digest: j0DbJIfHrJ68sTsvnYYoX/AM2HU=
+
+Name: assets/www/resources/images/assiette_carton_mini.png
+SHA1-Digest: I0Q18AmOu3CSMNPtiT4WuWNSnIY=
+
+Name: assets/www/resources/images/tournevis_mini.png
+SHA1-Digest: g7UNs+qOyxqBvIllCfDz/Q5DpGU=
+
+Name: assets/www/resources/icons/Icon~ipad@2x.png
+SHA1-Digest: iFd//pV1dviSX7N+hZ7NDR27IWg=
+
+Name: assets/www/resources/images/carton_mini_.png
+SHA1-Digest: 82dW2ayJp16IzchdH8Y+9hflIMI=
+
+Name: assets/www/resources/images/feuilles_mini.png
+SHA1-Digest: 339sNjJ0A7A6MlwiM6d82UlGg3o=
+
+Name: assets/www/resources/images/conteneur_plastique_mini.png
+SHA1-Digest: f7CmOByejSQ7k+afWbYTkf391fQ=
+
