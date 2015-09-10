@@ -18,7 +18,7 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 			},
 			items : [{
 						id : 'homecollectmodsdetails_description',
-						tpl : "<b>Adresse</b> : {dcv}{ci}<br/>Collecte : {jcbj} </b><br/><br/><b>Source</b> : <font color=red>{src}</font></I><br/><br/>",
+						tpl : "tempo",
 						data : {
 							image : ""
 						}
@@ -29,12 +29,12 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						width : '100%',
 						id : "homecollectmodsdetails_conseils_1",
 						items : [{
-							tpl : "<br/><br/><b>{nom}</b><br/>{descr}<br/>",
+							tpl : "tempo",
 							id : "homecollectmodsdetails_conseils_1_nom"
 						}, {
 							xtype : 'label',
 							id : "homecollectmodsdetails_conseils_1_categ",
-							tpl : "Voir <i>fiche {nom}</i>"
+							tpl : "tempo"
 						}]
 					}, {
 						// Le deuxieme conseil
@@ -43,12 +43,12 @@ Ext.define('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails', {
 						width : '100%',
 						id : "homecollectmodsdetails_conseils_2",
 						items : [{
-							tpl : "<br/><br/><b>{nom}</b><br/>{descr}<br/>",
+							tpl : "tempo",
 							id : "homecollectmodsdetails_conseils_2_nom"
 						}, {
 							xtype : 'label',
 							id : "homecollectmodsdetails_conseils_2_categ",
-							text : "Voir <i>fiche {nom}</i>"
+							text : "tempo"
 						}]
 					}]
 		}, {

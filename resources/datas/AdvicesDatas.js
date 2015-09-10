@@ -150,7 +150,7 @@ var _advicesDatas = [{
 	"code" : "cons_pasuniquementbouteilleflacon",
 	"nom" : "Tous les plastiques dans les bacs jaunes nantais",
 	"nom_en" : "All plastics in the yellow bins Nantes",
-	"descr" : "Nantes mène un projet pilote : on peut mettre tous les types de plastique dans les bacs jaunes de Nantes : les bouteilles et les flacons (comme ailleurs) mais aussi les pots (crème fraiche..), barquettes, sacs de supermarché... <b><font color=red>Ceci ne concerne pas les sacs jaunes ni les bacs des autres villes de Nantes Métropole.</font></b>",
+	"descr" : "Nantes mène un projet pilote : on peut mettre tous les types de plastique dans les bacs jaunes de Nantes : les bouteilles et les flacons (comme ailleurs) mais aussi les pots (crème fraiche..), barquettes, sacs de supermarché... <b><font color=red>Ceci ne concerne pas les sacs jaunes ni les bacs des autres villes de Nantes Métropole.</font></b><br/>Attention : l'objet ne doit contenir <b>que du plastique</b>.",
 	"descr_en" : "Nantes is piloting: you can put all types of plastic in the yellow bins of Nantes bottles and vials (as elsewhere) but also the pots (fresh cream ..), trays, supermarket bags ... < b> <font color = red> This does not include yellow bags or bins of other cities of Nantes Métropole. </ font> </ b>",
 	"fiche" : "fiche_pet"
 }, {
@@ -173,10 +173,10 @@ var _advicesDatas = [{
 	"descr_en" : "The cap / lid must be ordered separately (although it can be sorted). See <br/> waste <i> Plastic cap '</ i> and waste <i>' Metal cover '</ i>."
 }, {
 	"code" : "cons_capsulelait",
-	"nom" : "Que faire de la capsule métallique ?",
+	"nom" : "Que faire de la capsule métallique (opercule) ?",
 	"nom_en" : "What of the metal cap?",
-	"descr" : "La capsule doit être mis dans les déchets ménagers ('bac bleu' ou 'sac bleu')",
-	"descr_en" : "The capsule should be placed in household waste ('blue box' or 'blue bag')"
+	"descr" : "La capsule doit être mis dans les déchets ménagers ('bac bleu' ou 'sac bleu'). Ils sont rejetées par le processus de tri du fait de leur taille.",
+	"descr_en" : "The capsule should be placed in household waste ('blue box' or 'blue bag'). they are rejected by the sorting process due to their size."
 }, {
 	"code" : "cons_potsmoutarde",
 	"nom" : "Les verres des pots de moutarde et nutella",
@@ -309,7 +309,7 @@ var _advicesDatas = [{
 	"code" : "cons_dec_coucheBebe",
 	"nom" : "Couches lavables",
 	"nom_en" : "Cloth diapers",
-	"descr" : "Pourquoi ne pas tester les couches lavables ? Une couche de bonne qualité coûte entre 15 et 20 euros, et se revend 7 euros d'occasion. Il en faut environ 25 (il est recommandé de changer le bébé 8-9 fois par jour pour ce type de couche). Certaines couches sont moins épaisses, et ne donnent pas cet effet 'gros popotin'. Le magasin 'Bébé cash' (106 Boulevard des Poilus, 44300 Nantes, 02 40 52 39 93) vend ce type de couches, en donnant des conseils pertinents.",
+	"descr" : "Pourquoi ne pas tester les couches lavables ? Une couche de bonne qualité coûte entre 15 et 20 euros, et se revend 7 euros d'occasion. Il en faut environ 25 (il est recommandé de changer le bébé 8-9 fois par jour pour ce type de couche). Certaines couches sont moins épaisses, et ne donnent pas cet effet 'gros popotin'. Voir 'vente en vrac' sur la page Lieux.",
 	"descr_en" : "Why not test cloth diapers? A layer of good quality costs between 15 and 20 euros, and resells used 7 euros. It takes about 25 (it is recommended to change the baby 8-9 times per day for this type of layer). Some layers are thinner, and do not give this effect 'big butt'. The store 'Baby cash' (106 Boulevard des Hairy, 44300 Nantes 02 40 52 39 93) sells this type layers, giving relevant advice."
 }, {
 	"code" : "cons_nespresso",
@@ -345,4 +345,11 @@ var _advicesDatas = [{
 	"nom_en" : "Limit of 2 meters",
 	"descr" : "Une barre limite les véhicules de plus de 2 mètres de haut, sauf pour les déchèteries de La Chapelle-sur-Erdre et de Saint-Sébastien-sur-Loire.",
 	"descr_en" : "A bar limit vehicles over 2 meters high, except for waste collection centers in La Chapelle-sur-Erdre and Saint-Sébastien-sur-Loire."
+}, {
+	"code" : "cons_spirale",
+	"nom" : "Doit-on supprimer les spirales ?",
+	"nom_en" : "Should we remove the spirals ?",
+	"descr" : "Non ce n'est pas obligatoire.",
+	"descr_en" : "No this is not mandatory. ",
+	"fiche" : "dec_cahier"
 }, {}];

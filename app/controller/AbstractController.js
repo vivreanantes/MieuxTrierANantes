@@ -10,16 +10,14 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 */
 
 	translate : function(stKey) {
-		if (this.stLocale == null) {
-			this.stLocale = this.getLocale();
-		}
+		var stLocale = this.getLocale();
 		// invoque la fonction définie dans translation.js
-		return _translate(stKey, this.stLocale);
+		return _translate(stKey, stLocale);
 	},
 
 	/**
-	 * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
-	 * LocalStorageController.
+	 * Renvoie la variable locale (par exemple "fr" ou "en").<br/>Cette
+	 * fonction invoquera le LocalStorageController.
 	 */
 	getLocale : function() {
 		if (typeof stGlobalLocale == 'undefined') {
@@ -33,6 +31,15 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		 * result = localStorageController.getLocale();
 		 */
 		// return result;
+	},
+	
+	/**
+	 * Réalise la traduction et met la première lettre en majuscule
+	 * @param {} text
+	 * @return {}
+	 */
+	translateWithUpperFirstLetter : function(text) {
+		return _translateWithUpperFirstLetter(text, getLocale());
 	},
 
 	/**
@@ -729,7 +736,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	getArrayItemsToShowForButtons : function(datas, buttonLabel) {
 		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
-			if (typeof datas[i].bouton !="undefined" && datas[i].bouton == buttonLabel) {
+			if (typeof datas[i].bouton != "undefined"
+					&& datas[i].bouton == buttonLabel) {
 				// Ajoute les <br/>
 				var nom = _cutWithBr(this.getRecordValue(datas[i], "nom"));
 				arItemsToShow.push({
@@ -769,7 +777,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	/**
 	 * Renvoie la distance
 	 */
-	calculeDistance : function(posLatitudeInit, longitudeInit, posLatitude, posLongitude) {
+	calculeDistance : function(posLatitudeInit, longitudeInit, posLatitude,
+			posLongitude) {
 		var latLngCentre = L.latLng(posLatitudeInit, longitudeInit);
 		var latLngStructure = L.latLng(posLatitude, posLongitude);
 		var distanceEnMetre = latLngStructure.distanceTo(latLngCentre);
@@ -805,17 +814,19 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 							_datas[k]["image"] = "icon-go-home.png";
 							_datas[k]["nom"] = _datas[k]["dcv"];
 							_datas[k]["nom_en"] = _datas[k]["dcv"];
+							_datas[k]["jcbj_en"] = _datas[k]["jcbj"].replace("Sacs (jaunes et bleus)", "Bags (yellow et blue)").replace("lundi", "monday").replace("mardi", "tuesday").replace("mercredi", "wednesday").replace("jeudi", "thursday").replace("vendredi", "friday").replace("samedi", "saturday").replace("dimanche", "sunday");
 						}
 						_datas[k]["page"] = page;
-						// Permet de prendre le français quand on a pas la
-						// traduction
-						_datas[k]["nom"] = this
-								.getRecordValue(_datas[k], "nom");
-						_datas[k]["type"] = this.getRecordValue(_datas[k],
-								"type");
+						// Permet de prendre le français quand on a pas la traduction
+						_datas[k]["nom_en"] = this.getRecordValue(_datas[k], "nom");
+						_datas[k]["type_en"] = this.getRecordValue(_datas[k], "type");
 						// TRELLO_DISTANCE_JOURS
 						if (typeof _datas[k]["latitude"] != "undefined") {
-							var diste = this.calculeDistance(_datas[k]["latitude"], _datas[k]["longitude"], _datas[k]["latitude"], _datas[k]["longitude"]);
+							var diste = this.calculeDistance(
+									_datas[k]["latitude"],
+									_datas[k]["longitude"],
+									_datas[k]["latitude"],
+									_datas[k]["longitude"]);
 						}
 						tableauARetourner.push(_datas[k]);
 					}

@@ -96,7 +96,7 @@ function _getStructure(idElement) {
 }
 
 function getDescriptionCompleteInfo(myElement) {
-	var description = myElement["descr"] + _getCommentsBloc(myElement["code"]);
+	var description =  getRecordValue(myElement, "descr") + _getCommentsBloc(myElement["code"]);
 	return description;
 }
 /**

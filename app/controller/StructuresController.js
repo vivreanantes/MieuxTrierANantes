@@ -117,7 +117,21 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				this.getStructuresList().setStore(structureStore);
 				structureStore.load();
 			}
+			// Traduction
+			this.structuresViewUpdateTextTranslated();
 		}
+	},
+
+	/**
+	 * Réalise les traduction de la page formulaire/liste
+	 */
+	structuresViewUpdateTextTranslated : function() {
+		this.getStructureFormText().setLabel(this
+				.translateWithUpperFirstLetter("label_dechet_nom"));
+		this.getStructuresFormSelectQuartier().setLabel(this
+				.translateWithUpperFirstLetter("label_quartier"));
+		this.getStructuresFormSelectType().setLabel(this
+				.translateWithUpperFirstLetter("label_type"));
 	},
 
 	onListRefresh : function(list, eOpts) {
@@ -150,8 +164,10 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stTypeRegexp = new RegExp(selectType.getValue());
 					var stQuartier = item.data["zone"];
 					var stType = item.data["modesCollecte"];
-					var stDechetsNoAccents = item.data["mots_cles"];
-					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(item.data["nom"]);
+					var stDechetsNoAccents = this.getRecordValue(item.data,
+							"mots_cles");
+					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(this
+							.getRecordValue(item.data, "nom"));
 					// Important : il faut recréer l'expression régulière à
 					// chaque fois
 					// sinon les résultats sont faux !

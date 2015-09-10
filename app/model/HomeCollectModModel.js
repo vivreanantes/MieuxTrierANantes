@@ -15,6 +15,9 @@ Ext.define('MieuxTrierANantes.model.HomeCollectModModel', {
 							name : 'jcbj',
 							type : 'string'
 						}, {
+							name : 'jcbj_en',
+							type : 'string'
+						}, {
 							name : 'mco',
 							type : 'string'
 						}, {

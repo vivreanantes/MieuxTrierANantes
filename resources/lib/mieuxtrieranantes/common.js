@@ -58,8 +58,8 @@ function _utilGetStringCurrentYearAAAA() {
 /**
  * Traduit et met la première lettre en majuscule
  */
-function _translateWithUpperFirstLetter(result) {
-	return _stringUpperFirstLetter(_translate(result));
+function _translateWithUpperFirstLetter(text, stLocale) {
+	return _stringUpperFirstLetter(_translate(text, stLocale));
 }
 
 /**

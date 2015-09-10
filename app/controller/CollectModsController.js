@@ -103,7 +103,7 @@ Ext.define('MieuxTrierANantes.controller.CollectModsController', {
 
 		// Affectation du titre
 		var title = "<I>"
-				+ _translateWithUpperFirstLetter("label_modeDeCollecte")
+				+ this.translateWithUpperFirstLetter("label_modeDeCollecte")
 				+ "</I> " + _stringUpperFirstLetter(collectModFromStore["nom"]);
 		this.collectModsDetails.setTitle(title);
 

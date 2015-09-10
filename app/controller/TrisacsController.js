@@ -97,7 +97,17 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 				this.getTrisacList().setStore(structureStore);
 				structureStore.load();
 			}
+			// Traduction
+			this.structuresViewUpdateTextTranslated();
 		}
+	},
+	
+	/**
+	 * Réalise les traduction de la page formulaire/liste de trisac
+	 */
+	structuresViewUpdateTextTranslated : function() {
+		this.getTrisacFormText().setLabel(this.translateWithUpperFirstLetter("label_nom"));
+		this.getTrisacFormSelect().setLabel(this.translateWithUpperFirstLetter("label_quartier"));
 	},
 
 	// Méthodes invoquées par le formulaire

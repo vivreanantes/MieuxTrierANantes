@@ -5,9 +5,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	extend : 'MieuxTrierANantes.controller.AbstractController',
 	requires : ['MieuxTrierANantes.view.garbages.GarbagesContainer',
 			'MieuxTrierANantes.view.garbages.GarbagesForm'/*
-															 * ,
-															 * 'MieuxTrierANantes.view.garbages.GarbagesList'
-															 */],
+			 * ,
+			 * 'MieuxTrierANantes.view.garbages.GarbagesList'
+			 */],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -75,8 +75,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
 			},/*
-				 * advicesList : { initialize : 'onInitGarbagesAdvices' },
-				 */
+			 * advicesList : { initialize : 'onInitGarbagesAdvices' },
+			 */
 			/*
 			 * wasteTreatmentsCategoriesList : { initialize :
 			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
@@ -170,9 +170,19 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
-		// this.top();
+		this.garbageViewUpdateTextTranslated();
 	},
 
+	
+	
+	/**
+	 * Réalise les traduction de la page formulaire/liste
+	 */
+	garbageViewUpdateTextTranslated : function() {
+		this.getGarbagesFormText().setLabel(this
+				.translateWithUpperFirstLetter("label_dechet"));
+	},
+	
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.top();
 	},
@@ -180,7 +190,15 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	top : function() {
 
 		// on initialise la liste des boutons si cela n'a pas encore eu lieu.
-		if (this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label == "") {
+		var labelElt1 = this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label;
+		if (labelElt1 === "") {
+			this.putInButtonsPanel("cu");
+		} else if (labelElt1 === "Plastique Brique"
+				&& this.getLocale() === "en") {
+			// on passe en anglais
+			this.putInButtonsPanel("cu");
+		} else if (labelElt1 === "Plastic Brick" && this.getLocale() === "fr") {
+			// on passe en français
 			this.putInButtonsPanel("cu");
 		}
 
@@ -193,8 +211,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			this.showGarbagesDetail2(mainView.active);
 			mainView.active = null;
 		}/*
-			 * else { this.putInButtonsPanel("cu"); }
-			 */
+		 * else { this.putInButtonsPanel("cu"); }
+		 */
 	},
 
 	onPushBackButton : function() {
@@ -476,7 +494,9 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 								var codeValue = "collectMods_xtype"
 										+ _SEPARATOR
 										+ _collectModsDatas[j]["code"];
-								var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
+								var libelleBouton = this.getRecordValue(
+										_collectModsDatas[j], "libelleBouton");
+								var libelleValue = _stringUpperFirstLetter(libelleBouton);
 								arItemsToShow.push({
 											image : imageValue,
 											code : codeValue,
@@ -490,7 +510,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				}
 			}
 			if (modesDeCollecteTraduit !== "") {
-				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
+				modesDeCollecteTraduit = "<BR/>"
+						+ this.translate(label_modes_de_collecte) + ": "
 						+ modesDeCollecteTraduit;
 			}
 
@@ -625,7 +646,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// sinon les résultats sont faux !
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
-			var mots_cles = _garbagesDatas[j]["mots_cles"];
+			var mots_cles = this.getRecordValue(_garbagesDatas[j], "mots_cles");
 			if ((_garbagesDatas[j]["cat_usuel"] === category.getValue() || category
 					.getValue() === "all")
 					&& texttest.test(mots_cles)) {

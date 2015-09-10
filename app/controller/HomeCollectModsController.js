@@ -17,10 +17,12 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		},
 		control : {
 
-			homeCollectModDetail : {},
+			homeCollectModDetail : {
+				show : 'onShowHomeCollectModsDetail'
+			},
 
 			homeCollectModsList : {
-				itemtap : 'showHomeCollectModsDetail'
+				itemtap : 'itemTapHomeCollectModsList'
 			},
 
 			homeCollectModsView : {
@@ -108,13 +110,54 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 					.create('MieuxTrierANantes.store.HomeCollectModStore');
 			this.getHomeCollectModsList().setStore(store);
 		}
-	
-	},
-	
-	updateTextTranslated : function() {
-		// this.homeCollectModDetail.setTitle(this.translate("label_collete_a_domicile"));
+
+		this.homeCollectModUpdateTextTranslated()
+
 	},
 
+	onShowHomeCollectModsDetail : function() {
+		this.homeCollectModDetailUpdateTextTranslated();
+	},
+
+	homeCollectModDetailUpdateTextTranslated : function(elt, eOpts) {
+		this.homeCollectModDetail.setTitle(this
+				.translate("label_collete_a_domicile"));
+		this.homeCollectModDetail.items.items[0].items.items[0].setTpl(this
+				.translate("label_homecollectmodsdetails_tpl"));
+		this.homeCollectModDetail.items.items[0].items.items[1].items.items[0]
+				.setTpl(this
+						.translate("label_homecollectmodsdetails_conseil_tpl"));
+		this.homeCollectModDetail.items.items[0].items.items[1].items.items[1]
+				.setTpl(this
+						.translate("label_homecollectmodsdetails_fiche_tpl"));
+		this.homeCollectModDetail.items.items[0].items.items[2].items.items[0]
+				.setTpl(this
+						.translate("label_homecollectmodsdetails_conseil_tpl"));
+		this.homeCollectModDetail.items.items[0].items.items[2].items.items[1]
+				.setTpl(this
+						.translate("label_homecollectmodsdetails_fiche_tpl"));
+	},
+
+	/**
+	 * Réalise les traduction de la page homecollectmodscontainer_xtype
+	 */
+	homeCollectModUpdateTextTranslated : function() {
+		// Titre
+		// Texte 'Recherche par rue'
+		this.getHomeCollectModsForm().items.items[0].setHtml(this
+				.translate("label_recherche_par_rue_nantes"));
+		// Changement libellé du bouton "Adresse"
+		this.getHomeCollectModsFormText().updateLabel(this
+				.translateWithUpperFirstLetter("label_adresse"));
+
+		var temp = "";
+		var locale = this.getLocale();
+		if (locale == "en") {
+			temp = "_en";
+		}
+		this.getHomeCollectModsList()
+				.setItemTpl("{dcv}<br/>{jcbj" + temp + "}");
+	},
 
 	/**
 	 * Met à jour le data du store selon le hash (compare les 2 premiers
@@ -158,7 +201,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		return arItemsToShow;
 	},
 
-	showHomeCollectModsDetail : function(list, index, node, record) {
+	itemTapHomeCollectModsList : function(list, index, node, record) {
 		this.showDetail(record.data);
 	},
 
@@ -169,7 +212,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 						.create('MieuxTrierANantes.view.homecollectmods.HomeCollectModsDetails');
 				this.homeCollectModDetail.items.items['0'].setTpl('');
 			}
-			this.updateTextTranslated();
+			this.homeCollectModDetailUpdateTextTranslated();
 
 			// Récupère les modes de collecte
 			var thisController = this;
@@ -182,7 +225,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 						var imageValue = _collectModsDatas[j]["image"];
 						var codeValue = "collectMods_xtype" + _SEPARATOR
 								+ _collectModsDatas[j]["code"];
-						var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
+						var libelleBouton = this.getRecordValue(
+								_collectModsDatas[j], "libelleBouton");
+						var libelleValue = _stringUpperFirstLetter(libelleBouton);
 						arItemsToShow.push({
 									image : imageValue,
 									code : codeValue,
@@ -243,6 +288,8 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 							var escaperegex = Ext.String.escapeRegex;
 							var texttest = new RegExp(
 									escaperegex(texteSansAccents), 'ig');
+							var nomVoie_sansAccents = this.getRecordValue(
+									_garbagesDatas[j], "mots_cles");
 							var nomVoie_sansAccents = item.data["mots_cles"];
 							return (texttest.test(nomVoie_sansAccents));
 						}

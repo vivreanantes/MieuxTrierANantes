@@ -153,7 +153,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 					.log('LEAFLET : Paramètres manquants pour ajouter la structure à la carte - '
 							+ record.get('type')
 							+ " - "
-							+ record.get('libelle'));
+							+ record.get('nom'));
 			afficheStructure = false;
 		}
 

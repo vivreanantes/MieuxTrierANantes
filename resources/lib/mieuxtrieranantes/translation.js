@@ -427,6 +427,22 @@ function _translate(stKey, stLocale) {
 			"en" : "address",
 			"fr" : "adresse"
 		},
+		"label_nom" : {
+			"en" : "name",
+			"fr" : "nom"
+		},
+		"label_quartier" : {
+			"en" : "neighborhood",
+			"fr" : "quartier"
+		},
+		"label_dechet_nom" : {
+			"en" : "garbage/name",
+			"fr" : "déchet/nom"
+		},
+		"label_dechet" : {
+			"en" : "garbage",
+			"fr" : "déchet"
+		},
 		"label_type" : {
 			"en" : "type",
 			"fr" : "type"
@@ -535,21 +551,21 @@ function _translate(stKey, stLocale) {
 			"en" : "Home collect",
 			"fr" : "Collecte à domicile"
 		},
-		"label_" : {
-			"en" : "",
-			"fr" : ""
+		"label_recherche_par_rue_nantes" : {
+			"en" : "Search by Street (Nantes) or by city name (excluding Nantes).",
+			"fr" : "Recherche par rue (Nantes) ou par nom de ville (hors Nantes)."
 		},
-		"label_" : {
-			"en" : "",
-			"fr" : ""
+		"label_homecollectmodsdetails_tpl" : {
+			"en" : "<b>Address</b> : {dcv}{ci}<br/>Collect : {jcbj_en} </b><br/><br/><b>Source</b> : <font color=red>{src}</font></I><br/><br/>",
+			"fr" : "<b>Adresse</b> : {dcv}{ci}<br/>Collecte : {jcbj} </b><br/><br/><b>Source</b> : <font color=red>{src}</font></I><br/><br/>"
 		},
-		"label_" : {
-			"en" : "",
-			"fr" : ""
+		"label_homecollectmodsdetails_conseil_tpl" : {
+			"en" : "<br/><br/><b>{nom_en}</b><br/>{descr_en}<br/>",
+			"fr" : "<br/><br/><b>{nom}</b><br/>{descr}<br/>"
 		},
-		"label_" : {
-			"en" : "",
-			"fr" : ""
+		"label_homecollectmodsdetails_fiche_tpl" : {
+			"en" : "See <i>card {nom_en}</i>",
+			"fr" : "Voir <i>fiche {nom}</i>"
 		},
 		"label_" : {
 			"en" : "",

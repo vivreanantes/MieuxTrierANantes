@@ -9844,4 +9844,4 @@ var _structures2Datas = [{
 			"longitude" : "-1.533561",
 			"cons" : "cons_lerelais",
 			"image" : "conteneur_le_relais_instructions_mini.png"
-		}, {}]
+		}]
