@@ -11,7 +11,21 @@
                     "name": "MieuxTrierANantes"
                 }
             }
-        }
+        },
+		"wp8":{
+		
+			"packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    "platforms": "wp8",
+                    "id": "com.MieuxVivreANantes.MieuxTrierANantes",
+                    "name": "MieuxTrierANantes"
+                }
+            }
+		
+		
+		}
     },
 
                 

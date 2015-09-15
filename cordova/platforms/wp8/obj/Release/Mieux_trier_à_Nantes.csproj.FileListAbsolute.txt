@@ -1,0 +1,14 @@
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\ApplicationIcon.png
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\Background.png
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\com.MieuxVivreANantes.MieuxTrierANantes.dll
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\com.MieuxVivreANantes.MieuxTrierANantes.pdb
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\AppManifest.xaml
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\Properties\WMAppManifest.xml
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\Bin\Release\CordovaAppProj_Release_AnyCPU.xap
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\App.g.cs
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\cordovalib\CordovaView.g.cs
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\MainPage.g.cs
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\com.MieuxVivreANantes.MieuxTrierANantes.g.resources
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\com.MieuxVivreANantes.MieuxTrierANantes.dll
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\com.MieuxVivreANantes.MieuxTrierANantes.pdb
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\wp8\obj\Release\XapCacheFile.xml
