@@ -280,6 +280,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (e.target.name == "flag") {
 			// Si pas défini ou si francais on met anglais, sinon on met en
 			// francais.
+			
+			var mainView = this.getMainView();
+			// mainView.items.items[2].setTitle();
+			
 			if (typeof stGlobalLocale == 'undefined') {
 				stGlobalLocale = "fr";
 			}
@@ -292,9 +296,25 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				document.getElementById("flag-fr").style.display = 'block';
 				document.getElementById("flag-gb").style.display = 'none';
 			}
+			var homeContainer = this.getHome().items.items[0].items.items[1];
+			homeContainer.items.items[0].items.items[0].setHtml(this.translate("label_tpl_aider"));
+			homeContainer.items.items[2].items.items[1].setPlaceHolder(this.translate("label_global_button_placeholder"));
+			mainView.getTabBar().items.items[1].setText(this.translateWithUpperFirstLetter("label_dechets"));
+			mainView.getTabBar().items.items[2].setText(this.translateWithUpperFirstLetter("label_carte"));
+			mainView.getTabBar().items.items[3].setText(this.translateWithUpperFirstLetter("label_fiches"));
+			mainView.getTabBar().items.items[4].setText(this.translateWithUpperFirstLetter("label_lieux"));
+			mainView.getTabBar().items.items[5].setText(this.translateWithUpperFirstLetter("label_a_domicile"));
+			mainView.getTabBar().items.items[6].setText(this.translateWithUpperFirstLetter("label_trisac"));
+			// TODO ceci ne fonctionne pas traduction boutons
+			homeContainer.items.items[5].items.items[0].setTpl(this.translate("label_home_button_0"));
+			homeContainer.items.items[5].items.items[1].setTpl(this.translate("label_home_button_1"));
+			homeContainer.items.items[5].items.items[2].setTpl(this.translate("label_home_button_2"));
+			homeContainer.items.items[5].items.items[3].setTpl(this.translate("label_home_button_3"));
 
+			
 		} else {
-			var description = _labelsDatas["about"]["fr"];
+			
+			var description = _labelsDatas["about"][stGlobalLocale];
 			var nom = _labelsDatas["about_titre"]["fr"];
 			Ext.Msg.show({
 						title : nom,

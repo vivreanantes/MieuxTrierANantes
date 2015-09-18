@@ -483,6 +483,50 @@ function _translate(stKey, stLocale) {
 			"en" : "garbages",
 			"fr" : "déchets"
 		},
+		"label_carte" : {
+			"en" : "map",
+			"fr" : "carte"
+		},
+		"label_fiches" : {
+			"en" : "cards",
+			"fr" : "fiches"
+		},
+		"label_lieux" : {
+			"en" : "places",
+			"fr" : "lieux"
+		},
+		"label_a_domicile" : {
+			"en" : "at home",
+			"fr" : "à domicile"
+		},
+		"label_trisac" : {
+			"en" : "trisac",
+			"fr" : "trisac"
+		},
+		"label_tpl_aider" : {
+			"en" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>To help inhabitants of Nantes Métropole to sort.</div>",
+			"fr" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Pour aider les habitants de Nantes Métropole à trier.</div>"
+		},
+		"label_global_button_placeholder" : {
+			"en" : "Ex : mirror, emmaüs, composting...",
+			"fr" : "Ex : miroir, emmaüs, compostage..."
+		},
+		"label_home_button_0" : {
+			"en" : "<center><font size='2'>Quiz<br/>January</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='50px' /></center>",
+			"fr" : "<center><font size='2'>Quiz<br/>Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='50px' /></center>"
+		},
+		"label_home_button_1" : {
+			"en" : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='50px' /></center>",
+			"fr" : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='50px' /></center>"
+		},
+		"label_home_button_2" : {
+			"en" : "<center><font size='2'>Docs to<br/>print</font><br/><img src='resources/images/icon_pdf.png' height='50px' /></center>",
+			"fr" : "<center><font size='2'>Docs à<br/>imprimer</font><br/><img src='resources/images/icon_pdf.png' height='50px' /></center>"
+		},
+		"label_home_button_3" : {
+			"en" : "<center><font size='2'>Listing<br/>places</font><br/><img src='resources/images/application-vnd.ms-excel.png' height='50px' /></center>",
+			"fr" : "<center><font size='2'>Listing<br/>lieux</font><br/><img src='resources/images/application-vnd.ms-excel.png' height='50px' /></center>"
+		},
 		"label_cu_plastique" : {
 			"en" : "plastic",
 			"fr" : "plastique"

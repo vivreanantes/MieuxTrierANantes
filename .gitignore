@@ -22,3 +22,4 @@ cordova/platforms/android/assets
 resources/sass/.sass-cache/
 resources/sass/
 .sencha_backup
+cordova/platforms/wp8/www/
