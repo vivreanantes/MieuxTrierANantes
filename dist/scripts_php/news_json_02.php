@@ -1,0 +1,5 @@
+<?php
+    header('Access-Control-Allow-Origin: *');
+	header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+    print_r("{'nom1':'&#x263a; Des particuliers collectent les bouchons de liège', 'descr1':'Si vous avez des bouchons de liège (qui sont normalement jetés), ils peuvent être récupérés par Action Cancer 44 (à La Chapelle-Sur-Erdre et Rezé, des particuliers les récupèrent devant leurs domiciles).<br/>','nom2':'&#127873; Les boîtes utiles à Nantes', 'descr2':'Ce sont des endroits où l on dépose (ou prend) des petits objets, gratuitement. Posées en pleine rue, elles sont accessibles en permanence. La 1ère boîte est près de Vincent Gache. La 2ème est en préparation (quartier Ste Thérèse). Voir <a href=http://lesboitesutiles.tumblr.com />http://lesboitesutiles.tumblr.com</a>','nom3':'&#x1f4b2; Vente au vrac sur Nantes : DayByDay...', 'descr3':'La meilleure façon de trier les déchets est de ne pas en avoir. Sur Nantes, on trouve la boutique DayByDay (près de la Tour Bretagne), les magasins « BioCoop » « Chlorophylle » « Horizon Vert », Pirouette. Voir la page Lieux.'}");
+?>
