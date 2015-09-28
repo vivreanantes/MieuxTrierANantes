@@ -8,7 +8,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone2', {
 	config : {
 		layout : 'hbox',
 		scrollable : false,
-		height:'50px',
+		height:'55px',
 		style : 'background-image:url(resources/images/bandeau_ligne_droite.png);background-repeat:repeat-y;background-size:100%;',
 		items : [{
 					html : ' ',
@@ -31,7 +31,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone2', {
 
 					xtype : 'button',
 					id : 'homeGlobalSearchFormButton',
-					width : '35px',
+					width : '40px',
 					// icône en forme de loupes
 					iconCls : 'search',
 					style:'background-color:white',

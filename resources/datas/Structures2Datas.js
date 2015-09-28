@@ -9844,4 +9844,1430 @@ var _structures2Datas = [{
 			"longitude" : "-1.533561",
 			"cons" : "cons_lerelais",
 			"image" : "conteneur_le_relais_instructions_mini.png"
-		}]
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.210586944941184",
+			"longitude" : "-1.5284836292266846",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/kanope/ target=blank>http://www.compostri.fr/compost/kanope/</a>",
+			"nom" : "Kanopé",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/test-cyrus/ target=blank>http://www.compostri.fr/compost/test-cyrus/</a>",
+			"nom" : "Test Cyrus",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "42.2333333",
+			"longitude" : "-8.7166667",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/test-raphael/ target=blank>http://www.compostri.fr/compost/test-raphael/</a>",
+			"nom" : "Test Raphael",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2247686",
+			"longitude" : "-1.548586699999987",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/monfoulon-nantes/ target=blank>http://www.compostri.fr/compost/monfoulon-nantes/</a>",
+			"nom" : "Monfoulon &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1808775",
+			"longitude" : "-1.5616284999999834",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/utrillo-reze/ target=blank>http://www.compostri.fr/compost/utrillo-reze/</a>",
+			"nom" : "Utrillo &#8211; Rezé",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.202292",
+			"longitude" : "-1.546508000000017",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/square-vertais-ile-de-nantes/ target=blank>http://www.compostri.fr/compost/square-vertais-ile-de-nantes/</a>",
+			"nom" : "Square Vertais &#8211; Ile de Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2099443",
+			"longitude" : "-1.5246918000000278",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ca-pousse-en-amont/ target=blank>http://www.compostri.fr/compost/ca-pousse-en-amont/</a>",
+			"nom" : "Ca pousse en amont",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/environnements-solidaires/ target=blank>http://www.compostri.fr/compost/environnements-solidaires/</a>",
+			"nom" : "Environnements solidaires",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.3044761",
+			"longitude" : "-1.5588801000000103",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/beausoleil-la-chapelle-sur-erdre/ target=blank>http://www.compostri.fr/compost/beausoleil-la-chapelle-sur-erdre/</a>",
+			"nom" : "Beausoleil &#8211; La Chapelle sur Erdre",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1785721",
+			"longitude" : "-1.620072299999947",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/1469/ target=blank>http://www.compostri.fr/compost/1469/</a>",
+			"nom" : "Cantine du 8 mai &#8211; Bouguenais",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2125732",
+			"longitude" : "-1.5412590999999338",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-de-bitche/ target=blank>http://www.compostri.fr/compost/jardins-de-bitche/</a>",
+			"nom" : "Jardins de Bitche",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2052437",
+			"longitude" : "-1.5516660000000684",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-nizanerie-nantes/ target=blank>http://www.compostri.fr/compost/la-nizanerie-nantes/</a>",
+			"nom" : "La Nizanerie &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1549741",
+			"longitude" : "-1.675042699999949",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/les-jardins-de-gaia-bouaye/ target=blank>http://www.compostri.fr/compost/les-jardins-de-gaia-bouaye/</a>",
+			"nom" : "Les jardins de Gaïa &#8211; Bouaye",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.209349",
+			"longitude" : "-1.5289678000000322",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/haubans/ target=blank>http://www.compostri.fr/compost/haubans/</a>",
+			"nom" : "Haubans",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2063175",
+			"longitude" : "-1.556525899999997",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/place-des-erables-nantes/ target=blank>http://www.compostri.fr/compost/place-des-erables-nantes/</a>",
+			"nom" : "Place des Erables &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2407654",
+			"longitude" : "-1.5811751",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/salonique/ target=blank>http://www.compostri.fr/compost/salonique/</a>",
+			"nom" : "Salonique &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.442653",
+			"longitude" : "-1.500773",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/passage-de-la-prise-deau/ target=blank>http://www.compostri.fr/compost/passage-de-la-prise-deau/</a>",
+			"nom" : "Passage de la prise d&rsquo;eau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2226423",
+			"longitude" : "-1.5294613999999456",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/residence-ralliement-nantes/ target=blank>http://www.compostri.fr/compost/residence-ralliement-nantes/</a>",
+			"nom" : "Résidence Ralliement &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2088163",
+			"longitude" : "-1.6487124999999878",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/le-bourg/ target=blank>http://www.compostri.fr/compost/le-bourg/</a>",
+			"nom" : "Le Bourg",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2620375",
+			"longitude" : "-1.5278637000000117",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/residence-clos-de-lerdre-nantes/ target=blank>http://www.compostri.fr/compost/residence-clos-de-lerdre-nantes/</a>",
+			"nom" : "Résidence Clos de L&rsquo;Erdre &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2545665",
+			"longitude" : "-1.5367369000000508",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/belle-isle/ target=blank>http://www.compostri.fr/compost/belle-isle/</a>",
+			"nom" : "Belle Isle",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.225689",
+			"longitude" : "-1.6504671000000144",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/le-clos-de-la-rivaudiere/ target=blank>http://www.compostri.fr/compost/le-clos-de-la-rivaudiere/</a>",
+			"nom" : "Le Clos de la Rivaudière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2068509",
+			"longitude" : "-1.5747179999999616",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/maison-relais-le-gue-nantes/ target=blank>http://www.compostri.fr/compost/maison-relais-le-gue-nantes/</a>",
+			"nom" : "Maison Relais le Gué &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2290964",
+			"longitude" : "-1.5692285000000084",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/le-33/ target=blank>http://www.compostri.fr/compost/le-33/</a>",
+			"nom" : "Le 33",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "29.1043813",
+			"longitude" : "53.04589299999998",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-fontaine/ target=blank>http://www.compostri.fr/compost/la-fontaine/</a>",
+			"nom" : "La Fontaine",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.26220387488973",
+			"longitude" : "-1.5750709176063538",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/les-amandiers/ target=blank>http://www.compostri.fr/compost/les-amandiers/</a>",
+			"nom" : "Les amandiers",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2131138",
+			"longitude" : "-1.5493520999999646",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/crucy/ target=blank>http://www.compostri.fr/compost/crucy/</a>",
+			"nom" : "Crucy",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2492601",
+			"longitude" : "-1.6049035999999433",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-choliere/ target=blank>http://www.compostri.fr/compost/la-choliere/</a>",
+			"nom" : "La Cholière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2279913",
+			"longitude" : "-1.5799531999999772",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/les-anglais/ target=blank>http://www.compostri.fr/compost/les-anglais/</a>",
+			"nom" : "Les Anglais",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.17241532914606",
+			"longitude" : "-1.5274643898010254",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/rotereaux-reze/ target=blank>http://www.compostri.fr/compost/rotereaux-reze/</a>",
+			"nom" : "Rotereaux &#8211; Rezé",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2457435",
+			"longitude" : "-1.5726994999999988",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/verdura/ target=blank>http://www.compostri.fr/compost/verdura/</a>",
+			"nom" : "Verdura",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2398926",
+			"longitude" : "-1.5150200000000495",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/bottiere-chesnaie-ilot-6/ target=blank>http://www.compostri.fr/compost/bottiere-chesnaie-ilot-6/</a>",
+			"nom" : "Bottière-Chesnaie Ilôt 6",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.23216739999999",
+			"longitude" : "-1.576319099999978",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/toscani-sainte-therese/ target=blank>http://www.compostri.fr/compost/toscani-sainte-therese/</a>",
+			"nom" : "Toscani-Sainte-Thérèse",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2820923",
+			"longitude" : "-1.5198500000000197",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante-3/ target=blank>http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante-3/</a>",
+			"nom" : "Ecole des mines-résidence étudiante",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1978782",
+			"longitude" : "-1.5302229000000125",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/val-joli/ target=blank>http://www.compostri.fr/compost/val-joli/</a>",
+			"nom" : "Val Joli",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2177195",
+			"longitude" : "-1.5512671000000182",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/saint-pierre/ target=blank>http://www.compostri.fr/compost/saint-pierre/</a>",
+			"nom" : "Saint Pierre",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2230538",
+			"longitude" : "-1.5623729999999796",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/russeil/ target=blank>http://www.compostri.fr/compost/russeil/</a>",
+			"nom" : "Russeil",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.3113654",
+			"longitude" : "-1.5421773000000485",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/port-aux-cerises/ target=blank>http://www.compostri.fr/compost/port-aux-cerises/</a>",
+			"nom" : "Port aux cerises",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2270428",
+			"longitude" : "-1.586035000000038",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/residence-pierre-de-coubertin/ target=blank>http://www.compostri.fr/compost/residence-pierre-de-coubertin/</a>",
+			"nom" : "Résidence Pierre de Coubertin",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.25805339999999",
+			"longitude" : "-1.5169750999999678",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/murilloles-excuriales/ target=blank>http://www.compostri.fr/compost/murilloles-excuriales/</a>",
+			"nom" : "Murillo/Les Excuriales",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1890984",
+			"longitude" : "-1.5704894000000422",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/maison-radieuse/ target=blank>http://www.compostri.fr/compost/maison-radieuse/</a>",
+			"nom" : "Maison Radieuse",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2008957",
+			"longitude" : "-1.4904340000000502",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/rue-du-limousin-_-saint-sebastien-sur-loire/ target=blank>http://www.compostri.fr/compost/rue-du-limousin-_-saint-sebastien-sur-loire/</a>",
+			"nom" : "Rue du Limousin _ Saint Sébastien sur Loire",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2184147",
+			"longitude" : "-1.5760129000000234",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/les-roses/ target=blank>http://www.compostri.fr/compost/les-roses/</a>",
+			"nom" : "Les Roses",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.19607800000001",
+			"longitude" : "-1.5227311999999529",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/les-nouelles/ target=blank>http://www.compostri.fr/compost/les-nouelles/</a>",
+			"nom" : "Les Nouelles",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2384984",
+			"longitude" : "-1.6044331000000511",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/le-golf/ target=blank>http://www.compostri.fr/compost/le-golf/</a>",
+			"nom" : "Le Golf",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2092388",
+			"longitude" : "-1.6474002999999584",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-robertiere/ target=blank>http://www.compostri.fr/compost/la-robertiere/</a>",
+			"nom" : "La Robertière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.255664",
+			"longitude" : "-1.5792830000000322",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-reyniere-orvault/ target=blank>http://www.compostri.fr/compost/la-reyniere-orvault/</a>",
+			"nom" : "La Reynière &#8211; Orvault",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1965613",
+			"longitude" : "-1.5293607999999494",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-martelliere/ target=blank>http://www.compostri.fr/compost/la-martelliere/</a>",
+			"nom" : "La Martellière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2082631",
+			"longitude" : "-1.5034264999999325",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-closerie-de-larche/ target=blank>http://www.compostri.fr/compost/la-closerie-de-larche/</a>",
+			"nom" : "La Closerie de l&rsquo;Arche",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2049763",
+			"longitude" : "-1.5202917000000298",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-cailletiere/ target=blank>http://www.compostri.fr/compost/la-cailletiere/</a>",
+			"nom" : "La Cailletière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2294584",
+			"longitude" : "-1.5612923999999566",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/francois-bruneau/ target=blank>http://www.compostri.fr/compost/francois-bruneau/</a>",
+			"nom" : "François Bruneau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2062038",
+			"longitude" : "-1.515915199999995",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/domaine-de-saint-sebastien/ target=blank>http://www.compostri.fr/compost/domaine-de-saint-sebastien/</a>",
+			"nom" : "Domaine de Saint Sébastien",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.195843",
+			"longitude" : "-1.5227848",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/duguesclin/ target=blank>http://www.compostri.fr/compost/duguesclin/</a>",
+			"nom" : "Duguesclin",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2238039",
+			"longitude" : "-1.5382139",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/bois-saint-louis-2/ target=blank>http://www.compostri.fr/compost/bois-saint-louis-2/</a>",
+			"nom" : "Coulmiers",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2462956",
+			"longitude" : "-1.5791442",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/bois-saint-louis/ target=blank>http://www.compostri.fr/compost/bois-saint-louis/</a>",
+			"nom" : "Bois Saint louis",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2075803",
+			"longitude" : "-1.5419853",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/beaulieu/ target=blank>http://www.compostri.fr/compost/beaulieu/</a>",
+			"nom" : "Beaulieu",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.367328",
+			"longitude" : "-1.605229",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/vallon-de-lepinais-grandchamp-des-fontaines/ target=blank>http://www.compostri.fr/compost/vallon-de-lepinais-grandchamp-des-fontaines/</a>",
+			"nom" : "Vallon de l&rsquo;Epinais &#8211; Grandchamp des Fontaines",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2233177",
+			"longitude" : "-1.5496212000000469",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/sully/ target=blank>http://www.compostri.fr/compost/sully/</a>",
+			"nom" : "Sully",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.21587875284195",
+			"longitude" : "-1.5240184217691422",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/composteur-malakoff/ target=blank>http://www.compostri.fr/compost/composteur-malakoff/</a>",
+			"nom" : "Le Vore&rsquo;Koff &#8211; Composteur Ekovore à  Malakoff",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.22370328121724",
+			"longitude" : "-1.5659648180007935",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/hauts-paves-nantes/ target=blank>http://www.compostri.fr/compost/hauts-paves-nantes/</a>",
+			"nom" : "Hauts Pavés &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.231795",
+			"longitude" : "-1.552381700000069",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/square-felix-thomas/ target=blank>http://www.compostri.fr/compost/square-felix-thomas/</a>",
+			"nom" : "Square Félix Thomas",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.23409350000001",
+			"longitude" : "-1.5599150000000463",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-charles-lebourg-association-orrion-loquidy/ target=blank>http://www.compostri.fr/compost/ecole-charles-lebourg-association-orrion-loquidy/</a>",
+			"nom" : "Ecole Charles Lebourg &#8211; Association Orrion Loquidy",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2122336",
+			"longitude" : "-1.615248500000007",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-des-richolets-mdc-saint-herblain/ target=blank>http://www.compostri.fr/compost/jardin-des-richolets-mdc-saint-herblain/</a>",
+			"nom" : "Jardin des Richolets &#8211; MDC Saint Herblain",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2250486",
+			"longitude" : "-1.590999600000032",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-des-petits-debrouillards/ target=blank>http://www.compostri.fr/compost/jardin-des-petits-debrouillards/</a>",
+			"nom" : "Jardin des Petits Débrouillards",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1944575",
+			"longitude" : "-1.7239918000000216",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/cantine-scolaire-de-saint-jean-de-boiseau/ target=blank>http://www.compostri.fr/compost/cantine-scolaire-de-saint-jean-de-boiseau/</a>",
+			"nom" : "Cantine scolaire de Saint Jean de Boiseau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.218044308214694",
+			"longitude" : "-1.5543073033358696",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-familiaux-dindre/ target=blank>http://www.compostri.fr/compost/jardins-familiaux-dindre/</a>",
+			"nom" : "Jardins familiaux d&rsquo;Indre",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2386651",
+			"longitude" : "-1.605326200000036",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-des-noelles-les-thebaudieres/ target=blank>http://www.compostri.fr/compost/jardin-des-noelles-les-thebaudieres/</a>",
+			"nom" : "Jardin des Noëlles &#8211; Les Thébaudières",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1895914",
+			"longitude" : "-1.5480522000000292",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/venelles-les-forges-rue-henri-lamour/ target=blank>http://www.compostri.fr/compost/venelles-les-forges-rue-henri-lamour/</a>",
+			"nom" : "Venelles Les Forges &#8211; rue Henri Lamour",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2029721",
+			"longitude" : "-1.5483064000000013",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/atelier-alise-nantes/ target=blank>http://www.compostri.fr/compost/atelier-alise-nantes/</a>",
+			"nom" : "Atelier Alisé &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.19174169999999",
+			"longitude" : "-1.5294745999999575",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-crapaudine-2/ target=blank>http://www.compostri.fr/compost/la-crapaudine-2/</a>",
+			"nom" : "La Crapaudine",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2958809",
+			"longitude" : "-1.5501815999999735",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/square-savelli-la-chapelle-sur-erdre/ target=blank>http://www.compostri.fr/compost/square-savelli-la-chapelle-sur-erdre/</a>",
+			"nom" : "Square Savelli &#8211; La Chapelle sur Erdre",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2188038",
+			"longitude" : "-1.6096096999999645",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/centre-socio-culturel-soleil-levant/ target=blank>http://www.compostri.fr/compost/centre-socio-culturel-soleil-levant/</a>",
+			"nom" : "Centre Socio-Culturel Soleil Levant",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2052437",
+			"longitude" : "-1.5516660000000684",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/la-nizanerie/ target=blank>http://www.compostri.fr/compost/la-nizanerie/</a>",
+			"nom" : "La Nizanerie",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2030772",
+			"longitude" : "-1.552857700000004",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/aire-38/ target=blank>http://www.compostri.fr/compost/aire-38/</a>",
+			"nom" : "Aire 38",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.19479159999999",
+			"longitude" : "-1.5783106999999743",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/trentemoult/ target=blank>http://www.compostri.fr/compost/trentemoult/</a>",
+			"nom" : "Trentemoult",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2107653",
+			"longitude" : "-1.7304017000000158",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/square-anatole-france/ target=blank>http://www.compostri.fr/compost/square-anatole-france/</a>",
+			"nom" : "Square Anatole France",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.243517",
+			"longitude" : "-1.4828196999999363",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/soleil-rom-2/ target=blank>http://www.compostri.fr/compost/soleil-rom-2/</a>",
+			"nom" : "Soleil Rom",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2013867",
+			"longitude" : "-1.667682099999979",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/village-de-la-solidarite-association-romsi/ target=blank>http://www.compostri.fr/compost/village-de-la-solidarite-association-romsi/</a>",
+			"nom" : "Village de la solidarité &#8211; association ROMSI",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2364477",
+			"longitude" : "-1.5258174000000508",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/parc-du-croissant/ target=blank>http://www.compostri.fr/compost/parc-du-croissant/</a>",
+			"nom" : "Parc du Croissant",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.22608959999999",
+			"longitude" : "-1.52228869999999",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/parc-broussais/ target=blank>http://www.compostri.fr/compost/parc-broussais/</a>",
+			"nom" : "Parc Broussais",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2987616",
+			"longitude" : "-1.550350500000036",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/maison-de-la-solidarite/ target=blank>http://www.compostri.fr/compost/maison-de-la-solidarite/</a>",
+			"nom" : "Maison de la solidarité",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1914003",
+			"longitude" : "-1.5675257000000329",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-saint-lupien/ target=blank>http://www.compostri.fr/compost/jardin-saint-lupien/</a>",
+			"nom" : "Jardin Saint Lupien",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2286863",
+			"longitude" : "-1.605263100000002",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-du-tillay-2/ target=blank>http://www.compostri.fr/compost/jardins-du-tillay-2/</a>",
+			"nom" : "Jardins du Tillay",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.196548",
+			"longitude" : "-1.5537699000000202",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/haute-ile/ target=blank>http://www.compostri.fr/compost/haute-ile/</a>",
+			"nom" : "Haute Île",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1896552",
+			"longitude" : "-1.5641083000000435",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/fjt-grand-voile/ target=blank>http://www.compostri.fr/compost/fjt-grand-voile/</a>",
+			"nom" : "FJT Grand Voile",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.191435",
+			"longitude" : "-1.5584036000000197",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/centre-socio-culturel-maison-du-port-au-ble/ target=blank>http://www.compostri.fr/compost/centre-socio-culturel-maison-du-port-au-ble/</a>",
+			"nom" : "Centre Socio-culturel &#8211; maison du Port au Blé",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2147054",
+			"longitude" : "-1.6825397000000066",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/centre-socio-culturel-henri-normand/ target=blank>http://www.compostri.fr/compost/centre-socio-culturel-henri-normand/</a>",
+			"nom" : "Centre Socio-culturel Henri Normand",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2820923",
+			"longitude" : "-1.5198500000000197",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante-2/ target=blank>http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante-2/</a>",
+			"nom" : "Ecole des mines-résidence étudiante",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1942128",
+			"longitude" : "-1.5290968",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/clos-toreau/ target=blank>http://www.compostri.fr/compost/clos-toreau/</a>",
+			"nom" : "Clos Toreau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1833364",
+			"longitude" : "-1.5828842",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/clos-saint-julien/ target=blank>http://www.compostri.fr/compost/clos-saint-julien/</a>",
+			"nom" : "Clos Saint Julien",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.19074",
+			"longitude" : "-1.541113",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/barbonnerie-pont-rousseau/ target=blank>http://www.compostri.fr/compost/barbonnerie-pont-rousseau/</a>",
+			"nom" : "Barbonnerie &#8211; Pont Rousseau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2004919",
+			"longitude" : "-1.7552545",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/atelier-du-retz-emploi/ target=blank>http://www.compostri.fr/compost/atelier-du-retz-emploi/</a>",
+			"nom" : "Atelier du Retz emploi",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2261039",
+			"longitude" : "-1.5595348",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-de-ladda-2/ target=blank>http://www.compostri.fr/compost/jardins-de-ladda-2/</a>",
+			"nom" : "Jardins de l&rsquo;ADDA",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.327306",
+			"longitude" : "-1.62421",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/composteur-de-lecole-alexandre-vincent-treillieres/ target=blank>http://www.compostri.fr/compost/composteur-de-lecole-alexandre-vincent-treillieres/</a>",
+			"nom" : "Composteur de l&rsquo;Ecole Alexandre Vincent &#8211; Treillières",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.326765",
+			"longitude" : "-1.624253",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-joseph-fraud-treillieres/ target=blank>http://www.compostri.fr/compost/ecole-joseph-fraud-treillieres/</a>",
+			"nom" : "Ecole Joseph Fraud &#8211; Treillières",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.24497119999999",
+			"longitude" : "-1.5918082000000595",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/composteur-de-la-cuisine/ target=blank>http://www.compostri.fr/compost/composteur-de-la-cuisine/</a>",
+			"nom" : "Composteur de la cuisine",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2060795",
+			"longitude" : "-1.6167874999999867",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-et-elementaire-de-la-bernardiere-saint-herblain/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-et-elementaire-de-la-bernardiere-saint-herblain/</a>",
+			"nom" : "Ecole maternelle et élémentaire de la Bernardière &#8211; Saint Herblain",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2176808",
+			"longitude" : "-1.6978372999999465",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-de-la-metairie-coueron/ target=blank>http://www.compostri.fr/compost/ecole-de-la-metairie-coueron/</a>",
+			"nom" : "Ecole de la Métairie &#8211; Couëron",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2209261",
+			"longitude" : "-1.623419799999965",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/fjt-oceane/ target=blank>http://www.compostri.fr/compost/fjt-oceane/</a>",
+			"nom" : "FJT Oceane",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1944575",
+			"longitude" : "-1.7239918000000216",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-de-st-jean-boiseau/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-de-st-jean-boiseau/</a>",
+			"nom" : "Ecole élémentaire de St Jean Boiseau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.206027",
+			"longitude" : "-1.502573",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/maison-de-la-petite-enfance-saint-sebastien-sur-loire/ target=blank>http://www.compostri.fr/compost/maison-de-la-petite-enfance-saint-sebastien-sur-loire/</a>",
+			"nom" : "Maison de la petite enfance &#8211; Saint Sébastien sur Loire",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2520908",
+			"longitude" : "-1.5519953000000442",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/lycee-arago/ target=blank>http://www.compostri.fr/compost/lycee-arago/</a>",
+			"nom" : "Lycée Arago",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2581012",
+			"longitude" : "-1.505484000000024",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-et-elementaire-batignolle/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-et-elementaire-batignolle/</a>",
+			"nom" : "Ecole maternelle et élémentaire Batignolle",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1894099",
+			"longitude" : "-1.5551677999999356",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-port-au-ble/ target=blank>http://www.compostri.fr/compost/ecole-port-au-ble/</a>",
+			"nom" : "Ecole Port au Blé",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2348574",
+			"longitude" : "-1.5844406999999592",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-des-plantes/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-des-plantes/</a>",
+			"nom" : "Ecole élémentaire des Plantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2671419",
+			"longitude" : "-1.527642300000025",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-le-linot-primaire/ target=blank>http://www.compostri.fr/compost/ecole-le-linot-primaire/</a>",
+			"nom" : "Ecole Le Linot primaire",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2671419",
+			"longitude" : "-1.527642300000025",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-le-linot-maternelle/ target=blank>http://www.compostri.fr/compost/ecole-le-linot-maternelle/</a>",
+			"nom" : "Ecole Le Linot maternelle",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.19511929999999",
+			"longitude" : "-1.6490022000000408",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-la-pierre-mara/ target=blank>http://www.compostri.fr/compost/ecole-la-pierre-mara/</a>",
+			"nom" : "Ecole La Pierre Mara",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2013867",
+			"longitude" : "-1.667682099999979",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-jules-ferry/ target=blank>http://www.compostri.fr/compost/ecole-jules-ferry/</a>",
+			"nom" : "Ecole Jules Ferry",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.228517",
+			"longitude" : "-1.58368710000002",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-jacques-prevert/ target=blank>http://www.compostri.fr/compost/ecole-jacques-prevert/</a>",
+			"nom" : "Ecole Jacques Prévert",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1867428",
+			"longitude" : "-1.5003326999999445",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-henri-lesage/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-henri-lesage/</a>",
+			"nom" : "Ecole élémentaire Henri Lesage",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2283069",
+			"longitude" : "-1.59183280000002",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-grand-carcouet/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-grand-carcouet/</a>",
+			"nom" : "Ecole élémentaire Grand Carcouet",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.259121",
+			"longitude" : "-1.5683728",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-georges-sand/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-georges-sand/</a>",
+			"nom" : "Ecole élémentaire Georges Sand",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.259121",
+			"longitude" : "-1.5683728",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-george-brassens/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-george-brassens/</a>",
+			"nom" : "Ecole maternelle George Brassens",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2276462",
+			"longitude" : "-1.5208594",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-gay-lussac/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-gay-lussac/</a>",
+			"nom" : "Ecole élémentaire Gay Lussac",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.202061",
+			"longitude" : "-1.5785184",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-des-garennes/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-des-garennes/</a>",
+			"nom" : "Ecole élémentaire des Garennes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2334278",
+			"longitude" : "-1.5334281",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-francois-dallet/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-francois-dallet/</a>",
+			"nom" : "Ecole élémentaire François Dallet",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.205135",
+			"longitude" : "-1.5928257",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-fonteny/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-fonteny/</a>",
+			"nom" : "Ecole maternelle Fonteny",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2314089",
+			"longitude" : "-1.5543489",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-fellonneau/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-fellonneau/</a>",
+			"nom" : "Ecole maternelle Fellonneau",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2192366",
+			"longitude" : "-1.602329",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-diwan/ target=blank>http://www.compostri.fr/compost/ecole-diwan/</a>",
+			"nom" : "Ecole Diwan",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2270726",
+			"longitude" : "-1.5976218",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-maternelle-dervallieres-chezine/ target=blank>http://www.compostri.fr/compost/ecole-maternelle-dervallieres-chezine/</a>",
+			"nom" : "Ecole maternelle Dervallières-Chézine",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2150664",
+			"longitude" : "-1.6010558",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-de-la-contrie/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-de-la-contrie/</a>",
+			"nom" : "Ecole élémentaire de la Contrie",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2123968",
+			"longitude" : "-1.561360499999978",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-chene-daron/ target=blank>http://www.compostri.fr/compost/ecole-chene-daron/</a>",
+			"nom" : "Ecole Chêne-d&rsquo;Aron",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.252645",
+			"longitude" : "-1.574578400000064",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-de-la-chauviniere/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-de-la-chauviniere/</a>",
+			"nom" : "Ecole élémentaire de la Chauvinière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2204186",
+			"longitude" : "-1.6001197000000502",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-elementaire-des-chataigniers/ target=blank>http://www.compostri.fr/compost/ecole-elementaire-des-chataigniers/</a>",
+			"nom" : "Ecole élémentaire des Chataîgniers",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.237928",
+			"longitude" : "-1.522485999999958",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-de-la-bottiere/ target=blank>http://www.compostri.fr/compost/ecole-de-la-bottiere/</a>",
+			"nom" : "Ecole de la Bottière",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.20165739999999",
+			"longitude" : "-1.5861475000000382",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-alphonse-braud/ target=blank>http://www.compostri.fr/compost/ecole-alphonse-braud/</a>",
+			"nom" : "Ecole Alphonse Braud",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2175466",
+			"longitude" : "-1.5192799999999806",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-ange-guepin/ target=blank>http://www.compostri.fr/compost/ecole-ange-guepin/</a>",
+			"nom" : "Ecole Ange Guépin",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2040719",
+			"longitude" : "-1.600138799999968",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-alain-fournier/ target=blank>http://www.compostri.fr/compost/ecole-alain-fournier/</a>",
+			"nom" : "Ecole Alain Fournier",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2026472",
+			"longitude" : "-1.5410670999999638",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-anatole-de-monzie-primaire/ target=blank>http://www.compostri.fr/compost/ecole-anatole-de-monzie-primaire/</a>",
+			"nom" : "Ecole  Anatole de Monzie (primaire)",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2826719",
+			"longitude" : "-1.4835963000000447",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/college-gerard-philippe/ target=blank>http://www.compostri.fr/compost/college-gerard-philippe/</a>",
+			"nom" : "College Gerard Philippe",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.22388179666477",
+			"longitude" : "-1.5197181701660156",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-des-garettes-orvault/ target=blank>http://www.compostri.fr/compost/jardin-des-garettes-orvault/</a>",
+			"nom" : "Jardin des Garettes &#8211; Orvault",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.218044308214694",
+			"longitude" : "-1.5543073033358696",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-vertavie-vertou/ target=blank>http://www.compostri.fr/compost/jardins-vertavie-vertou/</a>",
+			"nom" : "Jardins Verta&rsquo;vie &#8211; Vertou",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2746184",
+			"longitude" : "-1.4294688999999607",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-famibio/ target=blank>http://www.compostri.fr/compost/jardins-famibio/</a>",
+			"nom" : "Jardins Famibio",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.21939322581723",
+			"longitude" : "-1.6016650199890137",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-familiaux-de-la-contrie/ target=blank>http://www.compostri.fr/compost/jardins-familiaux-de-la-contrie/</a>",
+			"nom" : "Jardins familiaux de la Contrie",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1949368",
+			"longitude" : "-1.5401457",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardin-les-escartons-nantes/ target=blank>http://www.compostri.fr/compost/jardin-les-escartons-nantes/</a>",
+			"nom" : "Jardin les Escartons &#8211; Nantes",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.243517",
+			"longitude" : "-1.4828197",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/soleil-rom/ target=blank>http://www.compostri.fr/compost/soleil-rom/</a>",
+			"nom" : "Soleil Rom",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2228968",
+			"longitude" : "-1.5254817",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/malakoff-ideelles/ target=blank>http://www.compostri.fr/compost/malakoff-ideelles/</a>",
+			"nom" : "Malakoff-Idéelles",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2286863",
+			"longitude" : "-1.605263100000002",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-du-tillay/ target=blank>http://www.compostri.fr/compost/jardins-du-tillay/</a>",
+			"nom" : "Jardins du Tillay",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.2261039",
+			"longitude" : "-1.5595348",
+			"type" : "Composteur collectif sur des jardins collectifs",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/jardins-de-ladda/ target=blank>http://www.compostri.fr/compost/jardins-de-ladda/</a>",
+			"nom" : "Jardins de l&rsquo;ADDA",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.1926906",
+			"longitude" : "-1.5326734999999871",
+			"type" : "Composteur collectif Pédagogique en établissement scolaire",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/creche-brin-de-malice/ target=blank>http://www.compostri.fr/compost/creche-brin-de-malice/</a>",
+			"nom" : "Crèche brin de malice",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.282315",
+			"longitude" : "-1.520555",
+			"type" : "Composteur collectif en résidence - copropriété",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante/ target=blank>http://www.compostri.fr/compost/ecole-des-mines-residence-etudiante/</a>",
+			"nom" : "Ecole des mines-résidence étudiante",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {
+			"code" : "comp0",
+			"latitude" : "47.124134",
+			"longitude" : "-1.630217",
+			"type" : "Composteur collectif ouvert au quartier",
+			"type_en" : "Collective composter",
+			"descr" : "voir page <a href=http://www.compostri.fr/compost/moulin-des-rives-saint-aignan-de-grandlieu/ target=blank>http://www.compostri.fr/compost/moulin-des-rives-saint-aignan-de-grandlieu/</a>",
+			"nom" : "Moulin des Rives &#8211; Saint Aignan de Grandlieu",
+			"modesCollecte" : "modco_compostage",
+			"src" : "Compostri - www.compostri.fr/carte"
+		}, {}]

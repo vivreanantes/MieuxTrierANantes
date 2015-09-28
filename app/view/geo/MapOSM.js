@@ -40,6 +40,7 @@ Ext.define('MieuxTrierANantes.view.geo.MapOSM', {
 			idDecheterie : 'modco_decheterie',
 			idReemploi : 'smco_reemp',
 			idConteneur : 'modco_conteneur',
+			idComposteur : 'modco_composteur',
 			idVentevrac : 'ventevrac',
 			// Texte dans la couche contrôle de la couche 'zoneLimitee'
 			labelZone5Kms : "Zone diam 2 km",

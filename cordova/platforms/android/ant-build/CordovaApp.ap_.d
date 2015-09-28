@@ -63,6 +63,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icon-spot~ipad.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon@2x.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon@2x_old.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icones_trisacs.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icone_camion_poubelle.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icone_dechets.png \
@@ -70,6 +71,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icone_livre.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon_Android36.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon_Android48.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon_old.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon~ipad.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon~ipad@2x.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\info.png \
@@ -78,6 +80,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-cible.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-blue.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-brown.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-brown2.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-green.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-pink.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\marker-icon-red.png \
@@ -835,6 +838,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\fixateur_photo_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\fongicide_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\huile_minerale_mini.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\huile_vegetale_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\huile_vidange_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\liquide_refroidissement_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres_temp\litiere_mini.png \

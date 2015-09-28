@@ -136,7 +136,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				load : function(self, records) {
 					var i = 28;
 					// var j = records[0];
-					// On valorise le contenu de la zone actualité UNIQUEMENT si on a pu récupérée le record.
+					// On valorise le contenu de la zone actualité UNIQUEMENT si
+					// on a pu récupérée le record.
 					if (typeof records[0] != 'undefined') {
 						var nom1 = records[0].getData()["nom1"];
 						var nom2 = records[0].getData()["nom2"];
@@ -149,8 +150,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 								+ "</a><br/><a href='#' id='news2'>"
 								+ nom2
 								+ "</a><br/><a href='#' id='news3'>"
-								+ nom3
-								+ "</a></p>"
+								+ nom3 + "</a></p>"
 						thisControler.getHomeZone3_1().setHtml(html);
 					}
 				}
@@ -243,7 +243,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					message : desc,
 					height : 400,
 					width : 300,
-					scrollable : true,
+					// Ceci pose un pb sous IE
+					// scrollable : true,
 					buttons : Ext.Msg.OK,
 					icon : Ext.Msg.INFO
 				});
@@ -280,10 +281,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (e.target.name == "flag") {
 			// Si pas défini ou si francais on met anglais, sinon on met en
 			// francais.
-			
+
 			var mainView = this.getMainView();
 			// mainView.items.items[2].setTitle();
-			
+
 			if (typeof stGlobalLocale == 'undefined') {
 				stGlobalLocale = "fr";
 			}
@@ -297,23 +298,34 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				document.getElementById("flag-gb").style.display = 'none';
 			}
 			var homeContainer = this.getHome().items.items[0].items.items[1];
-			homeContainer.items.items[0].items.items[0].setHtml(this.translate("label_tpl_aider"));
-			homeContainer.items.items[2].items.items[1].setPlaceHolder(this.translate("label_global_button_placeholder"));
-			mainView.getTabBar().items.items[1].setText(this.translateWithUpperFirstLetter("label_dechets"));
-			mainView.getTabBar().items.items[2].setText(this.translateWithUpperFirstLetter("label_carte"));
-			mainView.getTabBar().items.items[3].setText(this.translateWithUpperFirstLetter("label_fiches"));
-			mainView.getTabBar().items.items[4].setText(this.translateWithUpperFirstLetter("label_lieux"));
-			mainView.getTabBar().items.items[5].setText(this.translateWithUpperFirstLetter("label_a_domicile"));
-			mainView.getTabBar().items.items[6].setText(this.translateWithUpperFirstLetter("label_trisac"));
+			homeContainer.items.items[0].items.items[0].setHtml(this
+					.translate("label_tpl_aider"));
+			homeContainer.items.items[2].items.items[1].setPlaceHolder(this
+					.translate("label_global_button_placeholder"));
+			mainView.getTabBar().items.items[1].setText(this
+					.translateWithUpperFirstLetter("label_dechets"));
+			mainView.getTabBar().items.items[2].setText(this
+					.translateWithUpperFirstLetter("label_carte"));
+			mainView.getTabBar().items.items[3].setText(this
+					.translateWithUpperFirstLetter("label_fiches"));
+			mainView.getTabBar().items.items[4].setText(this
+					.translateWithUpperFirstLetter("label_lieux"));
+			mainView.getTabBar().items.items[5].setText(this
+					.translateWithUpperFirstLetter("label_a_domicile"));
+			mainView.getTabBar().items.items[6].setText(this
+					.translateWithUpperFirstLetter("label_trisac"));
 			// TODO ceci ne fonctionne pas traduction boutons
-			homeContainer.items.items[5].items.items[0].setTpl(this.translate("label_home_button_0"));
-			homeContainer.items.items[5].items.items[1].setTpl(this.translate("label_home_button_1"));
-			homeContainer.items.items[5].items.items[2].setTpl(this.translate("label_home_button_2"));
-			homeContainer.items.items[5].items.items[3].setTpl(this.translate("label_home_button_3"));
+			homeContainer.items.items[5].items.items[0].setTpl(this
+					.translate("label_home_button_0"));
+			homeContainer.items.items[5].items.items[1].setTpl(this
+					.translate("label_home_button_1"));
+			homeContainer.items.items[5].items.items[2].setTpl(this
+					.translate("label_home_button_2"));
+			homeContainer.items.items[5].items.items[3].setTpl(this
+					.translate("label_home_button_3"));
 
-			
 		} else {
-			
+
 			var description = _labelsDatas["about"][stGlobalLocale];
 			var nom = _labelsDatas["about_titre"]["fr"];
 			Ext.Msg.show({
@@ -321,7 +333,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 						message : description,
 						height : 400,
 						width : 300,
-						scrollable : true,
+						// Ceci pose un pb sous IE
+						// scrollable : true,
 						buttons : Ext.Msg.OK,
 						icon : Ext.Msg.INFO
 					});
@@ -378,8 +391,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		if (locale == "en") {
 			temp = "_en";
 		}
-		this.getHomeGlobalSearchList().setItemTpl( "<img src='resources/images/{image}' height='40px' align='left' />&nbsp;<i>{type"
-				+ temp + "}</i>&nbsp;<strong>{nom" + temp + "}</strong>");
+		this
+				.getHomeGlobalSearchList()
+				.setItemTpl("<img src='resources/images/{image}' height='40px' align='left' />&nbsp;<i>{type"
+						+ temp
+						+ "}</i>&nbsp;<strong>{nom"
+						+ temp
+						+ "}</strong>");
 
 		this.getHome().push(this.globalSearchResult);
 
@@ -392,16 +410,19 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas, _garbagesDatas,
-				texteNoAccents, locale, "garbages");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas, _infosDatas, texteNoAccents, locale, "fiches");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas, texteNoAccents, locale, "docs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas, _structures1Datas,
-				texteNoAccents, locale, "structures");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas, _structures1Datas,
-				texteNoAccents, locale, "trisacs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas, _homeCollectModsDatas,
-				texteNoAccents, locale, "homecollectmods");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
+				_garbagesDatas, texteNoAccents, locale, "garbages");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
+				_infosDatas, texteNoAccents, locale, "fiches");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas,
+				texteNoAccents, locale, "docs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas,
+				_structures1Datas, texteNoAccents, locale, "structures");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
+				_structures1Datas, texteNoAccents, locale, "trisacs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+				_homeCollectModsDatas, texteNoAccents, locale,
+				"homecollectmods");
 
 		// utilPushArray(_garbagesDatas, tempo);
 		// utilPushArray(_infosDatas, tempo);
@@ -427,16 +448,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onShowGlobalSearchResultList : function() {
 		this.updateTextTranslated();
 	},
-	
+
 	updateTextTranslated : function() {
-				// Crée la page si elle n'existe pas encore
+		// Crée la page si elle n'existe pas encore
 		if (this.globalSearchResult == null) {
 			this.globalSearchResult = Ext
 					.create("MieuxTrierANantes.view.home.GlobalSearchResult");
 		}
 		this.globalSearchResult.setTitle(this.translate("label_results"));
 	},
-
 
 	clickSettingsFormButton : function(button, e) {
 		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
@@ -563,7 +583,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					height : 280,
 					width : 200,
 					minWidth : 200,
-					scrollable : true,
+					// Ceci pose un pb sous IE
+					// scrollable : true,
 					buttons : Ext.Msg.OK,
 					icon : Ext.Msg.INFO
 				});

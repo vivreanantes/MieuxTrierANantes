@@ -217,7 +217,11 @@ function _gestionLien(e) {
 			}
 			// navigator.app.loadUrl(url, {openExternal: true});
 		} else if (protocole == "fich") {
+			e.stopPropagation();
+			e.preventDefault();
+			e.stopEvent();
 			_detailleFiche(complement, 300, 400, false);
+			return false;
 		} else if (protocole == "lieu") {
 			_detailleLieu(complement, 300, 400, false);
 		} else if (protocole == "lalo") {
@@ -301,6 +305,7 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,
+				// TODO : Ceci pose un pb sous IE
 				scrollable : true,
 				buttons : Ext.Msg.OK,
 				icon : Ext.Msg.INFO,
@@ -330,6 +335,7 @@ function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,
+				// TODO : Ceci pose un pb sous IE
 				scrollable : true,
 				buttons : Ext.Msg.OK,
 				icon : Ext.Msg.INFO,
@@ -411,6 +417,10 @@ function getRecordValue(record, key) {
 		result = record[enKey];
 	} else {
 		result = record[key];
+	}
+	// Si la clé n'existe pas, on renvoie chaine vide et non null
+	if (result==null) {
+		result = "";
 	}
 	// }
 	return result;

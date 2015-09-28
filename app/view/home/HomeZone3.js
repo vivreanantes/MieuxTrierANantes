@@ -13,7 +13,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone3', {
 		items : [{
 					id : "homeZone3_1",
 					html : "Pas d'actualités (connexion internet KO ?)",
-					width : '300px',
+					// width : '300px',
 					styleHtmlContent : true,
 					listeners : {
 						element : 'element',

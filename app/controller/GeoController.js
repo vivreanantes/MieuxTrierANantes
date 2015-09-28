@@ -25,7 +25,6 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	 */
 	onMapActivate : function(container, newc) {
 
-	
 	},
 
 	/**
@@ -93,6 +92,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			iconurl : 'resources/icons/marker-icon-pink.png',
 			label : '<img style="width:10%" src="resources/icons/marker-icon-pink.png"> Déchèterie / Ecopoint'
 		};
+		this.mapOsm.layermapping[this.mapOsm.idComposteur] = {
+			name : 'Composteur',
+			iconurl : 'resources/icons/marker-icon-brown2.png',
+			label : '<img style="width:10%" src="resources/icons/marker-icon-brown2.png"> Composteur collectif'
+		};
 		this.mapOsm.layermapping[this.mapOsm.idConteneur] = {
 			name : 'Conteneur',
 			iconurl : 'resources/icons/marker-icon-brown.png',
@@ -151,9 +155,7 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 				|| record.get('longitude') == null) {
 			console
 					.log('LEAFLET : Paramètres manquants pour ajouter la structure à la carte - '
-							+ record.get('type')
-							+ " - "
-							+ record.get('nom'));
+							+ record.get('type') + " - " + record.get('nom'));
 			afficheStructure = false;
 		}
 
@@ -176,8 +178,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			// Pour simplifier on convertit les modes de collecte
 			// (",modco_contembjournmag..."), idem pour écopoints en
 			// déchèterie
-			if (modesCollecte.substring(0, 10) == ',modco_con') {
+			if (modesCollecte.substring(0, 10) == ",modco_con") {
 				modesCollecte = this.mapOsm.idConteneur;
+			}
+			if (modesCollecte == "modco_compostage") {
+				modesCollecte = this.mapOsm.idComposteur;
 			}
 			if (modesCollecte == 'modco_ecopoint') {
 				modesCollecte = this.mapOsm.idDecheterie;
@@ -188,7 +193,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 					&& modesCollecte != this.mapOsm.idDecheterie
 					&& modesCollecte != this.mapOsm.idReemploi
 					&& modesCollecte != this.mapOsm.idConteneur
-					&& modesCollecte != this.mapOsm.idVentevrac) {
+					&& modesCollecte != this.mapOsm.idVentevrac
+					&& modesCollecte != this.mapOsm.idComposteur) {
 				afficheStructure = false;
 			}
 
@@ -198,14 +204,15 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 
 			popuptext = '';
 
-			if (record.get('type') != null && record.get('type') != '') {
-				popuptext = popuptext + '<b>' + record.get('type')
-						+ '</b><br/>';
+			var type = this.getRecordValue(record.data, "type");
+			if (type != '') {
+				popuptext = popuptext + '<b>' + type + '</b><br/>';
 				// popuptext = popuptext + '<a href="#"
 				// onclick="Javascript:Ext.Msg.alert(\"Error\",\"gg\");">rr</a>';
 			}
-			if (record.get('nom') != null && record.get('nom') != '') {
-				popuptext = popuptext + record.get('nom') + '<br/>';
+			var nom = this.getRecordValue(record.data, "nom");
+			if (nom != '') {
+				popuptext = popuptext + nom + '<br/>';
 			}
 
 			if (record.get('adresseTemp') != null) {
@@ -213,23 +220,27 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			}
 			if (record.get('plagesHoraires') != null) {
 				this.getAttributsPlagesHoraires(record, "fr");
-				if (record.get('plagesHoraires_prochainsJours')!=" ") {
-					popuptext = popuptext + record.get('plagesHoraires_prochainsJours')+"<br/>";
+				var plagesHoraires_prochainsJours = this.getRecordValue(
+						record.data, "plagesHoraires_prochainsJours");
+				if (plagesHoraires_prochainsJours != '') {
+					popuptext = popuptext + plagesHoraires_prochainsJours
+							+ "<br/>";
 				}
 			}
-			
+
 			if (record.get('src') != null) {
 				popuptext = popuptext + "<i><font color=red>"
-						+ record.get('src') + "</font></i><br/>"
+						+ this.translateWithUpperFirstLetter("label_source")
+						+ " : " + record.get('src') + "</font></i><br/>"
 
 			}
-			
 
-			
-			/*url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + latitude +  "," + longitude;
-			popuptext = popuptext+ "<a href='"+url+"' target=_blank>Y aller</a><br/>";
-			// popuptext = popuptext + "<a href='" + _getUrlYAller(latitude +
-			// "," + longitude) + "' target=_blank>y aller</a><br/>"; +"<br/>";
+			/*
+			 * url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + latitude + "," +
+			 * longitude; popuptext = popuptext+ "<a href='"+url+"'
+			 * target=_blank>Y aller</a><br/>"; // popuptext = popuptext + "<a
+			 * href='" + _getUrlYAller(latitude + // "," + longitude) + "'
+			 * target=_blank>y aller</a><br/>"; +"<br/>";
 			 */
 			// Le détail du mode de collecte
 			if (record.get('modesCollecte') != null) {
@@ -282,11 +293,10 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			for (j in _collectModsDatas) {
 				for (i in arModCo) {
 					if (_collectModsDatas[j]["code"] === arModCo[i]) {
-						if (_collectModsDatas[j]["admis"] != null
-								&& _collectModsDatas[j]["admis"] != "") {
-							// lien vers une fiche
-							result = result + ","
-									+ _collectModsDatas[j]["admis"];
+						var admis = this.getRecordValue(_collectModsDatas[j],
+								"admis");
+						if (admis != '') {
+							result = result + "," + admis;
 						}
 					}
 				}
@@ -360,11 +370,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	 * 
 	 */
 	onShowMapOSM : function() {
-		
+
 		this.mapOsm = this.getMapOSM();
 
 		this.initialiseCarte();
-		
+
 		if (!Ext.isDefined(this.lmap)) {
 
 			// INIT MAX BOUNDS (Nantes et agglo)
@@ -435,12 +445,9 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 
 		}
 
-
-
 		if (!Ext.isDefined(this.structureGeoStore)) {
 			this.loadStructures();
 		};
-
 
 	},
 

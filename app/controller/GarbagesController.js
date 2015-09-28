@@ -181,6 +181,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	garbageViewUpdateTextTranslated : function() {
 		this.getGarbagesFormText().setLabel(this
 				.translateWithUpperFirstLetter("label_dechet"));
+		this.getGarbagesButtonsPanel().setTitle("fff");
 	},
 	
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
@@ -280,7 +281,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 								message : descr,
 								height : 400,
 								width : 300,
-								scrollable : true,
+								// Ceci pose un pb sous IE
+								// scrollable : true,
 								buttons : Ext.Msg.OK,
 								icon : Ext.Msg.INFO,
 								listeners : {
