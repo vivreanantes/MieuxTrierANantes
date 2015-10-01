@@ -17,7 +17,7 @@ Ext.define('MieuxTrierANantes.view.trisac.Trisacs', {
 						xtype : 'button',
 						// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
 						icon : 'resources/icons/home_mini.png',
-						// ui: 'round', // bouton arrondi
+						ui: 'round', // bouton arrondi
 						align : 'right',
 						id : 'trisacshomebutton'
 					}],

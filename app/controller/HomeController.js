@@ -466,19 +466,21 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					this.getHomeGlobalSearchList().setStore(store);
 				}
 
-				this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
+				this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas,
 						_garbagesDatas, texteNoAccents, locale, "garbages");
-				this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
-						_infosDatas, texteNoAccents, locale, "fiches");
-				this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas,
-						_docsDatas, texteNoAccents, locale, "docs");
+				this.ajouteDatasSelonHash(tempo, _hashFichesDatas, _infosDatas,
+						texteNoAccents, locale, "fiches");
+				this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas,
+						texteNoAccents, locale, "docs");
+				this.ajouteDatasSelonHash(tempo, _hashQuizDatas, _quizsDatas,
+						texteNoAccents, locale, "quiz");
 				this
-						.ajouteDatasSelonFiltreSurHash(tempo,
-								_hashStructuresDatas, _structures1Datas,
-								texteNoAccents, locale, "structures");
-				this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
+						.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
+								_structures1Datas, texteNoAccents, locale,
+								"structures");
+				this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas,
 						_structures1Datas, texteNoAccents, locale, "trisacs");
-				this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+				this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 						_homeCollectModsDatas, texteNoAccents, locale,
 						"homecollectmods");
 			}
@@ -642,9 +644,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
-		if (record.data["type"] == "Quiz") {
-			this.showQuiz(record.data["code"]);
-		} else {
+		if (record.data["page"] == "quiz") {
+			this.showQuiz(record.data["id"]);
+		}
+		else {
 			this.showActiveItemInPage(record.data["page"], record.data["code"]);
 		}
 	},

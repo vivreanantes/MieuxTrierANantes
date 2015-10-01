@@ -306,7 +306,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		var texteSansAccents = _utilRetireAccentEtMinuscule(value);
 		var tempo = [];
 		var locale = this.getLocale();
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+		this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 				_homeCollectModsDatas, texteSansAccents, locale,
 				"homecollectmods");
 		var store = this.getHomeCollectModsList().getStore();

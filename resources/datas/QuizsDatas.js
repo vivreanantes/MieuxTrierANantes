@@ -1,8 +1,11 @@
 var _quizsDatas = [
 // var _quizsDatas =
 		{
+	code : 'quiz_janvier',
+	id : '0',
 	nom : "Quiz spécial janvier (5 questions)",
-	type : "Quiz",
+	type : "quiz",
+	page : "quiz",
 	mots_cles : "quiz,noel",
 	descr : "Tester vos connaissances sur le tri sur Nantes Métropole. Une seule réponse par question.",
 	image : "quiz/issiontrix-quiz-1.png",
@@ -40,8 +43,11 @@ var _quizsDatas = [
 	q5i1 : "resources/images/quiz/bouchon-1.png",
 	q5e1 : "Pour les bouchons en liège (qui ne se recyclent pas) c'est l'association 'Action Cancer 44' qui les récupèrent."
 }, {
+	code : 'quiz_hellfest',
+	id : '1',
 	nom : "Quiz Hellfest",
-	type : "Quiz",
+	type : "quiz",
+	page : "quiz",
 	mots_cles : "quiz,hellfest",
 	descr : "Quiz spécial métal et bière pour Hellfest. Une seule réponse par question.",
 	image : "quiz/issiontrix_hellfest.png",
@@ -125,6 +131,4 @@ var _quizsDatas = [
 	q5i1 : "resources/images/quiz/",
 	q5e1 : "",
 	q5ok : ""
-},
-// };
-		{}];
+}];
