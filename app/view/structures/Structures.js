@@ -17,8 +17,9 @@ Ext.define('MieuxTrierANantes.view.structures.Structures', {
 				navigationBar : {
 					items : [{
 								xtype : 'button',
-								iconCls : 'home',
-								// ui : 'round', // bouton arrondi
+								// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
+								icon : 'resources/icons/home_mini.png',
+								ui : 'round', // bouton arrondi
 								align : 'right',
 								id : 'structurehomebutton'
 							}],

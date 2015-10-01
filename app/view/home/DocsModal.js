@@ -16,8 +16,9 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 										flex : 1
 									}, {
 										xtype : 'button',
-										iconCls : 'home',
-										// ui : 'round', // bouton arrondi
+										// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
+										icon : 'resources/icons/home_mini.png',
+										ui : 'round', // bouton arrondi
 										align : 'right',
 										id : 'docshomebutton',
 										disabled : false,

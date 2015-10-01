@@ -7,6 +7,8 @@ Ext.define('MieuxTrierANantes.view.Main', {
 	// requires : ['Ext.TitleBar'],
 	config : {
 		tabBarPosition : 'bottom',
+		// test IE 20150930
+		height:'100%',
 		items : [
 		
 			/*{
@@ -62,7 +64,6 @@ Ext.define('MieuxTrierANantes.view.Main', {
 			xtype : 'structuresview_xtype'
 		}, {
 			title : 'A domicile',
-			// iconCls : 'home',
 			iconCls : 'homecollectclass', // icône en forme de camion
 			xtype : 'homecollectmods_xtype'
 		}, {

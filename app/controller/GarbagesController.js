@@ -48,7 +48,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				push : 'onGarbagesViewPush',
 				// onActivate : 'onActivate',
 				onShow : 'onShow',
-				activate : 'onActivate',
+				activate : 'onActivateGarbagesView',
 				back : 'onPushBackButton1'
 			},
 
@@ -170,28 +170,32 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	},
 
 	onShow : function(newActiveItem, container, oldActiveItem, eOpts) {
-		this.garbageViewUpdateTextTranslated();
+		// this.garbageViewUpdateTextTranslated();
 	},
 
-	
-	
 	/**
 	 * Réalise les traduction de la page formulaire/liste
 	 */
 	garbageViewUpdateTextTranslated : function() {
 		this.getGarbagesFormText().setLabel(this
 				.translateWithUpperFirstLetter("label_dechet"));
-		this.getGarbagesButtonsPanel().setTitle("fff");
+		// 1112 Ceci ne sert à rien
+		this.getGarbagesContainer().setTitle("fff");
+
 	},
-	
-	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+
+	onActivateGarbagesView : function(newActiveItem, container, oldActiveItem,
+			eOpts) {
 		this.top();
 	},
 
 	top : function() {
 
+		
 		// on initialise la liste des boutons si cela n'a pas encore eu lieu.
 		var labelElt1 = this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label;
+		
+
 		if (labelElt1 === "") {
 			this.putInButtonsPanel("cu");
 		} else if (labelElt1 === "Plastique Brique"
@@ -214,6 +218,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		}/*
 		 * else { this.putInButtonsPanel("cu"); }
 		 */
+
+		this.garbageViewUpdateTextTranslated();
 	},
 
 	onPushBackButton : function() {
@@ -674,9 +680,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
 				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
 
-		end = new Date().getTime();
-		time = end - start;
-		console.log("filter etape 2 : " + time);
+		this.garbagesButtonsPanel.setTitle(this
+				.translateWithUpperFirstLetter("label_dechets"));
 	}
 
 });

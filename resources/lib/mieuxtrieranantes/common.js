@@ -82,6 +82,7 @@ function _utilRetireAccentEtMinuscule(result) {
 	result = _utilRetireMotsInutiles(result);
 	// trim : permet de retirer les blancs en début et fin de chaîne.
 	result = result.trim();
+	result = _utilMettreNomAuSingulier(result);
 	return result;
 }
 
@@ -96,6 +97,17 @@ function _utilRetireMotsInutiles(result) {
 	// impasse |parvis |passage |petit chemin |petite avenue |petite rue |place
 	// |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square
 	// |venelle |voie |de la |de |du |des
+	return result;
+}
+
+/**
+ * Met un nom au singulier : retire les s à la fin, ou les 'x'
+ * @param {} result
+ * @return {}
+ */
+function _utilMettreNomAuSingulier(result) {
+	// supprime le 's' en caractère final
+	result = result.replace(/([^]*)s$/,'$1');
 	return result;
 }
 

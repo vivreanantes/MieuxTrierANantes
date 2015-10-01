@@ -4,7 +4,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 	scrollable : true,
 	record : null,
 	config : {
-		title : 'Détails',
+		title : 'ceci_sera_remplacer',
 		styleHtmlContent : true,
 		scrollable : true,
 		layout : 'vbox',

@@ -15,7 +15,8 @@ Ext.define('MieuxTrierANantes.view.trisac.Trisacs', {
 				navigationBar : {
 					items : [{
 						xtype : 'button',
-						iconCls: 'home',
+						// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
+						icon : 'resources/icons/home_mini.png',
 						// ui: 'round', // bouton arrondi
 						align : 'right',
 						id : 'trisacshomebutton'

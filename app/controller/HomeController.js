@@ -8,6 +8,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_2 : '#homeZone4_2',
 			homeZone4_3 : '#homeZone4_3',
 			homeZone4_4 : '#homeZone4_4',
+			homeZone4_11 : '#homeZone4_11',
+			homeZone4_12 : '#homeZone4_12',
+			homeZone4_13 : '#homeZone4_13',
+			homeZone4_21 : '#homeZone4_21',
+			homeZone4_22 : '#homeZone4_22',
+			homeZone4_23 : '#homeZone4_23',
 			homeZone3_1 : '#homeZone3_1',
 			homeZone3_2 : '#homeZone3_2',
 			homeContainer : '#homeContainer_xtype',
@@ -48,6 +54,24 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeZone4_4 : {
 				tap : 'onTapHomeZone4_4'
 			},
+			homeZone4_11 : {
+				tap : 'onTapHomeZone4_11'
+			},
+			homeZone4_12 : {
+				tap : 'onTapHomeZone4_12'
+			},
+			homeZone4_13 : {
+				tap : 'onTapHomeZone4_13'
+			},
+			homeZone4_21 : {
+				tap : 'onTapHomeZone4_21'
+			},
+			homeZone4_22 : {
+				tap : 'onTapHomeZone4_22'
+			},
+			homeZone4_23 : {
+				tap : 'onTapHomeZone4_23'
+			},
 			homeZone3_1 : {
 				tap : 'onTapHomeZone3_1'
 			},
@@ -85,7 +109,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				activate : 'activateQuizView'
 			},
 			settingsFormButton : {
-				tap : 'clickSettingsFormButton'
+				tap : 'clickSettingsFormButton_old'
 			},
 
 			globalSearchResult : {
@@ -184,14 +208,39 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
-		this.show2(0);
+		this.showQuiz(0);
 	},
 
 	onTapHomeZone4_2 : function(button, e, eOpts) {
-		this.show2(1);
+		this.showQuiz(1);
 	},
 
-	show2 : function(indexElement) {
+	onTapHomeZone4_11 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(1);
+	},
+	onTapHomeZone4_12 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(2);
+	},
+	onTapHomeZone4_13 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(3);
+	},
+	onTapHomeZone4_21 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(4);
+	},
+	onTapHomeZone4_22 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(5);
+	},
+	onTapHomeZone4_23 : function(button, e, eOpts) {
+		var mainView = this.getMainView();
+		mainView.setActiveItem(6);
+	},
+
+	showQuiz : function(indexElement) {
 		var thisControler = this;
 		// Crée la page si elle n'existe pas encore
 		if (this.quizView == null) {
@@ -315,14 +364,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			mainView.getTabBar().items.items[6].setText(this
 					.translateWithUpperFirstLetter("label_trisac"));
 			// TODO ceci ne fonctionne pas traduction boutons
-			homeContainer.items.items[5].items.items[0].setTpl(this
-					.translate("label_home_button_0"));
-			homeContainer.items.items[5].items.items[1].setTpl(this
-					.translate("label_home_button_1"));
-			homeContainer.items.items[5].items.items[2].setTpl(this
-					.translate("label_home_button_2"));
-			homeContainer.items.items[5].items.items[3].setTpl(this
-					.translate("label_home_button_3"));
+			homeContainer.items.items[5].items.items[0].items.items[0]
+					.setTpl(this.translate("label_home_button_0"));
+			homeContainer.items.items[5].items.items[0].items.items[1]
+					.setTpl(this.translate("label_home_button_1"));
+			homeContainer.items.items[5].items.items[0].items.items[2]
+					.setTpl(this.translate("label_home_button_2"));
+			// homeContainer.items.items[5].items.items[3].setTpl(this.translate("label_home_button_3"));
 
 		} else {
 
@@ -401,42 +449,40 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		this.getHome().push(this.globalSearchResult);
 
-		var texteNoAccents = _utilRetireAccentEtMinuscule(this
-				.getHomeGlobalSearchFormText().getValue());
-
-		var store = this.getHomeGlobalSearchList().getStore();
-		if (store == null) {
-			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
-			this.getHomeGlobalSearchList().setStore(store);
-		}
+		// on separe les mots recherches avec le caractère ' '
+		var valeurRecherche = this.getHomeGlobalSearchFormText().getValue();
+		var arMotsRecherches = valeurRecherche.split(' ');
 		var tempo = [];
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
-				_garbagesDatas, texteNoAccents, locale, "garbages");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
-				_infosDatas, texteNoAccents, locale, "fiches");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas,
-				texteNoAccents, locale, "docs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas,
-				_structures1Datas, texteNoAccents, locale, "structures");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
-				_structures1Datas, texteNoAccents, locale, "trisacs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
-				_homeCollectModsDatas, texteNoAccents, locale,
-				"homecollectmods");
 
-		// utilPushArray(_garbagesDatas, tempo);
-		// utilPushArray(_infosDatas, tempo);
-		// utilPushArray(_structures1Datas, tempo);
-		// utilPushArray(_quizsDatas, tempo);
-		/*
-		 * var cles = _hashGarbagesDatas[0][texteNoAccents]; if (cles !=
-		 * undefined) { var codesDechets = cles.split(','); var taille =
-		 * codesDechets.length; for (var j = 1; j < taille; j++) { var
-		 * codeDechet = codesDechets[j]; for (var k = 0; k <
-		 * _garbagesDatas.length; k++) { if (_garbagesDatas[k]["code"] ==
-		 * codeDechet) { // _garbagesDatas[k]["type"] = "Déchet";
-		 * tempo.push(_garbagesDatas[k]); } } } }
-		 */
+		// On parcourt les moits recherches
+		if (arMotsRecherches.length > 0) {
+			for (i in arMotsRecherches) {
+				var texteNoAccents = _utilRetireAccentEtMinuscule(arMotsRecherches[i]);
+
+				var store = this.getHomeGlobalSearchList().getStore();
+				if (store == null) {
+					var store = Ext
+							.create('MieuxTrierANantes.store.GlobalSearchStore');
+					this.getHomeGlobalSearchList().setStore(store);
+				}
+
+				this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
+						_garbagesDatas, texteNoAccents, locale, "garbages");
+				this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
+						_infosDatas, texteNoAccents, locale, "fiches");
+				this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas,
+						_docsDatas, texteNoAccents, locale, "docs");
+				this
+						.ajouteDatasSelonFiltreSurHash(tempo,
+								_hashStructuresDatas, _structures1Datas,
+								texteNoAccents, locale, "structures");
+				this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
+						_structures1Datas, texteNoAccents, locale, "trisacs");
+				this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+						_homeCollectModsDatas, texteNoAccents, locale,
+						"homecollectmods");
+			}
+		}
 		store.removeAll();
 		store.setData(tempo);
 		store.sync();
@@ -458,7 +504,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.globalSearchResult.setTitle(this.translate("label_results"));
 	},
 
-	clickSettingsFormButton : function(button, e) {
+	clickSettingsFormButton_old : function(button, e) {
 		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
 		var store = Ext.create('Ext.data.Store', {
 					model : "MieuxTrierANantes.model.SettingsModel"
@@ -597,7 +643,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
 		if (record.data["type"] == "Quiz") {
-			this.show2(record.data["code"]);
+			this.showQuiz(record.data["code"]);
 		} else {
 			this.showActiveItemInPage(record.data["page"], record.data["code"]);
 		}
