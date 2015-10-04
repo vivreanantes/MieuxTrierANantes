@@ -11,7 +11,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 		items : [{
 					flex : 1,
 					html : '&nbsp;',
-					style : 'background-color:#AEDC53'
+					style : 'background-color:#AEDC53',
+					// Pour fonctionner sous Windows Phone (800 hauteur totale, dont 100 barre haut et bas)
+					minHeight : 10
 				}, {
 
 					minWidth : '230px',

@@ -13,8 +13,10 @@ Ext.define('MieuxTrierANantes.view.home.QuizView', {
 				align : 'stretch'
 			},
 			items : [{
-				hhtml : " ",
-				flex : 1
+				html : " ",
+				flex : 1,
+				// Pour fonctionner sous Windows Phone (800 hauteur totale, dont 100 barre haut et bas)
+				minHeight : 10
 			}, {
 				xtype : 'button',
 				// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)

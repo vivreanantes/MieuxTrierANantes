@@ -16,7 +16,9 @@ Ext.define('MieuxTrierANantes.view.trisac.TrisacContainer', {
 						}, {
 							xtype : 'TrisacList_xtype',
 							scrollable : 'vertical',
-							flex : 1
+							flex : 1,
+							// Pour fonctionner sous Windows Phone (800 hauteur totale, dont 100 barre haut et bas)
+							minHeight : 600
 						}]
 			}
 		});

@@ -13,7 +13,9 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 							},
 							items : [{
 										html : "<div align='center' style='font-size:14px;font-weight:bold'>Documents imprimables</div>",
-										flex : 1
+										flex : 1,
+										// Pour fonctionner sous Windows Phone (480 largeur totale)
+										minWidth : 430
 									}, {
 										xtype : 'button',
 										// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
@@ -27,7 +29,9 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 						}, {
 							xtype : 'docslist_xtype',
 							scrollable : 'vertical',
-							flex : 1
+							flex : 1,
+							// Pour fonctionner sous Windows Phone (800 hauteur totale, dont 100 barre haut et bas)
+							minHeight : 650
 						}/*
 							 * , { html : 'tttt' }
 							 */]

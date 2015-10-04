@@ -59,6 +59,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\facebook.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\framasphere.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\googleplus.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\home_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icon-green.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\icon-spot~ipad.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\Icon.png \
@@ -814,6 +815,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\logo_solutionrecyclage.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\logo_stationsservices.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\logo_techrecyclage.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\logo_triman.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\marchands_de_sable.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\moebius_mini.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\images_non_libres\moebius_mini.png \

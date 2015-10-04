@@ -9,6 +9,9 @@ Ext.define('MieuxTrierANantes.view.structures.Structures', {
 				autoDestroy : false,
 				iconCls : 'structureclass',
 				title : 'Lieux',
+				// Pour fonctionner sous Windows Phone
+				// width: '100.2%',
+				// height: '100.2%',
 				items : [
 					{
 						xtype : 'structuresContainer_xtype'
