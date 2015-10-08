@@ -121,7 +121,8 @@
          * List of items in the CACHE MANIFEST section
          */
         "cache": [
-            // TODO_CRN vérifier que ca ne pose pas de soucis 20150817 "index.html"
+            // TODO_CRN vérifier que ca ne pose pas de soucis 20150817 
+            "index.html"
         ],
         /**
          * List of items in the NETWORK section

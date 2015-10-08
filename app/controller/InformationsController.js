@@ -70,6 +70,8 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 					// Cas des liens qui ouvre la page
 					this.showDetails(mainView.active);
 					mainView.active = null;
+					// TRELLO_EXTERNE tempo à tester.
+					// mainView.setActiveItem(3);
 				} else {
 					var arItemsToShow = this.getArrayItemsToShowForButtons(
 							_infosDatas, "fiche");

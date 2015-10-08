@@ -7,20 +7,20 @@ Ext.define('MieuxTrierANantes.view.trisac.Trisacs', {
 			// id : 'trisac_id',
 			config : {
 				autoDestroy : false,
-				title:'Trisac',
+				title : 'Trisac',
 				items : [{
 							xtype : 'TrisacContainer_xtype'
-						}
-				],
+						}],
 				navigationBar : {
 					items : [{
-						xtype : 'button',
-						// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)
-						icon : 'resources/icons/home_mini.png',
-						ui: 'round', // bouton arrondi
-						align : 'right',
-						id : 'trisacshomebutton'
-					}],
+								xtype : 'button',
+								// iconCls : 'home', Ceci ne fonctionne pas sous
+								// Windows Phone (on remplace par icon)
+								icon : 'resources/icons/home_mini.png',
+								ui : 'round', // bouton arrondi
+								align : 'right',
+								id : 'trisacshomebutton'
+							}],
 					docked : 'top'
 				},
 				defaultBackButtonText : "Retour"

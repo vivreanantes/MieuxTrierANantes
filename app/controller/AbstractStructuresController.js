@@ -157,7 +157,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		this.setDataInButtons(this.structuresDetail,
 				"structuresDetails_comments", arsCommentaires.les_libelles,
 				nbElementsMax);
-
+				
+		this.structuresDetail.items.items[2].setWidth("600");
+		
 		// this.setItemsElement(this.structuresDetail, "",
 		// this.getItemsComments(code, title));
 

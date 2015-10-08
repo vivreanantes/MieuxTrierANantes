@@ -435,6 +435,10 @@ function _translate(stKey, stLocale) {
 			"en" : "neighborhood",
 			"fr" : "quartier"
 		},
+		"label_aucun_resultat" : {
+			"en" : "no result",
+			"fr" : "aucun résultat"
+		},
 		"label_dechet_nom" : {
 			"en" : "garbage/name",
 			"fr" : "déchet/nom"

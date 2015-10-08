@@ -6,6 +6,10 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresDetails', {
 				title : 'Détail de la structure',
 				layout : 'vbox',
 				scrollable : true,
+				//  scrollable : {
+				// 	direction : 'vertical',
+				// 	directionLock : true
+				// },
 				styleHtmlContent : true,
 				record : null,
 				listeners : {
@@ -16,20 +20,25 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresDetails', {
 					}
 				},
 				items : [{
+					// maxWidth:'300px',
 							id : "structuresDetails_description",
 							tpl : "{description}",
 							data : {
 								"description" : ""
 							}
 						}, {
+							// maxWidth:'300px',
 							id : "structuresDetails_advices"
 						}, {
+							// maxWidth:'300px',
 							id : "structuresDetails_comments_1",
 							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {
+							// maxWidth:'300px',
 							id : "structuresDetails_comments_2",
 							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {
+							// maxWidth:'300px',
 							id : "structuresDetails_comments_3",
 							tpl : "<b>{nom}</b><br/>{descr}<br/><br/>"
 						}, {

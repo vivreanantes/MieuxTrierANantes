@@ -43,3 +43,12 @@
 .x-html {
   padding: 0.2em;
 }
+
+// Windows Phone
+// Disable flex in IE
+@media all and (-ms-high-contrast:none) {
+  .ui.cards > .card,
+  .ui.card {
+    display: block;
+  }
+}

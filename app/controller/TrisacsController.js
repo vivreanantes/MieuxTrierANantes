@@ -108,6 +108,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 	structuresViewUpdateTextTranslated : function() {
 		this.getTrisacFormText().setLabel(this.translateWithUpperFirstLetter("label_nom"));
 		this.getTrisacFormSelect().setLabel(this.translateWithUpperFirstLetter("label_quartier"));
+		this.getTrisacList().setEmptyText(this.translate("label_aucun_resultat"));
 	},
 
 	// Méthodes invoquées par le formulaire

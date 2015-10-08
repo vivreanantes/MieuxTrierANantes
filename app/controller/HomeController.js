@@ -139,12 +139,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onActivateHome : function(newActiveItem, container, oldActiveItem, eOpts) {
 
 		// TRELLO_EXTERNE tempo à tester.
-		var t = location.search.substring(1).split('&');
-		for (var i = 0; i < t.length; i++) {
-			var x = t[i].split('=');
-			this.showActiveItemInPage(x[0], x[1]);
-		}
-
+		/*
+		 * var t = location.search.substring(1).split('&'); for (var i = 0; i <
+		 * t.length; i++) { var x = t[i].split('=');
+		 * this.showActiveItemInPage(x[0], x[1]); }
+		 */
 		if (container.getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
 			var homeView = this.getHome();
 			homeView.getNavigationBar().fireEvent('back', this);
@@ -181,15 +180,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			}
 		});
 
-		/*
-		 * if (this.getHomeGlobalSearchList().getStore() == null) { var
-		 * searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
-		 * this.getHomeGlobalSearchList().setStore(searchStore);
-		 * searchStore.load(); } var store =
-		 * this.getHomeGlobalSearchList().getStore(); if (store) {
-		 * store.removeAll(); var datas = _garbagesDatas; store.setData(datas);
-		 * store.sync(); }
-		 */
+		// TRELLO_EXTERNE tempo à tester.
+		var t = location.search.substring(1).split('&');
+		for (var i = 0; i < t.length; i++) {
+			var x = t[i].split('=');
+			this.showActiveItemInPage(x[0], x[1]);
+		}
+
 	},
 
 	onInitializeHome : function() {
@@ -371,6 +368,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			homeContainer.items.items[5].items.items[0].items.items[2]
 					.setTpl(this.translate("label_home_button_2"));
 			// homeContainer.items.items[5].items.items[3].setTpl(this.translate("label_home_button_3"));
+			if (this.getDocsList() != null) {
+				this.getDocsList().setEmptyText(this
+						.translate("label_aucun_resultat"));
+			}
+			if (this.getHomeGlobalSearchList() != null) {
+				this.getHomeGlobalSearchList().setEmptyText(this
+						.translate("label_aucun_resultat"));
+			}
 
 		} else {
 
@@ -646,8 +651,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
 		if (record.data["page"] == "quiz") {
 			this.showQuiz(record.data["id"]);
-		}
-		else {
+		} else {
 			this.showActiveItemInPage(record.data["page"], record.data["code"]);
 		}
 	},

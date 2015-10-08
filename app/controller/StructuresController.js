@@ -132,6 +132,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				.translateWithUpperFirstLetter("label_quartier"));
 		this.getStructuresFormSelectType().setLabel(this
 				.translateWithUpperFirstLetter("label_type"));
+		this.getStructuresList().setEmptyText(this.translate("label_aucun_resultat"));
 	},
 
 	onListRefresh : function(list, eOpts) {
