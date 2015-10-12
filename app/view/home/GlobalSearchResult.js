@@ -19,8 +19,8 @@ Ext.define('MieuxTrierANantes.view.home.GlobalSearchResult', {
 					items : [{
 								html : "<div align='center' style='font-size:14px;font-weight:bold'>Résultats</div>",
 								flex : 1,
-								// Pour fonctionner sous Windows Phone (480 largeur totale)
-								minWidth : 430
+								// Pour fonctionner sous Windows Phone (280 largeur totale)
+								minWidth : '230px'
 							}, {
 								xtype : 'button',
 								// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)

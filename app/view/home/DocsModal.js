@@ -14,8 +14,8 @@ Ext.define('MieuxTrierANantes.view.home.DocsModal', {
 							items : [{
 										html : "<div align='center' style='font-size:14px;font-weight:bold'>Documents imprimables</div>",
 										flex : 1,
-										// Pour fonctionner sous Windows Phone (480 largeur totale)
-										minWidth : 430
+										// Pour fonctionner sous Windows Phone (280 largeur totale)
+										minWidth : '230px'
 									}, {
 										xtype : 'button',
 										// iconCls : 'home', Ceci ne fonctionne pas sous Windows Phone (on remplace par icon)

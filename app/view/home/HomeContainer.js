@@ -16,7 +16,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeContainer', {
 					minHeight : 10
 				}, {
 
-					minWidth : '230px',
+					minWidth : '130px',
 					maxWidth : '600px',
 					width : '90%',
 					layout : 'vbox',
