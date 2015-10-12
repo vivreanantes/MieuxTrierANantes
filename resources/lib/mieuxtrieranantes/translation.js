@@ -595,6 +595,10 @@ function _translate(stKey, stLocale) {
 			"en" : "Results",
 			"fr" : "Résultats"
 		},
+		"label_verify" : {
+			"en" : "verify",
+			"fr" : "vérifier"
+		},
 		"label_collete_a_domicile" : {
 			"en" : "Home collect",
 			"fr" : "Collecte à domicile"
@@ -614,6 +618,22 @@ function _translate(stKey, stLocale) {
 		"label_homecollectmodsdetails_fiche_tpl" : {
 			"en" : "See <i>card {nom_en}</i>",
 			"fr" : "Voir <i>fiche {nom}</i>"
+		},
+		"label_quelques_erreurs" : {
+			"en" : "Some errors.",
+			"fr" : "Quelques erreurs."
+		},
+		"label_aucune_erreur" : {
+			"en" : "Cheer, no error !",
+			"fr" : "Bravo, aucune erreur !"
+		},
+		"label_tout_faux" : {
+			"en" : "Any forgery !",
+			"fr" : "Tout faux !"
+		},
+		"label_plus_bonnes" : {
+			"en" : "More the good ones than of bad answers.",
+			"fr" : "Plus de bonnes que de mauvaises réponses."
 		},
 		"label_" : {
 			"en" : "",

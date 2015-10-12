@@ -29,6 +29,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			settingsFormQuartierTextfield : '#settingsFormQuartierTextfield',
 			settingsFormVilleTextfield : '#settingsFormVilleTextfield',
 			quizviewButton : '#quizview_button',
+			quizviewContenu : '#quizview_contenu',
 			settingsFormButton : '#settingsFormButton',
 			globalSearchResult : 'globalSearchResult_xtype',
 			homeGlobalSearchList : 'homeglobalsearchlist_xtype',
@@ -109,7 +110,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				activate : 'activateQuizView'
 			},
 			settingsFormButton : {
-				tap : 'clickSettingsFormButton_old'
+				tap : 'clickSettingsFormButton'
 			},
 
 			globalSearchResult : {
@@ -139,11 +140,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	onActivateHome : function(newActiveItem, container, oldActiveItem, eOpts) {
 
 		// TRELLO_EXTERNE tempo à tester.
-		/*
-		 * var t = location.search.substring(1).split('&'); for (var i = 0; i <
-		 * t.length; i++) { var x = t[i].split('=');
-		 * this.showActiveItemInPage(x[0], x[1]); }
-		 */
+		var t = location.search.substring(1).split('&');
+		for (var i = 0; i < t.length; i++) {
+			var x = t[i].split('=');
+			this.showActiveItemInPage(x[0], x[1]);
+		}
+
 		if (container.getActiveItem().id.indexOf("homeContainer_xtype") == -1) {
 			var homeView = this.getHome();
 			homeView.getNavigationBar().fireEvent('back', this);
@@ -180,13 +182,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			}
 		});
 
-		// TRELLO_EXTERNE tempo à tester.
-		var t = location.search.substring(1).split('&');
-		for (var i = 0; i < t.length; i++) {
-			var x = t[i].split('=');
-			this.showActiveItemInPage(x[0], x[1]);
-		}
-
+		/*
+		 * if (this.getHomeGlobalSearchList().getStore() == null) { var
+		 * searchStore = Ext.create('MieuxTrierANantes.store.SearchStore');
+		 * this.getHomeGlobalSearchList().setStore(searchStore);
+		 * searchStore.load(); } var store =
+		 * this.getHomeGlobalSearchList().getStore(); if (store) {
+		 * store.removeAll(); var datas = _garbagesDatas; store.setData(datas);
+		 * store.sync(); }
+		 */
 	},
 
 	onInitializeHome : function() {
@@ -205,11 +209,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	onTapHomeZone4_1 : function(button, e, eOpts) {
-		this.showQuiz(0);
+		this.show2(0);
 	},
 
 	onTapHomeZone4_2 : function(button, e, eOpts) {
-		this.showQuiz(1);
+		this.show2(1);
 	},
 
 	onTapHomeZone4_11 : function(button, e, eOpts) {
@@ -237,16 +241,173 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		mainView.setActiveItem(6);
 	},
 
-	showQuiz : function(indexElement) {
+	show2 : function(indexElement) {
 		var thisControler = this;
 		// Crée la page si elle n'existe pas encore
 		if (this.quizView == null) {
 			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
 		}
-		this.quizView.items.items[1].setData(_quizsDatas[indexElement]);
+		this.updateTextTranslatedQuizView();
+		// this.quizView.items.items[1].setData(_quizsDatas[indexElement]);
+
+		// TRELLO PB QUIZ SOUS WINDOWS PHONE
+		var nom = this.getRecordValue(_quizsDatas[indexElement], "nom");
+		var descr = this.getRecordValue(_quizsDatas[indexElement], "descr");
+		var ok = this.getRecordValue(_quizsDatas[indexElement], "ok");
+		var q1 = this.getRecordValue(_quizsDatas[indexElement], "q1");
+		var q1i1 = this.getRecordValue(_quizsDatas[indexElement], "q1i1");
+		var q1r1 = this.getRecordValue(_quizsDatas[indexElement], "q1r1");
+		var q1r2 = this.getRecordValue(_quizsDatas[indexElement], "q1r2");
+		var q1r3 = this.getRecordValue(_quizsDatas[indexElement], "q1r3");
+		var q1e1 = this.getRecordValue(_quizsDatas[indexElement], "q1e1");
+		var q2 = this.getRecordValue(_quizsDatas[indexElement], "q2");
+		var q2i1 = this.getRecordValue(_quizsDatas[indexElement], "q2i1");
+		var q2r1 = this.getRecordValue(_quizsDatas[indexElement], "q2r1");
+		var q2r2 = this.getRecordValue(_quizsDatas[indexElement], "q2r2");
+		var q2r3 = this.getRecordValue(_quizsDatas[indexElement], "q2r3");
+		var q2e1 = this.getRecordValue(_quizsDatas[indexElement], "q2e1");
+		var q3 = this.getRecordValue(_quizsDatas[indexElement], "q3");
+		var q3i1 = this.getRecordValue(_quizsDatas[indexElement], "q3i1");
+		var q3r1 = this.getRecordValue(_quizsDatas[indexElement], "q3r1");
+		var q3r2 = this.getRecordValue(_quizsDatas[indexElement], "q3r2");
+		var q3r3 = this.getRecordValue(_quizsDatas[indexElement], "q3r3");
+		var q3e1 = this.getRecordValue(_quizsDatas[indexElement], "q3e1");
+		var q4 = this.getRecordValue(_quizsDatas[indexElement], "q4");
+		var q4i1 = this.getRecordValue(_quizsDatas[indexElement], "q4i1");
+		var q4r1 = this.getRecordValue(_quizsDatas[indexElement], "q4r1");
+		var q4r2 = this.getRecordValue(_quizsDatas[indexElement], "q4r2");
+		var q4r3 = this.getRecordValue(_quizsDatas[indexElement], "q4r3");
+		var q4e1 = this.getRecordValue(_quizsDatas[indexElement], "q4e1");
+		var q5 = this.getRecordValue(_quizsDatas[indexElement], "q5");
+		var q5i1 = this.getRecordValue(_quizsDatas[indexElement], "q5i1");
+		var q5r1 = this.getRecordValue(_quizsDatas[indexElement], "q5r1");
+		var q5r2 = this.getRecordValue(_quizsDatas[indexElement], "q5r2");
+		var q5r3 = this.getRecordValue(_quizsDatas[indexElement], "q5r3");
+		var q5e1 = this.getRecordValue(_quizsDatas[indexElement], "q5e1");
+		var contenu = "<div align='center' style='font-size:14px;font-weight:bold'>"
+				+ nom
+				+ "</div>"
+				+ "<form id='quizviewform'>"
+				+ descr
+				+ "<input type='hidden' name='ok' value='"
+				+ ok
+				+ "'/>"
+				+ "<div class='qheader'>"
+				+ "<img src="
+				+ q1i1
+				+ " height='80px' /><br/>1)"
+				+ q1
+				+ "</div>"
+				+ "<div class='qselections'>"
+				+ "<input type='checkbox' value='a' name='q1r1'><span id='q1r1'>"
+				+ q1r1
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='b' name='q1r2'><span id='q1r2'>"
+				+ q1r2
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='c' name='q1r3'><span id='q1r3'>"
+				+ q1r3
+				+ "</span><br/>"
+				+ "<span id='q1e1'><span id='q1r1' style='font-weight:bold;'>"
+				+ q1e1
+				+ "</span>"
+				+ "</div>"
+				+ "<div class='qheader'>"
+				+ "<img src="
+				+ q2i1
+				+ " height='80px' /><br/>2)"
+				+ q2
+				+ "</div>"
+				+ "<div class='qselections'>"
+				+ "<input type='checkbox' value='a' name='q2r1'><span id='q2r1'>"
+				+ q2r1
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='b' name='q2r2'><span id='q2r2'>"
+				+ q2r2
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='c' name='q2r3'><span id='q2r3'>"
+				+ q2r3
+				+ "</span><br/>"
+				+ "<span id='q2e1'><span id='q1r1' style='font-weight:bold;'>"
+				+ q2e1
+				+ "</span>"
+				+ "</div>"
+				+ "<div class='qheader'>"
+				+ "<img src="
+				+ q3i1
+				+ " height='80px' /><br/>3)"
+				+ q3
+				+ "</div>"
+				+ "<div class='qselections'>"
+				+ "<input type='checkbox' value='a' name='q3r1'><span id='q3r1'>"
+				+ q3r1
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='b' name='q3r2'><span id='q3r2'>"
+				+ q3r2
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='c' name='q3r3'><span id='q3r3'>"
+				+ q3r3
+				+ "</span><br/>"
+				+ "<span id='q3e1'><span id='q1r1' style='font-weight:bold;'>"
+				+ q3e1
+				+ "</span>"
+				+ "</div>"
+				+ "<div class='qheader'>"
+				+ "<img src="
+				+ q4i1
+				+ " height='80px' /><br/>4)"
+				+ q4
+				+ "<br/></div>"
+				+ "<div class='qselections'>"
+				+ "<input type='checkbox' value='a' name='q4r1'><span id='q4r1'>"
+				+ q4r1
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='b' name='q4r2'><span id='q4r2'>"
+				+ q4r2
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='c' name='q4r3'><span id='q4r3'>"
+				+ q4r3
+				+ "</span><br/>"
+				+ "<span id='q4e1'><span id='q1r1' style='font-weight:bold;'>"
+				+ q4e1
+				+ "</span>"
+				+ "</div>"
+				+ "<div class='qheader'>"
+				+ "<img src="
+				+ q5i1
+				+ " height='80px' /><br/>5)"
+				+ q5
+				+ "</div>"
+				+ "<div class='qselections'>"
+				+ "<input type='checkbox' value='a' name='q5r1'><span id='q5r1'>"
+				+ q5r1
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='b' name='q5r2'><span id='q5r2'>"
+				+ q5r2
+				+ "</span><br/>"
+				+ "<input type='checkbox' value='c' name='q5r3'><span id='q5r3'>"
+				+ q5r3
+				+ "</span><br/>"
+				+ "<span id='q5e1'><span id='q1r1' style='font-weight:bold;'>"
+				+ q5e1
+				+ "</span>"
+				+ "</div>"
+				+ "</form><br/>"
+				+ "<span id='resultat' style='font-weight:bold;'>&nbsp;</span>"
+				+ "<div id='qres1'><img src='resources/images/quiz/1.png' height='80px' /></div>"
+				+ "<div id='qres2'><img src='resources/images/quiz/2.png' height='80px' /></div>"
+				+ "<div id='qres3'><img src='resources/images/quiz/3.png' height='80px' /></div>"
+				+ "<div id='qres4'><img src='resources/images/quiz/4.png' height='80px' /></div>"
+				+ "<div id='qres5'><img src='resources/images/quiz/5.png' height='80px' /></div>";
+		var contenueQuiz = {
+			'contenu' : contenu
+		}
+		this.getQuizviewContenu().setData(contenueQuiz);
+
 		// Affectation du titre
 		// this.quizView.setTitle(_quizsDatas[indexElement]["nom"]);
 		this.getHome().push(this.quizView);
+
 	},
 
 	onTapHomeZone4_3 : function(button, e, eOpts) {
@@ -289,8 +450,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 					message : desc,
 					height : 400,
 					width : 300,
-					// Ceci pose un pb sous IE
-					// scrollable : true,
+					scrollable : true,
 					buttons : Ext.Msg.OK,
 					icon : Ext.Msg.INFO
 				});
@@ -327,10 +487,6 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (e.target.name == "flag") {
 			// Si pas défini ou si francais on met anglais, sinon on met en
 			// francais.
-
-			var mainView = this.getMainView();
-			// mainView.items.items[2].setTitle();
-
 			if (typeof stGlobalLocale == 'undefined') {
 				stGlobalLocale = "fr";
 			}
@@ -343,51 +499,16 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				document.getElementById("flag-fr").style.display = 'block';
 				document.getElementById("flag-gb").style.display = 'none';
 			}
-			var homeContainer = this.getHome().items.items[0].items.items[1];
-			homeContainer.items.items[0].items.items[0].setHtml(this
-					.translate("label_tpl_aider"));
-			homeContainer.items.items[2].items.items[1].setPlaceHolder(this
-					.translate("label_global_button_placeholder"));
-			mainView.getTabBar().items.items[1].setText(this
-					.translateWithUpperFirstLetter("label_dechets"));
-			mainView.getTabBar().items.items[2].setText(this
-					.translateWithUpperFirstLetter("label_carte"));
-			mainView.getTabBar().items.items[3].setText(this
-					.translateWithUpperFirstLetter("label_fiches"));
-			mainView.getTabBar().items.items[4].setText(this
-					.translateWithUpperFirstLetter("label_lieux"));
-			mainView.getTabBar().items.items[5].setText(this
-					.translateWithUpperFirstLetter("label_a_domicile"));
-			mainView.getTabBar().items.items[6].setText(this
-					.translateWithUpperFirstLetter("label_trisac"));
-			// TODO ceci ne fonctionne pas traduction boutons
-			homeContainer.items.items[5].items.items[0].items.items[0]
-					.setTpl(this.translate("label_home_button_0"));
-			homeContainer.items.items[5].items.items[0].items.items[1]
-					.setTpl(this.translate("label_home_button_1"));
-			homeContainer.items.items[5].items.items[0].items.items[2]
-					.setTpl(this.translate("label_home_button_2"));
-			// homeContainer.items.items[5].items.items[3].setTpl(this.translate("label_home_button_3"));
-			if (this.getDocsList() != null) {
-				this.getDocsList().setEmptyText(this
-						.translate("label_aucun_resultat"));
-			}
-			if (this.getHomeGlobalSearchList() != null) {
-				this.getHomeGlobalSearchList().setEmptyText(this
-						.translate("label_aucun_resultat"));
-			}
 
 		} else {
-
-			var description = _labelsDatas["about"][stGlobalLocale];
+			var description = _labelsDatas["about"]["fr"];
 			var nom = _labelsDatas["about_titre"]["fr"];
 			Ext.Msg.show({
 						title : nom,
 						message : description,
 						height : 400,
 						width : 300,
-						// Ceci pose un pb sous IE
-						// scrollable : true,
+						scrollable : true,
 						buttons : Ext.Msg.OK,
 						icon : Ext.Msg.INFO
 					});
@@ -454,42 +575,42 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 
 		this.getHome().push(this.globalSearchResult);
 
-		// on separe les mots recherches avec le caractère ' '
-		var valeurRecherche = this.getHomeGlobalSearchFormText().getValue();
-		var arMotsRecherches = valeurRecherche.split(' ');
-		var tempo = [];
+		var texteNoAccents = _utilRetireAccentEtMinuscule(this
+				.getHomeGlobalSearchFormText().getValue());
 
-		// On parcourt les moits recherches
-		if (arMotsRecherches.length > 0) {
-			for (i in arMotsRecherches) {
-				var texteNoAccents = _utilRetireAccentEtMinuscule(arMotsRecherches[i]);
-
-				var store = this.getHomeGlobalSearchList().getStore();
-				if (store == null) {
-					var store = Ext
-							.create('MieuxTrierANantes.store.GlobalSearchStore');
-					this.getHomeGlobalSearchList().setStore(store);
-				}
-
-				this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas,
-						_garbagesDatas, texteNoAccents, locale, "garbages");
-				this.ajouteDatasSelonHash(tempo, _hashFichesDatas, _infosDatas,
-						texteNoAccents, locale, "fiches");
-				this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas,
-						texteNoAccents, locale, "docs");
-				this.ajouteDatasSelonHash(tempo, _hashQuizDatas, _quizsDatas,
-						texteNoAccents, locale, "quiz");
-				this
-						.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
-								_structures1Datas, texteNoAccents, locale,
-								"structures");
-				this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas,
-						_structures1Datas, texteNoAccents, locale, "trisacs");
-				this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
-						_homeCollectModsDatas, texteNoAccents, locale,
-						"homecollectmods");
-			}
+		var store = this.getHomeGlobalSearchList().getStore();
+		if (store == null) {
+			var store = Ext.create('MieuxTrierANantes.store.GlobalSearchStore');
+			this.getHomeGlobalSearchList().setStore(store);
 		}
+		var tempo = [];
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
+				_garbagesDatas, texteNoAccents, locale, "garbages");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
+				_infosDatas, texteNoAccents, locale, "fiches");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas,
+				texteNoAccents, locale, "docs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas,
+				_structures1Datas, texteNoAccents, locale, "structures");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
+				_structures1Datas, texteNoAccents, locale, "trisacs");
+		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+				_homeCollectModsDatas, texteNoAccents, locale,
+				"homecollectmods");
+
+		// utilPushArray(_garbagesDatas, tempo);
+		// utilPushArray(_infosDatas, tempo);
+		// utilPushArray(_structures1Datas, tempo);
+		// utilPushArray(_quizsDatas, tempo);
+		/*
+		 * var cles = _hashGarbagesDatas[0][texteNoAccents]; if (cles !=
+		 * undefined) { var codesDechets = cles.split(','); var taille =
+		 * codesDechets.length; for (var j = 1; j < taille; j++) { var
+		 * codeDechet = codesDechets[j]; for (var k = 0; k <
+		 * _garbagesDatas.length; k++) { if (_garbagesDatas[k]["code"] ==
+		 * codeDechet) { // _garbagesDatas[k]["type"] = "Déchet";
+		 * tempo.push(_garbagesDatas[k]); } } } }
+		 */
 		store.removeAll();
 		store.setData(tempo);
 		store.sync();
@@ -499,10 +620,10 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 * Crée le store
 	 */
 	onShowGlobalSearchResultList : function() {
-		this.updateTextTranslated();
+		this.updateTextTranslatedSearchResultList();
 	},
 
-	updateTextTranslated : function() {
+	updateTextTranslatedSearchResultList : function() {
 		// Crée la page si elle n'existe pas encore
 		if (this.globalSearchResult == null) {
 			this.globalSearchResult = Ext
@@ -511,7 +632,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.globalSearchResult.setTitle(this.translate("label_results"));
 	},
 
-	clickSettingsFormButton_old : function(button, e) {
+	updateTextTranslatedQuizView : function() {
+		// Crée la page si elle n'existe pas encore
+		if (this.quizView == null) {
+			this.quizView = Ext.create("MieuxTrierANantes.view.home.QuizView");
+		}
+		this.quizView.items.items[2].setText(this
+				.translateWithUpperFirstLetter("label_verify"));
+	},
+	clickSettingsFormButton : function(button, e) {
 		// http://docs.sencha.com/touch/2.3.1/#!/api/Ext.data.proxy.LocalStorage
 		var store = Ext.create('Ext.data.Store', {
 					model : "MieuxTrierANantes.model.SettingsModel"
@@ -593,13 +722,14 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		var nbQ = _quizsDatas[0]["nbq"]
 		// var nbTotalReponses = nbQ * 3;
 		var nbKo = nbQ - nbOk;
-		var message = "Quelques erreurs.";
+		var message = this.translate("label_quelques_erreurs");
 		if (nbKo == 0) {
-			message = "Bravo, aucune erreur ! ";
+			label_quelques_erreurs
+			message = this.translate("label_aucune_erreur");
 		} else if (nbOk == 0) {
-			message = "Tout faux ! ";
+			message = this.translate("label_tout_faux");
 		} else if (nbKo < nbOk) {
-			message = "Plus de bonnes que de mauvaises réponses : ";
+			message = this.translate("label_plus_bonnes");
 		}
 		document.getElementById("resultat").innerHTML = message + nbOk + " / "
 				+ nbQ;
@@ -628,16 +758,15 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else {
 			document.getElementById("qres1").style.display = 'block';
 		}
-
+		var titre = this.translate("label_results");
 		Ext.Msg.show({
-					title : "Résultats",
+					title : titre,
 					message : message + "<br/><img src='resources/images/quiz/"
 							+ nbOk + ".png' height='80px' />",
 					height : 280,
 					width : 200,
 					minWidth : 200,
-					// Ceci pose un pb sous IE
-					// scrollable : true,
+					scrollable : true,
 					buttons : Ext.Msg.OK,
 					icon : Ext.Msg.INFO
 				});
@@ -649,8 +778,8 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	},
 
 	itempTapHomeGlobalSearchList : function(list, index, node, record) {
-		if (record.data["page"] == "quiz") {
-			this.showQuiz(record.data["id"]);
+		if (record.data["type"] == "Quiz") {
+			this.show2(record.data["code"]);
 		} else {
 			this.showActiveItemInPage(record.data["page"], record.data["code"]);
 		}

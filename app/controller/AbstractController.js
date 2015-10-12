@@ -766,7 +766,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		} else if (page == "structures") {
 			mainView.setActiveItem(4);
 		} else if (page == "quiz") {
-			// mainView.setActiveItem(0);
+			mainView.setActiveItem(0);
 		} else if (page == "homecollectmods") {
 			mainView.setActiveItem(5);
 		} else if (page == "trisacs") {
@@ -793,7 +793,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * compte locale dans la recherche de _hash.<br/> page est le nom de la
 	 * page sur laquelle sera affichée la donnée, et qui est mise sur la donnée
 	 */
-	ajouteDatasSelonHash : function(tableauARetourner, _hash, _datas,
+	ajouteDatasSelonFiltreSurHash : function(tableauARetourner, _hash, _datas,
 			texteNoAccents, locale, page) {
 		if (locale == "en" && _hash.length > 1) {
 			var cles = _hash[1][texteNoAccents];
@@ -816,11 +816,11 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 							_datas[k]["nom_en"] = _datas[k]["dcv"];
 							_datas[k]["jcbj_en"] = _datas[k]["jcbj"].replace("Sacs (jaunes et bleus)", "Bags (yellow et blue)").replace("lundi", "monday").replace("mardi", "tuesday").replace("mercredi", "wednesday").replace("jeudi", "thursday").replace("vendredi", "friday").replace("samedi", "saturday").replace("dimanche", "sunday");
 						}
-						if (page == "docs") {
-							_datas[k]["nom_en"] = "<a href='http://"
-									+ this.getRecordValue(_datas[k], "url") + "' target=_new>"
-									+ this.getRecordValue(_datas[k], "nom") + "</a>";
-						}
+						// if (page == "docs") {
+						// 	_datas[k]["nom_en"] = "<a href='http://"
+						// 			+ this.getRecordValue(_datas[k], "url") + "' target=_new>"
+						// 			+ this.getRecordValue(_datas[k], "nom") + "</a>";
+						// }
 						_datas[k]["page"] = page;
 						// Permet de prendre le français quand on a pas la traduction
 						_datas[k]["nom_en"] = this.getRecordValue(_datas[k], "nom");

@@ -591,6 +591,10 @@ function _translate(stKey, stLocale) {
 			"en" : "Results",
 			"fr" : "Résultats"
 		},
+		"label_verifier" : {
+			"en" : "verify",
+			"fr" : "vérifier"
+		},
 		"label_collete_a_domicile" : {
 			"en" : "Home collect",
 			"fr" : "Collecte à domicile"
