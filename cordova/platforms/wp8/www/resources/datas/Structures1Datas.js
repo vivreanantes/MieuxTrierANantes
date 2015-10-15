@@ -67,16 +67,15 @@ var _structures1Datas = [{
 	"modesCollecte" : "smco_reemp",
 	"type" : " réemploi vélo",
 	"statut" : "Association",
-	"descr" : "Nous récupérons les vélos. Ils sont démontés et réparés.<br/><br/>Nous sommes ouverts également pour la réparation d'objets de la maison, tels que : mobiliers, ustensiles, jouets, petites réparations électriques (fil, interrupteur, douille...), éléments de décoration...<br/><br/>.ATTENTION, nous ne réparons pas : l'électroménager, les engins à moteurs, les appareils numériques (imprimantes, écrans, téléphones...)",
-	"descr_en" : "We collect the bikes. They are disassembled and repaired <br/> We are open also for the repair of household objects, such as:. Furniture, utensils, toys, small electrical repairs (wire, switch, socket ...) , decorative items ... <br/> .attention, we do not repair: household appliances, gear motors, digital devices (printers, monitors, telephones ...)",
+	"descr" : "Nous récupérons les vélos. Ils sont démontés et réparés.<br/><br/>Nous sommes ouverts également pour la réparation d'objets de la maison, tels que : mobiliers, ustensiles, jouets, petites réparations électriques (fil, interrupteur, douille...), éléments de décoration...<br/><br/>. ATTENTION, nous ne pouvons garantir la réussite des réparations, mais nous essaierons d'identifier la panne et de vous proposer une solution économique.",
+	"descr_en" : "We collect the bikes. They are disassembled and repaired <br/> We are open also for the repair of household objects, such as:. Furniture, utensils, toys, small electrical repairs (wire, switch, socket ...) , decorative items ... <br/>. ATTENTION, we can not guarantee the success of repairs, but we will try to identify the fault and to offer an economical solution.",
 	"nom" : "Transformeurs",
 	"adresseTemp" : "28, bd Winston Churchill  44100 Nantes",
-	"url" : "<a href='http://www.transformeurs.net' target='_blank'>http://www.transformeurs.net</a>",
 	"email" : "atelierbelevue@transformeurs.net",
-	"tel" : "06 89 35 20 05",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 04/06/2014",
-	"horaires" : "Mercredi de 14h à 18h",
-	"plagesHoraires" : "0101-3112_me_14h00-18h00",
+	"tel" : "02 40 36 60 68 ",
+	"src" : "Envoyé par mail à mieuxtrieranantes@gmail.com, le 25/09/2015",
+	"horaires" : "Mercredi 14h00-18h00,Jeudi 17h00-20h00",
+	"plagesHoraires" : "0101-3112_me_14h00-18h00,0101-3112_je_17h00-20h00",
 	"sous_zone" : "qbcsa",
 	"mots_cles" : "transformeurs,velos,entiers,,pieces,detachees,fonctionnelles,,accessoires,,equipements",
 	"mots_cles_en" : "transformeurs,bicycles,whole,,functional,parts,,accessories,,equipment",
@@ -288,7 +287,7 @@ var _structures1Datas = [{
 	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 14/01/2015",
 	"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve+sa_10h30-19h00 ",
 	"sous_zone" : "qcv",
-	"mots_cles" : "tech,recyclage,ordinateurs,imrpmantes,smartphones,tablettes",
+	"mots_cles" : "tech,recyclage,ordinateurs,imprimantes,smartphones,tablettes",
 	"mots_cles_en" : "tech,recyclage,computers,,imrpmantes,,smartphones,,tablets",
 	"image" : "icon-go-home.png"
 }, {
@@ -371,7 +370,7 @@ var _structures1Datas = [{
 	"mots_cles_en" : "a,prendre,ou,a,laisser,(nantes),clothing,,trinket,,bike",
 	"image" : "icon-go-home.png"
 }, {
-	"code" : "stco_reemploiajout17",
+	"code" : "stco_reemploiajoutboiteutile1",
 	"latitude" : "47.205534",
 	"longitude" : "-1.550461",
 	"modesCollecte" : "smco_reemp",
@@ -379,7 +378,7 @@ var _structures1Datas = [{
 	"statut" : "Association",
 	"descr" : "Impulsé par les associations locales monECOCITY Nantes et La Nizanerie, le collectif Les Boîtes Utiles a pour objet de promouvoir, aider et fédérer les différents projets de ‘GiveBox' sur l'agglo.<br/><br/>Dédiées au don et à l'échange, ces boîtes se présentent sous la forme d'une armoire, d'une cabine ou d'une cabane grand format. Elles invitent les habitants d'un quartier à déposer et/ou dénicher toutes sortes d'objets en bon état. Ni poubelle, ni mini-déchetterie, la Boîte utile est une solution citoyenne de proximité pour éviter le gaspillage et favoriser une consommation plus durable. Elle crée aussi un point de rencontre et de convivialité.",
 	"descr_en" : "Driven by local associations monECOCITY Nantes and La Nizanerie, the collective Useful Boxes aims to promote, assist and unite the different projects 'GiveBox' on the chipboard. <br/> Dedicated donation and exchange, these boxes come in the form of a wardrobe, a cabin or a large format cabin. They invite the residents of a neighborhood to file and / or find all sorts of items in good condition. Neither trash or mini recycling center, the useful citizen Box is a local solution to avoid waste and promote more sustainable consumption. It also creates a meeting place and conviviality.",
-	"nom" : "La Boîte Utile",
+	"nom" : "La Boîte Utile (Vincent Gache, Nantes)",
 	"adresseTemp" : "rue de Nizan  44200 NANTES",
 	"url" : "<a href='http://lesboitesutiles.tumblr.com/' target='_blank'>http://lesboitesutiles.tumblr.com/</a>",
 	"email" : "lesboitesutiles@gmail.com",
@@ -387,11 +386,30 @@ var _structures1Datas = [{
 	"horaires" : "Ouvert tout le temps",
 	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
 	"sous_zone" : "qidn",
-	"mots_cles" : "la,boite,utile,0",
-	"mots_cles_en" : "la,boite,utile,0",
+	"mots_cles" : "la,boite,utile,(vincent,gache,,nantes),vetement,,pull,,pantalon,,veste,,jeu,divers",
+	"mots_cles_en" : "la,boite,utile,(vincent,gache,,nantes),0",
 	"image" : "icon-go-home.png"
 }, {
-	"code" : "stco_reemploiajout18",
+	"code" : "stco_reemploiajoutboiteutile2",
+	"latitude" : "47.233464",
+	"longitude" : "-1.574327",
+	"modesCollecte" : "smco_reemp",
+	"type" : " réemploi divers",
+	"statut" : "Association",
+	"descr" : "Impulsé par les associations locales monECOCITY Nantes et La Nizanerie, le collectif Les Boîtes Utiles a pour objet de promouvoir, aider et fédérer les différents projets de ‘GiveBox' sur l'agglo.<br/><br/>Dédiées au don et à l'échange, ces boîtes se présentent sous la forme d'une armoire, d'une cabine ou d'une cabane grand format. Elles invitent les habitants d'un quartier à déposer et/ou dénicher toutes sortes d'objets en bon état. Ni poubelle, ni mini-déchetterie, la Boîte utile est une solution citoyenne de proximité pour éviter le gaspillage et favoriser une consommation plus durable. Elle crée aussi un point de rencontre et de convivialité.",
+	"descr_en" : "Driven by local associations monECOCITY Nantes and La Nizanerie, the collective Useful Boxes aims to promote, assist and unite the different projects 'GiveBox' on the chipboard. <br/> Dedicated donation and exchange, these boxes come in the form of a wardrobe, a cabin or a large format cabin. They invite the residents of a neighborhood to file and / or find all sorts of items in good condition. Neither trash or mini recycling center, the useful citizen Box is a local solution to avoid waste and promote more sustainable consumption. It also creates a meeting place and conviviality.",
+	"nom" : "La Boîte Utile 2 (Sainte-Thérèse, Nantes)",
+	"adresseTemp" : "59 Rue de la Gourmette  44300 NANTES",
+	"url" : "<a href='http://lesboitesutiles.tumblr.com/' target='_blank'>http://lesboitesutiles.tumblr.com/</a>",
+	"email" : "lesboitesutiles@gmail.com",
+	"src" : "MieuxTrierANantes 09/2015",
+	"horaires" : "Ouvert tout le temps",
+	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
+	"mots_cles" : "la,boite,utile,2,(sainte,therese,,nantes),vetement,,pull,,pantalon,,veste,,jeu,divers",
+	"mots_cles_en" : "la,boite,utile,2,(sainte,therese,,nantes),0",
+	"image" : "icon-go-home.png"
+}, {
+	"code" : "stco_reemploiajout19",
 	"latitude" : "47.242692",
 	"longitude" : "-1.571018",
 	"modesCollecte" : "smco_reemp",
@@ -411,7 +429,7 @@ var _structures1Datas = [{
 	"mots_cles_en" : "re,act,garment,,sweater,,pants,,jacket",
 	"image" : "icon-go-home.png"
 }, {
-	"code" : "stco_reemploiajout19",
+	"code" : "stco_reemploiajout20",
 	"latitude" : "47.164283",
 	"longitude" : "-1.543663",
 	"modesCollecte" : "smco_reemp",
@@ -429,7 +447,7 @@ var _structures1Datas = [{
 	"mots_cles_en" : "stations,services,raw,materials:,wood,,metal,,plastics,,...,textille",
 	"image" : "icon-go-home.png"
 }, {
-	"code" : "stco_reemploiajout20",
+	"code" : "stco_reemploiajout21",
 	"latitude" : "47.077636",
 	"longitude" : "-1.282525",
 	"modesCollecte" : "smco_reemp",
@@ -1112,6 +1130,52 @@ var _structures1Datas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
 	"mots_cles" : "recupfer44,ferraille,metal,electromenager",
 	"mots_cles_en" : "recupfer44,scrap,metal,,appliances,",
+	"image" : "icon-go-home.png"
+}, {
+	"code" : "stco_reemploi67",
+	"modesCollecte" : "smco_reemp",
+	"type" : " réemploi 0",
+	"nom" : "La maison de la Récup' (Mouzillon)",
+	"adresseTemp" : "   ",
+	"src" : "MieuxTrierANantes 08/15",
+	"mots_cles" : "la,maison,recup,(mouzillon),0",
+	"mots_cles_en" : "la,maison,recup,(mouzillon),0",
+	"image" : "icon-go-home.png"
+}, {
+	"code" : "stco_studentsshop",
+	"latitude" : "47.249936",
+	"longitude" : "-1.558263",
+	"modesCollecte" : "smco_reemp",
+	"type" : " réemploi vêtements, livres/bd/cd/dvd, divers",
+	"statut" : "Association",
+	"descr" : "Tout ce dont un étudiant a vraiment besoin : T-shirts à 2 €, des jean's à 4 €, mais également des dictionnaires, des cahiers, de la vaisselle, des couettes et des oreillers..., mais aussi des articles comme les balais, les corbeilles à papier, les pelles à ordures pour 1 €.",
+	"descr_en" : "All which a student really needs: T-shirts in 2 €, of jean in 4 €, but also dictionaries, exercise books, the dishes(crockery), braids and pillows, but also articles as brooms, wastebaskets, dustpans for 1 €",
+	"nom" : "Students' shop",
+	"adresseTemp" : "Cité universitaire Launay-violette, chemin de Launay-Violette (près du Petit-Port)  44322 NANTES",
+	"url" : "<a href='http://studentsshop44.blogspot.fr/' target='_blank'>http://studentsshop44.blogspot.fr/</a>",
+	"email" : "studentsshop44@hotmail.com",
+	"src" : "MieuxTrierANantes 10/15",
+	"horaires" : "Ouvert le mercredi, de 17 h à 20 h et le samedi, de 14 h à 18 h. ",
+	"plagesHoraires" : "0101-3112_me_17h00-20h00,0101-3112_sa_14h00-18h00",
+	"mots_cles" : "student,shop,étudiant",
+	"mots_cles_en" : "student,shop",
+	"image" : "icon-go-home.png"
+}, {
+	"code" : "stco_reemploi68",
+	"latitude" : "47.214911",
+	"longitude" : "-1.559970",
+	"modesCollecte" : "smco_reemp",
+	"type" : " réemploi téléphone, mobile, smartphone, ordinateur, portable",
+	"statut" : "Entreprise",
+	"nom" : "HappyCash (Nantes Centre)",
+	"adresseTemp" : "3 Rue du Chapeau Rouge  44000 NANTES",
+	"url" : "<a href='http://www.happycash.fr/magasin/nantes_centre' target='_blank'>http://www.happycash.fr/magasin/nantes_centre</a>",
+	"tel" : "02 40 84 00 93",
+	"src" : "MieuxTrierANantes 08/15",
+	"horaires" : "Lundi 14h00 - 19h00, Mardi au Samedi 10h00 - 13h00 / 14h00 - 19h00. Fermeture salle achats 18h30",
+	"plagesHoraires" : "0101-3112_lu_14h00-18h30,0101-3112_ma+me+je+ve+sa_10h00-13h00+14h00-18h30",
+	"mots_cles" : "happycash,(nantes,centre),0",
+	"mots_cles_en" : "happycash,(nantes,centre),0",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_ventevrac1",
@@ -3534,4 +3598,4 @@ var _structures1Datas = [{
 	"sous_zone" : "qdb",
 	"src" : "OpenDataNantes 11/2014",
 	"image" : "relais_trisac.jpg"
-}]
+}, {}]

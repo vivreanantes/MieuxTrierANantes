@@ -1,9 +1,28 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <title>MieuxTrierANantes</title>
-    
+    <title>Mieux trier à Nantes</title>
+    <script src="resources/datas/GarbagesDatas.js"></script>
+	<script src="resources/datas/UsualCategoriesDatas.js"></script>
+	<script src="resources/datas/HashGarbagesDatas.js"></script>
+	<script src="resources/datas/HashFichesDatas.js"></script>
+	<script src="resources/datas/HashDocsDatas.js"></script>
+	<script src="resources/datas/HashStructuresDatas.js"></script>
+	<script src="resources/datas/HashTrisacsDatas.js"></script>
+	<script src="resources/datas/HashHomeCollectModsDatas.js"></script>
+	<script src="resources/datas/HomeCollectModsDatas.js"></script>
+	<script src="resources/datas/HashADomicileDatas.js"></script>
+	<script src="resources/datas/HashQuizDatas.js"></script>
+	<script src="resources/datas/CollectModsDatas.js"></script>
+	<script src="resources/datas/CommentsDatas.js"></script>
+	<script src="resources/datas/AdvicesDatas.js"></script>
+	<script src="resources/datas/DocsDatas.js"></script>
+	<script src="resources/datas/InfosDatas.js"></script>
+	<script src="resources/datas/LabelsDatas.js"></script>
+	<script src="resources/datas/QuizsDatas.js"></script>
+	<script src="resources/datas/Structures1Datas.js"></script>
+	<script src="resources/datas/Structures2Datas.js"></script>
      <style type="text/css">
         /**
          * Example of an initial loading indicator.
@@ -59,7 +78,7 @@ document.getElementsByTagName("head")[0].appendChild(a));l("viewport","width\x3d
 function d(a){return!c(a)&&(/iPad/.test(a)||/Android|Silk/.test(a)||/(RIM Tablet OS)/.test(a)||/MSIE 10/.test(a)&&/; Touch/.test(a))}var f=!1,e=navigator.userAgent,b,g;a=[].concat(a);b=window.location.search.substr(1).split("\x26");g={};var h;for(h=0;h<b.length;h++){var j=b[h].split("\x3d");g[j[0]]=j[1]}if(b=g.platform)return-1!=a.indexOf(b);b=0;for(g=a.length;b<g;b++){switch(a[b]){case "phone":f=c(e);break;case "tablet":f=d(e);break;case "desktop":f=!c(e)&&!d(e);break;case "ios":f=/(iPad|iPhone|iPod)/.test(e);
 break;case "android":f=/(Android|Silk)/.test(e);break;case "blackberry":f=/(BlackBerry|BB)/.test(e);break;case "safari":f=/Safari/.test(e)&&!/(BlackBerry|BB)/.test(e);break;case "chrome":f=/Chrome/.test(e);break;case "ie10":f=/MSIE 10/.test(e);break;case "windows":f=/MSIE 10/.test(e)||/Trident/.test(e);break;case "tizen":f=/Tizen/.test(e);break;case "firefox":f=/Firefox/.test(e)}if(f)return!0}return!1};a=0;for(h=d.length;a<h;a++){c=d[a];"string"!=typeof c&&(g=c.platform,j=c.exclude,n=c.theme,c=c.path);
 if(g){if(!k(g)||k(j))continue;b.theme||(b.theme={});b.theme.name||(b.theme.name=n||"Default")}document.write('\x3clink rel\x3d"stylesheet" href\x3d"'+c+'"\x3e')}a=0;for(h=m.length;a<h;a++)c=m[a],"string"!=typeof c&&(g=c.platform,j=c.exclude,c=c.path),(!g||k(g)&&!k(j))&&document.write('\x3cscript src\x3d"'+c+'"\x3e\x3c/script\x3e')}})(this);
-Ext.blink({id:"d3ec3f29-0ff5-47ee-ba2e-19bb10dbd937",js:[{path:"cordova.js",remote:!0},{path:"app.js",update:"delta"}],css:[{path:"resources/css/app.css"},{path:"resources/css/mieuxtrieranantes.css"},{path:"resources/lib/leaflet-0.7.3/leaflet.css"}]});</script>
+Ext.blink({id:"d3ec3f29-0ff5-47ee-ba2e-19bb10dbd937",js:[{path:"cordova.js",remote:!0},{path:"app.js",update:"full"}],css:[{path:"resources/css/app.css"},{path:"resources/css/mieuxtrieranantes.css"},{path:"resources/lib/leaflet-0.7.3/leaflet.css"}]});</script>
     
 	<script src="resources/lib/leaflet-0.7.3/leaflet-src.js"></script>
 	<!--[if lte IE 8]>
@@ -70,25 +89,6 @@ Ext.blink({id:"d3ec3f29-0ff5-47ee-ba2e-19bb10dbd937",js:[{path:"cordova.js",remo
 	<script src="resources/lib/mieuxtrieranantes/translation.js"></script>
 	<script src="resources/lib/mieuxtrieranantes/date.js"></script>
 	<script src="resources/lib/mieuxtrieranantes/plageshoraires.js"></script>
-	<script src="resources/datas/GarbagesDatas.js"></script>
-	<script src="resources/datas/UsualCategoriesDatas.js"></script>
-	<script src="resources/datas/HashGarbagesDatas.js"></script>
-	<script src="resources/datas/HashFichesDatas.js"></script>
-	<script src="resources/datas/HashDocsDatas.js"></script>
-	<script src="resources/datas/HashStructuresDatas.js"></script>
-	<script src="resources/datas/HashTrisacsDatas.js"></script>
-	<script src="resources/datas/HashHomeCollectModsDatas.js"></script>
-	<script src="resources/datas/HomeCollectModsDatas.js"></script>
-	<script src="resources/datas/HashADomicileDatas.js"></script>
-	<script src="resources/datas/CollectModsDatas.js"></script>
-	<script src="resources/datas/CommentsDatas.js"></script>
-	<script src="resources/datas/AdvicesDatas.js"></script>
-	<script src="resources/datas/DocsDatas.js"></script>
-	<script src="resources/datas/InfosDatas.js"></script>
-	<script src="resources/datas/LabelsDatas.js"></script>
-	<script src="resources/datas/QuizsDatas.js"></script>
-	<script src="resources/datas/Structures1Datas.js"></script>
-	<script src="resources/datas/Structures2Datas.js"></script>
     <script type="text/javascript" >
     	function load() {
     	}
@@ -96,18 +96,14 @@ Ext.blink({id:"d3ec3f29-0ff5-47ee-ba2e-19bb10dbd937",js:[{path:"cordova.js",remo
     
 </head>
 <body onLoad='Javascript:load()'>
-   
-		
-        <script type="text/javascript">
+	<script type="text/javascript">
   			/*if (_isIE()) {
 	  			// <br/><center><img src='resources/images/issiontrix/issiontrix_travaux_petit.png' /><div style='color:red'>Le site ne fonctionne plus avec le navigateur Internet Explorer.</div><div>Nous ne sommes pas en mesure de corriger ceci rapidement.</div><br/><div style='color:red'>Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Chromium, Edge...)</div></center>
   				var texte = "Le site fonctionne mal avec le navigateur Internet Explorer (boutons page d'accueil...). Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Opera, Chromium, Edge...)";
   				alert(texte);
   			}*/
-			var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>Par des b&eacute;n&eacute;voles<br/>www.mieuxtrieranantes.fr<br/>Version 1.16 (association)<br/><i>Nouveaut&eacute;s : fin bascule en anglais sur clic sur drapeau</i></center></div>";
+			var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>Par des b&eacute;n&eacute;voles<br/>www.mieuxtrieranantes.fr<br/>Version 1.16 (association)<br/><i>Nouveaut&eacute;s : fin bascule en anglais sur clic sur drapeau, ajout 150 composteurs collectifs Compostri sur la carte</i></center></div>";
 			document.write(texte);
- 
-</script>
-    
+	</script>
 </body>
 </html>

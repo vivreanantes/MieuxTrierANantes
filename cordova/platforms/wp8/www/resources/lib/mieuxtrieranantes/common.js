@@ -82,6 +82,7 @@ function _utilRetireAccentEtMinuscule(result) {
 	result = _utilRetireMotsInutiles(result);
 	// trim : permet de retirer les blancs en début et fin de chaîne.
 	result = result.trim();
+	result = _utilMettreNomAuSingulier(result);
 	return result;
 }
 
@@ -96,6 +97,17 @@ function _utilRetireMotsInutiles(result) {
 	// impasse |parvis |passage |petit chemin |petite avenue |petite rue |place
 	// |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square
 	// |venelle |voie |de la |de |du |des
+	return result;
+}
+
+/**
+ * Met un nom au singulier : retire les s à la fin, ou les 'x'
+ * @param {} result
+ * @return {}
+ */
+function _utilMettreNomAuSingulier(result) {
+	// supprime le 's' en caractère final
+	result = result.replace(/([^]*)s$/,'$1');
 	return result;
 }
 
@@ -217,7 +229,11 @@ function _gestionLien(e) {
 			}
 			// navigator.app.loadUrl(url, {openExternal: true});
 		} else if (protocole == "fich") {
+			e.stopPropagation();
+			e.preventDefault();
+			e.stopEvent();
 			_detailleFiche(complement, 300, 400, false);
+			return false;
 		} else if (protocole == "lieu") {
 			_detailleLieu(complement, 300, 400, false);
 		} else if (protocole == "lalo") {
@@ -301,6 +317,7 @@ function _detailleFiche(fiche, largeur, hauteur, estFicheDetaillee) {
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,
+				// TODO : Ceci pose un pb sous IE
 				scrollable : true,
 				buttons : Ext.Msg.OK,
 				icon : Ext.Msg.INFO,
@@ -330,6 +347,7 @@ function _detailleLieu(lieu, largeur, hauteur, estFicheDetaillee) {
 				height : hauteur,
 				width : largeur,
 				minWidth : largeur,
+				// TODO : Ceci pose un pb sous IE
 				scrollable : true,
 				buttons : Ext.Msg.OK,
 				icon : Ext.Msg.INFO,
@@ -411,6 +429,10 @@ function getRecordValue(record, key) {
 		result = record[enKey];
 	} else {
 		result = record[key];
+	}
+	// Si la clé n'existe pas, on renvoie chaine vide et non null
+	if (result==null) {
+		result = "";
 	}
 	// }
 	return result;

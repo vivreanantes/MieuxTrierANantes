@@ -4,7 +4,7 @@
     <Languages xmlns="">
         <Language code="en-US" />
     </Languages>
-    <App Author="Bénévoles" BitsPerPixel="32" Description="Application libre (et gratuite) pour aider les habitants&#xD;&#xA;		de Nantes Métropole à trier." Genre="apps.normal" ProductID="{3d4bbbc0-5be5-11e5-840a-41a75a844e98}" Publisher="Bénévoles" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Mieux trier à Nantes" Version="1.15" xmlns="">
+    <App Author="Bénévoles" BitsPerPixel="32" Description="Application libre (et gratuite) pour aider les habitants&#xD;&#xA;		de Nantes Métropole à trier." Genre="apps.normal" ProductID="{3d4bbbc0-5be5-11e5-840a-41a75a844e98}" Publisher="Bénévoles" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Mieux trier à Nantes" Version="1.16" xmlns="">
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
         <Capabilities>
             <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />

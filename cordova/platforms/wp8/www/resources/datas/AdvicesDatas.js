@@ -9,7 +9,7 @@ var _advicesDatas = [{
 	"nom" : "Bac cassé",
 	"nom_en" : "Broken tray",
 	"descr" : "Un bac cassé ou détérioré peut être remplacé gratuitement. Appeler le 0800 344 000 ( 'Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe). En cas de vol du bac, faire une déclaration au commissariat de police, et présenter le récépissé de dépôt de plainte à Allo Propreté.",
-	"descr_en" : "A broken or damaged tank can be replaced free of charge. Call 0800 344 000 ('Allo Cleanliness' from 8h to 17h from Monday to Saturday, free call from a landline). In case of theft of the tray, make a statement to the police, and present it to Allo Cleanliness complaint deposit receipt."
+	"descr_en" : "A broken or damaged tank can be replaced free of charge. Call 02 40 41 9000 ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline). In case of theft of the tray, make a statement to the police, and present it to Allo Cleanliness complaint deposit receipt."
 }, {
 	"code" : "cons_noeudtrisac",
 	"nom" : "Double nœud",
@@ -33,8 +33,7 @@ var _advicesDatas = [{
 	"nom" : "L'acier disparaît en 5-10 ans.",
 	"nom_en" : "Steel disappears in 5-10 years.",
 	"descr" : "L'acier se recycle très facilement, mais à l'air libre, il met de 5 à 10 ans à disparaître.",
-	"descr_en" : "Steel can be recycled easily, but in the open air, it puts 5 to 10 years to disappear.",
-	"fiche" : "fiche_acier"
+	"descr_en" : "Steel can be recycled easily, but in the open air, it puts 5 to 10 years to disappear."
 }, {
 	"code" : "cons_arcencielvalorena",
 	"nom" : "2 sites d'incinération",
@@ -52,14 +51,13 @@ var _advicesDatas = [{
 	"nom" : "Collecte des encombrants",
 	"nom_en" : "Collection of bulky",
 	"descr" : "Pour les logements verticaux (appartement...) les encombrants sont récupérés à jour fixe dans la semaine (affiché en général en bas de l'immeuble).<br/>Pour les logements pavillonnaires (maisons...) le ramassage se fait sur rendez-vous à prendre par téléphone (numéros ci-dessous). ",
-	"descr_en" : "For vertical housing (apartment ...) are recovered bulky fixed day in the week (usually displayed at the bottom of the building). In order to the suburban housing (houses ...) collection is appointment to be made by telephone (numbers below).",
-	"fiche" : "fiche_encombrant"
+	"descr_en" : "For vertical housing (apartment ...) are recovered bulky fixed day in the week (usually displayed at the bottom of the building). In order to the suburban housing (houses ...) collection is appointment to be made by telephone (numbers below)."
 }, {
 	"code" : "cons_numerosencombrants",
 	"nom" : "Numéros de téléphones des encombrants",
 	"nom_en" : "Bulky telephone numbers",
 	"descr" : " - pour Nantes, <b>0800 344 000</b> ('Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe).<br/> - pour Couëron, Indre, Saint-Herblain <b>0 800 00 70 76</b> (de 8h à 18h du lundi au samedi, appel gratuit depuis un téléphone fixe)<br/> - pour Basse-Goulaine, Bouaye, Bouguenais, Brains, Carquefou, La Chapelle-sur-Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Lieu, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, Saint-Sébastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire, Vertou <b>0 800 800 868</b>.",
-	"descr_en" : " - Nantes, <b> 0800 344 000 </ b> ('Allo Cleanliness' from 8h to 17h from Monday to Saturday, free call from a landline). <br/> - To Couëron, Indre, Saint-Herblain < b> 0800 00 70 76 </ b> (from 8h to 18h from Monday to Saturday, free call from a landline) <br/> - Basse-Goulaine for Bouaye, Bouguenais, Brains Carquefou, La Chapelle-sur -Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Place, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, St. Sebastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire Vertou <b> 0800800868 </ b>."
+	"descr_en" : " - Nantes, <b>02 40 41 9000</b> ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline. <br/> - To Couëron, Indre, Saint-Herblain < b> 0800 00 70 76 </ b> (from 8h to 18h from Monday to Saturday, free call from a landline) <br/> - Basse-Goulaine for Bouaye, Bouguenais, Brains Carquefou, La Chapelle-sur -Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Place, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, St. Sebastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire Vertou <b> 0800800868 </ b>."
 }, {
 	"code" : "cons_bouchon",
 	"nom" : "Bouchons acceptés",
@@ -71,8 +69,7 @@ var _advicesDatas = [{
 	"nom" : "Bouchon d'amour récupère les bouchons plastiques",
 	"nom_en" : "Love stopper recovers plastic plugs",
 	"descr" : "Bouchons acceptés : eau, lait, soda, huile, vinaigre, vin, compote, crème fraîche, liquide vaisselle, aérosols, dentifrice, shampooing...<br/>Bouchons refusés : produits toxiques, détergents, liège.",
-	"descr_en" : "Plugs accepted: water, milk, soda, oil, vinegar, wine, sauce, cream, dishwashing liquid, aerosols, toothpaste, shampoo ... <br/> plugs refused: toxic chemicals, detergents, cork.",
-	"fiche" : "fiche_bouchon_amour"
+	"descr_en" : "Plugs accepted: water, milk, soda, oil, vinegar, wine, sauce, cream, dishwashing liquid, aerosols, toothpaste, shampoo ... <br/> plugs refused: toxic chemicals, detergents, cork."
 }, {
 	"code" : "cons_bouchonliege",
 	"nom" : "Action Cancer 44 récupère les bouchons de liège",
@@ -126,8 +123,7 @@ var _advicesDatas = [{
 	"nom" : "Compostage",
 	"nom_en" : "Composting",
 	"descr" : "Vous pouvez déposer au compost les restes de la cuisine (épluchures, marc de café...), du jardin (feuilles...), de la maison (cheveux, essuie-tout...). Eviter les produits laitiers et les viandes.",
-	"descr_en" : "You can deposit the compost kitchen scraps (vegetable peelings, coffee grounds ...), the garden (leaves ...), home (hair, towels ...). Avoid dairy products and meats.",
-	"fiche" : "fiche_compostage"
+	"descr_en" : "You can deposit the compost kitchen scraps (vegetable peelings, coffee grounds ...), the garden (leaves ...), home (hair, towels ...). Avoid dairy products and meats."
 }, {
 	"code" : "cons_souille",
 	"nom" : "Papiers souillés",
@@ -151,8 +147,7 @@ var _advicesDatas = [{
 	"nom" : "Tous les plastiques dans les bacs jaunes nantais",
 	"nom_en" : "All plastics in the yellow bins Nantes",
 	"descr" : "Nantes mène un projet pilote : on peut mettre tous les types de plastique dans les bacs jaunes de Nantes : les bouteilles et les flacons (comme ailleurs) mais aussi les pots (crème fraiche..), barquettes, sacs de supermarché... <b><font color=red>Ceci ne concerne pas les sacs jaunes ni les bacs des autres villes de Nantes Métropole.</font></b><br/>Attention : l'objet ne doit contenir <b>que du plastique</b>.",
-	"descr_en" : "Nantes is piloting: you can put all types of plastic in the yellow bins of Nantes bottles and vials (as elsewhere) but also the pots (fresh cream ..), trays, supermarket bags ... < b> <font color = red> This does not include yellow bags or bins of other cities of Nantes Métropole. </ font> </ b>",
-	"fiche" : "fiche_pet"
+	"descr_en" : "Nantes is piloting: you can put all types of plastic in the yellow bins of Nantes bottles and vials (as elsewhere) but also the pots (fresh cream ..), trays, supermarket bags ... < b> <font color = red> This does not include yellow bags or bins of other cities of Nantes Métropole. </ font> </ b>"
 }, {
 	"code" : "cons_papieralu",
 	"nom" : "Petit aluminium non recyclé",
@@ -188,8 +183,7 @@ var _advicesDatas = [{
 	"nom" : "Les magasins récupèrent l'ancien appareil pour l'achat d'un nouveau",
 	"nom_en" : "The stores recover the old device for the purchase of a new",
 	"descr" : "Vous achetez un appareil neuf, le distributeur est désormais tenu de reprendre  l'ancien à l'achat ou la livraison. C'est le principe de la reprise 'un pour un'.",
-	"descr_en" : "You buy a new appliance, the distributor is now required to take the former for the purchase or delivery. This is the principle of the recovery 'one for one'.",
-	"fiche" : "fiche_reprise"
+	"descr_en" : "You buy a new appliance, the distributor is now required to take the former for the purchase or delivery. This is the principle of the recovery 'one for one'."
 }, {
 	"code" : "cons_recuppdv2",
 	"nom" : "Les magasins qui les vendent récupèrent : cartouches d'imprimantes, piles, ampoules basse consommation, néon",
@@ -201,15 +195,13 @@ var _advicesDatas = [{
 	"nom" : "Recyclage du verre",
 	"nom_en" : "Glass recycling",
 	"descr" : "Seul le 'verre d'emballage' (bouteille, bocaux) peut être recyclé (on peut l'intégrer au calcin utilisé dans les fours verriers)",
-	"descr_en" : "Only the 'glass packaging' (bottles, jars) can be recycled (we can integrate it into the cullet used in glass furnaces)",
-	"fiche" : "fiche_verre"
+	"descr_en" : "Only the 'glass packaging' (bottles, jars) can be recycled (we can integrate it into the cullet used in glass furnaces)"
 }, {
 	"code" : "cons_recupmedicament",
 	"nom" : "Récupération des médicaments",
 	"nom_en" : "Retrieving drugs",
 	"descr" : "Les pharmacies ont l'obligation de récupérer les anciens médicaments, avec ou sans conditionnement.",
-	"descr_en" : "Pharmacies have the obligation to recover the older drugs, with or without conditioning.",
-	"fiche" : "fiche_medicament"
+	"descr_en" : "Pharmacies have the obligation to recover the older drugs, with or without conditioning."
 }, {
 	"code" : "cons_fenetre_enveloppe",
 	"nom" : "Suppression fenêtre",
@@ -221,8 +213,7 @@ var _advicesDatas = [{
 	"nom" : "Recyclage Tétrapak",
 	"nom_en" : "Tetrapak recycling",
 	"descr" : "Les Tétra Pak se recyclent : le carton est récupéré, le reste est très rarement récupéré. Préféré les emballages en verre.",
-	"descr_en" : "The Tetra Pak recycling: cardboard is collected, the rest is rarely recovered. Preferred glass packaging.",
-	"fiche" : "fiche_tetrapak"
+	"descr_en" : "The Tetra Pak recycling: cardboard is collected, the rest is rarely recovered. Preferred glass packaging."
 }, {
 	"code" : "cons_distrisac_relais",
 	"nom" : "Retrait de sacs en relais (3 rouleaux par retrait, 2 retraits par an)",
@@ -270,22 +261,19 @@ var _advicesDatas = [{
 	"nom" : "Vous pouvez déposer dans les conteneurs 'Le Relais'",
 	"nom_en" : "You can file in the containers 'Le Relais'",
 	"descr" : "Vêtements, linge de maison, chaussures (liées par paire), maroquinerie <B>dans un sac bien fermé</B>.",
-	"descr_en" : "Clothing, linens, shoes (linked in pairs), leather goods <B> in a sealed bag </ B>.",
-	"fiche" : "fiche_contvet"
+	"descr_en" : "Clothing, linens, shoes (linked in pairs), leather goods <B> in a sealed bag </ B>."
 }, {
 	"code" : "cons_sacs",
 	"nom" : "Rappels sur les sacs",
 	"nom_en" : "Reminders on bags",
 	"descr" : "Les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.",
-	"descr_en" : "Bags are to be deposited in the same bin, recyclable waste in the yolk sac, non-recyclable waste in the blue bag.",
-	"fiche" : "fiche_sacjaune"
+	"descr_en" : "Bags are to be deposited in the same bin, recyclable waste in the yolk sac, non-recyclable waste in the blue bag."
 }, {
 	"code" : "cons_bacs",
 	"nom" : "Rappels sur les bacs",
 	"nom_en" : "Reminders on the bins",
 	"descr" : "Les déchets recyclables dans le bac jaune, les déchets non recyclables dans le bac bleu.",
-	"descr_en" : "Recyclable waste in the yellow bin, non-recyclable waste in the blue bin.",
-	"fiche" : "fiche_bacjaune"
+	"descr_en" : "Recyclable waste in the yellow bin, non-recyclable waste in the blue bin."
 }, {
 	"code" : "cons_collecte6h14h",
 	"nom" : "Les collectes ont lieu de 6h à 14h",
@@ -303,8 +291,7 @@ var _advicesDatas = [{
 	"nom" : "Des questions ? 0800 800 868",
 	"nom_en" : "Questions ? 0800 800 868",
 	"descr" : "Vous habitez une autre commune de la métropole, contactez votre pôle de proximité, du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h30. C'est un numéro gratuit depuis un poste fixe.<br/>Pôle Erdre et Loire : 02 28 20 22 00, Pôle Erdre-et-Cens : 02 51 83 65 00, Pôle Loire, Sèvre et Vignoble : 02 72 01 26 00, Pôle Loire-Chézine : 02 28 03 41 50, Pôle Nantes-Loire : 02 51 86 54 00, Pôle Nantes-Ouest : 02 28 03 47 00, Pôle Sud-Ouest : 02 28 00 16 00.",
-	"descr_en" : "You live in another town of the metropolis, contact your nearby pole, Monday to Friday from 8:30 to 12:30 and 13:30 to 17:30. This is a free number from a landline <br/> Pole Erdre and Loire. 02 28 20 22 00, pole-and-Erdre Cens: 02 51 83 65 00, Pole Loire, Sevre and Vineyard 02 72 01 26 00 Pole Loire-Chézine 02 March 28 41 50 Pole-Loire Nantes 02 51 86 54 00 Pole Nantes West: Feb. 28, 03 47 00, Pole Southwest: February 28 00 16 00.",
-	"fiche" : "fiche_telephone"
+	"descr_en" : "You live in another town of the metropolis, contact your nearby pole, Monday to Friday from 8:30 to 12:30 and 13:30 to 17:30. This is a free number from a landline <br/> Pole Erdre and Loire. 02 28 20 22 00, pole-and-Erdre Cens: 02 51 83 65 00, Pole Loire, Sevre and Vineyard 02 72 01 26 00 Pole Loire-Chézine 02 March 28 41 50 Pole-Loire Nantes 02 51 86 54 00 Pole Nantes West: Feb. 28, 03 47 00, Pole Southwest: February 28 00 16 00."
 }, {
 	"code" : "cons_dec_coucheBebe",
 	"nom" : "Couches lavables",
@@ -346,10 +333,15 @@ var _advicesDatas = [{
 	"descr" : "Une barre limite les véhicules de plus de 2 mètres de haut, sauf pour les déchèteries de La Chapelle-sur-Erdre et de Saint-Sébastien-sur-Loire.",
 	"descr_en" : "A bar limit vehicles over 2 meters high, except for waste collection centers in La Chapelle-sur-Erdre and Saint-Sébastien-sur-Loire."
 }, {
+	"code" : "cons_huileAlimentaire",
+	"nom" : "Mettre dans une bouteille",
+	"nom_en" : "Put in a bottle",
+	"descr" : "Mettre l'huile dans une bouteille que vous déposez dans le sac bleu ou dans le bac bleu.",
+	"descr_en" : "Put the oil in a bottle you drop in the blue bag or in the blue bin."
+}, {
 	"code" : "cons_spirale",
 	"nom" : "Doit-on supprimer les spirales ?",
 	"nom_en" : "Should we remove the spirals ?",
 	"descr" : "Non ce n'est pas obligatoire.",
-	"descr_en" : "No this is not mandatory. ",
-	"fiche" : "dec_cahier"
+	"descr_en" : "No this is not mandatory. "
 }, {}];
