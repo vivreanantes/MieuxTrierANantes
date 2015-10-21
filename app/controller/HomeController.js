@@ -155,6 +155,18 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		var thisControler = this;
 		// this.getHome().push(this.homeContainer);
 
+		// Windows Phone : on desactive 2 boutons
+		if (_isWhindowsPhone()) {
+			thisControler.getHomeZone4_1().setDisabled(true);
+			thisControler.getHomeZone4_1().setStyle("text-decoration:line-through");
+			thisControler.getHomeZone4_2().setDisabled(true);
+			thisControler.getHomeZone4_2().setStyle("text-decoration:line-through");
+			thisControler.getHomeZone4_3().setDisabled(true);
+			thisControler.getHomeZone4_3().setStyle("text-decoration:line-through");
+			// Windows Phone : on force la hauteur de la page
+			this.getMainView().setHeight(window.innerHeight-80);
+		}
+		
 		// Actualités
 		Ext.create('MieuxTrierANantes.store.HomeStore', {
 			listeners : {

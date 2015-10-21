@@ -69,10 +69,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		// Ajout du lien "y aller"
 		if (record["latitude"] != null && record["latitude"] !== ""
 				&& record["longitude"] != null && record["longitude"] !== "") {
-
-			descriptionTraduit += _getUrlYAllerLatLong(record["latitude"],
+			// Windows Phone : on desactive 2 boutons
+			if (_isWhindowsPhone()==false) {
+				descriptionTraduit += _getUrlYAllerLatLong(record["latitude"],
 					record["longitude"])
 					+ "<br/><br/>";
+			}
 
 		} else {
 			descriptionTraduit += "<br/>";

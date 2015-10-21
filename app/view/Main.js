@@ -8,7 +8,7 @@ Ext.define('MieuxTrierANantes.view.Main', {
 	config : {
 		tabBarPosition : 'bottom',
 		// test IE 20150930
-		height:'100%',
+		// height:'250px',
 		items : [
 		
 			/*{

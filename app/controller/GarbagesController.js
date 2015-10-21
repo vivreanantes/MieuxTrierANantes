@@ -187,14 +187,13 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 	onActivateGarbagesView : function(newActiveItem, container, oldActiveItem,
 			eOpts) {
 		this.top();
+
 	},
 
 	top : function() {
 
-		
 		// on initialise la liste des boutons si cela n'a pas encore eu lieu.
 		var labelElt1 = this.getUsualCategoriesButtonsPanel().items.items[0].items.items[0]._data.label;
-		
 
 		if (labelElt1 === "") {
 			this.putInButtonsPanel("cu");
@@ -427,6 +426,11 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			if (!this.garbageDetail) {
 				this.garbageDetail = Ext
 						.create('MieuxTrierANantes.view.garbages.GarbagesDetails');
+						
+				// Windows Phone : on force la largeur de la page
+				/*if (_isWhindowsPhone()) {
+					this.garbageDetail.setMaxWidth(window.innerWidth - 50);
+				}*/
 			}
 			var title = this.getRecordValue(record, "nom");
 			this.garbageDetail.setTitle(title);
