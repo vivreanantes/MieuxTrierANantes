@@ -793,7 +793,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * compte locale dans la recherche de _hash.<br/> page est le nom de la
 	 * page sur laquelle sera affichée la donnée, et qui est mise sur la donnée
 	 */
-	ajouteDatasSelonFiltreSurHash : function(tableauARetourner, _hash, _datas,
+	ajouteDatasSelonHash : function(tableauARetourner, _hash, _datas,
 			texteNoAccents, locale, page) {
 		if (locale == "en" && _hash.length > 1) {
 			var cles = _hash[1][texteNoAccents];

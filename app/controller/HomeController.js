@@ -596,17 +596,17 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashGarbagesDatas,
+		this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas,
 				_garbagesDatas, texteNoAccents, locale, "garbages");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashFichesDatas,
+		this.ajouteDatasSelonHash(tempo, _hashFichesDatas,
 				_infosDatas, texteNoAccents, locale, "fiches");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashDocsDatas, _docsDatas,
+		this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas,
 				texteNoAccents, locale, "docs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashStructuresDatas,
+		this.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
 				_structures1Datas, texteNoAccents, locale, "structures");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashTrisacsDatas,
+		this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas,
 				_structures1Datas, texteNoAccents, locale, "trisacs");
-		this.ajouteDatasSelonFiltreSurHash(tempo, _hashADomicileDatas,
+		this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 				_homeCollectModsDatas, texteNoAccents, locale,
 				"homecollectmods");
 
