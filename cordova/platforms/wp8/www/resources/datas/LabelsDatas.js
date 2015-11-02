@@ -4,7 +4,7 @@ var _labelsDatas = {
 	},
 	"about" : {
 		"fr" : "Application android (gratuite) et site mieuxtrieranantes.fr pour aider les habitants de Nantes Métropole à trier. "
-				+ "C'est un logiciel libre (code, photos, données) créé par des bénévoles (Christian Renoulin et Romain Debernardi).<br/>"
+				+ "C'est un logiciel libre (code, photos, données) réalisé par l'association 'Mieux trier à Nantes' (dont Christian Renoulin et Romain Debernardi).<br/>"
 				+ "<br/>"
 				+ "<a href='https://mieuxtrieranantes.wordpress.com'>blog</a> "
 				+ " <A HREF='https://www.facebook.com/pages/Mieux-trier-à-Nantes/266725983531595' TARGET=_blank title='Facebook'><IMG SRC='resources/icons/facebook.png' HEIGHT='18px' style='vertical-align:middle;'/></A> "
@@ -15,7 +15,7 @@ var _labelsDatas = {
 				+ "<br/>"
 				+ "Amis : <IMG SRC='resources/images/images_non_libres/logo_les_boites_vertes_rogne_mini.png' HEIGHT='22px' style='vertical-align:middle;'/>&nbsp;&nbsp;<A HREF='http://lesboitesvertes.fr/' TARGET=_blank title='Association les boîtes vertes (Baludik, PlusDeVers)'>les boîtes vertes</A>",
 		"en" : "Android application (free) and mieuxtrieranantes.fr website to help inhabitants of Nantes Métropole to sort. "
-				+ "It is open source software (code, images, data) created by volunteers (Christian Renoulin and Romain Debernardi).<br/>"
+				+ "It is open source software (code, images, data) created by the association (including Christian Renoulin and Romain Debernardi).<br/>"
 				+ "<br/>"
 				+ "<a href='https://mieuxtrieranantes.wordpress.com'>blog</a> "
 				+ " <A HREF='https://www.facebook.com/pages/Mieux-trier-à-Nantes/266725983531595' TARGET=_blank title='Facebook'><IMG SRC='resources/icons/facebook.png' HEIGHT='18px' style='vertical-align:middle;'/></A> "

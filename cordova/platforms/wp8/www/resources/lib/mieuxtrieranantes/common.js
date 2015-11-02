@@ -416,6 +416,14 @@ function _isIE() {
 	return (_detectIeVersion() != 0)
 }
 
+
+function _isWhindowsPhone() {
+    var regExp = new RegExp("Windows Phone", "i");
+    return navigator.userAgent.match(regExp);
+}
+
+
+
 /**
  * Renvoie la valeur d'un des champs, selon la langue.<br/> Exemple :
  * getRecordValue(record,'nom') renvoie 'car' si locale vaut 'en'.
