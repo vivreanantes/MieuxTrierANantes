@@ -164,7 +164,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			thisControler.getHomeZone4_3().setDisabled(true);
 			thisControler.getHomeZone4_3().setStyle("text-decoration:line-through");
 			// Windows Phone : on force la hauteur de la page
-			this.getMainView().setHeight(window.innerHeight-80);
+			this.getMainView().setHeight(window.innerHeight-10);
 		}
 		
 		// Actualités

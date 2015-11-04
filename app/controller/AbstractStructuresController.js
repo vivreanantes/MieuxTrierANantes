@@ -48,13 +48,12 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ "<br/><br/>";
 		}
 		// Ajout du type
-		if (record["modesCollecte"] != null && record["modesCollecte"] !== "") {
+		if (record["type"] != null && record["type"] !== "") {
 			var label = _stringUpperFirstLetter(this.translate("label_type"));
 			var modeCollecteTraduit = "";
 			var typeTraduit = "";
-			var type = this.getRecordValue(record, "record");
+			var type = this.getRecordValue(record, "type");
 			if (type!="") {
-			// if (record["type"] != null && record["type"] !== "") {
 				typeTraduit = record["type"];
 			}
 			descriptionTraduit += "<b>" + label + "</b> : "

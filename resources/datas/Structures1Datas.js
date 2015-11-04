@@ -796,7 +796,7 @@ var _structures1Datas = [{
 	"latitude" : "47.2097351",
 	"longitude" : "-1.5801384",
 	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
+	"type" : " réemploi divers",
 	"statut" : "Association",
 	"descr" : "Les petits frères des Pauvres accompagnent des personnes – en priorité de plus de cinquante ans - souffrant d'isolement, de pauvreté, de maladie, d'exclusions.<br/><br/><i>je dépose mes fringues que je ne mets plus et où j'en achète d'autres pour un, deux ou cinq euros (5 euros c'est pour les ensembles)...En face de la fripe, il y a la brocante où l'on achète des livres, des verres, des vieux sacs à dos tachés, des vases magnifiques pour pas un rond… aucune logique en relation avec les monde extérieur à la frat. Le livre vaut 50 Cts d'euros qu'il soit de 1700 ou de 1999.</i>",
 	"descr_en" : "The Little Brothers escort individuals - primarily over fifty years. - With isolation, poverty, sickness, exclusions <br/> <i> I lay my clothes that I put more and where I bought some for one, two or five euros (5 euros is for sets) ... In front of the crumples, there is the flea market where we buy books, glasses, old stained bags back, wonderful vases for a round ... not any logic in relation to the world outside the frat. The book is worth 50 euros Cts whether of 1700 or 1999. </ I>",
@@ -1102,7 +1102,7 @@ var _structures1Datas = [{
 }, {
 	"code" : "stco_solutionrecyclage",
 	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
+	"type" : " réemploi divers, cartouches encre/tuners",
 	"statut" : "Entreprise",
 	"descr" : "Centre de recyclage, pour entreprise<br/>Adresse : 18 Quai Emile Cormerais, 44800 Saint-Herblain<br/>Site : www.solution-recyclage.fr/<br/>Téléphone :+33 2 53 55 07 17<br/>Message posté 3 fév 2015 : 'Bonjour, Nous vous informons que nous ne souhaitons pas être rajouter dans votre base de données. Cordialement'",
 	"descr_en" : "Recycling center for business <br/> Address: 18 Quai Emile Cormerais, 44800 Saint-Herblain <br/> site: www.solution-recyclage.fr/ <br/> Phone: +33 2 53 55 July 17 <br /> Message posted February 3, 2015: 'Hello, We inform you that we do not wish to add to your database. Regards'",
@@ -1134,7 +1134,7 @@ var _structures1Datas = [{
 }, {
 	"code" : "stco_reemploi67",
 	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi 0",
+	"type" : " réemploi divers",
 	"nom" : "La maison de la Récup' (Mouzillon)",
 	"adresseTemp" : "   ",
 	"src" : "MieuxTrierANantes 08/15",

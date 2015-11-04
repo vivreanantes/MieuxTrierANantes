@@ -419,10 +419,9 @@ function _isIE() {
 
 function _isWhindowsPhone() {
     var regExp = new RegExp("Windows Phone", "i");
-    return navigator.userAgent.match(regExp);
+	var result = (navigator.userAgent.match(regExp)!=null);
+    return result;
 }
-
-
 
 /**
  * Renvoie la valeur d'un des champs, selon la langue.<br/> Exemple :

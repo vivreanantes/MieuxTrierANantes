@@ -102,10 +102,10 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 			items : [{
 				id : "homeZone4_1",
 				xtype : "button",
-				height : '70px',
+				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Quiz<br/>Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>Quiz Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='35px' /></center>",
 				data : {
 					label : "",
 					image : ""
@@ -113,10 +113,10 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 			}, {
 				id : "homeZone4_2",
 				xtype : "button",
-				height : '70px',
+				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>Quiz Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='35px' /></center>",
 				data : {
 					label : "",
 					image : ""
@@ -124,10 +124,10 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 			}, {
 				id : "homeZone4_3",
 				xtype : "button",
-				height : '70px',
+				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Docs à<br/>imprimer</font><br/><img src='resources/images/icon_pdf.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>Docs imprimables</font><br/><img src='resources/images/icon_pdf.png' height='35px' /></center>",
 				data : {
 					label : "",
 					image : ""
