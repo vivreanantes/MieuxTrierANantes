@@ -57,7 +57,7 @@ var _advicesDatas = [{
 	"nom" : "Numéros de téléphones des encombrants",
 	"nom_en" : "Bulky telephone numbers",
 	"descr" : " - pour Nantes, <b>0800 344 000</b> ('Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe).<br/> - pour Couëron, Indre, Saint-Herblain <b>0 800 00 70 76</b> (de 8h à 18h du lundi au samedi, appel gratuit depuis un téléphone fixe)<br/> - pour Basse-Goulaine, Bouaye, Bouguenais, Brains, Carquefou, La Chapelle-sur-Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Lieu, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, Saint-Sébastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire, Vertou <b>0 800 800 868</b>.",
-	"descr_en" : " - Nantes, <b>02 40 41 9000</b> ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline. <br/> - To Couëron, Indre, Saint-Herblain < b> 0800 00 70 76 </ b> (from 8h to 18h from Monday to Saturday, free call from a landline) <br/> - Basse-Goulaine for Bouaye, Bouguenais, Brains Carquefou, La Chapelle-sur -Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Place, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, St. Sebastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire Vertou <b> 0800800868 </ b>."
+	"descr_en" : " - Nantes, <b>02 40 41 9000</b> ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline. <br/> - To Couëron, Indre, Saint-Herblain <b>0800 00 70 76 </b> (from 8h to 18h from Monday to Saturday, free call from a landline) <br/> - Basse-Goulaine for Bouaye, Bouguenais, Brains Carquefou, La Chapelle-sur -Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Place, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, St. Sebastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire Vertou <b> 0800800868 </b>."
 }, {
 	"code" : "cons_bouchon",
 	"nom" : "Bouchons acceptés",
@@ -147,7 +147,7 @@ var _advicesDatas = [{
 	"nom" : "Tous les plastiques dans les bacs jaunes nantais",
 	"nom_en" : "All plastics in the yellow bins Nantes",
 	"descr" : "Nantes mène un projet pilote : on peut mettre tous les types de plastique dans les bacs jaunes de Nantes : les bouteilles et les flacons (comme ailleurs) mais aussi les pots (crème fraiche..), barquettes, sacs de supermarché... <b><font color=red>Ceci ne concerne pas les sacs jaunes ni les bacs des autres villes de Nantes Métropole.</font></b><br/>Attention : l'objet ne doit contenir <b>que du plastique</b>.",
-	"descr_en" : "Nantes is piloting: you can put all types of plastic in the yellow bins of Nantes bottles and vials (as elsewhere) but also the pots (fresh cream ..), trays, supermarket bags ... < b> <font color = red> This does not include yellow bags or bins of other cities of Nantes Métropole. </ font> </ b>"
+	"descr_en" : "Nantes is piloting: you can put all types of plastic in the yellow bins of Nantes bottles and vials (as elsewhere) but also the pots (fresh cream ..), trays, supermarket bags ... <b><font color=red> This does not include yellow bags or bins of other cities of Nantes Métropole. </font> </b>"
 }, {
 	"code" : "cons_papieralu",
 	"nom" : "Petit aluminium non recyclé",
@@ -261,7 +261,7 @@ var _advicesDatas = [{
 	"nom" : "Vous pouvez déposer dans les conteneurs 'Le Relais'",
 	"nom_en" : "You can file in the containers 'Le Relais'",
 	"descr" : "Vêtements, linge de maison, chaussures (liées par paire), maroquinerie <B>dans un sac bien fermé</B>.",
-	"descr_en" : "Clothing, linens, shoes (linked in pairs), leather goods <B> in a sealed bag </ B>."
+	"descr_en" : "Clothing, linens, shoes (linked in pairs), leather goods <B> in a sealed bag </b>."
 }, {
 	"code" : "cons_sacs",
 	"nom" : "Rappels sur les sacs",

@@ -1,4 +1,4 @@
-var _structures1Datas = [{
+var _structuresDatas = [{
 	"code" : "stco_reemploiajout1",
 	"latitude" : "47.20508",
 	"longitude" : "-1.575083",

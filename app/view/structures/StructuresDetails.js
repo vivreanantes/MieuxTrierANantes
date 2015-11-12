@@ -45,7 +45,11 @@ Ext.define('MieuxTrierANantes.view.structures.StructuresDetails', {
 							xtype : 'button',
 							width : '200px',
 							id : "commentez",
-							text : "Commentez"
+							text : "Commentez",
+							data : {
+								name : "name",
+								description : "description"
+							}
 						}]
 			}
 

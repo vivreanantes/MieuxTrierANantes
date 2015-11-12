@@ -113,7 +113,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 						});
 				// value :
 				// /modco_ecopoint|modco_decheterie|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
-				structureStore.setData(_structures1Datas);
+				structureStore.setData(_structuresDatas);
 				this.getStructuresList().setStore(structureStore);
 				structureStore.load();
 			}
@@ -133,6 +133,8 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 		this.getStructuresFormSelectType().setLabel(this
 				.translateWithUpperFirstLetter("label_type"));
 		this.getStructuresList().setEmptyText(this.translate("label_aucun_resultat"));
+		this.getStructuresView().setDefaultBackButtonText(this
+				.translateWithUpperFirstLetter("label_retour"));
 	},
 
 	onListRefresh : function(list, eOpts) {

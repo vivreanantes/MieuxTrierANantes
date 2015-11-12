@@ -102,12 +102,14 @@ function _utilRetireMotsInutiles(result) {
 
 /**
  * Met un nom au singulier : retire les s à la fin, ou les 'x'
- * @param {} result
+ * 
+ * @param {}
+ *            result
  * @return {}
  */
 function _utilMettreNomAuSingulier(result) {
 	// supprime le 's' en caractère final
-	result = result.replace(/([^]*)s$/,'$1');
+	result = result.replace(/([^]*)s$/, '$1');
 	return result;
 }
 
@@ -209,7 +211,7 @@ function _gestionLien(e) {
 		protocole = hrefValue.substring(0, 4);
 		complement = hrefValue.substring(5);
 		if (protocole == "http" || protocole == "www.") {
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator() == false && navigator.app) {
 				// Mobile device.
 				Ext.Msg.alert('Externe',
 						'La page a été ouverte dans le navigateur.');
@@ -240,7 +242,7 @@ function _gestionLien(e) {
 
 			// Ouverture des liens navigation
 
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator() == false && navigator.app) {
 				// Mobile device.
 				url = "geo:0,0?q=" + complement;
 				Ext.Msg
@@ -268,7 +270,7 @@ function _gestionLien(e) {
 		} else if (protocole == "tel:") {
 
 			// Ouverture des liens téléphone
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator() == false && navigator.app) {
 				// Mobile device.
 				url = "tel:" + complement;
 				Ext.Msg
@@ -281,7 +283,17 @@ function _gestionLien(e) {
 				e.preventDefault();
 				return false;
 			}
-		}
+		}/*
+		 * else if (protocole == "mai:") {
+		 *  // Ouverture des liens téléphone if (_isNavigator()) {
+		 * complement = "?subject=look at this website&body=Hi,I found this
+		 * website and thought you might like it
+		 * http://www.geocities.com/wowhtml/" // Mobile device. url =
+		 * "mailto:" + complement; Ext.Msg.alert("Externe", "L'email a été
+		 * ouvert par le téléphone."); navigator.app.loadUrl(url, {
+		 * openExternal : true }); e.stopPropagation(); e.preventDefault();
+		 * return false; } }
+		 */
 		e.stopEvent();
 	}
 }
@@ -391,7 +403,7 @@ function _gestionLienExterne() {
 }
 
 /**
- *  Renvoie la version du navigateur Internet Explorer (ou 0 pas IE).
+ * Renvoie la version du navigateur Internet Explorer (ou 0 pas IE).
  */
 function _detectIeVersion() {
 	var iev = 0;
@@ -410,22 +422,51 @@ function _detectIeVersion() {
 }
 
 /**
+ * Envoi un mail
+ */
+function _envoiMail(destinataire, sujet, contenu) {
+
+	var dest = "mieuxtrieranantes@gmail.com";
+	var complement = dest + "?subject=" + encodeURIComponent(sujet) + "&body="
+			+ encodeURIComponent(contenu);
+	uri = "mailto:" + complement;
+
+	Ext.Msg.alert("Externe", "L'email a été ouvert par le téléphone.");
+	navigator.app.loadUrl(uri, {
+				openExternal : true
+			});
+	e.stopPropagation();
+	e.preventDefault();
+}
+
+/**
  * Renvoie true si le navigateur est Internet Explorer.
  */
 function _isIE() {
 	return (_detectIeVersion() != 0)
 }
 
+/**
+ * Renvoie true si je suis dans un navigateur
+ * 
+ * @return {}
+ */
+function _isNavigator() {
+	// var result = (typeof navigator !== "undefined" && navigator.app);
+	var result = (typeof navigator !== "undefined");
+	return result;
+}
 
 function _isWhindowsPhone() {
-    var regExp = new RegExp("Windows Phone", "i");
-	var result = (navigator.userAgent.match(regExp)!=null);
-    return result;
+	var regExp = new RegExp("Windows Phone", "i");
+	var result = (navigator.userAgent.match(regExp) != null);
+	return result;
 }
 
 /**
  * Renvoie la valeur d'un des champs, selon la langue.<br/> Exemple :
- * getRecordValue(record,'nom') renvoie 'car' si locale vaut 'en'.
+ * getRecordValue(record,'nom') avec record.nom_en="car" renvoie 'car' si locale
+ * vaut 'en'.
  */
 function getRecordValue(record, key) {
 	var result = "";
@@ -438,7 +479,7 @@ function getRecordValue(record, key) {
 		result = record[key];
 	}
 	// Si la clé n'existe pas, on renvoie chaine vide et non null
-	if (result==null) {
+	if (result == null) {
 		result = "";
 	}
 	// }
@@ -446,12 +487,12 @@ function getRecordValue(record, key) {
 }
 
 /**
-	 * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
-	 * LocalStorageController.
-	 */
+ * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
+ * LocalStorageController.
+ */
 function getLocale() {
-		if (typeof stGlobalLocale == 'undefined') {
-			stGlobalLocale = "fr";
-		}
-		return stGlobalLocale;
+	if (typeof stGlobalLocale == 'undefined') {
+		stGlobalLocale = "fr";
+	}
+	return stGlobalLocale;
 }

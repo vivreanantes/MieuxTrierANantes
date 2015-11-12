@@ -49,8 +49,8 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 		this.structureGeoStore = Ext
 				.create('MieuxTrierANantes.store.StructureGeoStore');
 		var tempo = [];
-		utilPushArray(_structures1Datas, tempo);
-		utilPushArray(_structures2Datas, tempo);
+		utilPushArray(_structuresDatas, tempo);
+		utilPushArray(_containersDatas, tempo);
 		this.structureGeoStore.setData(tempo);
 
 		// Pour chaque élément du store, ajout d'un point sur la carte

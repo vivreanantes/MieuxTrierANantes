@@ -181,7 +181,8 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 				.translateWithUpperFirstLetter("label_dechet"));
 		// 1112 Ceci ne sert à rien
 		this.getGarbagesContainer().setTitle("fff");
-
+		this.getGarbagesView().setDefaultBackButtonText(this
+				.translateWithUpperFirstLetter("label_retour"));
 	},
 
 	onActivateGarbagesView : function(newActiveItem, container, oldActiveItem,
@@ -426,11 +427,12 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			if (!this.garbageDetail) {
 				this.garbageDetail = Ext
 						.create('MieuxTrierANantes.view.garbages.GarbagesDetails');
-						
+
 				// Windows Phone : on force la largeur de la page
-				/*if (_isWhindowsPhone()) {
-					this.garbageDetail.setMaxWidth(window.innerWidth - 50);
-				}*/
+				/*
+				 * if (_isWhindowsPhone()) {
+				 * this.garbageDetail.setMaxWidth(window.innerWidth - 50); }
+				 */
 			}
 			var title = this.getRecordValue(record, "nom");
 			this.garbageDetail.setTitle(title);
@@ -601,12 +603,19 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			this.setDataInButtons(this.garbageDetail,
 					"garbagesdetails_commentaires",
 					arsCommentaires.les_libelles, nbElementsMax);
+
+			// Changement libellé "commentez"
 			// envoyer
 			var index = this.garbageDetail.items.keys
 					.indexOf("garbagesdetails_envoyer");
-			this.garbageDetail.items.items[index].setData({
-						code : arsCommentaires.le_titre
-					});
+			var dataTemp = {
+				name : "Comment post about " + title,
+				description : "description"
+			};
+			this.garbageDetail.items.items[index].setData(dataTemp);
+			this.garbageDetail.items.items[index].setText(this
+					.translateWithUpperFirstLetter("label_commentez"));
+
 			/*
 			 * var arsItemsComments = this.getItemsComments(record["code"],
 			 * title) this.setItemsElement(this.garbageDetail,

@@ -39,11 +39,12 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 				var myElement = _getInfo(elementId);
 				// Calcule 'description' (la description + les commentaires)
 				var description = getDescriptionCompleteInfo(myElement);
-				var title = this.getRecordValue(myElement, "nom");
+				var un_titre = this.getRecordValue(myElement, "nom");
+				var un_code = this.getRecordValue(myElement, "code");
 				// Met l'élément dans le détail
 				this.getInformations().push({
 							xtype : 'panel',
-							title : title,
+							title : un_titre,
 							html : description,
 							scrollable : true,
 							listeners : {
@@ -58,8 +59,11 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 							xtype : 'button',
 							width : '200px',
 							id : "commentez",
-							text : "Commentez"
+							text : "Commentez",
+							code : un_code
 						});
+				this.getInformations().setDefaultBackButtonText(this
+						.translateWithUpperFirstLetter("label_retour"));
 
 			},
 
@@ -81,7 +85,8 @@ Ext.define('MieuxTrierANantes.controller.InformationsController', {
 						var theItems = arItemsToShow;
 						for (var i = 0; i < theItems.length; i++) {
 							if (theItems[i]["id"] != '') {
-								var stLibelle = _cutWithBr(this.getRecordValue(theItems[i], "nom"));
+								var stLibelle = _cutWithBr(this.getRecordValue(
+										theItems[i], "nom"));
 								result.push({
 											code : theItems[i]["id"],
 											label : stLibelle,

@@ -93,7 +93,7 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 										value : /modco_distrisac/g
 									}]
 						});
-				structureStore.setData(_structures1Datas);
+				structureStore.setData(_structuresDatas);
 				this.getTrisacList().setStore(structureStore);
 				structureStore.load();
 			}
@@ -101,14 +101,19 @@ Ext.define("MieuxTrierANantes.controller.TrisacsController", {
 			this.structuresViewUpdateTextTranslated();
 		}
 	},
-	
+
 	/**
 	 * Réalise les traduction de la page formulaire/liste de trisac
 	 */
 	structuresViewUpdateTextTranslated : function() {
-		this.getTrisacFormText().setLabel(this.translateWithUpperFirstLetter("label_nom"));
-		this.getTrisacFormSelect().setLabel(this.translateWithUpperFirstLetter("label_quartier"));
-		this.getTrisacList().setEmptyText(this.translate("label_aucun_resultat"));
+		this.getTrisacFormText().setLabel(this
+				.translateWithUpperFirstLetter("label_nom"));
+		this.getTrisacFormSelect().setLabel(this
+				.translateWithUpperFirstLetter("label_quartier"));
+		this.getTrisacList().setEmptyText(this
+				.translate("label_aucun_resultat"));
+		this.getStructuresView().setDefaultBackButtonText(this
+				.translateWithUpperFirstLetter("label_retour"));
 	},
 
 	// Méthodes invoquées par le formulaire

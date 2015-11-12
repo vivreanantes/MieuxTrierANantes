@@ -1,4 +1,4 @@
-var _structures2Datas = [{
+var _containersDatas = [{
 			"code" : "stco_conteneur_265",
 			"adresseTemp" : "Rue de la Chicotière 44800 St-Herblain",
 			"latitude" : "47.2140079054991",

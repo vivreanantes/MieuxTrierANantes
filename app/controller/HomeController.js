@@ -158,41 +158,44 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		// Windows Phone : on desactive 2 boutons
 		if (_isWhindowsPhone()) {
 			thisControler.getHomeZone4_1().setDisabled(true);
-			thisControler.getHomeZone4_1().setStyle("text-decoration:line-through");
+			thisControler.getHomeZone4_1()
+					.setStyle("text-decoration:line-through");
 			thisControler.getHomeZone4_2().setDisabled(true);
-			thisControler.getHomeZone4_2().setStyle("text-decoration:line-through");
+			thisControler.getHomeZone4_2()
+					.setStyle("text-decoration:line-through");
 			thisControler.getHomeZone4_3().setDisabled(true);
-			thisControler.getHomeZone4_3().setStyle("text-decoration:line-through");
+			thisControler.getHomeZone4_3()
+					.setStyle("text-decoration:line-through");
 			// Windows Phone : on force la hauteur de la page
-			this.getMainView().setHeight(window.innerHeight-10);
+			this.getMainView().setHeight(window.innerHeight - 10);
 		}
-		
+
 		// Actualités
-		Ext.create('MieuxTrierANantes.store.HomeStore', {
-			listeners : {
-				load : function(self, records) {
-					var i = 28;
-					// var j = records[0];
-					// On valorise le contenu de la zone actualité UNIQUEMENT si
-					// on a pu récupérée le record.
-					if (typeof records[0] != 'undefined') {
-						var nom1 = records[0].getData()["nom1"];
-						var nom2 = records[0].getData()["nom2"];
-						var nom3 = records[0].getData()["nom3"];
-						thisControler.descr1 = records[0].getData()["descr1"];
-						thisControler.descr2 = records[0].getData()["descr2"];
-						thisControler.descr3 = records[0].getData()["descr3"];
-						html = "<p style='line-height:22px'><a href='#' id='news1'>"
-								+ nom1
-								+ "</a><br/><a href='#' id='news2'>"
-								+ nom2
-								+ "</a><br/><a href='#' id='news3'>"
-								+ nom3 + "</a></p>"
-						thisControler.getHomeZone3_1().setHtml(html);
-					}
-				}
-			}
-		});
+		/*
+		 * var record = []; record["nom_fr"]=_newsDatas[0].nom_fr;
+		 * record["nom_en"]=_newsDatas[0].nom_en;
+		 * record["descr_fr"]=_newsDatas[0].descr_fr;
+		 * record["descr_en"]=_newsDatas[0].descr_en;
+		 */
+		// var record = this.valuesToArray(_newsDatas[0]);
+		this.updateTextTranslatedMain();
+
+		/*
+		 * 
+		 * Ext.create('MieuxTrierANantes.store.HomeStore', { listeners : { load :
+		 * function(self, records) { var i = 28; // var j = records[0]; // On
+		 * valorise le contenu de la zone actualité UNIQUEMENT si // on a pu
+		 * récupérée le record. if (typeof records[0] != 'undefined') { var nom1 =
+		 * records[0].getData()["nom1"]; var nom2 =
+		 * records[0].getData()["nom2"]; var nom3 =
+		 * records[0].getData()["nom3"]; thisControler.descr1 =
+		 * records[0].getData()["descr1"]; thisControler.descr2 =
+		 * records[0].getData()["descr2"]; thisControler.descr3 =
+		 * records[0].getData()["descr3"]; html = "<p style='line-height:22px'><a
+		 * href='#' id='news1'>" + nom1 + "</a><br/><a href='#' id='news2'>" +
+		 * nom2 + "</a><br/><a href='#' id='news3'>" + nom3 + "</a></p>"
+		 * thisControler.getHomeZone3_1().setHtml(html); } } } });
+		 */
 
 		/*
 		 * if (this.getHomeGlobalSearchList().getStore() == null) { var
@@ -203,6 +206,13 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		 * store.removeAll(); var datas = _garbagesDatas; store.setData(datas);
 		 * store.sync(); }
 		 */
+	},
+
+	// transform object into array
+	valuesToArray : function(obj) {
+		return Object.keys(obj).map(function(key) {
+					return obj[key];
+				});
 	},
 
 	onInitializeHome : function() {
@@ -449,6 +459,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 	 * Ouvre une fenêtre de détail d'une actualité.
 	 */
 	onTapHomeZone3_1 : function(button, e, eOpts) {
+		// TODO actu : le détail
 		if (e.target.id == "news1") {
 			var desc = this.descr1;
 		} else if (e.target.id == "news2") {
@@ -499,9 +510,11 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		} else if (e.target.name == "flag") {
 			// Si pas défini ou si francais on met anglais, sinon on met en
 			// francais.
-			if (typeof stGlobalLocale == 'undefined') {
-				stGlobalLocale = "fr";
-			}
+			stGlobalLocale = this.getLocale();
+			/*
+			 * if (typeof stGlobalLocale == 'undefined') { stGlobalLocale =
+			 * "fr"; }
+			 */
 			if (stGlobalLocale == "fr") {
 				stGlobalLocale = "en";
 				document.getElementById("flag-fr").style.display = 'none';
@@ -512,9 +525,12 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 				document.getElementById("flag-gb").style.display = 'none';
 			}
 
+			this.updateTextTranslatedMain();
+
 		} else {
-			var description = _labelsDatas["about"]["fr"];
-			var nom = _labelsDatas["about_titre"]["fr"];
+			stGlobalLocale = this.getLocale();
+			var description = this.getSpecificLabel("about");
+			var nom = this.getSpecificLabel("about_titre");
 			Ext.Msg.show({
 						title : nom,
 						message : description,
@@ -525,6 +541,62 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 						icon : Ext.Msg.INFO
 					});
 		}
+	},
+
+	updateTextTranslatedMain : function() {
+		var homeContainer = this.getHome().items.items[0].items.items[1];
+		var mainView = this.getMainView();
+		homeContainer.items.items[0].items.items[0].setHtml(this
+				.translate("label_tpl_aider"));
+		homeContainer.items.items[2].items.items[1].setPlaceHolder(this
+				.translate("label_global_button_placeholder"));
+		mainView.getTabBar().items.items[1].setText(this
+				.translateWithUpperFirstLetter("label_dechets"));
+		mainView.getTabBar().items.items[2].setText(this
+				.translateWithUpperFirstLetter("label_carte"));
+		mainView.getTabBar().items.items[3].setText(this
+				.translateWithUpperFirstLetter("label_fiches"));
+		mainView.getTabBar().items.items[4].setText(this
+				.translateWithUpperFirstLetter("label_lieux"));
+		mainView.getTabBar().items.items[5].setText(this
+				.translateWithUpperFirstLetter("label_a_domicile"));
+		mainView.getTabBar().items.items[6].setText(this
+				.translateWithUpperFirstLetter("label_trisac"));
+		// Les boutons
+		this.setButtonLabel(this.getHomeZone4_11(), "label_dechets");
+		this.setButtonLabel(this.getHomeZone4_12(), "label_carte");
+		this.setButtonLabel(this.getHomeZone4_13(), "label_fiches");
+		this.setButtonLabel(this.getHomeZone4_21(), "label_lieux");
+		this.setButtonLabel(this.getHomeZone4_22(), "label_a_domicile");
+		this.setButtonLabel(this.getHomeZone4_23(), "label_trisac");
+		this.setButtonLabel(this.getHomeZone4_1(), "label_quiz_janvier");
+		this.setButtonLabel(this.getHomeZone4_2(), "label_quiz_hellfest");
+		this.setButtonLabel(this.getHomeZone4_3(),
+				"label_home_docs_imprimables");
+		var nom1 = this.getRecordValue(_newsDatas[0], "nom");
+		this.descr1 = this.getRecordValue(_newsDatas[0], "descr");
+		var nom2 = this.getRecordValue(_newsDatas[1], "nom");
+		this.descr2 = this.getRecordValue(_newsDatas[1], "descr");
+		var nom3 = this.getRecordValue(_newsDatas[2], "nom");
+		this.descr3 = this.getRecordValue(_newsDatas[2], "descr");
+		html = "<p style='line-height:22px'><a href='#' id='news1'>" + nom1
+				+ "</a><br/><a href='#' id='news2'>" + nom2
+				+ "</a><br/><a href='#' id='news3'>" + nom3 + "</a></p>"
+		this.getHomeZone3_1().setHtml(html);
+		this.getHome().setDefaultBackButtonText(this
+				.translateWithUpperFirstLetter("label_retour"));
+	},
+
+	updateTextTranslatedNews : function() {
+	},
+
+	// Met le libelle dans le bouton (le bouton a un template avec le nom
+	// data.label)
+	setButtonLabel : function(button, label) {
+		var dataTemp = {
+			"label" : this.translateWithUpperFirstLetter(label)
+		};
+		button.setData(dataTemp)
 	},
 
 	onShowDocsModal : function() {
@@ -596,23 +668,23 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas,
-				_garbagesDatas, texteNoAccents, locale, "garbages");
-		this.ajouteDatasSelonHash(tempo, _hashFichesDatas,
-				_infosDatas, texteNoAccents, locale, "fiches");
+		this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas, _garbagesDatas,
+				texteNoAccents, locale, "garbages");
+		this.ajouteDatasSelonHash(tempo, _hashFichesDatas, _infosDatas,
+				texteNoAccents, locale, "fiches");
 		this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas,
 				texteNoAccents, locale, "docs");
 		this.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
-				_structures1Datas, texteNoAccents, locale, "structures");
-		this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas,
-				_structures1Datas, texteNoAccents, locale, "trisacs");
+				_structuresDatas, texteNoAccents, locale, "structures");
+		this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas, _structuresDatas,
+				texteNoAccents, locale, "trisacs");
 		this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 				_homeCollectModsDatas, texteNoAccents, locale,
 				"homecollectmods");
 
 		// utilPushArray(_garbagesDatas, tempo);
 		// utilPushArray(_infosDatas, tempo);
-		// utilPushArray(_structures1Datas, tempo);
+		// utilPushArray(_structuresDatas, tempo);
 		// utilPushArray(_quizsDatas, tempo);
 		/*
 		 * var cles = _hashGarbagesDatas[0][texteNoAccents]; if (cles !=

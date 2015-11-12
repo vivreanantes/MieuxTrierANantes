@@ -87,9 +87,9 @@ function _getGarbage(idElement) {
  */
 function _getStructure(idElement) {
 	var result = '';
-	for (j in _structures1Datas) {
-		if (_structures1Datas[j]["code"] === idElement) {
-			result = _structures1Datas[j];
+	for (j in _structuresDatas) {
+		if (_structuresDatas[j]["code"] === idElement) {
+			result = _structuresDatas[j];
 		}
 	}
 	return result;

@@ -209,7 +209,7 @@ function _gestionLien(e) {
 		protocole = hrefValue.substring(0, 4);
 		complement = hrefValue.substring(5);
 		if (protocole == "http" || protocole == "www.") {
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator()) {
 				// Mobile device.
 				Ext.Msg.alert('Externe',
 						'La page a été ouverte dans le navigateur.');
@@ -240,7 +240,7 @@ function _gestionLien(e) {
 
 			// Ouverture des liens navigation
 
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator()) {
 				// Mobile device.
 				url = "geo:0,0?q=" + complement;
 				Ext.Msg
@@ -268,7 +268,7 @@ function _gestionLien(e) {
 		} else if (protocole == "tel:") {
 
 			// Ouverture des liens téléphone
-			if (typeof navigator !== "undefined" && navigator.app) {
+			if (_isNavigator()) {
 				// Mobile device.
 				url = "tel:" + complement;
 				Ext.Msg

@@ -54,7 +54,14 @@ function _translate(stKey, stLocale) {
 			"en" : "More informations",
 			"fr" : "Plus d'infos"
 		},
-
+		"label_commentez" : {
+			"en" : "Comment",
+			"fr" : "Commentez"
+		},
+		"label_retour" : {
+			"en" : "Return",
+			"fr" : "Retour"
+		},
 		"label_le" : {
 			"en" : " ",
 			"fr" : "le"
@@ -515,21 +522,17 @@ function _translate(stKey, stLocale) {
 			"en" : "Ex : mirror, emmaüs, composting...",
 			"fr" : "Ex : miroir, emmaüs, compostage..."
 		},
-		"label_home_button_0" : {
-			"en" : "<center><font size='2'>Quiz<br/>January</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='50px' /></center>",
-			"fr" : "<center><font size='2'>Quiz<br/>Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='50px' /></center>"
+		"label_quiz_janvier" : {
+			"en" : "Quiz January",
+			"fr" : "Quiz Janvier"
 		},
-		"label_home_button_1" : {
-			"en" : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='50px' /></center>",
-			"fr" : "<center><font size='2'>Quiz<br/>Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='50px' /></center>"
+		"label_quiz_hellfest" : {
+			"en" : "Quiz Hellfest",
+			"fr" : "Quiz Hellfest"
 		},
-		"label_home_button_2" : {
-			"en" : "<center><font size='2'>Docs to<br/>print</font><br/><img src='resources/images/icon_pdf.png' height='50px' /></center>",
-			"fr" : "<center><font size='2'>Docs à<br/>imprimer</font><br/><img src='resources/images/icon_pdf.png' height='50px' /></center>"
-		},
-		"label_home_button_3" : {
-			"en" : "<center><font size='2'>Listing<br/>places</font><br/><img src='resources/images/application-vnd.ms-excel.png' height='50px' /></center>",
-			"fr" : "<center><font size='2'>Listing<br/>lieux</font><br/><img src='resources/images/application-vnd.ms-excel.png' height='50px' /></center>"
+		"label_home_docs_imprimables" : {
+			"en" : "Docs to print",
+			"fr" : "Docs imprimables"
 		},
 		"label_cu_plastique" : {
 			"en" : "plastic",

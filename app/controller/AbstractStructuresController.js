@@ -8,10 +8,17 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 		if (button.id === "commentez") {
 
-			// Panneau commentez
-			Ext.Viewport.add({
-						xtype : 'commentmodal_xtype'
-					});
+			if (_isNavigator() == false && navigator.app) {
+				// On envoie le mail
+				var dest = "mieuxtrieranantes@gmail.com";
+				var dataTemp = button.getData();
+				_envoiMail(dest, dataTemp["name"], dataTemp["description"]);
+			} else {
+				// On ouvre la modale "commentez"
+				Ext.Viewport.add({
+							xtype : 'commentmodal_xtype'
+						});
+			}
 		} else {
 			this.manageLinkButtons(button._data["code"]);
 		}
@@ -53,7 +60,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 			var modeCollecteTraduit = "";
 			var typeTraduit = "";
 			var type = this.getRecordValue(record, "type");
-			if (type!="") {
+			if (type != "") {
 				typeTraduit = record["type"];
 			}
 			descriptionTraduit += "<b>" + label + "</b> : "
@@ -69,10 +76,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		if (record["latitude"] != null && record["latitude"] !== ""
 				&& record["longitude"] != null && record["longitude"] !== "") {
 			// Windows Phone : on desactive 2 boutons
-			if (_isWhindowsPhone()==false) {
+			if (_isWhindowsPhone() == false) {
 				descriptionTraduit += _getUrlYAllerLatLong(record["latitude"],
-					record["longitude"])
-					+ "<br/><br/>";
+						record["longitude"])
+						+ "<br/><br/>";
 			}
 
 		} else {
@@ -81,7 +88,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 
 		// Ajout de la description
 		var descr = this.getRecordValue(record, "descr");
-		if (descr!="") {
+		if (descr != "") {
 			descriptionTraduit += descr + "<br/><br/>";
 		}
 		// Ajout du téléphone
@@ -92,7 +99,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 					+ "<br/><br/>";
 		}
 		// Ajout du lien "telephone"
-		if (record["tel"] != null && record["tel"] !== "" && _detecteMobile()==true) {
+		if (record["tel"] != null && record["tel"] !== ""
+				&& _detecteMobile() == true) {
 			descriptionTraduit += _getTelephone(record["tel"]) + "<br/><br/>";
 
 		} else {
@@ -158,14 +166,23 @@ Ext.define('MieuxTrierANantes.controller.AbstractStructuresController', {
 		this.setDataInButtons(this.structuresDetail,
 				"structuresDetails_comments", arsCommentaires.les_libelles,
 				nbElementsMax);
-				
+
+		// Pour Windows 10
 		this.structuresDetail.items.items[2].setWidth("600");
-		
+
+		// Changement libellé "commentez"
+		this.structuresDetail.items.items[5].setText(this.translateWithUpperFirstLetter("label_commentez"));
+		var dataTemp = {
+			name : "Comment post about " + title,
+			description : "description"
+		};
+		this.structuresDetail.items.items[5].setData(dataTemp);
 		// this.setItemsElement(this.structuresDetail, "",
 		// this.getItemsComments(code, title));
 
 		// Bind the record onto the show contact view
 		this.structuresDetail.setData(record);
+
 		// Push this view into the navigation view
 		this.getStructuresView().push(this.structuresDetail);
 

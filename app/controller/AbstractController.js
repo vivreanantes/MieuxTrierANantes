@@ -8,11 +8,29 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	/*
 	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
 	 */
-
 	translate : function(stKey) {
 		var stLocale = this.getLocale();
+		// 2. Sinon on prend dans les labels communs.
 		// invoque la fonction définie dans translation.js
 		return _translate(stKey, stLocale);
+	},
+
+	/*
+	 * Traduit un libellé specifique (valeur par défaut : français). Si on ne le
+	 * trouve pas, renvoie la clé.
+	 */
+	getSpecificLabel : function(stKey) {
+		var stLocale = this.getLocale();
+		var result = "";
+		if (_specificLabelsDatas[stKey] == null) {
+			result = stKey;
+		} else if (stLocale == "en"
+				&& _specificLabelsDatas[stKey]["en"] != null) {
+			result = _specificLabelsDatas[stKey]["en"];
+		} else if (_specificLabelsDatas[stKey]["fr"] != null) {
+			result = _specificLabelsDatas[stKey]["fr"];
+		}
+		return result;
 	},
 
 	/**
@@ -32,11 +50,9 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		 */
 		// return result;
 	},
-	
+
 	/**
-	 * Réalise la traduction et met la première lettre en majuscule
-	 * @param {} text
-	 * @return {}
+	 * Réalise la traduction et met la première lettre en majuscule.
 	 */
 	translateWithUpperFirstLetter : function(text) {
 		return _translateWithUpperFirstLetter(text, getLocale());
@@ -814,17 +830,29 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 							_datas[k]["image"] = "icon-go-home.png";
 							_datas[k]["nom"] = _datas[k]["dcv"];
 							_datas[k]["nom_en"] = _datas[k]["dcv"];
-							_datas[k]["jcbj_en"] = _datas[k]["jcbj"].replace("Sacs (jaunes et bleus)", "Bags (yellow et blue)").replace("lundi", "monday").replace("mardi", "tuesday").replace("mercredi", "wednesday").replace("jeudi", "thursday").replace("vendredi", "friday").replace("samedi", "saturday").replace("dimanche", "sunday");
+							_datas[k]["jcbj_en"] = _datas[k]["jcbj"].replace(
+									"Sacs (jaunes et bleus)",
+									"Bags (yellow et blue)").replace("lundi",
+									"monday").replace("mardi", "tuesday")
+									.replace("mercredi", "wednesday").replace(
+											"jeudi", "thursday").replace(
+											"vendredi", "friday").replace(
+											"samedi", "saturday").replace(
+											"dimanche", "sunday");
 						}
 						// if (page == "docs") {
-						// 	_datas[k]["nom_en"] = "<a href='http://"
-						// 			+ this.getRecordValue(_datas[k], "url") + "' target=_new>"
-						// 			+ this.getRecordValue(_datas[k], "nom") + "</a>";
+						// _datas[k]["nom_en"] = "<a href='http://"
+						// + this.getRecordValue(_datas[k], "url") + "'
+						// target=_new>"
+						// + this.getRecordValue(_datas[k], "nom") + "</a>";
 						// }
 						_datas[k]["page"] = page;
-						// Permet de prendre le français quand on a pas la traduction
-						_datas[k]["nom_en"] = this.getRecordValue(_datas[k], "nom");
-						_datas[k]["type_en"] = this.getRecordValue(_datas[k], "type");
+						// Permet de prendre le français quand on a pas la
+						// traduction
+						_datas[k]["nom_en"] = this.getRecordValue(_datas[k],
+								"nom");
+						_datas[k]["type_en"] = this.getRecordValue(_datas[k],
+								"type");
 						// TRELLO_DISTANCE_JOURS
 						if (typeof _datas[k]["latitude"] != "undefined") {
 							var diste = this.calculeDistance(

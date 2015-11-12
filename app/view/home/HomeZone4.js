@@ -23,9 +23,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Déchets<br/><img src='resources/icons/icones_trisacs.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}<br/><img src='resources/icons/icones_trisacs.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Déchets",
 					image : ""
 				}
 			}, {
@@ -34,9 +34,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Carte<br/><img src='resources/icons/icone_carte.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}<br/><img src='resources/icons/icone_carte.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Carte",
 					image : ""
 				}
 			}, {
@@ -45,9 +45,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Fiches<br/><img src='resources/icons/icone_livre.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}<br/><img src='resources/icons/icone_livre.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Fiches",
 					image : ""
 				}
 			}, {
@@ -64,9 +64,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Lieux</font><br/><img src='resources/icons/icone_direction.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/icons/icone_direction.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Lieux",
 					image : ""
 				}
 			}, {
@@ -75,9 +75,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>A domicile<br/><img src='resources/icons/icone_camion_poubelle.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}<br/><img src='resources/icons/icone_camion_poubelle.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "A domicile",
 					image : ""
 				}
 			}, {
@@ -86,9 +86,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Trisac</font><br/><img src='resources/icons/icones_trisacs.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/icons/icones_trisacs.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Trisac",
 					image : ""
 				}
 			}, {
@@ -105,9 +105,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Quiz Janvier</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/quiz/issiontrix-quiz-1.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Quiz Janvier",
 					image : ""
 				}
 			}, {
@@ -116,9 +116,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Quiz Hellfest</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/quiz/issiontrix_hellfest.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Quiz Hellfest",
 					image : ""
 				}
 			}, {
@@ -127,9 +127,9 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone4', {
 				height : '60px',
 				width : '30%',
 				cls : 'boutons_panneau',
-				tpl : "<center><font size='2'>Docs imprimables</font><br/><img src='resources/images/icon_pdf.png' height='35px' /></center>",
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/icon_pdf.png' height='35px' /></center>",
 				data : {
-					label : "",
+					label : "Docs imprimables",
 					image : ""
 				}
 			}

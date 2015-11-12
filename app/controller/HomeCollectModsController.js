@@ -137,6 +137,8 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 				.setTpl(this
 						.translate("label_homecollectmodsdetails_fiche_tpl"));
 		this.getHomeCollectModsList().setEmptyText(this.translate("label_aucun_resultat"));
+		this.getHomeCollectModsView().setDefaultBackButtonText(this
+				.translateWithUpperFirstLetter("label_retour"));
 	},
 
 	/**
