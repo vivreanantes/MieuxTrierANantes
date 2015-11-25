@@ -33,6 +33,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\AdvicesDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\CollectModsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\CommentsDatas.js \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\ContainersDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\docs.json \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\DocsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\GarbagesDatas.js \
@@ -47,9 +48,12 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\InfosDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\LabelsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\modes_collecte_a_domicile.json \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\NewsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\QuizsDatas.js \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\SpecificLabelsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\Structures1Datas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\Structures2Datas.js \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\StructuresDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\temp.json \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\UsualCategoriesDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\icons\android.png \
@@ -217,6 +221,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_lerelais_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_le_relais_instructions.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_le_relais_instructions_mini.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_ordure_menageres_petit.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_plastique_instructions.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_plastique_instructions_2.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\conteneur_plastique_instructions_2_mini.png \
@@ -394,6 +399,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\recharge_gaz_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\recyclage_point_de_vente.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\recyclage_point_de_vente_mini.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\reemploi_petit.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\refrigerateur_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\relais_trisac.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\rouge_a_levre_mini.png \
