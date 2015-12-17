@@ -261,7 +261,7 @@ var _garbagesDatas = [{
 			"descr_en" : "empty can of engine oil",
 			"mots_cles" : "bidon,huile,moteur,vide,",
 			"mots_cles_en" : "empty,can,of,engine,oil,",
-			"image" : "huile_moteur_mini.png",
+			"image" : "huile_moteur.png",
 			"modco" : "modco_bacbleu,modco_sacbleu",
 			"recyc" : "NON",
 			"src" : "MieuxTrierANantes 02/2015"

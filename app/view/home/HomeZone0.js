@@ -13,7 +13,7 @@ Ext.define('MieuxTrierANantes.view.home.HomeZone1', {
 			// Le logo
 			minWidth : '215px',
 			width : '90%',
-			html : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'>Aider les habitants de Nantes Métropole à trier.</td></tr></table>",
+			html : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'>Aider les habitants de Nantes Métropole à trier.</td></tr></table>",
 			styleHtmlContent : true
 		}, {
 			// xtype : 'label',

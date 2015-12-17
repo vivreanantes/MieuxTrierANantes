@@ -284,16 +284,15 @@ function _gestionLien(e) {
 				return false;
 			}
 		}/*
-		 * else if (protocole == "mai:") {
-		 *  // Ouverture des liens téléphone if (_isNavigator()) {
-		 * complement = "?subject=look at this website&body=Hi,I found this
-		 * website and thought you might like it
-		 * http://www.geocities.com/wowhtml/" // Mobile device. url =
-		 * "mailto:" + complement; Ext.Msg.alert("Externe", "L'email a été
-		 * ouvert par le téléphone."); navigator.app.loadUrl(url, {
-		 * openExternal : true }); e.stopPropagation(); e.preventDefault();
-		 * return false; } }
-		 */
+			 * else if (protocole == "mai:") { // Ouverture des liens téléphone
+			 * if (_isNavigator()) { complement = "?subject=look at this
+			 * website&body=Hi,I found this website and thought you might like
+			 * it http://www.geocities.com/wowhtml/" // Mobile device. url =
+			 * "mailto:" + complement; Ext.Msg.alert("Externe", "L'email a été
+			 * ouvert par le téléphone."); navigator.app.loadUrl(url, {
+			 * openExternal : true }); e.stopPropagation(); e.preventDefault();
+			 * return false; } }
+			 */
 		e.stopEvent();
 	}
 }
@@ -495,4 +494,27 @@ function getLocale() {
 		stGlobalLocale = "fr";
 	}
 	return stGlobalLocale;
-}
+};
+
+
+/** Renvoie la valeur d'un hash */
+function getParam(stKey) {
+	var datas = _paramsDatas;
+	var stValue = "valeur";
+	if (datas[stKey] == null || datas[stKey][stValue] == null) {
+		result = stKey;
+	} else {
+		result = datas[stKey][stValue];
+	}
+	return result;
+};
+
+/** Renvoie la valeur d'un hash */
+function getValueFromHash(datas, stKey, stValue) {
+	if (datas[stKey] == null || datas[stKey][stValue] == null) {
+		result = stKey;
+	} else {
+		result = datas[stKey][stValue];
+	}
+	return result;
+};

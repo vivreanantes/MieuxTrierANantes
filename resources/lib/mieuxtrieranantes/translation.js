@@ -515,8 +515,8 @@ function _translate(stKey, stLocale) {
 			"fr" : "trisac"
 		},
 		"label_tpl_aider" : {
-			"en" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>To help inhabitants of Nantes Métropole to sort.</div>",
-			"fr" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Pour aider les habitants de Nantes Métropole à trier.</div>"
+			"en" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>To help inhabitants of Nantes Métropole to sort.</div>",
+			"fr" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Aider les habitants de Nantes Métropole à trier.</div>"
 		},
 		"label_global_button_placeholder" : {
 			"en" : "Ex : mirror, emmaüs, composting...",

@@ -37,7 +37,7 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Glass container",
 	"modesCollecte" : "false",
 	"descr" : "<IMG SRC='resources/images/conteneur_verre_instructions_2.jpg' WIDTH='200px' /> <IMG SRC='resources/images/conteneur_verre_instructions.jpg' WIDTH='200px' /><BR/>On peut mettre le verre <b>ménager</b> : bouteilles, pots, bocaux.<br/><br/>En revanche il ne faut pas mettre la vaisselle, les pôts, les ampoules.",
-	"descr_en" : "<IMG SRC='resources/images/conteneur_verre_instructions_2.jpg 'WIDTH='200px' /> <IMG SRC='resources/images/conteneur_verre_instructions.jpg' WIDTH='200px' /> <BR/> can put the glass < b> Home </ b>: bottles, pots, jars <br/> But we must not put the dishes, pots, ampoules..",
+	"descr_en" : "<IMG SRC='resources/images/conteneur_verre_instructions_2.jpg 'WIDTH='200px' /> <IMG SRC='resources/images/conteneur_verre_instructions.jpg' WIDTH='200px' /> <BR/> can put the glass <b>Home </b>: bottles, pots, jars <br/> But we must not put the dishes, pots, ampoules..",
 	"admis" : "bouteilles, pots, bocaux",
 	"admis_en" : "bottles, pots, jars",
 	"cons" : "cons_verre,cons_sans_bouchon_ni_couvercle,cons_nbconteneurverre",
@@ -69,7 +69,7 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Blue bins (excluding Nantes)",
 	"modesCollecte" : "false",
 	"descr" : "<IMG SRC='resources/images/bac_bleu_mini.png' ALIGN='right' WIDTH='150px' />On met les <B>déchets ménagers non recyclés</B>.",
-	"descr_en" : "<IMG SRC='resources/images/bac_bleu_mini.png' align='right' WIDTH='150px' /> It puts the <B> non-recycled household waste </ B>.",
+	"descr_en" : "<IMG SRC='resources/images/bac_bleu_mini.png' align='right' WIDTH='150px' /> It puts the <B> non-recycled household waste </b>.",
 	"cons" : "cons_bac_casse,cons_collectes_bacs,cons_arcencielvalorena",
 	"icone" : "modco",
 	"image" : "bac_bleu_mini.png",
@@ -83,7 +83,7 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Blue bins",
 	"modesCollecte" : "false",
 	"descr" : "<IMG SRC='resources/images/bac_bleu_mini.png' ALIGN='right' WIDTH='150px' />On met les <B>déchets ménagers non recyclés</B>.",
-	"descr_en" : "<IMG SRC='resources/images/bac_bleu_mini.png' align='right' WIDTH='150px' /> It puts the <B> non-recycled household waste </ B>.",
+	"descr_en" : "<IMG SRC='resources/images/bac_bleu_mini.png' align='right' WIDTH='150px' /> It puts the <B> non-recycled household waste </b>.",
 	"cons" : "cons_bac_casse,cons_collectes_bacs,cons_arcencielvalorena",
 	"icone" : "modco",
 	"image" : "bac_bleu_mini.png",
@@ -97,7 +97,7 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Yellow Bacs (Nantes)",
 	"modesCollecte" : "false",
 	"descr" : "<IMG SRC='resources/images/bac_jaune_en_cours_mini.png' ALIGN='right' WIDTH='150px' /><BR/>On peut mettre : cartons, cartonnettes, enveloppes, feuilles, journaux, magazines, briques, <B>tous les types de plastique</B> (bouteilles eau soda huile, bouchons, flacons, pots de yaourt, pots de crème fraîche, barquettes, films plastique)</B>,  barquettes aluminium, canettes, boîtes de conserves, bombes aérosols.<BR/>Voir <I><A HREF='fich:fiche_bacjaune'>fiche 'Bacs jaunes et bleus'</A></I> .",
-	"descr_en" : "<IMG SRC='resources/images/bac_jaune_en_cours_mini.png' align='right' WIDTH='150px' /> You can put <BR/>: cartons, cardboards, envelopes, sheets, newspapers, magazines, bricks, <B> all types of plastics </ B> (soda water bottles oil, corks, bottles, yogurt cups, cream jars, trays, plastic films) </ B>, aluminum trays, cans, tins, aerosols. <BR/> See <I> <A HREF='fich:fiche_bacjaune'> sheet 'yellow bins and blue' </A> </ I>.",
+	"descr_en" : "<IMG SRC='resources/images/bac_jaune_en_cours_mini.png' align='right' WIDTH='150px' /> You can put <BR/>: cartons, cardboards, envelopes, sheets, newspapers, magazines, bricks, <B> all types of plastics </b> (soda water bottles oil, corks, bottles, yogurt cups, cream jars, trays, plastic films) </b>, aluminum trays, cans, tins, aerosols. <BR/> See <I> <A HREF='fich:fiche_bacjaune'> sheet 'yellow bins and blue' </A> </ I>.",
 	"cons" : "cons_pasuniquementbouteilleflacon,cons_bac_casse,cons_collectes_bacs",
 	"icone" : "modco",
 	"image" : "bac_jaune_en_cours_mini.png",
@@ -124,8 +124,8 @@ var _collectModsDatas = [{
 	"libelleBouton" : "Sacs bleus",
 	"libelleBouton_en" : "Blue bags",
 	"modesCollecte" : "false",
-	"descr" : "<IMG SRC='resources/images/sac_bleu_mini.png' ALIGN='right' WIDTH='150px' />On met dans les sacs bleus les <B>déchets ménagers non recyclés</B>.",
-	"descr_en" : "<IMG SRC='resources/images/sac_bleu_mini.png' align='right' WIDTH='150px' /> are placed in blue bags the <B> non-recycled household waste </ B>.",
+	"descr" : "<IMG SRC='resources/images/nantes/sac_bleu_mini.png' ALIGN='right' WIDTH='150px' />On met dans les sacs bleus les <B>déchets ménagers non recyclés</B>.",
+	"descr_en" : "<IMG SRC='resources/images/nantes/sac_bleu_mini.png' align='right' WIDTH='150px' /> are placed in blue bags the <B> non-recycled household waste </b>.",
 	"cons" : "cons_noeudtrisac,cons_passacpoubelle",
 	"icone" : "modco",
 	"image" : "sac_bleu_mini.png",
@@ -138,8 +138,8 @@ var _collectModsDatas = [{
 	"libelleBouton" : "Sacs jaunes",
 	"libelleBouton_en" : "Yellow bags",
 	"modesCollecte" : "false",
-	"descr" : "<IMG SRC='resources/images/sac_jaune_mini.png' ALIGN='right' WIDTH='150px' /><UL>On peut mettre : cartons, cartonnettes, enveloppes, feuilles, journaux, magazines, prospectus, boîtes à œuf en carton, briques, bouteilles avec bouchons (eau, soda, huile), flacons, barquettes aluminium, canettes, boîtes de conserves, bombes aérosols.<BR/>Voir <I><A HREF='fich:fiche_sacjaune'>fiche 'Sacs jaunes et bleus'</A></I> .",
-	"descr_en" : "<IMG SRC='resources/images/sac_jaune_mini.png' align='right' WIDTH='150px' /> <UL> You can put: cartons, cardboards, envelopes, sheets, newspapers, magazines, brochures, egg boxes cardboard, bricks, bottles with caps (water, soda, oil), bottles, aluminum trays, cans, tins, aerosols. <BR/> See <I> <A HREF='fich:fiche_sacjaune'> sheet 'Bags yellow and blue '</A> </ I>.",
+	"descr" : "<IMG SRC='resources/images/nantes/sac_jaune_mini.png' ALIGN='right' WIDTH='150px' /><UL>On peut mettre : cartons, cartonnettes, enveloppes, feuilles, journaux, magazines, prospectus, boîtes à œuf en carton, briques, bouteilles avec bouchons (eau, soda, huile), flacons, barquettes aluminium, canettes, boîtes de conserves, bombes aérosols.<BR/>Voir <I><A HREF='fich:fiche_sacjaune'>fiche 'Sacs jaunes et bleus'</A></I> .",
+	"descr_en" : "<IMG SRC='resources/images/nantes/sac_jaune_mini.png' align='right' WIDTH='150px' /> <UL> You can put: cartons, cardboards, envelopes, sheets, newspapers, magazines, brochures, egg boxes cardboard, bricks, bottles with caps (water, soda, oil), bottles, aluminum trays, cans, tins, aerosols. <BR/> See <I> <A HREF='fich:fiche_sacjaune'> sheet 'Bags yellow and blue '</A> </ I>.",
 	"cons" : "cons_souille,cons_noeudtrisac,cons_passacpoubelle",
 	"icone" : "modco",
 	"image" : "sac_jaune_mini.png",
@@ -152,22 +152,22 @@ var _collectModsDatas = [{
 	"libelleBouton" : "Écopoint",
 	"libelleBouton_en" : "Ecopoint",
 	"modesCollecte" : "false",
-	"descr" : "Les Ecopoints sont des mini-déchèteries où seuls les gravats ne sont pas admis.<BR/>Les déchets suivants sont admis :encombrants, appareils électriques, déchets toxiques en petites quantités (peinture, vernis, colle, diluants, batteries, huiles moteur), déchets verts, bouteilles et flacons plastiques, papiers, cartons, cartonnettes, verre ménager (pôts, bouteilles), métal<BR/>Voir <I><A HREF='fich:fiche_ecopoint'>fiche 'Déchèteries / écopoint'</A></I> .",
-	"descr_en" : "The Ecopoints are mini-waste collection centers where only rubble are allowed <BR/> The following shall be permitted:. Bulky, electrical appliances, toxic waste in small quantities (paint, varnish, glue, thinners, batteries, motor oil) , green waste, plastic bottles, paper, cardboard, cardboards, glass household (Pots, bottles), metal <BR/> See <I> <A HREF='fich:fiche_ecopoint'> sheet 'déchèteries / Ecopoint' </ A> </ I>.",
+	"descr" : "Les Ecopoints sont des mini-déchèteries où seuls les gravats ne sont pas admis.<BR/>Les déchets suivants sont admis :encombrants, appareils électriques, déchets toxiques en petites quantités, déchets verts, bouteilles et flacons plastiques, papiers, cartons, cartonnettes, verre ménager (pôts, bouteilles), métal<BR/>Voir <I><A HREF='fich:fiche_ecopoint'>fiche 'Déchèteries / écopoint'</A></I> .",
+	"descr_en" : "The Ecopoints are mini-waste collection centers where only rubble are allowed <BR/> The following shall be permitted:. Bulky, electrical appliances, toxic waste in small quantities, green waste, plastic bottles, paper, cardboard, cardboards, glass household (Pots, bottles), metal <BR/> See <I> <A HREF='fich:fiche_ecopoint'> sheet 'déchèteries / Ecopoint' </ A> </ I>.",
 	"icone" : "modco",
-	"image" : "ecopoint_viarme_mini.png",
+	"image" : "nantes/ecopoint_viarme_mini.png",
 	"mots_cles" : "ecopoint",
 	"mots_cles_en" : "ecopoint"
 }, {
 	"code" : "modco_contomr",
-	"nom" : "Conteneurs déchets ménagers",
+	"nom" : "Conteneurs ordures ménagers",
 	"nom_en" : "Container for household waste",
-	"libelleBouton" : "Conteneurs déchets ménagers",
+	"libelleBouton" : "Conteneurs ordures ménagers",
 	"libelleBouton_en" : "Container for household waste",
 	"modesCollecte" : "false",
 	"descr" : "On met les <B>déchets ménagers non recyclés</B>.",
-	"descr_en" : "It puts the <B> non-recycled household waste </ B>.",
-	"image" : "image_defaut_mini.png",
+	"descr_en" : "It puts the <B> non-recycled household waste </b>.",
+	"image" : "conteneur_enterre.png",
 	"mots_cles" : "conteneur,dechet,menager",
 	"mots_cles_en" : "container,waste,household"
 }, {
@@ -178,8 +178,8 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Containers dry waste",
 	"modesCollecte" : "false",
 	"descr" : "On met les <B>déchets ménagers non recyclés</B>.",
-	"descr_en" : "It puts the <B> non-recycled household waste </ B>.",
-	"image" : "image_defaut_mini.png",
+	"descr_en" : "It puts the <B> non-recycled household waste </b>.",
+	"image" : "conteneur_ordure_menageres_petit.png",
 	"mots_cles" : "conteneurs,dechets,secs",
 	"mots_cles_en" : "containers,waste,dry"
 }, {
@@ -258,7 +258,7 @@ var _collectModsDatas = [{
 	"libelleBouton_en" : "Container clothing",
 	"modesCollecte" : "false",
 	"descr" : "Vous pouvez déposer vêtements, linge de maison, chaussures (liées par paire), maroquinerie <B>dans un sac bien fermé</B>.<br/>Attention ces vêtements sont <b>revendus</b> mais ne sont pas redistribués gratuitement, même si des logos sont collés sur le conteneur. Voir <a href='fiche:fiche_contvet'>Conteneurs de vêtements</a>",
-	"descr_en" : "You can drop clothes, linen, footwear (linked in pairs), leather goods <B> in a sealed bag </ B>. Caution <br/> these clothes are <b> sold </ b> but are not redistributed for free, even if logos are pasted on the container. See <a href='fiche:fiche_contvet'> clothing containers </a>",
+	"descr_en" : "You can drop clothes, linen, footwear (linked in pairs), leather goods <B> in a sealed bag </b>. Caution <br/> these clothes are <b> sold </b> but are not redistributed for free, even if logos are pasted on the container. See <a href='fiche:fiche_contvet'> clothing containers </a>",
 	"cons" : "cons_lerelais",
 	"icone" : "modco",
 	"image" : "conteneur_lerelais_mini.png",
@@ -273,7 +273,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Réemploi des appareils électroménager",
 	"descr_en" : "Reuse of household appliances",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,appareil,electromenager",
 	"mots_cles_en" : "reuse,apparatus,appliances"
 }, {
@@ -285,7 +285,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes ('Alis 44' à Nantes, 'Actif Ouest' à Saint-Herblain, 'Nâga' à Rezé) récupèrent les anciens apareils informatiques. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several organizations (Alis 44 'in Nantes, western Active' in Saint-Herblain, 'Naga' in Rezé) recover old computer apareils. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,appareil,informatique",
 	"mots_cles_en" : "reuse,appliance,computer"
 }, {
@@ -297,7 +297,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes ('Lever l'encre' et 'Oce'encre' à Nantes, 'encre Station' à Saint-Herblain) récupèrent les anciennes cartouches d'encrest. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several agencies ('Sunrise ink' and 'Oce'encre' in Nantes, Ink Station 'in Saint-Herblain) recover old cartridges encrest. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,cartouche,encre,tuner",
 	"mots_cles_en" : "re,use,cartridges,ink,tuner"
 }, {
@@ -309,7 +309,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (association <a href='lieu:stco_reemploi51'>Nantes écologie</a>, <a href='lieu:stco_reemploi47'>La croix rouge</a>...) récupèrent les anciens livres.",
 	"descr_en" : "Several organizations (<a href='lieu:stco_reemploi51'> Nantes </a> ecology association, <a href='lieu:stco_reemploi47'> The red cross </a> ...) recover the ancient books.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,livre/bd/cd/dvd",
 	"mots_cles_en" : "reuse,book,bd,cd,dvd"
 }, {
@@ -322,7 +322,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes ('Ateliers du Retz Emploi', 'La Ressourcerie de l'ïle', 'Emmaüs', 'Véti Frat', 'La Croix Rouge') récupèrent les anciens jouets. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several agencies ('Retz Employment Workshops', 'The Ressourcerie of the island', 'Emmaus', 'Veti Frat', 'The Red Cross') recover old toys. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,jouet",
 	"mots_cles_en" : "reuse,toy"
 }, {
@@ -334,7 +334,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes ('Emmaus', 'Secours Populaire', 'Retz'agir', 'Le comptoir du Solilab') récupèrent les anciens meubles. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several organizations (Emmaus' 'Secours Populaire', 'Retz'agir', 'The counter Solilab') recover antique furniture. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,meuble",
 	"mots_cles_en" : "re,use,furniture"
 }, {
@@ -346,7 +346,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes ('Ding-Fring', 'Secours Populaire', ) récupèrent les vêtements. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several agencies ('Ding Fring', 'Secours Populaire') recover clothing. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,vetement",
 	"mots_cles_en" : "reuse,clothing"
 }, {
@@ -358,7 +358,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (associations...) récupèrent les anciens meubles. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several organizations (associations ...) recover the antique furniture. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,divers",
 	"mots_cles_en" : "reuse,various"
 }, {
@@ -370,7 +370,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (association <a href='lieu:stco_reemploi47'>La croix rouge</a>, <a href='lieu:stco_reemploi55'>Ecorev</a>...) récupèrent les anciens livres.",
 	"descr_en" : "Several organizations (href='lieu:stco_reemploi47'> <a Association </a> The red cross <a href='lieu:stco_reemploi55'> Ecorev </a> ...) recover the ancient books.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,vaisselle",
 	"mots_cles_en" : "reuse,dishes"
 }, {
@@ -382,7 +382,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (association <a href='lieu:stco_reemploi51'>Nantes écologie</a>, <a href='lieu:stco_reemploi47'>La croix rouge</a>...) récupèrent les anciens livres. <br/>Voir page 'lieux'.",
 	"descr_en" : "Several organizations (<a href='lieu:stco_reemploi51'> Nantes </a> ecology association, <a href='lieu:stco_reemploi47'> The red cross </a> ...) recover the ancient books. See page <br/> 'places'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "recyclage,papier,association",
 	"mots_cles_en" : "recycling,paper,combination"
 }, {
@@ -394,7 +394,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (association 'Lunettes Sans Frontière', les magasins 'Optic 2000',  les magasins 'Krys', 'MEDICO Lions Clubs de France'...) récupère les lunettes (vous trouverez en général des réceptacles en carton dans ces endroits). Ces lunettes sont envoyées dans des pays en développement.",
 	"descr_en" : "Several organizations (associations' Glasses Without Borders' stores' Optic 2000 ', stores' Krys'' MEDICO Lions Clubs of France ...) retrieves the glasses (you can find usually cardboard receptacles in these places) . These glasses are sent to developing countries.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "vendeur,lunette",
 	"mots_cles_en" : "seller,window"
 }, {
@@ -407,7 +407,7 @@ var _collectModsDatas = [{
 	"descr" : "Vous achetez un appareil neuf, le distributeur est désormais tenu de reprendre  l'ancien à l'achat ou la livraison. C'est le principe de la reprise « un pour un ».  ",
 	"descr_en" : "You buy a new appliance, the distributor is now required to take the former for the purchase or delivery. This is the principle of the recovery 'one for one'.",
 	"cons" : "cons_ecopart",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reprise,magasin",
 	"mots_cles_en" : "recovery,store"
 }, {
@@ -419,7 +419,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Les casses automobile ('fourrières') récupèrent les anciens véhicules.",
 	"descr_en" : "The car breaks ('headland') recover older vehicles.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "casse,automobile",
 	"mots_cles_en" : "car,breakers"
 }, {
@@ -431,7 +431,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Plusieurs organismes (associations <a href='lieu:stco_reemploi14'>ATAO</a>,  <a href='lieu:stco_reemploi14'>Place aux vélos</a>,  <a href='lieu:stco_reemploiajout2'>Transformeur</a>, Vélo Campus) récupèrent les anciens vélos.",
 	"descr_en" : "Several organizations (associations <a href='lieu:stco_reemploi14'> ATAO </a> <a href='lieu:stco_reemploi14'> Place </a> bikes <a href='lieu:stco_reemploiajout2'> Transformer < / a>, Bicycle Campus) recover old bikes.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,velos",
 	"mots_cles_en" : "reuse,bicycle"
 }, {
@@ -443,7 +443,7 @@ var _collectModsDatas = [{
 	"modesCollecte" : "true",
 	"descr" : "Les pharmacies ont l'obligation de récupérer les anciens médicaments, avec ou sans conditionnement. <br/>Voir fiche 'Médicaments'.",
 	"descr_en" : "Pharmacies have the obligation to recover the older drugs, with or without conditioning. More details <br/> 'Drugs'.",
-	"image" : "image_defaut_mini.png",
+	"image" : "reemploi_petit.png",
 	"mots_cles" : "pharmacie",
 	"mots_cles_en" : "pharmacy"
 }, {}];

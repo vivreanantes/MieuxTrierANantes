@@ -107,8 +107,11 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			iconurl : 'resources/icons/marker-icon-yellow.png',
 			label : '<img style="width:10%" src="resources/icons/marker-icon-yellow.png"> Vente au vrac'
 		};
+
 		this.mapOsm.posLatitudeInit = this.mapOsm.config.defaultLocation[0];
 		this.mapOsm.longitudeInit = this.mapOsm.config.defaultLocation[1];
+		// this.mapOsm.posLatitudeInit = getParam("geo.defaultLong");
+		// this.mapOsm.longitudeInit = getParam("geo.defaultLat");
 
 		var geoController = this;
 
@@ -371,6 +374,19 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	 */
 	onShowMapOSM : function() {
 
+		// this.mapOsm.config.defaultLocation[0]
+		var defaultLocationX = getParam("geo.defaultLong");
+		// this.mapOsm.config.defaultLocation[1]
+		var defaultLocationY = getParam("geo.defaultLat");
+		// this.mapOsm.config.defaultZoom
+		var defaultZoom = getParam("geo.zoomInit");
+		// this.mapOsm.config.minZoom
+		var minZoom = getParam("geo.zoomMin");
+		var boundsMin = [getParam("geo.boundsMinLat"),
+				getParam("geo.boundsMinLong")];
+		var boundsMax = [getParam("geo.boundsMaxLat"),
+				getParam("geo.boundsMaxLong")];
+
 		this.mapOsm = this.getMapOSM();
 
 		this.initialiseCarte();
@@ -397,10 +413,9 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 			this.lmap = new L.Map(this.mapOsm.getId(), {
 						layers : [osmLayer],
 						maxBounds : maxbounds,
-						center : [this.mapOsm.config.defaultLocation[0],
-								this.mapOsm.config.defaultLocation[1]],
-						zoom : this.mapOsm.config.defaultZoom,
-						minZoom : this.mapOsm.config.minZoom
+						center : [defaultLocationY, defaultLocationX],
+						zoom : defaultZoom,
+						minZoom : minZoom
 					});
 
 			// Evenement fin déplacement de zône
