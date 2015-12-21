@@ -21,16 +21,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 */
 	getSpecificLabel : function(stKey) {
 		var stLocale = this.getLocale();
-		var result = "";
-		if (_specificLabelsDatas[stKey] == null) {
-			result = stKey;
-		} else if (stLocale == "en"
-				&& _specificLabelsDatas[stKey]["en"] != null) {
-			result = _specificLabelsDatas[stKey]["en"];
-		} else if (_specificLabelsDatas[stKey]["fr"] != null) {
-			result = _specificLabelsDatas[stKey]["fr"];
-		}
-		return result;
+		return _translateSpecificLabels(stKey, stLocale);
 	},
 
 	/**

@@ -657,3 +657,16 @@ function _translate(stKey, stLocale) {
 	}
 	return result;
 }
+
+function _translateSpecificLabels(stKey, stLocale) {
+
+	var result = "";
+	if (_specificLabelsDatas[stKey] == null) {
+		result = stKey;
+	} else if (stLocale == "en" && _specificLabelsDatas[stKey]["en"] != null) {
+		result = _specificLabelsDatas[stKey]["en"];
+	} else if (_specificLabelsDatas[stKey]["fr"] != null) {
+		result = _specificLabelsDatas[stKey]["fr"];
+	}
+	return result;
+}

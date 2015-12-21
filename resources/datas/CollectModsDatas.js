@@ -128,7 +128,7 @@ var _collectModsDatas = [{
 	"descr_en" : "<IMG SRC='resources/images/nantes/sac_bleu_mini.png' align='right' WIDTH='150px' /> are placed in blue bags the <B> non-recycled household waste </b>.",
 	"cons" : "cons_noeudtrisac,cons_passacpoubelle",
 	"icone" : "modco",
-	"image" : "sac_bleu_mini.png",
+	"image" : "nantes/sac_bleu_mini.png",
 	"mots_cles" : "sacs,bleus",
 	"mots_cles_en" : "bags,blue"
 }, {
@@ -142,7 +142,7 @@ var _collectModsDatas = [{
 	"descr_en" : "<IMG SRC='resources/images/nantes/sac_jaune_mini.png' align='right' WIDTH='150px' /> <UL> You can put: cartons, cardboards, envelopes, sheets, newspapers, magazines, brochures, egg boxes cardboard, bricks, bottles with caps (water, soda, oil), bottles, aluminum trays, cans, tins, aerosols. <BR/> See <I> <A HREF='fich:fiche_sacjaune'> sheet 'Bags yellow and blue '</A> </ I>.",
 	"cons" : "cons_souille,cons_noeudtrisac,cons_passacpoubelle",
 	"icone" : "modco",
-	"image" : "sac_jaune_mini.png",
+	"image" : "nantes/sac_jaune_mini.png",
 	"mots_cles" : "sacs,jaunes",
 	"mots_cles_en" : "bags,yellow"
 }, {

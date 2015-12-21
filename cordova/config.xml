@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.MieuxVivreANantes.MieuxTrierANantes" version="1.16"
-	android-versionCode="16" xmlns="http://www.w3.org/ns/widgets"
+<widget id="com.MieuxVivreANantes.MieuxTrierANantes" version="1.17"
+	android-versionCode="17" xmlns="http://www.w3.org/ns/widgets"
 	xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Mieux trier à Nantes</name>
 	<description>

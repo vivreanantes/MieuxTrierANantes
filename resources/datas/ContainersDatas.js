@@ -5943,2755 +5943,12 @@ var _containersDatas = [{
 			"type" : "Conteneur verre",
 			"modesCollecte" : ",modco_contverre"
 		}, {
-			"code" : "stco_conteneur_TS5107",
-			"nom" : "Lauriers",
-			"adresseTemp" : "12 rue de la Saone Nantes",
-			"longitude" : "-1.60284961038401",
-			"latitude" : "47.2046750189",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5108",
-			"nom" : "Lauriers",
-			"adresseTemp" : "8 rue de la Saone Nantes",
-			"longitude" : "-1.60305354076017",
-			"latitude" : "47.2044420568353",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5109",
-			"nom" : "Lauriers",
-			"adresseTemp" : "4 rue de la Saone Nantes",
-			"longitude" : "-1.60325397971054",
-			"latitude" : "47.2041411069162",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5110",
-			"nom" : "Lauriers",
-			"adresseTemp" : "8 rue de l'Isère Nantes",
-			"longitude" : "-1.60339756210349",
-			"latitude" : "47.2029236904828",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5113",
-			"nom" : "Lauriers",
-			"adresseTemp" : "3 rue de l'Isère Nantes",
-			"longitude" : "-1.60256783922237",
-			"latitude" : "47.2025950112327",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5115",
-			"nom" : "Lauriers",
-			"adresseTemp" : "17 rue du Rhone Nantes",
-			"longitude" : "-1.60344398383291",
-			"latitude" : "47.2034721174207",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5116",
-			"nom" : "Lauriers",
-			"adresseTemp" : "29 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60547948694116",
-			"latitude" : "47.209091489477",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5117",
-			"nom" : "Lauriers",
-			"adresseTemp" : "27 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60576179575438",
-			"latitude" : "47.2087712246348",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5118",
-			"nom" : "Lauriers",
-			"adresseTemp" : "21 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60604349466162",
-			"latitude" : "47.2084427244557",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5119",
-			"nom" : "Lauriers",
-			"adresseTemp" : "17 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60637283209848",
-			"latitude" : "47.2080620294369",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5120",
-			"nom" : "Lauriers",
-			"adresseTemp" : "13 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60630711468371",
-			"latitude" : "47.2077660524214",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5121",
-			"nom" : "Lauriers",
-			"adresseTemp" : "3 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60683893570763",
-			"latitude" : "47.2071534690363",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5122",
-			"nom" : "Lauriers",
-			"adresseTemp" : "9 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60655731820476",
-			"latitude" : "47.207462362357",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5123",
-			"nom" : "Vieux Malakoff",
-			"adresseTemp" : "10 rue de l'Indre Nantes",
-			"longitude" : "-1.53661598771824",
-			"latitude" : "47.2140090252547",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5126",
-			"nom" : "Vieux Malakoff",
-			"adresseTemp" : "6 rue de l'Indre Nantes",
-			"longitude" : "-1.53619398857976",
-			"latitude" : "47.2139953440133",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5128",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "1 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57428961452404",
-			"latitude" : "47.2587603922968",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5129",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "7 rue Jacques Cartier Nantes",
-			"longitude" : "-1.5738613566213",
-			"latitude" : "47.2587491135434",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5130",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "9 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57300694869096",
-			"latitude" : "47.2585273260003",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5131",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "15 rue Jacques Cartier Nantes",
-			"longitude" : "-1.5723274380297",
-			"latitude" : "47.2586452873082",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5132",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "17 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57219888827186",
-			"latitude" : "47.2589602405518",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5133",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "25 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57218273995751",
-			"latitude" : "47.2595272923312",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5134",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "31 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57216529440395",
-			"latitude" : "47.2599107125529",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5135",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "35 rue Jacques Cartier Nantes",
-			"longitude" : "-1.572022530617",
-			"latitude" : "47.2602178918965",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5136",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "41 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57168554905675",
-			"latitude" : "47.260522364141",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5137",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "43 rue Jacques Cartier Nantes",
-			"longitude" : "-1.57112347370631",
-			"latitude" : "47.2608994689879",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5138",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "6 Avenue Laurent Bonnevay Nantes",
-			"longitude" : "-1.54131403496931",
-			"latitude" : "47.1944093567651",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5140",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "2 Avenue Laurent Bonnevay Nantes",
-			"longitude" : "-1.54071940543657",
-			"latitude" : "47.1948318025214",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5142",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "10 Rue Gabriel Goudy Nantes",
-			"longitude" : "-1.5408339312886",
-			"latitude" : "47.1954305693618",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5144",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "6 Rue Gabriel Goudy Nantes",
-			"longitude" : "-1.54129846224335",
-			"latitude" : "47.1958452328237",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5147",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "3 Rue Henri Sellier Nantes",
-			"longitude" : "-1.54237096364146",
-			"latitude" : "47.1955408436578",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5149",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "1 Rue Paul Théry Nantes",
-			"longitude" : "-1.53829126810331",
-			"latitude" : "47.1950218303199",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5150",
-			"nom" : "St Jacques - Pirmil",
-			"adresseTemp" : "21 Rue Gabriel Goudy Nantes",
-			"longitude" : "-1.53894331831843",
-			"latitude" : "47.1943467187568",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5153",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "2 Rue d'Ascain Nantes",
-			"longitude" : "-1.52639725079771",
-			"latitude" : "47.1952602174766",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5162",
-			"nom" : "Malakoff",
-			"adresseTemp" : "9 rue de Chypre Nantes",
-			"longitude" : "-1.525181800775",
-			"latitude" : "47.2154524036054",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5164",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "1 rue d'Hendaye Nantes",
-			"longitude" : "-1.52762896832941",
-			"latitude" : "47.1956296046171",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5165",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "1 rue d'Hendaye Nantes",
-			"longitude" : "-1.52755322894755",
-			"latitude" : "47.1955031599837",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5168",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "3 rue d'Hendaye Nantes",
-			"longitude" : "-1.52772407036962",
-			"latitude" : "47.1957935792904",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5170",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "4 rue d'Hendaye Nantes",
-			"longitude" : "-1.52792788421059",
-			"latitude" : "47.1959116010664",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5173",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "1 rue de Biarritz Nantes",
-			"longitude" : "-1.52953244178169",
-			"latitude" : "47.1963283127635",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5175",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "3 rue de Biarritz Nantes",
-			"longitude" : "-1.52966232800322",
-			"latitude" : "47.1960515391618",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5177",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "5 rue de Biarritz Nantes",
-			"longitude" : "-1.52975748221524",
-			"latitude" : "47.1958388752799",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5179",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "7 rue de Biarritz Nantes",
-			"longitude" : "-1.52948164762991",
-			"latitude" : "47.1954364110642",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5181",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "9 rue de Biarritz Nantes",
-			"longitude" : "-1.5292608308418",
-			"latitude" : "47.1950620248978",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5185",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "25 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59896997392753",
-			"latitude" : "47.2259886601609",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5186",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "8 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59869853090687",
-			"latitude" : "47.2271175497606",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5187",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "5 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59855282661124",
-			"latitude" : "47.2273815327728",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5188",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "31 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59814738973523",
-			"latitude" : "47.2255967499735",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5197",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "15 Rue Jean Marc Nattier Nantes",
-			"longitude" : "-1.590311835444",
-			"latitude" : "47.225418127506",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5198",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "7 Rue Jean Marc Nattier Nantes",
-			"longitude" : "-1.58962501031564",
-			"latitude" : "47.2250793211712",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5199",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "3 Rue Jean Marc Nattier Nantes",
-			"longitude" : "-1.58923706475083",
-			"latitude" : "47.2248913108918",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5200",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "20 Rue Ernest Meissonnier Nantes",
-			"longitude" : "-1.58939754874893",
-			"latitude" : "47.2243121059919",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5202",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "14 Rue Ernest Meissonnier Nantes",
-			"longitude" : "-1.58973730017062",
-			"latitude" : "47.2240085057641",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5203",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "8 Rue Ernest Meissonnier Nantes",
-			"longitude" : "-1.59012939829511",
-			"latitude" : "47.2240467463485",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5204",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "6 Rue Ernest Meissonnier Nantes",
-			"longitude" : "-1.59082006658036",
-			"latitude" : "47.223963368527",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5206",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "8 Rue Nicolas Lancret Nantes",
-			"longitude" : "-1.59113638508996",
-			"latitude" : "47.2231755655689",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5207",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "3 Rue Nicolas Lancret Nantes",
-			"longitude" : "-1.59178329172087",
-			"latitude" : "47.2227025793583",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5209",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : " Rue Auguste Lepère Nantes",
-			"longitude" : "-1.59863619523978",
-			"latitude" : "47.2276088032832",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5210",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "7 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59919644686488",
-			"latitude" : "47.2267610539747",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5211",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "12 Rue Louis le Nain Nantes",
-			"longitude" : "-1.5991455884886",
-			"latitude" : "47.226687460659",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5212",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "10 Rue Louis le Nain Nantes",
-			"longitude" : "-1.59880489525567",
-			"latitude" : "47.2270189832495",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5214",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "10 Rue Emilienne Leroux Nantes",
-			"longitude" : "-1.53142084796605",
-			"latitude" : "47.1962102489588",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5216",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "8 Rue Emilienne Leroux Nantes",
-			"longitude" : "-1.5322962462785",
-			"latitude" : "47.1967597444686",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : papier-carton, ordures",
-			"modesCollecte" : ",modco_contpapiercarton,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5221",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "4 Rue Emilienne Leroux Nantes",
-			"longitude" : "-1.53283602322277",
-			"latitude" : "47.1968757643933",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5222",
-			"nom" : "Decré - Cathédrale",
-			"adresseTemp" : " Allée de la Tremperie Nantes",
-			"longitude" : "-1.55372336489783",
-			"latitude" : "47.2144100983114",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5225",
-			"nom" : "Decré - Cathédrale",
-			"adresseTemp" : " Allée du Port Maillard Nantes",
-			"longitude" : "-1.55183559185543",
-			"latitude" : "47.2148163830644",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5229",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "119 Rue Bonne Garde Nantes",
-			"longitude" : "-1.53382655699749",
-			"latitude" : "47.1968187649531",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5230",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "44 Rue Georges de la Tour Nantes",
-			"longitude" : "-1.59951187754468",
-			"latitude" : "47.2253448212357",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5232",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "30 Rue Georges de la Tour Nantes",
-			"longitude" : "-1.60078525806129",
-			"latitude" : "47.2252136251716",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5234",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "4 Rue Claude Lorrain Nantes",
-			"longitude" : "-1.60287298177548",
-			"latitude" : "47.2243951962788",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5238",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "6 Rue Amédée de la Patellière Nantes",
-			"longitude" : "-1.60116602240615",
-			"latitude" : "47.223594962682",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5240",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "3 Rue Amédée de la Patellière Nantes",
-			"longitude" : "-1.60124591926301",
-			"latitude" : "47.223425063495",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5242",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "6 Rue Charles Perron Nantes",
-			"longitude" : "-1.60035357281434",
-			"latitude" : "47.2244110931801",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5244",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "5 Rue Charles Perron Nantes",
-			"longitude" : "-1.60048326709402",
-			"latitude" : "47.2242797386636",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5246",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "3 Rue Henry Ottmann Nantes",
-			"longitude" : "-1.60185099076107",
-			"latitude" : "47.2227346809114",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5248",
-			"nom" : "Mendes France",
-			"adresseTemp" : "8 Rue Jean Olivesi Nantes",
-			"longitude" : "-1.6070329962626",
-			"latitude" : "47.2100341463026",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5249",
-			"nom" : "Mendes France",
-			"adresseTemp" : "6 Rue Jean Olivesi Nantes",
-			"longitude" : "-1.60667033656599",
-			"latitude" : "47.2098804156953",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5250",
-			"nom" : "Mendes France",
-			"adresseTemp" : "2 Rue Jean Olivesi Nantes",
-			"longitude" : "-1.6061334167097",
-			"latitude" : "47.2096635068405",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5251",
-			"nom" : "Mendes France",
-			"adresseTemp" : "4 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60793064544827",
-			"latitude" : "47.2064329751142",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5252",
-			"nom" : "Mendes France",
-			"adresseTemp" : "8 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60770619535504",
-			"latitude" : "47.206695542244",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5253",
-			"nom" : "Mendes France",
-			"adresseTemp" : "12 rue Lucien Aubert Nantes",
-			"longitude" : "-1.60742549533992",
-			"latitude" : "47.2070167896371",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5254",
-			"nom" : "Lauriers",
-			"adresseTemp" : "7 Rue de l'Aveyron Nantes",
-			"longitude" : "-1.60713695018851",
-			"latitude" : "47.2068821949213",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5255",
-			"nom" : "Lauriers",
-			"adresseTemp" : "3 Rue de l'Aveyron Nantes",
-			"longitude" : "-1.60748496513486",
-			"latitude" : "47.2066319110401",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5256",
-			"nom" : "Lauriers",
-			"adresseTemp" : "1 Rue de l'Ariège Nantes",
-			"longitude" : "-1.60748317517014",
-			"latitude" : "47.2062171392802",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5257",
-			"nom" : "Lauriers",
-			"adresseTemp" : "1 Rue de l'Ariège Nantes",
-			"longitude" : "-1.60700822326334",
-			"latitude" : "47.206018752994",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5258",
-			"nom" : "Mendes France",
-			"adresseTemp" : "19 Rue Romain Rolland Nantes",
-			"longitude" : "-1.6094161860968",
-			"latitude" : "47.2063924384252",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5262",
-			"nom" : "Mendes France",
-			"adresseTemp" : "4 Rue Etienne Coutan Nantes",
-			"longitude" : "-1.60813866780521",
-			"latitude" : "47.2053516224758",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5263",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "1 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.5217421112589",
-			"latitude" : "47.2688032824979",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5265",
-			"nom" : "Mendes France",
-			"adresseTemp" : "2 Rue du Lot Nantes",
-			"longitude" : "-1.60416351105103",
-			"latitude" : "47.2097700931418",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5270",
-			"nom" : "Mendes France",
-			"adresseTemp" : "36 Rue de l'Adour Nantes",
-			"longitude" : "-1.60974559005256",
-			"latitude" : "47.2071633575895",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5271",
-			"nom" : "Mendes France",
-			"adresseTemp" : "28 Rue de l'Adour Nantes",
-			"longitude" : "-1.60913707860112",
-			"latitude" : "47.2069200206344",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5272",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "7 Rue d'Ottawa Nantes",
-			"longitude" : "-1.57586713084477",
-			"latitude" : "47.2578855169713",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5274",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "11 Rue d'Ottawa Nantes",
-			"longitude" : "-1.57613480529625",
-			"latitude" : "47.258208705628",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5275",
-			"nom" : "Bout des Pavés-Chêne des Angla",
-			"adresseTemp" : "11 Rue de Montréal Nantes",
-			"longitude" : "-1.57742761483641",
-			"latitude" : "47.257503406895",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5282",
-			"nom" : "Haluchère-Perray",
-			"adresseTemp" : "8 Rue René Dumont Nantes",
-			"longitude" : "-1.51544707695876",
-			"latitude" : "47.2401981301988",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5284",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "51 Rue du Breil Nantes",
-			"longitude" : "-1.58645493116292",
-			"latitude" : "47.2295263928951",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5285",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "57 Rue du Breil Nantes",
-			"longitude" : "-1.58717208733928",
-			"latitude" : "47.2299271326751",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5287",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "31 Boulevard Emile Gabory Nantes",
-			"longitude" : "-1.52904095206893",
-			"latitude" : "47.19459576979",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5289",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "31 Boulevard Emile Gabory Nantes",
-			"longitude" : "-1.52848619902338",
-			"latitude" : "47.1939364359773",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5291",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "7 Rue Charles Dullin Nantes",
-			"longitude" : "-1.58676494461316",
-			"latitude" : "47.2324526384109",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5293",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " Rue Maurice Tourneur Nantes",
-			"longitude" : "-1.58751973982156",
-			"latitude" : "47.2321473068516",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5295",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " Allée Jacques Becker Nantes",
-			"longitude" : "-1.58797622030196",
-			"latitude" : "47.2317613170092",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5297",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "65 Rue des Plantes Nantes",
-			"longitude" : "-1.58817050580116",
-			"latitude" : "47.2313326553477",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5299",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "2 Allée Henri Chrétien Nantes",
-			"longitude" : "-1.58792751466323",
-			"latitude" : "47.2312005876806",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5301",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "14 Allée Henri Chrétien Nantes",
-			"longitude" : "-1.5874775764112",
-			"latitude" : "47.2309527665356",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5303",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "13 rue Louis Jouvet Nantes",
-			"longitude" : "-1.58689506982806",
-			"latitude" : "47.2312935118856",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5305",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : "7 rue Louis Jouvet Nantes",
-			"longitude" : "-1.58641690046442",
-			"latitude" : "47.2316730120274",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5307",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : "8 rue de saint jean de luz Nantes",
-			"longitude" : "-1.52746928121103",
-			"latitude" : "47.1942563725965",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_TS5312",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "1 Rue de Pont Aven Nantes",
-			"longitude" : "-1.57500590550138",
-			"latitude" : "47.2656724385377",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5313",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "1 Rue de Pont Aven Nantes",
-			"longitude" : "-1.57452295353633",
-			"latitude" : "47.2655773685349",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5314",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "2 Rue de Concarneau Nantes",
-			"longitude" : "-1.57850706714485",
-			"latitude" : "47.2643391480194",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5315",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "6 Rue de Douarnenez Nantes",
-			"longitude" : "-1.57598592426578",
-			"latitude" : "47.2648745801656",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5317",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "7 Rue de Concarneau Nantes",
-			"longitude" : "-1.578838039294",
-			"latitude" : "47.265484660645",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5318",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "7 Rue de Douarnenez Nantes",
-			"longitude" : "-1.5763200155451",
-			"latitude" : "47.2649241305513",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5320",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "13 Rue de Douarnenez Nantes",
-			"longitude" : "-1.57712038340412",
-			"latitude" : "47.2655243682649",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5321",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "10 Rue de Concarneau Nantes",
-			"longitude" : "-1.57773715823046",
-			"latitude" : "47.2656458437517",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5322",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "5 Rue de Pont Aven Nantes",
-			"longitude" : "-1.57586256746999",
-			"latitude" : "47.2658404802185",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5324",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "2 Rue de Douarnenez Nantes",
-			"longitude" : "-1.57530236872672",
-			"latitude" : "47.2646067687382",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5325",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "10 rue Jacques Callot Nantes",
-			"longitude" : "-1.5985287717422",
-			"latitude" : "47.2245415020348",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5328",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "34 Rue Antoine Watteau Nantes",
-			"longitude" : "-1.59920344393247",
-			"latitude" : "47.2246319810801",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5331",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "12 Rue Edmond Bertreux Nantes",
-			"longitude" : "-1.59902774075761",
-			"latitude" : "47.2238083220646",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5334",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "2 rue Jacques Callot Nantes",
-			"longitude" : "-1.59790619951588",
-			"latitude" : "47.2242119013936",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5336",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "10 Rue Honoré Daumier Nantes",
-			"longitude" : "-1.59705649991384",
-			"latitude" : "47.2235742830012",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5338",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "2 Rue Honoré Daumier Nantes",
-			"longitude" : "-1.59649159753616",
-			"latitude" : "47.2233077178342",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5340",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "5 Rue Jean Honoré Fragonard Nantes",
-			"longitude" : "-1.60266069627535",
-			"latitude" : "47.222025950841",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5341",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "8 Rue Jean Honoré Fragonard Nantes",
-			"longitude" : "-1.60227677828587",
-			"latitude" : "47.2224074630798",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5344",
-			"nom" : "Lauriers",
-			"adresseTemp" : "4 Rue du Jamet Nantes",
-			"longitude" : "-1.60644664872487",
-			"latitude" : "47.2058161052186",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5345",
-			"nom" : "Lauriers",
-			"adresseTemp" : "16 Rue du Jamet Nantes",
-			"longitude" : "-1.60566066546312",
-			"latitude" : "47.2063083916965",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5347",
-			"nom" : "Lauriers",
-			"adresseTemp" : "20 Rue du Jamet Nantes",
-			"longitude" : "-1.60552655781973",
-			"latitude" : "47.2066669282918",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5348",
-			"nom" : "Lauriers",
-			"adresseTemp" : "28 Rue du Jamet Nantes",
-			"longitude" : "-1.60497186908831",
-			"latitude" : "47.2073803838393",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5350",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "46 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.51956909878594",
-			"latitude" : "47.2731869935103",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5352",
-			"nom" : "Beaujoire - Halvèque",
-			"adresseTemp" : "14 Rue Claude et Simone Millot Nantes",
-			"longitude" : "-1.51471112893372",
-			"latitude" : "47.2610589092307",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5353",
-			"nom" : "Beaujoire - Halvèque",
-			"adresseTemp" : "20 Avenue de Josselin Nantes",
-			"longitude" : "-1.51414109214192",
-			"latitude" : "47.2601100637559",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5355",
-			"nom" : "Beaujoire - Halvèque",
-			"adresseTemp" : "6 Rue Claude et Simone Millot Nantes",
-			"longitude" : "-1.51387311660712",
-			"latitude" : "47.2606194551605",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5357",
-			"nom" : "Beaujoire - Halvèque",
-			"adresseTemp" : "3 Rue Louis et Louise Le Paih Nantes",
-			"longitude" : "-1.51299893936",
-			"latitude" : "47.2607301455211",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5358",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : " Rue Barbara Nantes",
-			"longitude" : "-1.52219019589521",
-			"latitude" : "47.27169295694",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5359",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "16 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.52159652211754",
-			"latitude" : "47.269768803938",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5361",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : " Rue Barbara Nantes",
-			"longitude" : "-1.52169414980947",
-			"latitude" : "47.2715207165696",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5362",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "13 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.52155787810415",
-			"latitude" : "47.2702416517578",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5364",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "6 Rue du Bois Hue Nantes",
-			"longitude" : "-1.52152546432113",
-			"latitude" : "47.2722713525659",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5366",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "38 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.52014973659374",
-			"latitude" : "47.2724091788237",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5369",
-			"nom" : "La Bottière",
-			"adresseTemp" : "94 Rue Félix Ménétrier Nantes",
-			"longitude" : "-1.5210387622694",
-			"latitude" : "47.2402093318642",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5371",
-			"nom" : "La Bottière",
-			"adresseTemp" : "3 Rue Urbain le Verrier Nantes",
-			"longitude" : "-1.51848705020074",
-			"latitude" : "47.240626920684",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5372",
-			"nom" : "La Bottière",
-			"adresseTemp" : "7 Rue Urbain le Verrier Nantes",
-			"longitude" : "-1.51900540081542",
-			"latitude" : "47.2409655825835",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5373",
-			"nom" : "Bout des pavés-Chêne des",
-			"adresseTemp" : "61 Avenue du Bout des Landes Nantes",
-			"longitude" : "-1.5788483251105",
-			"latitude" : "47.2600565836499",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5376",
-			"nom" : "Boissière",
-			"adresseTemp" : "1 Rue Paul Claudel Nantes",
-			"longitude" : "-1.56713903784582",
-			"latitude" : "47.2521034277797",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5380",
-			"nom" : "Boissière",
-			"adresseTemp" : "1 Rue Prosper Mérimée Nantes",
-			"longitude" : "-1.5676151824212",
-			"latitude" : "47.2548682380874",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5383",
-			"nom" : "Bout des pavés-Chêne des",
-			"adresseTemp" : "14 Rue de Toronto Nantes",
-			"longitude" : "-1.57781992434506",
-			"latitude" : "47.2582660748865",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5386",
-			"nom" : "Bout des pavés-Chêne des",
-			"adresseTemp" : "9 Rue de Vancouver Nantes",
-			"longitude" : "-1.57813817983412",
-			"latitude" : "47.2592593021368",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5388",
-			"nom" : "Bout des pavés-Chêne des",
-			"adresseTemp" : "7 Rue de Hamilton Nantes",
-			"longitude" : "-1.57653331325201",
-			"latitude" : "47.2594912382954",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5389",
-			"nom" : "Richebourg - St Clément",
-			"adresseTemp" : "37 Rue Maréchal Joffre Nantes",
-			"longitude" : "-1.54710357341477",
-			"latitude" : "47.2218585715759",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5390",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : " rue Auguste Lepère Nantes",
-			"longitude" : "-1.59787010342564",
-			"latitude" : "47.2272232175926",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5391",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : " rue Auguste Lepère Nantes",
-			"longitude" : "-1.59774913487845",
-			"latitude" : "47.2271643992534",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5392",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "4 Rue Antoine Watteau Nantes",
-			"longitude" : "-1.60141905270174",
-			"latitude" : "47.2225461500439",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5393",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "2 Rue Jean Baptiste Chardin Nantes",
-			"longitude" : "-1.59980094082668",
-			"latitude" : "47.2231173714154",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5395",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "18 Rue Antoine Watteau Nantes",
-			"longitude" : "-1.60078917771818",
-			"latitude" : "47.2231259307961",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5397",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "6 Rue Jean Baptiste Greuze Nantes",
-			"longitude" : "-1.59861146665742",
-			"latitude" : "47.2232766509268",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5398",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "12 Rue Georges de la Tour Nantes",
-			"longitude" : "-1.60217543640086",
-			"latitude" : "47.2240351590193",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5401",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "2 Rue de Brest Nantes",
-			"longitude" : "-1.58075746668201",
-			"latitude" : "47.265157402936",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5402",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "6 Rue de Brest Nantes",
-			"longitude" : "-1.5812941313534",
-			"latitude" : "47.2659646895419",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5404",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "8 Rue de Brest Nantes",
-			"longitude" : "-1.58139192609571",
-			"latitude" : "47.2662028302222",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5406",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "2 Rue de Brest Nantes",
-			"longitude" : "-1.58095166202448",
-			"latitude" : "47.2653664734024",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5407",
-			"nom" : "Graslin - Commerce",
-			"adresseTemp" : " Allée de la Bourse Nantes",
-			"longitude" : "-1.55861215433755",
-			"latitude" : "47.2124144188788",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5409",
-			"nom" : "Malakoff",
-			"adresseTemp" : "25 Rue d'Angleterre Nantes",
-			"longitude" : "-1.52908400646401",
-			"latitude" : "47.2142288515112",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5412",
-			"nom" : "Malakoff",
-			"adresseTemp" : "25 Rue d'Angleterre Nantes",
-			"longitude" : "-1.52907222409258",
-			"latitude" : "47.2143592626159",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5414",
-			"nom" : "Malakoff",
-			"adresseTemp" : "17 Rue d'Angleterre Nantes",
-			"longitude" : "-1.52831104763312",
-			"latitude" : "47.2144301898327",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5417",
-			"nom" : "Malakoff",
-			"adresseTemp" : "14 Rue d'Angleterre Nantes",
-			"longitude" : "-1.5274651468301",
-			"latitude" : "47.2147330276834",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5419",
-			"nom" : "Malakoff",
-			"adresseTemp" : "1 Rue d'Angleterre Nantes",
-			"longitude" : "-1.52654270633582",
-			"latitude" : "47.2149827031751",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5421",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "5 Rue Claude Lorrain Nantes",
-			"longitude" : "-1.60165409256327",
-			"latitude" : "47.225245862599",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5423",
-			"nom" : "La Bottière",
-			"adresseTemp" : "98 Rue Félix Ménétrier Nantes",
-			"longitude" : "-1.52009921798605",
-			"latitude" : "47.2407535912278",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5424",
-			"nom" : "La Bottière",
-			"adresseTemp" : "67 Rue de la Bottière Nantes",
-			"longitude" : "-1.51854888232384",
-			"latitude" : "47.2400552679629",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5427",
-			"nom" : "Lauriers",
-			"adresseTemp" : " Rue de la Save Nantes",
-			"longitude" : "-1.60466603264104",
-			"latitude" : "47.2057769187483",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5428",
-			"nom" : "Lauriers",
-			"adresseTemp" : "14 Rue du Doubs Nantes",
-			"longitude" : "-1.60610670390085",
-			"latitude" : "47.2049629849477",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5430",
-			"nom" : "Lauriers",
-			"adresseTemp" : "12 Rue du Doubs Nantes",
-			"longitude" : "-1.6063524341356",
-			"latitude" : "47.2046398411983",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5431",
-			"nom" : "Lauriers",
-			"adresseTemp" : "6 Rue du Doubs Nantes",
-			"longitude" : "-1.60580227283121",
-			"latitude" : "47.2041396065498",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5432",
-			"nom" : "Lauriers",
-			"adresseTemp" : "6 Rue du Drac Nantes",
-			"longitude" : "-1.6048925254037",
-			"latitude" : "47.2037527973134",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5434",
-			"nom" : "Lauriers",
-			"adresseTemp" : "2 Rue du Gers Nantes",
-			"longitude" : "-1.6040466323769",
-			"latitude" : "47.2047063276755",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5435",
-			"nom" : "Lauriers",
-			"adresseTemp" : "3 Rue du Gers Nantes",
-			"longitude" : "-1.60455451949756",
-			"latitude" : "47.2050233020598",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5437",
-			"nom" : "Lauriers",
-			"adresseTemp" : "9 Rue du Gers Nantes",
-			"longitude" : "-1.60501903213803",
-			"latitude" : "47.2052241188299",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_TS5441",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "15 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.52147068150685",
-			"latitude" : "47.2710710793516",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5443",
-			"nom" : "Gloriette - Feydeau",
-			"adresseTemp" : " Cours Commandant D'Estienne D'Orves Nantes",
-			"longitude" : "-1.55278764463762",
-			"latitude" : "47.2134335221364",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5444",
-			"nom" : "Gloriette - Feydeau",
-			"adresseTemp" : " Cours Commandant D'Estienne D'Orves Nantes",
-			"longitude" : "-1.55276122904896",
-			"latitude" : "47.2134034568646",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5446",
-			"nom" : "Malakoff",
-			"adresseTemp" : " Rue de Madrid Nantes",
-			"longitude" : "-1.53318230070315",
-			"latitude" : "47.2137508154407",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5447",
-			"nom" : "Malakoff",
-			"adresseTemp" : " Rue de Madrid Nantes",
-			"longitude" : "-1.53234821095128",
-			"latitude" : "47.2141327481862",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5448",
-			"adresseTemp" : " Rue de Madrid Nantes",
-			"longitude" : "-1.53277563534636",
-			"latitude" : "47.2139491732511",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_TS5449",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "15 Rue de Pont Aven Nantes",
-			"longitude" : "-1.58057843981244",
-			"latitude" : "47.2666865475825",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5450",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "13 Rue de Pont Aven Nantes",
-			"longitude" : "-1.57963439394997",
-			"latitude" : "47.266650492118",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5452",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : " Boulevard René Cassin Nantes",
-			"longitude" : "-1.5775738505603",
-			"latitude" : "47.2640983960662",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5453",
-			"nom" : "Rte de Ste Luce",
-			"adresseTemp" : "55 Rue de la Basse Chénaie Nantes",
-			"longitude" : "-1.50864785911055",
-			"latitude" : "47.2408615170513",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5454",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : " Rue de Douarnenez Nantes",
-			"longitude" : "-1.57537897234976",
-			"latitude" : "47.2645556726412",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_TS5456",
-			"adresseTemp" : " Rue des Halquinières Nantes",
-			"longitude" : "-1.50901382326646",
-			"latitude" : "47.2395450523545",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5457",
-			"adresseTemp" : " Mail Haroun Tazieff Nantes",
-			"longitude" : "-1.51128678570426",
-			"latitude" : "47.2396332969042",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5458",
-			"adresseTemp" : " Mail Haroun Tazieff Nantes",
-			"longitude" : "-1.51182963935756",
-			"latitude" : "47.2398710819594",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_TS5459",
-			"adresseTemp" : " Rue des Halquinières Nantes",
-			"longitude" : "-1.50835781429867",
-			"latitude" : "47.2399249795109",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ordures",
-			"modesCollecte" : ",modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4001",
-			"nom" : "Santos Dumont",
-			"adresseTemp" : " rue de la petite sensive Nantes",
-			"longitude" : "-1.56157980477749",
-			"latitude" : "47.2604370973811",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4002",
-			"nom" : "Boissière",
-			"adresseTemp" : " rue blaise pascal Nantes",
-			"longitude" : "-1.56676084387101",
-			"latitude" : "47.2562035151009",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4003",
-			"nom" : "Waldeck - Sully",
-			"adresseTemp" : " place waldeck rousseau Nantes",
-			"longitude" : "-1.55164090879824",
-			"latitude" : "47.2277916703846",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4004",
-			"nom" : "Trentemoult",
-			"adresseTemp" : " Place Levoyer Rezé",
-			"longitude" : "-1.58134716266798",
-			"latitude" : "47.1942407251756",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_V4005",
-			"nom" : "Trentemoult",
-			"adresseTemp" : " Place des filets Rezé",
-			"longitude" : "-1.58370302032834",
-			"latitude" : "47.194553752791",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, déchets secs, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_V4006",
-			"nom" : "Sorinières",
-			"adresseTemp" : " Rue de la paix Les Sorinières",
-			"longitude" : "-1.53274746188161",
-			"latitude" : "47.1505604647505",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_V4008",
-			"nom" : "Indre",
-			"adresseTemp" : " Place Louis Le Loir Indre",
-			"longitude" : "-1.67603742253743",
-			"latitude" : "47.199254100927",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4010",
-			"nom" : "Indre",
-			"adresseTemp" : " Place Jean Ligondais Indre",
-			"longitude" : "-1.6714431362771",
-			"latitude" : "47.1972066247199",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, déchets secs",
-			"modesCollecte" : ",modco_contverre,modco_contdechetssecs",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4012",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " Rue Jules Noël Nantes",
-			"longitude" : "-1.58571370086022",
-			"latitude" : "47.2289417574108",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4013",
-			"nom" : "Mairie de Chantenay",
-			"adresseTemp" : " Rue de la Marseillaise Nantes",
-			"longitude" : "-1.58801984671188",
-			"latitude" : "47.2067670458424",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4014",
-			"nom" : "Rd pt de Vannes",
-			"adresseTemp" : " rue chanoine larose Nantes",
-			"longitude" : "-1.57811033932897",
-			"latitude" : "47.2322525248871",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4015",
-			"nom" : "Gde Grèneraie - Clos toreau",
-			"adresseTemp" : " Rue Louis Loucheur Nantes",
-			"longitude" : "-1.52714597492607",
-			"latitude" : "47.1934055970981",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_V4016",
-			"nom" : "Toutes Aides",
-			"adresseTemp" : " place victor basch Nantes",
-			"longitude" : "-1.52318891278405",
-			"latitude" : "47.2254075363318",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4017",
-			"nom" : "Malakoff",
-			"adresseTemp" : "11 rue de norvège Nantes",
-			"longitude" : "-1.52474183609295",
-			"latitude" : "47.2162812876986",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4018",
-			"nom" : "Malakoff",
-			"adresseTemp" : " rue de hongrie Nantes",
-			"longitude" : "-1.52366574237227",
-			"latitude" : "47.2166268902281",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4019",
-			"nom" : "Malakoff",
-			"adresseTemp" : " rue de suisse Nantes",
-			"longitude" : "-1.52174839638238",
-			"latitude" : "47.2169418268782",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4020",
-			"nom" : "Lauriers",
-			"adresseTemp" : " Rue du Rhône Nantes",
-			"longitude" : "-1.60048610670101",
-			"latitude" : "47.2030716971136",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4021",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " rue jules raimu Nantes",
-			"longitude" : "-1.58305424054398",
-			"latitude" : "47.2313498501517",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4022",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " Rue Georges Méliès Nantes",
-			"longitude" : "-1.5857277203248",
-			"latitude" : "47.2332659810097",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4023",
-			"nom" : "Talensac - Pont Morand",
-			"adresseTemp" : "7 rue basse porte Nantes",
-			"longitude" : "-1.55797232777598",
-			"latitude" : "47.2209161071743",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4024",
-			"nom" : "Ste Anne-Zone Portuaire",
-			"adresseTemp" : " quai wilson/quai antilles Nantes",
-			"longitude" : "-1.5733383287034",
-			"latitude" : "47.1997496837873",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4026",
-			"nom" : "Breil-Malville",
-			"adresseTemp" : " Rue Pierre de Coubertin Nantes",
-			"longitude" : "-1.58779337004191",
-			"latitude" : "47.2290206141093",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4027",
-			"nom" : "St-Jean-de-Boiseau",
-			"adresseTemp" : " Avenue du Onze Novembre St-Jean-de-Boiseau",
-			"longitude" : "-1.72476780293544",
-			"latitude" : "47.1946943348593",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Sud-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4029",
-			"nom" : "Haluchère-Perray",
-			"adresseTemp" : " rue de la sècherie Nantes",
-			"longitude" : "-1.5143226171815",
-			"latitude" : "47.2426574494057",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4032",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : " Rue Louis le Nain Nantes",
-			"longitude" : "-1.59940051393083",
-			"latitude" : "47.2262814717069",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4034",
-			"nom" : "Cremetterie",
-			"adresseTemp" : " Avenue de la Branchoire St-Herblain",
-			"longitude" : "-1.60712895069911",
-			"latitude" : "47.218365683216",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4036",
-			"nom" : "Malakoff",
-			"adresseTemp" : " rue de suisse Nantes",
-			"longitude" : "-1.52329578911802",
-			"latitude" : "47.2170200382295",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4037",
-			"nom" : "Ile Beaulieu",
-			"adresseTemp" : "2 Rue Thomas Narcejac Nantes",
-			"longitude" : "-1.52972840381147",
-			"latitude" : "47.2101726122261",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4038",
-			"nom" : "Ile Beaulieu",
-			"adresseTemp" : "3 Rue Jean Gorin Nantes",
-			"longitude" : "-1.52882199926803",
-			"latitude" : "47.2093011560588",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4039",
-			"nom" : "Ile Beaulieu",
-			"adresseTemp" : " Rue du Pen Duick II Nantes",
-			"longitude" : "-1.53184692481347",
-			"latitude" : "47.2108640831296",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4043",
-			"nom" : "Beautour",
-			"adresseTemp" : "308 308 Route de Clisson Vertou",
-			"longitude" : "-1.49984330919332",
-			"latitude" : "47.1880059815132",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_V4044",
-			"adresseTemp" : " Rue Jean-Jacques Audubon Bouaye",
-			"longitude" : "-1.67784471975078",
-			"latitude" : "47.1577841379452",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Sud-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4045",
-			"nom" : "Dobree-Bon Port",
-			"adresseTemp" : "11 Rue de Gigant Nantes",
-			"longitude" : "-1.56998626746342",
-			"latitude" : "47.2142532122748",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, papier-carton",
-			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4046",
-			"nom" : "Dervallières - Chézine",
-			"adresseTemp" : "6 Rue Jean Honoré Fragonard Nantes",
-			"longitude" : "-1.60233651974911",
-			"latitude" : "47.2223342196638",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4050",
-			"nom" : "St Joseph de Porterie",
-			"adresseTemp" : "18 Rue de la Planche au Gué Nantes",
-			"longitude" : "-1.5214959634183",
-			"latitude" : "47.2700559253137",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4052",
-			"nom" : "ZAC de la Minais",
-			"adresseTemp" : "76 Route de Thouaré Ste-Luce-sur-Loire",
-			"longitude" : "-1.46749329722873",
-			"latitude" : "47.2567028503288",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4053",
-			"nom" : "La Roussellerie",
-			"adresseTemp" : " Rue de la Frégate Thouaré-sur-Loire",
-			"longitude" : "-1.45243859804404",
-			"latitude" : "47.2694830402414",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4054",
-			"nom" : "Beaujoire - Halvèque",
-			"adresseTemp" : "6 Rue Claude et Simone Millot Nantes",
-			"longitude" : "-1.51392718053257",
-			"latitude" : "47.2605072428116",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4064",
-			"nom" : "ZAC de la Minais",
-			"adresseTemp" : " Rue de la Gare Ste-Luce-sur-Loire",
-			"longitude" : "-1.47130293852717",
-			"latitude" : "47.2536952750838",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, déchets secs",
-			"modesCollecte" : ",modco_contverre,modco_contdechetssecs",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4065",
-			"adresseTemp" : " Rue de la Vallée Sautron",
-			"longitude" : "-1.6708149529626",
-			"latitude" : "47.2680865875305",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4066",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : "13 Rue de Pont Aven Nantes",
-			"longitude" : "-1.5797876400277",
-			"latitude" : "47.2667144265572",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4067",
-			"nom" : "Bout des Landes",
-			"adresseTemp" : " Rue de Pont Aven Nantes",
-			"longitude" : "-1.5776139227402",
-			"latitude" : "47.2662402634926",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4070",
-			"nom" : "Mendes France",
-			"adresseTemp" : " Rue de l'Adour Nantes",
-			"longitude" : "-1.61023039293384",
-			"latitude" : "47.2071870006049",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_V4071",
-			"nom" : "Ile Beaulieu",
-			"adresseTemp" : " Rue Konrad Adenauer Nantes",
-			"longitude" : "-1.53875194287645",
-			"latitude" : "47.2079523304127",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4072",
-			"nom" : "Ile Beaulieu",
-			"adresseTemp" : " Rue Konrad Adenauer Nantes",
-			"longitude" : "-1.53832561136713",
-			"latitude" : "47.2084010864222",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_V4074",
-			"adresseTemp" : " Place Aristide Briand Carquefou",
-			"longitude" : "-1.49496173371096",
-			"latitude" : "47.2973621654466",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_V4075",
-			"adresseTemp" : " Rue Bourvil La Chapelle-sur-Erdre",
-			"longitude" : "-1.55066554564527",
-			"latitude" : "47.3102584360753",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4076",
-			"adresseTemp" : " Rue André Franquin La Chapelle-sur-Erdre",
-			"longitude" : "-1.54684991324768",
-			"latitude" : "47.3099245634433",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4077",
-			"adresseTemp" : " Rue Philéas Fogg La Chapelle-sur-Erdre",
-			"longitude" : "-1.55459256789447",
-			"latitude" : "47.3086629862926",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4078",
-			"adresseTemp" : " Rue Jean-Louis Foulquier La Chapelle-sur-Erdre",
-			"longitude" : "-1.54684387560154",
-			"latitude" : "47.3091735785485",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4079",
-			"adresseTemp" : " Avenue Olympe de Gouges La Chapelle-sur-Erdre",
-			"longitude" : "-1.54422166030923",
-			"latitude" : "47.3081205186742",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4080",
-			"adresseTemp" : " Avenue des Perrières La Chapelle-sur-Erdre",
-			"longitude" : "-1.55221150849431",
-			"latitude" : "47.3096120296984",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4081",
-			"adresseTemp" : " Avenue des Perrières La Chapelle-sur-Erdre",
-			"longitude" : "-1.55215388183945",
-			"latitude" : "47.3079031546789",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_V4083",
-			"adresseTemp" : " Rue de la Mayenne St-Herblain",
-			"longitude" : "-1.61035220848655",
-			"latitude" : "47.21237134097",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4084",
-			"adresseTemp" : " Rue de la Chicotière St-Herblain",
-			"longitude" : "-1.60807166344094",
-			"latitude" : "47.2140179355404",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4085",
-			"adresseTemp" : " Rue de la Chicotière St-Herblain",
-			"longitude" : "-1.61020552237155",
-			"latitude" : "47.2148798078458",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4086",
-			"adresseTemp" : " Rue d'Arras St-Herblain",
-			"longitude" : "-1.6094703376248",
-			"latitude" : "47.2127142096016",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4087",
-			"adresseTemp" : " Boulevard Winston Churchill St-Herblain",
-			"longitude" : "-1.61354508399526",
-			"latitude" : "47.2067752077206",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, déchets secs",
-			"modesCollecte" : ",modco_contverre,modco_contdechetssecs",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4088",
-			"adresseTemp" : " Rue de Bordeaux St-Herblain",
-			"longitude" : "-1.61131790793781",
-			"latitude" : "47.2106397201481",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_V4090",
-			"adresseTemp" : " Rue de Flore Sautron",
-			"longitude" : "-1.66597734008713",
-			"latitude" : "47.2605954564",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : verre, déchets secs, ordures",
-			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_v4030",
-			"nom" : "Vieux Malakoff",
-			"adresseTemp" : "9 rue du Cher Nantes",
-			"longitude" : "-1.5341886361577",
-			"latitude" : "47.2146199168895",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur verre",
-			"modesCollecte" : ",modco_contverre",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_0",
-			"nom" : "Contrie",
-			"adresseTemp" : "53 Rue de la Contrie Nantes",
-			"longitude" : "-1.59708661853519",
-			"latitude" : "47.2201101596193",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur ",
-			"zone" : "Nantes-Ouest"
-		}, {
-			"code" : "stco_conteneur_DS4006",
-			"nom" : "Malakoff",
-			"adresseTemp" : " rue de chypre Nantes",
-			"longitude" : "-1.52169932453553",
-			"latitude" : "47.2164502367032",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur papier-carton",
-			"modesCollecte" : ",modco_contpapiercarton",
-			"zone" : "Nantes-Loire"
-		}, {
-			"code" : "stco_conteneur_DS4013",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : " Allée de Boulogne Rezé",
-			"longitude" : "-1.56092221660993",
-			"latitude" : "47.1840396639536",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4014",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "10 Allée Paul Eluard Rezé",
-			"longitude" : "-1.55790413510501",
-			"latitude" : "47.1839776592908",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4015",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "4 Allée de la Moine Rezé",
-			"longitude" : "-1.55959908494623",
-			"latitude" : "47.1837242871882",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4016",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "20 Allée Paul Eluard Rezé",
-			"longitude" : "-1.55896913286374",
-			"latitude" : "47.1838033770531",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4017",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "12 Allée de la Moine Rezé",
-			"longitude" : "-1.56046052861055",
-			"latitude" : "47.183581640556",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4018",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "8 Allée Paul Eluard Rezé",
-			"longitude" : "-1.55639713108979",
-			"latitude" : "47.184255611907",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4019",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "8 Allée Théophile Gautier Rezé",
-			"longitude" : "-1.55739408213494",
-			"latitude" : "47.1841445259988",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4020",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : "1 Allée Gustave Flaubert Rezé",
-			"longitude" : "-1.55732255462095",
-			"latitude" : "47.1847010729208",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS4022",
-			"nom" : "Chateau de Rezé",
-			"adresseTemp" : " Allée de Boulogne Rezé",
-			"longitude" : "-1.5610160483658",
-			"latitude" : "47.1843305810338",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS5001",
-			"nom" : "Trentemoult",
-			"adresseTemp" : " Place Levoyer Rezé",
-			"longitude" : "-1.58139481253537",
-			"latitude" : "47.1942091795357",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS5002",
-			"nom" : "Trentemoult",
-			"adresseTemp" : " Place Jean Bart Rezé",
-			"longitude" : "-1.582965073934",
-			"latitude" : "47.193469553562",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS5006",
-			"nom" : "Cremetterie",
-			"adresseTemp" : " Avenue de la Branchoire St-Herblain",
-			"longitude" : "-1.60709966371578",
-			"latitude" : "47.2184409833801",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_DS5013",
-			"nom" : "Beautour",
-			"adresseTemp" : "136 Route de la Fontenelle Vertou",
-			"longitude" : "-1.50123092167098",
-			"latitude" : "47.1881692360963",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS5014",
-			"nom" : "Beautour",
-			"adresseTemp" : "308 308 Route de Clisson Vertou",
-			"longitude" : "-1.4997999954089",
-			"latitude" : "47.1879929777088",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire, Sèvre et Vignoble"
-		}, {
-			"code" : "stco_conteneur_DS5018",
-			"adresseTemp" : " Rue du Général Zimmer St-Herblain",
-			"longitude" : "-1.65028391789348",
-			"latitude" : "47.209239530216",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_DS5019",
-			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
-			"longitude" : "-1.61744552391106",
-			"latitude" : "47.2453509453983",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_DS5020",
-			"adresseTemp" : " Rue de Flore Sautron",
-			"longitude" : "-1.66595647126364",
-			"latitude" : "47.2608634535654",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Erdre et Cens"
-		}, {
-			"code" : "stco_conteneur_DS5022",
-			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
-			"longitude" : "-1.61747218888274",
-			"latitude" : "47.2453221693963",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneur déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Loire-Chézine"
-		}, {
-			"code" : "stco_conteneur_DS5036",
-			"nom" : "ZAC de la Minais",
-			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
-			"longitude" : "-1.46988018041707",
-			"latitude" : "47.2533583937526",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs : déchets secs, ordures",
-			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_DS5037",
-			"nom" : "ZAC de la Minais",
-			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
-			"longitude" : "-1.46862266496291",
-			"latitude" : "47.2543213013213",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_DS5439",
-			"nom" : "ZAC de la Minais",
-			"adresseTemp" : " Rue de la Minais Ste-Luce-sur-Loire",
-			"longitude" : "-1.46797558738638",
-			"latitude" : "47.2547904557473",
-			"src" : "OpenDataNantes 07/2015",
-			"type" : "Conteneurs déchets secs",
-			"modesCollecte" : ",modco_contdechetssecs",
-			"zone" : "Erdre et Loire"
-		}, {
-			"code" : "stco_conteneur_DS5441",
+			"code" : "stco_conteneur_DS5442",
 			"nom" : "ZAC de la Minais",
 			"adresseTemp" : "23 Rue Olympe de Gouges Ste-Luce-sur-Loire",
-			"longitude" : "-1.46613276230634",
-			"latitude" : "47.2549399559819",
-			"src" : "OpenDataNantes 07/2015",
+			"longitude" : "-1.46610403509341",
+			"latitude" : "47.2549409029705",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs : déchets secs, ordures",
 			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
 			"zone" : "Erdre et Loire"
@@ -8701,9 +5958,27 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
 			"longitude" : "-1.46407895908971",
 			"latitude" : "47.2550850277457",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs : déchets secs, ordures",
 			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_DS5444",
+			"adresseTemp" : " Allée du Green Carquefou",
+			"longitude" : "-1.48490023565527",
+			"latitude" : "47.2906245986554",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_DS5445",
+			"adresseTemp" : " Allée du Green Carquefou",
+			"longitude" : "-1.48430144817704",
+			"latitude" : "47.2896734771047",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
 			"zone" : "Erdre et Loire"
 		}, {
 			"code" : "stco_conteneur_OM5001",
@@ -8711,9 +5986,59 @@ var _containersDatas = [{
 			"adresseTemp" : " Place Levoyer Rezé",
 			"longitude" : "-1.58143596968802",
 			"latitude" : "47.1941716631921",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5002",
+			"nom" : "Trentemoult",
+			"adresseTemp" : " Place Jean Bart Rezé",
+			"longitude" : "-1.5829349468177",
+			"latitude" : "47.1934716103218",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5003",
+			"nom" : "Indre",
+			"adresseTemp" : " Place Louis Le Loir Indre",
+			"longitude" : "-1.67596526442401",
+			"latitude" : "47.199321627759",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5004",
+			"nom" : "Indre",
+			"adresseTemp" : " Place Jean Ligondais Indre",
+			"longitude" : "-1.67139296194339",
+			"latitude" : "47.1971836028459",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5189",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : " Allée de Boulogne Rezé",
+			"longitude" : "-1.56091324341373",
+			"latitude" : "47.184020361425",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5190",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "12 Allée de la Moine Rezé",
+			"longitude" : "-1.56043365071194",
+			"latitude" : "47.1835866773788",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
 		}, {
 			"code" : "stco_conteneur_OM5191",
@@ -8721,9 +6046,69 @@ var _containersDatas = [{
 			"adresseTemp" : "2 Allée de la Moine Rezé",
 			"longitude" : "-1.55944363132939",
 			"latitude" : "47.1837512144781",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5192",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "20 Allée Paul Eluard Rezé",
+			"longitude" : "-1.55899752088352",
+			"latitude" : "47.1837982895149",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5193",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "10 Allée Paul Eluard Rezé",
+			"longitude" : "-1.55793546819992",
+			"latitude" : "47.1839714405623",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5194",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "8 Allée Paul Eluard Rezé",
+			"longitude" : "-1.55642853937338",
+			"latitude" : "47.1842504229561",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5195",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "8 Allée Théophile Gautier Rezé",
+			"longitude" : "-1.55739377015678",
+			"latitude" : "47.1841610469145",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5196",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "1 Allée Gustave Flaubert Rezé",
+			"longitude" : "-1.55732503781541",
+			"latitude" : "47.1847144036621",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5219",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : " Allée de Boulogne Rezé",
+			"longitude" : "-1.5610246358533",
+			"latitude" : "47.18436537511",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
 		}, {
 			"code" : "stco_conteneur_OM5278",
@@ -8731,16 +6116,74 @@ var _containersDatas = [{
 			"adresseTemp" : "51 Rue de la Convention Nantes",
 			"longitude" : "-1.58993252256371",
 			"latitude" : "47.2103610546487",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
 		}, {
+			"code" : "stco_conteneur_OM5309",
+			"nom" : "Trentemoult",
+			"adresseTemp" : " Place des filets Rezé",
+			"longitude" : "-1.58368792114568",
+			"latitude" : "47.1945336282901",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5311",
+			"nom" : "Beautour",
+			"adresseTemp" : "308 308 Route de Clisson Vertou",
+			"longitude" : "-1.49982165229848",
+			"latitude" : "47.1879994796131",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5343",
+			"nom" : "Beautour",
+			"adresseTemp" : "136 Route de la Fontenelle Vertou",
+			"longitude" : "-1.50121829052273",
+			"latitude" : "47.1881830710572",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5344",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue de la Gare Ste-Luce-sur-Loire",
+			"longitude" : "-1.47127949949543",
+			"latitude" : "47.2536640622387",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_OM5345",
+			"adresseTemp" : " Rue de Flore Sautron",
+			"longitude" : "-1.66593220325862",
+			"latitude" : "47.2608632636707",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_OM5346",
+			"adresseTemp" : " Rue de Flore Sautron",
+			"longitude" : "-1.66597542365868",
+			"latitude" : "47.2606306089365",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
 			"code" : "stco_conteneur_OM5348",
-			"adresseTemp" : "3 Rue de Mayenne St-Herblain",
+			"adresseTemp" : "3 Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.61055313659077",
 			"latitude" : "47.2126110896207",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8749,7 +6192,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Arras St-Herblain",
 			"longitude" : "-1.60829454694259",
 			"latitude" : "47.213959743211",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8758,7 +6201,7 @@ var _containersDatas = [{
 			"adresseTemp" : "1 Rue de la Chicotière St-Herblain",
 			"longitude" : "-1.60853203272898",
 			"latitude" : "47.2139763808777",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8767,7 +6210,7 @@ var _containersDatas = [{
 			"adresseTemp" : "11 Rue d'Arras St-Herblain",
 			"longitude" : "-1.6088057195878",
 			"latitude" : "47.2133746898273",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8776,7 +6219,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Arras St-Herblain",
 			"longitude" : "-1.60959367852981",
 			"latitude" : "47.2127027632544",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8785,7 +6228,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Arras St-Herblain",
 			"longitude" : "-1.60946106920907",
 			"latitude" : "47.2123420029847",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8794,7 +6237,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Issoire St-Herblain",
 			"longitude" : "-1.61066988097119",
 			"latitude" : "47.2131467871594",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8803,7 +6246,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Issoire St-Herblain",
 			"longitude" : "-1.61135548163709",
 			"latitude" : "47.2133049237139",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8812,7 +6255,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Issoire St-Herblain",
 			"longitude" : "-1.61107460575008",
 			"latitude" : "47.2131927773031",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8821,7 +6264,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de Montargis St-Herblain",
 			"longitude" : "-1.61112067664963",
 			"latitude" : "47.2139816523317",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8830,7 +6273,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de Montargis St-Herblain",
 			"longitude" : "-1.61105801101124",
 			"latitude" : "47.2140560332451",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8839,7 +6282,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de l'Orne St-Herblain",
 			"longitude" : "-1.61041570677955",
 			"latitude" : "47.2147931524968",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8848,7 +6291,7 @@ var _containersDatas = [{
 			"adresseTemp" : "15 Rue de la Chicotière St-Herblain",
 			"longitude" : "-1.60981523013365",
 			"latitude" : "47.214454604826",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8857,16 +6300,25 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de Sancerre St-Herblain",
 			"longitude" : "-1.61141890354946",
 			"latitude" : "47.2136309028791",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5364",
+			"adresseTemp" : " Rue du Général Zimmer St-Herblain",
+			"longitude" : "-1.65029013604252",
+			"latitude" : "47.2092620179796",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
 			"zone" : "Loire-Chézine"
 		}, {
 			"code" : "stco_conteneur_OM5366",
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61358936056543",
 			"latitude" : "47.2444749136435",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8875,7 +6327,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61305276047859",
 			"latitude" : "47.2444726544444",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8884,7 +6336,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61250104517788",
 			"latitude" : "47.2444709103566",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8893,7 +6345,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61221232516886",
 			"latitude" : "47.2446242329164",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8902,7 +6354,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61116669608819",
 			"latitude" : "47.2447879890718",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8911,7 +6363,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61093784639699",
 			"latitude" : "47.2447875675459",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8920,7 +6372,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.60925204014397",
 			"latitude" : "47.2448803455236",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8929,7 +6381,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.60875806302448",
 			"latitude" : "47.2448807355092",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8938,7 +6390,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Allée du Parc St-Herblain",
 			"longitude" : "-1.60942856708115",
 			"latitude" : "47.2443769238061",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8947,7 +6399,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Allée du Parc St-Herblain",
 			"longitude" : "-1.60882477767513",
 			"latitude" : "47.2443676567952",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8956,7 +6408,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Allée du Parc St-Herblain",
 			"longitude" : "-1.6078697187032",
 			"latitude" : "47.2436841808577",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8965,7 +6417,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.6075009151493",
 			"latitude" : "47.243224179505",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8974,7 +6426,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
 			"longitude" : "-1.61758942927593",
 			"latitude" : "47.245206702535",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8983,7 +6435,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
 			"longitude" : "-1.61761926936366",
 			"latitude" : "47.2451798814597",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -8992,7 +6444,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Avenue de l'Angevinière St-Herblain",
 			"longitude" : "-1.61167896271914",
 			"latitude" : "47.2447890264079",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9001,7 +6453,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Allée du Parc St-Herblain",
 			"longitude" : "-1.60849182827222",
 			"latitude" : "47.2442706964637",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9010,7 +6462,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.61126948743468",
 			"latitude" : "47.212611321044",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9019,7 +6471,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.61062653500656",
 			"latitude" : "47.2123536909759",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9028,7 +6480,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.61022576536692",
 			"latitude" : "47.2121558713692",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9037,7 +6489,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.60986648294266",
 			"latitude" : "47.2120071941125",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
@@ -9046,17 +6498,148 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de la Mayenne St-Herblain",
 			"longitude" : "-1.60952790291269",
 			"latitude" : "47.2118722539021",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5390",
+			"adresseTemp" : "2 Rue Victor Tertrais Vertou",
+			"longitude" : "-1.50497870032912",
+			"latitude" : "47.1820512583376",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5391",
+			"adresseTemp" : "293 Route de Clisson St-Sébastien-sur-Loire",
+			"longitude" : "-1.49650458319058",
+			"latitude" : "47.188391581086",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5392",
+			"adresseTemp" : "37 Avenue de la Vertonne Vertou",
+			"longitude" : "-1.47589638613796",
+			"latitude" : "47.1806121237459",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5393",
+			"adresseTemp" : " Avenue Louise Michel Rezé",
+			"longitude" : "-1.54764459746393",
+			"latitude" : "47.1880398711172",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5394",
+			"adresseTemp" : " Rue Paul-Edouard Lynch Basse-Goulaine",
+			"longitude" : "-1.46733645395645",
+			"latitude" : "47.2146764885806",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5396",
+			"adresseTemp" : " Rue de Flore Sautron",
+			"longitude" : "-1.66706248429609",
+			"latitude" : "47.260795145508",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_OM5397",
+			"adresseTemp" : " Rue des Genêts Sautron",
+			"longitude" : "-1.67039175239869",
+			"latitude" : "47.2573618410995",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_OM5398",
+			"adresseTemp" : " Allée de la Gare d'Anjou St-Sébastien-sur-Loire",
+			"longitude" : "-1.50569476278778",
+			"latitude" : "47.2059924171505",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5400",
+			"adresseTemp" : "1 Allée de la Gare d'Anjou St-Sébastien-sur-Loire",
+			"longitude" : "-1.50603576117764",
+			"latitude" : "47.2066084199606",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_OM5402",
+			"nom" : "Bagatelle",
+			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
+			"longitude" : "-1.61853097517332",
+			"latitude" : "47.2444551686551",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5404",
+			"nom" : "Bagatelle",
+			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
+			"longitude" : "-1.61847646312165",
+			"latitude" : "47.2444147295719",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_OM5405",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
+			"longitude" : "-1.46986450188904",
+			"latitude" : "47.2533723248361",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_OM5406",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
+			"longitude" : "-1.46857884493926",
+			"latitude" : "47.2543444150921",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_OM5408",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue de la Minais Ste-Luce-sur-Loire",
+			"longitude" : "-1.46795631950374",
+			"latitude" : "47.2547539456015",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : déchets secs, ordures",
+			"modesCollecte" : ",modco_contdechetssecs,modco_contomr",
+			"zone" : "Erdre et Loire"
 		}, {
 			"code" : "stco_conteneur_TS1001",
 			"nom" : "Salorges - Ste Anne",
 			"adresseTemp" : "13 rue des Salorges Nantes",
 			"longitude" : "-1.57669888838002",
 			"latitude" : "47.2054988955882",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9066,7 +6649,7 @@ var _containersDatas = [{
 			"adresseTemp" : "9 rue de norvège Nantes",
 			"longitude" : "-1.52478007392849",
 			"latitude" : "47.2163914487076",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9076,7 +6659,7 @@ var _containersDatas = [{
 			"adresseTemp" : "7 rue de norvège Nantes",
 			"longitude" : "-1.52459034861418",
 			"latitude" : "47.2165536162803",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9086,7 +6669,7 @@ var _containersDatas = [{
 			"adresseTemp" : "3 rue de norvège Nantes",
 			"longitude" : "-1.5241201009123",
 			"latitude" : "47.2167530396389",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9096,7 +6679,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de hongrie Nantes",
 			"longitude" : "-1.52359124672195",
 			"latitude" : "47.2165179431248",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9106,7 +6689,7 @@ var _containersDatas = [{
 			"adresseTemp" : "3 rue de saint jean de luz Nantes",
 			"longitude" : "-1.52725088592005",
 			"latitude" : "47.1947332000456",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
@@ -9116,7 +6699,7 @@ var _containersDatas = [{
 			"adresseTemp" : "5 rue de saint jean de luz Nantes",
 			"longitude" : "-1.52736503539762",
 			"latitude" : "47.1944899768987",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
@@ -9126,7 +6709,7 @@ var _containersDatas = [{
 			"adresseTemp" : "10 rue de saint jean de luz Nantes",
 			"longitude" : "-1.52737695401529",
 			"latitude" : "47.1940469021207",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
@@ -9136,7 +6719,7 @@ var _containersDatas = [{
 			"adresseTemp" : "12 rue de saint jean de luz Nantes",
 			"longitude" : "-1.52731384124137",
 			"latitude" : "47.1938436750564",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
@@ -9146,7 +6729,7 @@ var _containersDatas = [{
 			"adresseTemp" : "12 rue de saint jean de luz Nantes",
 			"longitude" : "-1.52722877284019",
 			"latitude" : "47.1937557225233",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Loire, Sèvre et Vignoble"
@@ -9156,7 +6739,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de Madrid Nantes",
 			"longitude" : "-1.53106245336948",
 			"latitude" : "47.2144049738591",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9166,7 +6749,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue d'Irlande Nantes",
 			"longitude" : "-1.52603396368395",
 			"latitude" : "47.2156766593214",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9176,7 +6759,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de suisse Nantes",
 			"longitude" : "-1.52304309895212",
 			"latitude" : "47.2171492278501",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9186,9 +6769,19 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de suisse Nantes",
 			"longitude" : "-1.52248608888127",
 			"latitude" : "47.2171957371217",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5008",
+			"nom" : "Malakoff",
+			"adresseTemp" : " rue de suisse Nantes",
+			"longitude" : "-1.5217692248009",
+			"latitude" : "47.2169576395965",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
 			"zone" : "Nantes-Loire"
 		}, {
 			"code" : "stco_conteneur_TS5009",
@@ -9196,8 +6789,28 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de suisse Nantes",
 			"longitude" : "-1.52195249838774",
 			"latitude" : "47.2170629466651",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5012",
+			"nom" : "Malakoff",
+			"adresseTemp" : " Rue de Madrid Nantes",
+			"longitude" : "-1.53232448534934",
+			"latitude" : "47.2141397357895",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5013",
+			"nom" : "Malakoff",
+			"adresseTemp" : " Rue de Madrid Nantes",
+			"longitude" : "-1.53275054797435",
+			"latitude" : "47.2139582704102",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
 		}, {
@@ -9206,7 +6819,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue de Madrid Nantes",
 			"longitude" : "-1.53239954006469",
 			"latitude" : "47.2140257740692",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9216,7 +6829,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de tchéchoslovaquie Nantes",
 			"longitude" : "-1.53262405323798",
 			"latitude" : "47.2144918684395",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9226,7 +6839,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de tchéchoslovaquie Nantes",
 			"longitude" : "-1.53197589314945",
 			"latitude" : "47.2148273135249",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9236,7 +6849,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de tchéchoslovaquie Nantes",
 			"longitude" : "-1.53158503203857",
 			"latitude" : "47.2149302038532",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9246,7 +6859,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de tchéchoslovaquie Nantes",
 			"longitude" : "-1.53106889486681",
 			"latitude" : "47.2149970532726",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9256,7 +6869,7 @@ var _containersDatas = [{
 			"adresseTemp" : "3 rue du rhône Nantes",
 			"longitude" : "-1.60120619998875",
 			"latitude" : "47.2031657637927",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9266,7 +6879,7 @@ var _containersDatas = [{
 			"adresseTemp" : "2 rue du rhône Nantes",
 			"longitude" : "-1.60103319992969",
 			"latitude" : "47.2032428777283",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9276,7 +6889,7 @@ var _containersDatas = [{
 			"adresseTemp" : "7 rue du rhône Nantes",
 			"longitude" : "-1.60214440472955",
 			"latitude" : "47.2033019035882",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9286,8 +6899,18 @@ var _containersDatas = [{
 			"adresseTemp" : "7 rue du rhône Nantes",
 			"longitude" : "-1.60206626095051",
 			"latitude" : "47.2033922876904",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5026",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "22 rue claude lorrain Nantes",
+			"longitude" : "-1.60167259913952",
+			"latitude" : "47.2252297516844",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
 		}, {
@@ -9296,7 +6919,7 @@ var _containersDatas = [{
 			"adresseTemp" : "26 rue claude lorrain Nantes",
 			"longitude" : "-1.60119879226935",
 			"latitude" : "47.2254605746421",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9306,7 +6929,7 @@ var _containersDatas = [{
 			"adresseTemp" : "40 rue claude lorrain Nantes",
 			"longitude" : "-1.59999280890347",
 			"latitude" : "47.225643133474",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9316,7 +6939,7 @@ var _containersDatas = [{
 			"adresseTemp" : "44 rue claude lorrain Nantes",
 			"longitude" : "-1.59950380999456",
 			"latitude" : "47.2259147121007",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9326,7 +6949,7 @@ var _containersDatas = [{
 			"adresseTemp" : "27 rue des plantes Nantes",
 			"longitude" : "-1.58529875240597",
 			"latitude" : "47.2340276688111",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9336,7 +6959,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue georges méliès/rue pl Nantes",
 			"longitude" : "-1.5857750951562",
 			"latitude" : "47.2332922307535",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9346,7 +6969,7 @@ var _containersDatas = [{
 			"adresseTemp" : "37 rue des plantes Nantes",
 			"longitude" : "-1.58516067484054",
 			"latitude" : "47.232826073252",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9356,7 +6979,7 @@ var _containersDatas = [{
 			"adresseTemp" : "41 rue des plantes Nantes",
 			"longitude" : "-1.58649575657377",
 			"latitude" : "47.2329550468363",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9366,7 +6989,7 @@ var _containersDatas = [{
 			"adresseTemp" : "1 place emile cohl Nantes",
 			"longitude" : "-1.58528920626799",
 			"latitude" : "47.232078732636",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9376,7 +6999,7 @@ var _containersDatas = [{
 			"adresseTemp" : "21 rue de la maison blanche Nantes",
 			"longitude" : "-1.58516065054801",
 			"latitude" : "47.2316270049753",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9386,7 +7009,7 @@ var _containersDatas = [{
 			"adresseTemp" : "19 rue jules raimu Nantes",
 			"longitude" : "-1.58443211861803",
 			"latitude" : "47.2321460631746",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9396,9 +7019,19 @@ var _containersDatas = [{
 			"adresseTemp" : "11 rue jules raimu Nantes",
 			"longitude" : "-1.58376595427906",
 			"latitude" : "47.2317590510654",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5047",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "3 rue jules raimu Nantes",
+			"longitude" : "-1.58307803957081",
+			"latitude" : "47.2313645195905",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
 			"zone" : "Nantes-Ouest"
 		}, {
 			"code" : "stco_conteneur_TS5048",
@@ -9406,7 +7039,7 @@ var _containersDatas = [{
 			"adresseTemp" : "3 rue jacques feyder Nantes",
 			"longitude" : "-1.58387924257706",
 			"latitude" : "47.2309895287902",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9416,7 +7049,7 @@ var _containersDatas = [{
 			"adresseTemp" : "1 rue de corse Nantes",
 			"longitude" : "-1.52192680237593",
 			"latitude" : "47.216307447795",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9426,7 +7059,7 @@ var _containersDatas = [{
 			"adresseTemp" : " rue de suisse/tour Suisse Nantes",
 			"longitude" : "-1.52146668689776",
 			"latitude" : "47.2166685241343",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9436,7 +7069,7 @@ var _containersDatas = [{
 			"adresseTemp" : " Rue du Cher Nantes",
 			"longitude" : "-1.53442240731614",
 			"latitude" : "47.214271547335",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Loire"
@@ -9446,7 +7079,7 @@ var _containersDatas = [{
 			"adresseTemp" : "1 Rue de Québec Nantes",
 			"longitude" : "-1.57761134135108",
 			"latitude" : "47.2610695683648",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
@@ -9456,7 +7089,7 @@ var _containersDatas = [{
 			"adresseTemp" : "1 Rue de Québec Nantes",
 			"longitude" : "-1.57766689464806",
 			"latitude" : "47.2611244372077",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
@@ -9466,7 +7099,7 @@ var _containersDatas = [{
 			"adresseTemp" : "3 Rue de Québec Nantes",
 			"longitude" : "-1.57875146687182",
 			"latitude" : "47.2614663345298",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
@@ -9476,7 +7109,7 @@ var _containersDatas = [{
 			"adresseTemp" : "5 Rue de Québec Nantes",
 			"longitude" : "-1.57909077351272",
 			"latitude" : "47.2610905614676",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
@@ -9486,7 +7119,7 @@ var _containersDatas = [{
 			"adresseTemp" : "12 rue du Rhone Nantes",
 			"longitude" : "-1.6029466691991",
 			"latitude" : "47.20373058919",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9496,7 +7129,7 @@ var _containersDatas = [{
 			"adresseTemp" : "13 rue du Rhone Nantes",
 			"longitude" : "-1.60252455717672",
 			"latitude" : "47.2035912624741",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9506,7 +7139,7 @@ var _containersDatas = [{
 			"adresseTemp" : "11 rue du Rhone Nantes",
 			"longitude" : "-1.60255723296951",
 			"latitude" : "47.2034797300158",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneur ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Nantes-Ouest"
@@ -9516,7 +7149,7 @@ var _containersDatas = [{
 			"adresseTemp" : "2 rue Samuel de Champlain Nantes",
 			"longitude" : "-1.57382893782074",
 			"latitude" : "47.2599017967234",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
@@ -9526,10 +7159,2549 @@ var _containersDatas = [{
 			"adresseTemp" : "4 rue Samuel de Champlain Nantes",
 			"longitude" : "-1.5743497620348",
 			"latitude" : "47.260328883206",
-			"src" : "OpenDataNantes 07/2015",
+			"src" : "OpenDataNantes 11/2015",
 			"type" : "Conteneurs ordures",
 			"modesCollecte" : ",modco_contomr",
 			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5080",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "6 rue Samuel de Champlain Nantes",
+			"longitude" : "-1.57432353527315",
+			"latitude" : "47.2607992802097",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5084",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "8 rue Samuel de Champlain Nantes",
+			"longitude" : "-1.57356032550376",
+			"latitude" : "47.2610996333488",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5088",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "10 rue Samuel de Champlain Nantes",
+			"longitude" : "-1.57287129424641",
+			"latitude" : "47.2611085397316",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5091",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : " allée Jacques Berque Nantes",
+			"longitude" : "-1.53732123999433",
+			"latitude" : "47.2124333803267",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5097",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "9 rue du Cher Nantes",
+			"longitude" : "-1.53418234797039",
+			"latitude" : "47.2146376699397",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5099",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "11 Rue du Cher Nantes",
+			"longitude" : "-1.53433394601078",
+			"latitude" : "47.2151423256253",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5101",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "13 Rue du Cher Nantes",
+			"longitude" : "-1.53474727703304",
+			"latitude" : "47.2155804060097",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5103",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "13 Rue du Cher Nantes",
+			"longitude" : "-1.53466369344574",
+			"latitude" : "47.2156182969322",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5105",
+			"nom" : "Lauriers",
+			"adresseTemp" : "3 rue de la drome Nantes",
+			"longitude" : "-1.60213270968481",
+			"latitude" : "47.2047893005316",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5107",
+			"nom" : "Lauriers",
+			"adresseTemp" : "12 rue de la Saone Nantes",
+			"longitude" : "-1.60284961038401",
+			"latitude" : "47.2046750189",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5108",
+			"nom" : "Lauriers",
+			"adresseTemp" : "8 rue de la Saone Nantes",
+			"longitude" : "-1.60305354076017",
+			"latitude" : "47.2044420568353",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5109",
+			"nom" : "Lauriers",
+			"adresseTemp" : "4 rue de la Saone Nantes",
+			"longitude" : "-1.60325397971054",
+			"latitude" : "47.2041411069162",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5110",
+			"nom" : "Lauriers",
+			"adresseTemp" : "8 rue de l'Isère Nantes",
+			"longitude" : "-1.60339756210349",
+			"latitude" : "47.2029236904828",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5113",
+			"nom" : "Lauriers",
+			"adresseTemp" : "3 rue de l'Isère Nantes",
+			"longitude" : "-1.60256783922237",
+			"latitude" : "47.2025950112327",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5115",
+			"nom" : "Lauriers",
+			"adresseTemp" : "17 rue du Rhone Nantes",
+			"longitude" : "-1.60344398383291",
+			"latitude" : "47.2034721174207",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5116",
+			"nom" : "Lauriers",
+			"adresseTemp" : "29 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60547948694116",
+			"latitude" : "47.209091489477",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5117",
+			"nom" : "Lauriers",
+			"adresseTemp" : "27 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60576179575438",
+			"latitude" : "47.2087712246348",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5118",
+			"nom" : "Lauriers",
+			"adresseTemp" : "21 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60604349466162",
+			"latitude" : "47.2084427244557",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5119",
+			"nom" : "Lauriers",
+			"adresseTemp" : "17 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60637283209848",
+			"latitude" : "47.2080620294369",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5120",
+			"nom" : "Lauriers",
+			"adresseTemp" : "13 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60630711468371",
+			"latitude" : "47.2077660524214",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5121",
+			"nom" : "Lauriers",
+			"adresseTemp" : "3 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60683893570763",
+			"latitude" : "47.2071534690363",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5122",
+			"nom" : "Lauriers",
+			"adresseTemp" : "9 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60655731820476",
+			"latitude" : "47.207462362357",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5123",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "10 rue de l'Indre Nantes",
+			"longitude" : "-1.53661598771824",
+			"latitude" : "47.2140090252547",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5126",
+			"nom" : "Vieux Malakoff",
+			"adresseTemp" : "6 rue de l'Indre Nantes",
+			"longitude" : "-1.53619398857976",
+			"latitude" : "47.2139953440133",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5128",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "1 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57428961452404",
+			"latitude" : "47.2587603922968",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5129",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "7 rue Jacques Cartier Nantes",
+			"longitude" : "-1.5738613566213",
+			"latitude" : "47.2587491135434",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5130",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "9 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57300694869096",
+			"latitude" : "47.2585273260003",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5131",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "15 rue Jacques Cartier Nantes",
+			"longitude" : "-1.5723274380297",
+			"latitude" : "47.2586452873082",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5132",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "17 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57219888827186",
+			"latitude" : "47.2589602405518",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5133",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "25 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57218273995751",
+			"latitude" : "47.2595272923312",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5134",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "31 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57216529440395",
+			"latitude" : "47.2599107125529",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5135",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "35 rue Jacques Cartier Nantes",
+			"longitude" : "-1.572022530617",
+			"latitude" : "47.2602178918965",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5136",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "41 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57168554905675",
+			"latitude" : "47.260522364141",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5137",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "43 rue Jacques Cartier Nantes",
+			"longitude" : "-1.57112347370631",
+			"latitude" : "47.2608994689879",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5138",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "6 Avenue Laurent Bonnevay Nantes",
+			"longitude" : "-1.54131403496931",
+			"latitude" : "47.1944093567651",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5140",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "2 Avenue Laurent Bonnevay Nantes",
+			"longitude" : "-1.54071940543657",
+			"latitude" : "47.1948318025214",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5142",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "10 Rue Gabriel Goudy Nantes",
+			"longitude" : "-1.5408339312886",
+			"latitude" : "47.1954305693618",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5144",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "6 Rue Gabriel Goudy Nantes",
+			"longitude" : "-1.54129846224335",
+			"latitude" : "47.1958452328237",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_0",
+			"adresseTemp" : " Rue Auguste Lepère Nantes",
+			"longitude" : "-1.59702060466554",
+			"latitude" : "47.2261150400875",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_0",
+			"nom" : "Contrie",
+			"adresseTemp" : "53 Rue de la Contrie Nantes",
+			"longitude" : "-1.59709289137413",
+			"latitude" : "47.220133679545",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_0",
+			"adresseTemp" : "70 Boulevard Pierre de Coubertin Nantes",
+			"longitude" : "-1.59055319211525",
+			"latitude" : "47.2307087420994",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4001",
+			"nom" : "Waldeck - Sully",
+			"adresseTemp" : " place waldeck rousseau Nantes",
+			"longitude" : "-1.55166094244668",
+			"latitude" : "47.2277755165204",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_DS4005",
+			"nom" : "Talensac - Pont Morand",
+			"adresseTemp" : "7 rue basse porte Nantes",
+			"longitude" : "-1.55793425507587",
+			"latitude" : "47.2209132658601",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4006",
+			"nom" : "Malakoff",
+			"adresseTemp" : " rue de chypre Nantes",
+			"longitude" : "-1.52169932453553",
+			"latitude" : "47.2164502367032",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur papier-carton",
+			"modesCollecte" : ",modco_contpapiercarton",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_DS4007",
+			"nom" : "Malakoff",
+			"adresseTemp" : "11 rue de norvège Nantes",
+			"longitude" : "-1.52476006562795",
+			"latitude" : "47.2162610715246",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_DS4008",
+			"nom" : "Lauriers",
+			"adresseTemp" : " Rue du Rhône Nantes",
+			"longitude" : "-1.60051261580461",
+			"latitude" : "47.2030821425474",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4009",
+			"nom" : "Mairie de Chantenay",
+			"adresseTemp" : " Rue de la Marseillaise Nantes",
+			"longitude" : "-1.58805806191802",
+			"latitude" : "47.2067719359397",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4010",
+			"nom" : "Rd pt de Vannes",
+			"adresseTemp" : " rue chanoine larose Nantes",
+			"longitude" : "-1.57810883300066",
+			"latitude" : "47.2322319380939",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4011",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : " Rue Louis Loucheur Nantes",
+			"longitude" : "-1.52712616986133",
+			"latitude" : "47.1934248349908",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_DS4012",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue Pierre de Coubertin Nantes",
+			"longitude" : "-1.58776957076579",
+			"latitude" : "47.229005945633",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_DS4015",
+			"nom" : "Chateau de Rezé",
+			"adresseTemp" : "4 Allée de la Moine Rezé",
+			"longitude" : "-1.55959908494623",
+			"latitude" : "47.1837242871882",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_DS4021",
+			"nom" : "Malakoff",
+			"adresseTemp" : " rue de suisse Nantes",
+			"longitude" : "-1.52326450683736",
+			"latitude" : "47.2170272769211",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_DS5001",
+			"nom" : "Trentemoult",
+			"adresseTemp" : " Place Levoyer Rezé",
+			"longitude" : "-1.58139481253537",
+			"latitude" : "47.1942091795357",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_DS5003",
+			"nom" : "Indre",
+			"adresseTemp" : " Place Louis Le Loir Indre",
+			"longitude" : "-1.6760020600148",
+			"latitude" : "47.1992873234129",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_DS5006",
+			"nom" : "Cremetterie",
+			"adresseTemp" : " Avenue de la Branchoire St-Herblain",
+			"longitude" : "-1.60709966371578",
+			"latitude" : "47.2184409833801",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_DS5009",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "8 Rue Emilienne Leroux Nantes",
+			"longitude" : "-1.53229785313306",
+			"latitude" : "47.1967400848183",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : papier-carton, ordures",
+			"modesCollecte" : ",modco_contpapiercarton,modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_DS5015",
+			"nom" : "Dobree-Bon Port",
+			"adresseTemp" : "11 Rue de Gigant Nantes",
+			"longitude" : "-1.56998347943752",
+			"latitude" : "47.2142357645098",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, papier-carton",
+			"modesCollecte" : ",modco_contverre,modco_contpapiercarton",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_DS5019",
+			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
+			"longitude" : "-1.61744552391106",
+			"latitude" : "47.2453509453983",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_DS5021",
+			"adresseTemp" : " Boulevard Winston Churchill St-Herblain",
+			"longitude" : "-1.61353096680716",
+			"latitude" : "47.2067891066469",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, déchets secs",
+			"modesCollecte" : ",modco_contverre,modco_contdechetssecs",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_DS5022",
+			"adresseTemp" : " Boulevard Marcel Paul St-Herblain",
+			"longitude" : "-1.61747218888274",
+			"latitude" : "47.2453221693963",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_DS5026",
+			"adresseTemp" : " Avenue Louise Michel Rezé",
+			"longitude" : "-1.54762018078029",
+			"latitude" : "47.1880788742613",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_DS5037",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue Olympe de Gouges Ste-Luce-sur-Loire",
+			"longitude" : "-1.46862266496291",
+			"latitude" : "47.2543213013213",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_DS5439",
+			"nom" : "ZAC de la Minais",
+			"adresseTemp" : " Rue de la Minais Ste-Luce-sur-Loire",
+			"longitude" : "-1.46797558738638",
+			"latitude" : "47.2547904557473",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs déchets secs",
+			"modesCollecte" : ",modco_contdechetssecs",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5147",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "3 Rue Henri Sellier Nantes",
+			"longitude" : "-1.54237096364146",
+			"latitude" : "47.1955408436578",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5149",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "1 Rue Paul Théry Nantes",
+			"longitude" : "-1.53829126810331",
+			"latitude" : "47.1950218303199",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5150",
+			"nom" : "St Jacques - Pirmil",
+			"adresseTemp" : "21 Rue Gabriel Goudy Nantes",
+			"longitude" : "-1.53894331831843",
+			"latitude" : "47.1943467187568",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5153",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "2 Rue d'Ascain Nantes",
+			"longitude" : "-1.52639725079771",
+			"latitude" : "47.1952602174766",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5162",
+			"nom" : "Malakoff",
+			"adresseTemp" : "9 rue de Chypre Nantes",
+			"longitude" : "-1.525181800775",
+			"latitude" : "47.2154524036054",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5164",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "1 rue d'Hendaye Nantes",
+			"longitude" : "-1.52762896832941",
+			"latitude" : "47.1956296046171",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5165",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "1 rue d'Hendaye Nantes",
+			"longitude" : "-1.52755322894755",
+			"latitude" : "47.1955031599837",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5168",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "3 rue d'Hendaye Nantes",
+			"longitude" : "-1.52772407036962",
+			"latitude" : "47.1957935792904",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5170",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "4 rue d'Hendaye Nantes",
+			"longitude" : "-1.52792788421059",
+			"latitude" : "47.1959116010664",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5173",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "1 rue de Biarritz Nantes",
+			"longitude" : "-1.52953244178169",
+			"latitude" : "47.1963283127635",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5175",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "3 rue de Biarritz Nantes",
+			"longitude" : "-1.52966232800322",
+			"latitude" : "47.1960515391618",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5177",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "5 rue de Biarritz Nantes",
+			"longitude" : "-1.52975748221524",
+			"latitude" : "47.1958388752799",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5179",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "7 rue de Biarritz Nantes",
+			"longitude" : "-1.52948164762991",
+			"latitude" : "47.1954364110642",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5181",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "9 rue de Biarritz Nantes",
+			"longitude" : "-1.5292608308418",
+			"latitude" : "47.1950620248978",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5185",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "25 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59896997392753",
+			"latitude" : "47.2259886601609",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5186",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "8 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59869853090687",
+			"latitude" : "47.2271175497606",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5187",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "5 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59855282661124",
+			"latitude" : "47.2273815327728",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5188",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "31 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59814738973523",
+			"latitude" : "47.2255967499735",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5197",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "15 Rue Jean Marc Nattier Nantes",
+			"longitude" : "-1.590311835444",
+			"latitude" : "47.225418127506",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5198",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "7 Rue Jean Marc Nattier Nantes",
+			"longitude" : "-1.58962501031564",
+			"latitude" : "47.2250793211712",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5199",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "3 Rue Jean Marc Nattier Nantes",
+			"longitude" : "-1.58923706475083",
+			"latitude" : "47.2248913108918",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5200",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "20 Rue Ernest Meissonnier Nantes",
+			"longitude" : "-1.58939754874893",
+			"latitude" : "47.2243121059919",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5202",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "14 Rue Ernest Meissonnier Nantes",
+			"longitude" : "-1.58973730017062",
+			"latitude" : "47.2240085057641",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5203",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "8 Rue Ernest Meissonnier Nantes",
+			"longitude" : "-1.59012939829511",
+			"latitude" : "47.2240467463485",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5204",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "6 Rue Ernest Meissonnier Nantes",
+			"longitude" : "-1.59082006658036",
+			"latitude" : "47.223963368527",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5206",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "8 Rue Nicolas Lancret Nantes",
+			"longitude" : "-1.59113638508996",
+			"latitude" : "47.2231755655689",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5207",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "3 Rue Nicolas Lancret Nantes",
+			"longitude" : "-1.59178329172087",
+			"latitude" : "47.2227025793583",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5209",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " Rue Auguste Lepère Nantes",
+			"longitude" : "-1.59863619523978",
+			"latitude" : "47.2276088032832",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5210",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "7 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59919644686488",
+			"latitude" : "47.2267610539747",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5211",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "12 Rue Louis le Nain Nantes",
+			"longitude" : "-1.5991455884886",
+			"latitude" : "47.226687460659",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5212",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "10 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59880489525567",
+			"latitude" : "47.2270189832495",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5214",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "10 Rue Emilienne Leroux Nantes",
+			"longitude" : "-1.53142084796605",
+			"latitude" : "47.1962102489588",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5221",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "4 Rue Emilienne Leroux Nantes",
+			"longitude" : "-1.53283602322277",
+			"latitude" : "47.1968757643933",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5222",
+			"nom" : "Decré - Cathédrale",
+			"adresseTemp" : " Allée de la Tremperie Nantes",
+			"longitude" : "-1.55372336489783",
+			"latitude" : "47.2144100983114",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5225",
+			"nom" : "Decré - Cathédrale",
+			"adresseTemp" : " Allée du Port Maillard Nantes",
+			"longitude" : "-1.55183559185543",
+			"latitude" : "47.2148163830644",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5229",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "119 Rue Bonne Garde Nantes",
+			"longitude" : "-1.53382655699749",
+			"latitude" : "47.1968187649531",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5230",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "44 Rue Georges de la Tour Nantes",
+			"longitude" : "-1.59951187754468",
+			"latitude" : "47.2253448212357",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5232",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "30 Rue Georges de la Tour Nantes",
+			"longitude" : "-1.60078525806129",
+			"latitude" : "47.2252136251716",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5234",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "4 Rue Claude Lorrain Nantes",
+			"longitude" : "-1.60287298177548",
+			"latitude" : "47.2243951962788",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5238",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "6 Rue Amédée de la Patellière Nantes",
+			"longitude" : "-1.60116602240615",
+			"latitude" : "47.223594962682",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5240",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "3 Rue Amédée de la Patellière Nantes",
+			"longitude" : "-1.60124591926301",
+			"latitude" : "47.223425063495",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5242",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "6 Rue Charles Perron Nantes",
+			"longitude" : "-1.60035357281434",
+			"latitude" : "47.2244110931801",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5244",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "5 Rue Charles Perron Nantes",
+			"longitude" : "-1.60048326709402",
+			"latitude" : "47.2242797386636",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5246",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "3 Rue Henry Ottmann Nantes",
+			"longitude" : "-1.60185099076107",
+			"latitude" : "47.2227346809114",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5248",
+			"nom" : "Mendes France",
+			"adresseTemp" : "8 Rue Jean Olivesi Nantes",
+			"longitude" : "-1.6070329962626",
+			"latitude" : "47.2100341463026",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5249",
+			"nom" : "Mendes France",
+			"adresseTemp" : "6 Rue Jean Olivesi Nantes",
+			"longitude" : "-1.60667033656599",
+			"latitude" : "47.2098804156953",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5250",
+			"nom" : "Mendes France",
+			"adresseTemp" : "2 Rue Jean Olivesi Nantes",
+			"longitude" : "-1.6061334167097",
+			"latitude" : "47.2096635068405",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5251",
+			"nom" : "Mendes France",
+			"adresseTemp" : "4 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60793064544827",
+			"latitude" : "47.2064329751142",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5252",
+			"nom" : "Mendes France",
+			"adresseTemp" : "8 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60770619535504",
+			"latitude" : "47.206695542244",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5253",
+			"nom" : "Mendes France",
+			"adresseTemp" : "12 rue Lucien Aubert Nantes",
+			"longitude" : "-1.60742549533992",
+			"latitude" : "47.2070167896371",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5254",
+			"nom" : "Lauriers",
+			"adresseTemp" : "7 Rue de l'Aveyron Nantes",
+			"longitude" : "-1.60713695018851",
+			"latitude" : "47.2068821949213",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5255",
+			"nom" : "Lauriers",
+			"adresseTemp" : "3 Rue de l'Aveyron Nantes",
+			"longitude" : "-1.60748496513486",
+			"latitude" : "47.2066319110401",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5256",
+			"nom" : "Lauriers",
+			"adresseTemp" : "1 Rue de l'Ariège Nantes",
+			"longitude" : "-1.60748317517014",
+			"latitude" : "47.2062171392802",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5257",
+			"nom" : "Lauriers",
+			"adresseTemp" : "1 Rue de l'Ariège Nantes",
+			"longitude" : "-1.60700822326334",
+			"latitude" : "47.206018752994",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5258",
+			"nom" : "Mendes France",
+			"adresseTemp" : "19 Rue Romain Rolland Nantes",
+			"longitude" : "-1.6094161860968",
+			"latitude" : "47.2063924384252",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5262",
+			"nom" : "Mendes France",
+			"adresseTemp" : "4 Rue Etienne Coutan Nantes",
+			"longitude" : "-1.60813866780521",
+			"latitude" : "47.2053516224758",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5263",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "1 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.5217421112589",
+			"latitude" : "47.2688032824979",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5265",
+			"nom" : "Mendes France",
+			"adresseTemp" : "2 Rue du Lot Nantes",
+			"longitude" : "-1.60416351105103",
+			"latitude" : "47.2097700931418",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5270",
+			"nom" : "Mendes France",
+			"adresseTemp" : "36 Rue de l'Adour Nantes",
+			"longitude" : "-1.60974559005256",
+			"latitude" : "47.2071633575895",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5271",
+			"nom" : "Mendes France",
+			"adresseTemp" : "28 Rue de l'Adour Nantes",
+			"longitude" : "-1.60913707860112",
+			"latitude" : "47.2069200206344",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5272",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "7 Rue d'Ottawa Nantes",
+			"longitude" : "-1.57586713084477",
+			"latitude" : "47.2578855169713",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5274",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "11 Rue d'Ottawa Nantes",
+			"longitude" : "-1.57613480529625",
+			"latitude" : "47.258208705628",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5275",
+			"nom" : "Bout des Pavés-Chêne des Angla",
+			"adresseTemp" : "11 Rue de Montréal Nantes",
+			"longitude" : "-1.57742761483641",
+			"latitude" : "47.257503406895",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5282",
+			"nom" : "Haluchère-Perray",
+			"adresseTemp" : "8 Rue René Dumont Nantes",
+			"longitude" : "-1.51544707695876",
+			"latitude" : "47.2401981301988",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5284",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "51 Rue du Breil Nantes",
+			"longitude" : "-1.58645493116292",
+			"latitude" : "47.2295263928951",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5285",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "57 Rue du Breil Nantes",
+			"longitude" : "-1.58717208733928",
+			"latitude" : "47.2299271326751",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5287",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "31 Boulevard Emile Gabory Nantes",
+			"longitude" : "-1.52904095206893",
+			"latitude" : "47.19459576979",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5289",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "31 Boulevard Emile Gabory Nantes",
+			"longitude" : "-1.52848619902338",
+			"latitude" : "47.1939364359773",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5291",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "7 Rue Charles Dullin Nantes",
+			"longitude" : "-1.58676494461316",
+			"latitude" : "47.2324526384109",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5293",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue Maurice Tourneur Nantes",
+			"longitude" : "-1.58751973982156",
+			"latitude" : "47.2321473068516",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5295",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Allée Jacques Becker Nantes",
+			"longitude" : "-1.58797622030196",
+			"latitude" : "47.2317613170092",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5297",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "65 Rue des Plantes Nantes",
+			"longitude" : "-1.58817050580116",
+			"latitude" : "47.2313326553477",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5299",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "2 Allée Henri Chrétien Nantes",
+			"longitude" : "-1.58792751466323",
+			"latitude" : "47.2312005876806",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5301",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "14 Allée Henri Chrétien Nantes",
+			"longitude" : "-1.5874775764112",
+			"latitude" : "47.2309527665356",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5303",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "13 rue Louis Jouvet Nantes",
+			"longitude" : "-1.58689506982806",
+			"latitude" : "47.2312935118856",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5305",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "7 rue Louis Jouvet Nantes",
+			"longitude" : "-1.58641690046442",
+			"latitude" : "47.2316730120274",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5307",
+			"nom" : "Gde Grèneraie - Clos toreau",
+			"adresseTemp" : "8 rue de saint jean de luz Nantes",
+			"longitude" : "-1.52746928121103",
+			"latitude" : "47.1942563725965",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_TS5312",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "1 Rue de Pont Aven Nantes",
+			"longitude" : "-1.57500590550138",
+			"latitude" : "47.2656724385377",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5313",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "1 Rue de Pont Aven Nantes",
+			"longitude" : "-1.57452295353633",
+			"latitude" : "47.2655773685349",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5314",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "2 Rue de Concarneau Nantes",
+			"longitude" : "-1.57850706714485",
+			"latitude" : "47.2643391480194",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5315",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "6 Rue de Douarnenez Nantes",
+			"longitude" : "-1.57598592426578",
+			"latitude" : "47.2648745801656",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5317",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "7 Rue de Concarneau Nantes",
+			"longitude" : "-1.578838039294",
+			"latitude" : "47.265484660645",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5318",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "7 Rue de Douarnenez Nantes",
+			"longitude" : "-1.5763200155451",
+			"latitude" : "47.2649241305513",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5320",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "13 Rue de Douarnenez Nantes",
+			"longitude" : "-1.57712038340412",
+			"latitude" : "47.2655243682649",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5321",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "10 Rue de Concarneau Nantes",
+			"longitude" : "-1.57773715823046",
+			"latitude" : "47.2656458437517",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5322",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "5 Rue de Pont Aven Nantes",
+			"longitude" : "-1.57586256746999",
+			"latitude" : "47.2658404802185",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5324",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "2 Rue de Douarnenez Nantes",
+			"longitude" : "-1.57530236872672",
+			"latitude" : "47.2646067687382",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5325",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "10 rue Jacques Callot Nantes",
+			"longitude" : "-1.5985287717422",
+			"latitude" : "47.2245415020348",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5328",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "34 Rue Antoine Watteau Nantes",
+			"longitude" : "-1.59920344393247",
+			"latitude" : "47.2246319810801",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5331",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "12 Rue Edmond Bertreux Nantes",
+			"longitude" : "-1.59902774075761",
+			"latitude" : "47.2238083220646",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5334",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "2 rue Jacques Callot Nantes",
+			"longitude" : "-1.59790619951588",
+			"latitude" : "47.2242119013936",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5336",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "10 Rue Honoré Daumier Nantes",
+			"longitude" : "-1.59705649991384",
+			"latitude" : "47.2235742830012",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5338",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "2 Rue Honoré Daumier Nantes",
+			"longitude" : "-1.59649159753616",
+			"latitude" : "47.2233077178342",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5340",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "5 Rue Jean Honoré Fragonard Nantes",
+			"longitude" : "-1.60266069627535",
+			"latitude" : "47.222025950841",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5341",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "8 Rue Jean Honoré Fragonard Nantes",
+			"longitude" : "-1.60227677828587",
+			"latitude" : "47.2224074630798",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5344",
+			"nom" : "Lauriers",
+			"adresseTemp" : "4 Rue du Jamet Nantes",
+			"longitude" : "-1.60644664872487",
+			"latitude" : "47.2058161052186",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5345",
+			"nom" : "Lauriers",
+			"adresseTemp" : "16 Rue du Jamet Nantes",
+			"longitude" : "-1.60566066546312",
+			"latitude" : "47.2063083916965",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5347",
+			"nom" : "Lauriers",
+			"adresseTemp" : "20 Rue du Jamet Nantes",
+			"longitude" : "-1.60552655781973",
+			"latitude" : "47.2066669282918",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5348",
+			"nom" : "Lauriers",
+			"adresseTemp" : "28 Rue du Jamet Nantes",
+			"longitude" : "-1.60497186908831",
+			"latitude" : "47.2073803838393",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5350",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "46 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.51956909878594",
+			"latitude" : "47.2731869935103",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5352",
+			"nom" : "Beaujoire - Halvèque",
+			"adresseTemp" : "14 Rue Claude et Simone Millot Nantes",
+			"longitude" : "-1.51471112893372",
+			"latitude" : "47.2610589092307",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5353",
+			"nom" : "Beaujoire - Halvèque",
+			"adresseTemp" : "20 Avenue de Josselin Nantes",
+			"longitude" : "-1.51414109214192",
+			"latitude" : "47.2601100637559",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5355",
+			"nom" : "Beaujoire - Halvèque",
+			"adresseTemp" : "6 Rue Claude et Simone Millot Nantes",
+			"longitude" : "-1.51387311660712",
+			"latitude" : "47.2606194551605",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5357",
+			"nom" : "Beaujoire - Halvèque",
+			"adresseTemp" : "3 Rue Louis et Louise Le Paih Nantes",
+			"longitude" : "-1.51299893936",
+			"latitude" : "47.2607301455211",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5358",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : " Rue Barbara Nantes",
+			"longitude" : "-1.52219019589521",
+			"latitude" : "47.27169295694",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5359",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "16 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.52159652211754",
+			"latitude" : "47.269768803938",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5361",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : " Rue Barbara Nantes",
+			"longitude" : "-1.52169414980947",
+			"latitude" : "47.2715207165696",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5362",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "13 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.52155787810415",
+			"latitude" : "47.2702416517578",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5364",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "6 Rue du Bois Hue Nantes",
+			"longitude" : "-1.52152546432113",
+			"latitude" : "47.2722713525659",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5366",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "38 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.52014973659374",
+			"latitude" : "47.2724091788237",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5369",
+			"nom" : "La Bottière",
+			"adresseTemp" : "94 Rue Félix Ménétrier Nantes",
+			"longitude" : "-1.5210387622694",
+			"latitude" : "47.2402093318642",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5371",
+			"nom" : "La Bottière",
+			"adresseTemp" : "3 Rue Urbain le Verrier Nantes",
+			"longitude" : "-1.51848705020074",
+			"latitude" : "47.240626920684",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5372",
+			"nom" : "La Bottière",
+			"adresseTemp" : "7 Rue Urbain le Verrier Nantes",
+			"longitude" : "-1.51900540081542",
+			"latitude" : "47.2409655825835",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5373",
+			"nom" : "Bout des pavés-Chêne des",
+			"adresseTemp" : "61 Avenue du Bout des Landes Nantes",
+			"longitude" : "-1.5788483251105",
+			"latitude" : "47.2600565836499",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5376",
+			"nom" : "Boissière",
+			"adresseTemp" : "1 Rue Paul Claudel Nantes",
+			"longitude" : "-1.56713903784582",
+			"latitude" : "47.2521034277797",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5380",
+			"nom" : "Boissière",
+			"adresseTemp" : "1 Rue Prosper Mérimée Nantes",
+			"longitude" : "-1.5676151824212",
+			"latitude" : "47.2548682380874",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5383",
+			"nom" : "Bout des pavés-Chêne des",
+			"adresseTemp" : "14 Rue de Toronto Nantes",
+			"longitude" : "-1.57781992434506",
+			"latitude" : "47.2582660748865",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5386",
+			"nom" : "Bout des pavés-Chêne des",
+			"adresseTemp" : "9 Rue de Vancouver Nantes",
+			"longitude" : "-1.57813817983412",
+			"latitude" : "47.2592593021368",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5388",
+			"nom" : "Bout des pavés-Chêne des",
+			"adresseTemp" : "7 Rue de Hamilton Nantes",
+			"longitude" : "-1.57653331325201",
+			"latitude" : "47.2594912382954",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5389",
+			"nom" : "Richebourg - St Clément",
+			"adresseTemp" : "37 Rue Maréchal Joffre Nantes",
+			"longitude" : "-1.54710357341477",
+			"latitude" : "47.2218585715759",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5390",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " rue Auguste Lepère Nantes",
+			"longitude" : "-1.59787010342564",
+			"latitude" : "47.2272232175926",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5391",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " rue Auguste Lepère Nantes",
+			"longitude" : "-1.59774913487845",
+			"latitude" : "47.2271643992534",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5392",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "4 Rue Antoine Watteau Nantes",
+			"longitude" : "-1.60141905270174",
+			"latitude" : "47.2225461500439",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5393",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "2 Rue Jean Baptiste Chardin Nantes",
+			"longitude" : "-1.59980094082668",
+			"latitude" : "47.2231173714154",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5395",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "18 Rue Antoine Watteau Nantes",
+			"longitude" : "-1.60078917771818",
+			"latitude" : "47.2231259307961",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5397",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "6 Rue Jean Baptiste Greuze Nantes",
+			"longitude" : "-1.59861146665742",
+			"latitude" : "47.2232766509268",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5398",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "12 Rue Georges de la Tour Nantes",
+			"longitude" : "-1.60217543640086",
+			"latitude" : "47.2240351590193",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5401",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "2 Rue de Brest Nantes",
+			"longitude" : "-1.58075746668201",
+			"latitude" : "47.265157402936",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5402",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "6 Rue de Brest Nantes",
+			"longitude" : "-1.5812941313534",
+			"latitude" : "47.2659646895419",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5404",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "8 Rue de Brest Nantes",
+			"longitude" : "-1.58139192609571",
+			"latitude" : "47.2662028302222",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5406",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "2 Rue de Brest Nantes",
+			"longitude" : "-1.58095166202448",
+			"latitude" : "47.2653664734024",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5407",
+			"nom" : "Graslin - Commerce",
+			"adresseTemp" : " Allée de la Bourse Nantes",
+			"longitude" : "-1.55861215433755",
+			"latitude" : "47.2124144188788",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5409",
+			"nom" : "Malakoff",
+			"adresseTemp" : "25 Rue d'Angleterre Nantes",
+			"longitude" : "-1.52908400646401",
+			"latitude" : "47.2142288515112",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5412",
+			"nom" : "Malakoff",
+			"adresseTemp" : "25 Rue d'Angleterre Nantes",
+			"longitude" : "-1.52907222409258",
+			"latitude" : "47.2143592626159",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5414",
+			"nom" : "Malakoff",
+			"adresseTemp" : "17 Rue d'Angleterre Nantes",
+			"longitude" : "-1.52831104763312",
+			"latitude" : "47.2144301898327",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5417",
+			"nom" : "Malakoff",
+			"adresseTemp" : "14 Rue d'Angleterre Nantes",
+			"longitude" : "-1.5274651468301",
+			"latitude" : "47.2147330276834",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5419",
+			"nom" : "Malakoff",
+			"adresseTemp" : "1 Rue d'Angleterre Nantes",
+			"longitude" : "-1.52654270633582",
+			"latitude" : "47.2149827031751",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5423",
+			"nom" : "La Bottière",
+			"adresseTemp" : "98 Rue Félix Ménétrier Nantes",
+			"longitude" : "-1.52009921798605",
+			"latitude" : "47.2407535912278",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5424",
+			"nom" : "La Bottière",
+			"adresseTemp" : "67 Rue de la Bottière Nantes",
+			"longitude" : "-1.51854888232384",
+			"latitude" : "47.2400552679629",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5427",
+			"nom" : "Lauriers",
+			"adresseTemp" : " Rue de la Save Nantes",
+			"longitude" : "-1.60466603264104",
+			"latitude" : "47.2057769187483",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5428",
+			"nom" : "Lauriers",
+			"adresseTemp" : "14 Rue du Doubs Nantes",
+			"longitude" : "-1.60610670390085",
+			"latitude" : "47.2049629849477",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5430",
+			"nom" : "Lauriers",
+			"adresseTemp" : "12 Rue du Doubs Nantes",
+			"longitude" : "-1.6063524341356",
+			"latitude" : "47.2046398411983",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5431",
+			"nom" : "Lauriers",
+			"adresseTemp" : "6 Rue du Doubs Nantes",
+			"longitude" : "-1.60580227283121",
+			"latitude" : "47.2041396065498",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5432",
+			"nom" : "Lauriers",
+			"adresseTemp" : "6 Rue du Drac Nantes",
+			"longitude" : "-1.6048925254037",
+			"latitude" : "47.2037527973134",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5434",
+			"nom" : "Lauriers",
+			"adresseTemp" : "2 Rue du Gers Nantes",
+			"longitude" : "-1.6040466323769",
+			"latitude" : "47.2047063276755",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5435",
+			"nom" : "Lauriers",
+			"adresseTemp" : "3 Rue du Gers Nantes",
+			"longitude" : "-1.60455451949756",
+			"latitude" : "47.2050233020598",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5437",
+			"nom" : "Lauriers",
+			"adresseTemp" : "9 Rue du Gers Nantes",
+			"longitude" : "-1.60501903213803",
+			"latitude" : "47.2052241188299",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5441",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "15 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.52147068150685",
+			"latitude" : "47.2710710793516",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5443",
+			"nom" : "Gloriette - Feydeau",
+			"adresseTemp" : " Cours Commandant D'Estienne D'Orves Nantes",
+			"longitude" : "-1.55278764463762",
+			"latitude" : "47.2134335221364",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5444",
+			"nom" : "Gloriette - Feydeau",
+			"adresseTemp" : " Cours Commandant D'Estienne D'Orves Nantes",
+			"longitude" : "-1.55276122904896",
+			"latitude" : "47.2134034568646",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5446",
+			"nom" : "Malakoff",
+			"adresseTemp" : " Rue de Madrid Nantes",
+			"longitude" : "-1.53318230070315",
+			"latitude" : "47.2137508154407",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5449",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "15 Rue de Pont Aven Nantes",
+			"longitude" : "-1.58057843981244",
+			"latitude" : "47.2666865475825",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5450",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : "13 Rue de Pont Aven Nantes",
+			"longitude" : "-1.57963439394997",
+			"latitude" : "47.266650492118",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5452",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : " Boulevard René Cassin Nantes",
+			"longitude" : "-1.5775738505603",
+			"latitude" : "47.2640983960662",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5453",
+			"nom" : "Rte de Ste Luce",
+			"adresseTemp" : "55 Rue de la Basse Chénaie Nantes",
+			"longitude" : "-1.50864785911055",
+			"latitude" : "47.2408615170513",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5454",
+			"nom" : "Bout des Landes",
+			"adresseTemp" : " Rue de Douarnenez Nantes",
+			"longitude" : "-1.57537897234976",
+			"latitude" : "47.2645556726412",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_TS5456",
+			"adresseTemp" : " Rue des Halquinières Nantes",
+			"longitude" : "-1.50901382326646",
+			"latitude" : "47.2395450523545",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5457",
+			"adresseTemp" : " Mail Haroun Tazieff Nantes",
+			"longitude" : "-1.51128678570426",
+			"latitude" : "47.2396332969042",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5458",
+			"adresseTemp" : " Mail Haroun Tazieff Nantes",
+			"longitude" : "-1.51182963935756",
+			"latitude" : "47.2398710819594",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5459",
+			"adresseTemp" : " Rue des Halquinières Nantes",
+			"longitude" : "-1.50835781429867",
+			"latitude" : "47.2399249795109",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5460",
+			"nom" : "Rte de Ste Luce",
+			"adresseTemp" : "2 Rue du Petit-Sauzay Nantes",
+			"longitude" : "-1.50798445724891",
+			"latitude" : "47.2391150411271",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5462",
+			"nom" : "La Bottière",
+			"adresseTemp" : "67 Rue de la Bottière Nantes",
+			"longitude" : "-1.51953521047677",
+			"latitude" : "47.2399077543757",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5463",
+			"nom" : "Beaujoire - Halvêque",
+			"adresseTemp" : " Rue Marcel et Marie Michel Nantes",
+			"longitude" : "-1.51407710725002",
+			"latitude" : "47.2618735654754",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5466",
+			"nom" : "Lauriers",
+			"adresseTemp" : "60 Rue du Jamet Nantes",
+			"longitude" : "-1.6037373670395",
+			"latitude" : "47.2097206843523",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5468",
+			"nom" : "Lauriers",
+			"adresseTemp" : "12 Rue de la Dordogne Nantes",
+			"longitude" : "-1.60325655871921",
+			"latitude" : "47.2090932040195",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5470",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "3 Rue de la Jalotterie Nantes",
+			"longitude" : "-1.59008728592462",
+			"latitude" : "47.231688409177",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5472",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "1 Rue de la Jalotterie Nantes",
+			"longitude" : "-1.58968047777906",
+			"latitude" : "47.2314504782855",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5474",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue de la Jalotterie Nantes",
+			"longitude" : "-1.58926377533233",
+			"latitude" : "47.2312015320107",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5476",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : "3 Rue de la Jalotterie Nantes",
+			"longitude" : "-1.59060388923461",
+			"latitude" : "47.2312755948603",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5477",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue de la Jalotterie Nantes",
+			"longitude" : "-1.59102581046316",
+			"latitude" : "47.2310589695716",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5479",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue des Plantes Nantes",
+			"longitude" : "-1.59007000183464",
+			"latitude" : "47.2303588728999",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5481",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue Charles Dullin Nantes",
+			"longitude" : "-1.58615367344659",
+			"latitude" : "47.2322773752476",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5482",
+			"nom" : "Graslin - Commerce",
+			"adresseTemp" : " Rue Saint Julien Nantes",
+			"longitude" : "-1.55902522590494",
+			"latitude" : "47.2148646143443",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5485",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " Rue Auguste Lepère Nantes",
+			"longitude" : "-1.59738878879919",
+			"latitude" : "47.2268991118956",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5486",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " Rue Auguste Lepère Nantes",
+			"longitude" : "-1.59720598062999",
+			"latitude" : "47.2265142556827",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5488",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : "31 Rue Louis le Nain Nantes",
+			"longitude" : "-1.59818191882661",
+			"latitude" : "47.2256131139766",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5489",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " Rue Nicolas Poussin Nantes",
+			"longitude" : "-1.59440852663502",
+			"latitude" : "47.2223344746602",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5492",
+			"nom" : "Dervallières - Chézine",
+			"adresseTemp" : " Rue Nicolas Poussin Nantes",
+			"longitude" : "-1.59354274429759",
+			"latitude" : "47.2219512304644",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Ouest"
+		}, {
+			"code" : "stco_conteneur_TS5495",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : "28 Rue de la Planche au Gué Nantes",
+			"longitude" : "-1.52073891198033",
+			"latitude" : "47.2716238521391",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5497",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : " Rue Barbara Nantes",
+			"longitude" : "-1.52006103888057",
+			"latitude" : "47.271032561525",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5498",
+			"nom" : "St Joseph de Porterie",
+			"adresseTemp" : " Rue Barbara Nantes",
+			"longitude" : "-1.52010615996382",
+			"latitude" : "47.2710485947866",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Erdre et Loire"
+		}, {
+			"code" : "stco_conteneur_TS5499",
+			"nom" : "Ste Anne-Zone Portuaire",
+			"adresseTemp" : " Rue René Siegfried Nantes",
+			"longitude" : "-1.56704666119397",
+			"latitude" : "47.204203063198",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5502",
+			"nom" : "Ste Anne-Zone Portuaire",
+			"adresseTemp" : " Rue René Siegfried Nantes",
+			"longitude" : "-1.56698075811761",
+			"latitude" : "47.2044828762606",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs : verre, ordures",
+			"modesCollecte" : ",modco_contverre,modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5503",
+			"nom" : "Ste Anne-Zone Portuaire",
+			"adresseTemp" : " Rue René Siegfried Nantes",
+			"longitude" : "-1.56667332092859",
+			"latitude" : "47.2046274361745",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5504",
+			"nom" : "Ste Anne-Zone Portuaire",
+			"adresseTemp" : " Rue René Siegfried Nantes",
+			"longitude" : "-1.56728000998799",
+			"latitude" : "47.2047451608963",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_TS5505",
+			"nom" : "Malakoff",
+			"adresseTemp" : " Rue de Chypre Nantes",
+			"longitude" : "-1.52426319642355",
+			"latitude" : "47.2158185328133",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs ordures",
+			"modesCollecte" : ",modco_contomr",
+			"zone" : "Nantes-Loire"
+		}, {
+			"code" : "stco_conteneur_V4001",
+			"nom" : "Santos Dumont",
+			"adresseTemp" : " rue de la petite sensive Nantes",
+			"longitude" : "-1.56157980477749",
+			"latitude" : "47.2604370973811",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_V4002",
+			"nom" : "Boissière",
+			"adresseTemp" : " rue blaise pascal Nantes",
+			"longitude" : "-1.56676084387101",
+			"latitude" : "47.2562035151009",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Erdre et Cens"
+		}, {
+			"code" : "stco_conteneur_V4004",
+			"nom" : "Trentemoult",
+			"adresseTemp" : " Place Levoyer Rezé",
+			"longitude" : "-1.58134716266798",
+			"latitude" : "47.1942407251756",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_V4006",
+			"nom" : "Sorinières",
+			"adresseTemp" : " Rue de la paix Les Sorinières",
+			"longitude" : "-1.53274746188161",
+			"latitude" : "47.1505604647505",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Loire, Sèvre et Vignoble"
+		}, {
+			"code" : "stco_conteneur_V4008",
+			"nom" : "Indre",
+			"adresseTemp" : " Place Louis Le Loir Indre",
+			"longitude" : "-1.67603742253743",
+			"latitude" : "47.199254100927",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneurs verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Loire-Chézine"
+		}, {
+			"code" : "stco_conteneur_V4012",
+			"nom" : "Breil-Malville",
+			"adresseTemp" : " Rue Jules Noël Nantes",
+			"longitude" : "-1.58571370086022",
+			"latitude" : "47.2289417574108",
+			"src" : "OpenDataNantes 11/2015",
+			"type" : "Conteneur verre",
+			"modesCollecte" : ",modco_contverre",
+			"zone" : "Nantes-Ouest"
 		}, {
 			"code" : "sco_lerelais_1",
 			"sous_zone" : "Dervallieres Zola",

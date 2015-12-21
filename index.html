@@ -105,7 +105,8 @@
   				var texte = "Le site fonctionne mal avec le navigateur Internet Explorer (boutons page d'accueil...). Veuillez utiliser un autre navigateur (Firefox, Chrome, Safari, Opera, Chromium, Edge...)";
   				alert(texte);
   			}*/
-			var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>Par des b&eacute;n&eacute;voles<br/>www.mieuxtrieranantes.fr<br/>Version 1.17 (bêta Montpellier)<br/><i>Nouveaut&eacute;s : données OpenDataNantes 11/2015 intégrées</i></center></div>";
+  			var msg = _translateSpecificLabels("splashmessage", "fr");
+			var texte = "<div id='appLoadingIndicator'><center><img src='resources/icons/Icon@2x.png' /><br/>"+msg+"</center></div>";
 			document.write(texte);
 	</script>
 </body>

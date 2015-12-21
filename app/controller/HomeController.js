@@ -668,33 +668,22 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 			this.getHomeGlobalSearchList().setStore(store);
 		}
 		var tempo = [];
-		this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas, _garbagesDatas,
-				texteNoAccents, locale, "garbages");
-		this.ajouteDatasSelonHash(tempo, _hashFichesDatas, _infosDatas,
-				texteNoAccents, locale, "fiches");
-		this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas,
-				texteNoAccents, locale, "docs");
-		this.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
-				_structuresDatas, texteNoAccents, locale, "structures");
-		this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas, _structuresDatas,
-				texteNoAccents, locale, "trisacs");
-		this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
-				_homeCollectModsDatas, texteNoAccents, locale,
-				"homecollectmods");
-
-		// utilPushArray(_garbagesDatas, tempo);
-		// utilPushArray(_infosDatas, tempo);
-		// utilPushArray(_structuresDatas, tempo);
-		// utilPushArray(_quizsDatas, tempo);
-		/*
-		 * var cles = _hashGarbagesDatas[0][texteNoAccents]; if (cles !=
-		 * undefined) { var codesDechets = cles.split(','); var taille =
-		 * codesDechets.length; for (var j = 1; j < taille; j++) { var
-		 * codeDechet = codesDechets[j]; for (var k = 0; k <
-		 * _garbagesDatas.length; k++) { if (_garbagesDatas[k]["code"] ==
-		 * codeDechet) { // _garbagesDatas[k]["type"] = "Déchet";
-		 * tempo.push(_garbagesDatas[k]); } } } }
-		 */
+		var textes = texteNoAccents.split(',');
+		for (var j = 0; j < textes.length; j++) {
+			var texte = textes[j];
+			this.ajouteDatasSelonHash(tempo, _hashGarbagesDatas,
+					_garbagesDatas, texte, locale, "garbages");
+			this.ajouteDatasSelonHash(tempo, _hashFichesDatas, _infosDatas,
+					texteNoAccents, locale, "fiches");
+			this.ajouteDatasSelonHash(tempo, _hashDocsDatas, _docsDatas, texte,
+					locale, "docs");
+			this.ajouteDatasSelonHash(tempo, _hashStructuresDatas,
+					_structuresDatas, texte, locale, "structures");
+			this.ajouteDatasSelonHash(tempo, _hashTrisacsDatas,
+					_structuresDatas, texte, locale, "trisacs");
+			this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
+					_homeCollectModsDatas, texte, locale, "homecollectmods");
+		}
 		store.removeAll();
 		store.setData(tempo);
 		store.sync();
