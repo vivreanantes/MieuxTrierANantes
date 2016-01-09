@@ -62,90 +62,6 @@ function _translateWithUpperFirstLetter(text, stLocale) {
 	return _stringUpperFirstLetter(_translate(text, stLocale));
 }
 
-/**
- * Retire les accents d'une chaîne de caractère et met en minuscule
- */
-function _utilRetireAccentEtMinuscule(result) {
-	result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
-	result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
-	result = result.replace(/[Çç]/g, "c");
-	result = result.replace(/[Ð]/g, "d");
-	result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-	result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
-	result = result.replace(/[Ññ]/g, "n");
-	result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-	result = result.replace(/[Šš]/g, "s");
-	result = result.replace(/[Ÿÿý]/g, "y");
-	result = result.replace(/[Žž]/g, "z");
-	result = result.toLowerCase();
-	// Retire les mots inutiles
-	result = _utilRetireMotsInutiles(result);
-	// trim : permet de retirer les blancs en début et fin de chaîne.
-	result = result.trim();
-	// Remplace les " " et les "+" par des virgules
-	result = result.replace(/[ +]/g, ",");
-	result = _utilMettreNomAuSingulier(result);
-	return result;
-}
-
-function _utilRetireMotsInutiles(result) {
-	result = result
-			.replace(
-					/allee|avenue|bas chemin|basse tenue|boulevard|chemin|cours|esplanade|hameau|haute impasse|impasse|jardin|mail|nouvelle impasse|parvis|passage|petit chemin|petite avenue|petite rue|place|pont|promenade|quai|rond-point|route|rue|ruelle|sentier|square|venelle|voie/g,
-					"");
-	// |de la|de|du|des
-	// todo_crn allee |allee |avenue |bas chemin |basse tenue |boulevard |chemin
-	// |cours |esplanade |hameau |haute impasse |impasse |jardin |mail |nouvelle
-	// impasse |parvis |passage |petit chemin |petite avenue |petite rue |place
-	// |pont |promenade |quai |rond-point |route |rue |ruelle |sentier |square
-	// |venelle |voie |de la |de |du |des
-	return result;
-}
-
-/**
- * Met un nom au singulier : retire les s à la fin, ou les 'x'
- * Exemple : "emmaus,as,b" renvoie "emmau,emmaus,a,as,b,"
- * @param {}
- *            result
- * @return {}
- */
-function _utilMettreNomAuSingulier(mots) {
-	// supprime le 's' en caractère final
-	// result = result.replace(/([^]*)s,$/, '$1,');
-	var result = "";
-	var codesCles = mots.split(',');
-	var taille = codesCles.length;
-	for (var j = 0; j < taille; j++) {
-		var codeCle = codesCles[j];
-		var fin = codeCle.substring( codeCle.length-1,  codeCle.length);
-		var debut = codeCle.substring(0,  codeCle.length-1);
-		if (fin=="s") {
-			result = result + debut + "," + codeCle + ",";
-		} else {
-			result = result + codeCle + ",";
-		}
-	}
-	return result;
-}
-
-/**
- * Retire les accents d'une chaîne de caractère
- */
-function _utilRetireAccent(result) {
-	result = result.trim();
-	result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
-	result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
-	result = result.replace(/[Çç]/g, "c");
-	result = result.replace(/[Ð]/g, "d");
-	result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-	result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
-	result = result.replace(/[Ññ]/g, "n");
-	result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-	result = result.replace(/[Šš]/g, "s");
-	result = result.replace(/[Ÿÿý]/g, "y");
-	result = result.replace(/[Žž]/g, "z");
-	return result;
-}
 
 function _cutWithBr(stChaine) {
 	return _decoupeAvecTaille(stChaine, 30);
@@ -215,92 +131,37 @@ function _detectePetiteTaille() {
  * Ouvre un lien (soit dans le navigateur, soit dans google maps)
  */
 /*
-function _gestionLien(e) {
-	var hrefValue = 0
-	// on prend soit le href, soit le lien parent (dans le cas des images)
-	if (e.target.href != undefined) {
-		hrefValue = e.target.href;
-	} else if (e.getTarget().href != undefined) {
-		hrefValue = e.getTarget().href;
-	}
-	if (hrefValue.length > 5) {
-		protocole = hrefValue.substring(0, 4);
-		complement = hrefValue.substring(5);
-		if (protocole == "http" || protocole == "www.") {
-			if (_isNavigator() == false && navigator.app) {
-				// Mobile device.
-				Ext.Msg.alert('Externe',
-						'La page a été ouverte dans le navigateur.');
-				navigator.app.loadUrl(hrefValue, {
-							openExternal : true
-						});
-				e.stopPropagation();
-				e.preventDefault();
-				return false;
-			} else {
-				// Possible web browser
-				// window.open(hrefValue, "_blank");
-				// e.stopPropagation();
-				// e.preventDefault();
-				// e.stopEvent();
-				// return false;
-			}
-			// navigator.app.loadUrl(url, {openExternal: true});
-		} else if (protocole == "fich") {
-			e.stopPropagation();
-			e.preventDefault();
-			e.stopEvent();
-			_detailleFiche(complement, 300, 400, false);
-			return false;
-		} else if (protocole == "lieu") {
-			_detailleLieu(complement, 300, 400, false);
-		} else if (protocole == "lalo") {
-
-			// Ouverture des liens navigation
-
-			if (_isNavigator() == false && navigator.app) {
-				// Mobile device.
-				url = "geo:0,0?q=" + complement;
-				Ext.Msg
-						.alert('Externe',
-								'La position a été ouverte dans l\'application de navigation.');
-				navigator.app.loadUrl(url, {
-							openExternal : true
-						});
-				e.stopPropagation();
-				e.preventDefault();
-				return false;
-			} else {
-				// Possible web browser
-				url = "http://maps.google.fr/maps?f=q&hl=fr&q=" + complement;
-				window.open(url, "_system");
-				// e.stopPropagation();
-				// e.preventDefault();
-				// e.stopEvent();
-				// return false;
-			}
-		} else if (protocole == "tel:") {
-
-			// Ouverture des liens téléphone
-			if (_isNavigator() == false && navigator.app) {
-				// Mobile device.
-				url = "tel:" + complement;
-				Ext.Msg
-						.alert('Externe',
-								'Le numéro a été envoyé au téléphone.');
-				navigator.app.loadUrl(url, {
-							openExternal : true
-						});
-				e.stopPropagation();
-				e.preventDefault();
-				return false;
-			}
-		}
-		e.stopEvent();
-	}
-}
-
-*/
+ * function _gestionLien(e) { var hrefValue = 0 // on prend soit le href, soit
+ * le lien parent (dans le cas des images) if (e.target.href != undefined) {
+ * hrefValue = e.target.href; } else if (e.getTarget().href != undefined) {
+ * hrefValue = e.getTarget().href; } if (hrefValue.length > 5) { protocole =
+ * hrefValue.substring(0, 4); complement = hrefValue.substring(5); if (protocole ==
+ * "http" || protocole == "www.") { if (_isNavigator() == false &&
+ * navigator.app) { // Mobile device. Ext.Msg.alert('Externe', 'La page a été
+ * ouverte dans le navigateur.'); navigator.app.loadUrl(hrefValue, {
+ * openExternal : true }); e.stopPropagation(); e.preventDefault(); return
+ * false; } else { // Possible web browser // window.open(hrefValue, "_blank"); //
+ * e.stopPropagation(); // e.preventDefault(); // e.stopEvent(); // return
+ * false; } // navigator.app.loadUrl(url, {openExternal: true}); } else if
+ * (protocole == "fich") { e.stopPropagation(); e.preventDefault();
+ * e.stopEvent(); _detailleFiche(complement, 300, 400, false); return false; }
+ * else if (protocole == "lieu") { _detailleLieu(complement, 300, 400, false); }
+ * else if (protocole == "lalo") { // Ouverture des liens navigation
+ * 
+ * if (_isNavigator() == false && navigator.app) { // Mobile device. url =
+ * "geo:0,0?q=" + complement; Ext.Msg .alert('Externe', 'La position a été
+ * ouverte dans l\'application de navigation.'); navigator.app.loadUrl(url, {
+ * openExternal : true }); e.stopPropagation(); e.preventDefault(); return
+ * false; } else { // Possible web browser url =
+ * "http://maps.google.fr/maps?f=q&hl=fr&q=" + complement; window.open(url,
+ * "_system"); // e.stopPropagation(); // e.preventDefault(); // e.stopEvent(); //
+ * return false; } } else if (protocole == "tel:") { // Ouverture des liens
+ * téléphone if (_isNavigator() == false && navigator.app) { // Mobile device.
+ * url = "tel:" + complement; Ext.Msg .alert('Externe', 'Le numéro a été envoyé
+ * au téléphone.'); navigator.app.loadUrl(url, { openExternal : true });
+ * e.stopPropagation(); e.preventDefault(); return false; } } e.stopEvent(); } }
+ * 
+ */
 
 /**
  * Ouvre un lien (soit dans le navigateur, soit dans google maps)
@@ -565,6 +426,7 @@ function _isWhindowsPhone() {
  * vaut 'en'.
  */
 function getRecordValue(record, key) {
+	// RM_LA_LANGUE_07
 	var result = "";
 	stLocale = getLocale();
 	// if (key == "descr" || key == "nom") {
@@ -583,17 +445,9 @@ function getRecordValue(record, key) {
 }
 
 /**
- * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
- * LocalStorageController.
+ * Renvoie la valeur d'un paramètre (les paramètres sont regroupés dans
+ * _paramsDatas)
  */
-function getLocale() {
-	if (typeof stGlobalLocale == 'undefined') {
-		stGlobalLocale = "fr";
-	}
-	return stGlobalLocale;
-};
-
-/** Renvoie la valeur d'un hash */
 function getParam(stKey) {
 	var datas = _paramsDatas;
 	var stValue = "valeur";

@@ -154,7 +154,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 				.translateWithUpperFirstLetter("label_adresse"));
 
 		var temp = "";
-		var locale = this.getLocale();
+		var locale = getLocale();
 		if (locale == "en") {
 			temp = "_en";
 		}
@@ -291,8 +291,9 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 							var escaperegex = Ext.String.escapeRegex;
 							var texttest = new RegExp(
 									escaperegex(texteSansAccents), 'ig');
-							var nomVoie_sansAccents = this.getRecordValue(
-									_garbagesDatas[j], "mots_cles");
+							/// RM_LA_LANGUE_06
+							// var nomVoie_sansAccents = this.getRecordValue(_garbagesDatas[j], "mots_cles");
+							// RM_LA_LANGUE_06
 							var nomVoie_sansAccents = item.data["mots_cles"];
 							return (texttest.test(nomVoie_sansAccents));
 						}
@@ -308,8 +309,8 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		var value = this.getHomeCollectModsFormText().getValue();
 		var texteSansAccents = _utilRetireAccentEtMinuscule(value);
 		var tempo = [];
-		var locale = this.getLocale();
-		this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
+		var locale = getLocale();
+		ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 				_homeCollectModsDatas, texteSansAccents, locale,
 				"homecollectmods");
 		var store = this.getHomeCollectModsList().getStore();

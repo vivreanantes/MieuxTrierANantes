@@ -18,9 +18,10 @@ Ext.application({
 	controllers : ['GeoController', 'InformationsController',
 			'StructuresController', 'GarbagesController',
 			'HomeCollectModsController', 'TrisacsController',
-			'CollectModsController', 'HomeController'],
+			'CollectModsController', 'HomeController', 'QuizController'],
 
-	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel', 'SettingsModel', 'DocsModel', 'GlobalSearchModel'],
+	models : ['HomeCollectModModel', 'StructureModel', 'HomeModel',
+			'SettingsModel', 'DocsModel', 'GlobalSearchModel'],
 
 	stores : ['HomeCollectModStore', 'TrisacStore', 'StructureStore',
 			'StructureGeoStore', 'HomeStore', 'DocsStore', 'GlobalSearchStore'],
@@ -36,8 +37,6 @@ Ext.application({
 			'garbages.GarbagesForm',
 			// Carte
 			'geo.MapOSM',
-			// 'geo.Map',
-			// 'geo.Toast_old',
 			// Modes de collecte
 			'collectMod.CollectMods',
 			'collectMod.CollectModsButtonsPanel',
@@ -63,9 +62,6 @@ Ext.application({
 			'home.DocsModal',
 			'home.QuizView',
 			'home.GlobalSearchList',
-			// Calendar,
-			// 'calendar.Calendar',
-			/*'calendar.Ext.ux.TouchCalendarView',*/
 			// Mode de collecte a domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
@@ -78,17 +74,12 @@ Ext.application({
 			'information.Informations',
 			'information.InformationsButtonsPanel',
 			// A propos
-			'about.Description',
-			// Calendrier
-			// 'calendar.Calendar',
-			// 'calendar.Events',
-			'structures.Structures', 'structures.StructuresContainer',
-			'structures.StructuresDetails', 'structures.StructuresForm',
-			'structures.StructuresList',
+			'about.Description', 'structures.Structures',
+			'structures.StructuresContainer', 'structures.StructuresDetails',
+			'structures.StructuresForm', 'structures.StructuresList',
 			// Trisac
 			'trisac.Trisacs', 'trisac.TrisacContainer', 'trisac.TrisacDetails',
-			'trisac.TrisacForm', 'trisac.TrisacList'
-			],
+			'trisac.TrisacForm', 'trisac.TrisacList'],
 
 	icon : {
 		'57' : 'resources/icons/Icon.png',
@@ -125,9 +116,7 @@ Ext.application({
 
 	onEvenementCordovaBackButton : function(e) {
 		e.preventDefault();
-		
 
-		
 		/* Ext.Msg.confirm("Confirmation", "Voulez-vous fermer l'application ?",
 				function(btn, text) {
 					if (btn == 'Yes') {
@@ -144,9 +133,9 @@ Ext.application({
 		// This method accepts a Position object, which contains the
 		// current GPS coordinates
 		//
-		
-		 navigator.splashscreen.hide();
-		
+
+		navigator.splashscreen.hide();
+
 		var geolocationSuccess = function(position) {
 
 			var msg = 'Latitude: ' + position.coords.latitude + '\n'
@@ -174,9 +163,11 @@ Ext.application({
 								window.location.reload();
 							}
 						});
-		*/
+		 */
 	}
 });
 
 /* Pour les news */
-Ext.Loader.setConfig({ disableCaching: false });
+Ext.Loader.setConfig({
+			disableCaching : false
+		});

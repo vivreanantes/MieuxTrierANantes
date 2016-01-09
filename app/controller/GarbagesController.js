@@ -198,11 +198,10 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 
 		if (labelElt1 === "") {
 			this.putInButtonsPanel("cu");
-		} else if (labelElt1 === "Plastique Brique"
-				&& this.getLocale() === "en") {
+		} else if (labelElt1 === "Plastique Brique" && getLocale() === "en") {
 			// on passe en anglais
 			this.putInButtonsPanel("cu");
-		} else if (labelElt1 === "Plastic Brick" && this.getLocale() === "fr") {
+		} else if (labelElt1 === "Plastic Brick" && getLocale() === "fr") {
 			// on passe en français
 			this.putInButtonsPanel("cu");
 		}
@@ -667,6 +666,7 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			// sinon les résultats sont faux !
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
+			// RM_LA_LANGUE_06
 			var mots_cles = this.getRecordValue(_garbagesDatas[j], "mots_cles");
 			if ((_garbagesDatas[j]["cat_usuel"] === category.getValue() || category
 					.getValue() === "all")

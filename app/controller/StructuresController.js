@@ -132,7 +132,8 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 				.translateWithUpperFirstLetter("label_quartier"));
 		this.getStructuresFormSelectType().setLabel(this
 				.translateWithUpperFirstLetter("label_type"));
-		this.getStructuresList().setEmptyText(this.translate("label_aucun_resultat"));
+		this.getStructuresList().setEmptyText(this
+				.translate("label_aucun_resultat"));
 		this.getStructuresView().setDefaultBackButtonText(this
 				.translateWithUpperFirstLetter("label_retour"));
 	},
@@ -167,9 +168,9 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					var stTypeRegexp = new RegExp(selectType.getValue());
 					var stQuartier = item.data["zone"];
 					var stType = item.data["modesCollecte"];
-					var stDechetsNoAccents = this.getRecordValue(item.data,
-							"mots_cles");
-					var stLibelleNoAccents = _utilRetireAccentEtMinuscule(this
+					// RM_LA_LANGUE_06
+					var stDechets = this.getRecordValue(item.data, "mots_cles");
+					var stLibNoAccents = _utilRetireAccentEtMinuscule(this
 							.getRecordValue(item.data, "nom"));
 					// Important : il faut recréer l'expression régulière à
 					// chaque fois
@@ -178,8 +179,7 @@ Ext.define("MieuxTrierANantes.controller.StructuresController", {
 					return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
 							.getValue())
 							&& (stTypeRegexp.test(stType)) && (texttest
-							.test(stDechetsNoAccents) || texttest
-							.test(stLibelleNoAccents)));
+							.test(stDechets) || texttest.test(stLibNoAccents)));
 				}
 			});
 			store.filter(filterElements);

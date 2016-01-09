@@ -9,7 +9,7 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
 	 */
 	translate : function(stKey) {
-		var stLocale = this.getLocale();
+		var stLocale = getLocale();
 		// 2. Sinon on prend dans les labels communs.
 		// invoque la fonction définie dans translation.js
 		return _translate(stKey, stLocale);
@@ -20,26 +20,8 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 	 * trouve pas, renvoie la clé.
 	 */
 	getSpecificLabel : function(stKey) {
-		var stLocale = this.getLocale();
+		var stLocale = getLocale();
 		return _translateSpecificLabels(stKey, stLocale);
-	},
-
-	/**
-	 * Renvoie la variable locale (par exemple "fr" ou "en").<br/>Cette
-	 * fonction invoquera le LocalStorageController.
-	 */
-	getLocale : function() {
-		if (typeof stGlobalLocale == 'undefined') {
-			stGlobalLocale = "fr";
-		}
-		return stGlobalLocale;
-		// var result = "fr";
-		/*
-		 * var localStorageController = this .getApplication()
-		 * .getController("MieuxTrierANantes.controller.LocalStorageController");
-		 * result = localStorageController.getLocale();
-		 */
-		// return result;
 	},
 
 	/**
@@ -790,75 +772,10 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 		var latLngStructure = L.latLng(posLatitude, posLongitude);
 		var distanceEnMetre = latLngStructure.distanceTo(latLngCentre);
 		return distanceEnMetre;
-	},
-
-	/**
-	 * Cette fonctionne modifie un tableau fourni en paramètre, en ajoutant des
-	 * éléments du tableau _datas.<br/> On ajoute les éléments du tableau
-	 * _datas après avoir rechercher dans le tableau _hash tous les éléments
-	 * dont les codes sont exacement la chaine texteNoAccents.<br/> On prend en
-	 * compte locale dans la recherche de _hash.<br/> page est le nom de la
-	 * page sur laquelle sera affichée la donnée, et qui est mise sur la donnée
-	 */
-	ajouteDatasSelonHash : function(tableauARetourner, _hash, _datas,
-			texteNoAccents, locale, page) {
-		if (locale == "en" && _hash.length > 1) {
-			var cles = _hash[1][texteNoAccents];
-		} else {
-			var cles = _hash[0][texteNoAccents];
-		}
-		if (cles != undefined) {
-			var codesCles = cles.split(',');
-			var taille = codesCles.length;
-			for (var j = 0; j < taille; j++) {
-				var codeCle = codesCles[j];
-				for (var k = 0; k < _datas.length; k++) {
-					if (typeof _datas[k] != "undefined"
-							&& _datas[k]["code"] == codeCle) {
-						if (page == "homecollectmods") {
-							_datas[k]["type"] = "Collecte à domicile";
-							_datas[k]["type_en"] = "Home collect";
-							_datas[k]["image"] = "icon-go-home.png";
-							_datas[k]["nom"] = _datas[k]["dcv"];
-							_datas[k]["nom_en"] = _datas[k]["dcv"];
-							_datas[k]["jcbj_en"] = _datas[k]["jcbj"].replace(
-									"Sacs (jaunes et bleus)",
-									"Bags (yellow et blue)").replace("lundi",
-									"monday").replace("mardi", "tuesday")
-									.replace("mercredi", "wednesday").replace(
-											"jeudi", "thursday").replace(
-											"vendredi", "friday").replace(
-											"samedi", "saturday").replace(
-											"dimanche", "sunday");
-						}
-						// if (page == "docs") {
-						// _datas[k]["nom_en"] = "<a href='http://"
-						// + this.getRecordValue(_datas[k], "url") + "'
-						// target=_new>"
-						// + this.getRecordValue(_datas[k], "nom") + "</a>";
-						// }
-						_datas[k]["page"] = page;
-						// Permet de prendre le français quand on a pas la
-						// traduction
-						_datas[k]["nom_en"] = this.getRecordValue(_datas[k],
-								"nom");
-						_datas[k]["type_en"] = this.getRecordValue(_datas[k],
-								"type");
-						// TRELLO_DISTANCE_JOURS
-						if (typeof _datas[k]["latitude"] != "undefined") {
-							var diste = this.calculeDistance(
-									_datas[k]["latitude"],
-									_datas[k]["longitude"],
-									_datas[k]["latitude"],
-									_datas[k]["longitude"]);
-						}
-						tableauARetourner.push(_datas[k]);
-					}
-				}
-			}
-		}
 	}
-});
+}
+
+);
 
 function showGarbagePanel(id) {
 	Ext.getCmp("mainView").setActiveItem(0);

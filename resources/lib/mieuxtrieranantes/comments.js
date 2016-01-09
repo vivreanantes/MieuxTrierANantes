@@ -96,7 +96,8 @@ function _getStructure(idElement) {
 }
 
 function getDescriptionCompleteInfo(myElement) {
-	var description =  getRecordValue(myElement, "descr") + _getCommentsBloc(myElement["code"]);
+	var description = getRecordValue(myElement, "descr")
+			+ _getCommentsBloc(myElement["code"]);
 	return description;
 }
 /**
@@ -149,11 +150,7 @@ function _getAdvicesBlock(advicesString, prefixString) {
 	if (arConseils.length > 0) {
 
 		for (j in _advicesDatas) {
-			// STORE datasAdvices
-			// var dataAdvices =
-			// this.getApplication().getController("MieuxTrierANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
-			// var thisController = this;
-			// dataAdvices.each(function (recordAdvice) {
+
 			for (i in arConseils) {
 				if (_advicesDatas[j]["code"] === arConseils[i]) {
 					var nom = getRecordValue(_advicesDatas[j], "nom");
