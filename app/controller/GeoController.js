@@ -504,8 +504,14 @@ Ext.define('MieuxTrierANantes.controller.GeoController', {
 	onLocationUpdate : function(geoLocation) {
 
 		if (geoLocation !== null) {
-			this.mapOsm.posLatitudeInit = geoLocation.getLatitude();
-			this.mapOsm.longitudeInit = geoLocation.getLongitude();
+			// Si je me suis déplacé de 500 mètres, je redessinne la carte
+			if (this.pointEstDansZoneLimitee(geoLocation.getLatitude(),
+					geoLocation.getLongitude(),
+					this.mapOsm.distanceAvantRedessiner) == false) {
+				this.mapOsm.posLatitudeInit = geoLocation.getLatitude();
+				this.mapOsm.longitudeInit = geoLocation.getLongitude();
+				this.loadStructures();
+			}
 
 			// console.debug('LEAFLET : GEOLOCALISATION LAT : ' +
 			this.resetCenter(geoLocation.getLatitude(), geoLocation

@@ -41,6 +41,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\HashTrisacsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\HomeCollectModsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\InfosDatas.js \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\LabelsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\modes_collecte_a_domicile.json \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\NewsDatas.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\datas\ParamsDatas.js \
@@ -544,6 +545,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\lib\mieuxtrieranantes\common.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\lib\mieuxtrieranantes\date.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\lib\mieuxtrieranantes\plageshoraires.js \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\lib\mieuxtrieranantes\search.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\lib\mieuxtrieranantes\translation.js \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\startup\1496x2048.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\startup\1536x2008.png \

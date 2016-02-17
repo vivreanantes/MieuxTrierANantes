@@ -62,7 +62,6 @@ function _translateWithUpperFirstLetter(text, stLocale) {
 	return _stringUpperFirstLetter(_translate(text, stLocale));
 }
 
-
 function _cutWithBr(stChaine) {
 	return _decoupeAvecTaille(stChaine, 30);
 }
@@ -455,6 +454,24 @@ function getParam(stKey) {
 		result = stKey;
 	} else {
 		result = datas[stKey][stValue];
+	}
+	return result;
+};
+
+/**
+ * Vérifie si la page demandée est une des pages de l'application
+ * @param {} stKey
+ * @return {}
+ */
+function isPageActive(stKey) {
+	var result = false;
+	if (getParam("pages.page1.nom") == stKey
+			|| getParam("pages.page2.nom") == stKey
+			|| getParam("pages.page3.nom") == stKey
+			|| getParam("pages.page4.nom") == stKey
+			|| getParam("pages.page5.nom") == stKey
+			|| getParam("pages.page6.nom") == stKey) {
+		result = true;
 	}
 	return result;
 };

@@ -23,5 +23,6 @@ resources/sass/.sass-cache/
 resources/sass/
 .sencha_backup
 cordova/platforms/wp8/www/
-
-*.apk
+cordova/platforms/android/ant-build/
+cordova/platforms/android/bin/
+cordova/platforms/android/CordovaLib/bin/
