@@ -317,7 +317,7 @@ Ext.define('MieuxTrierANantes.controller.HomeCollectModsController', {
 		var textes = texteSansAccents.split(',');
 		for (var j = 0; j < textes.length; j++) {
 			var texte = textes[j];
-			ajouteDatasSelonHash(tempo, _hashADomicileDatas,
+			this.ajouteDatasSelonHash(tempo, _hashADomicileDatas,
 					_homeCollectModsDatas, texte, locale, "homecollectmods");
 		}
 		var store = this.getHomeCollectModsList().getStore();

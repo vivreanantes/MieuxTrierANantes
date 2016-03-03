@@ -452,7 +452,7 @@ Ext.define('MieuxTrierANantes.controller.HomeController', {
 		this.getHome().push(this.globalSearchResult);
 
 		var texteRecherche = this.getHomeGlobalSearchFormText().getValue();
-		var arrayResultats = _getGlobalSearchResult(texteRecherche);
+		var arrayResultats = this.getGlobalSearchResult(texteRecherche);
 
 		var store = this.getHomeGlobalSearchList().getStore();
 		if (store == null) {

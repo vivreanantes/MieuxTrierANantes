@@ -26,3 +26,5 @@ cordova/platforms/wp8/www/
 cordova/platforms/android/ant-build/
 cordova/platforms/android/bin/
 cordova/platforms/android/CordovaLib/bin/
+*.apk
+*.apk
