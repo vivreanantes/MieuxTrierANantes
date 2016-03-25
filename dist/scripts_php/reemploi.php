@@ -11,7 +11,7 @@ body {
 
 div.ss-form-container {
   padding: 15px;
-  background-color: #ffe3e3;
+  background-color: #aedc53;
   border-color: #a8a8a8;
   border-style: solid;
   border-width: 1px;
@@ -99,19 +99,19 @@ function isEmail(myVar){
 <h1>Inscription association ou entreprise de réemploi</h1>
 <p style='padding:15px;background-color:#ffff00'>
 Bonjour,<br/><br/>
-Nous joignons les associations/entreprises de réemploi de Loire-Atlantique qui étaient recensées par le site www.deuxieme-vie.org. Ce site est fermé, mais nous souhaitons maintenir les informations.<br/>
-<br/>
-Nous sommes 2 bénévoles et nous développons un programme gratuit 'Mieux Trier A Nantes' - voir <a href='www.mieuxtrieranantes.fr' target=_new >www.mieuxtrieranantes.fr</a> - dont l'objectif est d'aider les habitants de Nantes Métropole à trier : plus régulièrement, plus scrupuleusement.<br/>
+L'association "Mieux trier à Nantes" réalise un annuaire et un programme gratuit (Android/Windows Phone) 'Mieux trier A Nantes' - voir <a href='http://www.mieuxtrieranantes.fr/' target=_new >www.mieuxtrieranantes.fr</a> - dont l'objectif est d'aider les habitants de Nantes Métropole à trier : plus régulièrement, plus scrupuleusement.<br/>
 <br/>
 Comment nous fournir ces informations ?<br/>
-- soit nous répondre par mail <img src='nous_contacter.png' style='vertical-align:baseline' /><br/>
+- soit nous répondre par mail <img src='http://www.mieuxtrieranantes.fr/scripts_php/nous_contacter.png' style='vertical-align:baseline' /><br/>
 - soit sur ce formulaire.<br/>
 <br/>
 Pour toutes questions envoyez-nous un mail ou appelez le 06_74_43_78_43.<br/>
 <br/>
+Vous trouverez cet annuaire (après modération) sur <a href='http://data.nantes.fr/donnees/?facet[categories%3AEnvironnement+]=on' target=_new >www.data.nantes.fr</a>.<br/>
+<br/>
 Merci de votre collaboration.<br/>
 <br/>
-Christian Renoulin, Romain Debernardi
+Les membres de l'association "Mieux trier à Nantes" 
 </p>
 
 <form method="post" action="send_mail_form.php" style='padding:15px;background-color:ffffaa' name='form1' > 
@@ -243,10 +243,10 @@ Nantes : quartier administratif<br/>
    <input type="text" name="plagesHoraires" value="<?php echo $plagesHoraires;?>" size="100">
 <br/><i/>Exemple "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30</i>  
 <br><br>
-<span class="error">Déchets récupérés * <?php echo $dechetsRecuperesErr;?></span><input type="text" name="dechetsRecuperes" value="<?php echo $dechetsRecuperes;?>" size="30"><br/>
-<i>Lister tous les déchets récupérés (au singulier), séparés par une virgule. La rubrique description permet de donner le reste des informations. <b>Exemple : "vélo,cyclomoteur"</b></i>
+<span class="error">Objets usagés * <?php echo $dechetsRecuperesErr;?></span><input type="text" name="dechetsRecuperes" value="<?php echo $dechetsRecuperes;?>" size="30"><br/>
+<i>Lister tous les objets usagés récupérés (au singulier), séparés par une virgule. La rubrique description permet de donner le reste des informations. <b>Exemple : "vélo,cyclomoteur"</b></i>
  <br><br>
-Catégories de déchets admis<br/>
+Catégories d'objets usagés<br/>
  <input type="checkbox" name="categorieDechets[]" value="Cartouches encre/tuners">&nbsp;Cartouches encre/tuners&nbsp;<br/>
  <input type="checkbox" name="categorieDechets[]" value="Divers">&nbsp;Divers&nbsp;<br/>
  <input type="checkbox" name="categorieDechets[]" value="Electromenager">&nbsp;Electroménager&nbsp;<br/>
@@ -263,15 +263,6 @@ Catégories de déchets admis<br/>
  Description<br/>
  <i>Tout ce qui n'a pas pu être indiqué dans les autres sections</i>
 	<br/><textarea name="description" rows="5" cols="40"><?php echo $description;?></textarea>
-	
-<h3>Autres locaux</h3>
-Local ouvert au public : Local 2<br/>
-<i>Les différences par rapport au local 1 : Horaires, emplacement, déchets récupérés...</i>
-<br/><textarea name="local1" rows="5" cols="40"><?php echo $local1;?></textarea>
-<br/><br/>
-Local ouvert au public : Local 3<br/>
-<i>Les différences par rapport au local 1 : Horaires, emplacement, déchets récupérés...</i>
-<br/><textarea name="local2" rows="5" cols="40"><?php echo $local2;?></textarea>
 </p>
  <input type="submit" name="cmdSubmit" id="cmdSubmit" value="Envoyer"  onclick="javascript:return validateMyForm();" />
 </form>

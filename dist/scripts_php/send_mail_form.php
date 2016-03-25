@@ -53,9 +53,6 @@
 	}
    $categorieDechetsAutres = trim(stripslashes(htmlentities($_POST["categorieDechetsAutres"], ENT_COMPAT|ENT_HTML401, "UTF-8")));
    $description = trim(stripslashes(htmlentities($_POST["description"], ENT_COMPAT|ENT_HTML401, "UTF-8")));
-   $local1 = trim(stripslashes(htmlentities($_POST["local1"], ENT_COMPAT|ENT_HTML401, "UTF-8")));
-   $local2 = trim(stripslashes(htmlentities($_POST["local2"], ENT_COMPAT|ENT_HTML401, "UTF-8")));
-   
 
    $to    = "chris-ren@netcourrier.com";
  
@@ -107,8 +104,6 @@
 	   $mail_Data .= "categorieDechets : $categorieDechets <br> \n";
 	   $mail_Data .= "categorieDechetsAutres : $categorieDechetsAutres <br> \n";
 	   $mail_Data .= "description : $description <br> \n";
-	   $mail_Data .= "local1 : $local1 <br> \n";
-	   $mail_Data .= "local2 : $local2 <br> \n";
 	   
 	   $mail_Data .= "</body> \n";
 	   $mail_Data .= "</HTML> \n";
@@ -144,6 +139,7 @@
 	else
       {
 	  echo "La copie de votre formulaire vous a &eacute;t&eacute; envoy&eacute;<br/>";
+	  echo "<br/>Aller sur <a href='http://www.mieuxtrieranantes.fr/'>www.mieuxtrieranantes.fr</a>";
       }
    
    

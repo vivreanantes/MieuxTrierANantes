@@ -15,8 +15,8 @@ var _structuresDatas = [{
 	"horaires" : "Lundi, mardi, jeudi, vendredi de 13h à 17h",
 	"plagesHoraires" : "0101-3112_lu+ma+je+ve_13h00-17h00",
 	"sous_zone" : "qbcsa",
-	"mots_cles" : "pop,fringues,(secours,populaire,francais,nantes),vetements,bibelots,livres,pull,pantalon,veste",
-	"mots_cles_en" : "pop,fringues,(secours,populaire,francais,nantes),clothing,trinkets,books,sweater,pants,jacket",
+	"mots_cles" : "pop,fringues,secours,populaire,francais,nantes,,vetements,bibelots,livres,pull,pantalon,veste",
+	"mots_cles_en" : "pop,fringues,secours,populaire,francais,nantes,,clothing,trinkets,books,sweater,pants,jacket",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploisolidarimeuble",
@@ -36,8 +36,8 @@ var _structuresDatas = [{
 	"horaires" : "Les mardi et jeudi de 9h30 à 12h et de 13h30 à 17h, Le vendredi de 9h30 à 12h et 13h30 à 15h30",
 	"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+13h30-17h00,0101-3112_ve_09h30-12h00+13h30-15h30,",
 	"sous_zone" : "qbcsa",
-	"mots_cles" : "solidarimeubles,(secours,populaire,francais,nantes),meuble,electromenager",
-	"mots_cles_en" : "solidarimeubles,(secours,populaire,francais,nantes),furniture,household,appliances",
+	"mots_cles" : "solidari,meubles,secours,populaire,francais,nantes,,meuble,electromenager",
+	"mots_cles_en" : "solidari,meubles,secours,populaire,francais,nantes,,furniture,household,appliances",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_spopaffaires",
@@ -57,8 +57,8 @@ var _structuresDatas = [{
 	"horaires" : "Lundi Ouverture matin : 10:00 Fermeture matin : 12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Mardi Ouverture matin : 10:00 Fermeture après-midi : 12:30<br/>Jeudi Ouverture matin : 10:00 Fermeture matin :  12:30 Ouverture après-midi : 14:00 Fermeture après-midi : 17:00<br/>Vendredi 14:00 Fermeture après-midi : 17:00",
 	"plagesHoraires" : "0101-3112_lu_10h00-12h30+14h00-17h00,0101-3112_ma_10h00-12h30,0101-3112_je_10h00-12h30+14h00-17h00,0101-3112_ve_14h00-17h00",
 	"sous_zone" : "qcv",
-	"mots_cles" : "spop,affaires,(secours,populaire,francais,nantes),vetement,petit,mobilier,livre,jouet,vaisselle,pull,pantalon,veste",
-	"mots_cles_en" : "spop,affaires,(secours,populaire,francais,nantes),clothing,small,furniture,books,toys,dishes,sweater,pants,jacket",
+	"mots_cles" : "s,pop,affaires,secours,populaire,francais,nantes,,vetement,petit,mobilier,livre,jouet,vaisselle,pull,pantalon,veste",
+	"mots_cles_en" : "s,pop,affaires,secours,populaire,francais,nantes,,clothing,small,furniture,books,toys,dishes,sweater,pants,jacket",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout2",
@@ -140,8 +140,8 @@ var _structuresDatas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "atelier,retz,emploi,(sainte,pazanne),velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
-	"mots_cles_en" : "atelier,retz,emploi,(sainte,pazanne),bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
+	"mots_cles" : "atelier,retz,emploi,sainte,pazanne,,velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
+	"mots_cles_en" : "atelier,retz,emploi,sainte,pazanne,,bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout6",
@@ -162,8 +162,8 @@ var _structuresDatas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "atelier,retz,emploi,(le,pelerin),velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
-	"mots_cles_en" : "atelier,retz,emploi,(le,pelerin),bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
+	"mots_cles" : "atelier,retz,emploi,le,pelerin,,velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
+	"mots_cles_en" : "atelier,retz,emploi,le,pelerin,,bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout7",
@@ -184,8 +184,8 @@ var _structuresDatas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "atelier,retz,emploi,(le,breil),velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
-	"mots_cles_en" : "atelier,retz,emploi,(le,breil),bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
+	"mots_cles" : "atelier,retz,emploi,le,breil,,velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
+	"mots_cles_en" : "atelier,retz,emploi,le,breil,,bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout8",
@@ -206,8 +206,8 @@ var _structuresDatas = [{
 	"horaires" : "le MERCREDI de 10h à 18h, le SAMEDI de 10h à 18h",
 	"plagesHoraires" : "0101-3112_me+sa_10h00-18h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "atelier,retz,emploi,(saint,brevin),velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
-	"mots_cles_en" : "atelier,retz,emploi,(saint,brevin),bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
+	"mots_cles" : "atelier,retz,emploi,saint,brevin,,velo,mobilier,textile,vaisselle,jouet,puericulture,livre,cd,dvd,outillage,materiel,electrique",
+	"mots_cles_en" : "atelier,retz,emploi,saint,brevin,,bicycle,furniture,textiles,tableware,toy,baby,book,cd,dvd,tools,electrical,equipment",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout9",
@@ -226,8 +226,8 @@ var _structuresDatas = [{
 	"horaires" : "Du Mardi au Samedi de 10 h à 18 h",
 	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-18h",
 	"sous_zone" : "qidn",
-	"mots_cles" : "le,comptoir,solilab,(atelier,retz,emploi,ding,fring),linge,textile,chaussure,vaisselle,outillage,jouet,livre,meuble",
-	"mots_cles_en" : "le,comptoir,solilab,(atelier,retz,emploi,ding,fring),linen,textiles,shoes,dishes,tools,toy,book,furniture",
+	"mots_cles" : "le,comptoir,solilab,atelier,retz,emploi,ding,fring,,linge,textile,chaussure,vaisselle,outillage,jouet,livre,meuble",
+	"mots_cles_en" : "le,comptoir,solilab,atelier,retz,emploi,ding,fring,,linen,textiles,shoes,dishes,tools,toy,book,furniture",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout10",
@@ -236,19 +236,18 @@ var _structuresDatas = [{
 	"modesCollecte" : "smco_reemp",
 	"type" : " réemploi informatique",
 	"statut" : "Association",
-	"descr" : "Récupération, reconditionnement et don d'ordinateurs sur Nantes Métropole",
-	"descr_en" : "Recovery, reconditioning and donate computers to Nantes Métropole",
+	"descr" : "Nâga est une association de récupération et de don d’ordinateurs sur Nantes Métropole.<br/>Nous intervenons dans la récupération de parcs informatiques d’entreprises et d’ordinateurs de particuliers.<br/>Les ordinateurs sont alors reconditionnés, puis donnés aux adhérents de l’association.",
+	"descr_en" : "The Nâga is an association making recovery and computer donation Nantes Métropole. We operate in the IT asset recovery companies and private computers. The computers are then reconditioned and given to members of the association.",
 	"nom" : "Nâga",
 	"adresseTemp" : "17 chemin fontaine Launay  44400 Rezé",
 	"url" : "<a href='www.naga44.org' target='_blank'>www.naga44.org</a>",
 	"email" : "contact@naga44.org",
 	"tel" : "02 85 52 31 22",
 	"logo" : "resources/images/nantes/logo_naga.png",
-	"src" : "Renseigné sur formulaire de mieuxtrieranantes.fr, le 31/07/2014",
-	"horaires" : "Du mardi au samedi, de 10h à 12h et de 13h à 18h",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-12h00+13h00-18h00",
+	"src" : "Selon les infos fournies par Nâga, le 03/11/2016",
+	"horaires" : "Sur rendez-vous",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "naga,ordinateur",
+	"mots_cles" : "naga,ordi,ordinateur",
 	"mots_cles_en" : "naga,computer",
 	"image" : "icon-go-home.png"
 }, {
@@ -297,18 +296,18 @@ var _structuresDatas = [{
 	"modesCollecte" : "smco_reemp",
 	"type" : " réemploi vêtements",
 	"statut" : "Entreprise",
-	"descr" : "Dépôt-vente vêtements et accessoires. Femme et enfant. Reprise uniquement sur rendez-vous, n'hésitez pas à téléphoner. ",
-	"descr_en" : "Consignment clothing and accessories. Woman and child. Resume by appointment only, please call.",
+	"descr" : "Dépôt-vente vêtements et accessoires. Femme et enfant. Dépôt uniquement sur rendez-vous. ",
+	"descr_en" : "Consignment clothing and accessories. Woman and child. Deposit by appointment only.",
 	"nom" : "Ça Tourn'au Troc (Couëron)",
 	"adresseTemp" : "1 rue de la Marne   44220 Couëron",
 	"email" : "catourneautroc@free.fr",
 	"tel" : "09 51 49 22 88",
-	"src" : "MieuxTrierANantes 09/2014",
-	"horaires" : "Mardi au Vendredi 09h00 à 12h15 - 15h00 à 18h30, Samedi : 10h00 à 12h00 ",
-	"plagesHoraires" : "0101-3112_ma+me+je+ve_09h00-12h15,0101-3112_sa_10h00-12h00",
+	"src" : "Renseigné sur place par MieuxTrierANantes 03/2016",
+	"horaires" : "Mardi au Vendredi 09h00 à 12h15 - 15h00 à 18h00, Samedi : 10h00 à 12h00 ",
+	"plagesHoraires" : "0101-3112_ma+me+je+ve_09h00-12h15+15h00-18h30,0101-3112_sa_10h00-12h00",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "ca,tournau,troc,(coueron),vetement,pull,pantalon,veste",
-	"mots_cles_en" : "ca,tournau,troc,(coueron),garment,sweater,pants,jacket",
+	"mots_cles" : "ca,tourn,au,troc,coueron,,vetement,pull,pantalon,veste",
+	"mots_cles_en" : "ca,tourn,au,troc,coueron,,garment,sweater,pants,jacket",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout14",
@@ -320,34 +319,34 @@ var _structuresDatas = [{
 	"descr" : "Trois types de services sont proposés aux entreprises et aux particuliers :<br/>- la vente de bicyclettes remises en état et garanties<br/>-la location de bicyclettes afin de vous permettre d'organiser des sorties de groupe.<br/>-L'entretien de bicyclettes de particuliers ou d'un parc d'entreprise.",
 	"descr_en" : "Three types of services are offered to businesses and individuals: <br/> - selling bicycles repaired and guarantees <br/> -the bicycle rental to allow you to organize group outings <br /. > -L'entretien specific bicycle or a business park.",
 	"nom" : "ATAO (Nantes)",
-	"adresseTemp" : "7 bis, rue Jacques Cartier  44300 NANTES",
+	"adresseTemp" : "7 bis rue Jacques Cartier  44300 NANTES",
 	"url" : "<a href='http://atao-insertion.fr/' target='_blank'>http://atao-insertion.fr/</a>",
 	"email" : "contact@atao-insertion.fr",
 	"tel" : "02 40 59 93 68",
 	"logo" : "resources/images/nantes/logo_atao.jpg",
 	"src" : "MieuxTrierANantes 12/2014",
-	"mots_cles" : "atao,(nantes),velo,cyclomoteur",
-	"mots_cles_en" : "atao,(nantes),bicycle,moped",
+	"mots_cles" : "atao,nantes,,velo,cyclomoteur",
+	"mots_cles_en" : "atao,nantes,,bicycle,moped",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout15",
-	"latitude" : "47.223984",
-	"longitude" : "-1.641127",
+	"latitude" : "47.218935",
+	"longitude" : "-1.645201",
 	"modesCollecte" : "smco_reemp",
 	"type" : " réemploi vélo",
 	"statut" : "Association",
 	"descr" : "Trois types de services sont proposés aux entreprises et aux particuliers :<br/>- la vente de bicyclettes remises en état et garanties<br/>-la location de bicyclettes afin de vous permettre d'organiser des sorties de groupe.<br/>-L'entretien de bicyclettes de particuliers ou d'un parc d'entreprise.",
 	"descr_en" : "Three types of services are offered to businesses and individuals: <br/> - selling bicycles repaired and guarantees <br/> -the bicycle rental to allow you to organize group outings <br /. > -L'entretien specific bicycle or a business park.",
 	"nom" : "ATAO (Saint-Herblain)",
-	"adresseTemp" : "4 rue des compagnons  44800 SAINT-HERBLAIN",
+	"adresseTemp" : "7 rue du Lamineur   44800 SAINT-HERBLAIN",
 	"url" : "<a href='http://atao-insertion.fr/' target='_blank'>http://atao-insertion.fr/</a>",
 	"email" : "contact@atao-insertion.fr",
 	"tel" : "02 40 92 28 91",
 	"logo" : "resources/images/nantes/logo_atao.jpg",
 	"src" : "MieuxTrierANantes 12/2014",
 	"sous_zone" : "hnnl",
-	"mots_cles" : "atao,(saint,herblain),velo,cyclomoteur",
-	"mots_cles_en" : "atao,(saint,herblain),bicycle,moped",
+	"mots_cles" : "atao,saint,herblain,,velo,cyclomoteur",
+	"mots_cles_en" : "atao,saint,herblain,,bicycle,moped",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout16",
@@ -366,8 +365,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 01/2015",
 	"horaires" : "lundi, mercredi et vendredi de 9 h à 12 h et de 14 h à 16 h 30, le jeudi de 9 h à 12 h",
 	"plagesHoraires" : "0101-3112_lu+me+ve_09h00-12h00+14h00-16h30,0101-3112_je_09h00-12h00",
-	"mots_cles" : "a,prendre,ou,laisser,(nantes),vetement,bibelot,velo",
-	"mots_cles_en" : "a,prendre,ou,laisser,(nantes),clothing,trinket,bike",
+	"mots_cles" : "a,prendre,ou,laisser,nantes,,vetement,bibelot,velo",
+	"mots_cles_en" : "a,prendre,ou,laisser,nantes,,clothing,trinket,bike",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajoutboiteutile1",
@@ -386,11 +385,30 @@ var _structuresDatas = [{
 	"horaires" : "Ouvert tout le temps",
 	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
 	"sous_zone" : "qidn",
-	"mots_cles" : "la,boite,utile,(vincent,gache,nantes),vetement,pull,pantalon,veste,jeu,divers",
-	"mots_cles_en" : "la,boite,utile,(vincent,gache,nantes),0",
+	"mots_cles" : "la,boite,utile,vincent,gache,nantes,,vetement,pull,pantalon,veste,jeu,divers",
+	"mots_cles_en" : "la,boite,utile,vincent,gache,nantes,,0",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajoutboiteutile2",
+	"latitude" : "47.236002",
+	"longitude" : "-1.519424",
+	"modesCollecte" : "smco_reemp",
+	"type" : " réemploi divers",
+	"statut" : "Association",
+	"descr" : "Impulsé par les associations locales monECOCITY Nantes et La Nizanerie, le collectif Les Boîtes Utiles a pour objet de promouvoir, aider et fédérer les différents projets de ‘GiveBox' sur l'agglo.<br/><br/>Dédiées au don et à l'échange, ces boîtes se présentent sous la forme d'une armoire, d'une cabine ou d'une cabane grand format. Elles invitent les habitants d'un quartier à déposer et/ou dénicher toutes sortes d'objets en bon état. Ni poubelle, ni mini-déchetterie, la Boîte utile est une solution citoyenne de proximité pour éviter le gaspillage et favoriser une consommation plus durable. Elle crée aussi un point de rencontre et de convivialité.",
+	"descr_en" : "This association collects donations of clothes that are then distributed free to families in great need who enter the year. <br/> objects and trinkets are also deposited (unlike clothes, they are sold at low prices). <br/> There is also possibility of repairing bicycles.",
+	"nom" : "La Boîte Utile 3 (La Bottière, Nantes)",
+	"adresseTemp" : "esplanade de la Maison de Quartier, 147 route de Sainte-Luce  44300 NANTES",
+	"url" : "<a href='http://lesboitesutiles.tumblr.com/' target='_blank'>http://lesboitesutiles.tumblr.com/</a>",
+	"email" : "lesboitesutiles@gmail.com",
+	"src" : "MieuxTrierANantes 09/2015",
+	"horaires" : "Ouvert tout le temps",
+	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
+	"mots_cles" : "la,boite,utile,3,la,bottiere,nantes,,vetement,pull,pantalon,veste,jeu,divers",
+	"mots_cles_en" : "la,boite,utile,3,la,bottiere,nantes,,0",
+	"image" : "icon-go-home.png"
+}, {
+	"code" : "stco_reemploiajoutboiteutile3",
 	"latitude" : "47.233464",
 	"longitude" : "-1.574327",
 	"modesCollecte" : "smco_reemp",
@@ -402,11 +420,11 @@ var _structuresDatas = [{
 	"adresseTemp" : "59 Rue de la Gourmette  44300 NANTES",
 	"url" : "<a href='http://lesboitesutiles.tumblr.com/' target='_blank'>http://lesboitesutiles.tumblr.com/</a>",
 	"email" : "lesboitesutiles@gmail.com",
-	"src" : "MieuxTrierANantes 09/2015",
+	"src" : "MieuxTrierANantes 03/2016",
 	"horaires" : "Ouvert tout le temps",
 	"plagesHoraires" : "0101-312_lu-ma-me-je-ve-sa-di_00h00-23h59",
-	"mots_cles" : "la,boite,utile,2,(sainte,therese,nantes),vetement,pull,pantalon,veste,jeu,divers",
-	"mots_cles_en" : "la,boite,utile,2,(sainte,therese,nantes),0",
+	"mots_cles" : "la,boite,utile,2,sainte,therese,nantes,,vetement,pull,pantalon,veste,jeu,divers",
+	"mots_cles_en" : "la,boite,utile,2,sainte,therese,nantes,,0",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploiajout19",
@@ -464,8 +482,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 01/2015",
 	"horaires" : "La boutique est ouverte :<br/>- tous les mercredis 9h à 13h et de 14h à 17h,<br/>- tous les vendredis matins 9h à 13h,<br/>- tous les 2èmes samedis du mois 10h à 17h",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "la,recuperette,(clisson),vaisselle,batterie,cuisine,outils,bricolage,jardin,bibelots,objets,decoration,vetements,propres,bon,etat,jouets,materiel,puericulture,livres,/,cd,/,vinyles,meubles,bon,etat,luminaires",
-	"mots_cles_en" : "la,recuperette,(clisson),tableware,and,kitchenware,diy,and,garden,tools,ornaments,and,decorative,items,and,clean,clothes,in,good,condition,toys,and,baby,equipment,books,/,cds,/,vinyl,furniture,in,good,condition,lighting",
+	"mots_cles" : "la,recuperette,clisson,,vaisselle,batterie,cuisine,outils,bricolage,jardin,bibelots,objets,decoration,vetements,propres,bon,etat,jouets,materiel,puericulture,livres,/,cd,/,vinyles,meubles,bon,etat,luminaires",
+	"mots_cles_en" : "la,recuperette,clisson,,tableware,and,kitchenware,diy,and,garden,tools,ornaments,and,decorative,items,and,clean,clothes,in,good,condition,toys,and,baby,equipment,books,/,cds,/,vinyl,furniture,in,good,condition,lighting",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi62",
@@ -494,8 +512,8 @@ var _structuresDatas = [{
 	"modesCollecte" : "smco_reemp",
 	"type" : " réemploi informatique",
 	"statut" : "Association",
-	"descr" : "Récupération, reconditionnement et distribution d'ordinateurs",
-	"descr_en" : "Recovery, reconditioning and distribution of computers",
+	"descr" : "L’association ALIS 44 récupère des ordinateurs sur Nantes Métropole, les reconditionne sous linux Xubuntu (Xalis) et logiciels libres, puis les redistribue aux personnes à faibles ressources et aux associations.",
+	"descr_en" : "The ALIS 44 Association recovers computers on Nantes Métropole, reconditions Linux Xubuntu (Xalis) and free software, and then distributes them to people with low resources and associations.",
 	"nom" : "ALIS44",
 	"adresseTemp" : "60 rue de la Bottière  44300 NANTES",
 	"url" : "<a href='http://www.alis44.org' target='_blank'>http://www.alis44.org</a>",
@@ -522,8 +540,8 @@ var _structuresDatas = [{
 	"email" : "atelier-baramel@asso-trajet.fr",
 	"tel" : "02 51 78 64 62",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "atelier,baramel,trajet,pain",
-	"mots_cles_en" : "atelier,baramel,trajet,bread",
+	"mots_cles" : "atelier,bar,amel,trajet,pain",
+	"mots_cles_en" : "atelier,bar,amel,trajet,bread",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi55",
@@ -541,8 +559,8 @@ var _structuresDatas = [{
 	"tel" : "02 28 23 64 47",
 	"src" : "MieuxTrierANantes 03/15",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h30-17h00,0101-3112_me+sa_09h30-17h30,sauf_ferie",
-	"mots_cles" : "la,ressourcerie,lile,mobilier,meuble,jouet,puericulture,vaisselle,bibelot,cadre,livre,vetement,linge,maison,outillage,jardinerie,velo,luminaire,cd,dvd,jeux,videos,literie,article,sport,electromenager,pull,pantalon,veste",
-	"mots_cles_en" : "la,ressourcerie,lile,furnishings,furniture,toy,baby,crockery,trinket,frame,book,clothing,linens,tools,gardening,cycling,lighting,cd,dvd,video,games,bedding,sports,equipment,household,appliances,sweater,pants,jacket",
+	"mots_cles" : "la,ressourcerie,l,ile,mobilier,meuble,jouet,puericulture,vaisselle,bibelot,cadre,livre,vetement,linge,maison,outillage,jardinerie,velo,luminaire,cd,dvd,jeux,videos,literie,article,sport,electromenager,pull,pantalon,veste",
+	"mots_cles_en" : "la,ressourcerie,l,ile,furnishings,furniture,toy,baby,crockery,trinket,frame,book,clothing,linens,tools,gardening,cycling,lighting,cd,dvd,video,games,bedding,sports,equipment,household,appliances,sweater,pants,jacket",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi6",
@@ -581,8 +599,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Dépots de meubles : les lundis, mardis et jeudis de 9h00 à 12h00 et de 14h00 à 17h00, Les mercredis de 9h00 à 12h00<br/>Pour effectuer un devis : Les mardis de 14h00 à 17h00, Les jeudis de 9h00 à 12h00",
 	"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-12h00+14h00-17h00,0101-3112_me_09h00-12h00",
-	"mots_cles" : "lhomme,debout,meuble",
-	"mots_cles_en" : "lhomme,debout,furniture",
+	"mots_cles" : "l,homme,debout,meuble",
+	"mots_cles_en" : "l,homme,debout,furniture",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi53",
@@ -635,8 +653,8 @@ var _structuresDatas = [{
 	"email" : "papiersdelespoir@free.fr",
 	"tel" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
 	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "papiers,lespoir,papier",
-	"mots_cles_en" : "papiers,lespoir,paper",
+	"mots_cles" : "papiers,l,espoir,papier",
+	"mots_cles_en" : "papiers,l,espoir,paper",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi37",
@@ -889,8 +907,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
-	"mots_cles" : "nantes,ecologie,lair,livre,(chateau,nantes),livre,revue,bd",
-	"mots_cles_en" : "nantes,ecologie,lair,livre,(chateau,nantes),book,magazine,comics",
+	"mots_cles" : "nantes,ecologie,l,air,livre,chateau,nantes,,livre,revue,bd",
+	"mots_cles_en" : "nantes,ecologie,l,air,livre,chateau,nantes,,book,magazine,comics",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi51",
@@ -910,8 +928,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Récupération de livres, revues, BD et de manuels scolaires<br/><br/>- au 3 bis rue Prémion : vente de livres tous publics (tarifs très modérés)<br/>- 6 rue Monteil (équipement de livres et ventes) - uniquement le vendredi matin.",
 	"plagesHoraires" : "0101-3112_ve_09h00-13h00",
-	"mots_cles" : "nantes,ecologie,lair,livre,(cite,congres,nantes),livre,revue,bd,manuel,scolaire",
-	"mots_cles_en" : "nantes,ecologie,lair,livre,(cite,congres,nantes),book,magazine,comic,manual,school",
+	"mots_cles" : "nantes,ecologie,l,air,livre,cite,congres,nantes,,livre,revue,bd,manuel,scolaire",
+	"mots_cles_en" : "nantes,ecologie,l,air,livre,cite,congres,nantes,,book,magazine,comic,manual,school",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi54",
@@ -1005,8 +1023,8 @@ var _structuresDatas = [{
 	"url" : "<a href='http://wwwerlencre.fr' target='_blank'>http://wwwerlencre.fr</a>",
 	"email" : "contact@leverlencre.fr",
 	"src" : "DeuxiemeVie 03/14",
-	"mots_cles" : "lever,lencre,cartouche,toner",
-	"mots_cles_en" : "lever,lencre,cartridges,toner",
+	"mots_cles" : "lever,l,encre,cartouche,toner",
+	"mots_cles_en" : "lever,l,encre,cartridges,toner",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi36",
@@ -1045,8 +1063,8 @@ var _structuresDatas = [{
 	"src" : "DeuxiemeVie 03/14",
 	"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
 	"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
-	"mots_cles" : "oceencre,cartouche",
-	"mots_cles_en" : "oceencre,cartridge",
+	"mots_cles" : "oce,encre,cartouche",
+	"mots_cles_en" : "oce,encre,cartridge",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi63",
@@ -1081,8 +1099,8 @@ var _structuresDatas = [{
 	"tel" : "02.40.75.35.96 ",
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Tous les jours",
-	"mots_cles" : "action,cancer,44,(reze),bouchons,liege",
-	"mots_cles_en" : "action,cancer,44,(reze),corks",
+	"mots_cles" : "action,cancer,44,reze,,bouchons,liege",
+	"mots_cles_en" : "action,cancer,44,reze,,corks",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi65",
@@ -1097,21 +1115,8 @@ var _structuresDatas = [{
 	"tel" : "02 40 77 81 17",
 	"src" : "MieuxTrierANantes 01/15",
 	"horaires" : "Tous les jours",
-	"mots_cles" : "action,cancer,44,(la,chapelle,sur,erdre),bouchons,liege",
-	"mots_cles_en" : "action,cancer,44,(la,chapelle,sur,erdre),corks",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_solutionrecyclage",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers, cartouches encre/tuners",
-	"statut" : "Entreprise",
-	"descr" : "Centre de recyclage, pour entreprise<br/>Adresse : 18 Quai Emile Cormerais, 44800 Saint-Herblain<br/>Site : www.solution-recyclage.fr/<br/>Téléphone :+33 2 53 55 07 17<br/>Message posté 3 fév 2015 : 'Bonjour, Nous vous informons que nous ne souhaitons pas être rajouter dans votre base de données. Cordialement'",
-	"descr_en" : "Recycling center for business <br/> Address: 18 Quai Emile Cormerais, 44800 Saint-Herblain <br/> site: www.solution-recyclage.fr/ <br/> Phone: +33 2 53 55 July 17 <br /> Message posted February 3, 2015: 'Hello, We inform you that we do not wish to add to your database. Regards'",
-	"nom" : "Solution recyclage",
-	"adresseTemp" : "   ",
-	"src" : "MieuxTrierANantes 01/15",
-	"mots_cles" : "solution,recyclage,entreprise",
-	"mots_cles_en" : "solution,recyclage,business",
+	"mots_cles" : "action,cancer,44,la,chapelle,sur,erdre,,bouchons,liege",
+	"mots_cles_en" : "action,cancer,44,la,chapelle,sur,erdre,,corks",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi66",
@@ -1131,16 +1136,6 @@ var _structuresDatas = [{
 	"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
 	"mots_cles" : "recupfer44,ferraille,metal,electromenager",
 	"mots_cles_en" : "recupfer44,scrap,metal,appliances,",
-	"image" : "icon-go-home.png"
-}, {
-	"code" : "stco_reemploi67",
-	"modesCollecte" : "smco_reemp",
-	"type" : " réemploi divers",
-	"nom" : "La maison de la Récup' (Mouzillon)",
-	"adresseTemp" : "   ",
-	"src" : "MieuxTrierANantes 08/15",
-	"mots_cles" : "la,maison,recup,(mouzillon),0",
-	"mots_cles_en" : "la,maison,recup,(mouzillon),0",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_studentsshop",
@@ -1174,6 +1169,8 @@ var _structuresDatas = [{
 	"email" : "recuphalveque@gmail.com",
 	"tel" : "07 71 27 47 18",
 	"src" : "MieuxTrierANantes 02/16",
+	"horaires" : "mercredi 15h à 18h",
+	"plagesHoraires" : "0101-3112_me_15h00-18h00",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_reemploi68",
@@ -1189,8 +1186,8 @@ var _structuresDatas = [{
 	"src" : "MieuxTrierANantes 08/15",
 	"horaires" : "Lundi 14h00 - 19h00, Mardi au Samedi 10h00 - 13h00 / 14h00 - 19h00. Fermeture salle achats 18h30",
 	"plagesHoraires" : "0101-3112_lu_14h00-18h30,0101-3112_ma+me+je+ve+sa_10h00-13h00+14h00-18h30",
-	"mots_cles" : "happycash,(nantes,centre),0",
-	"mots_cles_en" : "happycash,(nantes,centre),0",
+	"mots_cles" : "happycash,nantes,centre,,0",
+	"mots_cles_en" : "happycash,nantes,centre,,0",
 	"image" : "icon-go-home.png"
 }, {
 	"code" : "stco_ventevrac1",
@@ -1208,8 +1205,8 @@ var _structuresDatas = [{
 	"tel" : "02 40 31 00 85",
 	"src" : "MieuxTrierANantes 04/15",
 	"sous_zone" : "hnsl",
-	"mots_cles" : "vente,vrac,boulangerie,arbre,pain,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
-	"mots_cles_en" : "sale,bulk,bakery,breadfruit,boulangerie,larbre,a,pain,saint,aignan,de,grand,lieu",
+	"mots_cles" : "vente,vrac,boulangerie,arbre,pain,boulangerie,l,arbre,a,pain,saint,aignan,de,grand,lieu",
+	"mots_cles_en" : "sale,bulk,bakery,breadfruit,boulangerie,l,arbre,a,pain,saint,aignan,de,grand,lieu",
 	"image" : "paperbag.png"
 }, {
 	"code" : "stco_ventevrac2",
