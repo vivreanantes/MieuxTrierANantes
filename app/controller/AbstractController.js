@@ -856,13 +856,13 @@ Ext.define('MieuxTrierANantes.controller.AbstractController', {
 						_datas[k]["type_en"] = this.getRecordValue(_datas[k],
 								"type");
 						// TRELLO_DISTANCE_JOURS
-						if (typeof _datas[k]["latitude"] != "undefined") {
+						/*if (typeof _datas[k]["latitude"] != "undefined") {
 							var diste = this.calculeDistance(
 									_datas[k]["latitude"],
 									_datas[k]["longitude"],
 									_datas[k]["latitude"],
 									_datas[k]["longitude"]);
-						}
+						}*/
 						tableauARetourner.push(_datas[k]);
 					}
 				}

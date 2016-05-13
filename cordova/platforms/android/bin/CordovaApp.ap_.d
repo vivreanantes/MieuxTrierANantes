@@ -501,6 +501,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo_solutionrecyclage.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo_stationsservices.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo_techrecyclage.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo_trait_dunion.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\marchands_de_sable.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\panneau_collecte_des_encombrants.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\recyclage_point_de_vente_mini.png \

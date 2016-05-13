@@ -321,6 +321,11 @@ var _advicesDatas = [{
 	"nom" : "2 assos sur compostage à Nantes",
 	"nom_en" : "2 assos on composting in Nantes"
 }, {
+	"code" : "cons_propre_sec",
+	"nom" : "Vêtements propres et secs",
+	"descr" : "Désormais les conteneurs acceptent tous types de vêtements (en bon état ou usagés) à conditions qu'ils soient propres et secs. Pour être précis un vêtement imbibé d'huile ne sera pas pris. Mais si ce vêtement est ensuite lavé et séché (il restera une taĉhe d'huile), il pourra être pris.",
+	"descr_en" : "Now the containers accept all types of clothing (in good condition or used) provided they are clean and dry. To be precise an oil soaked clothing will not be taken. But if this garment is then washed and dried (it will remain an oil stain), it may be taken."
+}, {
 	"code" : "cons_decheterieecopointquartheure",
 	"nom" : "Venir 15 minutes avant la fin",
 	"nom_en" : "Come 15 minutes before the end",

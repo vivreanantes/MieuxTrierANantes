@@ -3,7 +3,7 @@
 <head>
 <style type="text/css">
 body {
-  background-color: #ddaaaa;
+  background-color: #e4f2c7;
   font-family: sans-serif,sans-serif;
   height:100%;margin:0;padding:0;text-align:center;
 }
@@ -17,7 +17,7 @@ div.ss-form-container {
   border-width: 1px;
 }
 h1{
-  background-color: #a64242;
+  background-color: #aedc53;
   padding: 15px;
   
   color: #ffffff;
@@ -68,7 +68,7 @@ function validateMyForm ( ) {
             isValid = false;
     } 
 	if ( document.form1.dechetsRecuperes.value == "" ) { 
-         text =  text + "Lien entre la personne qui réalise l'inscription et la structure\n";
+         text =  text + "Liste des objets usagés récupérés\n";
             isValid = false;
     }
 	

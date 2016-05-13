@@ -815,9 +815,10 @@ var _garbagesDatas = [{
 			"descr_en" : "shoe in good condition, in good condition bote",
 			"mots_cles" : "chaussure,bon,etat,bote,bon,etat,",
 			"mots_cles_en" : "shoe,in,good,condition,in,good,condition,bote,",
+			"cons" : "cons_propre_sec",
 			"image" : "chaussures_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
-			"recyc" : "NON",
+			"modco" : "smco_conteneurlerelais,smco_reempvet",
+			"recyc" : "OUI",
 			"src" : "MieuxTrierANantes 02/2015"
 		}, {
 			"code" : "dec_chaussuresUsagees",
@@ -1538,11 +1539,12 @@ var _garbagesDatas = [{
 			"descr_en" : "wool",
 			"mots_cles" : "laine,",
 			"mots_cles_en" : "wool,",
+			"cons" : "cons_propre_sec",
 			"image" : "pelotes_laine_mini.png",
 			"image_secondaire" : "images_non_libres_temp/bouteille_produit_menager_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
-			"recyc" : "NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"modco" : "smco_conteneurlerelais,smco_reempvet",
+			"recyc" : "OUI",
+			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
 		}, {
 			"code" : "dec_laineVerre",
 			"type" : "Déchet",
@@ -2752,10 +2754,11 @@ var _garbagesDatas = [{
 			"descr_en" : "Clothing,pants, shirt, sweater, jacket, skirt, dress",
 			"mots_cles" : "vetement,bon,etat,pantalon,chemise,pull,veste,jupe,robe,",
 			"mots_cles_en" : "clothing,pants,shirt,sweater,jacket,skirt,dress,",
+			"cons" : "cons_propre_sec",
 			"image" : "chemise_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
-			"recyc" : "NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"modco" : "smco_conteneurlerelais,smco_reempvet",
+			"recyc" : "OUI",
+			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
 		}, {
 			"code" : "dec_vetementUsage",
 			"type" : "Déchet",
@@ -2763,15 +2766,16 @@ var _garbagesDatas = [{
 			"nom" : "Vêtement usagé",
 			"nom_en" : "Used Clothing",
 			"cat_usuel" : "cu_vetementtissu",
-			"cat_trait" : "cat_omr",
+			"cat_trait" : "cat_vetement",
 			"descr" : "vêtement usagé, vêtement mauvais état, pantalon, chemise, pull, veste, jupe, robe",
 			"descr_en" : "Clothing,pants, shirt, sweater, jacket, skirt, dress",
 			"mots_cles" : "vetement,usage,vetement,mauvais,etat,pantalon,chemise,pull,veste,jupe,robe,",
 			"mots_cles_en" : "clothing,pants,shirt,sweater,jacket,skirt,dress,",
+			"cons" : "cons_propre_sec",
 			"image" : "jean_usage_mini.png",
-			"modco" : "modco_bacbleu,modco_sacbleu",
-			"recyc" : "NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"modco" : "smco_conteneurlerelais,smco_reempvet",
+			"recyc" : "OUI",
+			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
 		}, {
 			"code" : "dec_verreaboire",
 			"type" : "Déchet",
