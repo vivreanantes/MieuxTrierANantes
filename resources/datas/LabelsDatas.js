@@ -335,6 +335,10 @@ var _labelsDatas = {
 			"en" : "Concern",
 			"fr" : "Concerne"
 		},
+		"label_sponsor_kkbb" : {
+			"en" : "This resource is sponsored by this KissKissBankBank contributor",
+			"fr" : "Cette ressource est parainée par le donateur KissKissBankBankCette ressource est parrainé par le soutien KisskissBankBank :"
+		},
 		"label_resultat_recherche" : {
 			"en" : "Search result",
 			"fr" : "Résultat de la recherche"
@@ -508,8 +512,8 @@ var _labelsDatas = {
 			"fr" : "trisac"
 		},
 		"label_tpl_aider" : {
-			"en" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Help-us ! <A HREF='http://www.kisskissbankbank.com/fr/projects/mieux-trier-fournir-les-consignes-locales-de-tri' target=_new> KissKissBankBank</A> end 2/6/16</div>",
-			"fr" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Soutenez-nous ! <A HREF='http://www.kisskissbankbank.com/fr/projects/mieux-trier-fournir-les-consignes-locales-de-tri' target=_new>KissKissBankBank</A> (fin 2 juin 2016)</div>"
+			"en" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>To help inhabitants of Nantes Métropole to sort.</div>",
+			"fr" : "<table border='0' padding='0'><tr><td valign='top'><img src='resources/images/nantes/logo_mieuxtrieranantes.png' width='50px'></td><td valign='top'><div align='center' style='font-size:14px;font-weight:bold'>Mieux trier à Nantes</div><div align='center'>Aider les habitants de Nantes Métropôle à trier.</div>"
 		},
 		"label_global_button_placeholder" : {
 			"en" : "Ex : mirror, emmaüs, composting...",

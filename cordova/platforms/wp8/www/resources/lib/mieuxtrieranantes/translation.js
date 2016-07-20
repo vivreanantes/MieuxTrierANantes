@@ -335,6 +335,10 @@ function _translate(stKey, stLocale) {
 			"en" : "Concern",
 			"fr" : "Concerne"
 		},
+		"label_sponsor_kkbb" : {
+			"en" : "This resource is sponsored by this KissKissBankBank contributor",
+			"fr" : "Cette ressource est parainée par le donateur KissKissBankBank"
+		},
 		"label_resultat_recherche" : {
 			"en" : "Search result",
 			"fr" : "Résultat de la recherche"

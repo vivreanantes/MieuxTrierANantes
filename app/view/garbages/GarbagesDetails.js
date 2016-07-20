@@ -106,7 +106,7 @@ Ext.define('MieuxTrierANantes.view.garbages.GarbagesDetails', {
 		{
 			id : "garbagesdetails_description",
 			// style : 'background-color: #119Eaa;',
-			tpl : "<br/>{concerne_aussi}<b>Source</b> : <font color=red>{src}</font><br/>",
+			tpl : "<br/>{concerne_aussi}<b>Source</b> : <font color=red>{src}</font><br/>{sponsor}",
 			data : {
 				"concerne_aussi" : "Concerne aussi : divers"
 			}

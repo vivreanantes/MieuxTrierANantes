@@ -572,15 +572,18 @@ Ext.define('MieuxTrierANantes.controller.GarbagesController', {
 			if (record["src"] != undefined && record["src"] != "") {
 				source = record["src"] + "<br/>";
 			}
+			var sponsorTraduit = "";
+			var sponsor = this.getRecordValue(record, "sponsor");
+			if (sponsor != "") {
+				sponsorTraduit = this.translate("label_sponsor_kkbb")
+						+ " : " + sponsor + "<br/>";
+			}
 			this.setDataElement(this.garbageDetail,
 					"garbagesdetails_description", {
 						'concerne_aussi' : descriptionTraduit,
-						'src' : source
+						'src' : source,
+						'sponsor' : sponsorTraduit
 					})
-			// this.garbageDetail.items.items['1'].setData()
-			// garbagesdetails_conseils
-			// this.garbageDetail.items.items['2'].setData({'conseils_string' :
-			// conseilTraduit})
 
 			// Ajout des conseils
 			var nbElementsMax = 3; // la page GarbagesDetails.js affiche 3

@@ -31,7 +31,8 @@ var _garbagesDatas = [{
 			"image" : "aerosol_mini.png",
 			"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
 			"recyc" : "OUI",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "dam_sense"
 		}, {
 			"code" : "dec_agenda",
 			"type" : "Déchet",
@@ -147,7 +148,8 @@ var _garbagesDatas = [{
 			"image" : "images_non_libres_temp/outillage_electrique_mini.png",
 			"modco" : "modco_decheterie,modco_ecopoint,smco_reprise",
 			"recyc" : "PAS_POUBELLE",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "Vns"
 		}, {
 			"code" : "dec_appareilsChauffant",
 			"type" : "Déchet",
@@ -619,7 +621,8 @@ var _garbagesDatas = [{
 			"image" : "bouteille_mini.png",
 			"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
 			"recyc" : "OUI",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "fsefleur"
 		}, {
 			"code" : "dec_branchage",
 			"type" : "Déchet",
@@ -815,10 +818,9 @@ var _garbagesDatas = [{
 			"descr_en" : "shoe in good condition, in good condition bote",
 			"mots_cles" : "chaussure,bon,etat,bote,bon,etat,",
 			"mots_cles_en" : "shoe,in,good,condition,in,good,condition,bote,",
-			"cons" : "cons_propre_sec",
 			"image" : "chaussures_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet",
-			"recyc" : "OUI",
+			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+			"recyc" : "NON",
 			"src" : "MieuxTrierANantes 02/2015"
 		}, {
 			"code" : "dec_chaussuresUsagees",
@@ -917,7 +919,8 @@ var _garbagesDatas = [{
 			"image" : "cotons_tiges_mini.png",
 			"modco" : "modco_bacbleu,modco_sacbleu",
 			"recyc" : "NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "Cre"
 		}, {
 			"code" : "dec_coucheBebe",
 			"type" : "Déchet",
@@ -1137,7 +1140,8 @@ var _garbagesDatas = [{
 			"image" : "epeluchure_mini.png",
 			"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_compostage",
 			"recyc" : "NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "Gwendal Meillarec"
 		}, {
 			"code" : "dec_equipementsAudioEtVideo",
 			"type" : "Déchet",
@@ -1539,12 +1543,12 @@ var _garbagesDatas = [{
 			"descr_en" : "wool",
 			"mots_cles" : "laine,",
 			"mots_cles_en" : "wool,",
-			"cons" : "cons_propre_sec",
 			"image" : "pelotes_laine_mini.png",
 			"image_secondaire" : "images_non_libres_temp/bouteille_produit_menager_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet",
-			"recyc" : "OUI",
-			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
+			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+			"recyc" : "NON",
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "Mokkona"
 		}, {
 			"code" : "dec_laineVerre",
 			"type" : "Déchet",
@@ -2252,7 +2256,8 @@ var _garbagesDatas = [{
 			"image" : "yaourt_mini.png",
 			"modco" : "modco_bacjaunenantes,modco_bacbleuhorsnantes,modco_sacbleu",
 			"recyc" : "OUI_ET_NON",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "remigs"
 		}, {
 			"code" : "dec_produitPhytosanitaire",
 			"type" : "Déchet",
@@ -2741,7 +2746,8 @@ var _garbagesDatas = [{
 			"image_secondaire" : "skateboard_mini.png",
 			"modco" : "smco_velo,modco_decheterie,modco_ecopoint",
 			"recyc" : "PAS_POUBELLE",
-			"src" : "MieuxTrierANantes 02/2015"
+			"src" : "MieuxTrierANantes 02/2015",
+			"sponsor" : "Falblam"
 		}, {
 			"code" : "dec_vetementEnBonEtat",
 			"type" : "Déchet",
@@ -2754,11 +2760,10 @@ var _garbagesDatas = [{
 			"descr_en" : "Clothing,pants, shirt, sweater, jacket, skirt, dress",
 			"mots_cles" : "vetement,bon,etat,pantalon,chemise,pull,veste,jupe,robe,",
 			"mots_cles_en" : "clothing,pants,shirt,sweater,jacket,skirt,dress,",
-			"cons" : "cons_propre_sec",
 			"image" : "chemise_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet",
-			"recyc" : "OUI",
-			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
+			"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+			"recyc" : "NON",
+			"src" : "MieuxTrierANantes 02/2015"
 		}, {
 			"code" : "dec_vetementUsage",
 			"type" : "Déchet",
@@ -2766,16 +2771,15 @@ var _garbagesDatas = [{
 			"nom" : "Vêtement usagé",
 			"nom_en" : "Used Clothing",
 			"cat_usuel" : "cu_vetementtissu",
-			"cat_trait" : "cat_vetement",
+			"cat_trait" : "cat_omr",
 			"descr" : "vêtement usagé, vêtement mauvais état, pantalon, chemise, pull, veste, jupe, robe",
 			"descr_en" : "Clothing,pants, shirt, sweater, jacket, skirt, dress",
 			"mots_cles" : "vetement,usage,vetement,mauvais,etat,pantalon,chemise,pull,veste,jupe,robe,",
 			"mots_cles_en" : "clothing,pants,shirt,sweater,jacket,skirt,dress,",
-			"cons" : "cons_propre_sec",
 			"image" : "jean_usage_mini.png",
-			"modco" : "smco_conteneurlerelais,smco_reempvet",
-			"recyc" : "OUI",
-			"src" : "Entretien MieuxTrierANantes & LeRelaisAtlantique "
+			"modco" : "modco_bacbleu,modco_sacbleu",
+			"recyc" : "NON",
+			"src" : "MieuxTrierANantes 02/2015"
 		}, {
 			"code" : "dec_verreaboire",
 			"type" : "Déchet",

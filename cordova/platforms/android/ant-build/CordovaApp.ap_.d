@@ -478,6 +478,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\encombrant2.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\encombrant2_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\encombrant_mini.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\encombrant_trait_dunion.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\envie44_petit.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo-velocampus.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\logo_actionscancer44.png \
@@ -508,6 +509,7 @@ C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\ww
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\sacs_jaune_et_bleu.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\sac_bleu_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\sac_jaune_mini.png \
+C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\traitdunion.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\usine_arcenciel.jpg \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\usine_arcenciel_mini.png \
 C:\dev\github-repositories\MieuxTrierANantes\cordova\platforms\android\assets\www\resources\images\nantes\usine_valorena.jpg \
