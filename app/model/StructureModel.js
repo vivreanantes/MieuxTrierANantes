@@ -33,7 +33,7 @@ Ext.define('MieuxTrierANantes.model.StructureModel', {
 							type : 'string',
 							defaultValue : ''
 						}, {
-							name : 'quartier_admin',
+							name : 'zone',
 							type : 'string'
 						}, {
 							name : "descr",

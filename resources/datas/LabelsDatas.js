@@ -337,7 +337,7 @@ var _labelsDatas = {
 		},
 		"label_sponsor_kkbb" : {
 			"en" : "This resource is sponsored by this KissKissBankBank contributor",
-			"fr" : "Cette ressource est parainée par le donateur KissKissBankBankCette ressource est parrainé par le soutien KisskissBankBank :"
+			"fr" : "Cette ressource est parrainée par le donateur KissKissBankBank"
 		},
 		"label_resultat_recherche" : {
 			"en" : "Search result",

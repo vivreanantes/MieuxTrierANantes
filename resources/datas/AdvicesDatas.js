@@ -8,8 +8,8 @@ var _advicesDatas = [{
 	"code" : "cons_bac_casse",
 	"nom" : "Bac cassé",
 	"nom_en" : "Broken tray",
-	"descr" : "Un bac cassé ou détérioré peut être remplacé gratuitement. Appeler le 0800 344 000 ( 'Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe). En cas de vol du bac, faire une déclaration au commissariat de police, et présenter le récépissé de dépôt de plainte à Allo Propreté.",
-	"descr_en" : "A broken or damaged tank can be replaced free of charge. Call 02 40 41 9000 ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline). In case of theft of the tray, make a statement to the police, and present it to Allo Cleanliness complaint deposit receipt."
+	"descr" : "Un bac cassé ou détérioré peut être remplacé gratuitement. Appeler 'Allo  Nantes'. En cas de vol du bac, faire une déclaration au commissariat de police, et présenter le récépissé de dépôt de plainte à 'Allo Nantes'.",
+	"descr_en" : "A broken or damaged tank can be replaced free of charge. Call 'AlloNantes'. In case of theft of the tray, make a statement to the police, and present it to 'Allo Nantes'' complaint deposit receipt."
 }, {
 	"code" : "cons_noeudtrisac",
 	"nom" : "Double nœud",
@@ -56,7 +56,7 @@ var _advicesDatas = [{
 	"code" : "cons_numerosencombrants",
 	"nom" : "Numéros de téléphones des encombrants",
 	"nom_en" : "Bulky telephone numbers",
-	"descr" : " - pour Nantes, <b>0800 344 000</b> ('Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe).<br/> - pour Couëron, Indre, Saint-Herblain <b>0 800 00 70 76</b> (de 8h à 18h du lundi au samedi, appel gratuit depuis un téléphone fixe)<br/> - pour Basse-Goulaine, Bouaye, Bouguenais, Brains, Carquefou, La Chapelle-sur-Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Lieu, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, Saint-Sébastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire, Vertou <b>0 800 800 868</b>.",
+	"descr" : " - pour Nantes, <b>0800 344 000</b> ('Allo Nantes' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe).<br/> - pour Couëron, Indre, Saint-Herblain <b>0 800 00 70 76</b> (de 8h à 18h du lundi au samedi, appel gratuit depuis un téléphone fixe)<br/> - pour Basse-Goulaine, Bouaye, Bouguenais, Brains, Carquefou, La Chapelle-sur-Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Lieu, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, Saint-Sébastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire, Vertou <b>0 800 800 868</b>.",
 	"descr_en" : " - Nantes, <b>02 40 41 9000</b> ( 'AlloNantes', 8h to 19h monday to friday, saturday 8h to 13h, free call from a landline. <br/> - To Couëron, Indre, Saint-Herblain <b>0800 00 70 76 </b> (from 8h to 18h from Monday to Saturday, free call from a landline) <br/> - Basse-Goulaine for Bouaye, Bouguenais, Brains Carquefou, La Chapelle-sur -Erdre, La Montagne, Le Pellerin, Les Sorinières, Mauves-sur-Loire, Orvault, Rezé, Saint-Aignan-de-Grand-Place, Saint-Jean-de-Boiseau, Saint-Léger-les-Vignes, St. Sebastien-sur-Loire, Sainte-Luce-sur-Loire, Sautron, Thouaré-sur-Loire Vertou <b> 0800800868 </b>."
 }, {
 	"code" : "cons_bouchon",
@@ -320,11 +320,6 @@ var _advicesDatas = [{
 	"code" : "cons_assocompostage",
 	"nom" : "2 assos sur compostage à Nantes",
 	"nom_en" : "2 assos on composting in Nantes"
-}, {
-	"code" : "cons_propre_sec",
-	"nom" : "Vêtements propres et secs",
-	"descr" : "Désormais les conteneurs acceptent tous types de vêtements (en bon état ou usagés) à conditions qu'ils soient propres et secs. Pour être précis un vêtement imbibé d'huile ne sera pas pris. Mais si ce vêtement est ensuite lavé et séché (il restera une taĉhe d'huile), il pourra être pris.",
-	"descr_en" : "Now the containers accept all types of clothing (in good condition or used) provided they are clean and dry. To be precise an oil soaked clothing will not be taken. But if this garment is then washed and dried (it will remain an oil stain), it may be taken."
 }, {
 	"code" : "cons_decheterieecopointquartheure",
 	"nom" : "Venir 15 minutes avant la fin",

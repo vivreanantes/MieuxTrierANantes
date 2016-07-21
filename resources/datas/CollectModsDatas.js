@@ -128,7 +128,7 @@ var _collectModsDatas = [{
 	"descr_en" : "<IMG SRC='resources/images/nantes/sac_bleu_mini.png' align='right' WIDTH='150px' /> are placed in blue bags the <B> non-recycled household waste </b>.",
 	"cons" : "cons_noeudtrisac,cons_passacpoubelle",
 	"icone" : "modco",
-	"image" : "nantes/sac_bleu_mini.png",
+	"image" : "Nantes/sac_bleu_mini.png",
 	"mots_cles" : "sacs,bleus",
 	"mots_cles_en" : "bags,blue"
 }, {
@@ -368,8 +368,8 @@ var _collectModsDatas = [{
 	"libelleBouton" : "Réemploi Vaisselle",
 	"libelleBouton_en" : "Reuse Crockery",
 	"modesCollecte" : "true",
-	"descr" : "Plusieurs organismes (association <a href='lieu:stco_reemploi47'>La croix rouge</a>, <a href='lieu:stco_reemploi55'>Ecorev</a>...) récupèrent les anciens livres.",
-	"descr_en" : "Several organizations (href='lieu:stco_reemploi47'> <a Association </a> The red cross <a href='lieu:stco_reemploi55'> Ecorev </a> ...) recover the ancient books.",
+	"descr" : "Plusieurs organismes (association 'La croix rouge', 'La ressourcerie de l'ïle'..) récupèrent la vaissellee.",
+	"descr_en" : "Several organizations ('The red cross', 'La ressourcerie de l'ïle'…) recover the ancient books.",
 	"image" : "reemploi_petit.png",
 	"mots_cles" : "reemploi,vaisselle",
 	"mots_cles_en" : "reuse,dishes"
